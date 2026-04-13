@@ -45,6 +45,14 @@ class ListingBrain:
     def generate_title(self, product):
         return generate_title(product)
 
+    def generate_category(self, product):
+        product_type = str(product.get("type") or product.get("name", "")).lower()
+        if any(keyword in product_type for keyword in ("kabel", "cable", "usb-c")):
+            return "Kabel & Adapter"
+        if any(keyword in product_type for keyword in ("ladegerät", "charger", "netzteil")):
+            return "Ladegeräte"
+        return "Handy-Zubehör"
+
     def generate_description(self, product):
         product_type = product.get("type") or product.get("name", "Kabel")
         power = product.get("power", "")
@@ -92,6 +100,7 @@ class ListingBrain:
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
+            "category": self.generate_category(product),
             "description": self.generate_description(product),
             "price": self.generate_price(product),
             "item_specifics": self.generate_item_specifics(product),
