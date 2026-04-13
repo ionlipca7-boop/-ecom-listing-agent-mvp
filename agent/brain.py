@@ -46,9 +46,9 @@ class ListingBrain:
         length = product.get("length", "")
 
         lines = [f"Typ: {product_type}"]
-        lines.append(f"Leistung: {power}" if power else "Leistung: Zuverlässig")
+        lines.append(f"Leistung: {power} + Schnellladen" if power else "Leistung: Schnellladen")
         lines.append(f"Länge: {length}" if length else "Länge: Praktisch")
-        lines.append("Für Laden und Datentransfer.")
+        lines.append("Zuverlässige Qualität für hohe Kompatibilität.")
         return "\n".join(lines)
 
     def generate_price(self, product):
