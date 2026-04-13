@@ -7,6 +7,7 @@ from pathlib import Path
 
 HISTORY_DIR = Path("history")
 SUPPORTED_ACTIONS = {"approve_all_review", "publish_ready_all_approved"}
+CONTROL_STATUSES = {"review", "approved", "publish_ready"}
 
 
 def _to_bool(value):
@@ -102,26 +103,30 @@ def _set_status(record, new_status):
     if not isinstance(record, dict):
         return
 
+    is_publish_ready = new_status == "publish_ready"
     listing_result = record.get("listing_result")
     if isinstance(listing_result, dict):
+        old_publish_ready = _to_bool(listing_result.get("publish_ready"))
         listing_result["approval_status"] = new_status
-        if isinstance(listing_result.get("status"), str):
+        if isinstance(listing_result.get("status"), str) and listing_result.get("status") in CONTROL_STATUSES:
             listing_result["status"] = new_status
-        listing_result["publish_ready"] = new_status == "publish_ready"
+        listing_result["publish_ready"] = is_publish_ready or old_publish_ready
 
         final_bundle = listing_result.get("final_listing_bundle")
         if isinstance(final_bundle, dict):
+            old_bundle_publish_ready = _to_bool(final_bundle.get("publish_ready"))
             final_bundle["approval_status"] = new_status
-            if isinstance(final_bundle.get("status"), str):
+            if isinstance(final_bundle.get("status"), str) and final_bundle.get("status") in CONTROL_STATUSES:
                 final_bundle["status"] = new_status
-            final_bundle["publish_ready"] = new_status == "publish_ready"
+            final_bundle["publish_ready"] = is_publish_ready or old_bundle_publish_ready
 
     pipeline_summary = record.get("pipeline_summary")
     if isinstance(pipeline_summary, dict):
+        old_summary_publish_ready = _to_bool(pipeline_summary.get("publish_ready"))
         pipeline_summary["approval_status"] = new_status
-        if isinstance(pipeline_summary.get("status"), str):
+        if isinstance(pipeline_summary.get("status"), str) and pipeline_summary.get("status") in CONTROL_STATUSES:
             pipeline_summary["status"] = new_status
-        pipeline_summary["publish_ready"] = new_status == "publish_ready"
+        pipeline_summary["publish_ready"] = is_publish_ready or old_summary_publish_ready
 
 
 def _apply_rule(action, status, quality_gate_ready):
