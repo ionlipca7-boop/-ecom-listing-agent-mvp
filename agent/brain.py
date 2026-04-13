@@ -60,6 +60,7 @@ def generate_title(product):
 class ListingBrain:
 
     TITLE_MIN_SEO_LENGTH = 40
+    APPROVAL_STATUSES = ("draft", "review", "approved", "publish_ready")
 
     def _is_title_length_good(self, title):
         normalized_title = " ".join(str(title or "").split())
@@ -233,6 +234,16 @@ class ListingBrain:
     def generate_publish_ready(self, listing):
         return listing.get("listing_quality_score", 0) >= 80
 
+    def generate_approval_status(self, listing):
+        approval_decision = str(listing.get("approval_decision", "")).strip().lower()
+        quality_gate_ready = bool(listing.get("quality_gate_ready", False))
+
+        if approval_decision == "approved":
+            if quality_gate_ready:
+                return "publish_ready"
+            return "approved"
+        return "review"
+
     def generate_warnings(self, listing):
         warnings = []
 
@@ -301,6 +312,8 @@ class ListingBrain:
             "buyer_questions": listing.get("buyer_questions", []),
             "ai_summary": listing.get("ai_summary", ""),
             "status": listing.get("status"),
+            "approval_status": listing.get("status"),
+            "quality_gate_ready": listing.get("quality_gate_ready", False),
             "publish_ready": listing.get("publish_ready", False),
         }
 
@@ -321,7 +334,9 @@ class ListingBrain:
             "status": "draft",
         }
         listing["listing_quality_score"] = self.generate_quality_score(listing)
-        listing["publish_ready"] = self.generate_publish_ready(listing)
+        listing["quality_gate_ready"] = self.generate_publish_ready(listing)
+        listing["status"] = self.generate_approval_status(listing)
+        listing["publish_ready"] = listing["status"] == "publish_ready"
         listing["listing_warnings"] = self.generate_warnings(listing)
         listing["listing_improvements"] = self.generate_improvements(listing)
         listing["final_listing_bundle"] = self.generate_final_listing_bundle(listing)
