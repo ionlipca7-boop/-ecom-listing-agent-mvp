@@ -36,7 +36,7 @@ def main():
 
     listing_quality_score = listing.get("listing_quality_score", listing.get("quality_score", 0)) if isinstance(listing, dict) else 0
     publish_ready = listing.get("publish_ready", False) if isinstance(listing, dict) else False
-    approval_status = listing.get("status", "unknown") if isinstance(listing, dict) else "unknown"
+    approval_status = listing.get("approval_status", listing.get("status", "unknown")) if isinstance(listing, dict) else "unknown"
     quality_gate_ready = listing.get("quality_gate_ready", False) if isinstance(listing, dict) else False
     listing_warnings = listing.get("listing_warnings", listing.get("warnings", [])) if isinstance(listing, dict) else []
     listing_improvements = listing.get("listing_improvements", listing.get("improvements", [])) if isinstance(listing, dict) else []
