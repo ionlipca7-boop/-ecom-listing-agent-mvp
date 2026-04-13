@@ -1,14 +1,11 @@
 from agent.brain import ListingBrain
+from app.input_parser import InputParser
 from publisher.local_publisher import LocalPublisher
 
 
 def main():
-    product = {
-        "name": "USB-C Ladekabel",
-        "type": "USB-C Ladekabel",
-        "power": "60W",
-        "length": "2m",
-    }
+    raw_text = "USB-C cable 2m 60W fast charging"
+    product = InputParser().parse_text(raw_text)
 
     brain = ListingBrain()
     listing = brain.create_listing(product)
