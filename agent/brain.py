@@ -104,6 +104,28 @@ class ListingBrain:
             "image_detail.jpg"
         ]
 
+    def generate_quality_score(self, listing):
+        score = 0
+
+        if listing.get("title"):
+            score += 20
+        if listing.get("category"):
+            score += 15
+        if listing.get("description"):
+            score += 20
+        if listing.get("price") is not None:
+            score += 15
+
+        item_specifics = listing.get("item_specifics")
+        if isinstance(item_specifics, dict) and item_specifics:
+            score += 15
+
+        images = listing.get("images")
+        if isinstance(images, list) and len(images) >= 3:
+            score += 15
+
+        return min(score, 100)
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
@@ -114,6 +136,7 @@ class ListingBrain:
             "images": self.generate_images(product),
             "status": "draft",
         }
+        listing["listing_quality_score"] = self.generate_quality_score(listing)
         drafts_dir = Path("drafts")
         drafts_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
