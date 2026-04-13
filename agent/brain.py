@@ -3,6 +3,16 @@ from datetime import datetime
 from pathlib import Path
 
 
+def detect_listing_kind(product):
+    product_type = str(product.get("type") or product.get("name", "")).lower()
+
+    if any(keyword in product_type for keyword in ("ladegerät", "ladegerat", "charger", "netzteil", "adapter")):
+        return "charger"
+    if any(keyword in product_type for keyword in ("kabel", "cable")):
+        return "cable"
+    return "generic"
+
+
 def generate_title(product):
     """
     eBay SEO Title Generator
@@ -13,6 +23,7 @@ def generate_title(product):
     power = product.get("power", "")
     length = product.get("length", "")
     product_type = product.get("type") or product.get("name", "Kabel")
+    listing_kind = detect_listing_kind(product)
 
     parts = []
 
@@ -21,18 +32,23 @@ def generate_title(product):
         parts.append(f"{power}")
 
     # Product type (например USB-C Ladekabel)
-    if "usb-c" in product_type.lower():
+    if listing_kind == "charger":
+        parts.append("USB-C Ladegerät")
+    elif "usb-c" in product_type.lower():
         parts.append("USB-C Ladekabel")
     else:
         parts.append(product_type)
 
     # Length (например 2m)
-    if length:
+    if length and listing_kind != "charger":
         parts.append(f"{length}")
 
     # SEO Keywords
     parts.append("Schnellladen")
-    parts.append("Datenkabel")
+    if listing_kind == "charger":
+        parts.append("Netzteil")
+    else:
+        parts.append("Datenkabel")
 
     # Финальная сборка
     title = " ".join(parts)
@@ -46,10 +62,10 @@ class ListingBrain:
         return generate_title(product)
 
     def generate_category(self, product):
-        product_type = str(product.get("type") or product.get("name", "")).lower()
-        if any(keyword in product_type for keyword in ("kabel", "cable", "usb-c")):
+        listing_kind = detect_listing_kind(product)
+        if listing_kind == "cable":
             return "Kabel & Adapter"
-        if any(keyword in product_type for keyword in ("ladegerät", "charger", "netzteil")):
+        if listing_kind == "charger":
             return "Ladegeräte"
         return "Handy-Zubehör"
 
@@ -57,9 +73,12 @@ class ListingBrain:
         product_type = product.get("type") or product.get("name", "Kabel")
         power = product.get("power", "")
         length = product.get("length", "")
+        listing_kind = detect_listing_kind(product)
 
         lines = [f"Typ: {product_type}"]
         lines.append(f"Leistung: {power} + Schnellladen" if power else "Leistung: Schnellladen")
+        if listing_kind == "charger":
+            lines.append("Hinweis: Ladegerät, Kabel kann als Zubehör enthalten sein.")
         lines.append(f"Länge: {length}" if length else "Länge: Praktisch")
         lines.append("Zuverlässige Qualität für hohe Kompatibilität.")
         lines.append("✔ Schnellladen")
@@ -87,13 +106,15 @@ class ListingBrain:
         product_type = product.get("type") or product.get("name", "Kabel")
         length = product.get("length", "")
         power = product.get("power", "")
+        listing_kind = detect_listing_kind(product)
         connection = "USB-C" if "usb-c" in str(product_type).lower() else ""
 
         return {
             "Typ": product_type,
-            "Länge": length,
+            "Länge": length if listing_kind == "cable" else "",
             "Leistung": power,
             "Anschluss": connection,
+            "Produktart": "Ladegerät" if listing_kind == "charger" else "Kabel" if listing_kind == "cable" else "Zubehör",
             "Zustand": "Neu",
         }
 
