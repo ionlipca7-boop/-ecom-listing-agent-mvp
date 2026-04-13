@@ -7,6 +7,7 @@ import os
 import shlex
 import subprocess
 import sys
+import json
 from ast import literal_eval
 from datetime import datetime
 from pathlib import Path
@@ -14,6 +15,7 @@ from typing import Dict, List, Optional, Any
 
 LOG_DIR = Path("logs/dev_agent")
 PROJECT_ROOT = Path(__file__).resolve().parent
+HISTORY_DIR = PROJECT_ROOT / "history"
 RUN_LISTING_PIPELINE_SCRIPT = PROJECT_ROOT / "run_listing_pipeline.py"
 INSPECT_RUN_SCRIPT = PROJECT_ROOT / "inspect_run.py"
 EXPORT_RUN_SCRIPT = PROJECT_ROOT / "export_run.py"
@@ -198,6 +200,118 @@ def print_operator_summary(summary: Dict[str, str]) -> None:
     safe_print("---------------------------------\n")
 
 
+def _history_sort_key(path: Path) -> datetime:
+    """Sort history files using timestamp from filename when available."""
+    stem = path.stem
+    core = stem[4:] if stem.startswith("run_") else stem
+    parts = core.split("_")
+    if len(parts) >= 2:
+        token = f"{parts[0]}_{parts[1]}"
+        try:
+            return datetime.strptime(token, "%Y%m%d_%H%M%S")
+        except ValueError:
+            pass
+    return datetime.fromtimestamp(path.stat().st_mtime)
+
+
+def _latest_history_file(history_dir: Path) -> Optional[Path]:
+    files = [path for path in history_dir.glob("run_*.json") if path.is_file()]
+    if not files:
+        return None
+    files.sort(key=_history_sort_key, reverse=True)
+    return files[0]
+
+
+def _collect_ai_summary(listing_result: Any) -> str:
+    if not isinstance(listing_result, dict):
+        return "N/A"
+
+    ai_candidates: List[str] = []
+    for key, value in listing_result.items():
+        if "ai" in key.lower() and value is not None:
+            ai_candidates.append(f"{key}={value}")
+
+    final_bundle = listing_result.get("final_listing_bundle")
+    if isinstance(final_bundle, dict):
+        ai_summary = final_bundle.get("ai_summary")
+        if ai_summary:
+            ai_candidates.append(f"final_listing_bundle.ai_summary={ai_summary}")
+
+    if not ai_candidates:
+        return "N/A"
+
+    first = ai_candidates[0]
+    return first if len(first) <= 180 else f"{first[:177]}..."
+
+
+def extract_compact_inspect_summary() -> Optional[Dict[str, str]]:
+    """Extract compact inspect summary fields from latest history record."""
+    if not HISTORY_DIR.exists() or not HISTORY_DIR.is_dir():
+        return None
+
+    run_path = _latest_history_file(HISTORY_DIR)
+    if run_path is None:
+        return None
+
+    try:
+        with run_path.open("r", encoding="utf-8") as history_file:
+            record = json.load(history_file)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+    listing_result = record.get("listing_result") if isinstance(record, dict) else None
+    pipeline_summary = record.get("pipeline_summary") if isinstance(record, dict) else None
+    publish_result = record.get("publish_result") if isinstance(record, dict) else None
+
+    title = "N/A"
+    category = "N/A"
+    price_value: Any = "N/A"
+    if isinstance(listing_result, dict):
+        title = str(listing_result.get("title") or "N/A")
+        category = str(listing_result.get("category") or "N/A")
+        price_value = listing_result.get("price", "N/A")
+
+    price_label = f"${price_value}" if isinstance(price_value, (int, float)) else str(price_value)
+    quality_score = "N/A"
+    publish_ready = "N/A"
+    warnings_count = "N/A"
+    improvements_count = "N/A"
+    if isinstance(pipeline_summary, dict):
+        quality_score = str(pipeline_summary.get("quality_score", "N/A"))
+        publish_ready = str(pipeline_summary.get("publish_ready", "N/A"))
+        warnings_count = str(pipeline_summary.get("warnings_count", "N/A"))
+        improvements_count = str(pipeline_summary.get("improvements_count", "N/A"))
+
+    publish_status = "N/A"
+    if isinstance(publish_result, dict):
+        publish_status = str(publish_result.get("status", "N/A"))
+
+    timestamp = str(record.get("timestamp") or run_path.stem) if isinstance(record, dict) else run_path.stem
+    history_ref = str(run_path)
+
+    return {
+        "Title": title,
+        "Category": category,
+        "Price": price_label,
+        "Quality Score": quality_score,
+        "Publish Ready": publish_ready,
+        "Publish Status": publish_status,
+        "Timestamp": timestamp,
+        "History / run file": history_ref,
+        "AI Summary": _collect_ai_summary(listing_result),
+        "Warnings count": warnings_count,
+        "Improvements count": improvements_count,
+    }
+
+
+def print_inspect_review_block(summary: Dict[str, str]) -> None:
+    """Print compact operator review block after inspect output."""
+    safe_print("\n--- COMPACT INSPECT REVIEW ---")
+    for label, value in summary.items():
+        safe_print(f"{label}: {value}")
+    safe_print("------------------------------\n")
+
+
 def run_builtin_script(script_path: Path, *args: str) -> None:
     """Run a built-in script from project root with debug path output and existence checks."""
     resolved_script_path = script_path.resolve()
@@ -228,6 +342,13 @@ def run_builtin_script(script_path: Path, *args: str) -> None:
         compact_summary = extract_compact_listing_summary(run_result.get("stdout_text", ""))
         if compact_summary is not None:
             print_operator_summary(compact_summary)
+    if (
+        resolved_script_path == INSPECT_RUN_SCRIPT.resolve()
+        and run_result.get("return_code") == 0
+    ):
+        inspect_summary = extract_compact_inspect_summary()
+        if inspect_summary is not None:
+            print_inspect_review_block(inspect_summary)
 
 
 def display_menu() -> None:
