@@ -57,7 +57,20 @@ class ListingBrain:
         return "\n".join(lines)
 
     def generate_price(self, product):
-        return 5.5
+        power = product.get("power")
+        if not power:
+            return 4.99
+
+        digits = "".join(ch for ch in str(power) if ch.isdigit())
+        if not digits:
+            return 4.99
+
+        watts = int(digits)
+        if watts >= 60:
+            return 7.99
+        if watts >= 30:
+            return 6.49
+        return 4.99
 
     def create_listing(self, product):
         listing = {
