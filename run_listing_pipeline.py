@@ -3,6 +3,7 @@ import sys
 from agent.brain import ListingBrain
 from app.input_parser import InputParser
 from app.listing_optimizer import ListingOptimizer
+from app.run_history import RunHistoryArchive
 from publisher.local_publisher import LocalPublisher
 
 
@@ -39,13 +40,31 @@ def main():
     listing_improvements = listing.get("listing_improvements", listing.get("improvements", [])) if isinstance(listing, dict) else []
     publish_status = publish_result.get("status", "unknown") if isinstance(publish_result, dict) else "unknown"
 
+    pipeline_summary = {
+        "quality_score": listing_quality_score,
+        "publish_ready": publish_ready,
+        "warnings_count": len(listing_warnings) if isinstance(listing_warnings, list) else 0,
+        "improvements_count": len(listing_improvements) if isinstance(listing_improvements, list) else 0,
+        "optimization_notes_count": len(listing.get("optimization_notes", [])) if isinstance(listing, dict) else 0,
+        "publish_status": publish_status,
+    }
+
+    history_path = RunHistoryArchive().save_run(
+        raw_input=raw_text,
+        parsed_product=product,
+        listing_result=listing,
+        publish_result=publish_result,
+        pipeline_summary=pipeline_summary,
+    )
+
     print("PIPELINE SUMMARY:")
-    print(f"- quality_score: {listing_quality_score}")
-    print(f"- publish_ready: {publish_ready}")
-    print(f"- warnings_count: {len(listing_warnings) if isinstance(listing_warnings, list) else 0}")
-    print(f"- improvements_count: {len(listing_improvements) if isinstance(listing_improvements, list) else 0}")
-    print(f"- optimization_notes_count: {len(listing.get('optimization_notes', [])) if isinstance(listing, dict) else 0}")
-    print(f"- publish_status: {publish_status}")
+    print(f"- quality_score: {pipeline_summary['quality_score']}")
+    print(f"- publish_ready: {pipeline_summary['publish_ready']}")
+    print(f"- warnings_count: {pipeline_summary['warnings_count']}")
+    print(f"- improvements_count: {pipeline_summary['improvements_count']}")
+    print(f"- optimization_notes_count: {pipeline_summary['optimization_notes_count']}")
+    print(f"- publish_status: {pipeline_summary['publish_status']}")
+    print(f"- history_path: {history_path}")
 
 
 if __name__ == "__main__":
