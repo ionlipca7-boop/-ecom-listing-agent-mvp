@@ -41,7 +41,7 @@ class ListingBrain:
         return generate_title(product)
 
     def generate_description(self, product):
-        product_type = product.get("type") or product.get("name") or "Kabel"
+        product_type = product.get("type") or product.get("name", "Kabel")
         power = product.get("power", "-")
         length = product.get("length", "-")
 
