@@ -97,6 +97,13 @@ class ListingBrain:
             "Zustand": "Neu",
         }
 
+    def generate_images(self, product):
+        return [
+            "image_main.jpg",
+            "image_angle.jpg",
+            "image_detail.jpg"
+        ]
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
@@ -104,6 +111,7 @@ class ListingBrain:
             "description": self.generate_description(product),
             "price": self.generate_price(product),
             "item_specifics": self.generate_item_specifics(product),
+            "images": self.generate_images(product),
             "status": "draft",
         }
         drafts_dir = Path("drafts")
