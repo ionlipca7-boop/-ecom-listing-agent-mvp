@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from pathlib import Path
 
 
@@ -67,7 +68,12 @@ class ListingBrain:
         }
         drafts_dir = Path("drafts")
         drafts_dir.mkdir(parents=True, exist_ok=True)
-        draft_path = drafts_dir / "draft_listing.json"
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        draft_path = drafts_dir / f"draft_{timestamp}.json"
+        counter = 1
+        while draft_path.exists():
+            draft_path = drafts_dir / f"draft_{timestamp}_{counter}.json"
+            counter += 1
         with draft_path.open("w", encoding="utf-8") as f:
             json.dump(listing, f, ensure_ascii=False, indent=2)
         return listing
