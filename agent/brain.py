@@ -274,7 +274,7 @@ class ListingBrain:
             improvements.append("Add more item specifics")
 
         images = listing.get("images")
-        if not isinstance(images, list) or len(images) < 5:
+        if not isinstance(images, list) or len(images) < 3:
             improvements.append("Add more product images")
 
         price = listing.get("price")
