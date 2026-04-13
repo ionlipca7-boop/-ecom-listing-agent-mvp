@@ -154,6 +154,34 @@ class ListingBrain:
 
         return warnings
 
+    def generate_improvements(self, listing):
+        improvements = []
+
+        title = listing.get("title", "")
+        if len(title) < 55:
+            improvements.append("Title could be longer for better SEO")
+
+        description = listing.get("description", "")
+        if "Kompatibel" not in description:
+            improvements.append("Add compatibility info to description")
+
+        item_specifics = listing.get("item_specifics")
+        if not isinstance(item_specifics, dict) or len(item_specifics) < 5:
+            improvements.append("Add more item specifics")
+
+        images = listing.get("images")
+        if not isinstance(images, list) or len(images) < 5:
+            improvements.append("Add more product images")
+
+        price = listing.get("price")
+        if price is not None and price < 6:
+            improvements.append("Review pricing strategy")
+
+        if listing.get("listing_quality_score", 0) < 100:
+            improvements.append("Improve listing to reach maximum quality score")
+
+        return improvements
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
@@ -167,6 +195,7 @@ class ListingBrain:
         listing["listing_quality_score"] = self.generate_quality_score(listing)
         listing["publish_ready"] = self.generate_publish_ready(listing)
         listing["listing_warnings"] = self.generate_warnings(listing)
+        listing["listing_improvements"] = self.generate_improvements(listing)
         drafts_dir = Path("drafts")
         drafts_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
