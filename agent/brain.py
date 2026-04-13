@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+
+
 def generate_title(product):
     """
     eBay SEO Title Generator
@@ -55,12 +59,18 @@ class ListingBrain:
         return 5.5
 
     def create_listing(self, product):
-        return {
+        listing = {
             "title": self.generate_title(product),
             "description": self.generate_description(product),
             "price": self.generate_price(product),
             "status": "draft",
         }
+        drafts_dir = Path("drafts")
+        drafts_dir.mkdir(parents=True, exist_ok=True)
+        draft_path = drafts_dir / "draft_listing.json"
+        with draft_path.open("w", encoding="utf-8") as f:
+            json.dump(listing, f, ensure_ascii=False, indent=2)
+        return listing
 
     # Совместимость с test_run.py
     def create_listing_plan(self, product):
