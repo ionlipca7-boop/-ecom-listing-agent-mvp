@@ -11,7 +11,7 @@ import json
 from ast import literal_eval
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Tuple
 
 LOG_DIR = Path("logs/dev_agent")
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -71,6 +71,28 @@ def build_utf8_env() -> Dict[str, str]:
     return env
 
 
+
+
+def _normalize_windows_shell_command(command: str) -> Tuple[List[str], str]:
+    """Resolve commands with optional Windows shell built-in support."""
+    cmd_parts = normalize_command(command)
+
+    if os.name != "nt":
+        return cmd_parts, command
+
+    builtin_commands = {
+        "assoc", "break", "call", "cd", "chdir", "cls", "color", "copy", "date",
+        "del", "dir", "echo", "endlocal", "erase", "exit", "for", "ftype", "if",
+        "md", "mkdir", "mklink", "move", "path", "pause", "popd", "prompt", "pushd",
+        "rd", "ren", "rename", "rmdir", "set", "setlocal", "shift", "start", "time",
+        "title", "type", "ver", "verify", "vol",
+    }
+    first = cmd_parts[0].lower()
+    if first in builtin_commands:
+        return ["cmd", "/c", command], command
+
+    normalized_display = " ".join(shlex.quote(part) for part in cmd_parts)
+    return cmd_parts, normalized_display
 def run_and_log(
     command: str,
     resolved_script_path: Optional[Path] = None,
@@ -83,7 +105,7 @@ def run_and_log(
     run_cwd = str(PROJECT_ROOT)
 
     try:
-        cmd_parts = normalize_command(command)
+        cmd_parts, normalized_command = _normalize_windows_shell_command(command)
 
         if force_utf8_decode:
             result = subprocess.run(cmd_parts, capture_output=True, text=False, cwd=run_cwd, env=env)
@@ -103,7 +125,7 @@ def run_and_log(
 
         with log_path.open("w", encoding="utf-8") as log_file:
             log_file.write(f"timestamp: {datetime.now().isoformat()}\n")
-            log_file.write(f"command: {command}\n")
+            log_file.write(f"command: {normalized_command}\n")
             log_file.write(f"cwd: {run_cwd}\n")
             if resolved_script_path is not None:
                 log_file.write(f"resolved_script_path: {resolved_script_path}\n")
@@ -469,7 +491,11 @@ def display_menu() -> None:
             run_builtin_script(EXPORT_RUN_SCRIPT)
         elif choice == "4":
             custom_command = input("Enter command: ").strip()
-            run_result = run_and_log(custom_command)
+            run_result = run_and_log(
+                custom_command,
+                env=build_utf8_env(),
+                force_utf8_decode=True,
+            )
             custom_review = build_custom_command_review(custom_command, run_result)
             print_custom_command_review_block(custom_review)
         elif choice == "5":
