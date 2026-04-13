@@ -75,11 +75,26 @@ class ListingBrain:
             return 6.49
         return 4.99
 
+    def generate_item_specifics(self, product):
+        product_type = product.get("type") or product.get("name", "Kabel")
+        length = product.get("length", "")
+        power = product.get("power", "")
+        connection = "USB-C" if "usb-c" in str(product_type).lower() else ""
+
+        return {
+            "Typ": product_type,
+            "Länge": length,
+            "Leistung": power,
+            "Anschluss": connection,
+            "Zustand": "Neu",
+        }
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
             "description": self.generate_description(product),
             "price": self.generate_price(product),
+            "item_specifics": self.generate_item_specifics(product),
             "status": "draft",
         }
         drafts_dir = Path("drafts")
