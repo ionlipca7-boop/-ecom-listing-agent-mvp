@@ -14,7 +14,9 @@ def _print_menu():
     print("2. View recent listings")
     print("3. Inspect latest run")
     print("4. Inspect run by file path")
-    print("5. Exit\n")
+    print("5. Export latest run")
+    print("6. Export run by file path")
+    print("7. Exit\n")
 
 
 def _run_listing_pipeline():
@@ -67,10 +69,33 @@ def _inspect_run_by_path():
     print("--- Run inspector finished ---\n")
 
 
+def _export_latest_run():
+    print("\n--- Exporting latest run ---")
+    result = subprocess.run([sys.executable, "export_run.py"])
+    if result.returncode != 0:
+        print(f"Run export exited with code {result.returncode}.")
+    print("--- Run export finished ---\n")
+
+
+def _export_run_by_path():
+    print("\n--- Exporting run by path ---")
+
+    run_path = input("Enter run file path (e.g. history/run_YYYYMMDD_HHMMSS.json): ").strip()
+    if not run_path:
+        print("No file path provided. Returning to menu.")
+        print("--- Run export finished ---\n")
+        return
+
+    result = subprocess.run([sys.executable, "export_run.py", run_path])
+    if result.returncode != 0:
+        print(f"Run export exited with code {result.returncode}.")
+    print("--- Run export finished ---\n")
+
+
 def main():
     while True:
         _print_menu()
-        choice = input("Choose an option (1-5): ").strip()
+        choice = input("Choose an option (1-7): ").strip()
 
         if choice == "1":
             _run_listing_pipeline()
@@ -81,6 +106,10 @@ def main():
         elif choice == "4":
             _inspect_run_by_path()
         elif choice == "5":
+            _export_latest_run()
+        elif choice == "6":
+            _export_run_by_path()
+        elif choice == "7":
             print("Exiting Control Room.")
             break
         else:
