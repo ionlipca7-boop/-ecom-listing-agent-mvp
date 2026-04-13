@@ -125,6 +125,78 @@ class ListingBrain:
             "image_detail.jpg"
         ]
 
+    def generate_search_intents(self, product):
+        power = str(product.get("power", "")).lower()
+        length = str(product.get("length", "")).lower()
+        listing_kind = detect_listing_kind(product)
+
+        if listing_kind == "charger":
+            intents = [
+                f"{power} usb c charger".strip(),
+                "usb c netzteil schnellladen",
+                f"{power} usb c ladegerät".strip(),
+            ]
+            if length:
+                intents.append(f"usb c ladegerät mit {length} kabel")
+            return [intent for intent in intents if intent]
+
+        cable_intents = [
+            f"usb c cable {length} fast charging".strip(),
+            f"{power} usb c cable".strip(),
+            "usb c kabel schnellladen",
+        ]
+        return [intent for intent in cable_intents if intent]
+
+    def generate_compatibility_keywords(self, product):
+        listing_kind = detect_listing_kind(product)
+        if listing_kind == "charger":
+            return ["USB-C Geräte", "Samsung", "Android", "iPad", "MacBook"]
+        return ["USB-C Geräte", "Samsung", "Android", "MacBook"]
+
+    def generate_use_case_keywords(self, product):
+        listing_kind = detect_listing_kind(product)
+        base = ["Schnellladen", "Alltag", "Reise", "Büro", "Zuhause"]
+        if listing_kind == "charger":
+            return base + ["Ersatznetzteil"]
+        return base + ["Datenübertragung"]
+
+    def generate_seo_keywords(self, product):
+        listing_kind = detect_listing_kind(product)
+        power = product.get("power", "")
+        length = product.get("length", "")
+        if listing_kind == "charger":
+            return [f"USB-C Ladegerät {power}".strip(), "Schnelllade-Netzteil", "USB-C Charger", "Reise Ladegerät"]
+        return [f"USB-C Kabel {length}".strip(), f"USB-C {power}".strip(), "Schnellladekabel", "Datenkabel"]
+
+    def generate_buyer_questions(self, product):
+        listing_kind = detect_listing_kind(product)
+        length = product.get("length", "")
+        if listing_kind == "charger":
+            return [
+                "Ist das Ladegerät für USB-C Geräte geeignet?",
+                "Unterstützt das Ladegerät Schnellladen?",
+                "Ist ein Kabel im Lieferumfang enthalten?",
+            ]
+        return [
+            "Ist das Kabel für Schnellladen geeignet?",
+            f"Wie lang ist das Kabel ({length})?".strip(),
+            "Passt das Kabel zu meinem USB-C Gerät?",
+        ]
+
+    def generate_ai_summary(self, product):
+        listing_kind = detect_listing_kind(product)
+        power = product.get("power", "")
+        length = product.get("length", "")
+        if listing_kind == "charger":
+            return (
+                f"Kompaktes USB-C Ladegerät mit {power} für schnelles und zuverlässiges Laden "
+                "im Alltag, im Büro und auf Reisen."
+            ).strip()
+        return (
+            f"Robustes USB-C Kabel mit {length} Länge und {power}, geeignet für Schnellladen "
+            "und tägliche Nutzung zu Hause, im Büro oder unterwegs."
+        ).strip()
+
     def generate_quality_score(self, listing):
         score = 0
 
@@ -211,6 +283,12 @@ class ListingBrain:
             "price": listing.get("price"),
             "item_specifics": listing.get("item_specifics", {}),
             "images": listing.get("images", []),
+            "search_intents": listing.get("search_intents", []),
+            "compatibility_keywords": listing.get("compatibility_keywords", []),
+            "use_case_keywords": listing.get("use_case_keywords", []),
+            "seo_keywords": listing.get("seo_keywords", []),
+            "buyer_questions": listing.get("buyer_questions", []),
+            "ai_summary": listing.get("ai_summary", ""),
             "status": listing.get("status"),
             "publish_ready": listing.get("publish_ready", False),
         }
@@ -223,6 +301,12 @@ class ListingBrain:
             "price": self.generate_price(product),
             "item_specifics": self.generate_item_specifics(product),
             "images": self.generate_images(product),
+            "search_intents": self.generate_search_intents(product),
+            "compatibility_keywords": self.generate_compatibility_keywords(product),
+            "use_case_keywords": self.generate_use_case_keywords(product),
+            "seo_keywords": self.generate_seo_keywords(product),
+            "buyer_questions": self.generate_buyer_questions(product),
+            "ai_summary": self.generate_ai_summary(product),
             "status": "draft",
         }
         listing["listing_quality_score"] = self.generate_quality_score(listing)
