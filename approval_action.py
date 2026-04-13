@@ -99,7 +99,10 @@ def _set_status(record, new_status):
     if not isinstance(listing_result, dict):
         return
 
+    is_publish_ready = new_status == "publish_ready"
+
     listing_result["approval_status"] = new_status
+    listing_result["publish_ready"] = is_publish_ready
 
     current_status = listing_result.get("status")
     if isinstance(current_status, str) and current_status in CONTROL_STATUSES:
@@ -108,6 +111,7 @@ def _set_status(record, new_status):
     final_bundle = listing_result.get("final_listing_bundle")
     if isinstance(final_bundle, dict):
         final_bundle["approval_status"] = new_status
+        final_bundle["publish_ready"] = is_publish_ready
         bundle_status = final_bundle.get("status")
         if isinstance(bundle_status, str) and bundle_status in CONTROL_STATUSES:
             final_bundle["status"] = new_status
@@ -115,6 +119,7 @@ def _set_status(record, new_status):
     pipeline_summary = record.get("pipeline_summary") if isinstance(record, dict) else None
     if isinstance(pipeline_summary, dict):
         pipeline_summary["approval_status"] = new_status
+        pipeline_summary["publish_ready"] = is_publish_ready
 
 
 def _apply_action(old_status, action, quality_gate_ready):

@@ -106,7 +106,7 @@ def _read_run_row(path, record):
         )
     )
 
-    publish_ready = approval_status == "publish_ready" or quality_gate_ready
+    publish_ready = approval_status == "publish_ready"
 
     return {
         "file_name": path.name,

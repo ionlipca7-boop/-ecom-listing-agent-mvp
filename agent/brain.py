@@ -312,7 +312,7 @@ class ListingBrain:
             "buyer_questions": listing.get("buyer_questions", []),
             "ai_summary": listing.get("ai_summary", ""),
             "status": listing.get("status"),
-            "approval_status": listing.get("status"),
+            "approval_status": listing.get("approval_status", listing.get("status")),
             "quality_gate_ready": listing.get("quality_gate_ready", False),
             "publish_ready": listing.get("publish_ready", False),
         }
@@ -336,6 +336,7 @@ class ListingBrain:
         listing["listing_quality_score"] = self.generate_quality_score(listing)
         listing["quality_gate_ready"] = self.generate_publish_ready(listing)
         listing["status"] = self.generate_approval_status(listing)
+        listing["approval_status"] = listing["status"]
         listing["publish_ready"] = listing["status"] == "publish_ready"
         listing["listing_warnings"] = self.generate_warnings(listing)
         listing["listing_improvements"] = self.generate_improvements(listing)
