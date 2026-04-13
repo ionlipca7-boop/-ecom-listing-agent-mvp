@@ -312,6 +312,68 @@ def print_inspect_review_block(summary: Dict[str, str]) -> None:
     safe_print("------------------------------\n")
 
 
+def extract_compact_export_summary(stdout_text: str) -> Optional[Dict[str, str]]:
+    """Extract compact export summary fields after successful export."""
+    export_path: Optional[Path] = None
+    for line in stdout_text.splitlines():
+        if line.startswith("Export created:"):
+            export_raw_path = line.split(":", 1)[1].strip()
+            if export_raw_path:
+                export_path = (PROJECT_ROOT / export_raw_path).resolve()
+            break
+
+    if export_path is None:
+        return None
+
+    export_stem = export_path.stem
+    history_path = (HISTORY_DIR / f"{export_stem}.json").resolve()
+    if not history_path.exists() or not history_path.is_file():
+        return {
+            "Export file path": str(export_path),
+            "Source history file": "N/A",
+            "Title": "N/A",
+            "Category": "N/A",
+            "Price": "N/A",
+            "Publish status": "N/A",
+            "Timestamp": "N/A",
+            "Next hint": "Run option 2 (Inspect latest run)",
+        }
+
+    try:
+        with history_path.open("r", encoding="utf-8") as history_file:
+            record = json.load(history_file)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+    listing_result = record.get("listing_result") if isinstance(record, dict) else None
+    publish_result = record.get("publish_result") if isinstance(record, dict) else None
+    title = str(listing_result.get("title") or "N/A") if isinstance(listing_result, dict) else "N/A"
+    category = str(listing_result.get("category") or "N/A") if isinstance(listing_result, dict) else "N/A"
+    price_value = listing_result.get("price", "N/A") if isinstance(listing_result, dict) else "N/A"
+    price_label = f"${price_value}" if isinstance(price_value, (int, float)) else str(price_value)
+    publish_status = str(publish_result.get("status", "N/A")) if isinstance(publish_result, dict) else "N/A"
+    timestamp = str(record.get("timestamp") or history_path.stem) if isinstance(record, dict) else history_path.stem
+
+    return {
+        "Export file path": str(export_path),
+        "Source history file": str(history_path),
+        "Title": title,
+        "Category": category,
+        "Price": price_label,
+        "Publish status": publish_status,
+        "Timestamp": timestamp,
+        "Next hint": "Run option 2 (Inspect latest run)",
+    }
+
+
+def print_export_review_block(summary: Dict[str, str]) -> None:
+    """Print compact export review block for operator."""
+    safe_print("\n--- COMPACT EXPORT REVIEW ---")
+    for label, value in summary.items():
+        safe_print(f"{label}: {value}")
+    safe_print("-----------------------------\n")
+
+
 def run_builtin_script(script_path: Path, *args: str) -> None:
     """Run a built-in script from project root with debug path output and existence checks."""
     resolved_script_path = script_path.resolve()
@@ -349,6 +411,13 @@ def run_builtin_script(script_path: Path, *args: str) -> None:
         inspect_summary = extract_compact_inspect_summary()
         if inspect_summary is not None:
             print_inspect_review_block(inspect_summary)
+    if (
+        resolved_script_path == EXPORT_RUN_SCRIPT.resolve()
+        and run_result.get("return_code") == 0
+    ):
+        export_summary = extract_compact_export_summary(run_result.get("stdout_text", ""))
+        if export_summary is not None:
+            print_export_review_block(export_summary)
 
 
 def display_menu() -> None:
