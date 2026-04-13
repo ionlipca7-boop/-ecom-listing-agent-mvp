@@ -129,6 +129,31 @@ class ListingBrain:
     def generate_publish_ready(self, listing):
         return listing.get("listing_quality_score", 0) >= 80
 
+    def generate_warnings(self, listing):
+        warnings = []
+
+        if not listing.get("title"):
+            warnings.append("Missing title")
+        if not listing.get("category"):
+            warnings.append("Missing category")
+        if not listing.get("description"):
+            warnings.append("Missing description")
+        if not listing.get("price"):
+            warnings.append("Missing price")
+
+        item_specifics = listing.get("item_specifics")
+        if not isinstance(item_specifics, dict) or not item_specifics:
+            warnings.append("Missing item specifics")
+
+        images = listing.get("images")
+        if not isinstance(images, list) or len(images) < 3:
+            warnings.append("Not enough images")
+
+        if listing.get("listing_quality_score", 0) < 80:
+            warnings.append("Quality score below publish threshold")
+
+        return warnings
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
@@ -141,6 +166,7 @@ class ListingBrain:
         }
         listing["listing_quality_score"] = self.generate_quality_score(listing)
         listing["publish_ready"] = self.generate_publish_ready(listing)
+        listing["listing_warnings"] = self.generate_warnings(listing)
         drafts_dir = Path("drafts")
         drafts_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
