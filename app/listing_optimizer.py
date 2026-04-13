@@ -18,8 +18,16 @@ class ListingOptimizer:
             product_type = "USB-C Ladekabel"
 
         seo_tail = "Netzteil" if product_kind == "ladegerät" else "Datenkabel"
+        seo_extension = "Schnellladegerät" if product_kind == "ladegerät" else "Schnellladekabel"
         title_length = "" if product_kind == "ladegerät" else length
         parts = [part for part in (power, product_type, title_length, "Schnellladen", seo_tail) if part]
+
+        # Точечное SEO-улучшение: если title всё ещё короткий, добавляем
+        # один релевантный high-intent keyword ("Schnellladekabel"/"Schnellladegerät"), чтобы усилить
+        # поисковое покрытие без изменения общей структуры пайплайна.
+        tentative_title = " ".join(parts).strip()
+        if len(tentative_title) < 55 and seo_extension.lower() not in tentative_title.lower():
+            parts.append(seo_extension)
         optimized_title = " ".join(parts).strip()
 
         return optimized_title[:80]
