@@ -8,9 +8,13 @@ import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 LOG_DIR = Path("logs/dev_agent")
+PROJECT_ROOT = Path(__file__).resolve().parent
+RUN_LISTING_PIPELINE_SCRIPT = PROJECT_ROOT / "run_listing_pipeline.py"
+INSPECT_RUN_SCRIPT = PROJECT_ROOT / "inspect_run.py"
+EXPORT_RUN_SCRIPT = PROJECT_ROOT / "export_run.py"
 
 
 def ensure_log_dir() -> None:
@@ -46,21 +50,19 @@ def normalize_command(command: str) -> List[str]:
     return parts
 
 
-def run_and_log(command: str) -> None:
+def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> None:
     """Run command, print output, and save run details to a timestamped log file."""
     ensure_log_dir()
     log_path = build_log_path()
+    run_cwd = str(PROJECT_ROOT)
 
     try:
         cmd_parts = normalize_command(command)
-        result = subprocess.run(cmd_parts, capture_output=True, text=True)
+        result = subprocess.run(cmd_parts, capture_output=True, text=True, cwd=run_cwd)
 
-        output_chunks = []
-        if result.stdout:
-            output_chunks.append(result.stdout)
-        if result.stderr:
-            output_chunks.append(result.stderr)
-        output_text = "\n".join(chunk.rstrip("\n") for chunk in output_chunks if chunk)
+        stdout_text = result.stdout.rstrip("\n") if result.stdout else ""
+        stderr_text = result.stderr.rstrip("\n") if result.stderr else ""
+        output_text = "\n".join(chunk for chunk in [stdout_text, stderr_text] if chunk)
 
         if output_text:
             print(output_text)
@@ -70,9 +72,14 @@ def run_and_log(command: str) -> None:
         with log_path.open("w", encoding="utf-8") as log_file:
             log_file.write(f"timestamp: {datetime.now().isoformat()}\n")
             log_file.write(f"command: {command}\n")
+            log_file.write(f"cwd: {run_cwd}\n")
+            if resolved_script_path is not None:
+                log_file.write(f"resolved_script_path: {resolved_script_path}\n")
             log_file.write(f"return_code: {result.returncode}\n\n")
-            log_file.write("output:\n")
-            log_file.write(output_text if output_text else "(No output)")
+            log_file.write("stdout:\n")
+            log_file.write(stdout_text if stdout_text else "(No output)")
+            log_file.write("\n\nstderr:\n")
+            log_file.write(stderr_text if stderr_text else "(No output)")
             log_file.write("\n")
 
         print(f"\nLog saved: {log_path}")
@@ -84,11 +91,34 @@ def run_and_log(command: str) -> None:
         with log_path.open("w", encoding="utf-8") as log_file:
             log_file.write(f"timestamp: {datetime.now().isoformat()}\n")
             log_file.write(f"command: {command}\n")
+            log_file.write(f"cwd: {run_cwd}\n")
+            if resolved_script_path is not None:
+                log_file.write(f"resolved_script_path: {resolved_script_path}\n")
             log_file.write("return_code: N/A\n\n")
             log_file.write("output:\n")
             log_file.write(error_msg + "\n")
 
         print(f"Log saved: {log_path}")
+
+
+def run_builtin_script(script_path: Path, *args: str) -> None:
+    """Run a built-in script from project root with debug path output and existence checks."""
+    resolved_script_path = script_path.resolve()
+    print(f"Resolved script path: {resolved_script_path}")
+
+    if not resolved_script_path.exists():
+        print(f"Error: built-in script not found: {resolved_script_path}")
+        return
+
+    if not resolved_script_path.is_file():
+        print(f"Error: built-in script path is not a file: {resolved_script_path}")
+        return
+
+    cmd_parts = [sys.executable, str(resolved_script_path), *args]
+    command = " ".join(shlex.quote(part) for part in cmd_parts)
+    print(f"Built-in command: {command}")
+    print(f"Built-in cwd: {PROJECT_ROOT}")
+    run_and_log(command, resolved_script_path=resolved_script_path)
 
 
 def display_menu() -> None:
@@ -106,11 +136,15 @@ def display_menu() -> None:
         choice = input("\nSelect an option: ").strip()
 
         if choice == "1":
-            run_and_log(f"{sys.executable} run_listing_pipeline.py")
+            product_input = input("Enter product details: ").strip()
+            if not product_input:
+                print("No input provided. Returning to menu.")
+                continue
+            run_builtin_script(RUN_LISTING_PIPELINE_SCRIPT, product_input)
         elif choice == "2":
-            run_and_log(f"{sys.executable} inspect_run.py")
+            run_builtin_script(INSPECT_RUN_SCRIPT)
         elif choice == "3":
-            run_and_log(f"{sys.executable} export_run.py")
+            run_builtin_script(EXPORT_RUN_SCRIPT)
         elif choice == "4":
             custom_command = input("Enter command: ").strip()
             run_and_log(custom_command)
