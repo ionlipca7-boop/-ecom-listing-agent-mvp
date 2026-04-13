@@ -64,14 +64,54 @@ class ListingOptimizer:
 
     def _optimize_price(self, listing):
         """
-        Может слегка скорректировать цену (+1€ или +2€).
+        Точечно повышает предсказуемость цены:
+        - учитывает тип товара, мощность и длину;
+        - поднимает цену только если текущая ниже ожидаемой;
+        - не снижает цену и не меняет output contract.
         """
-        price = listing.get("price") if isinstance(listing, dict) else None
+        if not isinstance(listing, dict):
+            return listing
+
+        price = listing.get("price")
         if not isinstance(price, (int, float)):
             return price
 
-        increment = 2 if price >= 7 else 1
-        return round(price + increment, 2)
+        item_specifics = listing.get("item_specifics", {})
+        if not isinstance(item_specifics, dict):
+            item_specifics = {}
+
+        product_kind = str(item_specifics.get("Produktart") or "").strip().lower()
+        power_raw = str(item_specifics.get("Leistung") or "")
+        length_raw = str(item_specifics.get("Länge") or "")
+
+        power_digits = "".join(ch for ch in power_raw if ch.isdigit())
+        watts = int(power_digits) if power_digits else 0
+
+        length_normalized = length_raw.replace(",", ".").lower()
+        length_digits = "".join(ch for ch in length_normalized if ch.isdigit() or ch == ".")
+        length_m = float(length_digits) if length_digits else 0.0
+
+        if product_kind == "ladegerät":
+            if watts >= 60:
+                expected_price = 7.99
+            elif watts >= 30:
+                expected_price = 6.49
+            else:
+                expected_price = 4.99
+        else:
+            if watts >= 60:
+                expected_price = 6.49
+            elif watts >= 30:
+                expected_price = 5.49
+            else:
+                expected_price = 4.99
+
+            if length_m >= 3:
+                expected_price += 1.0
+            elif length_m >= 2:
+                expected_price += 0.5
+
+        return round(max(price, expected_price), 2)
 
     def _optimize_item_specifics(self, listing):
         """
