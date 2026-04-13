@@ -1,5 +1,9 @@
 import subprocess
 import sys
+from pathlib import Path
+
+
+HISTORY_DIR = Path("history")
 
 
 def _print_menu():
@@ -8,7 +12,9 @@ def _print_menu():
     print("============================\n")
     print("1. Create new listing")
     print("2. View recent listings")
-    print("3. Exit\n")
+    print("3. Inspect latest run")
+    print("4. Inspect run by file path")
+    print("5. Exit\n")
 
 
 def _run_listing_pipeline():
@@ -33,16 +39,48 @@ def _view_recent_listings():
     print("--- History viewer finished ---\n")
 
 
+def _inspect_latest_run():
+    print("\n--- Inspecting latest run ---")
+    result = subprocess.run([sys.executable, "inspect_run.py"])
+    if result.returncode != 0:
+        print(f"Run inspector exited with code {result.returncode}.")
+    print("--- Run inspector finished ---\n")
+
+
+def _inspect_run_by_path():
+    print("\n--- Inspecting run by path ---")
+
+    if not HISTORY_DIR.exists() or not HISTORY_DIR.is_dir():
+        print("No history found. The 'history/' folder does not exist yet.")
+        print("--- Run inspector finished ---\n")
+        return
+
+    run_path = input("Enter run file path (e.g. history/run_YYYYMMDD_HHMMSS.json): ").strip()
+    if not run_path:
+        print("No file path provided. Returning to menu.")
+        print("--- Run inspector finished ---\n")
+        return
+
+    result = subprocess.run([sys.executable, "inspect_run.py", run_path])
+    if result.returncode != 0:
+        print(f"Run inspector exited with code {result.returncode}.")
+    print("--- Run inspector finished ---\n")
+
+
 def main():
     while True:
         _print_menu()
-        choice = input("Choose an option (1-3): ").strip()
+        choice = input("Choose an option (1-5): ").strip()
 
         if choice == "1":
             _run_listing_pipeline()
         elif choice == "2":
             _view_recent_listings()
         elif choice == "3":
+            _inspect_latest_run()
+        elif choice == "4":
+            _inspect_run_by_path()
+        elif choice == "5":
             print("Exiting Control Room.")
             break
         else:
