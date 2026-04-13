@@ -10,11 +10,16 @@ class ListingOptimizer:
         power = str(item_specifics.get("Leistung") or "").strip()
         product_type = str(item_specifics.get("Typ") or listing.get("category") or "Kabel").strip()
         length = str(item_specifics.get("Länge") or "").strip()
+        product_kind = str(item_specifics.get("Produktart") or "").strip().lower()
 
-        if "usb-c" in product_type.lower() and "ladekabel" not in product_type.lower():
+        if product_kind == "ladegerät":
+            product_type = "USB-C Ladegerät"
+        elif "usb-c" in product_type.lower() and "ladekabel" not in product_type.lower():
             product_type = "USB-C Ladekabel"
 
-        parts = [part for part in (power, product_type, length, "Schnellladen", "Datenkabel") if part]
+        seo_tail = "Netzteil" if product_kind == "ladegerät" else "Datenkabel"
+        title_length = "" if product_kind == "ladegerät" else length
+        parts = [part for part in (power, product_type, title_length, "Schnellladen", seo_tail) if part]
         optimized_title = " ".join(parts).strip()
 
         return optimized_title[:80]
