@@ -54,6 +54,9 @@ class ListingBrain:
         lines.append(f"Leistung: {power} + Schnellladen" if power else "Leistung: Schnellladen")
         lines.append(f"Länge: {length}" if length else "Länge: Praktisch")
         lines.append("Zuverlässige Qualität für hohe Kompatibilität.")
+        lines.append("✔ Schnellladen")
+        lines.append("✔ Hohe Qualität")
+        lines.append("✔ Kompatibel mit vielen Geräten")
         return "\n".join(lines)
 
     def generate_price(self, product):
