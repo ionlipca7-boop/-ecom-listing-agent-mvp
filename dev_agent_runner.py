@@ -7,9 +7,10 @@ import os
 import shlex
 import subprocess
 import sys
+from ast import literal_eval
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 
 LOG_DIR = Path("logs/dev_agent")
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -73,7 +74,7 @@ def run_and_log(
     resolved_script_path: Optional[Path] = None,
     env: Optional[Dict[str, str]] = None,
     force_utf8_decode: bool = False,
-) -> None:
+) -> Dict[str, Any]:
     """Run command, print output, and save run details to a timestamped log file."""
     ensure_log_dir()
     log_path = build_log_path()
@@ -114,6 +115,12 @@ def run_and_log(
             log_file.write("\n")
 
         safe_print(f"\nLog saved: {log_path}")
+        return {
+            "return_code": result.returncode,
+            "stdout_text": stdout_text,
+            "stderr_text": stderr_text,
+            "log_path": log_path,
+        }
 
     except (ValueError, FileNotFoundError) as exc:
         error_msg = f"Error: {exc}"
@@ -130,6 +137,65 @@ def run_and_log(
             log_file.write(error_msg + "\n")
 
         safe_print(f"Log saved: {log_path}")
+        return {
+            "return_code": None,
+            "stdout_text": "",
+            "stderr_text": error_msg,
+            "log_path": log_path,
+        }
+
+
+def extract_compact_listing_summary(stdout_text: str) -> Optional[Dict[str, str]]:
+    """Extract compact pipeline summary fields from run_listing_pipeline output."""
+    lines = stdout_text.splitlines()
+    listing: Dict[str, Any] = {}
+    summary: Dict[str, str] = {}
+
+    for index, line in enumerate(lines):
+        if line.strip() == "LISTING RESULT:" and index + 1 < len(lines):
+            listing_line = lines[index + 1].strip()
+            try:
+                parsed_listing = literal_eval(listing_line)
+                if isinstance(parsed_listing, dict):
+                    listing = parsed_listing
+            except (ValueError, SyntaxError):
+                pass
+
+        if line.startswith("- "):
+            payload = line[2:]
+            if ":" not in payload:
+                continue
+            key, value = payload.split(":", 1)
+            summary[key.strip()] = value.strip()
+
+    if not summary:
+        return None
+
+    title = str(listing.get("title") or "N/A")
+    category = str(listing.get("category") or "N/A")
+    price = listing.get("price")
+    price_label = f"${price}" if isinstance(price, (int, float)) else str(price or "N/A")
+
+    return {
+        "Title": title,
+        "Category": category,
+        "Price": price_label,
+        "Quality Score": summary.get("quality_score", "N/A"),
+        "Publish Ready": summary.get("publish_ready", "N/A"),
+        "Warnings count": summary.get("warnings_count", "N/A"),
+        "Improvements count": summary.get("improvements_count", "N/A"),
+        "Publish status": summary.get("publish_status", "N/A"),
+        "History path": summary.get("history_path", "N/A"),
+    }
+
+
+def print_operator_summary(summary: Dict[str, str]) -> None:
+    """Print compact control-room-style summary after successful pipeline run."""
+    safe_print("\n--- MINI CONTROL ROOM SUMMARY ---")
+    for label, value in summary.items():
+        safe_print(f"{label}: {value}")
+    safe_print("Export hint: run option 3 (Export latest run)")
+    safe_print("---------------------------------\n")
 
 
 def run_builtin_script(script_path: Path, *args: str) -> None:
@@ -149,12 +215,19 @@ def run_builtin_script(script_path: Path, *args: str) -> None:
     command = " ".join(shlex.quote(part) for part in cmd_parts)
     safe_print(f"Built-in command: {command}")
     safe_print(f"Built-in cwd: {PROJECT_ROOT}")
-    run_and_log(
+    run_result = run_and_log(
         command,
         resolved_script_path=resolved_script_path,
         env=build_utf8_env(),
         force_utf8_decode=True,
     )
+    if (
+        resolved_script_path == RUN_LISTING_PIPELINE_SCRIPT.resolve()
+        and run_result.get("return_code") == 0
+    ):
+        compact_summary = extract_compact_listing_summary(run_result.get("stdout_text", ""))
+        if compact_summary is not None:
+            print_operator_summary(compact_summary)
 
 
 def display_menu() -> None:
