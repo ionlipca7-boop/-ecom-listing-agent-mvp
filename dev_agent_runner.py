@@ -3,12 +3,13 @@
 
 from __future__ import annotations
 
+import os
 import shlex
 import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import List, Optional
+from typing import Dict, List, Optional
 
 LOG_DIR = Path("logs/dev_agent")
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -50,7 +51,29 @@ def normalize_command(command: str) -> List[str]:
     return parts
 
 
-def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> None:
+def safe_print(message: str) -> None:
+    """Print text safely even when terminal encoding cannot represent all characters."""
+    try:
+        print(message)
+    except UnicodeEncodeError:
+        stdout_encoding = sys.stdout.encoding or "utf-8"
+        sanitized = message.encode(stdout_encoding, errors="replace").decode(stdout_encoding, errors="replace")
+        print(sanitized)
+
+
+def build_utf8_env() -> Dict[str, str]:
+    """Build a UTF-8-safe child process environment."""
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    return env
+
+
+def run_and_log(
+    command: str,
+    resolved_script_path: Optional[Path] = None,
+    env: Optional[Dict[str, str]] = None,
+    force_utf8_decode: bool = False,
+) -> None:
     """Run command, print output, and save run details to a timestamped log file."""
     ensure_log_dir()
     log_path = build_log_path()
@@ -58,16 +81,22 @@ def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> No
 
     try:
         cmd_parts = normalize_command(command)
-        result = subprocess.run(cmd_parts, capture_output=True, text=True, cwd=run_cwd)
 
-        stdout_text = result.stdout.rstrip("\n") if result.stdout else ""
-        stderr_text = result.stderr.rstrip("\n") if result.stderr else ""
+        if force_utf8_decode:
+            result = subprocess.run(cmd_parts, capture_output=True, text=False, cwd=run_cwd, env=env)
+            stdout_text = result.stdout.decode("utf-8", errors="replace").rstrip("\n") if result.stdout else ""
+            stderr_text = result.stderr.decode("utf-8", errors="replace").rstrip("\n") if result.stderr else ""
+        else:
+            result = subprocess.run(cmd_parts, capture_output=True, text=True, cwd=run_cwd, env=env)
+            stdout_text = result.stdout.rstrip("\n") if result.stdout else ""
+            stderr_text = result.stderr.rstrip("\n") if result.stderr else ""
+
         output_text = "\n".join(chunk for chunk in [stdout_text, stderr_text] if chunk)
 
         if output_text:
-            print(output_text)
+            safe_print(output_text)
         else:
-            print("(No output)")
+            safe_print("(No output)")
 
         with log_path.open("w", encoding="utf-8") as log_file:
             log_file.write(f"timestamp: {datetime.now().isoformat()}\n")
@@ -75,6 +104,8 @@ def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> No
             log_file.write(f"cwd: {run_cwd}\n")
             if resolved_script_path is not None:
                 log_file.write(f"resolved_script_path: {resolved_script_path}\n")
+            if env is not None and "PYTHONIOENCODING" in env:
+                log_file.write(f"PYTHONIOENCODING: {env['PYTHONIOENCODING']}\n")
             log_file.write(f"return_code: {result.returncode}\n\n")
             log_file.write("stdout:\n")
             log_file.write(stdout_text if stdout_text else "(No output)")
@@ -82,11 +113,11 @@ def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> No
             log_file.write(stderr_text if stderr_text else "(No output)")
             log_file.write("\n")
 
-        print(f"\nLog saved: {log_path}")
+        safe_print(f"\nLog saved: {log_path}")
 
     except (ValueError, FileNotFoundError) as exc:
         error_msg = f"Error: {exc}"
-        print(error_msg)
+        safe_print(error_msg)
 
         with log_path.open("w", encoding="utf-8") as log_file:
             log_file.write(f"timestamp: {datetime.now().isoformat()}\n")
@@ -98,27 +129,32 @@ def run_and_log(command: str, resolved_script_path: Optional[Path] = None) -> No
             log_file.write("output:\n")
             log_file.write(error_msg + "\n")
 
-        print(f"Log saved: {log_path}")
+        safe_print(f"Log saved: {log_path}")
 
 
 def run_builtin_script(script_path: Path, *args: str) -> None:
     """Run a built-in script from project root with debug path output and existence checks."""
     resolved_script_path = script_path.resolve()
-    print(f"Resolved script path: {resolved_script_path}")
+    safe_print(f"Resolved script path: {resolved_script_path}")
 
     if not resolved_script_path.exists():
-        print(f"Error: built-in script not found: {resolved_script_path}")
+        safe_print(f"Error: built-in script not found: {resolved_script_path}")
         return
 
     if not resolved_script_path.is_file():
-        print(f"Error: built-in script path is not a file: {resolved_script_path}")
+        safe_print(f"Error: built-in script path is not a file: {resolved_script_path}")
         return
 
     cmd_parts = [sys.executable, str(resolved_script_path), *args]
     command = " ".join(shlex.quote(part) for part in cmd_parts)
-    print(f"Built-in command: {command}")
-    print(f"Built-in cwd: {PROJECT_ROOT}")
-    run_and_log(command, resolved_script_path=resolved_script_path)
+    safe_print(f"Built-in command: {command}")
+    safe_print(f"Built-in cwd: {PROJECT_ROOT}")
+    run_and_log(
+        command,
+        resolved_script_path=resolved_script_path,
+        env=build_utf8_env(),
+        force_utf8_decode=True,
+    )
 
 
 def display_menu() -> None:
