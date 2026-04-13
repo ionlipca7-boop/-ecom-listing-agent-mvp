@@ -42,16 +42,15 @@ class ListingBrain:
 
     def generate_description(self, product):
         product_type = product.get("type") or product.get("name", "Kabel")
-        power = product.get("power", "")
-        length = product.get("length", "")
+        power = product.get("power", "-")
+        length = product.get("length", "-")
 
-        details = [f"Produkt: {product_type}"]
-        if power:
-            details.append(f"Leistung: {power} (Schnellladen)")
-        if length:
-            details.append(f"Laenge: {length}")
-
-        details.append("Zuverlaessiges Kabel fuer Laden und Datentransfer.")
+        details = [
+            f"Produkt: {product_type}",
+            f"Leistung: {power}",
+            f"Laenge: {length}",
+            "Geeignet fuer Laden und Datentransfer.",
+        ]
         return "\n".join(details)
 
     def generate_price(self, product):
