@@ -3,9 +3,11 @@ from app.input_parser import InputParser
 from publisher.local_publisher import LocalPublisher
 
 
+RAW_TEXT = "USB-C cable 2m 60W fast charging"
+
+
 def main():
-    raw_text = "USB-C cable 2m 60W fast charging"
-    product = InputParser().parse_text(raw_text)
+    product = InputParser().parse_text(RAW_TEXT)
 
     brain = ListingBrain()
     listing = brain.create_listing(product)
