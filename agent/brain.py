@@ -182,6 +182,18 @@ class ListingBrain:
 
         return improvements
 
+    def generate_final_listing_bundle(self, listing):
+        return {
+            "title": listing.get("title"),
+            "category": listing.get("category"),
+            "description": listing.get("description"),
+            "price": listing.get("price"),
+            "item_specifics": listing.get("item_specifics", {}),
+            "images": listing.get("images", []),
+            "status": listing.get("status"),
+            "publish_ready": listing.get("publish_ready", False),
+        }
+
     def create_listing(self, product):
         listing = {
             "title": self.generate_title(product),
@@ -196,6 +208,7 @@ class ListingBrain:
         listing["publish_ready"] = self.generate_publish_ready(listing)
         listing["listing_warnings"] = self.generate_warnings(listing)
         listing["listing_improvements"] = self.generate_improvements(listing)
+        listing["final_listing_bundle"] = self.generate_final_listing_bundle(listing)
         drafts_dir = Path("drafts")
         drafts_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
