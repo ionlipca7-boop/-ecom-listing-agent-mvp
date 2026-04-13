@@ -1,4 +1,27 @@
 class ListingOptimizer:
+    TITLE_MIN_SEO_LENGTH = 40
+
+    def _is_title_length_good(self, title):
+        normalized_title = " ".join(str(title or "").split())
+        if len(normalized_title) >= self.TITLE_MIN_SEO_LENGTH:
+            return True
+
+        words = normalized_title.split()
+        return len(words) >= 5 and any("usb-c" in word.lower() for word in words)
+
+    def _sync_title_improvements(self, listing):
+        improvements = listing.get("listing_improvements")
+        if not isinstance(improvements, list):
+            return
+
+        title_message = "Title could be longer for better SEO"
+        improvements = [item for item in improvements if item != title_message]
+
+        if not self._is_title_length_good(listing.get("title", "")):
+            improvements.append(title_message)
+
+        listing["listing_improvements"] = improvements
+
     def _optimize_title(self, listing):
         """
         Улучшает title по eBay SEO формуле:
@@ -22,12 +45,19 @@ class ListingOptimizer:
         title_length = "" if product_kind == "ladegerät" else length
         parts = [part for part in (power, product_type, title_length, "Schnellladen", seo_tail) if part]
 
-        # Точечное SEO-улучшение: если title всё ещё короткий, добавляем
-        # один релевантный high-intent keyword ("Schnellladekabel"/"Schnellladegerät"), чтобы усилить
-        # поисковое покрытие без изменения общей структуры пайплайна.
+        # Добавляем хвост только если заголовок реально короткий И смысл не дублируется.
         tentative_title = " ".join(parts).strip()
-        if len(tentative_title) < 55 and seo_extension.lower() not in tentative_title.lower():
+        tentative_lower = tentative_title.lower()
+        has_speed_intent = "schnelllad" in tentative_lower or "fast" in tentative_lower
+        has_product_intent = any(keyword in tentative_lower for keyword in ("kabel", "ladegerät", "ladegerat", "netzteil"))
+
+        if (
+            not self._is_title_length_good(tentative_title)
+            and seo_extension.lower() not in tentative_lower
+            and not (has_speed_intent and has_product_intent)
+        ):
             parts.append(seo_extension)
+
         optimized_title = " ".join(parts).strip()
 
         return optimized_title[:80]
@@ -102,6 +132,7 @@ class ListingOptimizer:
         listing["title"] = self._optimize_title(listing)
         listing["price"] = self._optimize_price(listing)
         listing["item_specifics"] = self._optimize_item_specifics(listing)
+        self._sync_title_improvements(listing)
 
         if listing.get("title") != original_title:
             optimization_notes.append("Title optimized for SEO")

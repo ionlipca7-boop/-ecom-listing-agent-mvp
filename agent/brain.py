@@ -58,6 +58,17 @@ def generate_title(product):
 
 
 class ListingBrain:
+
+    TITLE_MIN_SEO_LENGTH = 40
+
+    def _is_title_length_good(self, title):
+        normalized_title = " ".join(str(title or "").split())
+        if len(normalized_title) >= self.TITLE_MIN_SEO_LENGTH:
+            return True
+
+        words = normalized_title.split()
+        return len(words) >= 5 and any("usb-c" in word.lower() for word in words)
+
     def generate_title(self, product):
         return generate_title(product)
 
@@ -251,7 +262,7 @@ class ListingBrain:
         improvements = []
 
         title = listing.get("title", "")
-        if len(title) < 55:
+        if not self._is_title_length_good(title):
             improvements.append("Title could be longer for better SEO")
 
         description = listing.get("description", "")
