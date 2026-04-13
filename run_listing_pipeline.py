@@ -20,6 +20,10 @@ def main():
     optimizer = ListingOptimizer()
     listing = optimizer.optimize(listing)
     listing["final_listing_bundle"] = brain.generate_final_listing_bundle(listing)
+    optimization_notes = listing.get("optimization_notes", [])
+    if isinstance(optimization_notes, list):
+        optimization_notes.append("Final listing bundle rebuilt after optimization")
+        listing["optimization_notes"] = optimization_notes
 
     bundle = listing["final_listing_bundle"]
     publish_result = LocalPublisher().publish(bundle)
@@ -40,6 +44,7 @@ def main():
     print(f"- publish_ready: {publish_ready}")
     print(f"- warnings_count: {len(listing_warnings) if isinstance(listing_warnings, list) else 0}")
     print(f"- improvements_count: {len(listing_improvements) if isinstance(listing_improvements, list) else 0}")
+    print(f"- optimization_notes_count: {len(listing.get('optimization_notes', [])) if isinstance(listing, dict) else 0}")
     print(f"- publish_status: {publish_status}")
 
 

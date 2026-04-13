@@ -34,8 +34,26 @@ class ListingOptimizer:
         if not isinstance(listing, dict):
             return listing
 
+        optimization_notes = []
+        original_title = listing.get("title")
+        original_price = listing.get("price")
+
         listing["title"] = self._optimize_title(listing)
         listing["price"] = self._optimize_price(listing)
+
+        if listing.get("title") != original_title:
+            optimization_notes.append("Title optimized for SEO")
+        if (
+            isinstance(original_price, (int, float))
+            and isinstance(listing.get("price"), (int, float))
+            and listing["price"] > original_price
+        ):
+            optimization_notes.append("Price increased by optimizer")
+
         listing["optimized"] = True
+        if listing.get("optimized") is True:
+            optimization_notes.append("Listing marked as optimized")
+
+        listing["optimization_notes"] = optimization_notes
 
         return listing
