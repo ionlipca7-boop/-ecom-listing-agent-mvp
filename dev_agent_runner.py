@@ -374,6 +374,29 @@ def print_export_review_block(summary: Dict[str, str]) -> None:
     safe_print("-----------------------------\n")
 
 
+def build_custom_command_review(command: str, run_result: Dict[str, Any]) -> Dict[str, str]:
+    """Build compact operator review for option 4 custom commands."""
+    return_code = run_result.get("return_code")
+    status = "success" if return_code == 0 else "failed"
+    next_hint = "Use option 1/2/3 for listing workflow or run another custom command."
+    return {
+        "Command": command or "N/A",
+        "Working directory": str(PROJECT_ROOT),
+        "Exit code": str(return_code if return_code is not None else "N/A"),
+        "Status": status,
+        "Log file path": str(run_result.get("log_path", "N/A")),
+        "Next hint": next_hint,
+    }
+
+
+def print_custom_command_review_block(summary: Dict[str, str]) -> None:
+    """Print compact custom command review block for operator."""
+    safe_print("\n--- COMPACT CUSTOM COMMAND REVIEW ---")
+    for label, value in summary.items():
+        safe_print(f"{label}: {value}")
+    safe_print("-------------------------------------\n")
+
+
 def run_builtin_script(script_path: Path, *args: str) -> None:
     """Run a built-in script from project root with debug path output and existence checks."""
     resolved_script_path = script_path.resolve()
@@ -446,7 +469,9 @@ def display_menu() -> None:
             run_builtin_script(EXPORT_RUN_SCRIPT)
         elif choice == "4":
             custom_command = input("Enter command: ").strip()
-            run_and_log(custom_command)
+            run_result = run_and_log(custom_command)
+            custom_review = build_custom_command_review(custom_command, run_result)
+            print_custom_command_review_block(custom_review)
         elif choice == "5":
             print("Exiting Dev Agent Runner.")
             break
