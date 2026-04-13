@@ -2,6 +2,7 @@ import sys
 
 from agent.brain import ListingBrain
 from app.input_parser import InputParser
+from app.listing_optimizer import ListingOptimizer
 from publisher.local_publisher import LocalPublisher
 
 
@@ -15,6 +16,10 @@ def main():
 
     brain = ListingBrain()
     listing = brain.create_listing(product)
+
+    optimizer = ListingOptimizer()
+    listing = optimizer.optimize(listing)
+    listing["final_listing_bundle"] = brain.generate_final_listing_bundle(listing)
 
     bundle = listing["final_listing_bundle"]
     publish_result = LocalPublisher().publish(bundle)
