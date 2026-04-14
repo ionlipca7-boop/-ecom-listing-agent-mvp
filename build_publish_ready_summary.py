@@ -19,6 +19,18 @@ def _extract_item_count(payload) -> int:
     return 0
 
 
+def _extract_final_feed_items_count(audit_payload) -> int:
+    if not isinstance(audit_payload, dict):
+        return 0
+
+    total_items = audit_payload.get("total_items")
+    if isinstance(total_items, int):
+        return total_items
+
+    # Fallback for legacy/non-standard shapes to keep backward compatibility.
+    return _extract_item_count(audit_payload)
+
+
 def _extract_duplicate_titles_count(audit_payload) -> int:
     if not isinstance(audit_payload, dict):
         return 0
@@ -64,7 +76,7 @@ def main() -> int:
     audit_payload = _load_json(audit_path)
 
     total_manifest_items = _extract_item_count(manifest_payload)
-    total_final_feed_items = _extract_item_count(audit_payload)
+    total_final_feed_items = _extract_final_feed_items_count(audit_payload)
     duplicate_titles_count = _extract_duplicate_titles_count(audit_payload)
     publish_ready = total_final_feed_items > 0 and duplicate_titles_count == 0
 
