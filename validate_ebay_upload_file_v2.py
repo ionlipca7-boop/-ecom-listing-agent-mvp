@@ -5,6 +5,7 @@ from pathlib import Path
 PUBLISH_PACKAGES_DIR = Path("publish_packages")
 TEMPLATES_DIR = Path("templates")
 INDEX_PATH = PUBLISH_PACKAGES_DIR / "publish_index.json"
+TEMPLATE_DELIMITER_CANDIDATES = (",", "\t", ";", "|")
 
 
 def _load_latest_package_id(index_path: Path) -> str:
@@ -50,6 +51,39 @@ def _read_header(csv_file: Path) -> list[str]:
             return [str(cell) for cell in (next(reader, None) or [])]
     except OSError as exc:
         raise RuntimeError(f"failed to read CSV file: {csv_file.as_posix()}") from exc
+
+
+def _score_template_row(cells: list[str], delimiter: str) -> tuple[int, int, int, int]:
+    non_empty_cells = [cell for cell in cells if cell.strip()]
+    width = len(cells)
+    non_empty_width = len(non_empty_cells)
+    unique_non_empty_width = len(set(non_empty_cells))
+    preferred_delimiter = 1 if delimiter == "," else 0
+    return (width, non_empty_width, unique_non_empty_width, preferred_delimiter)
+
+
+def _detect_template_header(csv_file: Path) -> list[str]:
+    try:
+        lines = csv_file.read_text(encoding="utf-8-sig").splitlines()
+    except OSError as exc:
+        raise RuntimeError(f"failed to read CSV file: {csv_file.as_posix()}") from exc
+
+    best_header: list[str] = []
+    best_score = (-1, -1, -1, -1)
+
+    for line in lines:
+        if not line.strip():
+            continue
+
+        for delimiter in TEMPLATE_DELIMITER_CANDIDATES:
+            cells = next(csv.reader([line], delimiter=delimiter))
+            cleaned_cells = [str(cell).strip() for cell in cells]
+            score = _score_template_row(cleaned_cells, delimiter)
+            if score > best_score:
+                best_header = cleaned_cells
+                best_score = score
+
+    return best_header
 
 
 def _duplicate_values(items: list[str]) -> list[str]:
@@ -99,7 +133,7 @@ def main() -> int:
     report_file = package_dir / "ebay_upload_ready_v2_validation.json"
 
     file_exists = input_file.exists()
-    template_header = _read_header(template_file)
+    template_header = _detect_template_header(template_file)
 
     upload_header: list[str] = []
     total_rows = 0
