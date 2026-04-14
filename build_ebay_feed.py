@@ -80,7 +80,7 @@ def main() -> int:
     manifest_payload = _load_json(manifest_path)
     csv_rows = _build_csv_rows(manifest_payload)
 
-    with output_path.open("w", encoding="utf-8", newline="") as f:
+    with output_path.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_COLUMNS)
         writer.writeheader()
         writer.writerows(csv_rows)
