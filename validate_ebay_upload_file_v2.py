@@ -24,13 +24,13 @@ def _load_latest_package_id(index_path: Path) -> str:
 
 
 def _resolve_template_file(templates_dir: Path) -> Path:
-    strict_candidates = sorted(
+    preferred_candidates = sorted(
         templates_dir.glob("eBay-category-listing-template*.csv"),
         key=lambda path: path.stat().st_mtime,
         reverse=True,
     )
-    if strict_candidates:
-        return strict_candidates[0]
+    if preferred_candidates:
+        return preferred_candidates[0]
 
     fallback_candidates = sorted(
         templates_dir.glob("*.csv"),
@@ -47,19 +47,15 @@ def _read_header(csv_file: Path) -> list[str]:
     try:
         with csv_file.open("r", encoding="utf-8-sig", newline="") as handle:
             reader = csv.reader(handle)
-            header = next(reader, None)
+            return [str(cell) for cell in (next(reader, None) or [])]
     except OSError as exc:
         raise RuntimeError(f"failed to read CSV file: {csv_file.as_posix()}") from exc
 
-    if header is None:
-        return []
-
-    return [str(cell) for cell in header]
-
 
 def _duplicate_values(items: list[str]) -> list[str]:
-    seen = set()
-    duplicates = set()
+    seen: set[str] = set()
+    duplicates: set[str] = set()
+
     for item in items:
         if item in seen:
             duplicates.add(item)
@@ -71,7 +67,7 @@ def _duplicate_values(items: list[str]) -> list[str]:
 
 def _validate_rows_shape(input_file: Path, expected_columns: int) -> tuple[int, list[int]]:
     total_rows = 0
-    invalid_rows: list[int] = []
+    invalid_row_numbers: list[int] = []
 
     try:
         with input_file.open("r", encoding="utf-8-sig", newline="") as handle:
@@ -80,11 +76,11 @@ def _validate_rows_shape(input_file: Path, expected_columns: int) -> tuple[int, 
             for row_number, row in enumerate(reader, start=2):
                 total_rows += 1
                 if len(row) != expected_columns:
-                    invalid_rows.append(row_number)
+                    invalid_row_numbers.append(row_number)
     except OSError as exc:
         raise RuntimeError(f"failed to read input CSV: {input_file.as_posix()}") from exc
 
-    return total_rows, invalid_rows
+    return total_rows, invalid_row_numbers
 
 
 def _write_report(report_file: Path, payload: dict) -> None:
@@ -103,34 +99,33 @@ def main() -> int:
     report_file = package_dir / "ebay_upload_ready_v2_validation.json"
 
     file_exists = input_file.exists()
+    template_header = _read_header(template_file)
 
     upload_header: list[str] = []
-    template_header: list[str] = _read_header(template_file)
     total_rows = 0
     invalid_row_numbers: list[int] = []
-    header_duplicates: list[str] = []
+    duplicate_headers: list[str] = []
 
     if file_exists:
         upload_header = _read_header(input_file)
-
         if upload_header:
-            header_duplicates = _duplicate_values(upload_header)
+            duplicate_headers = _duplicate_values(upload_header)
             total_rows, invalid_row_numbers = _validate_rows_shape(input_file, len(upload_header))
 
     header_non_empty = len(upload_header) > 0
-    header_match = upload_header == template_header if file_exists else False
     has_data_rows = total_rows > 0
-    has_no_duplicate_headers = len(header_duplicates) == 0
-    rows_shape_ok = len(invalid_row_numbers) == 0
+    header_order_matches_template = upload_header == template_header if file_exists else False
+    row_column_counts_match_header = len(invalid_row_numbers) == 0
+    no_duplicate_header_names = len(duplicate_headers) == 0
 
     valid = all(
         [
             file_exists,
             header_non_empty,
-            header_match,
             has_data_rows,
-            has_no_duplicate_headers,
-            rows_shape_ok,
+            header_order_matches_template,
+            row_column_counts_match_header,
+            no_duplicate_header_names,
         ]
     )
 
@@ -142,17 +137,17 @@ def main() -> int:
         "checks": {
             "file_exists": file_exists,
             "header_non_empty": header_non_empty,
-            "header_match": header_match,
             "has_data_rows": has_data_rows,
-            "has_no_duplicate_headers": has_no_duplicate_headers,
-            "rows_shape_ok": rows_shape_ok,
+            "header_order_matches_template": header_order_matches_template,
+            "row_column_counts_match_header": row_column_counts_match_header,
+            "no_duplicate_header_names": no_duplicate_header_names,
         },
         "summary": {
             "total_rows": total_rows,
             "header_columns": len(upload_header),
             "template_columns": len(template_header),
-            "duplicate_headers": header_duplicates,
             "invalid_row_numbers": invalid_row_numbers,
+            "duplicate_headers": duplicate_headers,
             "valid": valid,
         },
     }
@@ -162,9 +157,8 @@ def main() -> int:
     print(f"package_id: {package_id}")
     print(f"input_file: {input_file.as_posix()}")
     print(f"template_file: {template_file.as_posix()}")
-    print(f"total_rows: {total_rows}")
-    print(f"header_match: {header_match}")
     print(f"valid: {valid}")
+    print(f"total_rows: {total_rows}")
     print(f"report_file: {report_file.as_posix()}")
 
     return 0 if valid else 1
