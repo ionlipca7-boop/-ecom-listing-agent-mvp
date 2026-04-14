@@ -1,0 +1,44 @@
+{
+  "project": "ECOM LISTING AGENT MVP",
+  "mode": "CONTROL ROOM",
+  "current_stage": "merge_ready_locally_confirmed",
+  "latest_confirmed_package_id": "package_20260414_070314",
+  "confirmed_layers": {
+    "pipeline": true,
+    "package_publish": true,
+    "validation": true,
+    "audit": true,
+    "compare": true,
+    "mapping": true,
+    "generator": true,
+    "output_validation": true,
+    "quick_run_cmd_bat": true,
+    "merge_readiness_review": true
+  },
+  "confirmed_artifacts": [
+    "compare_ebay_template_vs_upload_v2.py",
+    "build_ebay_mapping_v2.py",
+    "generate_ebay_template_output_v2.py",
+    "validate_ebay_template_output_v2.py",
+    "run_generator_and_validation_v2.bat",
+    "control_room_status_v2.json",
+    "publish_packages/package_20260414_070314/compare_ebay_template_vs_upload_v2.json",
+    "publish_packages/package_20260414_070314/ebay_mapping_v2.json",
+    "publish_packages/package_20260414_070314/ebay_template_output_v2.csv"
+  ],
+  "latest_validation_result": {
+    "columns_count": 96,
+    "rows_count": 7,
+    "missing_title_rows": 0,
+    "missing_price_rows": 0,
+    "validation_ok": true
+  },
+  "latest_quick_run_result": {
+    "bat_completed": true,
+    "generator_ok": true,
+    "validation_ok": true
+  },
+  "next_layer": "github_merge_or_new_chat_handoff",
+  "merge_ready": true,
+  "source_of_truth": "local_cmd_validation"
+}
