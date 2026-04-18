@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "decision": "raw_stdout_preview_inspected",
+  "stdout_exists": true,
+  "stdout_len": 103,
+  "line_count": 2,
+  "first_line": "GENERATOR_AGENT_V4_OK",
+  "last_line": "output_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\generator_output_v4.json",
+  "stdout_preview": "GENERATOR_AGENT_V4_OK\noutput_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\generator_output_v4.json",
+  "contains_title_word": false,
+  "contains_description_word": false,
+  "contains_price_word": false,
+  "next_step": "register_raw_generator_output_pattern_v1"
+}

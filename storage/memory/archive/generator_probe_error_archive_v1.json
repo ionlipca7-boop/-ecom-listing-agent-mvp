@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "generator_probe_error_archived",
+  "error_name": "probe_ready_nameerror",
+  "root_cause": "echo_based_file_build_lost_required_assignment_line",
+  "failed_file": "run_generator_execution_probe_v1.py",
+  "failed_variable": "probe_ready",
+  "lesson": "for_python_files_with_computed_state_use_python_write_text_not_echo_blocks",
+  "next_step": "rebuild_probe_file_via_python_write_text"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "decision": "registry_key_injection_probe_v1_completed",
+  "source_file": "storage\\exports\\product_registry_lookup_call_v1.json",
+  "registry_key_injection_probe_version": "v1",
+  "chosen_source": "product_registry_key",
+  "chosen_path": "real_inventory_read_first",
+  "injection_strategy": "inject_product_registry_key_into_registry_resolution_flow",
+  "probe_checks": {
+    "source_is_product_registry_key": true,
+    "path_is_read_first": true,
+    "ready_for_injection_probe": true
+  },
+  "ready_for_registry_resolution_call": true,
+  "next_step": "build_registry_resolution_call_v1"
+}

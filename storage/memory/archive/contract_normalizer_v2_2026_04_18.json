@@ -1,0 +1,22 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "OK",
+  "decision": "contract_normalizer_v2_completed",
+  "source_file": "storage\\exports\\generator_output_v4_title_recovered.json",
+  "normalized_file": "storage\\exports\\generator_output_contract_v2.json",
+  "contract_version": "v2",
+  "required_keys": [
+    "title",
+    "main_title",
+    "titles",
+    "price",
+    "description",
+    "html",
+    "category",
+    "images",
+    "status",
+    "contract_version"
+  ],
+  "next_step": "build_downstream_probe_v1_against_contract_v2"
+}

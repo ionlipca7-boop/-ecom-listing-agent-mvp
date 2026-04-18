@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "decision": "generator_dry_run_built",
+  "selected_file": "run_generator_agent_v4.py",
+  "exists": true,
+  "compile_ok": true,
+  "has_main_guard": true,
+  "has_main_def": true,
+  "next_step": "inspect_selected_generator_io_contract_v1"
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "OK",
+  "decision": "promote_contract_v2_as_downstream_input_completed",
+  "source_file": "storage\\exports\\generator_output_contract_v2.json",
+  "promoted_file": "storage\\exports\\downstream_input_v1.json",
+  "contract_version": "v2",
+  "title_present": true,
+  "description_present": true,
+  "price_present": true,
+  "next_step": "build_publish_payload_probe_v1_from_downstream_input"
+}

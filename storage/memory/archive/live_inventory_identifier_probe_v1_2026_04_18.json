@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "decision": "live_inventory_identifier_probe_v1_completed",
+  "source_file": "storage\\exports\\real_inventory_read_call_v1.json",
+  "live_inventory_identifier_probe_version": "v1",
+  "chosen_path": "real_inventory_read_first",
+  "identifier_strategy": "inject_live_sku_or_inventory_item_group_key_before_real_read",
+  "identifier_requirements": {
+    "requires_live_identifier": true,
+    "accepted_identifier_types": [
+      "sku",
+      "inventory_item_group_key",
+      "product_registry_key"
+    ]
+  },
+  "probe_checks": {
+    "path_is_read_first": true,
+    "ready_for_identifier_probe": true,
+    "identifier_requirements_present": true
+  },
+  "ready_for_live_identifier_resolution": true,
+  "next_step": "choose_live_inventory_identifier_source_v1"
+}

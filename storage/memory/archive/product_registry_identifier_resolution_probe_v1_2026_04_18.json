@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "decision": "product_registry_identifier_resolution_probe_v1_completed",
+  "source_file": "storage\\exports\\live_inventory_identifier_source_choice_v1.json",
+  "product_registry_identifier_resolution_probe_version": "v1",
+  "chosen_source": "product_registry_key",
+  "chosen_path": "real_inventory_read_first",
+  "resolution_strategy": "resolve_product_registry_key_before_live_inventory_read",
+  "probe_checks": {
+    "source_is_product_registry_key": true,
+    "path_is_read_first": true,
+    "ready_for_probe": true
+  },
+  "ready_for_registry_lookup": true,
+  "next_step": "build_product_registry_lookup_call_v1"
+}

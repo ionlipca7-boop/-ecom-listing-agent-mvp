@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "decision": "archive_bridge_file_audit_v1_completed",
+  "file_exists": true,
+  "line_count": 57,
+  "has_has_changes_text": true,
+  "has_diff_command": true,
+  "sample_lines": [
+    "    result[\"branch_rc\"] = rc",
+    "    rc, out, err = run(\"git add storage\\\\memory\\\\archive\")",
+    "    result[\"git_add_rc\"] = rc",
+    "    result[\"git_add_out\"] = out",
+    "    result[\"git_add_err\"] = err",
+    "    rc, out, err = run(\"git diff --cached --quiet\")",
+    "    result[\"diff_rc\"] = rc",
+    "    result[\"has_changes\"] = has_changes",
+    "    commit_created = False",
+    "    push_out = \"\"",
+    "    push_err = \"\"",
+    "    if has_changes:",
+    "        rc, out, err = run('git commit -m \"archive sync v1\"')",
+    "        result[\"git_commit_rc\"] = rc",
+    "        result[\"git_commit_out\"] = out"
+  ]
+}
