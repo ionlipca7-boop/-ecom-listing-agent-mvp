@@ -1,0 +1,16 @@
+{
+  "status": "LIVE_PUBLISH_CONFIRMED",
+  "offerId": "152921341011",
+  "listingId": "318162033369",
+  "marketplaceId": "EBAY_DE",
+  "sku": "ECOM-TEST-CABLE-001",
+  "format": "FIXED_PRICE",
+  "categoryId": "44932",
+  "availableQuantity": 10,
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "listingPolicies": {
+    "fulfillmentPolicyId": "257755855024",
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024"
+  }
+}

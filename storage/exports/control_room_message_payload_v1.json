@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "message_type": "READY_NEXT",
+  "title": "CONTROL ROOM READY NEXT",
+  "message_text": "system_status=OK; overall_status=OK; final_decision=READY_NEXT; pipeline_status=READY_NEXT; alert_state=SEND_READY_NEXT; actions_count=1; alert_reason=pipeline_ready_for_next_step",
+  "pipeline_status": "READY_NEXT",
+  "alert_state": "SEND_READY_NEXT",
+  "actions_count": 1,
+  "source_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_snapshot_v1.json",
+  "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_message_payload_v1.json"
+}

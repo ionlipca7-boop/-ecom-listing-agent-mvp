@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_POST_EXECUTION_GIT_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_REVERT_TRACKED_CACHE_FILE_V1",
+  "input_status": "OK",
+  "review_scope": "post_execution_git_state_only",
+  "expected_clean_targets": [
+    "run_control_room.bat",
+    "agent/__pycache__/brain.cpython-314.pyc"
+  ],
+  "expected_remaining_change": [
+    ".gitignore"
+  ],
+  "git_review_not_started": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "post_execution_git_review_prepared",
+  "next_allowed_action": "execute_post_execution_git_review_v1"
+}

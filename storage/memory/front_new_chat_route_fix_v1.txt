@@ -1,0 +1,30 @@
+ION STRICT NEW CHAT PROMPT V6
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+MISSION
+A -> B -> FINISH -> STOP
+NO BRANCHES
+
+LANGUAGE
+- Russian
+- concise
+- verification-first
+
+MODE
+- one step at a time
+- no destructive actions
+
+CURRENT ACTIVE STATE
+- layer = PREPARE_RUN_CONTROL_ROOM_ROUTE_FIX_PLAN_V1
+- issue = runtime_path_reset
+- root_cause = run_control_room.py_returns_base_runtime_bridge_step_without_progressing_to_draft_generation_route
+- route_fix_plan_scope = force_progression_from_runtime_bridge_to_draft_generation_path
+- next_allowed_action = execute_run_control_room_route_fix_plan_v1
+- live_execution = false
+
+IMPORTANT
+- DO NOT RUN uncontrolled fixes
+- FIX ONLY route progression logic
+- stay in control room flow

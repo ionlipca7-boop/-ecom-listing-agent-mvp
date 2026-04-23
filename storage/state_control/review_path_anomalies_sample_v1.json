@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "REVIEW_PATH_ANOMALIES_SAMPLE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_PATH_ANOMALIES_SAMPLE_CAPTURE_V1",
+  "input_status": "OK",
+  "target_scope": "path_anomalies",
+  "sample_reviewed": true,
+  "sample_count": 2,
+  "quoted_path_representation_confirmed": true,
+  "real_template_material_likely_present": true,
+  "pure_command_noise_detected": false,
+  "classification": "QUOTED_REAL_MATERIAL_OR_BROKEN_PATH_REPRESENTATION",
+  "cleanup_global_forbidden": true,
+  "delete_global_forbidden": true,
+  "sync_forbidden": true,
+  "current_position": "path_anomalies_sample_reviewed",
+  "next_allowed_action": "build_post_path_anomalies_decision_gate_v1"
+}

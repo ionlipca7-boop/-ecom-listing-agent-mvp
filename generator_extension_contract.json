@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "GENERATOR_EXTENSION_CONTRACT",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "based_on": "generator_status_snapshot.json",
+  "extension_goal": "extend_generator_output_fields",
+  "new_output_targets": [
+    "html",
+    "category",
+    "images" 
+  ],
+  "rules": [
+    "do_not_break_existing_output",
+    "stay_project_specific_only",
+    "keep_live_operations_disabled" 
+  ],
+  "live_operations_enabled": false,
+  "next_step": "prepare_generator_extension_sample" 
+}

@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "http_status": 200,
+  "location_count": 1,
+  "merchantLocationKeys": [
+    "ECOM_DE_LOC_1"
+  ]
+}

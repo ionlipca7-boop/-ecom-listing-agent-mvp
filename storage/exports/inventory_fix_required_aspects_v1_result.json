@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "decision": "inventory_fix_required_aspects_v1_executed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "read_status": 200,
+  "update_status": 200,
+  "marke_present": true,
+  "produktart_present": true,
+  "herstellernummer_present": true,
+  "images_sent": 1,
+  "response_text": "{\"warnings\":[{\"errorId\":25072,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"REQUEST\",\"message\":\"Verkaufsprovision erlassen.\"},{\"errorId\":25402,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"REQUEST\",\"message\":\"System warning. Der Verkäufer hat Rahmenbedingungen aktiviert. Bitte verwenden Sie die IDs für Rahmenbedingungen anstelle der Felder für Versand, Zahlung und Rücknahme. Andernfalls werden für diesen Verkäufer neue Rahmenbedingungen erstellt.\"}]}",
+  "response_json": {
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      },
+      {
+        "errorId": 25402,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "System warning. Der Verkäufer hat Rahmenbedingungen aktiviert. Bitte verwenden Sie die IDs für Rahmenbedingungen anstelle der Felder für Versand, Zahlung und Rücknahme. Andernfalls werden für diesen Verkäufer neue Rahmenbedingungen erstellt."
+      }
+    ]
+  },
+  "next_step": "rebuild_multi_image_inventory_update_v1"
+}

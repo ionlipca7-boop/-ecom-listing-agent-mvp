@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "NEXT_CYCLE_PREPARATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "previous_cycle_status": "SUCCESS",
+  "system_stable": true,
+  "ready_for_new_cycle": true,
+  "allowed_modes": ["single_listing_repeat","multi_listing_scale"]
+}

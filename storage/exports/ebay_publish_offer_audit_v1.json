@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "offerId": "152921341011",
+  "body": "{\"errors\":[{\"errorId\":25002,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"Request\",\"message\":\"A user error has occurred. Sie haben in dieser Anfrage keine gültige Kategorie angeben.\"}]}"
+}

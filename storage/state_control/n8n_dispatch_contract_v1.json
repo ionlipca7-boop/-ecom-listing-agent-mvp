@@ -1,0 +1,50 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "dispatcher_role": "orchestrator_only",
+  "contract_version": "v1",
+  "input_contract": {
+    "required_inputs": [
+      "project_state_reference",
+      "control_rules_reference",
+      "current_branch_decision_reference"
+    ],
+    "optional_inputs": [
+      "latest_audit_reference",
+      "archivist_history_reference"
+    ]
+  },
+  "dispatch_order": [
+    "read_project_state",
+    "call_control_agent",
+    "show_audit",
+    "call_runner_if_allowed",
+    "call_archivist",
+    "update_project_state"
+  ],
+  "output_contract": {
+    "required_outputs": [
+      "status",
+      "dispatch_step",
+      "decision_source",
+      "action_allowed",
+      "next_allowed_action",
+      "audit_reference"
+    ]
+  },
+  "forbidden_behavior": [
+    "no_direct_live_execution",
+    "no_runner_call_without_control_agent",
+    "no_state_bypass",
+    "no_branch_switch_without_record",
+    "no_self_decision_outside_contract"
+  ],
+  "execution_allowed": false,
+  "n8n_ready": false,
+  "contract_ready": true,
+  "next_allowed_action": "build_n8n_dispatch_state_map_v1"
+}

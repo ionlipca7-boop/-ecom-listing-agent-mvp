@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "system_status": "OK",
+  "overall_status": "OK",
+  "decision": "RUN_SINGLE",
+  "last_execution_status": "OK",
+  "executor_returncode": 0,
+  "actions_count": 1,
+  "final_decision": "READY_NEXT",
+  "pipeline_status": "READY_NEXT",
+  "alert_state": "SEND_READY_NEXT",
+  "alert_reason": "pipeline_ready_for_next_step",
+  "paths": {
+    "master_status_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v2.json",
+    "auto_agent_v4_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_agent_v4_audit.json",
+    "pipeline_status_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_pipeline_status_v1.json",
+    "alert_state_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_alert_state_v1.json",
+    "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_snapshot_v1.json"
+  }
+}

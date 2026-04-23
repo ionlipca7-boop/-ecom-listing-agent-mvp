@@ -1,0 +1,28 @@
+{
+  "handoff_status": "READY_FOR_MANUAL_UPLOAD",
+  "last_package": "package_20260414_070314",
+  "publish_mode": "REAL",
+  "prepared_at": "2026-04-15T07:50:05Z",
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+  "summary": {
+    "approval_status": "APPROVED",
+    "action_status": "READY_TO_EXECUTE",
+    "execution_status": "MANUAL_UPLOAD_REQUIRED",
+    "manifest_status": "READY",
+    "report_status": "OK"
+  },
+  "source_files": {
+    "real_publish_approval": "real_publish_approval_v1.json",
+    "real_ebay_upload_action": "real_ebay_upload_action_v1.json",
+    "real_ebay_upload_execution": "real_ebay_upload_execution_v1.json",
+    "final_publish_manifest": "final_publish_manifest_v1.json",
+    "control_room_report": "control_room_report_v1.json"
+  },
+  "checks": {
+    "approval_is_approved": true,
+    "action_is_ready_to_execute": true,
+    "execution_requires_manual_upload": true,
+    "manifest_is_ready": true,
+    "control_room_report_is_ok": true
+  }
+}

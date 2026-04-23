@@ -1,0 +1,13 @@
+{
+  "trigger_status": "READY",
+  "trigger_gate": "OPEN",
+  "next_step": "RUN_UPLOAD_RESULT_PARSER_ON_NEW_FILE",
+  "inbox_status": "READY",
+  "inbox_gate": "OPEN",
+  "expected_result_file_name": "ebay_result_after_fixed_reupload_v1.json",
+  "expected_result_file_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_after_fixed_reupload_v1.json",
+  "expected_file_exists": true,
+  "source_files": {
+    "post_reupload_result_inbox": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\post_reupload_result_inbox_v1.json"
+  }
+}

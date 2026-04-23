@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "refresh_exit_code": 0,
+  "refresh_status": "OK",
+  "refresh_http_status": 200,
+  "refresh_access_token_length": 2460,
+  "quantity_status": "OK",
+  "quantity_http_status": 200
+}

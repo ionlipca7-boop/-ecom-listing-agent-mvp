@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_STRICT_PROMPT_ENCODING_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REPAIR_STRICT_PROMPT_ENCODING_V1",
+  "input_status": "OK",
+  "prompt_utf8_read_verified": true,
+  "audit_utf8_read_verified": true,
+  "cmd_type_output_still_garbled": true,
+  "root_cause_hypothesis": "windows_cmd_codepage_rendering_issue",
+  "real_fix_confirmed": true,
+  "next_allowed_action": "stabilize_new_chat_transition_package_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

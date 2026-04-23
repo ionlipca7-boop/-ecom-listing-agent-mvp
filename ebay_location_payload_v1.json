@@ -1,0 +1,14 @@
+{
+  "name": "Main Warehouse Germany",
+  "location": {
+    "address": {
+      "addressLine1": "Sample Street 1",
+      "city": "Berlin",
+      "postalCode": "10115",
+      "country": "DE"
+    }
+  },
+  "locationTypes": [
+    "WAREHOUSE"
+  ]
+}

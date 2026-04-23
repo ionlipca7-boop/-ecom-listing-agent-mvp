@@ -1,0 +1,10 @@
+{
+  "system_status": "READY",
+  "template_status": "READY",
+  "final_package_status": "READY",
+  "latest_package_id": "ebay_template_ready_20260415_134843",
+  "latest_output_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "header_count": 96,
+  "data_row_count": 1,
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY"
+}

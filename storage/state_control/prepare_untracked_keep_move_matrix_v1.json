@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_UNTRACKED_KEEP_MOVE_MATRIX_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "MANUAL_UNTRACKED_ITEM_REVIEW_RESULT_V1",
+  "input_status": "OK",
+  "keep_move_matrix_prepared": true,
+  "matrix_source": "storage/audit/untracked_only_snapshot_v1.txt",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_untracked_keep_move_matrix_v1"
+}

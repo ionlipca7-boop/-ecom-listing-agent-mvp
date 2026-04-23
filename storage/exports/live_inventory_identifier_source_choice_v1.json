@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "decision": "live_inventory_identifier_source_v1_chosen",
+  "source_file": "storage\\exports\\live_inventory_identifier_probe_v1.json",
+  "identifier_source_choice_version": "v1",
+  "chosen_path": "real_inventory_read_first",
+  "source_priority": [
+    "product_registry_key",
+    "sku",
+    "inventory_item_group_key"
+  ],
+  "chosen_source": "product_registry_key",
+  "reason": "project_prefers_registry_first_for_control_room_resolution",
+  "choice_checks": {
+    "ready_for_source_choice": true,
+    "path_is_read_first": true,
+    "source_priority_present": true
+  },
+  "ready_for_registry_resolution_probe": true,
+  "next_step": "build_product_registry_identifier_resolution_probe_v1"
+}

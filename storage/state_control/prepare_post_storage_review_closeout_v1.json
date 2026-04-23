@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_POST_STORAGE_REVIEW_CLOSEOUT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_POST_STORAGE_REVIEW_WRAPUP_V1",
+  "input_status": "OK",
+  "closeout_mode": "READ_ONLY_CONTROLLED_SEQUENCE",
+  "current_position": "post_storage_review_closeout_prepared",
+  "basis_wrapup": "POST_STORAGE_REVIEW_READ_ONLY_WRAPUP_CONFIRMED",
+  "basis_final_state": "POST_STORAGE_REVIEW_READ_ONLY_FINAL_STATE_CONFIRMED",
+  "basis_final_gate": "POST_STORAGE_REVIEW_READ_ONLY_PATH_LOCKED",
+  "basis_outcome": "POST_STORAGE_READ_ONLY_OUTCOME_CONFIRMED",
+  "basis_transition": "POST_STORAGE_READ_ONLY_CHAIN_TRANSITION_CONFIRMED",
+  "basis_next_gate": "POST_STORAGE_REVIEW_CHAIN_CLOSED_READ_ONLY",
+  "basis_completion_decision": "POST_STORAGE_READ_ONLY_REVIEW_FULL_CHAIN_COMPLETE",
+  "basis_final_summary": "POST_STORAGE_READ_ONLY_REVIEW_CHAIN_CONFIRMED",
+  "basis_checkpoint": "POST_STORAGE_REVIEW_DIRECTION_CONFIRMED_READ_ONLY",
+  "basis_direction": "CONTINUE_CONTROLLED_READ_ONLY_PATH_NO_CLEANUP",
+  "basis_decision": "READ_ONLY_STORAGE_REVIEW_COMPLETE_NO_CLEANUP_PATH_OPENED",
+  "basis_findings": {
+    "storage_root_exists": true,
+    "storage_tree_reviewed": true,
+    "archive_candidates_present": true,
+    "cleanup_area_present": true,
+    "state_control_present": true,
+    "memory_archive_present": true,
+    "secrets_present": true,
+    "anomaly_candidates_observed": [
+      "archive_candidates/git_cleanup_v1",
+      "archive_candidates/phase_cleanup_v1/safe_cleanup_batch_v2"
+    ],
+    "destructive_actions_still_forbidden": true
+  },
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "execute_post_storage_review_closeout_v1"
+}

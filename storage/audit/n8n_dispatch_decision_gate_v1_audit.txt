@@ -1,0 +1,10 @@
+N8N_DISPATCH_DECISION_GATE_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+decision_gate_version = v1
+decision_source_required = control_agent
+stop_condition_count = 5
+execution_allowed = False
+decision_gate_ready = True
+next_allowed_action = build_n8n_dispatch_runner_handoff_v1

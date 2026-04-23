@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "decision": "restore_oauth_access_token_required",
+  "is_ready": false,
+  "reason": "user_token_detected_in_access_token_file",
+  "token_length": 2456,
+  "next_step": "restore_valid_oauth_access_token_via_consent_flow"
+}

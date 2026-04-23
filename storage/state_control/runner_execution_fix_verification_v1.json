@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_FIX_VERIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_EXECUTION_FIX_PATCH_V1",
+  "input_status": "OK",
+  "verification_performed": true,
+  "runner_switch_logic_present": true,
+  "control_return_removed": true,
+  "execution_still_blocked": true
+}

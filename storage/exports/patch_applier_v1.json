@@ -1,0 +1,16 @@
+{
+  "applied_at": "2026-04-15T19:07:31Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1_approved.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\patch_applier_v1.json",
+  "applied_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\applied_fix_result_v1.json",
+  "applier_status": "READY",
+  "approved_patch_count": 3,
+  "applied_count": 3,
+  "skipped_count": 0,
+  "next_step": "RUN_POST_FIX_VALIDATION",
+  "applied_fields": [
+    "Brand",
+    "ItemSpecifics",
+    "StartPrice"
+  ]
+}

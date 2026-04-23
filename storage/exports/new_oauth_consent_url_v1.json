@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "decision": "consent_url_built",
+  "scope_count": 5,
+  "has_sell_account": true,
+  "has_sell_account_readonly": true,
+  "consent_url": "https://auth.ebay.com/oauth2/authorize?client_id=IonLipca-ECOMOSV3-PRD-d84c0e5fe-a31d5575&response_type=code&redirect_uri=Ion_Lipca-IonLipca-ECOMOS-bwwjioir&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.inventory+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.inventory.readonly+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.account+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.account.readonly",
+  "next_step": "open_consent_url_and_capture_auth_code"
+}

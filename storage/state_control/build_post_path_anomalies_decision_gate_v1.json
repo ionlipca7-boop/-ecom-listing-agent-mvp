@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "BUILD_POST_PATH_ANOMALIES_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REVIEW_PATH_ANOMALIES_SAMPLE_V1",
+  "input_status": "OK",
+  "decision_gate_opened": true,
+  "confirmed_buckets": {
+    "git_cleanup_v1": "COMMAND_NOISE_CANDIDATE",
+    "path_anomalies": "QUOTED_REAL_MATERIAL_OR_BROKEN_PATH_REPRESENTATION"
+  },
+  "global_cleanup_allowed": false,
+  "allowed_next_direction": "prepare_storage_remaining_review_v1",
+  "forbidden_next_direction": "global_cleanup_delete_move_sync",
+  "current_position": "post_path_anomalies_decision_gate_built",
+  "next_allowed_action": "prepare_storage_remaining_review_v1"
+}

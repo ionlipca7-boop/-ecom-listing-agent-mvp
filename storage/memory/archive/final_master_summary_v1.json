@@ -1,0 +1,23 @@
+{
+  "status": "PROJECT_COMPLETED",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "final_phase": "STABLE_CONTROLLED_PIPELINE_READY",
+  "cycles_completed": 2,
+  "execution_status": "SUCCESS",
+  "system_type": "CONTROLLED_ECOM_PIPELINE",
+  "pipeline": [
+    "GENERATOR",
+    "INVENTORY_READ",
+    "OFFER_BUILD",
+    "PREVIEW",
+    "APPROVAL",
+    "RUNNER",
+    "CONTROLLED_EXECUTION"
+  ],
+  "runner_fixed": true,
+  "control_layer_preserved": true,
+  "ready_for_scale": true,
+  "scale_definition": "same_pipeline_looped_over_multiple_products",
+  "next_phase": "MULTI_LISTING_WHEN_READY",
+  "session_closed": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "SAFE_GIT_CLEANUP_GUARD_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SAFE_GIT_CLEANUP_EXECUTION_PLAN_V1",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "cleanup_move_allowed": false,
+  "guard_reason": "plan_verified_but_move_batch_not_built_yet",
+  "next_allowed_action": "build_safe_git_cleanup_move_batch_v1"
+}

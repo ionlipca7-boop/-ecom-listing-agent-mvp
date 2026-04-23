@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_NEW_LISTING_PROJECT_PATH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "DEFINE_NEXT_PROJECT_SPECIFIC_LAYER_V1",
+  "selected_project_path": "new_listing_from_clone_baseline_flow",
+  "automation_target": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "planned_flow": [
+    "input_capture",
+    "input_normalization",
+    "listing_build",
+    "preview_gate",
+    "approval_gate",
+    "publish_gate"
+  ],
+  "current_mode": "CONTROLLED_PRE_AUTOMATION",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "define_automation_input_contract_v1"
+}

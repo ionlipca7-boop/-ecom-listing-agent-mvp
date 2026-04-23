@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "archive_type": "PROJECT_STATE_CREATED",
+  "phase": "CONTROL_LAYER_V1",
+  "state_created": true,
+  "previous_missing_now_fixed": "state",
+  "next_step": "build_project_history_v1"
+}

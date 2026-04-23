@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "http_status": 200,
+  "offerId": "152921341011",
+  "listingId": "318162033369",
+  "response_json": {
+    "listingId": "318162033369",
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      }
+    ]
+  }
+}

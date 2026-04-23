@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_CLASSIFICATION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_CLASSIFICATION_PLAN_V1",
+  "input_status": "OK",
+  "classification_gate_defined": true,
+  "allowed_now": "prepare_manual_untracked_bucket_review_v1",
+  "cleanup_blocked": true,
+  "push_blocked": true,
+  "server_sync_blocked": true,
+  "next_allowed_action": "prepare_manual_untracked_bucket_review_v1"
+}

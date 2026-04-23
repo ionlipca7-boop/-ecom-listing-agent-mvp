@@ -1,0 +1,64 @@
+{
+  "inventory_item": {
+    "sku": "REPLACE_SKU",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "REPLACE_TITLE",
+      "description": "REPLACE_DESCRIPTION",
+      "imageUrls": [
+        "REPLACE_IMAGE_URL"
+      ],
+      "brand": "Markenlos",
+      "mpn": "Nicht zutreffend",
+      "aspects": {
+        "Produktart": [
+          "USB-Kabel"
+        ],
+        "Marke": [
+          "Markenlos"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      }
+    }
+  },
+  "offer": {
+    "sku": "REPLACE_SKU",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 10,
+    "categoryId": "44932",
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "listingDuration": "GTC",
+    "pricingSummary": {
+      "price": {
+        "value": "5.49",
+        "currency": "EUR"
+      }
+    },
+    "listingPolicies": {
+      "fulfillmentPolicyId": "257755855024",
+      "paymentPolicyId": "257755913024",
+      "returnPolicyId": "257755877024"
+    }
+  },
+  "publish_requirements_confirmed": [
+    "Produktart",
+    "imageUrls",
+    "Marke",
+    "Herstellernummer",
+    "brand",
+    "mpn"
+  ],
+  "success_reference": {
+    "offerId": "152921341011",
+    "listingId": "318162033369",
+    "sku": "ECOM-TEST-CABLE-001"
+  }
+}

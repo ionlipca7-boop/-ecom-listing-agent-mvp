@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_TRACKED_ITEM_DECISIONS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRACKED_REVIEW_MANUAL_DECISION_V1",
+  "input_status": "OK",
+  "item_decisions_defined": true,
+  "tracked_item_decisions": {
+    "run_control_room.bat": "manual_restore_or_confirm_delete_required",
+    "agent/__pycache__/brain.cpython-314.pyc": "manual_keep_or_revert_required",
+    ".gitignore": "manual_content_review_required"
+  },
+  "decision_mode": "per_item_manual_review_only",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "prepare_tracked_item_evidence_review_v1"
+}

@@ -1,0 +1,11 @@
+N8N_DISPATCH_STATE_MAP_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+state_map_version = v1
+entry_state = RUNNER_CHECKPOINT_INTEGRATED_V1
+allowed_transition_count = 3
+current_state_confirmed = N8N_DISPATCH_STATE_MAP_V1
+execution_allowed = False
+state_map_ready = True
+next_allowed_action = build_n8n_dispatch_audit_flow_v1

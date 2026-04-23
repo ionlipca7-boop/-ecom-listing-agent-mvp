@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "input_status": "OK",
+  "input_decision": "RUN_SINGLE",
+  "last_execution_status": "OK",
+  "executor_returncode": 0,
+  "actions_count": 1,
+  "final_decision": "READY_NEXT",
+  "error_reason": null,
+  "source_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v2.json",
+  "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_agent_v4_audit.json"
+}

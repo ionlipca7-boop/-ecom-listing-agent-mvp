@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "POST_PREVIEW_VALIDATION_DIRECTION_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase": "POST_STAGE9_PREVIEW_VALIDATION_MANAGEMENT",
+  "input_layer": "PREVIEW_EXECUTION_VALIDATION_CHECKPOINT_V1",
+  "direction_check_defined": true,
+  "checkpoint_result_confirmed": true,
+  "current_chain_status": "management_chain_complete",
+  "still_blocked": {
+    "technical_build_now": true,
+    "runner_execution_now": true,
+    "live_execution_now": true,
+    "parallel_branching": true
+  },
+  "allowed_now": [
+    "direction_selection_only",
+    "single_next_phase_definition",
+    "project_specific_management_continuation"
+  ],
+  "selected_direction": "BUILD_POST_PREVIEW_NEXT_PHASE_PLAN_V1",
+  "selection_reason": "management_chain_is_complete_and_now_requires_single_next_phase_definition_before_any_execution_side_move",
+  "do_now": "build_post_preview_next_phase_plan_v1",
+  "one_next_step": "build_post_preview_next_phase_plan_v1"
+}

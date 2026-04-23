@@ -1,0 +1,34 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_AFTER_CLEANUP_READY_V1",
+  "last_confirmed_layer": "PREPARE_ARCHIVE_MOVE_BATCH_V1",
+  "next_allowed_action": "execute_archive_move_batch_v1",
+  "cleanup_state": {
+    "archive_ready": true,
+    "archive_executed": false,
+    "delete_allowed": false
+  },
+  "protected_scope": [
+    "run_control_room.py",
+    "run_publish_ready_pipeline.bat",
+    "control_room.py",
+    "control_room_run_all.py",
+    "storage/state_control",
+    "storage/audit",
+    "storage/memory/front",
+    "storage/memory/archive"
+  ],
+  "archive_scope": [
+    "drafts",
+    "history",
+    "control_room_history",
+    "storage/cleanup/safe_cleanup_batch_v1",
+    "storage/cleanup/safe_cleanup_batch_v2",
+    "storage/cleanup/safe_cleanup_batch_v3"
+  ],
+  "archive_target_root": "storage/archive_candidates/phase_cleanup_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

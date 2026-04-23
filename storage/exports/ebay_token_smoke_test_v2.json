@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-04-17T06:23:15.709223Z",
+  "url": "https://api.ebay.com/sell/account/v1/fulfillment_policy?marketplace_id=EBAY_DE&limit=1",
+  "status_code": 401,
+  "interpretation": "TOKEN_INVALID_OR_EXPIRED",
+  "error": "HTTP Error 401: Unauthorized",
+  "token_file_exists": true,
+  "token_length": 2694,
+  "response_preview": "{\n  \"errors\": [\n    {\n      \"errorId\": 1001,\n      \"domain\": \"OAuth\",\n      \"category\": \"REQUEST\",\n      \"message\": \"Invalid access token\",\n      \"longMessage\": \"Invalid access token. Check the value of the Authorization HTTP request header.\"\n    }\n  ]\n}"
+}

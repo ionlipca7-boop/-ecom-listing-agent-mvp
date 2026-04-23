@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_READY_V1",
+  "last_confirmed_layer": "EXECUTE_TRANSITION_AFTER_UNTRACKED_RESOLUTION_CHECKPOINT_V1",
+  "current_position": "new_chat_transition_ready_after_untracked_resolution_checkpoint",
+  "next_allowed_action": "verify_new_chat_start_from_transition_archive_v1",
+  "confirmed_facts": {
+    "tracked_targets_clean": true,
+    ".gitignore_change_kept": true,
+    "untracked_state_reviewed": true,
+    "untracked_total": 738,
+    "project_material_presumption_active": true,
+    "cleanup_forbidden": true,
+    "sync_forbidden": true,
+    "read_only_path_locked": true
+  },
+  "execution_summary": {
+    "restored_tracked_file": "run_control_room.bat",
+    "reverted_tracked_cache": "agent/__pycache__/brain.cpython-314.pyc",
+    "post_execution_git_review_result": "REVIEW_REQUIRED_due_to_large_untracked_state",
+    "resolution_direction": "treat_untracked_as_project_material_until_full_review",
+    "transition_ready": true
+  }
+}

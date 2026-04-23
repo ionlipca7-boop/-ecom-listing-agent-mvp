@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "ENTRYPOINT_PUBLISH_PATH_MISMATCH_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_PUBLISH_CHECK_GATE_V1",
+  "observed_runtime_output": {
+    "status": "OK",
+    "layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+    "live_execution": false,
+    "parallel_branches": false,
+    "next_allowed_action": "build_new_listing_from_clone_baseline_v1"
+  },
+  "diagnosis": "run_control_room.py still follows old control_room_runtime_bridge path and does not yet use publish_instruction_contract_v1 as primary execution source",
+  "publish_executor_path_built": true,
+  "publish_executor_path_used_by_entrypoint": false,
+  "live_publish_started": false,
+  "safe_conclusion": "do_not_attempt_live_publish_until_entrypoint_is_switched_to_publish_contract_path",
+  "next_allowed_action": "build_entrypoint_publish_switch_contract_v1"
+}

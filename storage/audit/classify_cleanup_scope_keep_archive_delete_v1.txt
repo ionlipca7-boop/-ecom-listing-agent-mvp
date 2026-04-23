@@ -1,0 +1,28 @@
+CLASSIFY CLEANUP SCOPE KEEP ARCHIVE DELETE V1
+
+STATUS
+- cleanup scope classified
+- execution not performed
+- cleanup execution still forbidden
+- archive move still forbidden
+- delete still forbidden
+
+KEEP SCOPE
+- canonical runtime and operator files
+- state control files
+- audit files
+- transition front/archive memory files
+
+ARCHIVE SCOPE CANDIDATES
+- drafts\\
+- history\\
+- control_room_history\\
+- storage\\cleanup\\safe_cleanup_batch_v1\\
+- storage\\cleanup\\safe_cleanup_batch_v2\\
+- storage\\cleanup\\safe_cleanup_batch_v3\\
+
+DELETE SCOPE
+- empty and locked for now
+
+NEXT SAFE ACTION
+- confirm_archive_target_and_order_v1

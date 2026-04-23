@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_ROUTE_FIX_PRE_EXECUTION_V1",
+  "last_confirmed_layer": "PREPARE_RUN_CONTROL_ROOM_ROUTE_FIX_PLAN_V1",
+  "current_position": "route_fix_plan_prepared",
+  "next_allowed_action": "execute_run_control_room_route_fix_plan_v1",
+  "confirmed_facts": {
+    "path_reset_confirmed": true,
+    "root_cause_check_verified": true,
+    "verified_root_cause": "run_control_room.py_returns_base_runtime_bridge_step_without_progressing_to_draft_generation_route",
+    "route_fix_plan_prepared": true,
+    "route_fix_plan_scope": "force_progression_from_runtime_bridge_to_draft_generation_path",
+    "code_fix_started": false,
+    "listing_draft_created": false,
+    "live_execution": false,
+    "parallel_branches": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue strictly from execute_run_control_room_route_fix_plan_v1 only",
+  "created_at": "2026-04-23T20:19:11"
+}

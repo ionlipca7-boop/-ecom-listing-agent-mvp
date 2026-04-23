@@ -1,0 +1,51 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_AUDIT_FLOW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "audit_flow_version": "v1",
+  "audit_sequence": [
+    {
+      "dispatch_step": "read_project_state",
+      "audit_required": true,
+      "audit_type": "state_read_audit"
+    },
+    {
+      "dispatch_step": "call_control_agent",
+      "audit_required": true,
+      "audit_type": "decision_audit"
+    },
+    {
+      "dispatch_step": "show_audit",
+      "audit_required": true,
+      "audit_type": "audit_visibility_check"
+    },
+    {
+      "dispatch_step": "call_runner_if_allowed",
+      "audit_required": true,
+      "audit_type": "runner_permission_audit"
+    },
+    {
+      "dispatch_step": "call_archivist",
+      "audit_required": true,
+      "audit_type": "history_write_audit"
+    },
+    {
+      "dispatch_step": "update_project_state",
+      "audit_required": true,
+      "audit_type": "state_update_audit"
+    }
+  ],
+  "audit_gates": {
+    "audit_required_before_runner": true,
+    "audit_required_before_archivist": true,
+    "audit_required_before_state_update": true,
+    "missing_audit_blocks_transition": true
+  },
+  "execution_allowed": false,
+  "audit_flow_ready": true,
+  "next_allowed_action": "build_n8n_dispatch_payload_contract_v1"
+}

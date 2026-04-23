@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "decision": "live_identifier_resolution_result_stub_v1_created",
+  "source_file": "storage\\exports\\registry_resolution_call_v1.json",
+  "live_identifier_resolution_version": "v1",
+  "resolution_result": {
+    "identifier_type": "sku",
+    "identifier_value": "RESOLVE_FROM_REGISTRY_LATER"
+  },
+  "result_checks": {
+    "ready_for_stub": true,
+    "identifier_type_present": true,
+    "identifier_value_placeholder": true
+  },
+  "ready_for_real_inventory_read_preparation": true,
+  "next_step": "build_real_inventory_read_call_v2_with_identifier"
+}

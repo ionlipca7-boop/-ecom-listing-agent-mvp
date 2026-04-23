@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "system_status": "OK",
+  "actions_count": 1,
+  "decision": "RUN_SINGLE",
+  "execution_status": "OK",
+  "executor": {
+    "command": [
+      "py",
+      "run_auto_agent_v2.py"
+    ],
+    "returncode": 0,
+    "stdout": "AUTO_AGENT_V2_DONE\nsystem_status = OK\nactions_count = 1\nexecution_status = OK\nexecutor_returncode = 0\naudit_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_agent_v2_audit.json\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "RUNTIME_CYCLE_START_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNTIME_INPUT_CONTRACT_V1",
+  "runtime_cycle_start_gate_defined": true,
+  "runtime_mode": "CONTROLLED_REAL_RUNTIME",
+  "entrypoint": "run_control_room.py",
+  "execution_surface": "run_control_room_direct_runtime_path",
+  "operator_start_required": true,
+  "operator_approval_still_required": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_runtime_operator_input_envelope_v1"
+}

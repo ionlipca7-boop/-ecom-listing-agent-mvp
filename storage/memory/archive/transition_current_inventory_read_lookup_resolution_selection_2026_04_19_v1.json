@@ -1,0 +1,40 @@
+{
+  "date": "2026-04-19",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "status": "LOOKUP_RESOLUTION_SELECTION_CONFIRMED",
+  "last_confirmed_layer": "CURRENT_INVENTORY_READ_LOOKUP_RESOLUTION_SELECTION_V1",
+  "achievements": [
+    "current_listing_read_contract_chain_confirmed",
+    "current_listing_read_gate_confirmed",
+    "current_inventory_read_preparation_confirmed",
+    "current_inventory_read_identifier_contract_confirmed",
+    "current_inventory_read_identifier_source_selected",
+    "current_inventory_read_lookup_contract_confirmed",
+    "current_inventory_read_lookup_gate_confirmed",
+    "current_inventory_read_lookup_resolution_path_selected" 
+  ],
+  "current_state": {
+    "scope_target": "existing_working_listing_improvement",
+    "read_mode": "current_listing_state_only",
+    "read_sequence_locked": "inventory_first_offer_second",
+    "identifier_source_selected": "product_registry_key",
+    "lookup_resolution_path_selected": "product_registry_resolution_path",
+    "inventory_read_required": true,
+    "offer_read_required": true,
+    "compare_input_required": true 
+  },
+  "still_blocked": {
+    "execution": true,
+    "runner": true,
+    "live": true,
+    "parallel_branching": true 
+  },
+  "lessons_learned": [
+    "strict_response_format_must_be_preserved",
+    "one_step_rule_prevents_control_drift",
+    "inventory_first_offer_second_must_remain_locked",
+    "local_cmd_output_is_source_of_truth",
+    "transition_to_new_chat_should_use_last_confirmed_layer_and_next_step_only" 
+  ],
+  "next_step": "build_current_inventory_read_lookup_resolution_selection_audit_v1" 
+}

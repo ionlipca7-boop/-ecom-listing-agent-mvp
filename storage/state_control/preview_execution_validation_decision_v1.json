@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_EXECUTION_VALIDATION_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase": "POST_STAGE9_PREVIEW_VALIDATION_MANAGEMENT",
+  "input_layer": "PREVIEW_EXECUTION_VALIDATION_GATE_V1",
+  "decision_defined": true,
+  "decision_scope": "management_only",
+  "decision_summary": "preview validation path remains approved only as management sequence without technical execution",
+  "decision_points": {
+    "management_path_confirmed": true,
+    "technical_build_still_blocked": true,
+    "runner_execution_still_blocked": true,
+    "live_execution_still_blocked": true,
+    "single_next_step_preserved": true
+  },
+  "selected_decision": "PREPARE_PREVIEW_EXECUTION_VALIDATION_SUMMARY_V1",
+  "rejected_directions": [
+    "technical_layer_build_now",
+    "runner_flow_execution_now",
+    "live_flow_execution_now",
+    "parallel_branch_opening"
+  ],
+  "do_now": "build_preview_execution_validation_summary_v1",
+  "one_next_step": "build_preview_execution_validation_summary_v1"
+}

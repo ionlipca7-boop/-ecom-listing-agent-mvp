@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "decision": "selected_generator_io_contract_inspected",
+  "selected_file": "run_generator_agent_v4.py",
+  "has_main_def": true,
+  "has_main_guard": true,
+  "mentions_product": true,
+  "mentions_title": true,
+  "mentions_description": true,
+  "mentions_price": true,
+  "mentions_json_load": false,
+  "mentions_json_dump": true,
+  "mentions_read_text": false,
+  "mentions_write_text": true,
+  "mentions_print": true,
+  "next_step": "build_generator_real_dry_input_v1"
+}

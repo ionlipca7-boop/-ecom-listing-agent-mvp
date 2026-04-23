@@ -1,0 +1,177 @@
+{
+  "status": "OK",
+  "decision": "system_snapshot_ready",
+  "base_dir": "D:\\ECOM_LISTING_AGENT_MVP",
+  "secrets": {
+    "ebay_access_token.txt": {
+      "exists": true,
+      "size": 2456,
+      "preview": "v^1.1#i^1#r^0#f^0#p^3#I^3#t^H4sIAAAAAAAA/+VZa4wbRx0/3/mORiWhkCsNoVRmW1BFWHtnX16vzkYb23dxcz77vL5XJGStd2fv5m4fzj7OZ0SQdaUG"
+    },
+    "ebay_client_id.txt": {
+      "exists": true,
+      "size": 40,
+      "preview": "IonLipca-ECOMOSV3-PRD-d84c0e5fe-a31d5575"
+    },
+    "ebay_ru_name.txt": {
+      "exists": true,
+      "size": 0,
+      "preview": ""
+    },
+    "ebay_oauth_state_v1.txt": {
+      "exists": false,
+      "size": 0,
+      "preview": ""
+    }
+  },
+  "exports": {
+    "real_offer_request_payload_v1.json": {
+      "exists": true,
+      "size": 838,
+      "preview": "{\\n  \"status\": \"OK\",\\n  \"decision\": \"real_offer_payload_prepared\",\\n  \"sku\": \"USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabe",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "sku",
+        "payload",
+        "missing_runtime_values",
+        "next_step"
+      ]
+    },
+    "real_offer_payload_gate_v1.json": {
+      "exists": true,
+      "size": 198,
+      "preview": "{\\n  \"status\": \"OK\",\\n  \"decision\": \"missing_required_fields\",\\n  \"is_ready\": false,\\n  \"missing_fields\": [\\n    \"categoryId\"",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "is_ready",
+        "missing_fields"
+      ]
+    },
+    "ebay_policies_v1.json": {
+      "exists": true,
+      "size": 1302,
+      "preview": "{\\n  \"status\": \"PARTIAL_OR_FAILED\",\\n  \"decision\": \"policies_fetched\",\\n  \"marketplace_id\": \"EBAY_DE\",\\n  \"http_statuses\": {",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "marketplace_id",
+        "http_statuses",
+        "counts",
+        "fulfillment_policies",
+        "payment_policies",
+        "return_policies",
+        "raw_errors"
+      ]
+    },
+    "ebay_access_token_audit_v1.json": {
+      "exists": true,
+      "size": 268,
+      "preview": "{\\n  \"status\": \"OK\",\\n  \"decision\": \"token_present\",\\n  \"file_exists\": true,\\n  \"token_length\": 2456,\\n  \"starts_with\": \"v^1.",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "file_exists",
+        "token_length",
+        "starts_with",
+        "has_bom_in_raw",
+        "has_whitespace_edges",
+        "looks_like_user_token",
+        "looks_like_access_token"
+      ]
+    },
+    "real_api_token_gate_v1.json": {
+      "exists": true,
+      "size": 242,
+      "preview": "{\\n  \"status\": \"OK\",\\n  \"decision\": \"restore_oauth_access_token_required\",\\n  \"is_ready\": false,\\n  \"reason\": \"user_token_de",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "is_ready",
+        "reason",
+        "token_length",
+        "next_step"
+      ]
+    },
+    "ebay_oauth_consent_precheck_v1.json": {
+      "exists": true,
+      "size": 337,
+      "preview": "{\\n  \"status\": \"OK\",\\n  \"decision\": \"missing_oauth_inputs\",\\n  \"is_ready\": false,\\n  \"missing\": [\\n    \"ebay_ru_name.txt_empt",
+      "json_ok": true,
+      "top_keys": [
+        "status",
+        "decision",
+        "is_ready",
+        "missing",
+        "client_id_exists",
+        "ru_name_exists",
+        "client_id_prefix",
+        "ru_name_value",
+        "state_file_path"
+      ]
+    },
+    "ebay_oauth_consent_url_v1.json": {
+      "exists": false,
+      "size": 0,
+      "preview": "",
+      "json_ok": false,
+      "top_keys": []
+    }
+  },
+  "scripts": {
+    "run_real_offer_payload_gate_v1.py": {
+      "exists": true,
+      "size": 1521,
+      "preview": "import json\\nfrom pathlib import Path\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nEXPORT_PATH = BASE_DIR / \"storage\" / \"e",
+      "has_main": true,
+      "has_requests": false,
+      "has_output_path": true
+    },
+    "run_fetch_ebay_policies_v1.py": {
+      "exists": true,
+      "size": 2983,
+      "preview": "import json\\nfrom pathlib import Path\\nimport requests\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nTOKEN_PATH = BASE_DIR /",
+      "has_main": true,
+      "has_requests": true,
+      "has_output_path": false
+    },
+    "run_access_token_audit_v1.py": {
+      "exists": true,
+      "size": 1351,
+      "preview": "import json\\nfrom pathlib import Path\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nTOKEN_PATH = BASE_DIR / \"storage\" / \"se",
+      "has_main": true,
+      "has_requests": false,
+      "has_output_path": true
+    },
+    "run_real_api_token_gate_v1.py": {
+      "exists": true,
+      "size": 1312,
+      "preview": "import json\\nfrom pathlib import Path\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nINPUT_PATH = BASE_DIR / \"storage\" / \"ex",
+      "has_main": true,
+      "has_requests": false,
+      "has_output_path": true
+    },
+    "run_ebay_oauth_consent_precheck_v1.py": {
+      "exists": true,
+      "size": 1792,
+      "preview": "import json\\nfrom pathlib import Path\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nSECRETS_DIR = BASE_DIR / \"storage\" / \"s",
+      "has_main": true,
+      "has_requests": false,
+      "has_output_path": true
+    },
+    "run_ebay_oauth_consent_url_v1.py": {
+      "exists": true,
+      "size": 1730,
+      "preview": "import json\\nimport secrets\\nimport urllib.parse\\nfrom pathlib import Path\\n\\nBASE_DIR = Path(__file__).resolve().parent\\nSECR",
+      "has_main": true,
+      "has_requests": false,
+      "has_output_path": true
+    }
+  }
+}

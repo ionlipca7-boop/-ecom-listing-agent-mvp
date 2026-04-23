@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "decision": "live_identifier_resolution_result_v1_created",
+  "identifier_source": "registry_resolution_call_v1",
+  "identifier_type": "sku",
+  "identifier_value": "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER",
+  "resolved_ok": false,
+  "next_step": "rebuild_real_inventory_read_call_v2_with_real_identifier"
+}

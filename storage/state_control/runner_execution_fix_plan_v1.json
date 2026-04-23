@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_FIX_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_EXECUTION_LOGIC_INSPECTION_V1",
+  "input_status": "OK",
+  "problem_confirmed": "runner_stays_in_control_mode",
+  "fix_required": true,
+  "fix_scope": "runner_execution_switch_logic_only",
+  "plan_steps": [
+    "identify_execution_trigger_condition",
+    "verify_input_payload_structure_for_runner",
+    "add_or_fix_execution_mode_switch_in_runner",
+    "ensure_runner_does_not_return_control_layer_when_execution_required"
+  ],
+  "execution_still_blocked": true,
+  "runner_execution_still_blocked": true,
+  "live_execution_still_blocked": true,
+  "next_allowed_action": "build_runner_execution_fix_contract_v1"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "LISTING_CLONE_BASELINE_V1",
+  "decision": "baseline_restored_minimal",
+  "clone_mode": "manual_recovery_stub",
+  "source_of_truth": "unknown_recovered",
+  "new_listing_template": {
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "categoryId": "00000",
+    "merchantLocationKey": "DEFAULT",
+    "availableQuantity": 1,
+    "price": "0.00",
+    "currency": "EUR"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_inventory_readback_verify_v1_completed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "read_status": 200,
+  "title": "USB-C auf USB-A OTG Adapter USB 3.0 Typ-C Datenadapter",
+  "image_count": 1,
+  "aspect_keys": [
+    "Anschluss A",
+    "Anschluss B",
+    "Kompatibel mit",
+    "Marke",
+    "Produktart",
+    "Version"
+  ],
+  "weight_value": 0.05,
+  "weight_unit": "KILOGRAM",
+  "next_step": "update_offer_price_shipping_location_policies"
+}

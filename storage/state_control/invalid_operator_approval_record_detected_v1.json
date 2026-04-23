@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "INVALID_OPERATOR_APPROVAL_RECORD_DETECTED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RECORD_OPERATOR_APPROVAL_DECISION_V1",
+  "input_status": "INVALID_LOGICAL_STATE",
+  "detected_problem": "operator_decision_empty_but_rejection_recorded",
+  "recorded_operator_decision": "",
+  "recorded_approval_status": "REJECTED",
+  "current_record_usable": false,
+  "stop_route_allowed_from_invalid_record": false,
+  "publish_route_allowed_from_invalid_record": false,
+  "real_operator_decision_required": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "redo_operator_approval_decision_capture_v1"
+}

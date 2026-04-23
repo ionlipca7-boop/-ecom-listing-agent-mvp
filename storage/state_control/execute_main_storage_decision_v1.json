@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_MAIN_STORAGE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_MAIN_STORAGE_DECISION_V1",
+  "input_status": "OK",
+  "decision_executed": true,
+  "decision": "READ_ONLY_STORAGE_REVIEW_COMPLETE_NO_CLEANUP_PATH_OPENED",
+  "decision_basis": {
+    "storage_root_exists": true,
+    "storage_tree_reviewed": true,
+    "archive_candidates_present": true,
+    "cleanup_area_present": true,
+    "state_control_present": true,
+    "memory_archive_present": true,
+    "secrets_present": true,
+    "anomaly_candidates_observed": [
+      "archive_candidates/git_cleanup_v1",
+      "archive_candidates/phase_cleanup_v1/safe_cleanup_batch_v2"
+    ],
+    "destructive_actions_still_forbidden": true
+  },
+  "current_position": "main_storage_decision_executed",
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "prepare_next_post_storage_review_step_v1"
+}

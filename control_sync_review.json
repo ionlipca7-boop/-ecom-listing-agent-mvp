@@ -1,0 +1,22 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 11,
+  "current_step": "review_control_agents_sync",
+  "next_step": "sync_control_agent_and_runner_to_final_state",
+  "status": "SYNC_REVIEW_OK",
+  "control_layer_complete": true,
+  "history_lines": 9,
+  "findings": {
+    "control_layer_review_is_source_of_truth": true,
+    "control_agent_static_phase_detected": true,
+    "runner_agent_static_phase_detected": true,
+    "sync_required": true
+  },
+  "expected_sync_target": {
+    "phase": 10,
+    "current_step": "finalize_control_layer_review",
+    "next_step": "wait_for_next_project_specific_instruction",
+    "status": "CONTROL_LAYER_COMPLETE"
+  }
+}

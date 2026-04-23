@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_UNTRACKED_BUCKET_MAP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_BUCKET_MAP_V1",
+  "input_status": "OK",
+  "untracked_total": 738,
+  "bucket_map": {
+    "root_level_files_or_markers": 635,
+    "root_level_directories": 4,
+    "storage_prefixed_items": 103,
+    "python_files": 570,
+    "json_files": 126,
+    "text_files": 5
+  },
+  "read_only_operation": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "untracked_bucket_map_completed",
+  "next_allowed_action": "prepare_deeper_untracked_sampling_v1"
+}

@@ -1,0 +1,96 @@
+{
+  "status": "DONE",
+  "results": [
+    {
+      "file": "ebay_access_token.txt",
+      "exists": true,
+      "length": 762,
+      "http_status": 401,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 1001,
+            "domain": "OAuth",
+            "category": "REQUEST",
+            "message": "Invalid access token",
+            "longMessage": "Invalid access token. Check the value of the Authorization HTTP request header."
+          }
+        ]
+      }
+    },
+    {
+      "file": "ebay_user_token.txt",
+      "exists": true,
+      "length": 2694,
+      "http_status": 401,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 1001,
+            "domain": "OAuth",
+            "category": "REQUEST",
+            "message": "Invalid access token",
+            "longMessage": "Invalid access token. Check the value of the Authorization HTTP request header."
+          }
+        ]
+      }
+    },
+    {
+      "file": "ebay_user_token_prev_backup_2.txt",
+      "exists": true,
+      "length": 762,
+      "http_status": 401,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 1001,
+            "domain": "OAuth",
+            "category": "REQUEST",
+            "message": "Invalid access token",
+            "longMessage": "Invalid access token. Check the value of the Authorization HTTP request header."
+          }
+        ]
+      }
+    },
+    {
+      "file": "ebay_user_token_with_spaces_backup.txt",
+      "exists": true,
+      "length": 2064,
+      "http_status": 401,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 1001,
+            "domain": "OAuth",
+            "category": "REQUEST",
+            "message": "Invalid access token",
+            "longMessage": "Invalid access token. Check the value of the Authorization HTTP request header."
+          }
+        ]
+      }
+    },
+    {
+      "file": "ebay_user_token_bad_backup.txt",
+      "exists": true,
+      "length": 6135,
+      "exception": "Invalid leading whitespace, reserved character(s), or return character(s) in header value: 'Bearer cd /d D:\\\\ECOM_LISTING_AGENT_MVP\\nchcp 65001\\n\\nmkdir storage\\\\secrets 2>nul\\nmkdir storage\\\\exports 2>nul\\n\\npowershell -NoProfile -Command \"Get-Clipboard | Set-Content -Path \\'storage\\\\secrets\\\\ebay_user_token.txt\\' -Encoding UTF8\"\\n\\nif not exist .gitignore echo.>.gitignore\\nfindstr /x /c:\"storage/secrets/\" .gitignore >nul || echo storage/secrets/>> .gitignore\\nfindstr /x /c:\"storage\\\\secrets\\\\\" .gitignore >nul || echo storage\\\\secrets\\\\>> .gitignore\\n\\ndel run_ebay_token_smoke_test_v1.py 2>nul\\n\\necho import json> run_ebay_token_smoke_test_v1.py\\necho import urllib.error>> run_ebay_token_smoke_test_v1.py\\necho import urllib.request>> run_ebay_token_smoke_test_v1.py\\necho from pathlib import Path>> run_ebay_token_smoke_test_v1.py\\necho(>> run_ebay_token_smoke_test_v1.py\\necho BASE_DIR = Path(__file__).resolve().parent>> run_ebay_token_smoke_test_v1.py\\necho TOKEN_FILE = BASE_DIR / \"storage\" / \"secrets\" / \"ebay_user_token.txt\">> run_ebay_token_smoke_test_v1.py\\necho OUTPUT_FILE = BASE_DIR / \"storage\" / \"exports\" / \"ebay_token_smoke_test_v1.json\">> run_ebay_token_smoke_test_v1.py\\necho ENDPOINTS = [>> run_ebay_token_smoke_test_v1.py\\necho     {\"name\": \"sell_account_privilege\", \"url\": \"https://api.ebay.com/sell/account/v1/privilege\"},>> run_ebay_token_smoke_test_v1.py\\necho     {\"name\": \"sell_fulfillment_policy_de\", \"url\": \"https://api.ebay.com/sell/account/v1/fulfillment_policy?marketplace_id=EBAY_DE\"},>> run_ebay_token_smoke_test_v1.py\\necho     {\"name\": \"sell_inventory_locations\", \"url\": \"https://api.ebay.com/sell/inventory/v1/location\"},>> run_ebay_token_smoke_test_v1.py\\necho ]>> run_ebay_token_smoke_test_v1.py\\necho(>> run_ebay_token_smoke_test_v1.py\\necho def read_token():>> run_ebay_token_smoke_test_v1.py\\necho     return TOKEN_FILE.read_text(encoding=\"utf-8\").strip()>> run_ebay_token_smoke_test_v1.py\\necho(>> run_ebay_token_smoke_test_v1.py\\necho def fetch(url, token):>> run_ebay_token_smoke_test_v1.py\\necho     headers = {\"Authorization\": \"Bearer \" + token, \"Accept\": \"application/json\"}>> run_ebay_token_smoke_test_v1.py\\necho     req = urllib.request.Request(url, headers=headers)>> run_ebay_token_smoke_test_v1.py\\necho     try:>> run_ebay_token_smoke_test_v1.py\\necho         with urllib.request.urlopen(req, timeout=30) as resp:>> run_ebay_token_smoke_test_v1.py\\necho             body = resp.read().decode(\"utf-8\", errors=\"replace\")>> run_ebay_token_smoke_test_v1.py\\necho             return {\"ok\": True, \"status_code\": resp.getcode(), \"body_preview\": body[:500]}>> run_ebay_token_smoke_test_v1.py\\necho     except urllib.error.HTTPError as e:>> run_ebay_token_smoke_test_v1.py\\necho         body = e.read().decode(\"utf-8\", errors=\"replace\")>> run_ebay_token_smoke_test_v1.py\\necho         return {\"ok\": False, \"status_code\": e.code, \"body_preview\": body[:500]}>> run_ebay_token_smoke_test_v1.py\\necho     except Exception as e:>> run_ebay_token_smoke_test_v1.py\\necho         return {\"ok\": False, \"status_code\": 0, \"body_preview\": str(e)}>> run_ebay_token_smoke_test_v1.py\\necho(>> run_ebay_token_smoke_test_v1.py\\necho def main():>> run_ebay_token_smoke_test_v1.py\\necho     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)>> run_ebay_token_smoke_test_v1.py\\necho     if not TOKEN_FILE.exists():>> run_ebay_token_smoke_test_v1.py\\necho         payload = {\"status\": \"ERROR\", \"reason\": \"token_file_missing\", \"token_file\": str(TOKEN_FILE)}>> run_ebay_token_smoke_test_v1.py\\necho     else:>> run_ebay_token_smoke_test_v1.py\\necho         token = read_token()>> run_ebay_token_smoke_test_v1.py\\necho         results = []>> run_ebay_token_smoke_test_v1.py\\necho         for item in ENDPOINTS:>> run_ebay_token_smoke_test_v1.py\\necho             result = fetch(item[\"url\"], token)>> run_ebay_token_smoke_test_v1.py\\necho             result[\"name\"] = item[\"name\"]>> run_ebay_token_smoke_test_v1.py\\necho             result[\"url\"] = item[\"url\"]>> run_ebay_token_smoke_test_v1.py\\necho             results.append(result)>> run_ebay_token_smoke_test_v1.py\\necho         has_200 = any(x[\"status_code\"] == 200 for x in results)>> run_ebay_token_smoke_test_v1.py\\necho         has_401 = any(x[\"status_code\"] == 401 for x in results)>> run_ebay_token_smoke_test_v1.py\\necho         has_403 = any(x[\"status_code\"] == 403 for x in results)>> run_ebay_token_smoke_test_v1.py\\necho         if has_200:>> run_ebay_token_smoke_test_v1.py\\necho             overall = \"OK\">> run_ebay_token_smoke_test_v1.py\\necho         elif has_401:>> run_ebay_token_smoke_test_v1.py\\necho             overall = \"TOKEN_INVALID_OR_EXPIRED\">> run_ebay_token_smoke_test_v1.py\\necho         elif has_403:>> run_ebay_token_smoke_test_v1.py\\necho             overall = \"TOKEN_VALID_BUT_SCOPE_OR_PERMISSION_ISSUE\">> run_ebay_token_smoke_test_v1.py\\necho         else:>> run_ebay_token_smoke_test_v1.py\\necho             overall = \"NO_SUCCESS_CHECK_RESPONSE\">> run_ebay_token_smoke_test_v1.py\\necho         payload = {>> run_ebay_token_smoke_test_v1.py\\necho             \"status\": overall,>> run_ebay_token_smoke_test_v1.py\\necho             \"token_file\": str(TOKEN_FILE),>> run_ebay_token_smoke_test_v1.py\\necho             \"token_length\": len(token),>> run_ebay_token_smoke_test_v1.py\\necho             \"checks\": results>> run_ebay_token_smoke_test_v1.py\\necho         }>> run_ebay_token_smoke_test_v1.py\\necho     OUTPUT_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding=\"utf-8\")>> run_ebay_token_smoke_test_v1.py\\necho     print(\"EBAY_TOKEN_SMOKE_TEST_V1:\")>> run_ebay_token_smoke_test_v1.py\\necho     print(\"status:\", payload.get(\"status\"))>> run_ebay_token_smoke_test_v1.py\\necho     print(\"token_file:\", payload.get(\"token_file\"))>> run_ebay_token_smoke_test_v1.py\\necho     print(\"token_length:\", payload.get(\"token_length\"))>> run_ebay_token_smoke_test_v1.py\\necho     print(\"output_file:\", OUTPUT_FILE.name)>> run_ebay_token_smoke_test_v1.py\\necho     for check in payload.get(\"checks\", []):>> run_ebay_token_smoke_test_v1.py\\necho         print(check[\"name\"] + \":\", check[\"status_code\"])>> run_ebay_token_smoke_test_v1.py\\necho(>> run_ebay_token_smoke_test_v1.py\\necho if __name__ == \"__main__\":>> run_ebay_token_smoke_test_v1.py\\necho     main()>> run_ebay_token_smoke_test_v1.py'"
+    },
+    {
+      "file": "ebay_refresh_token.txt",
+      "exists": true,
+      "length": 96,
+      "http_status": 401,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 1001,
+            "domain": "OAuth",
+            "category": "REQUEST",
+            "message": "Invalid access token",
+            "longMessage": "Invalid access token. Check the value of the Authorization HTTP request header."
+          }
+        ]
+      }
+    }
+  ]
+}

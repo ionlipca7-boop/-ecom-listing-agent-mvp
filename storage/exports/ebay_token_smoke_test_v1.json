@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-04-16T21:03:28.164221Z",
+  "status_code": 403,
+  "interpretation": "SCOPE ISSUE",
+  "error": "HTTP Error 403: Forbidden",
+  "token_file_exists": true,
+  "token_length": 96
+}

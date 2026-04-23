@@ -1,0 +1,63 @@
+{
+  "status": "OK",
+  "decision": "eps_upload_queue_v1_executed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "pending_input_count": 8,
+  "hosted_ready_before_count": 1,
+  "eps_success_count": 8,
+  "eps_failure_count": 0,
+  "eps_successes": [
+    {
+      "source_url": "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/dq4AAeSwmR5p4~gJ/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/dq4AAeSwmR5p4~gJ",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/g9EAAeSwQdhp4~gL/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/g9EAAeSwQdhp4~gL",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/QgoAAeSwK89p4~gN/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/QgoAAeSwK89p4~gN",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/oEYAAeSwtppp4~gO/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/oEYAAeSwtppp4~gO",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/IIoAAeSwf8Fp4~gP/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/IIoAAeSwf8Fp4~gP",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/GXIAAeSwEdFp4~gR/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/GXIAAeSwEdFp4~gR",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/tY0AAeSwpzNp4~gS/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/tY0AAeSwpzNp4~gS",
+      "http_status": 201
+    },
+    {
+      "source_url": "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg",
+      "eps_url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/4BsAAeSwa5xp4~gT/$_1.JPG?set_id=8800005007",
+      "location": "https://apim.ebay.com/commerce/media/v1_beta/image/4BsAAeSwa5xp4~gT",
+      "http_status": 201
+    }
+  ],
+  "eps_failures": [],
+  "combined_hosted_count": 9,
+  "next_step": "build_multi_image_inventory_update_from_eps_v1"
+}

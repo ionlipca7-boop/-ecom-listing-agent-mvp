@@ -1,0 +1,14 @@
+{
+  "execution_status": "READY_FOR_REAL_EXECUTION",
+  "mode": "SAFE_REAL",
+  "note": "Real API call not executed yet",
+  "payload_preview": {
+    "title": "USB-C Ladekabel 2m 60W Schnellladen",
+    "price": {
+      "value": "5.50",
+      "currency": "EUR"
+    },
+    "categoryId": "58058"
+  },
+  "checked_at": "2026-04-15T08:10:56Z"
+}

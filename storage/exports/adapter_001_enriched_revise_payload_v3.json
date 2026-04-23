@@ -1,0 +1,62 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_enriched_revise_payload_v3_built",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "listingId": "318166440509",
+  "image_urls_count": 1,
+  "aspects_count": 9,
+  "has_title": true,
+  "has_description": true,
+  "payload": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "locale": "de_DE",
+    "product": {
+      "aspects": {
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ],
+        "Marke": [
+          "Markenlos"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Besonderheiten": [
+          "OTG"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Kompatibel mit": [
+          "Universal"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "USB Standard": [
+          "USB 3.0"
+        ]
+      },
+      "imageUrls": [
+        "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+      ],
+      "title": "USB-C auf USB-A OTG Adapter USB 3.0 Typ C Datenadapter Schwarz",
+      "description": "Kompakter USB-C auf USB-A OTG Adapter fuer schnelles und stabiles Verbinden Ihrer Geraete. Geeignet fuer Datenuebertragung und den Alltag zu Hause, im Auto oder auf Reisen. Farbe: Schwarz. USB Standard: USB 3.0."
+    },
+    "condition": "NEW",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 10
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_INPUT_NORMALIZATION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_INPUT_INTAKE_AUDIT_V1",
+  "input_status": "OK",
+  "normalization_gate_defined": true,
+  "normalization_targets": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "normalization_required_before_routing": true,
+  "normalized_output_contract": "normalized_unified_input_payload",
+  "entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_controlled_input_normalization_audit_v1"
+}

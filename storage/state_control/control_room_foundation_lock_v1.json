@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_FOUNDATION_LOCK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "foundation_locked": true,
+  "foundation_basis": [
+    "GitHub_source_of_truth",
+    "run_control_room.py_permanent_runtime_bridge",
+    "n8n_trigger_bridge"
+  ],
+  "bridge_review": "PASS",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "prepare_next_project_layer_after_foundation_lock_v1"
+}

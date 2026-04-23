@@ -1,0 +1,30 @@
+PROJECT: ECOM LISTING AGENT MVP
+
+STATUS:
+- transition package previously completed
+- cleanup decision gate completed
+- archive batch prepared but NOT executed
+- delete still forbidden
+
+CURRENT POSITION:
+- last confirmed layer = PREPARE_ARCHIVE_MOVE_BATCH_V1
+- next allowed action = execute_archive_move_batch_v1
+
+CRITICAL STATE:
+- archive ready = YES
+- archive executed = NO
+- delete allowed = NO
+
+CANONICAL RULE:
+- execute archive move as next single step
+- do not introduce new branches
+- do not mix with delete
+- verify immediately after execution
+
+DANGER ZONE:
+- do not re-prepare batch
+- do not re-classify scope
+- do not modify paths
+
+NEXT STEP STRICT:
+- execute_archive_move_batch_v1 ONLY

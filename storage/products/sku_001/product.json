@@ -1,0 +1,26 @@
+{
+  "sku": "SKU-001",
+  "name": "USB-C Ladekabel",
+  "brand": "Generic",
+  "category": "Kabel",
+  "power": "60W",
+  "length": "2m",
+  "color": "Schwarz",
+  "compatibility": ["Samsung", "Xiaomi", "MacBook"],
+  "features": ["Schnellladen", "Robustes Kabel", "Hohe Kompatibilität"],
+  "cost_price": 2.5,
+  "target_price": 6.99,
+  "notes": "Test product",
+  "status": "active",
+  "photos": {
+    "main": "photos/01_main.jpg",
+    "angle": "photos/02_angle.jpg",
+    "ports": "photos/03_ports.jpg",
+    "specs": "photos/04_specs.jpg",
+    "size": "photos/05_size.jpg",
+    "package": "photos/06_package.jpg",
+    "lifestyle": "photos/07_lifestyle.jpg"
+  },
+  "created_at": "2026-04-15",
+  "updated_at": "2026-04-15"
+}

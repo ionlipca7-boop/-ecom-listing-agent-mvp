@@ -1,0 +1,15 @@
+{
+  "last_package": "package_20260414_070314",
+  "execution_status": "MANUAL_UPLOAD_REQUIRED",
+  "publish_mode": "REAL",
+  "action_type": "REAL_EBAY_UPLOAD",
+  "executed_at": "2026-04-15T07:48:14Z",
+  "execution_mode": "MANUAL_HANDOFF",
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+  "source_files": {
+    "real_ebay_upload_action": "real_ebay_upload_action_v1.json"
+  },
+  "checks": {
+    "action_is_ready_to_execute": true
+  }
+}

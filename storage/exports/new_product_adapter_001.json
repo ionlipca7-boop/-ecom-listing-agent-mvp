@@ -1,0 +1,19 @@
+{
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+  "price": 3.99,
+  "quantity": 10,
+  "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+  "images": [
+    "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+    "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+    "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg"
+  ],
+  "aspects": {
+    "Produktart": "USB-C OTG Adapter",
+    "Anschluss A": "USB-C",
+    "Anschluss B": "USB-A",
+    "Farbe": "Schwarz"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_PREVIEW_LAYER_V2",
+  "source_file": "generator_output_extended.json",
+  "preview_file": "storage\\preview\\runner_preview_v2.json",
+  "has_title": false,
+  "has_price": false,
+  "has_html": false,
+  "has_images": false,
+  "image_count": 0
+}

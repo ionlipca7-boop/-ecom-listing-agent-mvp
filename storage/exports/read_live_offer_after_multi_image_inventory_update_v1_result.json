@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "decision": "read_live_offer_after_multi_image_inventory_update_v1_executed",
+  "offer_id": "153365657011",
+  "http_status": 200,
+  "live_price": "4.01",
+  "image_count": 0,
+  "has_listingPolicies": true,
+  "has_location": true,
+  "has_description": true,
+  "next_step": "offer_revise_after_multi_image_inventory_update_v1"
+}

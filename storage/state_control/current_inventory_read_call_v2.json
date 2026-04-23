@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_INVENTORY_READ_CALL_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_INVENTORY_READ_CHAIN_RESUME_V2",
+  "input_status": "OK",
+  "call_contract_defined": true,
+  "call_type": "inventory_read_by_identifier",
+  "identifier_source": "product_registry_resolution",
+  "identifier_ready": true,
+  "api_endpoint": "getInventoryItem",
+  "execution_prepared": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_operations_blocked": true,
+  "next_allowed_action": "build_current_inventory_read_call_v2_audit"
+}

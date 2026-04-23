@@ -1,0 +1,11 @@
+{
+  "status": "READY_FOR_PUBLISH",
+  "mode": "FULL_PIPELINE_READY",
+  "timestamp": "2026-04-15T09:14:40.176753Z",
+  "summary": {
+    "inventory": "OK",
+    "offer": "OK",
+    "location": "OK"
+  },
+  "next_step": "CONNECT_REAL_EBAY_API"
+}

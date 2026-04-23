@@ -1,0 +1,16 @@
+{
+  "status": "CYCLE_COMPLETED",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "final_layer": "EXECUTION_RESULT_DECISION_V1",
+  "execution_status": "SUCCESS",
+  "pipeline_end_to_end": true,
+  "generator": "OK",
+  "inventory_read": "OK",
+  "offer_build": "OK",
+  "preview": "OK",
+  "approval": "OK",
+  "runner": "OK",
+  "live_execution": "SUCCESS",
+  "cycle_closed": true,
+  "next_step": "READY_FOR_NEXT_LISTING_OR_SCALE"
+}

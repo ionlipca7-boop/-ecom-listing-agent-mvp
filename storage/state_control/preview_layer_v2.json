@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_LAYER_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "OFFER_LAYER_V2",
+  "input_status": "OK",
+  "preview_generated": true,
+  "preview_valid": true,
+  "next_allowed_action": "build_approval_layer_v2"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "AGENT_FEEDBACK_ARCHIVE_PROTOCOL_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ION_LOOP_RUNTIME_CONFIRMED_STOP_V1",
+  "input_status": "OK",
+  "agent_feedback_required": true,
+  "outbox_live_status_required": true,
+  "archive_every_agent_action": true,
+  "archive_path": "storage/memory/archive/agent_feedback",
+  "control_room_visibility": "full_action_feedback",
+  "execution_stages": [
+    "received",
+    "execution_started",
+    "execution_finished",
+    "error"
+  ],
+  "next_allowed_action": "RESTART_AGENT_AND_TEST_FEEDBACK_LOOP"
+}

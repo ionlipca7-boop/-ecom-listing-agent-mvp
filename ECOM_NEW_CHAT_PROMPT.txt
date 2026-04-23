@@ -1,0 +1,39 @@
+📌 CONTINUATION - ECOM CONTROL LAYER V1
+
+ПРОЕКТ:
+ECOM_LISTING_AGENT_MVP
+
+ТЕКУЩЕЕ РЕШЕНИЕ:
+Работаем в текущем проекте.
+Сначала строим CONTROL LAYER, потом перенос в COMPACT CORE.
+
+КАНОНИЧНАЯ ЛИНИЯ:
+1. project_manifest.json
+2. control_rules.json
+3. project_state.json
+4. project_history.jsonl
+5. control_agent.py
+6. archivist_agent.py
+7. runner_agent.py
+8. n8n orchestration
+9. compact core migration
+
+ЖЁСТКИЕ ПРАВИЛА:
+- сначала control layer, потом migration
+- до этапа 8 никаких live-операций
+- никаких боковых веток
+- project-specific only
+- если задача не из следующего этапа, это отклонение
+
+КАНОНИЧНЫЙ ФОРМАТ ОТВЕТА:
+1. Краткий анализ
+2. Один CMD блок
+3. Проверка
+4. Audit
+5. Что ожидаем
+
+ПЕРВЫЙ ШАГ:
+ЭТАП 1 - создать project_manifest.json
+
+ТРЕБОВАНИЕ:
+Работать строго по канону, без отклонений и без новых форматов.

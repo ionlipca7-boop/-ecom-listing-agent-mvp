@@ -1,0 +1,11 @@
+{
+  "target_bucket": "storage/archive_candidates/git_cleanup_v1",
+  "sample_paths": [
+    "storage/archive_candidates/git_cleanup_v1/(",
+    "storage/archive_candidates/git_cleanup_v1/0'",
+    "storage/archive_candidates/git_cleanup_v1/Kabel",
+    "storage/archive_candidates/git_cleanup_v1/cd",
+    "storage/archive_candidates/git_cleanup_v1/if",
+    "storage/archive_candidates/git_cleanup_v1/type"
+  ]
+}

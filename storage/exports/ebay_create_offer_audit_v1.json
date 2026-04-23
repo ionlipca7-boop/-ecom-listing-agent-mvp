@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "http_status": 201,
+  "sku": "ECOM-TEST-CABLE-001",
+  "offerId": "152921341011",
+  "body": {
+    "offerId": "152921341011"
+  }
+}

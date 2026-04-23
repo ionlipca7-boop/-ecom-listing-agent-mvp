@@ -1,0 +1,46 @@
+{
+  "status": "OK",
+  "layer": "PUBLISH_INSTRUCTION_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LOCAL_EXECUTOR_PUBLISH_PLAN_V1",
+  "contract_purpose": "single_instruction_source_for_local_executor_publish_flow",
+  "control_room_source": "ChatGPT_CONTROL_ROOM",
+  "executor_target": "local_executor_runner_agent",
+  "execution_surface": "run_control_room_direct_runtime_path",
+  "entrypoint": "run_control_room.py",
+  "source_input": {
+    "input_mode": "link_input",
+    "source_listing_url": "https://www.ebay.de/itm/317896358734",
+    "source_ref": "ebay_item_317896358734"
+  },
+  "clone_policy": {
+    "clone_mode": "SELL_SIMILAR_PROJECT_PATH",
+    "title_rewrite_allowed": true,
+    "photo_rewrite_allowed": true,
+    "price_change_allowed": true,
+    "description_rewrite_allowed": true,
+    "item_specifics_upgrade_allowed": true,
+    "category_change_allowed": false
+  },
+  "publish_policy": {
+    "operator_publish_intent_required": true,
+    "live_execution_allowed_by_contract": true,
+    "parallel_branches": false,
+    "project_specific_only": true,
+    "stop_required_after_finish": true
+  },
+  "output_contracts": {
+    "runtime_result_contract": "storage/state_control/runtime_result_v1.json",
+    "finish_contract": "storage/state_control/finish_ready_v1.json"
+  },
+  "executor_expected_actions": [
+    "read_publish_instruction_contract",
+    "resolve_source_listing",
+    "build_clone_payload",
+    "execute_publish_path",
+    "write_runtime_result",
+    "write_finish_ready",
+    "stop"
+  ],
+  "next_allowed_action": "build_local_executor_agent_v1"
+}

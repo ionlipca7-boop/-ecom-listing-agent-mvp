@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_UNTRACKED_SAMPLE_BUCKET_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_SAMPLE_BUCKET_DECISION_V1",
+  "input_status": "OK",
+  "sample_bucket_decision": "treat_untracked_as_project_material_until_full_review",
+  "project_material_presumption_confirmed": true,
+  "cleanup_forbidden_confirmed": true,
+  "destructive_actions_blocked": true,
+  "read_only_path_continues": true,
+  "current_position": "untracked_sample_bucket_decision_executed",
+  "next_allowed_action": "prepare_full_untracked_resolution_direction_v1"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "safe_cleanup_batch_v3_executed",
+  "target_name": "cleanup_backup",
+  "source_exists_before": true,
+  "moved": true,
+  "not_found": false,
+  "failed": null,
+  "quarantine_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\cleanup\\safe_cleanup_batch_v3\\cleanup_backup",
+  "rule": "quarantine_cleanup_backup_only"
+}

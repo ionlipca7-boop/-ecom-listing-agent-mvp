@@ -1,0 +1,47 @@
+{
+  "name": "ECOM_DE_FULFILLMENT_STD_V1",
+  "description": "Standard DE fulfillment policy created by ECOM Listing Agent MVP",
+  "marketplaceId": "EBAY_DE",
+  "categoryTypes": [
+    {
+      "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+      "default": false
+    }
+  ],
+  "handlingTime": {
+    "value": 1,
+    "unit": "DAY"
+  },
+  "shipToLocations": {},
+  "shippingOptions": [
+    {
+      "optionType": "DOMESTIC",
+      "costType": "FLAT_RATE",
+      "shippingServices": [
+        {
+          "sortOrder": 1,
+          "shippingCarrierCode": "DHL",
+          "shippingServiceCode": "DE_DHLPaket",
+          "shippingCost": {
+            "value": "0.0",
+            "currency": "EUR"
+          },
+          "additionalShippingCost": {
+            "value": "0.0",
+            "currency": "EUR"
+          },
+          "freeShipping": true,
+          "buyerResponsibleForShipping": false,
+          "buyerResponsibleForPickup": false
+        }
+      ],
+      "shippingDiscountProfileId": "0",
+      "shippingPromotionOffered": false
+    }
+  ],
+  "globalShipping": false,
+  "pickupDropOff": false,
+  "freightShipping": false,
+  "fulfillmentPolicyId": "257755855024",
+  "warnings": []
+}

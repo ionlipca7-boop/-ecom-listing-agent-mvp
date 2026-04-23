@@ -1,0 +1,15 @@
+{
+  "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "description": "<h2>USB-C Ladekabel</h2><p><b>Schnellladen & zuverlässige Qualität</b></p><ul><li>Leistung: 60W</li><li>Länge: 2m</li><li>Schnelle Datenübertragung</li></ul><p><b>✔ Hohe Qualität<br>✔ Schneller Versand<br>✔ Top Preis-Leistung</b></p><p>Weitere Produkte finden Sie bald direkt verlinkt in unserem Shop.</p>",
+  "price": 6.75,
+  "currency": "EUR",
+  "quantity": 10,
+  "format": "FIXED_PRICE",
+  "category_hint": "Kabel & Adapter",
+  "status": "DRAFT",
+  "sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "offerId": "DRAFT-USB-C-LADEKABEL-2M-6",
+  "ready_to_publish": true,
+  "offer_source_status": "OK",
+  "next_step": "run_ebay_publish_draft_v1"
+}

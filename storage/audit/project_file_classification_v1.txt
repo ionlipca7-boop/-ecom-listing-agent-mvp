@@ -1,0 +1,61 @@
+ECOM LISTING AGENT MVP - PROJECT FILE CLASSIFICATION V1
+
+PRIMARY_CORE
+- run_control_room.py
+- control_room_agent.py
+- control_agent.py
+- runner_agent.py
+- archivist_agent.py
+- project_manifest.json
+- control_rules.json
+- project_state.json
+- project_history.jsonl
+- control_layer_review.json
+- storage\state_control\
+- storage\state_compact_core\
+- storage\state_bridge\
+- storage\state_transition\
+- storage\state_normalization\
+- storage\memory\archive\
+- storage\memory\front\
+- storage\memory\lessons\
+- storage\audit\
+- compact_core_*.py
+- build_*.py
+- write_*.py
+
+SUPPORT_UTILITIES
+- run_control_room.bat
+- control_room_run_all.py
+- run_publish_ready_flow.py
+- control_room_publish_status.py
+- control_room_summary.py
+
+LEGACY_REFERENCE
+- control_room.py
+- old manual menu/history/export shell
+
+DOMAIN_EXECUTION_TOOLS
+- ebay_api_*.py
+- run_ebay_*.py
+- run_real_*.py
+- run_adapter_001_*.py
+- run_inventory_*.py
+- run_offer_*.py
+- run_publish_*.py
+
+ARCHIVE_CANDIDATES
+- drafts\
+- history\
+- control_room_history\
+- storage\cleanup\safe_cleanup_batch_*\
+- storage\memory\archive\old transition snapshots
+- backup files
+
+DELETE_LATER_CANDIDATES
+- root junk files: (, 0, cd, if, type, Kabel
+- __pycache__\
+- temp leftovers after verification
+
+RENAME_NOW_CANDIDATE
+- run_control_room.bat -> run_publish_ready_pipeline.bat

@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_BUCKET_MATRIX_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_BUCKET_MATRIX_V1",
+  "input_status": "OK",
+  "bucket_matrix_built": true,
+  "bucket_matrix": {
+    "python_files": "manual_review_pending",
+    "json_files": "manual_review_pending",
+    "txt_files": "manual_review_pending",
+    "directories": "manual_review_pending"
+  },
+  "cleanup_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_untracked_bucket_matrix_gate_v1"
+}

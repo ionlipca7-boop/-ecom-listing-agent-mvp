@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_CONTROL_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_stage": 9,
+  "last_confirmed_completed_stage": 9,
+  "current_phase": "POST_STAGE9_MANAGEMENT_CHECKPOINT",
+  "next_required_phase": "POST_STAGE9_DIRECTION_PLAN_V1",
+  "deviation": "NO",
+  "deviation_reason": "",
+  "what_is_extra": [
+    "return_to_pre_stage9_canonical_revalidation",
+    "new_technical_layer_before_direction_plan",
+    "live_jump",
+    "parallel_branching" 
+  ],
+  "do_now": "build_post_stage9_direction_plan_v1",
+  "one_next_step": "build_post_stage9_direction_plan_v1" 
+}

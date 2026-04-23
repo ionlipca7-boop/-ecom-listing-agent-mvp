@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "decision": "photo_pipeline_v1_archived",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "phase": "PHOTO_PIPELINE_V1_READY",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "achievements": [
+    "photo_upgrade_pipeline_v1_built",
+    "photo_source_registry_v1_built",
+    "photo_set_builder_v1_built",
+    "inventory_image_payload_builder_v1_built",
+    "post_inventory_read_verification_v1_built"
+  ],
+  "current_state": {
+    "image_count": 9,
+    "safe_mode": true,
+    "live_write_now": false,
+    "full_payload_required": true
+  },
+  "rules": [
+    "inventory_first_then_offer",
+    "always_use_full_payload",
+    "never_break_working_images",
+    "eps_images_preferred",
+    "always_read_after_inventory_update"
+  ],
+  "next_priority": "build_multi_listing_layer_v1",
+  "next_step": "build_multi_listing_layer_v1"
+}

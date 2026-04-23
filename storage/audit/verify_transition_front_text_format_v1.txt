@@ -1,0 +1,14 @@
+VERIFY TRANSITION FRONT TEXT FORMAT V1
+
+STATUS
+- front text format verified
+- instructions text format verified
+- literal backslash n sequences not detected
+
+REAL FINDING
+- front content is stale
+- front still points to: create_archive_precheck_audit_v1
+- current real step is already beyond that point
+
+NEXT SAFE ACTION
+- repair_transition_front_state_sync_v1

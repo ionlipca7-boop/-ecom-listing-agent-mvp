@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_PUBLISH_CHECK_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ONE_COMMAND_EXECUTION_ENTRY_V1",
+  "gate_purpose": "final_pre_publish_control_check_before_single_command_run",
+  "required_ready_states": {
+    "publish_instruction_contract_ready": true,
+    "executor_ready": true,
+    "runtime_result_writer_ready": true,
+    "finish_ready_writer_ready": true,
+    "one_command_entry_ready": true
+  },
+  "allowed_run_command": "py run_control_room.py",
+  "live_execution_allowed": true,
+  "stop_after_finish": true,
+  "auto_continue_after_finish": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "controlled_publish_check_gate_ready": true,
+  "next_allowed_action": "run_controlled_publish_check_v1"
+}

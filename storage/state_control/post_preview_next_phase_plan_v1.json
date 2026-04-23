@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "POST_PREVIEW_NEXT_PHASE_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase": "POST_STAGE9_PREVIEW_VALIDATION_MANAGEMENT",
+  "input_layer": "POST_PREVIEW_VALIDATION_DIRECTION_CHECK_V1",
+  "plan_defined": true,
+  "plan_scope": "management_only",
+  "current_position": "post_preview_management_chain_complete",
+  "still_blocked": {
+    "technical_build_now": true,
+    "runner_execution_now": true,
+    "live_execution_now": true,
+    "parallel_branching": true
+  },
+  "allowed_now": [
+    "single_next_phase_lock",
+    "management_transition_definition",
+    "project_specific_continuation_only"
+  ],
+  "selected_next_phase": "PREVIEW_EXECUTION_READINESS_CHECK_V1",
+  "selection_reason": "after management chain completion the next correct move is readiness check, not technical execution",
+  "do_now": "build_preview_execution_readiness_check_v1",
+  "one_next_step": "build_preview_execution_readiness_check_v1"
+}

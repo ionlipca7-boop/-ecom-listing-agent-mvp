@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "GIT_CHANGE_CLASSIFICATION_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_GIT_CHANGE_CLASSIFICATION_V1",
+  "input_status": "OK",
+  "classification_result_built": true,
+  "tracked_items": {
+    ".gitignore": "modified",
+    "agent/__pycache__/brain.cpython-314.pyc": "modified",
+    "run_control_room.bat": "deleted"
+  },
+  "untracked_items_present": true,
+  "untracked_volume": "large",
+  "cleanup_not_allowed_yet": true,
+  "push_not_allowed_yet": true,
+  "server_sync_not_allowed_yet": true,
+  "next_allowed_action": "prepare_git_change_decision_v1"
+}

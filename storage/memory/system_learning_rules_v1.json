@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "system": "ECOM_OS_CONTROL_ROOM",
+  "learning_protocol": {
+    "rule_1": "every_error_must_be_captured",
+    "rule_2": "every_solution_must_be_saved_immediately",
+    "rule_3": "no_repeat_same_error_twice",
+    "rule_4": "convert_fix_into_reusable_pattern",
+    "rule_5": "store_lessons_in_memory_layer",
+    "rule_6": "prefer_system_fix_over_manual_fix"
+  },
+  "execution_rules": {
+    "always_archive_after_fix": true,
+    "always_add_cmd_version": true,
+    "always_add_audit_step": true,
+    "always_use_python_for_complex_cases": true
+  }
+}

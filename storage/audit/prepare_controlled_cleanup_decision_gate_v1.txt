@@ -1,0 +1,16 @@
+PREPARE CONTROLLED CLEANUP DECISION GATE V1
+
+STATUS
+- controlled cleanup decision gate prepared
+- cleanup execution still forbidden
+- archive move still forbidden
+- delete still forbidden
+
+REQUIRED BEFORE ANY CLEANUP EXECUTION
+- classify keep/archive/delete scope
+- confirm archive target
+- confirm non-destructive order
+- create cleanup execution gate
+
+NEXT SAFE ACTION
+- classify_cleanup_scope_keep_archive_delete_v1

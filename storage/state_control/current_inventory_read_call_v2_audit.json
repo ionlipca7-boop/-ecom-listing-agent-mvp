@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_INVENTORY_READ_CALL_V2_AUDIT",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_INVENTORY_READ_CALL_V2",
+  "input_status": "OK",
+  "contract_present": true,
+  "identifier_present": true,
+  "api_endpoint_valid": true,
+  "execution_prepared": true,
+  "execution_still_blocked": true,
+  "audit_result": "READY_FOR_CONTROLLED_EXECUTION_TRIGGER",
+  "next_allowed_action": "build_current_inventory_read_execution_trigger_v1"
+}

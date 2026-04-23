@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "offerId": "152921341011",
+  "price": "13.49",
+  "quantity": 10,
+  "response": "{\"errors\":[{\"errorId\":2004,\"domain\":\"ACCESS\",\"category\":\"REQUEST\",\"message\":\"Invalid request\",\"longMessage\":\"The request has errors. For help, see the documentation for this API.\"}]}"
+}

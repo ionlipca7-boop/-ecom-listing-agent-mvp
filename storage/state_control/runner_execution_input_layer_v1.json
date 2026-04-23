@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_INPUT_LAYER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_INVENTORY_READ_EXECUTION_RUNNER_BRIDGE_V1",
+  "input_status": "OK",
+  "runner_input_prepared": true,
+  "input_type": "inventory_read_execution_payload",
+  "identifier_source": "product_registry_resolution",
+  "api_target": "getInventoryItem",
+  "payload_ready": true,
+  "execution_allowed_now": false,
+  "runner_still_blocked": true,
+  "live_operations_blocked": true,
+  "next_allowed_action": "build_runner_execution_gate_v1"
+}

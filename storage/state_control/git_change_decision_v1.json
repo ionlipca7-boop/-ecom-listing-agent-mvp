@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "GIT_CHANGE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_GIT_CHANGE_DECISION_V1",
+  "input_status": "OK",
+  "decision_built": true,
+  "tracked_decision": {
+    ".gitignore": "separate_review_required",
+    "agent/__pycache__/brain.cpython-314.pyc": "separate_review_required",
+    "run_control_room.bat": "missing_state_recorded_no_delete_now"
+  },
+  "untracked_decision": "classification_required_before_any_cleanup",
+  "cleanup_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_git_change_decision_gate_v1"
+}

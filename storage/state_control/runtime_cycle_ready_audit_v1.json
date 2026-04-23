@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "RUNTIME_CYCLE_READY_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNTIME_OPERATOR_INPUT_ENVELOPE_V1",
+  "runtime_input_contract_ready": true,
+  "runtime_start_gate_ready": true,
+  "runtime_operator_input_envelope_ready": true,
+  "entrypoint_ready": "run_control_room.py",
+  "execution_surface_ready": "run_control_room_direct_runtime_path",
+  "machine_result_contract_defined": true,
+  "finish_contract_defined": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "runtime_cycle_ready": true,
+  "next_allowed_action": "prepare_runtime_example_input_v1"
+}

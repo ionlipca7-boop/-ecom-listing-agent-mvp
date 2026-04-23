@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-15T07:51:32Z",
+  "dashboard_status": "READY",
+  "last_package": "package_20260414_070314",
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+  "summary": {
+    "report_status": "OK",
+    "handoff_status": "READY_FOR_MANUAL_UPLOAD",
+    "flow_status": "APPROVED"
+  },
+  "source_files": {
+    "control_room_report": "control_room_report_v1.json",
+    "real_upload_handoff_report": "real_upload_handoff_report_v1.json",
+    "full_publish_flow": "full_publish_flow_v1.json"
+  },
+  "issues": []
+}

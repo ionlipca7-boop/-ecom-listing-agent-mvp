@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "LISTING_GENERATION_AND_PREVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "AUTOMATION_INPUT_CONTRACT_AND_NORMALIZATION_V1",
+  "listing_generation": {
+    "title_generated": true,
+    "description_generated": true,
+    "price_placeholder": true
+  },
+  "preview_gate": {
+    "preview_ready": true,
+    "approval_required": true,
+    "auto_publish_blocked": true
+  },
+  "mode": "CONTROLLED_PRE_AUTOMATION",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "prepare_approval_and_publish_gate_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "parser_status": "SUCCESS",
+  "status_bucket": "SUCCESS",
+  "next_step": "RUN_POST_REUPLOAD_COMPARE",
+  "ready_for_compare": "YES",
+  "result_status": "SUCCESS",
+  "result_code": "UPLOAD_OK",
+  "message": "Fixed reupload accepted",
+  "sku": "SKU-FIXED-0001",
+  "source_files": {
+    "trigger_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\next_cycle_parser_trigger_v1.json",
+    "input_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_after_fixed_reupload_v1.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "sku": "usb-c-2m-60w-001",
+  "marketplaceId": "EBAY_DE",
+  "format": "FIXED_PRICE",
+  "availableQuantity": 10,
+  "categoryId": "58058",
+  "listingDescription": "USB-C Kabel | 60W | 2m | Schnellladen",
+  "pricingSummary": {
+    "price": {
+      "value": "5.50",
+      "currency": "EUR"
+    }
+  },
+  "listingPolicies": {
+    "fulfillmentPolicyId": "YOUR_POLICY_ID",
+    "paymentPolicyId": "YOUR_POLICY_ID",
+    "returnPolicyId": "YOUR_POLICY_ID"
+  }
+}

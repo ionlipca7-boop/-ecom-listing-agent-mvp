@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "GIT_CHANGE_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GIT_CHANGE_DECISION_V1",
+  "input_status": "OK",
+  "decision_gate_defined": true,
+  "cleanup_blocked": true,
+  "push_blocked": true,
+  "server_sync_blocked": true,
+  "allowed_now": "prepare_untracked_grouping_only",
+  "next_allowed_action": "prepare_untracked_grouping_v1"
+}

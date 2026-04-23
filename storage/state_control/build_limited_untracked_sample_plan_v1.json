@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "BUILD_LIMITED_UNTRACKED_SAMPLE_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REVIEW_TOP_LEVEL_UNTRACKED_DISTRIBUTION_V1",
+  "input_status": "OK",
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "sampling_scope": "limited_only",
+  "sampling_strategy": {
+    "slice_1": "review_storage_bucket_sample",
+    "slice_2": "review_publish_packages_bucket_sample",
+    "slice_3": "review_audit_bucket_sample",
+    "slice_4": "review_path_anomalies_sample"
+  },
+  "sampling_limits": {
+    "max_paths_per_bucket": 10,
+    "full_bucket_dump_forbidden": true,
+    "mass_export_forbidden": true
+  },
+  "forbidden_actions": {
+    "cleanup": true,
+    "delete": true,
+    "move": true,
+    "sync": true,
+    "git_push": true
+  },
+  "current_position": "limited_untracked_sample_plan_built",
+  "next_allowed_action": "execute_limited_untracked_sample_capture_v1"
+}

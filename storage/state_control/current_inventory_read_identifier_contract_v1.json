@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_INVENTORY_READ_IDENTIFIER_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_INVENTORY_READ_PREPARATION_AUDIT_V1",
+  "input_status": "OK",
+  "identifier_contract_defined": true,
+  "scope_target": "existing_working_listing_improvement",
+  "read_mode": "current_listing_state_only",
+  "read_sequence_locked": "inventory_first_offer_second",
+  "identifier_required_for_inventory_read": true,
+  "identifier_source_not_resolved_yet": true,
+  "inventory_read_required": true,
+  "offer_read_required": true,
+  "compare_input_required": true,
+  "offer_read_not_started_yet": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "decision": "current_inventory_read_identifier_contract_confirmed",
+  "next_allowed_action": "build_current_inventory_read_identifier_contract_audit_v1"
+}

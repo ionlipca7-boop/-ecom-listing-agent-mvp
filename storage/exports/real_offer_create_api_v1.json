@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "source_gate_decision": "build_real_offer_api_layer",
+  "token_exists": true,
+  "token_length": 2456,
+  "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "price": 6.75,
+  "currency": "EUR",
+  "quantity": 10,
+  "placeholder_offerId": "DRAFT-USB-C-LADEKABEL-2M-6",
+  "missing_fields": [],
+  "required_api_fields": [
+    "marketplaceId",
+    "merchantLocationKey",
+    "listingPolicies",
+    "inventory_item_ready"
+  ],
+  "can_build_real_offer_request": true,
+  "decision": "real_offer_request_payload_next",
+  "next_step": "run_real_offer_request_payload_v1"
+}

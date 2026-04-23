@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY_WRITER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNTIME_RESULT_WRITER_V1",
+  "writer_target": "storage/state_control/finish_ready_v1.json",
+  "writer_role": "persist_finish_state_after_runtime_publish_cycle",
+  "required_finish_fields": [
+    "status",
+    "layer",
+    "project",
+    "input_layer",
+    "finish_ready",
+    "stop_required",
+    "last_runtime_result",
+    "next_state"
+  ],
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "finish_ready_writer_ready": true,
+  "stop_required_after_finish": true,
+  "next_allowed_action": "build_one_command_execution_entry_v1"
+}

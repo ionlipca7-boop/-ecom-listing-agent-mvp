@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_RUNTIME_PATH_RESET_ROOT_CAUSE_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_RUNTIME_PATH_RESET_EVIDENCE_V1",
+  "input_status": "OK",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "path_reset_confirmed": true,
+  "expected_runtime_path": "draft_generation_path",
+  "actual_runtime_path": "clone_baseline_path",
+  "root_cause_check_prepared": true,
+  "root_cause_check_started": false,
+  "listing_draft_created": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_runtime_path_reset_root_cause_check_v1"
+}

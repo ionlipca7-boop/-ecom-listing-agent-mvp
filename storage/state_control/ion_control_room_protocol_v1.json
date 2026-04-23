@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "ION_CONTROL_ROOM_PROTOCOL_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROL_ROOM_AUTONOMY_EXTENSION_V1",
+  "input_status": "OK",
+  "ion_mode_enabled": true,
+  "operator_name": "ION",
+  "control_format": "ION",
+  "execution_model": "operator_command -> chatgpt_structures -> agent_executes",
+  "inbox_protocol": {
+    "file": "control_room_inbox.json",
+    "format": "json",
+    "auto_overwrite": true
+  },
+  "outbox_protocol": {
+    "file": "control_room_outbox.json",
+    "format": "json",
+    "agent_response_required": true
+  },
+  "agent_required": true,
+  "manual_cmd_not_required_after_agent_start": true,
+  "chatgpt_role": "control_room_orchestrator_only",
+  "local_agent_role": "execution_only",
+  "decision_flow": "chatgpt_decides_agent_executes",
+  "multi_step_allowed": true,
+  "repeated_discussion_forbidden": true,
+  "next_allowed_action": "WAIT_FOR_ION_COMMAND"
+}

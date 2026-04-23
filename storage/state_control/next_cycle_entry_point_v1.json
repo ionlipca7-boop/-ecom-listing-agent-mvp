@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "NEXT_CYCLE_ENTRY_POINT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "NEXT_CYCLE_PREPARATION_V1",
+  "cycle_restart_defined": true,
+  "entry_point": "GENERATOR_INPUT_LAYER",
+  "mode_selected": "single_listing_repeat",
+  "execution_allowed": false,
+  "next_allowed_action": "build_generator_input_v2"
+}

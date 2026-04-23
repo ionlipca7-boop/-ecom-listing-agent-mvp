@@ -1,0 +1,39 @@
+{
+  "status": "OK",
+  "product_key": "adapter_001",
+  "pricing": {
+    "current_price": 4.19,
+    "test_price_1": 4.99,
+    "test_price_2": 5.49,
+    "strategy": "start_mid_then_optimize_by_impressions_clicks"
+  },
+  "ads": {
+    "enabled": true,
+    "rate_percent": 7,
+    "strategy": "start_7_percent_then_adjust"
+  },
+  "shipping": {
+    "type": "DHL",
+    "cost": 0,
+    "location": "Delmenhorst",
+    "handling_time": "1_day"
+  },
+  "seo": {
+    "keywords": [
+      "USB-C Adapter OTG",
+      "USB 3.0 Datenadapter",
+      "fur Samsung",
+      "fur MacBook",
+      "OTG Funktion",
+      "schnelle Datenubertragung"
+    ]
+  },
+  "positioning": {
+    "target": "budget_fast_solution",
+    "use_cases": [
+      "smartphone",
+      "laptop",
+      "usb_devices"
+    ]
+  }
+}

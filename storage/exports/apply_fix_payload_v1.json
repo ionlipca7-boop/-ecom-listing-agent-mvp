@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-04-15T18:55:53Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_fix_executor_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1.json",
+  "payload_status": "READY",
+  "queue_items": 3,
+  "patch_count": 3,
+  "patches": [
+    {
+      "patch_id": "PATCH_1",
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_1",
+      "target_field": "Brand",
+      "repair_action": "fill_required_aspect",
+      "target_file": "ebay_upload_ready_v2.csv_or_template_mapper",
+      "instruction": "Заполнить обязательный аспект Brand допустимым значением для категории.",
+      "patch_value": "REQUIRED_BRAND_VALUE_FROM_CATEGORY",
+      "apply_mode": "PENDING_REVIEW"
+    },
+    {
+      "patch_id": "PATCH_2",
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_2",
+      "target_field": "ItemSpecifics",
+      "repair_action": "repair_item_specifics",
+      "target_file": "run_ebay_template_mapper_v2.py",
+      "instruction": "Проверить и дополнить обязательные item specifics по шаблону eBay.",
+      "patch_value": {
+        "mode": "MERGE_REQUIRED_ASPECTS",
+        "source": "CATEGORY_TEMPLATE"
+      },
+      "apply_mode": "PENDING_REVIEW"
+    },
+    {
+      "patch_id": "PATCH_3",
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_3",
+      "target_field": "StartPrice",
+      "repair_action": "normalize_price",
+      "target_file": "run_price_optimizer_v1.py",
+      "instruction": "Проверить формат цены и пересчитать цену в допустимом формате eBay.",
+      "patch_value": {
+        "mode": "RECALCULATE_AND_NORMALIZE",
+        "source": "PRICE_OPTIMIZER"
+      },
+      "apply_mode": "PENDING_REVIEW"
+    }
+  ],
+  "next_step": "REVIEW_AND_APPLY_PATCHES"
+}

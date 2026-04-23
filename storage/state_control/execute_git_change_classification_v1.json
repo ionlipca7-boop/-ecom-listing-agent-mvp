@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_GIT_CHANGE_CLASSIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_GIT_CHANGE_CLASSIFICATION_V1",
+  "input_status": "OK",
+  "classification_executed": true,
+  "tracked_changes_classified": true,
+  "untracked_changes_classified": true,
+  "tracked_summary": {
+    "modified": 2,
+    "deleted": 1
+  },
+  "untracked_summary": {
+    "present": true,
+    "volume": "large"
+  },
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_git_change_classification_result_v1"
+}

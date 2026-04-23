@@ -1,0 +1,30 @@
+{
+  "status": "TRANSITION_READY",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "last_completed_phase": "SECOND_SUCCESSFUL_EXECUTION_CONFIRMED",
+  "system_state": "STABLE_AND_READY_FOR_SCALE",
+  "achievements": [
+    "end_to_end_pipeline_built",
+    "runner_execution_fixed",
+    "controlled_execution_verified",
+    "two_successful_cycles_completed",
+    "clone_baseline_built_for_sell_similar_flow"
+  ],
+  "current_position": {
+    "stage": "NEW_LISTING_FROM_CLONE_BASELINE",
+    "last_layer": "LISTING_CLONE_BASELINE_V1",
+    "next_allowed_action": "build_new_listing_from_clone_baseline_v1"
+  },
+  "known_issues": [
+    "promotion_rate_7_percent_not_confirmed",
+    "price_source_conflict_detected_but_resolved_to_live_offer",
+    "chat_context_degradation_requires_reset"
+  ],
+  "rules": {
+    "project_specific_only": true,
+    "no_parallel_branches": true,
+    "one_step_at_a_time": true,
+    "cmd_only_execution": true,
+    "verification_first": true
+  }
+}

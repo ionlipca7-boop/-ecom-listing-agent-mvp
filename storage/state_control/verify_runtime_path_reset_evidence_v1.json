@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_RUNTIME_PATH_RESET_EVIDENCE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "COLLECT_RUNTIME_PATH_RESET_EVIDENCE_V1",
+  "input_status": "OK",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "evidence_collection_verified": true,
+  "evidence_sources_verified": true,
+  "observed_runtime_result_layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+  "observed_runtime_next_allowed_action": "build_new_listing_from_clone_baseline_v1",
+  "expected_runtime_path": "draft_generation_path",
+  "actual_runtime_path": "clone_baseline_path",
+  "path_reset_confirmed": true,
+  "listing_draft_created": false,
+  "verification_conclusion": "runtime_path_reset_evidence_verified",
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "prepare_runtime_path_reset_root_cause_check_v1"
+}

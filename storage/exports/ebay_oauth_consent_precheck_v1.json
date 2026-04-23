@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "decision": "missing_oauth_inputs",
+  "is_ready": false,
+  "missing": [
+    "ebay_ru_name.txt_empty"
+  ],
+  "client_id_exists": true,
+  "ru_name_exists": true,
+  "client_id_prefix": "IonLipca-ECO",
+  "ru_name_value": "",
+  "state_file_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\secrets\\ebay_oauth_state_v1.txt"
+}

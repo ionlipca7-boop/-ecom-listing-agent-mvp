@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_live_offer_update_v1_ok",
+  "http_status": 200,
+  "offerId": "153365657011",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "new_price": "4.19",
+  "new_quantity": 12,
+  "response_body": {
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      }
+    ]
+  }
+}

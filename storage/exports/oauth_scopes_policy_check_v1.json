@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "decision": "oauth_scopes_policy_check_v1_completed",
+  "scopes_file_exists": false,
+  "scopes_count": 0,
+  "has_sell_inventory": false,
+  "has_sell_account": false,
+  "has_sell_account_readonly": false,
+  "ready_for_policy_refresh": false,
+  "recommended_path": "start_new_consent_flow_with_sell_account_scope"
+}

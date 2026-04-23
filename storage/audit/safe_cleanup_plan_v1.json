@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "safe_to_remove_now": [
+    "cd",
+    "chcp",
+    "del",
+    "dict",
+    "echo",
+    "list",
+    "None",
+    "python",
+    "str",
+    "type",
+    "run_ebay_create_inventory_item_v3.pycd",
+    "run_ebay_get_category_suggestions_v1.pypython",
+    "run_ebay_publish_draft_v1.pycd"
+  ],
+  "remove_after_final_review": [
+  ],
+  "rule": "delete_only_from_safe_list_first",
+  "next_step": "execute_safe_cleanup_batch_v1"
+}

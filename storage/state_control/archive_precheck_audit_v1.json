@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "ARCHIVE_PRECHECK_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRANSITION_ARCHIVE_PRECHECK_READY_V1",
+  "input_status": "OK",
+  "last_confirmed_layer": "ARCHIVE_EXECUTION_PLAN_V1",
+  "rename_execution_confirmed": true,
+  "archive_execution_plan_confirmed": true,
+  "archive_move_started": false,
+  "delete_started": false,
+  "destructive_actions_allowed_now": false,
+  "front_text_format_issue_detected": true,
+  "front_text_issue": "literal_backslash_n_sequences_detected_in_front_files",
+  "strict_prompt_encoding_issue_detected": true,
+  "next_allowed_action": "repair_transition_front_text_format_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

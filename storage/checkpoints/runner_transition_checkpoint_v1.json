@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_TRANSITION_CHECKPOINT_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_file": "storage\\status\\runner_status_snapshot_v1.json",
+  "runner_pipeline_complete": true,
+  "execution_allowed": false,
+  "final_decision": "KEEP_BLOCKED",
+  "runner_live_permission": false,
+  "transition_state": "SAFE_TO_CONTINUE_WITH_BLOCKED_RUNNER_FLOW",
+  "next_step": "decide_next_project_specific_branch_after_runner_checkpoint"
+}

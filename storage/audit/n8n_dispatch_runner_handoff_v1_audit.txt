@@ -1,0 +1,11 @@
+N8N_DISPATCH_RUNNER_HANDOFF_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+runner_handoff_version = v1
+handoff_mode = blocked_contract_only
+required_handoff_field_count = 7
+blocked_reason_count = 3
+execution_allowed = False
+runner_handoff_ready = True
+next_allowed_action = build_n8n_dispatch_archivist_handoff_v1

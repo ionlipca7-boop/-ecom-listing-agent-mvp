@@ -1,0 +1,11 @@
+{
+  "control_room_status": "READY",
+  "next_action": "EXPORT_READY_PRODUCTS_TO_EBAY_TEMPLATE",
+  "summary": {
+    "total_products": 1,
+    "ready_products": 1,
+    "draft_products": 0,
+    "generated_listings": 1
+  },
+  "blocked_products": []
+}

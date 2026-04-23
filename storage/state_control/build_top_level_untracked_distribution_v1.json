@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "BUILD_TOP_LEVEL_UNTRACKED_DISTRIBUTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_COUNT_MISMATCH_REVIEW_V1",
+  "input_status": "OK",
+  "distribution_file": "storage/audit/top_level_untracked_distribution_v1.json",
+  "distribution_built": true,
+  "top_level_bucket_count": 637,
+  "review_mode": "READ_ONLY",
+  "cleanup_performed": false,
+  "delete_performed": false,
+  "sync_performed": false,
+  "current_position": "top_level_untracked_distribution_built",
+  "next_allowed_action": "review_top_level_untracked_distribution_v1"
+}

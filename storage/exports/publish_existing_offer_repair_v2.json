@@ -1,0 +1,65 @@
+{
+  "status": "ERROR",
+  "decision": "publish_existing_offer_failed",
+  "updated_at_utc": "2026-04-18T08:37:53.003132+00:00",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "repair_inventory_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+      "aspects": {
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Marke": [
+          "No-Name"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      }
+    }
+  },
+  "repair_inventory_http_status": 204,
+  "publish_http_status": 400,
+  "listingId": null,
+  "repair_inventory_response_text": "",
+  "publish_response": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details."
+          },
+          {
+            "name": "1",
+            "value": "Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details."
+          }
+        ]
+      }
+    ]
+  }
+}

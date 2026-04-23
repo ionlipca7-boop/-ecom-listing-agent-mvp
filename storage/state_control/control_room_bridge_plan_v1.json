@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_BRIDGE_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "plan_steps": [
+    "check_baseline",
+    "restore_baseline_if_missing",
+    "connect_baseline_to_runtime",
+    "build_new_listing_layer",
+    "add_audit_and_error_handling",
+    "lock_single_entrypoint",
+    "connect_n8n_trigger",
+    "full_non_live_test_run"
+  ],
+  "current_step": "check_baseline",
+  "final_target": "A_to_B_to_C_bridge_completed",
+  "rules": [
+    "no_parallel_branches",
+    "one_step_at_a_time",
+    "verification_first",
+    "no_live_execution"
+  ]
+}

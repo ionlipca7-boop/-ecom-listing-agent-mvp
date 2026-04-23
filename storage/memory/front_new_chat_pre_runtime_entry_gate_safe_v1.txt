@@ -1,0 +1,29 @@
+ION STRICT NEW CHAT PROMPT V5
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+MISSION
+A -> B -> FINISH -> STOP
+NO BRANCHES
+
+LANGUAGE
+- Russian
+- concise
+- verification-first
+
+MODE
+- one step at a time
+- no destructive actions
+
+CURRENT ACTIVE STATE
+- layer = RECORD_RUN_CONTROL_ROOM_PRE_RUNTIME_ENTRY_GATE_CONFIRMATION_V1
+- execution_target = run_control_room.py
+- input_type = link_input
+- input_value = https://example.com/product
+- live_execution = false
+- next_allowed_action = prepare_run_control_room_runtime_entry_permission_v1
+
+IMPORTANT
+- DO NOT RUN run_control_room.py without explicit confirmation
+- stay in control room flow only

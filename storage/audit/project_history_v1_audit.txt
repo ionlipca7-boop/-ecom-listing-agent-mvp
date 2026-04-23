@@ -1,0 +1,10 @@
+PROJECT_HISTORY_V1_AUDIT
+status = OK
+history_created = True
+history_file = storage\control_layer\project_history.jsonl
+foundation_manifest = OK
+foundation_rules = OK
+foundation_state = OK
+foundation_history = OK
+foundation_restored = True
+next_allowed_action = re_run_canon_9_step_audit_after_foundation_restore

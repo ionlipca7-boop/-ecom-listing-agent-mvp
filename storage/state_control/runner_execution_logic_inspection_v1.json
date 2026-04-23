@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_LOGIC_INSPECTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RETURN_TO_CANON_TRANSITION_V1",
+  "input_status": "OK",
+  "inspection_mode": "READ_ONLY",
+  "execution_attempt_detected": true,
+  "runner_behavior": "returns_control_layer_without_execution",
+  "suspected_issue": "runner_does_not_switch_from_control_to_execution_mode",
+  "execution_still_blocked": true,
+  "runner_execution_still_blocked": true,
+  "live_execution_still_blocked": true,
+  "next_allowed_action": "build_runner_execution_fix_plan_v1"
+}

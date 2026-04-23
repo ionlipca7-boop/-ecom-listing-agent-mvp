@@ -1,0 +1,37 @@
+{
+  "status": "OK",
+  "layer": "CLASSIFY_CLEANUP_SCOPE_KEEP_ARCHIVE_DELETE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_CONTROLLED_CLEANUP_DECISION_GATE_V1",
+  "input_status": "OK",
+  "classification_completed": true,
+  "execution_performed": false,
+  "keep_scope_defined": [
+    "run_control_room.py",
+    "run_publish_ready_pipeline.bat",
+    "control_room.py",
+    "control_room_run_all.py",
+    "storage\\state_control\\",
+    "storage\\audit\\",
+    "storage\\memory\\front\\",
+    "storage\\memory\\archive\\"
+  ],
+  "archive_scope_candidates": [
+    "drafts\\",
+    "history\\",
+    "control_room_history\\",
+    "storage\\cleanup\\safe_cleanup_batch_v1\\",
+    "storage\\cleanup\\safe_cleanup_batch_v2\\",
+    "storage\\cleanup\\safe_cleanup_batch_v3\\"
+  ],
+  "delete_scope_candidates": [],
+  "delete_scope_locked_empty": true,
+  "archive_target_root": "storage\\archive_candidates\\phase_cleanup_v1\\",
+  "classification_rule": "keep critical runtime/state/audit/front files; move only pre-identified archive candidates; do not define delete scope yet",
+  "archive_move_allowed_now": false,
+  "delete_allowed_now": false,
+  "cleanup_execution_allowed_now": false,
+  "next_allowed_action": "confirm_archive_target_and_order_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

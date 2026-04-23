@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "EXECUTION_RESULT_ANALYSIS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_CONTROLLED_EXECUTION_V1",
+  "analysis_performed": true,
+  "log_checked": true,
+  "errors_detected": false,
+  "execution_successful": true
+}

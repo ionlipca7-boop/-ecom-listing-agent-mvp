@@ -1,0 +1,27 @@
+PROJECT: ECOM_LISTING_AGENT_MVP / CONTROL ROOM
+
+STATUS:
+- tracked review completed
+- git clean state confirmed as NOT clean
+- untracked-only snapshot created
+- untracked sample bucket read completed
+- python sample bucket result = empty
+
+CURRENT POSITION:
+- last confirmed layer = UNTRACKED_SAMPLE_BUCKET_READ_RESULT_V1
+- next allowed action = prepare_python_bucket_decision_v1
+
+HARD FACTS:
+- delete forbidden
+- git push forbidden
+- server sync forbidden
+- physical move forbidden
+- tracked items still relevant:
+  - .gitignore = modified
+  - agent/__pycache__/brain.cpython-314.pyc = modified
+  - run_control_room.bat = deleted
+
+IMPORTANT:
+- storage/audit/untracked_python_bucket_sample_v1.txt is empty
+- continue strictly from prepare_python_bucket_decision_v1
+- no cleanup, no push, no sync, no delete

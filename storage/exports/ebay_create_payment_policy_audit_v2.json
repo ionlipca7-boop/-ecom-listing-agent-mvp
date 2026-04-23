@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "http_status": 201,
+  "location": "http://api.ebay.com/sell/257755913024",
+  "paymentPolicyId": "257755913024",
+  "name": "ECOM_DE_PAYMENT_STD_V2_%Y%m%d_%H%M%S",
+  "body": {
+    "name": "ECOM_DE_PAYMENT_STD_V2_%Y%m%d_%H%M%S",
+    "description": "ECOM OS DE payment policy",
+    "marketplaceId": "EBAY_DE",
+    "categoryTypes": [
+      {
+        "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+        "default": false
+      }
+    ],
+    "paymentMethods": [],
+    "immediatePay": false,
+    "paymentPolicyId": "257755913024",
+    "warnings": []
+  }
+}

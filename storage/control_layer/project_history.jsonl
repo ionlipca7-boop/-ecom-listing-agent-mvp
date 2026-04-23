@@ -1,0 +1,7 @@
+{"status":"OK","event":"phase_8_canon_complete","result":"confirmed","next":"transition_verification"}
+{"status":"OK","event":"compact_core_transition_front_v1_verified","result":"confirmed","next":"canon_9_step_audit"}
+{"status":"OK","event":"canon_9_step_audit_v1","result":"completed","finding":"foundation_incomplete","next":"restore_manifest"}
+{"status":"OK","event":"project_manifest_v1_created","result":"confirmed","fixed":"manifest","next":"build_control_rules_v1"}
+{"status":"OK","event":"control_rules_v1_created","result":"confirmed","fixed":"rules","next":"build_project_state_v1"}
+{"status":"OK","event":"project_state_v1_created","result":"confirmed","fixed":"state","next":"build_project_history_v1"}
+{"status":"OK","event":"project_history_v1_created","result":"confirmed","fixed":"history","next":"re_run_canon_9_step_audit_after_foundation_restore"}

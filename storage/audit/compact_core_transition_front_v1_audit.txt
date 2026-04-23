@@ -1,0 +1,9 @@
+COMPACT_CORE_TRANSITION_FRONT_V1_AUDIT
+status = OK
+stage = 9
+root_role = new_transition_root
+foundation_ok = True
+ready_for_stage_9 = True
+generator_ready = True
+output_ready = True
+next_step = build_compact_core_state_hub_v1

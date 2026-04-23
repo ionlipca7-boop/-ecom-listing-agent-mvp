@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_header_mapped_v1.json",
+    "action_field": "*Action(SiteID=Germany|Country=DE|Currency=EUR|Version=1193|CC=UTF-8)",
+    "required_field_count": 14,
+    "row_count": 1,
+    "ok_row_count": 1,
+    "blocked_row_count": 0,
+    "validation_status": "PASS"
+  },
+  "required_fields": [
+    "*Action(SiteID=Germany|Country=DE|Currency=EUR|Version=1193|CC=UTF-8)",
+    "*Category",
+    "*Title",
+    "*ConditionID",
+    "*C:Marke",
+    "*C:Produktart",
+    "*Description",
+    "*Format",
+    "*Duration",
+    "*StartPrice",
+    "*Quantity",
+    "*Location",
+    "*DispatchTimeMax",
+    "*ReturnsAcceptedOption"
+  ],
+  "rows": [
+    {
+      "row_index_1_based": 1,
+      "custom_label": "SKU-001",
+      "title": "60W USB-C Ladekabel 2m",
+      "required_ok": true,
+      "filled_required_count": 14,
+      "missing_required_count": 0,
+      "filled_required_fields": [
+        "*Action(SiteID=Germany|Country=DE|Currency=EUR|Version=1193|CC=UTF-8)",
+        "*Category",
+        "*Title",
+        "*ConditionID",
+        "*C:Marke",
+        "*C:Produktart",
+        "*Description",
+        "*Format",
+        "*Duration",
+        "*StartPrice",
+        "*Quantity",
+        "*Location",
+        "*DispatchTimeMax",
+        "*ReturnsAcceptedOption"
+      ],
+      "missing_required_fields": []
+    }
+  ]
+}

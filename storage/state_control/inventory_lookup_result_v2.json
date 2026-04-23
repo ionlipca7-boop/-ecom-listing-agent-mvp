@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "INVENTORY_LOOKUP_RESULT_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INVENTORY_LOOKUP_RESOLUTION_V2",
+  "lookup_performed": true,
+  "existing_inventory_found": false,
+  "new_inventory_required": true,
+  "next_allowed_action": "build_offer_layer_v2"
+}

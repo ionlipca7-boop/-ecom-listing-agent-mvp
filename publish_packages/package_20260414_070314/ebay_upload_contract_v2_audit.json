@@ -1,0 +1,15 @@
+{
+  "package_id": "package_20260414_070314",
+  "input_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2.csv",
+  "validation_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2_validation.json",
+  "summary_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2_summary.json",
+  "audit_file": "publish_packages/package_20260414_070314/ebay_upload_contract_v2_audit.json",
+  "validation_valid": false,
+  "summary_valid": false,
+  "validation_header_order_matches_template": false,
+  "computed_header_order_matches_template": false,
+  "upload_header_columns": 11,
+  "template_header_columns": 96,
+  "contract_ok": true,
+  "generated_at": "2026-04-14T18:39:02.150188+00:00"
+}

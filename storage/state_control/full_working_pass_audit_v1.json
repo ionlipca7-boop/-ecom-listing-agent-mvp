@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "FULL_WORKING_PASS_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PUBLISH_READY_LAYER_V1",
+  "input_status": "OK",
+  "intake_confirmed": true,
+  "normalization_confirmed": true,
+  "routing_confirmed": true,
+  "generation_confirmed": true,
+  "preview_confirmed": true,
+  "approval_confirmed": true,
+  "publish_ready_confirmed": true,
+  "single_entrypoint_confirmed": true,
+  "live_execution_still_false": true,
+  "parallel_branches_still_false": true,
+  "full_working_pass_result": "A_TO_Y_CONFIRMED_WITHOUT_LIVE",
+  "next_allowed_action": "build_finish_ready_v1"
+}

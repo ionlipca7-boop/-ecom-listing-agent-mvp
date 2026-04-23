@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_APPROVAL_RECORD_LAYER_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_file": "storage\\approval\\runner_approval_request_v1.json",
+  "approval_required": true,
+  "approval_status": "PENDING_EXPLICIT_APPROVAL",
+  "requested_decision": "APPROVE_OR_KEEP_BLOCKED",
+  "default_decision": "KEEP_BLOCKED",
+  "final_decision": "KEEP_BLOCKED",
+  "execution_allowed_now": false,
+  "runner_live_permission": false,
+  "block_reason": "EXPLICIT_APPROVAL_REQUIRED",
+  "runner_action_now": "DO_NOT_EXECUTE_LIVE",
+  "request_summary": {
+    "project_specific_only": true,
+    "live_execution_still_blocked": true,
+    "data_ready": true,
+    "has_title": true,
+    "has_price": true,
+    "has_description_html": true,
+    "sufficient_images": true
+  },
+  "next_step": "build_runner_status_snapshot_layer_v1"
+}

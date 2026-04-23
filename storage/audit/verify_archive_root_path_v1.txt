@@ -1,0 +1,14 @@
+VERIFY ARCHIVE ROOT PATH V1
+
+STATUS
+- archive root verified after repair
+- archive scope rechecked
+- keep scope rechecked
+- cleanup gate revalidated
+- delete still forbidden
+
+READINESS RULE
+- archive move is allowed only when archive root, archive scope, and keep scope are all verified
+
+NEXT SAFE ACTION
+- prepare_archive_move_batch_v1

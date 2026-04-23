@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_LISTING_READ_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LISTING_IMPROVEMENT_SCOPE_AUDIT_V1",
+  "input_status": "OK",
+  "scope_target": "existing_working_listing_improvement",
+  "read_plan_defined": true,
+  "read_mode": "current_listing_state_only",
+  "read_sequence": [
+    "read_inventory_first",
+    "read_offer_second",
+    "prepare_compare_input"
+  ],
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "next_allowed_action": "build_current_listing_read_plan_audit_v1"
+}

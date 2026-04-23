@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_live_offer_v2_fetched",
+  "http_status": 200,
+  "offerId": "153365657011",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "availableQuantity": 10,
+  "has_price": true,
+  "has_policies": true
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_CONTRACT_GAP_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase": "PREVIEW_CONTRACT_FIRST_TECHNICAL_AUDIT_CONFIRMED",
+  "input_layer": "PREVIEW_CONTRACT_INTEGRITY_AUDIT_V1",
+  "decision_defined": true,
+  "decision_scope": "preview_contract_only",
+  "audit_result_confirmed": "preview_contract_path_integrity_confirmed",
+  "gap_detected": false,
+  "decision_summary": "no contract gap detected on preview contract path, safe to move to next preview contract control step",
+  "still_blocked": {
+    "runner_execution_now": true,
+    "live_execution_now": true,
+    "parallel_branching": true
+  },
+  "next_allowed_direction": "build_preview_contract_transition_gate_v1",
+  "do_now": "build_preview_contract_transition_gate_v1",
+  "one_next_step": "build_preview_contract_transition_gate_v1"
+}

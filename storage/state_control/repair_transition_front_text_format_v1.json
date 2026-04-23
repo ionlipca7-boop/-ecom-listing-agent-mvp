@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_TRANSITION_FRONT_TEXT_FORMAT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ARCHIVE_PRECHECK_AUDIT_V1",
+  "input_status": "OK",
+  "front_archive_precheck_ready_rewritten": true,
+  "new_chat_instructions_rewritten": true,
+  "literal_backslash_n_sequences_removed": true,
+  "strict_prompt_encoding_issue_left_untouched": true,
+  "next_allowed_action": "verify_transition_front_text_format_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

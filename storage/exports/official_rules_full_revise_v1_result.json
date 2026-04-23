@@ -1,0 +1,47 @@
+{
+  "status": "PARTIAL_OR_FAILED",
+  "decision": "official_rules_full_revise_v1_executed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "category_id": "",
+  "category_tree_id": "0",
+  "required_aspects": [],
+  "inventory_read_status": 200,
+  "inventory_update_status": 400,
+  "offer_update_status": null,
+  "images_sent": 9,
+  "price_sent": "4.01",
+  "inventory_error_text": "{\"errors\":[{\"errorId\":25002,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"Request\",\"message\":\"A user error has occurred. Das Artikelmerkmal Produktart fehlt. Fügen Sie Produktart zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.\",\"parameters\":[{\"name\":\"0\",\"value\":\"Das Artikelmerkmal Produktart fehlt.\"},{\"name\":\"1\",\"value\":\"Das Artikelmerkmal Produktart fehlt. Fügen Sie Produktart zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.\"},{\"name\":\"2\",\"value\":\"3\"},{\"name\":\"3\",\"value\":\"Produktart\"}]}]}",
+  "inventory_error_json": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Das Artikelmerkmal Produktart fehlt. Fügen Sie Produktart zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Das Artikelmerkmal Produktart fehlt."
+          },
+          {
+            "name": "1",
+            "value": "Das Artikelmerkmal Produktart fehlt. Fügen Sie Produktart zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal."
+          },
+          {
+            "name": "2",
+            "value": "3"
+          },
+          {
+            "name": "3",
+            "value": "Produktart"
+          }
+        ]
+      }
+    ]
+  },
+  "offer_error_text": "",
+  "offer_error_json": null,
+  "next_step": "inspect_exact_remaining_required_fields_v1"
+}

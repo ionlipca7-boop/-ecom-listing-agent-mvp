@@ -1,0 +1,47 @@
+import json, pathlib
+base = pathlib.Path(r"D:\ECOM_LISTING_AGENT_MVP")
+p = base / "storage" / "exports" / "first_real_multi_listing_run_payload_v5.json"
+if not p.exists():
+    print("LIVE_RUN_V5_IDENTITY_AUDIT")
+    print("status = FILE_NOT_FOUND")
+    print("path =", str(p))
+    raise SystemExit(1)
+d = json.loads(p.read_text(encoding="utf-8"))
+inv = d.get("inventory_payload", {}) if isinstance(d, dict) else {}
+off = d.get("offer_payload", {}) if isinstance(d, dict) else {}
+sku_inv = inv.get("sku")
+sku_off = off.get("sku")
+offer_id = d.get("offer_id") or off.get("offerId") or off.get("offer_id")
+listing_id = d.get("listingId") or d.get("listing_id") or off.get("listingId") or off.get("listing_id")
+publish_marker = d.get("published") or d.get("is_published") or d.get("listingStatus") or off.get("listingStatus")
+category_id = off.get("categoryId")
+price_value = (((off.get("pricingSummary") or {}).get("price") or {}).get("value"))
+desc_present = bool(off.get("listingDescription"))
+policies = off.get("listingPolicies") or {}
+f = policies.get("fulfillmentPolicyId")
+pay = policies.get("paymentPolicyId")
+ret = policies.get("returnPolicyId")
+same_sku = (sku_inv == sku_off and sku_inv is not None)
+create_offer_shape = all([sku_off, off.get("marketplaceId"), off.get("format"), off.get("availableQuantity") is not None, category_id, f, pay, ret])
+already_existing_offer_marker = bool(offer_id or listing_id or publish_marker)
+print("LIVE_RUN_V5_IDENTITY_AUDIT")
+print("status = OK")
+print("sku_inventory =", sku_inv)
+print("sku_offer =", sku_off)
+print("same_sku =", same_sku)
+print("offer_id_present =", bool(offer_id))
+print("listing_id_present =", bool(listing_id))
+print("publish_marker_present =", bool(publish_marker))
+print("category_id =", category_id)
+print("price_value =", price_value)
+print("description_present =", desc_present)
+print("policy_fulfillment =", f)
+print("policy_payment =", pay)
+print("policy_return =", ret)
+print("create_offer_shape =", create_offer_shape)
+print("already_existing_offer_marker =", already_existing_offer_marker)
+if already_existing_offer_marker:
+    print("recommended_path = existing_live_update_not_publish")
+else:
+    print("recommended_path = inventory_put_then_offer_post_then_publish")
+print("next_step = return_audit_to_chat")

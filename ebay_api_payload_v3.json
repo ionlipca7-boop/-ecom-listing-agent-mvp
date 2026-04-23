@@ -1,0 +1,25 @@
+{
+  "title": "USB-C Ladekabel 2m 60W Schnellladen",
+  "description": "USB-C Kabel | 60W | 2m | Schnellladen",
+  "price": {
+    "value": "5.50",
+    "currency": "EUR"
+  },
+  "quantity": 10,
+  "categoryId": "58058",
+  "condition": "NEW",
+  "listingFormat": "FIXED_PRICE",
+  "country": "DE",
+  "shippingOptions": [
+    {
+      "service": "DHL",
+      "cost": "0.00"
+    }
+  ],
+  "itemSpecifics": {
+    "Marke": "Markenlos",
+    "Kabellänge": "2m",
+    "Leistung": "60W",
+    "Anschluss": "USB-C"
+  }
+}

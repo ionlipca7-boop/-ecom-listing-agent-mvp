@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "decision": "missing_required_fields",
+  "is_ready": false,
+  "missing_fields": [
+    "categoryId",
+    "fulfillmentPolicyId",
+    "paymentPolicyId",
+    "returnPolicyId"
+  ]
+}

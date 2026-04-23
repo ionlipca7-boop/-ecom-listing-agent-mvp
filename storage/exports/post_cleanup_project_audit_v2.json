@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "post_cleanup_project_audit_v2_completed",
+  "overall_status": "OK",
+  "dirs_ok_count": 9,
+  "dirs_missing_count": 0,
+  "files_ok_count": 9,
+  "files_missing_count": 0,
+  "dirs_missing": [],
+  "files_missing": [],
+  "decision_note": "core_removed_from_required_dirs_for_mvp_structure",
+  "next_step": "start_next_feature_layer"
+}

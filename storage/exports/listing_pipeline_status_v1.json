@@ -1,0 +1,24 @@
+{
+  "status": "WARN",
+  "overall_status": "PUBLISH_RESULT_MISSING",
+  "generator_exists": true,
+  "draft_exists": true,
+  "publish_exists": false,
+  "publish_check_exists": false,
+  "mini_audit_exists": false,
+  "generator_main_title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "generator_price": 6.75,
+  "draft_offerId": null,
+  "draft_sku": null,
+  "publish_status": null,
+  "publish_http_status": null,
+  "publish_ready_to_publish": null,
+  "publish_check_status": null,
+  "publish_check_passed": null,
+  "mini_audit_status": null,
+  "mini_audit_summary": null,
+  "next_step": "run_ebay_publish_draft_v1",
+  "notes": [
+    "ebay_publish_result_v1.json missing"
+  ]
+}

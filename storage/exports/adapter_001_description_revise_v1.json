@@ -1,0 +1,69 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_description_revised",
+  "updated_at_utc": "2026-04-18T09:30:15.672003+00:00",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "http_status": 200,
+  "description_length": 390,
+  "payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "<h2>USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten</h2><p>Kompakter USB-C auf USB-A Adapter fuer schnelles Laden und Datenuebertragung.</p><ul><li>USB-C auf USB-A OTG Funktion</li><li>USB 3.0 schnelle Datenuebertragung</li><li>Kompakt und leicht</li><li>Ideal fuer Smartphone, Tablet, Laptop</li></ul><p>Schneller Versand<br>Top Qualitaet<br>Perfekt fuer Alltag und Reisen</p>",
+      "aspects": {
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Marke": [
+          "No-Name"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      },
+      "imageUrls": [
+        "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+        "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+        "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+        "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+        "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+        "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+        "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+        "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+        "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+      ]
+    }
+  },
+  "response": {
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      },
+      {
+        "errorId": 25402,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "System warning. Der Verkäufer hat Rahmenbedingungen aktiviert. Bitte verwenden Sie die IDs für Rahmenbedingungen anstelle der Felder für Versand, Zahlung und Rücknahme. Andernfalls werden für diesen Verkäufer neue Rahmenbedingungen erstellt."
+      }
+    ]
+  }
+}

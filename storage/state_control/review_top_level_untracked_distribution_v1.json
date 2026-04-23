@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "REVIEW_TOP_LEVEL_UNTRACKED_DISTRIBUTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_TOP_LEVEL_UNTRACKED_DISTRIBUTION_V1",
+  "input_status": "OK",
+  "review_mode": "READ_ONLY",
+  "distribution_reviewed": true,
+  "largest_buckets": {
+    "storage": 1023,
+    "publish_packages": 34,
+    "audit": 16
+  },
+  "path_anomalies_detected": true,
+  "path_anomalies": {
+    "\"storage": 1,
+    "\"templates": 1
+  },
+  "control_decision": "continue_with_limited_sample_review_only",
+  "cleanup_forbidden": true,
+  "delete_forbidden": true,
+  "sync_forbidden": true,
+  "current_position": "top_level_distribution_reviewed",
+  "next_allowed_action": "build_limited_untracked_sample_plan_v1"
+}

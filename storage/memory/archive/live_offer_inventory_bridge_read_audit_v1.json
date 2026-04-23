@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "decision": "live_offer_inventory_bridge_read_v1_completed",
+  "offer_id": "153365657011",
+  "offer_get_status": 200,
+  "live_sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "inventory_get_status": 200,
+  "offer_out": "storage\\exports\\adapter_001_live_offer_bridge_read_v1.json",
+  "inventory_out": "storage\\exports\\adapter_001_live_inventory_bridge_read_v1.json",
+  "next_step": "build_full_live_revise_payload_from_offer_and_inventory_if_inventory_exists"
+}

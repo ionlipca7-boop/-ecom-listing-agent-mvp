@@ -1,0 +1,57 @@
+19.04.2026
+
+?? CONTINUATION - ECOM OS CONTROL ROOM (CURRENT INVENTORY READ LOOKUP RESOLUTION)
+
+ПРОЕКТ:
+ECOM_LISTING_AGENT_MVP
+
+Я продолжаю новый чат после подтверждённого control-progression.
+
+ПОДТВЕРЖДЁННЫЙ СТАТУС:
+- current listing read contract chain completed and verified
+- current listing read gate completed
+- current inventory read preparation completed and audited
+- current inventory read identifier contract completed and audited
+- current inventory read identifier source selected = product_registry_key
+- current inventory read lookup contract completed and audited
+- current inventory read lookup gate completed
+- current inventory read lookup resolution selection completed
+
+ПОСЛЕДНИЙ ПОДТВЕРЖДЁННЫЙ СЛОЙ:
+CURRENT_INVENTORY_READ_LOOKUP_RESOLUTION_SELECTION_V1
+
+ТЕКУЩИЙ NEXT STEP:
+?? build_current_inventory_read_lookup_resolution_selection_audit_v1
+
+ТЕКУЩЕЕ СОСТОЯНИЕ:
+- scope_target = existing_working_listing_improvement
+- read_mode = current_listing_state_only
+- read_sequence_locked = inventory_first_offer_second
+- identifier_source_selected = product_registry_key
+- lookup_resolution_path_selected = product_registry_resolution_path
+- inventory_read_required = TRUE
+- offer_read_required = TRUE
+- compare_input_required = TRUE
+- execution still BLOCKED
+- runner still BLOCKED
+- live still BLOCKED
+
+ЖЁСТКИЕ ПРАВИЛА:
+- project-specific only
+- никаких боковых веток
+- один следующий шаг без альтернатив
+- сначала audit потом следующий слой
+- никакого live
+- никакого runner execution
+- никакого parallel branching
+
+КАНОНИЧНЫЙ ФОРМАТ ОТВЕТА:
+1. Краткий анализ
+2. Один CMD блок
+3. Проверка
+4. Audit
+5. Что ожидаем
+
+ЗАДАЧА В НОВОМ ЧАТЕ:
+Проверить состояние и продолжить строго с:
+?? build_current_inventory_read_lookup_resolution_selection_audit_v1

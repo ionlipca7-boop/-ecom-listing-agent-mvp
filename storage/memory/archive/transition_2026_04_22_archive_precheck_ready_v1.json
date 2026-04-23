@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_ARCHIVE_PRECHECK_READY_V1",
+  "last_confirmed_layer": "ARCHIVE_EXECUTION_PLAN_V1",
+  "rename_execution_confirmed": true,
+  "archive_execution_plan_confirmed": true,
+  "destructive_actions_started": false,
+  "archive_move_started": false,
+  "delete_started": false,
+  "canonical_runtime_entry": "run_control_room.py",
+  "operator_batch": "run_publish_ready_pipeline.bat",
+  "legacy_manual_shell": "control_room.py",
+  "support_publish_flow": "control_room_run_all.py",
+  "next_allowed_action": "create_archive_precheck_audit_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

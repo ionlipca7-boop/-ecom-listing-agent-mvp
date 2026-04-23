@@ -1,0 +1,8 @@
+adapter_001_lessons_v1.json
+archive
+last_context.json
+lessons
+project_memory.json
+project_memory_active_v1.json
+project_memory_v1.json
+system_learning_rules_v1.json

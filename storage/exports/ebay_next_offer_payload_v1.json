@@ -1,0 +1,20 @@
+{
+  "sku": "ECOM-NEXT-SKU-001",
+  "marketplaceId": "EBAY_DE",
+  "format": "FIXED_PRICE",
+  "availableQuantity": 10,
+  "categoryId": "44932",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "listingDuration": "GTC",
+  "pricingSummary": {
+    "price": {
+      "value": "5.49",
+      "currency": "EUR"
+    }
+  },
+  "listingPolicies": {
+    "fulfillmentPolicyId": "257755855024",
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024"
+  }
+}

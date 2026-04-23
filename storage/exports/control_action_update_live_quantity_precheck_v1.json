@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "decision": "control_action_update_live_quantity_precheck_completed",
+  "product_key": "cable_001",
+  "requested_quantity": 12,
+  "registry_entry_found": true,
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "listing_state": "LIVE"
+}

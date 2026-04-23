@@ -1,0 +1,18 @@
+{
+  "layer": "COMPACT_CORE_CHECKPOINT_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "status": "OK",
+  "next_step": "compact_checkpoint_ready_for_stage9_summary",
+  "source_exists": true,
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_delivery_state_v1.json",
+  "delivery_ready": true,
+  "checkpoint_ready": true,
+  "checkpoint_checks": {
+    "title_ready": true,
+    "price_ready": true,
+    "description_ready": true,
+    "html_ready": true,
+    "images_ready": true
+  }
+}

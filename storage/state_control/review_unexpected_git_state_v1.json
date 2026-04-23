@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "REVIEW_UNEXPECTED_GIT_STATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_POST_EXECUTION_GIT_REVIEW_V1",
+  "input_status": "REVIEW_REQUIRED",
+  "git_status_lines_total": 739,
+  "modified_lines": [
+    " M .gitignore"
+  ],
+  "untracked_lines_count": 738,
+  "untracked_state_detected": true,
+  "tracked_targets_still_clean": true,
+  ".gitignore_still_present": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "unexpected_git_state_reviewed",
+  "next_allowed_action": "prepare_untracked_state_classification_v1"
+}

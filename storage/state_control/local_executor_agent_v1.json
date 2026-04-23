@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "LOCAL_EXECUTOR_AGENT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PUBLISH_INSTRUCTION_CONTRACT_AUDIT_V1",
+  "executor_name": "local_executor_runner_agent",
+  "executor_role": "read_contract_execute_publish_and_write_results",
+  "reads_from": "storage/state_control/publish_instruction_contract_v1.json",
+  "entrypoint": "run_control_room.py",
+  "execution_surface": "run_control_room_direct_runtime_path",
+  "executor_actions": [
+    "read_publish_instruction_contract",
+    "resolve_source_listing",
+    "build_clone_payload",
+    "execute_publish_path",
+    "write_runtime_result",
+    "write_finish_ready",
+    "stop"
+  ],
+  "operator_direct_action": "single_command_run",
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "executor_ready": true,
+  "next_allowed_action": "build_runtime_result_writer_v1"
+}

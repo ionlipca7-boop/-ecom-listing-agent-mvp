@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "pipeline_status": "PUBLISH_OK",
+  "mode": "SIMULATED_PIPELINE",
+  "offerId": "DRAFT-USB-C-LADEKABEL-2M-6",
+  "sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "token_exists": true,
+  "token_length": 2456,
+  "has_real_offer": false,
+  "ready_for_real_api_publish": false,
+  "decision": "build_real_offer_api_layer",
+  "next_step": "run_real_offer_create_api_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-04-15T07:45:20Z",
+  "report_status": "OK",
+  "last_package": "package_20260414_070314",
+  "summary": {
+    "control_room_run_final_status": "READY",
+    "real_publish_request_status": "CREATED",
+    "final_publish_manifest_status": "READY",
+    "real_publish_approval_status": "APPROVED",
+    "full_publish_flow_status": "APPROVED"
+  },
+  "source_files": {
+    "control_room_run": "control_room_run_v1.json",
+    "real_publish_request": "real_publish_request_v1.json",
+    "final_publish_manifest": "final_publish_manifest_v1.json",
+    "real_publish_approval": "real_publish_approval_v1.json",
+    "full_publish_flow": "full_publish_flow_v1.json"
+  },
+  "issues": []
+}

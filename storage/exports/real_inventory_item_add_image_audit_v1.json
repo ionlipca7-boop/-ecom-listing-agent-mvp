@@ -1,0 +1,48 @@
+{
+  "status": "OK",
+  "decision": "inventory_item_image_updated",
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "image_url": "https://i.ebayimg.com/images/g/tkoAAeSwFOBpuYyi/s-l1600.webp",
+  "get_http_status": 200,
+  "put_http_status": 204,
+  "response_text": "",
+  "updated_image_count": 1,
+  "updated_item": {
+    "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+    "locale": "de_DE",
+    "product": {
+      "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+      "aspects": {
+        "Marke": [
+          "Markenlos"
+        ],
+        "Produktart": [
+          "USB-C Ladekabel"
+        ],
+        "Typ": [
+          "USB-C Ladekabel"
+        ],
+        "Leistung": [
+          "60W"
+        ],
+        "Kabellaenge": [
+          "2 m"
+        ]
+      },
+      "description": "Hochwertiges USB-C Ladekabel mit 60W Leistung fuer schnelles Laden und Datentransfer.",
+      "imageUrls": [
+        "https://i.ebayimg.com/images/g/tkoAAeSwFOBpuYyi/s-l1600.webp"
+      ]
+    },
+    "condition": "NEW",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 10
+        }
+      }
+    }
+  }
+}

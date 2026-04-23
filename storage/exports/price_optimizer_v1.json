@@ -1,0 +1,21 @@
+{
+  "optimizer_status": "READY",
+  "strategy": "BASELINE_PRICE_LOCK",
+  "next_step": "COLLECT_VIEWS_AND_SALES_BEFORE_PRICE_CHANGE",
+  "summary": {
+    "performance_status": "READY",
+    "current_price": 5.5,
+    "recommended_price": 5.5,
+    "currency": "EUR"
+  },
+  "rules": {
+    "baseline_mode": "keep current price until real metrics arrive",
+    "increase_trigger": "high views plus watchers plus low sales",
+    "decrease_trigger": "high views plus zero sales after test window",
+    "hold_trigger": "new listing without enough traffic data"
+  },
+  "inputs": {
+    "performance_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\listing_performance_v1.json",
+    "ready_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_export_v1.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_ARCHIVIST_HANDOFF_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "archivist_handoff_version": "v1",
+  "handoff_mode": "record_required",
+  "required_handoff_fields": [
+    "status",
+    "dispatch_step",
+    "decision_source",
+    "action_allowed",
+    "next_allowed_action",
+    "audit_reference",
+    "history_reference"
+  ],
+  "archivist_write_requirements": {
+    "history_write_required": true,
+    "decision_record_required": true,
+    "audit_reference_required": true,
+    "state_change_summary_required": true
+  },
+  "blocked_conditions": [
+    "missing_history_reference",
+    "missing_audit_reference",
+    "missing_decision_source"
+  ],
+  "archivist_handoff_ready": true,
+  "execution_allowed": false,
+  "next_allowed_action": "build_n8n_dispatch_state_update_handoff_v1"
+}

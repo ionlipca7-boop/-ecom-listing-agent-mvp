@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_UNTRACKED_STATE_RESOLUTION_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_UNTRACKED_STATE_CLASSIFICATION_V1",
+  "input_status": "OK",
+  "decision_scope": "untracked_state_resolution_only",
+  "decision_required": true,
+  "untracked_state_confirmed": true,
+  "read_only_execution_completed": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "untracked_state_resolution_decision_prepared",
+  "next_allowed_action": "execute_untracked_state_resolution_decision_v1"
+}

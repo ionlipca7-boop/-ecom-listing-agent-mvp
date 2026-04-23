@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_DEEPER_UNTRACKED_SAMPLING_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_UNTRACKED_BUCKET_MAP_V1",
+  "input_status": "OK",
+  "sampling_scope": "deeper_read_only_untracked_sampling",
+  "sampling_required": true,
+  "read_only_operation": true,
+  "cleanup_still_forbidden": true,
+  "sync_still_forbidden": true,
+  "tracked_state_must_remain_unchanged": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "deeper_untracked_sampling_prepared",
+  "next_allowed_action": "execute_deeper_untracked_sampling_v1"
+}

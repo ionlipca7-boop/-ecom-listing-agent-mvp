@@ -1,0 +1,8 @@
+{
+  "status": "READY",
+  "placeholder_count": 0,
+  "placeholders": [],
+  "inventory_file": "storage\\exports\\ebay_next_inventory_payload_v1.json",
+  "offer_file": "storage\\exports\\ebay_next_offer_payload_v1.json",
+  "sku": "ECOM-NEXT-SKU-001"
+}

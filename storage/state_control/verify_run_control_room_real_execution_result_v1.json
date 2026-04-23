@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_RUN_CONTROL_ROOM_REAL_EXECUTION_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_RUN_CONTROL_ROOM_REAL_EXECUTION_V1",
+  "input_status": "OK",
+  "execution_target": "run_control_room.py",
+  "execution_record_verified": true,
+  "runtime_output_verified": true,
+  "runtime_result_layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+  "runtime_input_exists": true,
+  "runtime_live_execution": false,
+  "runtime_parallel_branches": false,
+  "runtime_next_allowed_action": "build_new_listing_from_clone_baseline_v1",
+  "execution_started": true,
+  "destructive_actions_forbidden": true,
+  "verification_conclusion": "runtime_output_and_execution_record_aligned",
+  "next_allowed_action": "build_new_listing_from_clone_baseline_v1"
+}

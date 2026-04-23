@@ -1,0 +1,21 @@
+PREPARE ARCHIVE MOVE BATCH V1
+
+STATUS
+- archive move batch prepared
+- archive move not executed yet
+- keep scope remains protected
+- delete still forbidden
+
+ARCHIVE TARGET ROOT
+- storage\\archive_candidates\\phase_cleanup_v1\\
+
+PLANNED MOVE SET
+- drafts -> storage\\archive_candidates\\phase_cleanup_v1\\drafts
+- history -> storage\\archive_candidates\\phase_cleanup_v1\\history
+- control_room_history -> storage\\archive_candidates\\phase_cleanup_v1\\control_room_history
+- storage\\cleanup\\safe_cleanup_batch_v1 -> storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v1
+- storage\\cleanup\\safe_cleanup_batch_v2 -> storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v2
+- storage\\cleanup\\safe_cleanup_batch_v3 -> storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v3
+
+NEXT SAFE ACTION
+- execute_archive_move_batch_v1

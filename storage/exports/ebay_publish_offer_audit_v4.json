@@ -1,0 +1,31 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "offerId": "152921341011",
+  "listingId": null,
+  "response_json": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Das Artikelmerkmal Marke fehlt."
+          },
+          {
+            "name": "1",
+            "value": "Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal."
+          },
+          {
+            "name": "2",
+            "value": "Marke"
+          }
+        ]
+      }
+    ]
+  }
+}

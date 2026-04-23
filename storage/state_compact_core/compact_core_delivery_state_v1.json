@@ -1,0 +1,18 @@
+{
+  "layer": "COMPACT_CORE_DELIVERY_STATE_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "status": "OK",
+  "next_step": "delivery_state_ready_for_next_compact_core_layer",
+  "source_exists": true,
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_runner_handoff_gate_v1.json",
+  "handoff_ready": true,
+  "delivery_ready": true,
+  "delivery_checks": {
+    "title_ready": true,
+    "price_ready": true,
+    "description_ready": true,
+    "html_ready": true,
+    "images_ready": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "ION_LOOP_RUNTIME_CONFIRMED_STOP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LOCAL_AGENT_RUNTIME_READY_V1",
+  "input_status": "OK",
+  "ion_protocol_confirmed": true,
+  "local_agent_runtime_confirmed": true,
+  "inbox_read_confirmed": true,
+  "outbox_write_confirmed": true,
+  "full_loop_confirmed": true,
+  "last_test_action": "ping_test_4",
+  "control_room_bridge_status": "READY",
+  "system_state": "SAFE_STOP_AFTER_FULL_RUNTIME_CONFIRMATION",
+  "manual_cmd_per_step_not_required_anymore": true,
+  "next_allowed_action": "WAIT_FOR_NEXT_ION_COMMAND",
+  "stop_now_allowed": true
+}

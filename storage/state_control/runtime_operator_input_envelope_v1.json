@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "RUNTIME_OPERATOR_INPUT_ENVELOPE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNTIME_CYCLE_START_GATE_V1",
+  "operator_input_envelope_ready": true,
+  "accepted_input_modes": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "required_fields": [
+    "input_mode",
+    "input_payload"
+  ],
+  "optional_fields": [
+    "notes",
+    "source_ref"
+  ],
+  "machine_input_target": "storage/state_control/runtime_input_v1.json",
+  "runtime_result_target": "storage/state_control/runtime_result_v1.json",
+  "finish_contract": "storage/state_control/finish_ready_v1.json",
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_runtime_cycle_ready_audit_v1"
+}

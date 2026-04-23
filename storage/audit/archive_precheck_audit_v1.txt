@@ -1,0 +1,16 @@
+ARCHIVE PRECHECK AUDIT V1
+
+STATUS
+- transition archive precheck ready confirmed
+- rename execution confirmed
+- archive execution plan confirmed
+- archive move not started
+- delete not started
+- destructive actions still forbidden
+
+REAL FINDINGS
+- front files currently contain literal \n sequences
+- strict new chat prompt snapshot shows broken Cyrillic headings
+
+NEXT SAFE ACTION
+- repair_transition_front_text_format_v1

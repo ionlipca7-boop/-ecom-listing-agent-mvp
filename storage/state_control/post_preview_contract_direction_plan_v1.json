@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "POST_PREVIEW_CONTRACT_DIRECTION_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREVIEW_CONTRACT_COMPLETION_AUDIT_V1",
+  "input_status": "OK",
+  "preview_contract_chain_completed": true,
+  "preview_contract_completion_result": "preview_contract_technical_entry_completed_and_verified",
+  "direction_plan_defined": true,
+  "allowed_scope": "post_preview_contract_planning_only",
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "next_allowed_action": "build_post_preview_contract_direction_decision_v1"
+}

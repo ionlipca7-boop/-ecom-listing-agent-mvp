@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_READY_V1",
+  "last_confirmed_layer": "UNTRACKED_SAMPLE_BUCKET_READ_RESULT_V1",
+  "current_position": "untracked_python_sample_read_completed",
+  "next_allowed_action": "prepare_python_bucket_decision_v1",
+  "confirmed_facts": {
+    "git_state_clean": false,
+    "tracked_changes_present": true,
+    "untracked_items_present": true,
+    "untracked_python_bucket_sample_file": "storage/audit/untracked_python_bucket_sample_v1.txt",
+    "untracked_python_bucket_sample_result": "empty",
+    "delete_allowed": false,
+    "git_push_allowed": false,
+    "server_sync_allowed": false,
+    "physical_move_allowed": false
+  }
+}

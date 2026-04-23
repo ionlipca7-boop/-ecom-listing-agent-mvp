@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_ROUTING_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_ROUTING_GATE_V1",
+  "input_status": "OK",
+  "routing_gate_present": true,
+  "routing_input_contract_confirmed": true,
+  "routing_mode_confirmed": true,
+  "selected_project_path_confirmed": true,
+  "entrypoint_confirmed": true,
+  "live_execution_still_false": true,
+  "parallel_branches_still_false": true,
+  "audit_result": "CONTROLLED_ROUTING_CONFIRMED",
+  "next_allowed_action": "build_generation_layer_v1"
+}

@@ -1,0 +1,14 @@
+REPAIR NEW CHAT TRANSITION PACKAGE STATE SYNC V1
+
+STATUS
+- stable transition package state sync repaired
+- stable front now matches current controlled cleanup sequence
+- archive move not started
+- delete not started
+
+UPDATED TARGETS
+- last confirmed layer = REPAIR_NEW_CHAT_TRANSITION_PACKAGE_STATE_SYNC_V1
+- next allowed action = verify_new_chat_transition_package_state_sync_v1
+
+NEXT SAFE ACTION
+- verify_new_chat_transition_package_state_sync_v1

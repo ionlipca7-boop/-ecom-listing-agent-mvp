@@ -1,0 +1,15 @@
+{
+  "package_id": "package_20260414_070314",
+  "bundle_dir": "publish_packages/package_20260414_070314/export_bundle_v2",
+  "zip_file": "publish_packages/package_20260414_070314/export_bundle_v2.zip",
+  "included_files": [
+    "ebay_upload_ready_v2.csv",
+    "ebay_upload_ready_v2_summary.json",
+    "ebay_upload_ready_v2_validation.json",
+    "export_bundle_v2_manifest.json"
+  ],
+  "valid": false,
+  "total_rows": 7,
+  "total_columns": 11,
+  "generated_at": "2026-04-14T17:25:37.983755+00:00"
+}

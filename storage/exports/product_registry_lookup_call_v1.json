@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "decision": "product_registry_lookup_call_v1_built",
+  "source_file": "storage\\exports\\product_registry_identifier_resolution_probe_v1.json",
+  "product_registry_lookup_call_version": "v1",
+  "chosen_source": "product_registry_key",
+  "chosen_path": "real_inventory_read_first",
+  "lookup_contract": {
+    "call_type": "product_registry_lookup",
+    "resolution_target": "live_inventory_identifier",
+    "preferred_identifier_output": "sku"
+  },
+  "lookup_checks": {
+    "source_is_product_registry_key": true,
+    "path_is_read_first": true,
+    "ready_for_lookup_call": true,
+    "lookup_contract_present": true
+  },
+  "ready_for_registry_key_injection": true,
+  "next_step": "build_registry_key_injection_probe_v1"
+}

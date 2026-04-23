@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_full_inventory_revise_400_audit_v1_completed",
+  "payload_top_keys": [
+    "availability",
+    "condition",
+    "locale",
+    "packageWeightAndSize",
+    "product",
+    "sku"
+  ],
+  "product_keys": [
+    "aspects",
+    "description",
+    "imageUrls",
+    "title"
+  ],
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "title": "USB-C auf USB-A OTG Adapter USB 3.0 Typ-C Datenadapter",
+  "title_length": 54,
+  "image_count": 1,
+  "aspect_keys": [
+    "Anschluss A",
+    "Anschluss B",
+    "Kompatibel mit",
+    "Marke",
+    "Produktart",
+    "Version"
+  ],
+  "errors_count": 1,
+  "warnings_count": 0,
+  "first_error": {
+    "errorId": 25709,
+    "domain": "API_INVENTORY",
+    "subdomain": "Selling",
+    "category": "Request",
+    "message": "Invalid value for weight.value."
+  },
+  "first_warning": {},
+  "raw_response_keys": [
+    "errors"
+  ],
+  "next_step": "fix_payload_by_exact_ebay_error_and_retry_full_inventory_revise"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "has_access_token": false,
+  "access_token_length": 0,
+  "has_refresh_token": false,
+  "refresh_token_length": 0,
+  "response_json": {
+    "error": "invalid_grant",
+    "error_description": "the provided authorization grant code is invalid or was issued to another client"
+  }
+}

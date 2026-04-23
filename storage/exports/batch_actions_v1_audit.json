@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "action_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_action_v4.json",
+  "actions_count": 1,
+  "execution_status": "OK",
+  "executor": {
+    "command": [
+      "py",
+      "run_control_action_v5.py"
+    ],
+    "returncode": 0,
+    "stdout": "CONTROL_ACTION_V5\nresolved_actions_count = 1\n---\naction = update_quantity\nproduct_key = cable_001\nquantity = 35\nsku = ECOM-TEST-CABLE-001\nofferId = 152921341011\nresolved_status = OK\nexecution_status = OK\n---\nfinal_status = OK\nresult_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_action_v5.json\n",
+    "stderr": ""
+  }
+}

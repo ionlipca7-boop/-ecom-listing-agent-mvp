@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "product_key": "adapter_001",
+  "lessons": [
+    "always_use_python_for_umlaut_not_cmd",
+    "always_include_marke_field_markenlos",
+    "always_use_full_payload_inventory_update",
+    "always_fetch_live_before_revise",
+    "always_include_images_in_payload",
+    "respect_ebay_business_policies_framework"
+  ],
+  "system_rules": [
+    "cmd_not_safe_for_utf8_text",
+    "python_is_primary_execution_layer",
+    "inventory_requires_mandatory_fields"
+  ]
+}

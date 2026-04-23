@@ -1,0 +1,11 @@
+PHASE_8_CLOSURE_AND_NEXT_FRONT_V1_AUDIT
+status = OK
+phase = 8
+phase_status = CANON_COMPLETE
+phase_8_canon_complete = True
+execution_allowed = False
+final_decision = KEEP_BLOCKED
+n8n_ready = False
+chosen_next_front = PREPARE_NEXT_STAGE_FRONT_V1
+chosen_next_step = define_single_post_phase_8_direction_before_new_build
+next_allowed_action = build_post_phase_8_direction_lock_v1

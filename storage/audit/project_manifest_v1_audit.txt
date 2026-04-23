@@ -1,0 +1,6 @@
+PROJECT_MANIFEST_V1_AUDIT
+status = OK
+manifest_created = True
+phase_context = post_phase_8_transition_verified
+canonical_order_defined = True
+next_allowed_action = build_control_rules_v1

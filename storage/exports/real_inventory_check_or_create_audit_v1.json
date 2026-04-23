@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "decision": "inventory_item_created",
+  "raw_sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "sanitized_sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "get_http_status": 404,
+  "inventory_exists": false,
+  "create_attempted": true,
+  "create_http_status": 204,
+  "response_text": ""
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "TRACKED_REVIEW_RESOLUTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRACKED_REVIEW_RESOLUTION_PREPARED_V1",
+  "input_status": "OK",
+  "tracked_review_resolution_required": true,
+  "tracked_delete_candidate": "run_control_room.bat",
+  "tracked_cache_candidate": "agent/__pycache__/brain.cpython-314.pyc",
+  "tracked_modified_candidate": ".gitignore",
+  "tracked_review_resolution_required_now": true,
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "resolution_result": "manual_review_required_before_any_action",
+  "next_allowed_action": "prepare_new_chat_transition_v1"
+}

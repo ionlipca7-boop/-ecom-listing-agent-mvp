@@ -1,0 +1,33 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "decision_gate_version": "v1",
+  "decision_source_required": "control_agent",
+  "gate_conditions": {
+    "control_agent_decision_required": true,
+    "audit_reference_required": true,
+    "next_allowed_action_required": true,
+    "payload_contract_must_be_valid": true,
+    "state_bypass_forbidden": true
+  },
+  "runner_gate": {
+    "runner_dispatch_allowed_only_if_action_allowed_true": true,
+    "runner_dispatch_forbidden_if_execution_allowed_false": true,
+    "runner_dispatch_forbidden_without_control_agent_decision": true
+  },
+  "stop_conditions": [
+    "missing_decision_source",
+    "missing_audit_reference",
+    "missing_next_allowed_action",
+    "payload_contract_invalid",
+    "execution_allowed_false"
+  ],
+  "execution_allowed": false,
+  "decision_gate_ready": true,
+  "next_allowed_action": "build_n8n_dispatch_runner_handoff_v1"
+}

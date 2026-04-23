@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "registry_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\products_registry_v1.json",
+  "products_count": 1,
+  "items": [
+    {
+      "product_key": "cable_001",
+      "sku": "ECOM-TEST-CABLE-001",
+      "offerId": "152921341011",
+      "status": "OK"
+    }
+  ]
+}

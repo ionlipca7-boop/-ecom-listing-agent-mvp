@@ -1,0 +1,1 @@
+print('SAFE_WRITER_PROBE_OK')

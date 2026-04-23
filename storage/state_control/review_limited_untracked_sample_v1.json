@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "REVIEW_LIMITED_UNTRACKED_SAMPLE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_LIMITED_UNTRACKED_SAMPLE_CAPTURE_V1",
+  "input_status": "OK",
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "sample_reviewed": true,
+  "storage_sample_contains_project_material": true,
+  "storage_sample_contains_command_noise": true,
+  "publish_packages_sample_project_material": true,
+  "audit_sample_project_material": true,
+  "path_anomalies_confirmed": true,
+  "state_classification": "MIXED_UNTRACKED_STATE",
+  "cleanup_forbidden": true,
+  "delete_forbidden": true,
+  "sync_forbidden": true,
+  "current_position": "limited_untracked_sample_reviewed",
+  "next_allowed_action": "build_mixed_untracked_decision_gate_v1"
+}

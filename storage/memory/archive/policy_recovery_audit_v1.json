@@ -1,0 +1,127 @@
+{
+  "status": "OK",
+  "decision": "policy_recovery_audit_v1_completed",
+  "hits_count": 28,
+  "fulfillmentPolicyId_candidates": [
+    "YOUR_POLICY_ID",
+    "257755855024",
+    "REPLACE_ME"
+  ],
+  "paymentPolicyId_candidates": [
+    "YOUR_POLICY_ID",
+    "257755913024",
+    "REPLACE_ME"
+  ],
+  "returnPolicyId_candidates": [
+    "YOUR_POLICY_ID",
+    "257755877024",
+    "REPLACE_ME"
+  ],
+  "sample_hits": [
+    {
+      "path": "ebay_offer_payload_v1.json",
+      "fulfillmentPolicyIds": [
+        "YOUR_POLICY_ID"
+      ],
+      "paymentPolicyIds": [
+        "YOUR_POLICY_ID"
+      ],
+      "returnPolicyIds": [
+        "YOUR_POLICY_ID"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_full_offer_update_v1.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_offer_v2.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_offer_v3.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    },
+    {
+      "path": "storage\\exports\\ebay_business_policies_readiness_v1.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    },
+    {
+      "path": "storage\\exports\\ebay_create_fulfillment_policy_v1.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [],
+      "returnPolicyIds": []
+    },
+    {
+      "path": "storage\\exports\\ebay_create_payment_policy_audit_v2.json",
+      "fulfillmentPolicyIds": [],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": []
+    },
+    {
+      "path": "storage\\exports\\ebay_create_payment_policy_v2.json",
+      "fulfillmentPolicyIds": [],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": []
+    },
+    {
+      "path": "storage\\exports\\ebay_create_return_policy_v2.json",
+      "fulfillmentPolicyIds": [],
+      "paymentPolicyIds": [],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    },
+    {
+      "path": "storage\\exports\\ebay_get_offer_audit_v3.json",
+      "fulfillmentPolicyIds": [
+        "257755855024"
+      ],
+      "paymentPolicyIds": [
+        "257755913024"
+      ],
+      "returnPolicyIds": [
+        "257755877024"
+      ]
+    }
+  ],
+  "next_step": "build_full_offer_update_with_real_policy_ids_and_shipping_rules"
+}

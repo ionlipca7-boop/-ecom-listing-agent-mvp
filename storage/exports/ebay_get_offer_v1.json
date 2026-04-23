@@ -1,0 +1,17 @@
+{
+  "offerId": "152921341011",
+  "sku": "ECOM-TEST-CABLE-001",
+  "marketplaceId": "EBAY_DE",
+  "format": "FIXED_PRICE",
+  "pricingSummary": {},
+  "listingPolicies": {
+    "eBayPlusIfEligible": false
+  },
+  "tax": {
+    "applyTax": false
+  },
+  "status": "UNPUBLISHED",
+  "listingDuration": "GTC",
+  "includeCatalogProductDetails": true,
+  "hideBuyerDetails": false
+}

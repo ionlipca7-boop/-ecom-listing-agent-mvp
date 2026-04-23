@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "pipeline_status": "READY_NEXT",
+  "final_decision": "READY_NEXT",
+  "alert_state": "SEND_READY_NEXT",
+  "actions_count": 1,
+  "scheduler_action": "RUN_NOW",
+  "gate_reason": "ready_next_and_alert_present",
+  "paths": {
+    "pipeline_status_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_pipeline_status_v1.json",
+    "alert_state_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_alert_state_v1.json",
+    "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_scheduler_gate_v1.json"
+  }
+}

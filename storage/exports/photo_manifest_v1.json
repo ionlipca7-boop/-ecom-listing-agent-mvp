@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "total_products": 1,
+    "total_photos": 4
+  },
+  "items": [
+    {
+      "sku": "SKU-001",
+      "photos_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\products\\sku_001\\photos",
+      "photo_count": 4,
+      "has_photos": true,
+      "has_full_set_7": false,
+      "photo_files": [
+        "017fb548-a72c-4bf5-b1e9-908adcbabf60.png",
+        "5251f6fb-ed61-4d2a-b3ec-d18828a1e479.png",
+        "a676fbda-2b56-4c02-913b-53fb1b3a5f4a.png",
+        "c915ea5e-0acf-4127-b813-48af7784475b.png"
+      ]
+    }
+  ]
+}

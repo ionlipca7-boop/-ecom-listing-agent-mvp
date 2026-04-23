@@ -1,0 +1,15 @@
+{
+  "publish_variant_status": "READY",
+  "next_step": "READY_FOR_VARIANT_HANDOFF_OR_REAL_PUBLISH",
+  "summary": {
+    "execution_status": "READY",
+    "package_status": "READY",
+    "package_id": "variant_package_20260415_182127",
+    "selected_variant_id": "VARIANT_1",
+    "selected_title": "60W USB-C Ladekabel 2m USB-C Schnellladen"
+  },
+  "inputs": {
+    "package_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\publish_package_from_variant_v1.json",
+    "execution_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\execution_control_room_v1.json"
+  }
+}

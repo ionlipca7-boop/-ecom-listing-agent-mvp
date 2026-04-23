@@ -1,0 +1,9 @@
+{
+  "loader_status": "LOADED",
+  "next_step": "RUN_UPLOAD_RESULT_PARSER",
+  "samples_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_result_samples",
+  "target_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results",
+  "sample_count": 1,
+  "loaded_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_success_v1.json",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_result_samples\\ebay_result_sample_success_v1.json"
+}

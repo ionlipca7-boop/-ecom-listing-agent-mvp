@@ -1,0 +1,37 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 2,
+  "current_step": "create_control_rules",
+  "next_step": "create_project_state",
+  "rules": {
+    "execution_order": [
+      "project_manifest.json",
+      "control_rules.json",
+      "project_state.json",
+      "project_history.jsonl",
+      "control_agent.py",
+      "archivist_agent.py",
+      "runner_agent.py",
+      "n8n orchestration",
+      "compact core migration"
+    ],
+    "gates": {
+      "allow_live_operations_before_stage_8": false,
+      "allow_migration_before_control_layer_complete": false,
+      "allow_side_branches": false,
+      "project_specific_only": true
+    },
+    "deviation_policy": {
+      "reject_tasks_outside_next_stage": true,
+      "require_canonical_answer_format": true,
+      "require_single_cmd_block": true
+    },
+    "control_policy": {
+      "read_first": true,
+      "write_with_verification": true,
+      "audit_required": true,
+      "history_required_after_changes": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "generator_layer_readiness_audit_fixed_completed",
+  "generator_ready": true,
+  "files_missing_count": 0,
+  "dirs_missing_count": 0,
+  "files_missing": [],
+  "dirs_missing": [],
+  "next_step": "build_generator_execution_probe_v1"
+}

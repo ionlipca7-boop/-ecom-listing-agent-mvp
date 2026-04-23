@@ -1,0 +1,39 @@
+import json
+from pathlib import Path
+
+def main():
+    root = Path("D:\\ECOM_LISTING_AGENT_MVP")
+    out_dir = root / "storage" / "state_control"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    data = {
+        "status": "OK",
+        "layer": "PREVIEW_CONTRACT_TRANSITION_GATE_V1",
+        "project": "ECOM_LISTING_AGENT_MVP",
+        "current_phase": "PREVIEW_CONTRACT_TRANSITION_GATE_DEFINED",
+        "input_layer": "PREVIEW_CONTRACT_GAP_DECISION_V1",
+        "entry_surface": "preview_contract",
+        "gap_detected": False,
+        "transition_gate_defined": True,
+        "direction_locked": True,
+        "allowed_scope": "preview_contract_control_only",
+        "execution_still_blocked": True,
+        "runner_still_blocked": True,
+        "live_still_blocked": True,
+        "parallel_branching_forbidden": True,
+        "next_allowed_action": "build_preview_contract_transition_gate_audit_v1"
+    }
+    out_file = out_dir / "preview_contract_transition_gate_v1.json"
+    out_file.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    print("PREVIEW_CONTRACT_TRANSITION_GATE_V1_CREATED")
+    print("status =", data["status"])
+    print("layer =", data["layer"])
+    print("input_layer =", data["input_layer"])
+    print("transition_gate_defined =", data["transition_gate_defined"])
+    print("direction_locked =", data["direction_locked"])
+    print("execution_still_blocked =", data["execution_still_blocked"])
+    print("runner_still_blocked =", data["runner_still_blocked"])
+    print("live_still_blocked =", data["live_still_blocked"])
+    print("next_allowed_action =", data["next_allowed_action"])
+
+if __name__ == "__main__":
+    main()

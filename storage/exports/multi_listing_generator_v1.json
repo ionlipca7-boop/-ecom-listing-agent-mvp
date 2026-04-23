@@ -1,0 +1,34 @@
+{
+  "generator_status": "READY",
+  "next_step": "REVIEW_VARIANTS_AND_SELECT_TEST_SET",
+  "summary": {
+    "variant_count": 3,
+    "base_price": 5.5,
+    "optimized_title": "60W USB-C Ladekabel 2m USB-C Schnellladen"
+  },
+  "variants": [
+    {
+      "variant_id": "VARIANT_1",
+      "title": "60W USB-C Ladekabel 2m USB-C Schnellladen",
+      "price": 5.5,
+      "angle": "baseline_ai_title"
+    },
+    {
+      "variant_id": "VARIANT_2",
+      "title": "60W USB-C Ladekabel 2m Schnellladekabel",
+      "price": 5.5,
+      "angle": "schnellladen_focus"
+    },
+    {
+      "variant_id": "VARIANT_3",
+      "title": "USB-C Ladekabel 2m USB-C Kabel Schwarz",
+      "price": 5.5,
+      "angle": "compatibility_color_focus"
+    }
+  ],
+  "inputs": {
+    "ready_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_export_v1.json",
+    "title_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ai_title_optimizer_v1.json",
+    "price_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\price_optimizer_v1.json"
+  }
+}

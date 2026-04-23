@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_STRICT_PROMPT_ENCODING_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_TRANSITION_FRONT_STATE_SYNC_V1",
+  "input_status": "OK",
+  "strict_prompt_file_rewritten": true,
+  "broken_cyrillic_headings_removed": true,
+  "response_format_headers_restored": true,
+  "archive_move_started": false,
+  "delete_started": false,
+  "next_allowed_action": "verify_strict_prompt_encoding_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

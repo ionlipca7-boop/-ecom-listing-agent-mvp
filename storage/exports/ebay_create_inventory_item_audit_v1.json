@@ -1,0 +1,34 @@
+{
+  "status": "FAILED",
+  "http_status": 500,
+  "sku": "ECOM-TEST-CABLE-001",
+  "request_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C Ladekabel 2m 60W Schnellladen",
+      "description": "USB-C Ladekabel 2m mit 60W Schnellladefunktion fuer Alltag, Reise und Buero.",
+      "aspects": {
+        "Marke": [
+          "ECOM"
+        ],
+        "Typ": [
+          "USB-C Kabel"
+        ],
+        "Kabellaenge": [
+          "2 m"
+        ],
+        "Leistung": [
+          "60 W"
+        ]
+      },
+      "brand": "ECOM",
+      "mpn": "ECOM-TEST-CABLE-001"
+    }
+  },
+  "body": "{\"errors\":[{\"errorId\":25001,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"Request\",\"message\":\"A system error has occurred. Core Inventory Service internal error\"}]}"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_READY_V1",
+  "last_confirmed_layer": "EXPLICIT_SAFE_EXECUTION_DECISION_V1",
+  "current_position": "execution_gate_pending_open",
+  "next_allowed_action": "prepare_safe_execution_open_gate_v1",
+  "confirmed_facts": {
+    "git_state_clean": false,
+    "tracked_changes_present": true,
+    "delete_allowed": false,
+    "git_push_allowed": false,
+    "server_sync_allowed": false,
+    "physical_move_allowed": false,
+    "execution_not_started": true
+  },
+  "execution_plan": {
+    ".gitignore": "keep_current_change",
+    "run_control_room.bat": "restore_deleted_tracked_file",
+    "agent/__pycache__/brain.cpython-314.pyc": "revert_tracked_cache_file"
+  }
+}

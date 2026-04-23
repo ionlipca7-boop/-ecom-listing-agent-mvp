@@ -1,0 +1,15 @@
+{
+  "status": "SYSTEM_READY_FOR_CONTROLLED_LIVE_EXECUTION",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "final_layer": "RUNNER_EXECUTION_FINAL_GATE_V1",
+  "pipeline_status": "END_TO_END_READY",
+  "generator_ready": true,
+  "inventory_read_ready": true,
+  "offer_build_ready": true,
+  "preview_ready": true,
+  "approval_layer_ready": true,
+  "runner_ready": true,
+  "execution_allowed": false,
+  "manual_approval_required": true,
+  "next_step": "WAIT_FOR_MANUAL_APPROVAL"
+}

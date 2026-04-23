@@ -1,0 +1,13 @@
+{"event":"CONTROL_LAYER_INIT","phase":1,"step":"project_manifest_created","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"CONTROL_RULES_INIT","phase":2,"step":"control_rules_created","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"PROJECT_STATE_INIT","phase":3,"step":"project_state_created","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"ARCHIVIST_AGENT_INIT","status":"OK","timestamp":"2026-04-19T10:00:57.476257Z","project":"ECOM_LISTING_AGENT_MVP","layer":"CONTROL_LAYER","phase":6,"current_step":"create_archivist_agent","next_step":"create_runner_agent","mode":"PROJECT_SPECIFIC_ONLY","project_specific_only":true,"live_operations_allowed":false,"migration_allowed":false}
+{"event":"ARCHIVIST_AGENT_INIT","status":"OK","timestamp":"2026-04-19T10:01:42.362339Z","project":"ECOM_LISTING_AGENT_MVP","layer":"CONTROL_LAYER","phase":6,"current_step":"create_archivist_agent","next_step":"create_runner_agent","mode":"PROJECT_SPECIFIC_ONLY","project_specific_only":true,"live_operations_allowed":false,"migration_allowed":false}
+{"event":"N8N_ORCHESTRATION_STAGE_INIT","phase":8,"step":"n8n_orchestration_started","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"N8N_ORCHESTRATION_CONTRACT_CREATED","phase":8,"step":"n8n_orchestration_contract_created","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"COMPACT_CORE_MIGRATION_CONTRACT_CREATED","phase":9,"step":"compact_core_migration_contract_created","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"CONTROL_LAYER_REVIEW_FINALIZED","phase":10,"step":"finalize_control_layer_review","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"CONTROL_SYNC_REVIEW_CREATED","phase":11,"step":"review_control_agents_sync","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event":"NEW_CHAT_TRANSITION_ARCHIVED","phase":10,"step":"archive_transition_for_new_chat","status":"OK","project":"ECOM_LISTING_AGENT_MVP"}
+{"event": "GENERATOR_OUTPUT_VALIDATION_ARCHIVED", "status": "OK", "project": "ECOM_LISTING_AGENT_MVP", "layer": "GENERATOR_OUTPUT_VALIDATION", "mode": "PROJECT_SPECIFIC_ONLY", "next_step": "archive_generator_validation_result"}
+{"event": "GENERATOR_EXTENSION_OUTPUT_VALIDATION_ARCHIVED", "status": "OK", "project": "ECOM_LISTING_AGENT_MVP", "layer": "GENERATOR_EXTENSION_OUTPUT_VALIDATION", "mode": "PROJECT_SPECIFIC_ONLY", "next_step": "archive_generator_extension_validation_result"}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "decision": "merchant_location_key_resolved",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "enabled": null,
+  "name": "ECOM DE MAIN LOCATION",
+  "locationTypes": [
+    "WAREHOUSE"
+  ],
+  "location": {
+    "address": {
+      "addressLine1": "Musterstrasse 1",
+      "city": "Berlin",
+      "postalCode": "10115",
+      "country": "DE"
+    },
+    "locationId": "4FA31C653B687249E0643CFDFEF0B150"
+  }
+}

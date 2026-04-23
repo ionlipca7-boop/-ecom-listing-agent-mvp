@@ -1,0 +1,18 @@
+{
+  "system_status": "READY",
+  "next_step": "READY_FOR_REAL_PUBLISH_OR_FINAL_HANDOFF",
+  "summary": {
+    "upload_status": "UPLOAD_CONFIRMED",
+    "growth_status": "READY",
+    "execution_status": "READY",
+    "publish_status": "READY",
+    "package_id": "variant_package_20260415_182127",
+    "selected_variant_id": "VARIANT_1"
+  },
+  "inputs": {
+    "master_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v1.json",
+    "growth_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_growth_status_v1.json",
+    "execution_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\execution_control_room_v1.json",
+    "publish_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\publish_variant_control_room_v1.json"
+  }
+}

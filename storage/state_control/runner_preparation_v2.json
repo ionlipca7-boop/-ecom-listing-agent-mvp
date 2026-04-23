@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_PREPARATION_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "APPROVAL_LAYER_V2",
+  "input_status": "OK",
+  "runner_input_ready": true,
+  "runner_ready": true,
+  "execution_still_blocked": true,
+  "next_allowed_action": "build_runner_execution_gate_v2"
+}

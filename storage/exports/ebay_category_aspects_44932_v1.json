@@ -1,0 +1,7588 @@
+{
+  "http_status": 200,
+  "categoryId": "44932",
+  "aspects_count": 20,
+  "produktart": null,
+  "response_json": {
+    "aspects": [
+      {
+        "localizedAspectName": "Brand",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": true,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "Unbranded"
+          },
+          {
+            "localizedValue": "10Gtek"
+          },
+          {
+            "localizedValue": "2Wire"
+          },
+          {
+            "localizedValue": "3M"
+          },
+          {
+            "localizedValue": "A&BC"
+          },
+          {
+            "localizedValue": "ABC Products"
+          },
+          {
+            "localizedValue": "Ablegrid"
+          },
+          {
+            "localizedValue": "Access"
+          },
+          {
+            "localizedValue": "Accu-Cable"
+          },
+          {
+            "localizedValue": "Ace Style"
+          },
+          {
+            "localizedValue": "Acme"
+          },
+          {
+            "localizedValue": "Acoustic Revive"
+          },
+          {
+            "localizedValue": "ACROLINK"
+          },
+          {
+            "localizedValue": "Activeon"
+          },
+          {
+            "localizedValue": "Adagio"
+          },
+          {
+            "localizedValue": "Adam Hall"
+          },
+          {
+            "localizedValue": "ADATA"
+          },
+          {
+            "localizedValue": "ADC"
+          },
+          {
+            "localizedValue": "AddOn"
+          },
+          {
+            "localizedValue": "Advanced Devices"
+          },
+          {
+            "localizedValue": "Agfa"
+          },
+          {
+            "localizedValue": "AgfaPhoto"
+          },
+          {
+            "localizedValue": "Agptek"
+          },
+          {
+            "localizedValue": "Aiptek"
+          },
+          {
+            "localizedValue": "Akai"
+          },
+          {
+            "localizedValue": "AKG Acoustics"
+          },
+          {
+            "localizedValue": "Alesis"
+          },
+          {
+            "localizedValue": "Alice"
+          },
+          {
+            "localizedValue": "Allen & Heath"
+          },
+          {
+            "localizedValue": "ALOGIC"
+          },
+          {
+            "localizedValue": "Altec Lansing"
+          },
+          {
+            "localizedValue": "Altman"
+          },
+          {
+            "localizedValue": "Alto"
+          },
+          {
+            "localizedValue": "ALTONA"
+          },
+          {
+            "localizedValue": "Aluratek"
+          },
+          {
+            "localizedValue": "ALVA"
+          },
+          {
+            "localizedValue": "AmazonBasics"
+          },
+          {
+            "localizedValue": "AMBICO"
+          },
+          {
+            "localizedValue": "Amek"
+          },
+          {
+            "localizedValue": "American Audio"
+          },
+          {
+            "localizedValue": "American DJ"
+          },
+          {
+            "localizedValue": "Ampeg"
+          },
+          {
+            "localizedValue": "Ampex"
+          },
+          {
+            "localizedValue": "Amphenol"
+          },
+          {
+            "localizedValue": "AMT Electronics"
+          },
+          {
+            "localizedValue": "Analog Man"
+          },
+          {
+            "localizedValue": "Analysis Plus"
+          },
+          {
+            "localizedValue": "Andoer"
+          },
+          {
+            "localizedValue": "Anker"
+          },
+          {
+            "localizedValue": "Anton/Bauer"
+          },
+          {
+            "localizedValue": "APC"
+          },
+          {
+            "localizedValue": "Aphex"
+          },
+          {
+            "localizedValue": "API Audio"
+          },
+          {
+            "localizedValue": "Apogee"
+          },
+          {
+            "localizedValue": "Apple"
+          },
+          {
+            "localizedValue": "Aputure"
+          },
+          {
+            "localizedValue": "ARCHON"
+          },
+          {
+            "localizedValue": "Archos"
+          },
+          {
+            "localizedValue": "Arduino"
+          },
+          {
+            "localizedValue": "Aria"
+          },
+          {
+            "localizedValue": "Arion"
+          },
+          {
+            "localizedValue": "ARRI"
+          },
+          {
+            "localizedValue": "Art"
+          },
+          {
+            "localizedValue": "Artist"
+          },
+          {
+            "localizedValue": "Arturia"
+          },
+          {
+            "localizedValue": "Ashly"
+          },
+          {
+            "localizedValue": "Astatic"
+          },
+          {
+            "localizedValue": "ASUS"
+          },
+          {
+            "localizedValue": "Ativa"
+          },
+          {
+            "localizedValue": "Atlas"
+          },
+          {
+            "localizedValue": "Atomos"
+          },
+          {
+            "localizedValue": "ATP"
+          },
+          {
+            "localizedValue": "Audeze"
+          },
+          {
+            "localizedValue": "Audio2000'S"
+          },
+          {
+            "localizedValue": "Audio Dynamics"
+          },
+          {
+            "localizedValue": "Audioengine"
+          },
+          {
+            "localizedValue": "Audioline"
+          },
+          {
+            "localizedValue": "Audiopipe"
+          },
+          {
+            "localizedValue": "AudioQuest"
+          },
+          {
+            "localizedValue": "AudioSpares"
+          },
+          {
+            "localizedValue": "Audio-Technica"
+          },
+          {
+            "localizedValue": "Audix"
+          },
+          {
+            "localizedValue": "Augustine"
+          },
+          {
+            "localizedValue": "Auna"
+          },
+          {
+            "localizedValue": "AV:Link"
+          },
+          {
+            "localizedValue": "Avalon"
+          },
+          {
+            "localizedValue": "Avico"
+          },
+          {
+            "localizedValue": "Avid"
+          },
+          {
+            "localizedValue": "Aviom"
+          },
+          {
+            "localizedValue": "Avocent"
+          },
+          {
+            "localizedValue": "Avpro EDGE"
+          },
+          {
+            "localizedValue": "AVU"
+          },
+          {
+            "localizedValue": "Axiom"
+          },
+          {
+            "localizedValue": "Ayagroup"
+          },
+          {
+            "localizedValue": "Azden"
+          },
+          {
+            "localizedValue": "B.C. Rich"
+          },
+          {
+            "localizedValue": "B3 Studio"
+          },
+          {
+            "localizedValue": "Bad Cat"
+          },
+          {
+            "localizedValue": "Barber Electronics"
+          },
+          {
+            "localizedValue": "Bartolini"
+          },
+          {
+            "localizedValue": "BBE"
+          },
+          {
+            "localizedValue": "BeachTek"
+          },
+          {
+            "localizedValue": "Behringer"
+          },
+          {
+            "localizedValue": "Belden"
+          },
+          {
+            "localizedValue": "Belkin"
+          },
+          {
+            "localizedValue": "Bescor"
+          },
+          {
+            "localizedValue": "bespeco"
+          },
+          {
+            "localizedValue": "beyerdynamic"
+          },
+          {
+            "localizedValue": "Biema"
+          },
+          {
+            "localizedValue": "Big Bends"
+          },
+          {
+            "localizedValue": "Bigsby"
+          },
+          {
+            "localizedValue": "Bishopsound"
+          },
+          {
+            "localizedValue": "Bixonic"
+          },
+          {
+            "localizedValue": "Black Box"
+          },
+          {
+            "localizedValue": "Black Diamond"
+          },
+          {
+            "localizedValue": "Blackmagic"
+          },
+          {
+            "localizedValue": "Blackmagic Design"
+          },
+          {
+            "localizedValue": "Blackstar"
+          },
+          {
+            "localizedValue": "Blizzard"
+          },
+          {
+            "localizedValue": "Blue"
+          },
+          {
+            "localizedValue": "Bogen"
+          },
+          {
+            "localizedValue": "Bosch"
+          },
+          {
+            "localizedValue": "Bose"
+          },
+          {
+            "localizedValue": "Boss"
+          },
+          {
+            "localizedValue": "Boston"
+          },
+          {
+            "localizedValue": "Bower"
+          },
+          {
+            "localizedValue": "Bowers & Wilkins"
+          },
+          {
+            "localizedValue": "Bozak"
+          },
+          {
+            "localizedValue": "BRESSER"
+          },
+          {
+            "localizedValue": "BrickHouse Security"
+          },
+          {
+            "localizedValue": "Bronica"
+          },
+          {
+            "localizedValue": "Budda"
+          },
+          {
+            "localizedValue": "Bulgin"
+          },
+          {
+            "localizedValue": "BYTECC"
+          },
+          {
+            "localizedValue": "By W5swl"
+          },
+          {
+            "localizedValue": "C2G"
+          },
+          {
+            "localizedValue": "Cablesandkits"
+          },
+          {
+            "localizedValue": "Cables Direct"
+          },
+          {
+            "localizedValue": "CablesOnline"
+          },
+          {
+            "localizedValue": "Cablesys"
+          },
+          {
+            "localizedValue": "Cable Up"
+          },
+          {
+            "localizedValue": "CAD"
+          },
+          {
+            "localizedValue": "Cakewalk"
+          },
+          {
+            "localizedValue": "Canare"
+          },
+          {
+            "localizedValue": "Canon"
+          },
+          {
+            "localizedValue": "Carl Martin"
+          },
+          {
+            "localizedValue": "Carol"
+          },
+          {
+            "localizedValue": "Carver"
+          },
+          {
+            "localizedValue": "Carvin"
+          },
+          {
+            "localizedValue": "Case Logic"
+          },
+          {
+            "localizedValue": "Casio"
+          },
+          {
+            "localizedValue": "Catalinbread"
+          },
+          {
+            "localizedValue": "CBI"
+          },
+          {
+            "localizedValue": "Celestion"
+          },
+          {
+            "localizedValue": "Celestron"
+          },
+          {
+            "localizedValue": "CENTURY"
+          },
+          {
+            "localizedValue": "Chandler Limited"
+          },
+          {
+            "localizedValue": "Charvel"
+          },
+          {
+            "localizedValue": "Chauvet"
+          },
+          {
+            "localizedValue": "CHAUVET DJ"
+          },
+          {
+            "localizedValue": "Cherub"
+          },
+          {
+            "localizedValue": "Chicago Iron"
+          },
+          {
+            "localizedValue": "Chord"
+          },
+          {
+            "localizedValue": "Cineroid"
+          },
+          {
+            "localizedValue": "Cisco"
+          },
+          {
+            "localizedValue": "Citronic"
+          },
+          {
+            "localizedValue": "Clayton"
+          },
+          {
+            "localizedValue": "Cleartone"
+          },
+          {
+            "localizedValue": "Clicktronic"
+          },
+          {
+            "localizedValue": "Club 3D"
+          },
+          {
+            "localizedValue": "CMATMODS"
+          },
+          {
+            "localizedValue": "Cmple"
+          },
+          {
+            "localizedValue": "Coemar"
+          },
+          {
+            "localizedValue": "CommScope"
+          },
+          {
+            "localizedValue": "Comprehensive"
+          },
+          {
+            "localizedValue": "Contax"
+          },
+          {
+            "localizedValue": "Contour"
+          },
+          {
+            "localizedValue": "Cooperstand"
+          },
+          {
+            "localizedValue": "COP SECURITY"
+          },
+          {
+            "localizedValue": "CORDIAL"
+          },
+          {
+            "localizedValue": "Corning"
+          },
+          {
+            "localizedValue": "Cort"
+          },
+          {
+            "localizedValue": "Cosmic-Audio"
+          },
+          {
+            "localizedValue": "Countryman"
+          },
+          {
+            "localizedValue": "Creation Audio Labs"
+          },
+          {
+            "localizedValue": "Creative"
+          },
+          {
+            "localizedValue": "Crest Audio"
+          },
+          {
+            "localizedValue": "Cross Audio"
+          },
+          {
+            "localizedValue": "Crown"
+          },
+          {
+            "localizedValue": "Crowther Audio"
+          },
+          {
+            "localizedValue": "Cubase"
+          },
+          {
+            "localizedValue": "Cusak"
+          },
+          {
+            "localizedValue": "D'Addario"
+          },
+          {
+            "localizedValue": "D&A"
+          },
+          {
+            "localizedValue": "Dan Armstrong"
+          },
+          {
+            "localizedValue": "Danelectro"
+          },
+          {
+            "localizedValue": "Dangerous Music"
+          },
+          {
+            "localizedValue": "Daniel Mari"
+          },
+          {
+            "localizedValue": "DAP Audio"
+          },
+          {
+            "localizedValue": "Daphon"
+          },
+          {
+            "localizedValue": "Dapper Sound"
+          },
+          {
+            "localizedValue": "Dava"
+          },
+          {
+            "localizedValue": "dbx"
+          },
+          {
+            "localizedValue": "DCU"
+          },
+          {
+            "localizedValue": "ddrum"
+          },
+          {
+            "localizedValue": "Dean"
+          },
+          {
+            "localizedValue": "Dean Markley"
+          },
+          {
+            "localizedValue": "DeArmond"
+          },
+          {
+            "localizedValue": "Decksaver"
+          },
+          {
+            "localizedValue": "deleyCon"
+          },
+          {
+            "localizedValue": "Dell"
+          },
+          {
+            "localizedValue": "Delrin"
+          },
+          {
+            "localizedValue": "DELTALAB"
+          },
+          {
+            "localizedValue": "Denon"
+          },
+          {
+            "localizedValue": "designacable"
+          },
+          {
+            "localizedValue": "Devi Ever"
+          },
+          {
+            "localizedValue": "Diamond"
+          },
+          {
+            "localizedValue": "Diaz"
+          },
+          {
+            "localizedValue": "Dickies"
+          },
+          {
+            "localizedValue": "DieHard"
+          },
+          {
+            "localizedValue": "Digidesign"
+          },
+          {
+            "localizedValue": "DIGIPOWER"
+          },
+          {
+            "localizedValue": "Digital Concepts"
+          },
+          {
+            "localizedValue": "DigiTech"
+          },
+          {
+            "localizedValue": "DIGITUS"
+          },
+          {
+            "localizedValue": "DiMarzio"
+          },
+          {
+            "localizedValue": "DJI"
+          },
+          {
+            "localizedValue": "DJ-Tech"
+          },
+          {
+            "localizedValue": "D-Link"
+          },
+          {
+            "localizedValue": "DMX"
+          },
+          {
+            "localizedValue": "Dobro"
+          },
+          {
+            "localizedValue": "DOD"
+          },
+          {
+            "localizedValue": "DOEPFER"
+          },
+          {
+            "localizedValue": "Donner"
+          },
+          {
+            "localizedValue": "Dörr"
+          },
+          {
+            "localizedValue": "Drawmer"
+          },
+          {
+            "localizedValue": "Drift"
+          },
+          {
+            "localizedValue": "Duesenberg"
+          },
+          {
+            "localizedValue": "Dunlop"
+          },
+          {
+            "localizedValue": "Duracell"
+          },
+          {
+            "localizedValue": "DURAGADGET"
+          },
+          {
+            "localizedValue": "Durastage"
+          },
+          {
+            "localizedValue": "Duratool"
+          },
+          {
+            "localizedValue": "Durham Electronics"
+          },
+          {
+            "localizedValue": "DVE"
+          },
+          {
+            "localizedValue": "Dwarfcraft"
+          },
+          {
+            "localizedValue": "Dynaflex"
+          },
+          {
+            "localizedValue": "Dynaudio"
+          },
+          {
+            "localizedValue": "Dynex"
+          },
+          {
+            "localizedValue": "Earthworks"
+          },
+          {
+            "localizedValue": "EAW"
+          },
+          {
+            "localizedValue": "EBL"
+          },
+          {
+            "localizedValue": "EBS"
+          },
+          {
+            "localizedValue": "Ebtech"
+          },
+          {
+            "localizedValue": "Echoplex"
+          },
+          {
+            "localizedValue": "EDIMAX"
+          },
+          {
+            "localizedValue": "Edirol"
+          },
+          {
+            "localizedValue": "EE"
+          },
+          {
+            "localizedValue": "eFreesia"
+          },
+          {
+            "localizedValue": "EKHO"
+          },
+          {
+            "localizedValue": "Elation"
+          },
+          {
+            "localizedValue": "Elco"
+          },
+          {
+            "localizedValue": "ELECOM"
+          },
+          {
+            "localizedValue": "Electro-Harmonix"
+          },
+          {
+            "localizedValue": "Electro-Voice"
+          },
+          {
+            "localizedValue": "Elite Core"
+          },
+          {
+            "localizedValue": "Elite Screens"
+          },
+          {
+            "localizedValue": "Elixar"
+          },
+          {
+            "localizedValue": "Elixir"
+          },
+          {
+            "localizedValue": "ellen wille"
+          },
+          {
+            "localizedValue": "elysia"
+          },
+          {
+            "localizedValue": "EMB Professional"
+          },
+          {
+            "localizedValue": "EMG"
+          },
+          {
+            "localizedValue": "Eminence"
+          },
+          {
+            "localizedValue": "Emma"
+          },
+          {
+            "localizedValue": "Empirical Labs"
+          },
+          {
+            "localizedValue": "E-MU"
+          },
+          {
+            "localizedValue": "Ensoniq"
+          },
+          {
+            "localizedValue": "Epiphone"
+          },
+          {
+            "localizedValue": "Epson"
+          },
+          {
+            "localizedValue": "Ernie Ball"
+          },
+          {
+            "localizedValue": "ESP"
+          },
+          {
+            "localizedValue": "Ev"
+          },
+          {
+            "localizedValue": "Eventide"
+          },
+          {
+            "localizedValue": "EVH"
+          },
+          {
+            "localizedValue": "Evidence Audio"
+          },
+          {
+            "localizedValue": "EWCS"
+          },
+          {
+            "localizedValue": "EWI"
+          },
+          {
+            "localizedValue": "Ex-Pro"
+          },
+          {
+            "localizedValue": "Extech"
+          },
+          {
+            "localizedValue": "Fairline"
+          },
+          {
+            "localizedValue": "Farfisa"
+          },
+          {
+            "localizedValue": "Fender"
+          },
+          {
+            "localizedValue": "Fernandes"
+          },
+          {
+            "localizedValue": "Festo"
+          },
+          {
+            "localizedValue": "Firestik"
+          },
+          {
+            "localizedValue": "Fishman"
+          },
+          {
+            "localizedValue": "Flip Video"
+          },
+          {
+            "localizedValue": "Floureon"
+          },
+          {
+            "localizedValue": "Floyd Rose"
+          },
+          {
+            "localizedValue": "FMR Audio"
+          },
+          {
+            "localizedValue": "Focal"
+          },
+          {
+            "localizedValue": "Focusrite"
+          },
+          {
+            "localizedValue": "FOLD PLUG"
+          },
+          {
+            "localizedValue": "FosPower"
+          },
+          {
+            "localizedValue": "Fostex"
+          },
+          {
+            "localizedValue": "FOTGA"
+          },
+          {
+            "localizedValue": "Foxrox"
+          },
+          {
+            "localizedValue": "Framptone"
+          },
+          {
+            "localizedValue": "Framus"
+          },
+          {
+            "localizedValue": "Frantone"
+          },
+          {
+            "localizedValue": "Fred Kelly"
+          },
+          {
+            "localizedValue": "Freedom Unlimited"
+          },
+          {
+            "localizedValue": "Freefly"
+          },
+          {
+            "localizedValue": "FTDI"
+          },
+          {
+            "localizedValue": "Fuji"
+          },
+          {
+            "localizedValue": "Fujifilm"
+          },
+          {
+            "localizedValue": "Fujinon"
+          },
+          {
+            "localizedValue": "Fulltone"
+          },
+          {
+            "localizedValue": "Furman"
+          },
+          {
+            "localizedValue": "Furutech"
+          },
+          {
+            "localizedValue": "FZONE"
+          },
+          {
+            "localizedValue": "Galaxy Audio"
+          },
+          {
+            "localizedValue": "Garmin"
+          },
+          {
+            "localizedValue": "Gator"
+          },
+          {
+            "localizedValue": "GE"
+          },
+          {
+            "localizedValue": "Gemini"
+          },
+          {
+            "localizedValue": "Gem Sound"
+          },
+          {
+            "localizedValue": "Genelec"
+          },
+          {
+            "localizedValue": "George L's"
+          },
+          {
+            "localizedValue": "GHS"
+          },
+          {
+            "localizedValue": "Gibson"
+          },
+          {
+            "localizedValue": "gig-fx"
+          },
+          {
+            "localizedValue": "GLS Audio"
+          },
+          {
+            "localizedValue": "Godin"
+          },
+          {
+            "localizedValue": "Godox"
+          },
+          {
+            "localizedValue": "Golden Age Project"
+          },
+          {
+            "localizedValue": "Goobay"
+          },
+          {
+            "localizedValue": "Good Connections"
+          },
+          {
+            "localizedValue": "GOOD LEAD"
+          },
+          {
+            "localizedValue": "GOOD REMOTE"
+          },
+          {
+            "localizedValue": "GoPro"
+          },
+          {
+            "localizedValue": "Gotham Audio"
+          },
+          {
+            "localizedValue": "GOTOH"
+          },
+          {
+            "localizedValue": "GR"
+          },
+          {
+            "localizedValue": "Grafix"
+          },
+          {
+            "localizedValue": "Graflex"
+          },
+          {
+            "localizedValue": "Graph Tech"
+          },
+          {
+            "localizedValue": "Great River"
+          },
+          {
+            "localizedValue": "Gretsch"
+          },
+          {
+            "localizedValue": "Griffin"
+          },
+          {
+            "localizedValue": "Grindhouse"
+          },
+          {
+            "localizedValue": "Grover Allman"
+          },
+          {
+            "localizedValue": "Grover Products"
+          },
+          {
+            "localizedValue": "GT Radial"
+          },
+          {
+            "localizedValue": "Guild"
+          },
+          {
+            "localizedValue": "Guyatone"
+          },
+          {
+            "localizedValue": "H&M"
+          },
+          {
+            "localizedValue": "Hagstrom"
+          },
+          {
+            "localizedValue": "Hama"
+          },
+          {
+            "localizedValue": "Hamer"
+          },
+          {
+            "localizedValue": "Hamilton"
+          },
+          {
+            "localizedValue": "Hanika"
+          },
+          {
+            "localizedValue": "Hao"
+          },
+          {
+            "localizedValue": "Harley Benton"
+          },
+          {
+            "localizedValue": "Harrison Labs"
+          },
+          {
+            "localizedValue": "HARTING"
+          },
+          {
+            "localizedValue": "Hasselblad"
+          },
+          {
+            "localizedValue": "Hauppauge"
+          },
+          {
+            "localizedValue": "HD Pro"
+          },
+          {
+            "localizedValue": "Heil Sound"
+          },
+          {
+            "localizedValue": "Henry Heller"
+          },
+          {
+            "localizedValue": "Herco"
+          },
+          {
+            "localizedValue": "Hercules"
+          },
+          {
+            "localizedValue": "Herdim"
+          },
+          {
+            "localizedValue": "Hermida"
+          },
+          {
+            "localizedValue": "Hi fi"
+          },
+          {
+            "localizedValue": "High End Systems"
+          },
+          {
+            "localizedValue": "Hipshot"
+          },
+          {
+            "localizedValue": "Hitachi"
+          },
+          {
+            "localizedValue": "Holga"
+          },
+          {
+            "localizedValue": "Honeywell"
+          },
+          {
+            "localizedValue": "Hoodman"
+          },
+          {
+            "localizedValue": "Hosa Technology"
+          },
+          {
+            "localizedValue": "Hot Picks"
+          },
+          {
+            "localizedValue": "Hot Wires"
+          },
+          {
+            "localizedValue": "HP"
+          },
+          {
+            "localizedValue": "HQRP"
+          },
+          {
+            "localizedValue": "HSP"
+          },
+          {
+            "localizedValue": "Hypertec"
+          },
+          {
+            "localizedValue": "Ibanez"
+          },
+          {
+            "localizedValue": "Ibiza"
+          },
+          {
+            "localizedValue": "IBM"
+          },
+          {
+            "localizedValue": "IDX"
+          },
+          {
+            "localizedValue": "Ignite Pro"
+          },
+          {
+            "localizedValue": "ikan"
+          },
+          {
+            "localizedValue": "Ikelite"
+          },
+          {
+            "localizedValue": "IK Multimedia"
+          },
+          {
+            "localizedValue": "Image Line"
+          },
+          {
+            "localizedValue": "IMG Stage Line"
+          },
+          {
+            "localizedValue": "Impact"
+          },
+          {
+            "localizedValue": "InLine"
+          },
+          {
+            "localizedValue": "Insignia"
+          },
+          {
+            "localizedValue": "Insta360"
+          },
+          {
+            "localizedValue": "Insten"
+          },
+          {
+            "localizedValue": "Insteon"
+          },
+          {
+            "localizedValue": "IntellaBeam"
+          },
+          {
+            "localizedValue": "Intelli"
+          },
+          {
+            "localizedValue": "Intellinet"
+          },
+          {
+            "localizedValue": "IntelliTouch"
+          },
+          {
+            "localizedValue": "Intenso"
+          },
+          {
+            "localizedValue": "Intova"
+          },
+          {
+            "localizedValue": "IOGEAR"
+          },
+          {
+            "localizedValue": "IsoAcoustics"
+          },
+          {
+            "localizedValue": "ISP"
+          },
+          {
+            "localizedValue": "Jabra"
+          },
+          {
+            "localizedValue": "Jackson"
+          },
+          {
+            "localizedValue": "Jackson/Charvel"
+          },
+          {
+            "localizedValue": "JacobsParts"
+          },
+          {
+            "localizedValue": "Jacques"
+          },
+          {
+            "localizedValue": "Jadaol"
+          },
+          {
+            "localizedValue": "Jamo"
+          },
+          {
+            "localizedValue": "JBL"
+          },
+          {
+            "localizedValue": "Jetter Gear"
+          },
+          {
+            "localizedValue": "Jim Dunlop"
+          },
+          {
+            "localizedValue": "JJC"
+          },
+          {
+            "localizedValue": "Jodi Head"
+          },
+          {
+            "localizedValue": "Joemeek"
+          },
+          {
+            "localizedValue": "John Pearse"
+          },
+          {
+            "localizedValue": "Johnson"
+          },
+          {
+            "localizedValue": "Johnson Musical Instruments"
+          },
+          {
+            "localizedValue": "JOYO"
+          },
+          {
+            "localizedValue": "J-Tech Digital"
+          },
+          {
+            "localizedValue": "JuicEBitz"
+          },
+          {
+            "localizedValue": "Jupiter"
+          },
+          {
+            "localizedValue": "JVC"
+          },
+          {
+            "localizedValue": "K&F Concept"
+          },
+          {
+            "localizedValue": "K&K"
+          },
+          {
+            "localizedValue": "K & M"
+          },
+          {
+            "localizedValue": "KabelDirekt"
+          },
+          {
+            "localizedValue": "Kahler"
+          },
+          {
+            "localizedValue": "Kaiser"
+          },
+          {
+            "localizedValue": "Kanto"
+          },
+          {
+            "localizedValue": "KASIMO"
+          },
+          {
+            "localizedValue": "Kawai"
+          },
+          {
+            "localizedValue": "Keeley"
+          },
+          {
+            "localizedValue": "Kenko"
+          },
+          {
+            "localizedValue": "Kensington"
+          },
+          {
+            "localizedValue": "Kentek"
+          },
+          {
+            "localizedValue": "Key Digital"
+          },
+          {
+            "localizedValue": "Khaler"
+          },
+          {
+            "localizedValue": "KICKER"
+          },
+          {
+            "localizedValue": "King"
+          },
+          {
+            "localizedValue": "Kingston"
+          },
+          {
+            "localizedValue": "Kinman"
+          },
+          {
+            "localizedValue": "Kirlin"
+          },
+          {
+            "localizedValue": "Klotz"
+          },
+          {
+            "localizedValue": "Kluson"
+          },
+          {
+            "localizedValue": "KMD"
+          },
+          {
+            "localizedValue": "Koch Industries"
+          },
+          {
+            "localizedValue": "Kodak"
+          },
+          {
+            "localizedValue": "Konica Minolta"
+          },
+          {
+            "localizedValue": "Koolertron"
+          },
+          {
+            "localizedValue": "Kopul"
+          },
+          {
+            "localizedValue": "Korg"
+          },
+          {
+            "localizedValue": "kramer"
+          },
+          {
+            "localizedValue": "KRK"
+          },
+          {
+            "localizedValue": "K-Tek"
+          },
+          {
+            "localizedValue": "Kurzweil"
+          },
+          {
+            "localizedValue": "KYSER"
+          },
+          {
+            "localizedValue": "L.R. Baggs"
+          },
+          {
+            "localizedValue": "Lakota Leathers"
+          },
+          {
+            "localizedValue": "Landgraff"
+          },
+          {
+            "localizedValue": "Landstrom's"
+          },
+          {
+            "localizedValue": "Langevin"
+          },
+          {
+            "localizedValue": "Lanparte"
+          },
+          {
+            "localizedValue": "Latch Lake"
+          },
+          {
+            "localizedValue": "Laurèl"
+          },
+          {
+            "localizedValue": "Lava"
+          },
+          {
+            "localizedValue": "Lava Cable"
+          },
+          {
+            "localizedValue": "LD Systems"
+          },
+          {
+            "localizedValue": "Leaf"
+          },
+          {
+            "localizedValue": "Lectrosonics"
+          },
+          {
+            "localizedValue": "LEDJ"
+          },
+          {
+            "localizedValue": "Legrand"
+          },
+          {
+            "localizedValue": "Lehle"
+          },
+          {
+            "localizedValue": "Leica"
+          },
+          {
+            "localizedValue": "Leitz"
+          },
+          {
+            "localizedValue": "LEMO"
+          },
+          {
+            "localizedValue": "Lenovo"
+          },
+          {
+            "localizedValue": "LENTION"
+          },
+          {
+            "localizedValue": "Leo Quan"
+          },
+          {
+            "localizedValue": "Leprecon"
+          },
+          {
+            "localizedValue": "Leslie"
+          },
+          {
+            "localizedValue": "Leviton"
+          },
+          {
+            "localizedValue": "Levy's"
+          },
+          {
+            "localizedValue": "Lexar"
+          },
+          {
+            "localizedValue": "Lexicon"
+          },
+          {
+            "localizedValue": "Light & Motion"
+          },
+          {
+            "localizedValue": "Lindy"
+          },
+          {
+            "localizedValue": "Line 6"
+          },
+          {
+            "localizedValue": "Linksys"
+          },
+          {
+            "localizedValue": "Litepanels"
+          },
+          {
+            "localizedValue": "Live Line"
+          },
+          {
+            "localizedValue": "Livewire"
+          },
+          {
+            "localizedValue": "LM Engineering"
+          },
+          {
+            "localizedValue": "Logico"
+          },
+          {
+            "localizedValue": "LogiLink"
+          },
+          {
+            "localizedValue": "Lollar Pickups"
+          },
+          {
+            "localizedValue": "Lovepedal"
+          },
+          {
+            "localizedValue": "Lowepro"
+          },
+          {
+            "localizedValue": "Luxebell"
+          },
+          {
+            "localizedValue": "Lynx"
+          },
+          {
+            "localizedValue": "Lyon"
+          },
+          {
+            "localizedValue": "LyxPro"
+          },
+          {
+            "localizedValue": "Mackie"
+          },
+          {
+            "localizedValue": "Mad Professor"
+          },
+          {
+            "localizedValue": "Maestro"
+          },
+          {
+            "localizedValue": "Malani"
+          },
+          {
+            "localizedValue": "Malekko"
+          },
+          {
+            "localizedValue": "Mamiya"
+          },
+          {
+            "localizedValue": "Manacor"
+          },
+          {
+            "localizedValue": "Manfrotto"
+          },
+          {
+            "localizedValue": "Manhasset"
+          },
+          {
+            "localizedValue": "Manhattan"
+          },
+          {
+            "localizedValue": "Manley"
+          },
+          {
+            "localizedValue": "Maplin"
+          },
+          {
+            "localizedValue": "Mappy"
+          },
+          {
+            "localizedValue": "Marshall"
+          },
+          {
+            "localizedValue": "Martin"
+          },
+          {
+            "localizedValue": "Matrix"
+          },
+          {
+            "localizedValue": "M-Audio"
+          },
+          {
+            "localizedValue": "Maxell"
+          },
+          {
+            "localizedValue": "Maxon"
+          },
+          {
+            "localizedValue": "Mbox"
+          },
+          {
+            "localizedValue": "MCSproaudio"
+          },
+          {
+            "localizedValue": "Meade"
+          },
+          {
+            "localizedValue": "Medela"
+          },
+          {
+            "localizedValue": "MEE Audio"
+          },
+          {
+            "localizedValue": "Meike"
+          },
+          {
+            "localizedValue": "Mellanox"
+          },
+          {
+            "localizedValue": "Mellotron"
+          },
+          {
+            "localizedValue": "Memorex"
+          },
+          {
+            "localizedValue": "Menatone"
+          },
+          {
+            "localizedValue": "Mercury"
+          },
+          {
+            "localizedValue": "Metz"
+          },
+          {
+            "localizedValue": "MI Audio"
+          },
+          {
+            "localizedValue": "Micnova"
+          },
+          {
+            "localizedValue": "MIDAS"
+          },
+          {
+            "localizedValue": "Middle Atlantic Products"
+          },
+          {
+            "localizedValue": "Midiman"
+          },
+          {
+            "localizedValue": "Minitek"
+          },
+          {
+            "localizedValue": "Minolta"
+          },
+          {
+            "localizedValue": "MIPRO"
+          },
+          {
+            "localizedValue": "Mitsubishi"
+          },
+          {
+            "localizedValue": "Mixman"
+          },
+          {
+            "localizedValue": "ModTone"
+          },
+          {
+            "localizedValue": "Mogami"
+          },
+          {
+            "localizedValue": "Molex"
+          },
+          {
+            "localizedValue": "Monoprice"
+          },
+          {
+            "localizedValue": "Monster"
+          },
+          {
+            "localizedValue": "MOOG"
+          },
+          {
+            "localizedValue": "Morley"
+          },
+          {
+            "localizedValue": "Morpheus"
+          },
+          {
+            "localizedValue": "Motorola"
+          },
+          {
+            "localizedValue": "MOTU"
+          },
+          {
+            "localizedValue": "Movo"
+          },
+          {
+            "localizedValue": "MPC"
+          },
+          {
+            "localizedValue": "Mr DJ"
+          },
+          {
+            "localizedValue": "MRS"
+          },
+          {
+            "localizedValue": "MSC"
+          },
+          {
+            "localizedValue": "MSI"
+          },
+          {
+            "localizedValue": "Multicomp"
+          },
+          {
+            "localizedValue": "Musedo"
+          },
+          {
+            "localizedValue": "Musician's Gear"
+          },
+          {
+            "localizedValue": "Music Man"
+          },
+          {
+            "localizedValue": "MWRF Source"
+          },
+          {
+            "localizedValue": "MXL"
+          },
+          {
+            "localizedValue": "MXR"
+          },
+          {
+            "localizedValue": "myw-tech"
+          },
+          {
+            "localizedValue": "Nady"
+          },
+          {
+            "localizedValue": "NAGRA"
+          },
+          {
+            "localizedValue": "Nakamichi"
+          },
+          {
+            "localizedValue": "Native Instruments"
+          },
+          {
+            "localizedValue": "NavePoint"
+          },
+          {
+            "localizedValue": "Neewer"
+          },
+          {
+            "localizedValue": "NEO"
+          },
+          {
+            "localizedValue": "Neotech"
+          },
+          {
+            "localizedValue": "Neoteck"
+          },
+          {
+            "localizedValue": "NETGEAR"
+          },
+          {
+            "localizedValue": "Neumann"
+          },
+          {
+            "localizedValue": "Neutrik"
+          },
+          {
+            "localizedValue": "Neve"
+          },
+          {
+            "localizedValue": "Nikon"
+          },
+          {
+            "localizedValue": "Nilox"
+          },
+          {
+            "localizedValue": "Nobels"
+          },
+          {
+            "localizedValue": "No Bull Music Gear"
+          },
+          {
+            "localizedValue": "Nokia"
+          },
+          {
+            "localizedValue": "Nordell"
+          },
+          {
+            "localizedValue": "Nordost"
+          },
+          {
+            "localizedValue": "Norman"
+          },
+          {
+            "localizedValue": "Novation"
+          },
+          {
+            "localizedValue": "Novoflex"
+          },
+          {
+            "localizedValue": "NSI"
+          },
+          {
+            "localizedValue": "Nuendo"
+          },
+          {
+            "localizedValue": "Numark"
+          },
+          {
+            "localizedValue": "Odyssey"
+          },
+          {
+            "localizedValue": "OKGEAR"
+          },
+          {
+            "localizedValue": "Oktava"
+          },
+          {
+            "localizedValue": "Olympus"
+          },
+          {
+            "localizedValue": "OMNIHIL"
+          },
+          {
+            "localizedValue": "Omnirax"
+          },
+          {
+            "localizedValue": "Omnitronic"
+          },
+          {
+            "localizedValue": "On-Stage Stands"
+          },
+          {
+            "localizedValue": "Onten"
+          },
+          {
+            "localizedValue": "OP/TECH USA"
+          },
+          {
+            "localizedValue": "Optima"
+          },
+          {
+            "localizedValue": "Option 5"
+          },
+          {
+            "localizedValue": "ORICO"
+          },
+          {
+            "localizedValue": "Ortofon"
+          },
+          {
+            "localizedValue": "OSP"
+          },
+          {
+            "localizedValue": "Otari"
+          },
+          {
+            "localizedValue": "Oupiin"
+          },
+          {
+            "localizedValue": "Ovation"
+          },
+          {
+            "localizedValue": "oyaide"
+          },
+          {
+            "localizedValue": "Panasonic"
+          },
+          {
+            "localizedValue": "Panduit"
+          },
+          {
+            "localizedValue": "Paso"
+          },
+          {
+            "localizedValue": "Pass & Seymour"
+          },
+          {
+            "localizedValue": "PCDJ"
+          },
+          {
+            "localizedValue": "PCE"
+          },
+          {
+            "localizedValue": "Pearstone"
+          },
+          {
+            "localizedValue": "Peavey"
+          },
+          {
+            "localizedValue": "Pedaltrain"
+          },
+          {
+            "localizedValue": "Pedalworx"
+          },
+          {
+            "localizedValue": "Pentacon"
+          },
+          {
+            "localizedValue": "PENTAX"
+          },
+          {
+            "localizedValue": "Pete Cornish"
+          },
+          {
+            "localizedValue": "Peterson Manufacturing"
+          },
+          {
+            "localizedValue": "Phase One"
+          },
+          {
+            "localizedValue": "Philips"
+          },
+          {
+            "localizedValue": "Philmore"
+          },
+          {
+            "localizedValue": "Phonic"
+          },
+          {
+            "localizedValue": "Phottix"
+          },
+          {
+            "localizedValue": "PigHog"
+          },
+          {
+            "localizedValue": "Pignose"
+          },
+          {
+            "localizedValue": "Pigtronix"
+          },
+          {
+            "localizedValue": "Pioneer"
+          },
+          {
+            "localizedValue": "Pioneer DJ"
+          },
+          {
+            "localizedValue": "Pittsburgh Modular Synthesizers"
+          },
+          {
+            "localizedValue": "Pixco"
+          },
+          {
+            "localizedValue": "PIXEL"
+          },
+          {
+            "localizedValue": "Planet Waves"
+          },
+          {
+            "localizedValue": "Plantronics"
+          },
+          {
+            "localizedValue": "Platinum Tools"
+          },
+          {
+            "localizedValue": "Plush"
+          },
+          {
+            "localizedValue": "PNY"
+          },
+          {
+            "localizedValue": "PocketWizard"
+          },
+          {
+            "localizedValue": "Podium Pro"
+          },
+          {
+            "localizedValue": "Polaroid"
+          },
+          {
+            "localizedValue": "Polycom"
+          },
+          {
+            "localizedValue": "Pomona"
+          },
+          {
+            "localizedValue": "Power2000"
+          },
+          {
+            "localizedValue": "PowerHouse"
+          },
+          {
+            "localizedValue": "Power Master"
+          },
+          {
+            "localizedValue": "Powerwerks"
+          },
+          {
+            "localizedValue": "Powseed"
+          },
+          {
+            "localizedValue": "PRAKTICA"
+          },
+          {
+            "localizedValue": "Precision Design"
+          },
+          {
+            "localizedValue": "PreSonus"
+          },
+          {
+            "localizedValue": "Preston"
+          },
+          {
+            "localizedValue": "PreTec"
+          },
+          {
+            "localizedValue": "ProCo"
+          },
+          {
+            "localizedValue": "Pro Co Sound"
+          },
+          {
+            "localizedValue": "Pro Craft"
+          },
+          {
+            "localizedValue": "Proel"
+          },
+          {
+            "localizedValue": "Profile"
+          },
+          {
+            "localizedValue": "Pro-Ject"
+          },
+          {
+            "localizedValue": "Prolight"
+          },
+          {
+            "localizedValue": "Pro-Line Racing"
+          },
+          {
+            "localizedValue": "ProMaster"
+          },
+          {
+            "localizedValue": "PRONOMIC"
+          },
+          {
+            "localizedValue": "Propik"
+          },
+          {
+            "localizedValue": "Pro-Power"
+          },
+          {
+            "localizedValue": "Pro-Signal"
+          },
+          {
+            "localizedValue": "Pro Tools"
+          },
+          {
+            "localizedValue": "Pro X"
+          },
+          {
+            "localizedValue": "PRS"
+          },
+          {
+            "localizedValue": "Pulsar"
+          },
+          {
+            "localizedValue": "Pulse"
+          },
+          {
+            "localizedValue": "Pultec"
+          },
+          {
+            "localizedValue": "Pyle"
+          },
+          {
+            "localizedValue": "QED"
+          },
+          {
+            "localizedValue": "QGeeM"
+          },
+          {
+            "localizedValue": "QNAP"
+          },
+          {
+            "localizedValue": "QSC"
+          },
+          {
+            "localizedValue": "QTX"
+          },
+          {
+            "localizedValue": "QTX Sound"
+          },
+          {
+            "localizedValue": "QuadraPlus"
+          },
+          {
+            "localizedValue": "Quantum"
+          },
+          {
+            "localizedValue": "Quantum Instruments"
+          },
+          {
+            "localizedValue": "Radial"
+          },
+          {
+            "localizedValue": "RadioShack"
+          },
+          {
+            "localizedValue": "Ramsa"
+          },
+          {
+            "localizedValue": "Rane"
+          },
+          {
+            "localizedValue": "Rankie"
+          },
+          {
+            "localizedValue": "RAPCO"
+          },
+          {
+            "localizedValue": "RapcoHorizon"
+          },
+          {
+            "localizedValue": "Raritan"
+          },
+          {
+            "localizedValue": "Razer"
+          },
+          {
+            "localizedValue": "RCA"
+          },
+          {
+            "localizedValue": "RCF"
+          },
+          {
+            "localizedValue": "ReadyPlug"
+          },
+          {
+            "localizedValue": "Realistic"
+          },
+          {
+            "localizedValue": "REAN"
+          },
+          {
+            "localizedValue": "Red"
+          },
+          {
+            "localizedValue": "Red Witch"
+          },
+          {
+            "localizedValue": "Rega"
+          },
+          {
+            "localizedValue": "Retevis"
+          },
+          {
+            "localizedValue": "Reverend"
+          },
+          {
+            "localizedValue": "RFS"
+          },
+          {
+            "localizedValue": "RF Superstore"
+          },
+          {
+            "localizedValue": "RIC"
+          },
+          {
+            "localizedValue": "Rickenbacker"
+          },
+          {
+            "localizedValue": "Ricoh"
+          },
+          {
+            "localizedValue": "Rio"
+          },
+          {
+            "localizedValue": "Rio Grande"
+          },
+          {
+            "localizedValue": "Ritter"
+          },
+          {
+            "localizedValue": "Rivera"
+          },
+          {
+            "localizedValue": "Road Runner"
+          },
+          {
+            "localizedValue": "Rocktron"
+          },
+          {
+            "localizedValue": "Rockville"
+          },
+          {
+            "localizedValue": "Rocky Mountain"
+          },
+          {
+            "localizedValue": "Rode"
+          },
+          {
+            "localizedValue": "Roger Mayer"
+          },
+          {
+            "localizedValue": "Rogue"
+          },
+          {
+            "localizedValue": "Rokunar"
+          },
+          {
+            "localizedValue": "Roland"
+          },
+          {
+            "localizedValue": "ROLINE"
+          },
+          {
+            "localizedValue": "Rollei"
+          },
+          {
+            "localizedValue": "Rolls"
+          },
+          {
+            "localizedValue": "Rosewill"
+          },
+          {
+            "localizedValue": "Rotosound"
+          },
+          {
+            "localizedValue": "Sabine"
+          },
+          {
+            "localizedValue": "Sabrent"
+          },
+          {
+            "localizedValue": "Sadowsky"
+          },
+          {
+            "localizedValue": "Saga"
+          },
+          {
+            "localizedValue": "Sakar"
+          },
+          {
+            "localizedValue": "Samson"
+          },
+          {
+            "localizedValue": "Samsonite"
+          },
+          {
+            "localizedValue": "Samsung"
+          },
+          {
+            "localizedValue": "SanDisk"
+          },
+          {
+            "localizedValue": "SANTO ANGELO"
+          },
+          {
+            "localizedValue": "SANUS"
+          },
+          {
+            "localizedValue": "SANYO"
+          },
+          {
+            "localizedValue": "Saramonic"
+          },
+          {
+            "localizedValue": "SatelliteSale"
+          },
+          {
+            "localizedValue": "Schaller"
+          },
+          {
+            "localizedValue": "Schecter"
+          },
+          {
+            "localizedValue": "SCHELL"
+          },
+          {
+            "localizedValue": "Schoeps"
+          },
+          {
+            "localizedValue": "SEA&SEA"
+          },
+          {
+            "localizedValue": "Seagate"
+          },
+          {
+            "localizedValue": "Seiko"
+          },
+          {
+            "localizedValue": "Seismic Audio"
+          },
+          {
+            "localizedValue": "Sennheiser"
+          },
+          {
+            "localizedValue": "Serato"
+          },
+          {
+            "localizedValue": "Sescom"
+          },
+          {
+            "localizedValue": "Seymour Duncan"
+          },
+          {
+            "localizedValue": "Sfarzo"
+          },
+          {
+            "localizedValue": "Sharp"
+          },
+          {
+            "localizedValue": "Shinybow"
+          },
+          {
+            "localizedValue": "Shubb"
+          },
+          {
+            "localizedValue": "Shure"
+          },
+          {
+            "localizedValue": "SIB"
+          },
+          {
+            "localizedValue": "Siemens"
+          },
+          {
+            "localizedValue": "Sigma"
+          },
+          {
+            "localizedValue": "Signal Flex"
+          },
+          {
+            "localizedValue": "SIIG"
+          },
+          {
+            "localizedValue": "Silverstone"
+          },
+          {
+            "localizedValue": "Sima"
+          },
+          {
+            "localizedValue": "Sinar"
+          },
+          {
+            "localizedValue": "SKB"
+          },
+          {
+            "localizedValue": "Skreddy Pedals"
+          },
+          {
+            "localizedValue": "Skytec"
+          },
+          {
+            "localizedValue": "SmallHd"
+          },
+          {
+            "localizedValue": "SmallRig"
+          },
+          {
+            "localizedValue": "Snakebite"
+          },
+          {
+            "localizedValue": "Snarling Dogs"
+          },
+          {
+            "localizedValue": "Snowkids"
+          },
+          {
+            "localizedValue": "sobbat"
+          },
+          {
+            "localizedValue": "Socapex"
+          },
+          {
+            "localizedValue": "SODIAL"
+          },
+          {
+            "localizedValue": "Softalk"
+          },
+          {
+            "localizedValue": "Soligor"
+          },
+          {
+            "localizedValue": "SOMMER CABLE"
+          },
+          {
+            "localizedValue": "Sonos"
+          },
+          {
+            "localizedValue": "Sony"
+          },
+          {
+            "localizedValue": "Soundcraft"
+          },
+          {
+            "localizedValue": "Soundcraftsmen"
+          },
+          {
+            "localizedValue": "Sound Devices"
+          },
+          {
+            "localizedValue": "Sound Lab"
+          },
+          {
+            "localizedValue": "SoundTech"
+          },
+          {
+            "localizedValue": "Sovereignent"
+          },
+          {
+            "localizedValue": "Sperzel"
+          },
+          {
+            "localizedValue": "SPL"
+          },
+          {
+            "localizedValue": "Squier"
+          },
+          {
+            "localizedValue": "SRH Audio"
+          },
+          {
+            "localizedValue": "SSL"
+          },
+          {
+            "localizedValue": "Stageline"
+          },
+          {
+            "localizedValue": "Stage Ninja"
+          },
+          {
+            "localizedValue": "Stagg"
+          },
+          {
+            "localizedValue": "Stanton"
+          },
+          {
+            "localizedValue": "StarTech"
+          },
+          {
+            "localizedValue": "Steinberger"
+          },
+          {
+            "localizedValue": "Stellar Labs"
+          },
+          {
+            "localizedValue": "STEVENS"
+          },
+          {
+            "localizedValue": "Straight Wire"
+          },
+          {
+            "localizedValue": "Stratitec"
+          },
+          {
+            "localizedValue": "Strukture"
+          },
+          {
+            "localizedValue": "Studer"
+          },
+          {
+            "localizedValue": "Studiomaster"
+          },
+          {
+            "localizedValue": "Studio Projects"
+          },
+          {
+            "localizedValue": "Studiospares"
+          },
+          {
+            "localizedValue": "Subdecay"
+          },
+          {
+            "localizedValue": "Suhr"
+          },
+          {
+            "localizedValue": "Sunn"
+          },
+          {
+            "localizedValue": "Sunpak"
+          },
+          {
+            "localizedValue": "Supermicro"
+          },
+          {
+            "localizedValue": "Suttle"
+          },
+          {
+            "localizedValue": "SVS"
+          },
+          {
+            "localizedValue": "Swamp"
+          },
+          {
+            "localizedValue": "Swan Flight"
+          },
+          {
+            "localizedValue": "Switchcraft"
+          },
+          {
+            "localizedValue": "Switronix"
+          },
+          {
+            "localizedValue": "Syba"
+          },
+          {
+            "localizedValue": "Takamine"
+          },
+          {
+            "localizedValue": "Takstar"
+          },
+          {
+            "localizedValue": "Tamrac"
+          },
+          {
+            "localizedValue": "Tamron"
+          },
+          {
+            "localizedValue": "Tannoy"
+          },
+          {
+            "localizedValue": "Targus"
+          },
+          {
+            "localizedValue": "TASCAM"
+          },
+          {
+            "localizedValue": "Tasker"
+          },
+          {
+            "localizedValue": "Taylor"
+          },
+          {
+            "localizedValue": "TC Electronic"
+          },
+          {
+            "localizedValue": "TDK"
+          },
+          {
+            "localizedValue": "tech21"
+          },
+          {
+            "localizedValue": "Technical Hifi"
+          },
+          {
+            "localizedValue": "Technics"
+          },
+          {
+            "localizedValue": "Technobeam"
+          },
+          {
+            "localizedValue": "Techole"
+          },
+          {
+            "localizedValue": "TecNec"
+          },
+          {
+            "localizedValue": "Teisco"
+          },
+          {
+            "localizedValue": "TELEFUNKEN"
+          },
+          {
+            "localizedValue": "Tether Tools"
+          },
+          {
+            "localizedValue": "THD"
+          },
+          {
+            "localizedValue": "the t.racks"
+          },
+          {
+            "localizedValue": "Thomastik-Infeld"
+          },
+          {
+            "localizedValue": "Tilta"
+          },
+          {
+            "localizedValue": "Times Microwave Systems"
+          },
+          {
+            "localizedValue": "TKL"
+          },
+          {
+            "localizedValue": "TL Audio"
+          },
+          {
+            "localizedValue": "TOA"
+          },
+          {
+            "localizedValue": "ToadWorks"
+          },
+          {
+            "localizedValue": "Tokai"
+          },
+          {
+            "localizedValue": "Tone Factor"
+          },
+          {
+            "localizedValue": "TonePros"
+          },
+          {
+            "localizedValue": "Toshiba"
+          },
+          {
+            "localizedValue": "Transcend"
+          },
+          {
+            "localizedValue": "TRENDnet"
+          },
+          {
+            "localizedValue": "Trex"
+          },
+          {
+            "localizedValue": "Tributaries"
+          },
+          {
+            "localizedValue": "Triggertrap"
+          },
+          {
+            "localizedValue": "Tripp Lite"
+          },
+          {
+            "localizedValue": "Tuff Jacks"
+          },
+          {
+            "localizedValue": "Turner"
+          },
+          {
+            "localizedValue": "Ugreen"
+          },
+          {
+            "localizedValue": "Ultimate Support"
+          },
+          {
+            "localizedValue": "Uniden"
+          },
+          {
+            "localizedValue": "Union"
+          },
+          {
+            "localizedValue": "Univox"
+          },
+          {
+            "localizedValue": "Upbright"
+          },
+          {
+            "localizedValue": "Urei"
+          },
+          {
+            "localizedValue": "Usa Gear"
+          },
+          {
+            "localizedValue": "U-Turn Audio"
+          },
+          {
+            "localizedValue": "uxcell"
+          },
+          {
+            "localizedValue": "UXL"
+          },
+          {
+            "localizedValue": "Value Line"
+          },
+          {
+            "localizedValue": "Vanco"
+          },
+          {
+            "localizedValue": "Van Damme"
+          },
+          {
+            "localizedValue": "Vax"
+          },
+          {
+            "localizedValue": "VELLO"
+          },
+          {
+            "localizedValue": "VENTURA"
+          },
+          {
+            "localizedValue": "Verbatim"
+          },
+          {
+            "localizedValue": "Vestax"
+          },
+          {
+            "localizedValue": "VHBW"
+          },
+          {
+            "localizedValue": "Vidsonix"
+          },
+          {
+            "localizedValue": "Viltrox"
+          },
+          {
+            "localizedValue": "Vintech"
+          },
+          {
+            "localizedValue": "VisioSound"
+          },
+          {
+            "localizedValue": "Visual Sound"
+          },
+          {
+            "localizedValue": "Vivanco"
+          },
+          {
+            "localizedValue": "Vivitar"
+          },
+          {
+            "localizedValue": "VocoPro"
+          },
+          {
+            "localizedValue": "Voigtländer"
+          },
+          {
+            "localizedValue": "Voodoo Lab"
+          },
+          {
+            "localizedValue": "Vovox"
+          },
+          {
+            "localizedValue": "Vox"
+          },
+          {
+            "localizedValue": "VRT"
+          },
+          {
+            "localizedValue": "VSTi"
+          },
+          {
+            "localizedValue": "VTech"
+          },
+          {
+            "localizedValue": "W5SWL"
+          },
+          {
+            "localizedValue": "Waldorf"
+          },
+          {
+            "localizedValue": "Walimex"
+          },
+          {
+            "localizedValue": "Ward-Beck"
+          },
+          {
+            "localizedValue": "Warmoth"
+          },
+          {
+            "localizedValue": "Warwick"
+          },
+          {
+            "localizedValue": "Wasabi Power"
+          },
+          {
+            "localizedValue": "Washburn"
+          },
+          {
+            "localizedValue": "W-Audio"
+          },
+          {
+            "localizedValue": "Waverly"
+          },
+          {
+            "localizedValue": "Waves"
+          },
+          {
+            "localizedValue": "Way Huge Electronics"
+          },
+          {
+            "localizedValue": "Wedgie"
+          },
+          {
+            "localizedValue": "Westcott"
+          },
+          {
+            "localizedValue": "Westone"
+          },
+          {
+            "localizedValue": "Wharfedale"
+          },
+          {
+            "localizedValue": "Whirlwind"
+          },
+          {
+            "localizedValue": "WiFi Expert LLC"
+          },
+          {
+            "localizedValue": "Wilkinson"
+          },
+          {
+            "localizedValue": "Williams"
+          },
+          {
+            "localizedValue": "Wireworld"
+          },
+          {
+            "localizedValue": "Xilica Audio Design"
+          },
+          {
+            "localizedValue": "XShot"
+          },
+          {
+            "localizedValue": "XSPRO"
+          },
+          {
+            "localizedValue": "Xtreme Cables"
+          },
+          {
+            "localizedValue": "Yamaha"
+          },
+          {
+            "localizedValue": "Yashica"
+          },
+          {
+            "localizedValue": "Yellow-Price"
+          },
+          {
+            "localizedValue": "YONGNUO"
+          },
+          {
+            "localizedValue": "Yongsheng"
+          },
+          {
+            "localizedValue": "Yorkville"
+          },
+          {
+            "localizedValue": "Yustda"
+          },
+          {
+            "localizedValue": "Zebra"
+          },
+          {
+            "localizedValue": "Zeikos"
+          },
+          {
+            "localizedValue": "ZEISS"
+          },
+          {
+            "localizedValue": "Zhiyun"
+          },
+          {
+            "localizedValue": "Zildjian"
+          },
+          {
+            "localizedValue": "ZOOKIE"
+          },
+          {
+            "localizedValue": "Zoom"
+          },
+          {
+            "localizedValue": "ZOSI"
+          },
+          {
+            "localizedValue": "ZOZO"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Type",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": true,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "AC/AC Adapter"
+          },
+          {
+            "localizedValue": "AC/DC Adapter"
+          },
+          {
+            "localizedValue": "AC to DC Car Socket"
+          },
+          {
+            "localizedValue": "AC to DC Multi-Tip"
+          },
+          {
+            "localizedValue": "Adapter"
+          },
+          {
+            "localizedValue": "Adapter/Converter"
+          },
+          {
+            "localizedValue": "Attenuator"
+          },
+          {
+            "localizedValue": "Audio Adapter"
+          },
+          {
+            "localizedValue": "Audio Adapter/Converter"
+          },
+          {
+            "localizedValue": "Audio Converter"
+          },
+          {
+            "localizedValue": "Audio Coupler"
+          },
+          {
+            "localizedValue": "Audio Extension Cable"
+          },
+          {
+            "localizedValue": "Audio Extractor"
+          },
+          {
+            "localizedValue": "Audio Splitter/Switcher"
+          },
+          {
+            "localizedValue": "AUX Cable"
+          },
+          {
+            "localizedValue": "Auxiliary Audio Cable"
+          },
+          {
+            "localizedValue": "AV Adapter/Converter"
+          },
+          {
+            "localizedValue": "AV Coupler"
+          },
+          {
+            "localizedValue": "AV Splitter/Switcher"
+          },
+          {
+            "localizedValue": "Battery"
+          },
+          {
+            "localizedValue": "Battery Charger"
+          },
+          {
+            "localizedValue": "Battery with Charger"
+          },
+          {
+            "localizedValue": "Boot"
+          },
+          {
+            "localizedValue": "Cable"
+          },
+          {
+            "localizedValue": "Cable Connector"
+          },
+          {
+            "localizedValue": "Coaxial BNC Male-Female"
+          },
+          {
+            "localizedValue": "Coaxial BNC Male-Male"
+          },
+          {
+            "localizedValue": "Coaxial Cable"
+          },
+          {
+            "localizedValue": "Coaxial Cable RG174"
+          },
+          {
+            "localizedValue": "Coaxial F Male-Female"
+          },
+          {
+            "localizedValue": "Coaxial F Male-Male"
+          },
+          {
+            "localizedValue": "Coaxial LMR195"
+          },
+          {
+            "localizedValue": "Coaxial LMR240"
+          },
+          {
+            "localizedValue": "Coaxial LMR400"
+          },
+          {
+            "localizedValue": "Coaxial Raw"
+          },
+          {
+            "localizedValue": "Coaxial RG142"
+          },
+          {
+            "localizedValue": "Coaxial RG213"
+          },
+          {
+            "localizedValue": "Coaxial RG214"
+          },
+          {
+            "localizedValue": "Coaxial RG316"
+          },
+          {
+            "localizedValue": "Coaxial RG400"
+          },
+          {
+            "localizedValue": "Coaxial RG402"
+          },
+          {
+            "localizedValue": "Coaxial RG58"
+          },
+          {
+            "localizedValue": "Coaxial RG59"
+          },
+          {
+            "localizedValue": "Coaxial RG6"
+          },
+          {
+            "localizedValue": "Coaxial RG8"
+          },
+          {
+            "localizedValue": "Coaxial RG8X"
+          },
+          {
+            "localizedValue": "Coaxial Video Cable"
+          },
+          {
+            "localizedValue": "Component Cable"
+          },
+          {
+            "localizedValue": "Composite Cable"
+          },
+          {
+            "localizedValue": "Compression Connectors"
+          },
+          {
+            "localizedValue": "Connection Cable"
+          },
+          {
+            "localizedValue": "Connector"
+          },
+          {
+            "localizedValue": "Conversion Cable"
+          },
+          {
+            "localizedValue": "Converter"
+          },
+          {
+            "localizedValue": "Converter/Adapter"
+          },
+          {
+            "localizedValue": "Coupler"
+          },
+          {
+            "localizedValue": "Coupling Connector"
+          },
+          {
+            "localizedValue": "Digital Coaxial Cable"
+          },
+          {
+            "localizedValue": "DisplayPort Cable"
+          },
+          {
+            "localizedValue": "Dp To Hdmi"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11)"
+          },
+          {
+            "localizedValue": "DSL/Phone Raw"
+          },
+          {
+            "localizedValue": "DSL Filter"
+          },
+          {
+            "localizedValue": "DVI Cable"
+          },
+          {
+            "localizedValue": "Ethernet Crossover (RJ-45)"
+          },
+          {
+            "localizedValue": "Ethernet Crossover Raw"
+          },
+          {
+            "localizedValue": "Ethernet Patch (RJ-45)"
+          },
+          {
+            "localizedValue": "Ethernet Patch Raw"
+          },
+          {
+            "localizedValue": "Extender"
+          },
+          {
+            "localizedValue": "Extension Adapter"
+          },
+          {
+            "localizedValue": "Extension Cable"
+          },
+          {
+            "localizedValue": "Filter"
+          },
+          {
+            "localizedValue": "Filter-Splitter"
+          },
+          {
+            "localizedValue": "Handset Cord"
+          },
+          {
+            "localizedValue": "HDMI"
+          },
+          {
+            "localizedValue": "HDMI/VGA Adapter"
+          },
+          {
+            "localizedValue": "HDMI Adapter"
+          },
+          {
+            "localizedValue": "HDMI Adapter/Converter"
+          },
+          {
+            "localizedValue": "HDMI Cable"
+          },
+          {
+            "localizedValue": "HDMI Extender"
+          },
+          {
+            "localizedValue": "Hdmi Repeater"
+          },
+          {
+            "localizedValue": "HDMI Splitter"
+          },
+          {
+            "localizedValue": "HDMI Switch"
+          },
+          {
+            "localizedValue": "Hdmi To Dvi Cable"
+          },
+          {
+            "localizedValue": "Hdmi To Vga Cable"
+          },
+          {
+            "localizedValue": "Hdmi Wall Plate"
+          },
+          {
+            "localizedValue": "Headphone Cable"
+          },
+          {
+            "localizedValue": "Hub/Splitter Box"
+          },
+          {
+            "localizedValue": "Jack"
+          },
+          {
+            "localizedValue": "Jumper Cable"
+          },
+          {
+            "localizedValue": "KVM Reverse Switch Box"
+          },
+          {
+            "localizedValue": "KVM Switch Box"
+          },
+          {
+            "localizedValue": "KVM Switch Cable"
+          },
+          {
+            "localizedValue": "Lightning to VGA Adapter"
+          },
+          {
+            "localizedValue": "Male Connector"
+          },
+          {
+            "localizedValue": "MIDI Cable"
+          },
+          {
+            "localizedValue": "Modulator"
+          },
+          {
+            "localizedValue": "Optical Audio Cable"
+          },
+          {
+            "localizedValue": "Optical Cable"
+          },
+          {
+            "localizedValue": "Outlet"
+          },
+          {
+            "localizedValue": "Outlet Phone Jack System"
+          },
+          {
+            "localizedValue": "Phone Jack/TRS Cable"
+          },
+          {
+            "localizedValue": "Phone Line Cord"
+          },
+          {
+            "localizedValue": "Phono Cable"
+          },
+          {
+            "localizedValue": "Plug"
+          },
+          {
+            "localizedValue": "Plug Connector"
+          },
+          {
+            "localizedValue": "Power Cable"
+          },
+          {
+            "localizedValue": "Power Cord"
+          },
+          {
+            "localizedValue": "Power Strip"
+          },
+          {
+            "localizedValue": "RF Modulator"
+          },
+          {
+            "localizedValue": "Rg-174"
+          },
+          {
+            "localizedValue": "SCART Cable"
+          },
+          {
+            "localizedValue": "Sharing Switch"
+          },
+          {
+            "localizedValue": "Speaker Cable (Bi-Wire)"
+          },
+          {
+            "localizedValue": "Speaker Cable (Single-Wire)"
+          },
+          {
+            "localizedValue": "Speaker Wall Plate"
+          },
+          {
+            "localizedValue": "Splitter"
+          },
+          {
+            "localizedValue": "Splitter Cable"
+          },
+          {
+            "localizedValue": "Splitter Connector"
+          },
+          {
+            "localizedValue": "Splitter Conversion Cable"
+          },
+          {
+            "localizedValue": "Splitter Converter"
+          },
+          {
+            "localizedValue": "Stereo 3D Cable"
+          },
+          {
+            "localizedValue": "Stereo Audio Cable"
+          },
+          {
+            "localizedValue": "Subwoofer Cable"
+          },
+          {
+            "localizedValue": "S-Video Cable"
+          },
+          {
+            "localizedValue": "Telephone Cable"
+          },
+          {
+            "localizedValue": "Transformer"
+          },
+          {
+            "localizedValue": "Type-C Hub"
+          },
+          {
+            "localizedValue": "USB Cable"
+          },
+          {
+            "localizedValue": "VGA/SVGA Cable"
+          },
+          {
+            "localizedValue": "VGA Adapter"
+          },
+          {
+            "localizedValue": "VGA Converter"
+          },
+          {
+            "localizedValue": "Video Converter"
+          },
+          {
+            "localizedValue": "Wall Plate"
+          },
+          {
+            "localizedValue": "XLR Cable"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Connector A",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "USB 1.0/1.1"
+          },
+          {
+            "localizedValue": "USB 2.0"
+          },
+          {
+            "localizedValue": "USB 3.0"
+          },
+          {
+            "localizedValue": "USB 3.1"
+          },
+          {
+            "localizedValue": "2.5 mm Female"
+          },
+          {
+            "localizedValue": "2.5 mm Jack Female"
+          },
+          {
+            "localizedValue": "2.5 mm Jack Male"
+          },
+          {
+            "localizedValue": "2.5 mm Male"
+          },
+          {
+            "localizedValue": "20+4 Pin"
+          },
+          {
+            "localizedValue": "20 Pin"
+          },
+          {
+            "localizedValue": "24 Pin"
+          },
+          {
+            "localizedValue": "3.5 mm Female"
+          },
+          {
+            "localizedValue": "3.5 mm Jack Female"
+          },
+          {
+            "localizedValue": "3.5 mm Jack Male"
+          },
+          {
+            "localizedValue": "3.5 mm Male"
+          },
+          {
+            "localizedValue": "4P4C (Handset Cord Connector)"
+          },
+          {
+            "localizedValue": "4 Pin"
+          },
+          {
+            "localizedValue": "4 Pin 12 V"
+          },
+          {
+            "localizedValue": "4 Pin Peripheral"
+          },
+          {
+            "localizedValue": "5-Pin DIN"
+          },
+          {
+            "localizedValue": "6.35 mm (1/4 in) Jack Female"
+          },
+          {
+            "localizedValue": "6.35 mm (1/4 in) Jack Male"
+          },
+          {
+            "localizedValue": "6.35 mm Female"
+          },
+          {
+            "localizedValue": "6.35 mm Male"
+          },
+          {
+            "localizedValue": "6+2 Pin PCI Express"
+          },
+          {
+            "localizedValue": "6+6 Pin"
+          },
+          {
+            "localizedValue": "6 Pin PCI Express"
+          },
+          {
+            "localizedValue": "8 Pin 12 V"
+          },
+          {
+            "localizedValue": "8 Pin PCI Express"
+          },
+          {
+            "localizedValue": "Banana Female"
+          },
+          {
+            "localizedValue": "Banana Male"
+          },
+          {
+            "localizedValue": "Belling-Lee/TV Aerial Female"
+          },
+          {
+            "localizedValue": "Belling-Lee/TV Aerial Male"
+          },
+          {
+            "localizedValue": "BNC Female"
+          },
+          {
+            "localizedValue": "BNC Male"
+          },
+          {
+            "localizedValue": "Cat 5"
+          },
+          {
+            "localizedValue": "Cat 5e"
+          },
+          {
+            "localizedValue": "Cat 6"
+          },
+          {
+            "localizedValue": "Cat 6a"
+          },
+          {
+            "localizedValue": "Cat 7"
+          },
+          {
+            "localizedValue": "Cat 8"
+          },
+          {
+            "localizedValue": "Coaxial BNC"
+          },
+          {
+            "localizedValue": "Coaxial BNC Female"
+          },
+          {
+            "localizedValue": "Coaxial BNC Male"
+          },
+          {
+            "localizedValue": "Coaxial F"
+          },
+          {
+            "localizedValue": "Coaxial F Female"
+          },
+          {
+            "localizedValue": "Coaxial F Male"
+          },
+          {
+            "localizedValue": "Db9 Female"
+          },
+          {
+            "localizedValue": "DisplayPort"
+          },
+          {
+            "localizedValue": "DisplayPort Female"
+          },
+          {
+            "localizedValue": "DisplayPort Male"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11)"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11) Female"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11) Male"
+          },
+          {
+            "localizedValue": "D-Sub"
+          },
+          {
+            "localizedValue": "DVI"
+          },
+          {
+            "localizedValue": "DVI-A Male"
+          },
+          {
+            "localizedValue": "DVI-D (Dual Link) Male"
+          },
+          {
+            "localizedValue": "DVI-D (Single Link) Male"
+          },
+          {
+            "localizedValue": "DVI Female"
+          },
+          {
+            "localizedValue": "DVI-I (Dual Link) Male"
+          },
+          {
+            "localizedValue": "DVI-I (Single Link) Male"
+          },
+          {
+            "localizedValue": "DVI Male"
+          },
+          {
+            "localizedValue": "eSATA Female"
+          },
+          {
+            "localizedValue": "eSATA Male"
+          },
+          {
+            "localizedValue": "Ethernet (RJ-45)"
+          },
+          {
+            "localizedValue": "Ethernet (RJ-45) Female"
+          },
+          {
+            "localizedValue": "Ethernet (RJ-45) Male"
+          },
+          {
+            "localizedValue": "Ethernet Cat 5"
+          },
+          {
+            "localizedValue": "Ethernet Cat 5e"
+          },
+          {
+            "localizedValue": "Ethernet Cat 6"
+          },
+          {
+            "localizedValue": "Ethernet Cat 7"
+          },
+          {
+            "localizedValue": "FC"
+          },
+          {
+            "localizedValue": "F Connector Female"
+          },
+          {
+            "localizedValue": "F Connector Male"
+          },
+          {
+            "localizedValue": "F Female"
+          },
+          {
+            "localizedValue": "Figure 8 Female"
+          },
+          {
+            "localizedValue": "Figure 8 Male"
+          },
+          {
+            "localizedValue": "FireWire 1394 6-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394 6-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394a 4-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394a 4-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394a 6-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394a 6-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394b 9-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394b 9-Pin Male"
+          },
+          {
+            "localizedValue": "Floppy Drive"
+          },
+          {
+            "localizedValue": "F Male"
+          },
+          {
+            "localizedValue": "FME Female"
+          },
+          {
+            "localizedValue": "FME Male"
+          },
+          {
+            "localizedValue": "HDMI"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Micro Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Micro Male"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Mini Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Mini Male"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Standard Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Standard Male"
+          },
+          {
+            "localizedValue": "HDMI 2.0"
+          },
+          {
+            "localizedValue": "HDMI 2.1"
+          },
+          {
+            "localizedValue": "Hdmi Male To Male"
+          },
+          {
+            "localizedValue": "HDMI Micro Female"
+          },
+          {
+            "localizedValue": "HDMI Micro Male"
+          },
+          {
+            "localizedValue": "HDMI Mini Female"
+          },
+          {
+            "localizedValue": "HDMI Mini Male"
+          },
+          {
+            "localizedValue": "HDMI Standard Female"
+          },
+          {
+            "localizedValue": "HDMI Standard Male"
+          },
+          {
+            "localizedValue": "HD-SDI"
+          },
+          {
+            "localizedValue": "Headphone"
+          },
+          {
+            "localizedValue": "IDE/EIDE/PATA Female"
+          },
+          {
+            "localizedValue": "IDE/EIDE/PATA Male"
+          },
+          {
+            "localizedValue": "IEC/Kettle Female"
+          },
+          {
+            "localizedValue": "IEC/Kettle Male"
+          },
+          {
+            "localizedValue": "KPG-22"
+          },
+          {
+            "localizedValue": "LC"
+          },
+          {
+            "localizedValue": "M.2"
+          },
+          {
+            "localizedValue": "MCX Female"
+          },
+          {
+            "localizedValue": "MCX Male"
+          },
+          {
+            "localizedValue": "Mickey Mouse Female"
+          },
+          {
+            "localizedValue": "Mickey Mouse Male"
+          },
+          {
+            "localizedValue": "Micro-DVI Female"
+          },
+          {
+            "localizedValue": "Micro-DVI Male"
+          },
+          {
+            "localizedValue": "Microphone"
+          },
+          {
+            "localizedValue": "MIDI Female"
+          },
+          {
+            "localizedValue": "MIDI Male"
+          },
+          {
+            "localizedValue": "Mini Display Port"
+          },
+          {
+            "localizedValue": "Mini DisplayPort Female"
+          },
+          {
+            "localizedValue": "Mini DisplayPort Male"
+          },
+          {
+            "localizedValue": "Mini-DVI Female"
+          },
+          {
+            "localizedValue": "Mini-DVI Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8086 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8086 Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8087 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8087 Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8088 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8088 Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8643 Male"
+          },
+          {
+            "localizedValue": "mSATA"
+          },
+          {
+            "localizedValue": "MT-RJ"
+          },
+          {
+            "localizedValue": "N Female"
+          },
+          {
+            "localizedValue": "Ngff"
+          },
+          {
+            "localizedValue": "N Male"
+          },
+          {
+            "localizedValue": "None/Raw"
+          },
+          {
+            "localizedValue": "None (Raw Fiber)"
+          },
+          {
+            "localizedValue": "Not Specified"
+          },
+          {
+            "localizedValue": "Optical Audio Female"
+          },
+          {
+            "localizedValue": "Optical Audio Male"
+          },
+          {
+            "localizedValue": "Optical FC"
+          },
+          {
+            "localizedValue": "Optical FC Female"
+          },
+          {
+            "localizedValue": "Optical FC Male"
+          },
+          {
+            "localizedValue": "Optical LC"
+          },
+          {
+            "localizedValue": "Optical LC Female"
+          },
+          {
+            "localizedValue": "Optical LC Male"
+          },
+          {
+            "localizedValue": "Optical MT-RJ"
+          },
+          {
+            "localizedValue": "Optical MT-RJ Female"
+          },
+          {
+            "localizedValue": "Optical SC"
+          },
+          {
+            "localizedValue": "Optical SC Female"
+          },
+          {
+            "localizedValue": "Optical SC Male"
+          },
+          {
+            "localizedValue": "Optical ST"
+          },
+          {
+            "localizedValue": "Optical ST Female"
+          },
+          {
+            "localizedValue": "Optical ST Male"
+          },
+          {
+            "localizedValue": "Parallel (IEEE 1284) Female"
+          },
+          {
+            "localizedValue": "Parallel (IEEE 1284) Male"
+          },
+          {
+            "localizedValue": "PL-259 Female"
+          },
+          {
+            "localizedValue": "PL-259 Male"
+          },
+          {
+            "localizedValue": "PS/2"
+          },
+          {
+            "localizedValue": "PS/2 Female"
+          },
+          {
+            "localizedValue": "PS/2 Male"
+          },
+          {
+            "localizedValue": "RCA/Phono Female"
+          },
+          {
+            "localizedValue": "RCA/Phono Male"
+          },
+          {
+            "localizedValue": "RCA Female"
+          },
+          {
+            "localizedValue": "RCA Male"
+          },
+          {
+            "localizedValue": "Rg6"
+          },
+          {
+            "localizedValue": "RJ-11"
+          },
+          {
+            "localizedValue": "RJ12"
+          },
+          {
+            "localizedValue": "RJ-12"
+          },
+          {
+            "localizedValue": "RJ-14"
+          },
+          {
+            "localizedValue": "RJ45"
+          },
+          {
+            "localizedValue": "RJ-45"
+          },
+          {
+            "localizedValue": "RP-SMA Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8470 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8470 Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8482 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8482 Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8484 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8484 Male"
+          },
+          {
+            "localizedValue": "SATA Female"
+          },
+          {
+            "localizedValue": "SATA I"
+          },
+          {
+            "localizedValue": "SATA Male"
+          },
+          {
+            "localizedValue": "SC"
+          },
+          {
+            "localizedValue": "SCART"
+          },
+          {
+            "localizedValue": "SCSI 50-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 50-Pin Male"
+          },
+          {
+            "localizedValue": "SCSI 68-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 68-Pin Male"
+          },
+          {
+            "localizedValue": "SCSI 80-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 80-Pin Male"
+          },
+          {
+            "localizedValue": "Serial (RS-232) Female"
+          },
+          {
+            "localizedValue": "Serial (RS-232) Male"
+          },
+          {
+            "localizedValue": "SFP"
+          },
+          {
+            "localizedValue": "SMA Female"
+          },
+          {
+            "localizedValue": "SMA Male"
+          },
+          {
+            "localizedValue": "SO-239 Female"
+          },
+          {
+            "localizedValue": "SO-239 Male"
+          },
+          {
+            "localizedValue": "Spade Female"
+          },
+          {
+            "localizedValue": "Spade Male"
+          },
+          {
+            "localizedValue": "ST"
+          },
+          {
+            "localizedValue": "Stereo 3D Female"
+          },
+          {
+            "localizedValue": "Stereo 3D Male"
+          },
+          {
+            "localizedValue": "S-Video Female"
+          },
+          {
+            "localizedValue": "S-Video Male"
+          },
+          {
+            "localizedValue": "TNC Female"
+          },
+          {
+            "localizedValue": "TNC Male"
+          },
+          {
+            "localizedValue": "Toslink"
+          },
+          {
+            "localizedValue": "TS9 Male"
+          },
+          {
+            "localizedValue": "TV Aerial Female"
+          },
+          {
+            "localizedValue": "TV Aerial Male"
+          },
+          {
+            "localizedValue": "USB"
+          },
+          {
+            "localizedValue": "USB-C"
+          },
+          {
+            "localizedValue": "USB Standard Type A Female"
+          },
+          {
+            "localizedValue": "USB Standard Type A Male"
+          },
+          {
+            "localizedValue": "USB Type A Female"
+          },
+          {
+            "localizedValue": "Usb Type A Male"
+          },
+          {
+            "localizedValue": "USB Type B Female"
+          },
+          {
+            "localizedValue": "USB Type B Male"
+          },
+          {
+            "localizedValue": "Usb Type C"
+          },
+          {
+            "localizedValue": "USB Type C Female"
+          },
+          {
+            "localizedValue": "USB Type C Male"
+          },
+          {
+            "localizedValue": "USB Type C Thunderbolt"
+          },
+          {
+            "localizedValue": "USB Type Micro-A Female"
+          },
+          {
+            "localizedValue": "USB Type Micro-A Male"
+          },
+          {
+            "localizedValue": "USB Type Micro-B Female"
+          },
+          {
+            "localizedValue": "USB Type Micro-B Male"
+          },
+          {
+            "localizedValue": "USB Type Mini-A Female"
+          },
+          {
+            "localizedValue": "USB Type Mini-A Male"
+          },
+          {
+            "localizedValue": "USB Type Mini-B Female"
+          },
+          {
+            "localizedValue": "USB Type Mini-B Male"
+          },
+          {
+            "localizedValue": "VGA/SVGA D-Sub Female"
+          },
+          {
+            "localizedValue": "VGA/SVGA D-Sub Male"
+          },
+          {
+            "localizedValue": "VIVO Male"
+          },
+          {
+            "localizedValue": "Wireless Jack"
+          },
+          {
+            "localizedValue": "XLR"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Cable Length",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "1/2 ft"
+          },
+          {
+            "localizedValue": "1 cm"
+          },
+          {
+            "localizedValue": "5 cm"
+          },
+          {
+            "localizedValue": "10 cm"
+          },
+          {
+            "localizedValue": "15 cm"
+          },
+          {
+            "localizedValue": "0.5 ft"
+          },
+          {
+            "localizedValue": "20 cm"
+          },
+          {
+            "localizedValue": "9.8 in"
+          },
+          {
+            "localizedValue": "30 cm"
+          },
+          {
+            "localizedValue": "1 ft"
+          },
+          {
+            "localizedValue": "35 cm"
+          },
+          {
+            "localizedValue": "40 cm"
+          },
+          {
+            "localizedValue": "45 cm"
+          },
+          {
+            "localizedValue": "50 cm"
+          },
+          {
+            "localizedValue": "55 cm"
+          },
+          {
+            "localizedValue": "60 cm"
+          },
+          {
+            "localizedValue": "2 ft"
+          },
+          {
+            "localizedValue": "65 cm"
+          },
+          {
+            "localizedValue": "70 cm"
+          },
+          {
+            "localizedValue": "75 cm"
+          },
+          {
+            "localizedValue": "2.5 ft"
+          },
+          {
+            "localizedValue": "80 cm"
+          },
+          {
+            "localizedValue": "85 cm"
+          },
+          {
+            "localizedValue": "90 cm"
+          },
+          {
+            "localizedValue": "3 ft"
+          },
+          {
+            "localizedValue": "95 cm"
+          },
+          {
+            "localizedValue": "4 ft"
+          },
+          {
+            "localizedValue": "5 ft"
+          },
+          {
+            "localizedValue": "6 ft"
+          },
+          {
+            "localizedValue": "6.25 ft"
+          },
+          {
+            "localizedValue": "2 m"
+          },
+          {
+            "localizedValue": "7 ft"
+          },
+          {
+            "localizedValue": "8 ft"
+          },
+          {
+            "localizedValue": "9 ft"
+          },
+          {
+            "localizedValue": "3 m"
+          },
+          {
+            "localizedValue": "10 ft"
+          },
+          {
+            "localizedValue": "11 ft"
+          },
+          {
+            "localizedValue": "12 ft"
+          },
+          {
+            "localizedValue": "13 ft"
+          },
+          {
+            "localizedValue": "4 m"
+          },
+          {
+            "localizedValue": "14 ft"
+          },
+          {
+            "localizedValue": "15 ft"
+          },
+          {
+            "localizedValue": "16 ft"
+          },
+          {
+            "localizedValue": "5 m"
+          },
+          {
+            "localizedValue": "17 ft"
+          },
+          {
+            "localizedValue": "18 ft"
+          },
+          {
+            "localizedValue": "19 ft"
+          },
+          {
+            "localizedValue": "6 m"
+          },
+          {
+            "localizedValue": "20 ft"
+          },
+          {
+            "localizedValue": "21 ft"
+          },
+          {
+            "localizedValue": "22 ft"
+          },
+          {
+            "localizedValue": "7 m"
+          },
+          {
+            "localizedValue": "23 ft"
+          },
+          {
+            "localizedValue": "24 ft"
+          },
+          {
+            "localizedValue": "25 ft"
+          },
+          {
+            "localizedValue": "26 ft"
+          },
+          {
+            "localizedValue": "8 m"
+          },
+          {
+            "localizedValue": "27 ft"
+          },
+          {
+            "localizedValue": "28 ft"
+          },
+          {
+            "localizedValue": "29 ft"
+          },
+          {
+            "localizedValue": "9 m"
+          },
+          {
+            "localizedValue": "30 ft"
+          },
+          {
+            "localizedValue": "31 ft"
+          },
+          {
+            "localizedValue": "32 ft"
+          },
+          {
+            "localizedValue": "10 m"
+          },
+          {
+            "localizedValue": "33 ft"
+          },
+          {
+            "localizedValue": "34 ft"
+          },
+          {
+            "localizedValue": "35 ft"
+          },
+          {
+            "localizedValue": "36 ft"
+          },
+          {
+            "localizedValue": "11 m"
+          },
+          {
+            "localizedValue": "37 ft"
+          },
+          {
+            "localizedValue": "38 ft"
+          },
+          {
+            "localizedValue": "39 ft"
+          },
+          {
+            "localizedValue": "12 m"
+          },
+          {
+            "localizedValue": "40 ft"
+          },
+          {
+            "localizedValue": "41 ft"
+          },
+          {
+            "localizedValue": "42 ft"
+          },
+          {
+            "localizedValue": "13 m"
+          },
+          {
+            "localizedValue": "43 ft"
+          },
+          {
+            "localizedValue": "44 ft"
+          },
+          {
+            "localizedValue": "45 ft"
+          },
+          {
+            "localizedValue": "14 m"
+          },
+          {
+            "localizedValue": "46 ft"
+          },
+          {
+            "localizedValue": "47 ft"
+          },
+          {
+            "localizedValue": "48 ft"
+          },
+          {
+            "localizedValue": "49 ft"
+          },
+          {
+            "localizedValue": "15 m"
+          },
+          {
+            "localizedValue": "50 ft"
+          },
+          {
+            "localizedValue": "16 m"
+          },
+          {
+            "localizedValue": "17 m"
+          },
+          {
+            "localizedValue": "18 m"
+          },
+          {
+            "localizedValue": "60 ft"
+          },
+          {
+            "localizedValue": "19 m"
+          },
+          {
+            "localizedValue": "20 m"
+          },
+          {
+            "localizedValue": "66 ft"
+          },
+          {
+            "localizedValue": "21 m"
+          },
+          {
+            "localizedValue": "22 m"
+          },
+          {
+            "localizedValue": "75 ft"
+          },
+          {
+            "localizedValue": "23 m"
+          },
+          {
+            "localizedValue": "24 m"
+          },
+          {
+            "localizedValue": "80 ft"
+          },
+          {
+            "localizedValue": "82 ft"
+          },
+          {
+            "localizedValue": "25 m"
+          },
+          {
+            "localizedValue": "26 m"
+          },
+          {
+            "localizedValue": "98 ft"
+          },
+          {
+            "localizedValue": "30 m"
+          },
+          {
+            "localizedValue": "100 ft"
+          },
+          {
+            "localizedValue": "33 m"
+          },
+          {
+            "localizedValue": "35 m"
+          },
+          {
+            "localizedValue": "131 ft"
+          },
+          {
+            "localizedValue": "40 m"
+          },
+          {
+            "localizedValue": "45 m"
+          },
+          {
+            "localizedValue": "150 ft"
+          },
+          {
+            "localizedValue": "50 m"
+          },
+          {
+            "localizedValue": "200 ft"
+          },
+          {
+            "localizedValue": "250 ft"
+          },
+          {
+            "localizedValue": "300 ft"
+          },
+          {
+            "localizedValue": "98 m"
+          },
+          {
+            "localizedValue": "330 ft"
+          },
+          {
+            "localizedValue": "500 ft"
+          },
+          {
+            "localizedValue": "1000 ft"
+          },
+          {
+            "localizedValue": "330 m"
+          },
+          {
+            "localizedValue": "1200 ft."
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Features",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "Coil Cord"
+          },
+          {
+            "localizedValue": "Fiber Cable"
+          },
+          {
+            "localizedValue": "Flat Cable"
+          },
+          {
+            "localizedValue": "Fused"
+          },
+          {
+            "localizedValue": "Gold Plated"
+          },
+          {
+            "localizedValue": "LED Display"
+          },
+          {
+            "localizedValue": "Panel Mount"
+          },
+          {
+            "localizedValue": "Portable"
+          },
+          {
+            "localizedValue": "Powered"
+          },
+          {
+            "localizedValue": "Retractable"
+          },
+          {
+            "localizedValue": "Right Angle Adapter"
+          },
+          {
+            "localizedValue": "Round Cable"
+          },
+          {
+            "localizedValue": "Shielded Audio Cable"
+          },
+          {
+            "localizedValue": "Three Way Splitter"
+          },
+          {
+            "localizedValue": "Two Way Splitter"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Connector B",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "2.5 mm Female"
+          },
+          {
+            "localizedValue": "2.5 mm Jack Female"
+          },
+          {
+            "localizedValue": "2.5 mm Jack Male"
+          },
+          {
+            "localizedValue": "2.5 mm Male"
+          },
+          {
+            "localizedValue": "20+4 Pin"
+          },
+          {
+            "localizedValue": "20 Pin"
+          },
+          {
+            "localizedValue": "24 Pin"
+          },
+          {
+            "localizedValue": "2-Contact AC Female Euro"
+          },
+          {
+            "localizedValue": "2-Contact AC Female US"
+          },
+          {
+            "localizedValue": "2-Contact AC Male Euro"
+          },
+          {
+            "localizedValue": "2-Contact AC Male US"
+          },
+          {
+            "localizedValue": "3.5 mm Female"
+          },
+          {
+            "localizedValue": "3.5 mm Jack Female"
+          },
+          {
+            "localizedValue": "3.5 mm Jack Male"
+          },
+          {
+            "localizedValue": "3.5 mm Male"
+          },
+          {
+            "localizedValue": "3-Contact AC Female Euro"
+          },
+          {
+            "localizedValue": "3-Contact AC Female US"
+          },
+          {
+            "localizedValue": "3-Contact AC Male Euro"
+          },
+          {
+            "localizedValue": "3-Contact AC Male UK"
+          },
+          {
+            "localizedValue": "3-Contact AC Male US"
+          },
+          {
+            "localizedValue": "4 Pin 12 V"
+          },
+          {
+            "localizedValue": "4 Pin Peripheral"
+          },
+          {
+            "localizedValue": "6.35 mm (1/4 in) Jack Female"
+          },
+          {
+            "localizedValue": "6.35 mm (1/4 in) Jack Male"
+          },
+          {
+            "localizedValue": "6.35 mm Female"
+          },
+          {
+            "localizedValue": "6.35 mm Male"
+          },
+          {
+            "localizedValue": "6+2 Pin PCI Express"
+          },
+          {
+            "localizedValue": "6+6 Pin"
+          },
+          {
+            "localizedValue": "6 Pin PCI Express"
+          },
+          {
+            "localizedValue": "8 Pin 12 V"
+          },
+          {
+            "localizedValue": "8 Pin PCI Express"
+          },
+          {
+            "localizedValue": "Banana Female"
+          },
+          {
+            "localizedValue": "Banana Male"
+          },
+          {
+            "localizedValue": "Belling-Lee/TV Aerial Female"
+          },
+          {
+            "localizedValue": "Belling-Lee/TV Aerial Male"
+          },
+          {
+            "localizedValue": "BNC Female"
+          },
+          {
+            "localizedValue": "BNC Male"
+          },
+          {
+            "localizedValue": "Coaxial BNC Female"
+          },
+          {
+            "localizedValue": "Coaxial BNC Male"
+          },
+          {
+            "localizedValue": "Coaxial F Female"
+          },
+          {
+            "localizedValue": "Coaxial F Male"
+          },
+          {
+            "localizedValue": "DB25"
+          },
+          {
+            "localizedValue": "DisplayPort Female"
+          },
+          {
+            "localizedValue": "DisplayPort Male"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11) Female"
+          },
+          {
+            "localizedValue": "DSL/Phone (RJ-11) Male"
+          },
+          {
+            "localizedValue": "DVI-A Male"
+          },
+          {
+            "localizedValue": "DVI-D (Dual Link) Male"
+          },
+          {
+            "localizedValue": "DVI-D (Single Link) Male"
+          },
+          {
+            "localizedValue": "DVI Female"
+          },
+          {
+            "localizedValue": "DVI-I (Dual Link) Male"
+          },
+          {
+            "localizedValue": "DVI-I (Single Link) Male"
+          },
+          {
+            "localizedValue": "eSATA Female"
+          },
+          {
+            "localizedValue": "eSATA Male"
+          },
+          {
+            "localizedValue": "Ethernet (RJ-45) Female"
+          },
+          {
+            "localizedValue": "Ethernet (RJ-45) Male"
+          },
+          {
+            "localizedValue": "FC"
+          },
+          {
+            "localizedValue": "F Connector Female"
+          },
+          {
+            "localizedValue": "F Connector Male"
+          },
+          {
+            "localizedValue": "F Female"
+          },
+          {
+            "localizedValue": "Figure 8 Female"
+          },
+          {
+            "localizedValue": "Figure 8 Male"
+          },
+          {
+            "localizedValue": "FireWire 1394 6-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394 6-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394a 4-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394a 4-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394a 6-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394a 6-Pin Male"
+          },
+          {
+            "localizedValue": "FireWire 1394b 9-Pin Female"
+          },
+          {
+            "localizedValue": "FireWire 1394b 9-Pin Male"
+          },
+          {
+            "localizedValue": "Floppy Drive"
+          },
+          {
+            "localizedValue": "F Male"
+          },
+          {
+            "localizedValue": "FME Female"
+          },
+          {
+            "localizedValue": "FME Male"
+          },
+          {
+            "localizedValue": "HDMI 1.4"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Micro Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Micro Male"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Mini Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Mini Male"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Standard Female"
+          },
+          {
+            "localizedValue": "HDMI 1.4 Standard Male"
+          },
+          {
+            "localizedValue": "HDMI 2.0"
+          },
+          {
+            "localizedValue": "HDMI 2.1"
+          },
+          {
+            "localizedValue": "HDMI Micro Female"
+          },
+          {
+            "localizedValue": "HDMI Micro Male"
+          },
+          {
+            "localizedValue": "HDMI Mini Female"
+          },
+          {
+            "localizedValue": "HDMI Mini Male"
+          },
+          {
+            "localizedValue": "HDMI Standard Female"
+          },
+          {
+            "localizedValue": "HDMI Standard Male"
+          },
+          {
+            "localizedValue": "IDE/EIDE/PATA Female"
+          },
+          {
+            "localizedValue": "IDE/EIDE/PATA Male"
+          },
+          {
+            "localizedValue": "IEC/Kettle Female"
+          },
+          {
+            "localizedValue": "IEC/Kettle Male"
+          },
+          {
+            "localizedValue": "LC"
+          },
+          {
+            "localizedValue": "MCX Female"
+          },
+          {
+            "localizedValue": "MCX Male"
+          },
+          {
+            "localizedValue": "Mickey Mouse Female"
+          },
+          {
+            "localizedValue": "Mickey Mouse Male"
+          },
+          {
+            "localizedValue": "Micro-DVI Female"
+          },
+          {
+            "localizedValue": "Micro-DVI Male"
+          },
+          {
+            "localizedValue": "MIDI Female"
+          },
+          {
+            "localizedValue": "MIDI Male"
+          },
+          {
+            "localizedValue": "Mini DisplayPort Female"
+          },
+          {
+            "localizedValue": "Mini DisplayPort Male"
+          },
+          {
+            "localizedValue": "Mini-DVI Female"
+          },
+          {
+            "localizedValue": "Mini-DVI Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8086 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8086 Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8087 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8087 Male"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8088 Female"
+          },
+          {
+            "localizedValue": "Mini SAS SFF-8088 Male"
+          },
+          {
+            "localizedValue": "MT-RJ"
+          },
+          {
+            "localizedValue": "N Female"
+          },
+          {
+            "localizedValue": "N Male"
+          },
+          {
+            "localizedValue": "None/Raw"
+          },
+          {
+            "localizedValue": "None (Raw Fiber)"
+          },
+          {
+            "localizedValue": "Optical Audio Female"
+          },
+          {
+            "localizedValue": "Optical Audio Male"
+          },
+          {
+            "localizedValue": "Optical FC Female"
+          },
+          {
+            "localizedValue": "Optical FC Male"
+          },
+          {
+            "localizedValue": "Optical LC Female"
+          },
+          {
+            "localizedValue": "Optical LC Male"
+          },
+          {
+            "localizedValue": "Optical MT-RJ Female"
+          },
+          {
+            "localizedValue": "Optical SC Female"
+          },
+          {
+            "localizedValue": "Optical SC Male"
+          },
+          {
+            "localizedValue": "Optical ST Female"
+          },
+          {
+            "localizedValue": "Optical ST Male"
+          },
+          {
+            "localizedValue": "Parallel (IEEE 1284) Female"
+          },
+          {
+            "localizedValue": "Parallel (IEEE 1284) Male"
+          },
+          {
+            "localizedValue": "PL-259 Female"
+          },
+          {
+            "localizedValue": "PL-259 Male"
+          },
+          {
+            "localizedValue": "PS/2 Female"
+          },
+          {
+            "localizedValue": "PS/2 Male"
+          },
+          {
+            "localizedValue": "RCA/Phono Female"
+          },
+          {
+            "localizedValue": "RCA/Phono Male"
+          },
+          {
+            "localizedValue": "RCA Female"
+          },
+          {
+            "localizedValue": "RCA Male"
+          },
+          {
+            "localizedValue": "RJ45 Port Female"
+          },
+          {
+            "localizedValue": "RP-SMA Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8470 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8470 Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8482 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8482 Male"
+          },
+          {
+            "localizedValue": "SAS SFF-8484 Female"
+          },
+          {
+            "localizedValue": "SAS SFF-8484 Male"
+          },
+          {
+            "localizedValue": "SATA Female"
+          },
+          {
+            "localizedValue": "SATA I"
+          },
+          {
+            "localizedValue": "SATA Male"
+          },
+          {
+            "localizedValue": "SC"
+          },
+          {
+            "localizedValue": "SCART"
+          },
+          {
+            "localizedValue": "SCSI 50-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 50-Pin Male"
+          },
+          {
+            "localizedValue": "SCSI 68-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 68-Pin Male"
+          },
+          {
+            "localizedValue": "SCSI 80-Pin Female"
+          },
+          {
+            "localizedValue": "SCSI 80-Pin Male"
+          },
+          {
+            "localizedValue": "Serial (RS-232) Female"
+          },
+          {
+            "localizedValue": "Serial (RS-232) Male"
+          },
+          {
+            "localizedValue": "SFP"
+          },
+          {
+            "localizedValue": "SMA Female"
+          },
+          {
+            "localizedValue": "SMA Male"
+          },
+          {
+            "localizedValue": "SO-239 Female"
+          },
+          {
+            "localizedValue": "SO-239 Male"
+          },
+          {
+            "localizedValue": "Spade Female"
+          },
+          {
+            "localizedValue": "Spade Male"
+          },
+          {
+            "localizedValue": "ST"
+          },
+          {
+            "localizedValue": "Stereo 3D Female"
+          },
+          {
+            "localizedValue": "Stereo 3D Male"
+          },
+          {
+            "localizedValue": "S-Video Female"
+          },
+          {
+            "localizedValue": "S-Video Male"
+          },
+          {
+            "localizedValue": "TNC Female"
+          },
+          {
+            "localizedValue": "TNC Male"
+          },
+          {
+            "localizedValue": "Toslink"
+          },
+          {
+            "localizedValue": "TV Aerial Female"
+          },
+          {
+            "localizedValue": "TV Aerial Male"
+          },
+          {
+            "localizedValue": "USB Standard Type A Female"
+          },
+          {
+            "localizedValue": "USB Standard Type A Male"
+          },
+          {
+            "localizedValue": "USB Type B Female"
+          },
+          {
+            "localizedValue": "USB Type B Male"
+          },
+          {
+            "localizedValue": "USB Type C Female"
+          },
+          {
+            "localizedValue": "USB Type C Male"
+          },
+          {
+            "localizedValue": "USB Type Micro-A Female"
+          },
+          {
+            "localizedValue": "USB Type Micro-A Male"
+          },
+          {
+            "localizedValue": "USB Type Micro-B Female"
+          },
+          {
+            "localizedValue": "USB Type Micro-B Male"
+          },
+          {
+            "localizedValue": "USB Type Mini-A Female"
+          },
+          {
+            "localizedValue": "USB Type Mini-A Male"
+          },
+          {
+            "localizedValue": "USB Type Mini-B Female"
+          },
+          {
+            "localizedValue": "USB Type Mini-B Male"
+          },
+          {
+            "localizedValue": "VGA/SVGA D-Sub Female"
+          },
+          {
+            "localizedValue": "VGA/SVGA D-Sub Male"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Connection Split/Duplication",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "1:1"
+          },
+          {
+            "localizedValue": "1:2"
+          },
+          {
+            "localizedValue": "1:3"
+          },
+          {
+            "localizedValue": "1:4"
+          },
+          {
+            "localizedValue": "1:5"
+          },
+          {
+            "localizedValue": "1:6"
+          },
+          {
+            "localizedValue": "1:7"
+          },
+          {
+            "localizedValue": "1:8"
+          },
+          {
+            "localizedValue": "1:9"
+          },
+          {
+            "localizedValue": "1:10"
+          },
+          {
+            "localizedValue": "1:11"
+          },
+          {
+            "localizedValue": "1:12"
+          },
+          {
+            "localizedValue": "1:16"
+          },
+          {
+            "localizedValue": "1:32"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Output Voltage",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "1.5 V"
+          },
+          {
+            "localizedValue": "3 V"
+          },
+          {
+            "localizedValue": "4.5 V"
+          },
+          {
+            "localizedValue": "5 V"
+          },
+          {
+            "localizedValue": "6 V"
+          },
+          {
+            "localizedValue": "7.5 V"
+          },
+          {
+            "localizedValue": "9 V"
+          },
+          {
+            "localizedValue": "12 V"
+          },
+          {
+            "localizedValue": "13.5 V"
+          },
+          {
+            "localizedValue": "15 V"
+          },
+          {
+            "localizedValue": "16 V"
+          },
+          {
+            "localizedValue": "18 V"
+          },
+          {
+            "localizedValue": "19 V"
+          },
+          {
+            "localizedValue": "20 V"
+          },
+          {
+            "localizedValue": "24 V"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "MPN",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Unit Quantity",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "ITEM"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Unit Type",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "SELECTION_ONLY",
+          "aspectRequired": false,
+          "aspectUsage": "RECOMMENDED",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "Unit"
+          },
+          {
+            "localizedValue": "oz"
+          },
+          {
+            "localizedValue": "lb"
+          },
+          {
+            "localizedValue": "fl oz"
+          },
+          {
+            "localizedValue": "gal"
+          },
+          {
+            "localizedValue": "ft"
+          },
+          {
+            "localizedValue": "ft²"
+          },
+          {
+            "localizedValue": "ft³"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Color",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "Beige"
+          },
+          {
+            "localizedValue": "Black"
+          },
+          {
+            "localizedValue": "Blue"
+          },
+          {
+            "localizedValue": "Brown"
+          },
+          {
+            "localizedValue": "Clear"
+          },
+          {
+            "localizedValue": "Gold"
+          },
+          {
+            "localizedValue": "Gray"
+          },
+          {
+            "localizedValue": "Green"
+          },
+          {
+            "localizedValue": "Multicolor"
+          },
+          {
+            "localizedValue": "Orange"
+          },
+          {
+            "localizedValue": "Pink"
+          },
+          {
+            "localizedValue": "Purple"
+          },
+          {
+            "localizedValue": "Red"
+          },
+          {
+            "localizedValue": "Silver"
+          },
+          {
+            "localizedValue": "White"
+          },
+          {
+            "localizedValue": "Yellow"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Compatible Brand",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "For Acer"
+          },
+          {
+            "localizedValue": "For Advent"
+          },
+          {
+            "localizedValue": "For Amazon"
+          },
+          {
+            "localizedValue": "For AOC"
+          },
+          {
+            "localizedValue": "For Apple"
+          },
+          {
+            "localizedValue": "For Archos"
+          },
+          {
+            "localizedValue": "For ASUS"
+          },
+          {
+            "localizedValue": "For Audeze"
+          },
+          {
+            "localizedValue": "For Audioengine"
+          },
+          {
+            "localizedValue": "For Audiolab"
+          },
+          {
+            "localizedValue": "For AudioQuest"
+          },
+          {
+            "localizedValue": "For Augen"
+          },
+          {
+            "localizedValue": "For Barnes & Noble"
+          },
+          {
+            "localizedValue": "For BlackBerry"
+          },
+          {
+            "localizedValue": "For Bookeen"
+          },
+          {
+            "localizedValue": "For Bowers & Wilkins"
+          },
+          {
+            "localizedValue": "For Chief"
+          },
+          {
+            "localizedValue": "For CIMA"
+          },
+          {
+            "localizedValue": "For Cisco"
+          },
+          {
+            "localizedValue": "For Coby"
+          },
+          {
+            "localizedValue": "For Creative"
+          },
+          {
+            "localizedValue": "For Definitive Technology"
+          },
+          {
+            "localizedValue": "For Dell"
+          },
+          {
+            "localizedValue": "For Denon"
+          },
+          {
+            "localizedValue": "For Dynaudio"
+          },
+          {
+            "localizedValue": "For Elite Screens"
+          },
+          {
+            "localizedValue": "For Flexson"
+          },
+          {
+            "localizedValue": "For Focal"
+          },
+          {
+            "localizedValue": "For Fujitsu"
+          },
+          {
+            "localizedValue": "For Furnitech"
+          },
+          {
+            "localizedValue": "For HP"
+          },
+          {
+            "localizedValue": "For HTC"
+          },
+          {
+            "localizedValue": "For Huawei"
+          },
+          {
+            "localizedValue": "For Infinity"
+          },
+          {
+            "localizedValue": "For Integra"
+          },
+          {
+            "localizedValue": "For iRiver"
+          },
+          {
+            "localizedValue": "For iRulu"
+          },
+          {
+            "localizedValue": "For Jamo"
+          },
+          {
+            "localizedValue": "For Kanto"
+          },
+          {
+            "localizedValue": "For Kicker"
+          },
+          {
+            "localizedValue": "For KLH"
+          },
+          {
+            "localizedValue": "For Kobo"
+          },
+          {
+            "localizedValue": "For Lenovo"
+          },
+          {
+            "localizedValue": "For LG"
+          },
+          {
+            "localizedValue": "For Lucid Audio"
+          },
+          {
+            "localizedValue": "For Marantz"
+          },
+          {
+            "localizedValue": "For Maylong Group"
+          },
+          {
+            "localizedValue": "For MEE audio"
+          },
+          {
+            "localizedValue": "For Microsoft"
+          },
+          {
+            "localizedValue": "For Motion Computing"
+          },
+          {
+            "localizedValue": "For Motorola"
+          },
+          {
+            "localizedValue": "For NAD Electronics"
+          },
+          {
+            "localizedValue": "For Nokia"
+          },
+          {
+            "localizedValue": "For Notion Ink"
+          },
+          {
+            "localizedValue": "For Onkyo"
+          },
+          {
+            "localizedValue": "For Panamax"
+          },
+          {
+            "localizedValue": "For Panasonic"
+          },
+          {
+            "localizedValue": "For Pandigital"
+          },
+          {
+            "localizedValue": "For Pioneer"
+          },
+          {
+            "localizedValue": "For PocketBook"
+          },
+          {
+            "localizedValue": "For Polk Audio"
+          },
+          {
+            "localizedValue": "For Pro-Ject"
+          },
+          {
+            "localizedValue": "For PSB"
+          },
+          {
+            "localizedValue": "For Razer"
+          },
+          {
+            "localizedValue": "For Rega"
+          },
+          {
+            "localizedValue": "For Salamander"
+          },
+          {
+            "localizedValue": "For Samsung"
+          },
+          {
+            "localizedValue": "For Sanus"
+          },
+          {
+            "localizedValue": "For Sennheiser"
+          },
+          {
+            "localizedValue": "For Shure"
+          },
+          {
+            "localizedValue": "For SmartQ"
+          },
+          {
+            "localizedValue": "For Sonos"
+          },
+          {
+            "localizedValue": "For Sony"
+          },
+          {
+            "localizedValue": "For SoundXtra"
+          },
+          {
+            "localizedValue": "For SVS"
+          },
+          {
+            "localizedValue": "For Tivoli Audio"
+          },
+          {
+            "localizedValue": "For Toshiba"
+          },
+          {
+            "localizedValue": "For U-Turn Audio"
+          },
+          {
+            "localizedValue": "For Velocity Micro"
+          },
+          {
+            "localizedValue": "For ViewSonic"
+          },
+          {
+            "localizedValue": "For Vifa"
+          },
+          {
+            "localizedValue": "For Vizio"
+          },
+          {
+            "localizedValue": "For Wacom"
+          },
+          {
+            "localizedValue": "For Yamaha"
+          },
+          {
+            "localizedValue": "For Zenithink"
+          },
+          {
+            "localizedValue": "Universal"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Compatible Model",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "MULTI",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "For Acer Aspire Switch"
+          },
+          {
+            "localizedValue": "For Acer Iconia B"
+          },
+          {
+            "localizedValue": "For Acer Iconia One 10"
+          },
+          {
+            "localizedValue": "For Acer Iconia One 7"
+          },
+          {
+            "localizedValue": "For Acer Iconia One 8"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab 10"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab 7"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab 8"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab 8 W"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab A100"
+          },
+          {
+            "localizedValue": "For Acer Iconia Tab A500"
+          },
+          {
+            "localizedValue": "For Acer Iconia W"
+          },
+          {
+            "localizedValue": "For Ainol Novo"
+          },
+          {
+            "localizedValue": "For Amazon Fire (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire 7 (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire 7 Kids Edition (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 10 (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 10 (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 6 (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 7 (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 8 (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 8 (6th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 8 (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD 8 Kids Edition (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HD Kids Edition (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire HDX 8.9\" (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Fire Kids Edition (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (1st Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle (8th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle DX (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire (1st Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire HD (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire HD (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire HD 8.9\" (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire HDX (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Fire HDX 8.9\" (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Keyboard (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Oasis (8th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Oasis (9th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Paperwhite (5th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Paperwhite (6th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Paperwhite (7th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Touch (4th Generation)"
+          },
+          {
+            "localizedValue": "For Amazon Kindle Voyage (7th Generation)"
+          },
+          {
+            "localizedValue": "For AOC Breeze"
+          },
+          {
+            "localizedValue": "For Apple iPad (1st Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (4th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (5th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (6th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (7th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad (9th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad 2"
+          },
+          {
+            "localizedValue": "For Apple iPad Air (1st Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad Air (3rd Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad Air 2"
+          },
+          {
+            "localizedValue": "For Apple iPad mini (1st Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad mini (5th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad mini (6th Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad mini 2"
+          },
+          {
+            "localizedValue": "For Apple iPad mini 3"
+          },
+          {
+            "localizedValue": "For Apple iPad mini 4"
+          },
+          {
+            "localizedValue": "For Apple iPad Pro (1st Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad Pro (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Apple iPad Pro (3rd Generation)"
+          },
+          {
+            "localizedValue": "For ARCHOS 101"
+          },
+          {
+            "localizedValue": "For ARCHOS 101b Oxygen"
+          },
+          {
+            "localizedValue": "For ARCHOS 101 Cobalt"
+          },
+          {
+            "localizedValue": "For ARCHOS 101d Platinum"
+          },
+          {
+            "localizedValue": "For ARCHOS 101 Magnus Plus"
+          },
+          {
+            "localizedValue": "For ARCHOS 101 Platinum 3G"
+          },
+          {
+            "localizedValue": "For ARCHOS 133 Flip"
+          },
+          {
+            "localizedValue": "For ARCHOS 28"
+          },
+          {
+            "localizedValue": "For ARCHOS 32"
+          },
+          {
+            "localizedValue": "For ARCHOS 43"
+          },
+          {
+            "localizedValue": "For ARCHOS 48"
+          },
+          {
+            "localizedValue": "For ARCHOS 5"
+          },
+          {
+            "localizedValue": "For ARCHOS 7"
+          },
+          {
+            "localizedValue": "For ARCHOS 70c Neon"
+          },
+          {
+            "localizedValue": "For ARCHOS 70d Titanium"
+          },
+          {
+            "localizedValue": "For ARCHOS 70 eReader"
+          },
+          {
+            "localizedValue": "For ARCHOS 70 Tablet"
+          },
+          {
+            "localizedValue": "For ARCHOS 70 Xenon Color"
+          },
+          {
+            "localizedValue": "For ARCHOS 70 Xenon Colour"
+          },
+          {
+            "localizedValue": "For ARCHOS 8"
+          },
+          {
+            "localizedValue": "For ARCHOS 80 Cobalt"
+          },
+          {
+            "localizedValue": "For ARCHOS 97c Platinum"
+          },
+          {
+            "localizedValue": "For ARCHOS Access 101 3G"
+          },
+          {
+            "localizedValue": "For ARCHOS Core 70 3G"
+          },
+          {
+            "localizedValue": "For ARCHOS Sense 101 X"
+          },
+          {
+            "localizedValue": "For ARNOVA ChildPad"
+          },
+          {
+            "localizedValue": "For ARNOVA FamilyPad"
+          },
+          {
+            "localizedValue": "For Astro Tab A10"
+          },
+          {
+            "localizedValue": "For ASUS Eee Note"
+          },
+          {
+            "localizedValue": "For ASUS Eee Pad Slider"
+          },
+          {
+            "localizedValue": "For ASUS Eee Pad Transformer"
+          },
+          {
+            "localizedValue": "For ASUS Eee Slate"
+          },
+          {
+            "localizedValue": "For ASUS Fonepad 7"
+          },
+          {
+            "localizedValue": "For ASUS Fonepad 8"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad 10"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad 7"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad 8"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad FHD10 LTE"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad HD 7"
+          },
+          {
+            "localizedValue": "For ASUS MeMO Pad HD 8"
+          },
+          {
+            "localizedValue": "For ASUS Transformer Book"
+          },
+          {
+            "localizedValue": "For ASUS Transformer Pad"
+          },
+          {
+            "localizedValue": "For ASUS Transformer Pad Infinity"
+          },
+          {
+            "localizedValue": "For ASUS Vivo Tab 8"
+          },
+          {
+            "localizedValue": "For ASUS VivoTab Note 8"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad 10"
+          },
+          {
+            "localizedValue": "For ASUS Zenpad 3S"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad 3S 10"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad 8.0"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad C"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad C 7.0"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad S"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad S 8.0"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad Z10"
+          },
+          {
+            "localizedValue": "For ASUS ZenPad Z8s"
+          },
+          {
+            "localizedValue": "For Aura Telpad Ma7 Tablet"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook (1st Edition)"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook Color"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook Colour"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook GlowLight"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook GlowLight 3"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook GlowLight Plus"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook HD"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook HD+"
+          },
+          {
+            "localizedValue": "For Barnes & Noble Nook Simple Touch"
+          },
+          {
+            "localizedValue": "For BlackBerry PlayBook"
+          },
+          {
+            "localizedValue": "For BLU Touch Book"
+          },
+          {
+            "localizedValue": "For Chuwi Hi10"
+          },
+          {
+            "localizedValue": "For Chuwi Hi8"
+          },
+          {
+            "localizedValue": "For Cisco Cius"
+          },
+          {
+            "localizedValue": "For Coby Kyros MID7012"
+          },
+          {
+            "localizedValue": "For Coby Kyros MID7024"
+          },
+          {
+            "localizedValue": "For Coby Kyros MID7125"
+          },
+          {
+            "localizedValue": "For Coby Kyros MID9042"
+          },
+          {
+            "localizedValue": "For Coby Kyros MID9742"
+          },
+          {
+            "localizedValue": "For Coby Kyros Tablet"
+          },
+          {
+            "localizedValue": "For Creative ZiiO"
+          },
+          {
+            "localizedValue": "For Cruz PS47 Tablet"
+          },
+          {
+            "localizedValue": "For Cruz R100 eReader"
+          },
+          {
+            "localizedValue": "For Cruz T100 Tablet"
+          },
+          {
+            "localizedValue": "For Cruz T300 Tablet"
+          },
+          {
+            "localizedValue": "For Cruz T400 Tablet"
+          },
+          {
+            "localizedValue": "For Cruz T500 Tablet"
+          },
+          {
+            "localizedValue": "For Dell Streak 5"
+          },
+          {
+            "localizedValue": "For Dell Streak 7"
+          },
+          {
+            "localizedValue": "For Dell Venue 10"
+          },
+          {
+            "localizedValue": "For Dell Venue 10 Pro"
+          },
+          {
+            "localizedValue": "For Dell Venue 11 Pro"
+          },
+          {
+            "localizedValue": "For Dell Venue 7"
+          },
+          {
+            "localizedValue": "For Dell Venue 8"
+          },
+          {
+            "localizedValue": "For Dell Venue 8 Pro"
+          },
+          {
+            "localizedValue": "For Dell Venue Pro"
+          },
+          {
+            "localizedValue": "For Denver TAQ-10182"
+          },
+          {
+            "localizedValue": "For Easypix EasyPad"
+          },
+          {
+            "localizedValue": "For Ematic FunTab"
+          },
+          {
+            "localizedValue": "For Ematic Genesis"
+          },
+          {
+            "localizedValue": "For Flytouch SuperPad"
+          },
+          {
+            "localizedValue": "For FUJITSU LIFEBOOK P727"
+          },
+          {
+            "localizedValue": "For FUJITSU LIFEBOOK T726"
+          },
+          {
+            "localizedValue": "For FUJITSU LIFEBOOK T936"
+          },
+          {
+            "localizedValue": "For FUJITSU LIFEBOOK T937"
+          },
+          {
+            "localizedValue": "For FUJITSU Stylistic"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC Q550"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC Q616"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC Q736"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC R726"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC R727"
+          },
+          {
+            "localizedValue": "For FUJITSU STYLISTIC V535 Industrial"
+          },
+          {
+            "localizedValue": "For Google Nexus 10"
+          },
+          {
+            "localizedValue": "For Google Nexus 7 (1st Generation)"
+          },
+          {
+            "localizedValue": "For Google Nexus 7 (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Google Nexus 9"
+          },
+          {
+            "localizedValue": "For Google Pixel C"
+          },
+          {
+            "localizedValue": "For HP eStation Zeen"
+          },
+          {
+            "localizedValue": "For HP Slate 10"
+          },
+          {
+            "localizedValue": "For HP Slate 500"
+          },
+          {
+            "localizedValue": "For HP Slate 7"
+          },
+          {
+            "localizedValue": "For HP Slatebook"
+          },
+          {
+            "localizedValue": "For HP TouchPad"
+          },
+          {
+            "localizedValue": "For HTC Flyer"
+          },
+          {
+            "localizedValue": "For HTC Jetstream"
+          },
+          {
+            "localizedValue": "For Huawei Matebook"
+          },
+          {
+            "localizedValue": "For Huawei MediaPad"
+          },
+          {
+            "localizedValue": "For Huawei MediaPad M2"
+          },
+          {
+            "localizedValue": "For Huawei MediaPad M3"
+          },
+          {
+            "localizedValue": "For Huawei MediaPad M3 Lite"
+          },
+          {
+            "localizedValue": "For Huawei MediaPad T3"
+          },
+          {
+            "localizedValue": "For ICD Vega"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 1 Plus (X1 Plus)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 1 S (X1 S)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 2 Plus (X2 Plus)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 3 (X3)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 4 Max (X4 Max)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 5 (X5)"
+          },
+          {
+            "localizedValue": "For iRULU eXpro 6 (X6)"
+          },
+          {
+            "localizedValue": "For iRULU Lightning"
+          },
+          {
+            "localizedValue": "For Kobo Aura H20 (1st Generation)"
+          },
+          {
+            "localizedValue": "For Kobo Aura H20 (2nd Generation)"
+          },
+          {
+            "localizedValue": "For Kobo Aura One"
+          },
+          {
+            "localizedValue": "For Leader Impression"
+          },
+          {
+            "localizedValue": "For LeapFrog Epic"
+          },
+          {
+            "localizedValue": "For LeapFrog LeapPad Glo"
+          },
+          {
+            "localizedValue": "For Lenovo A8"
+          },
+          {
+            "localizedValue": "For Lenovo IdeaPad K1"
+          },
+          {
+            "localizedValue": "For Lenovo Miix 320"
+          },
+          {
+            "localizedValue": "For Lenovo Miix 510"
+          },
+          {
+            "localizedValue": "For Lenovo Miix 520"
+          },
+          {
+            "localizedValue": "For Lenovo Miix 700"
+          },
+          {
+            "localizedValue": "For Lenovo Miix 720"
+          },
+          {
+            "localizedValue": "For Lenovo Tab 2 A10"
+          },
+          {
+            "localizedValue": "For Lenovo Tab 4"
+          },
+          {
+            "localizedValue": "For Lenovo Tab 4 Plus"
+          },
+          {
+            "localizedValue": "For Lenovo Tab S8"
+          },
+          {
+            "localizedValue": "For Lenovo ThinkPad"
+          },
+          {
+            "localizedValue": "For Lenovo ThinkPad 2"
+          },
+          {
+            "localizedValue": "For Lenovo Yoga Book"
+          },
+          {
+            "localizedValue": "For Lenovo Yoga Tab 3"
+          },
+          {
+            "localizedValue": "For Lenovo Yoga Tab 3 Plus"
+          },
+          {
+            "localizedValue": "For Lenovo Yoga Tab 3 Pro"
+          },
+          {
+            "localizedValue": "For Lenovo Yoga Tablet 2"
+          },
+          {
+            "localizedValue": "For LG G Pad"
+          },
+          {
+            "localizedValue": "For LG G Pad 8.3"
+          },
+          {
+            "localizedValue": "For LG G Pad F"
+          },
+          {
+            "localizedValue": "For LG G Pad II"
+          },
+          {
+            "localizedValue": "For LG G Pad X"
+          },
+          {
+            "localizedValue": "For LG Optimus Pad/G-Slate"
+          },
+          {
+            "localizedValue": "For LG Optimus Pad LTE"
+          },
+          {
+            "localizedValue": "For Linx 1010"
+          },
+          {
+            "localizedValue": "For Linx Vision"
+          },
+          {
+            "localizedValue": "For Maylong Mobility"
+          },
+          {
+            "localizedValue": "For Medion LifeTab"
+          },
+          {
+            "localizedValue": "For Microsoft Surface 2"
+          },
+          {
+            "localizedValue": "For Microsoft Surface 3"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Book"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Book 2"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Pro"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Pro 2"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Pro 3"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Pro 4"
+          },
+          {
+            "localizedValue": "For Microsoft Surface Pro 5"
+          },
+          {
+            "localizedValue": "For Microsoft Surface RT"
+          },
+          {
+            "localizedValue": "For Motorola Xoom"
+          },
+          {
+            "localizedValue": "For Motorola XYBOARD/Xoom 2"
+          },
+          {
+            "localizedValue": "For nabi Big Tab 20"
+          },
+          {
+            "localizedValue": "For nabi Big Tab 24"
+          },
+          {
+            "localizedValue": "For nabi DreamTab"
+          },
+          {
+            "localizedValue": "For nabi Elev-8"
+          },
+          {
+            "localizedValue": "For nabi Jr."
+          },
+          {
+            "localizedValue": "For nabi SE"
+          },
+          {
+            "localizedValue": "For Netbook Flexx 10"
+          },
+          {
+            "localizedValue": "For Netbook Flexx 11"
+          },
+          {
+            "localizedValue": "For Nextbook Ares"
+          },
+          {
+            "localizedValue": "For Nokia 770"
+          },
+          {
+            "localizedValue": "For Nokia Lumia 2520"
+          },
+          {
+            "localizedValue": "For Nokia N1"
+          },
+          {
+            "localizedValue": "For Nokia N800"
+          },
+          {
+            "localizedValue": "For Nokia N810"
+          },
+          {
+            "localizedValue": "For Nook Tablet 7"
+          },
+          {
+            "localizedValue": "For NVIDIA Shield"
+          },
+          {
+            "localizedValue": "For NVIDIA Shield K1"
+          },
+          {
+            "localizedValue": "For O2 Joggler"
+          },
+          {
+            "localizedValue": "For Pandigital Novel"
+          },
+          {
+            "localizedValue": "For Pandigital SuperNova"
+          },
+          {
+            "localizedValue": "For Pendo PendoPad"
+          },
+          {
+            "localizedValue": "For PocketBook IQ"
+          },
+          {
+            "localizedValue": "For Prestigio MultiPad VISCONTE 4U"
+          },
+          {
+            "localizedValue": "For Prestigio MultiPad VISCONTE M"
+          },
+          {
+            "localizedValue": "For Prestigio MultiPad VISCONTE S"
+          },
+          {
+            "localizedValue": "For Prestigio MultiPad VISCONTE V"
+          },
+          {
+            "localizedValue": "For Prestigio MultiPad Wize 3407 4G"
+          },
+          {
+            "localizedValue": "For Prestigio MUZE 3708 3G"
+          },
+          {
+            "localizedValue": "For Prestigio MUZE 3718 3G"
+          },
+          {
+            "localizedValue": "For Razor Edge"
+          },
+          {
+            "localizedValue": "For Razor Edge Pro"
+          },
+          {
+            "localizedValue": "For RCA 7 Mercury"
+          },
+          {
+            "localizedValue": "For RCA 7 Mercury II"
+          },
+          {
+            "localizedValue": "For RCA 7 Voyger II"
+          },
+          {
+            "localizedValue": "For RCA 8 Apollo II"
+          },
+          {
+            "localizedValue": "For RCA Cambio"
+          },
+          {
+            "localizedValue": "For RCA Cambio W1162"
+          },
+          {
+            "localizedValue": "For RCA Voyager"
+          },
+          {
+            "localizedValue": "For Samsung ATIV TAB 3"
+          },
+          {
+            "localizedValue": "For Samsung ATIV TAB 5"
+          },
+          {
+            "localizedValue": "For Samsung ATIV TAB 7"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Book"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Note"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Note Pro"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab 2"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab 3"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab 3 Lite"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab 4"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab A"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab A6"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab E"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab E Lite"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab E Nook"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab Nook"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab Pro"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy TabPro S"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab S"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab S2"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab S2 Nook"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy Tab S3"
+          },
+          {
+            "localizedValue": "For Samsung Galaxy View"
+          },
+          {
+            "localizedValue": "For Samsung Q1"
+          },
+          {
+            "localizedValue": "For Samsung Q1 Ultra"
+          },
+          {
+            "localizedValue": "For Samsung Series 7 Slate"
+          },
+          {
+            "localizedValue": "For Simmtronics XPad"
+          },
+          {
+            "localizedValue": "For Skytex Skypad"
+          },
+          {
+            "localizedValue": "For Sony Reader Daily Edition"
+          },
+          {
+            "localizedValue": "For Sony Tablet P"
+          },
+          {
+            "localizedValue": "For Sony Tablet S"
+          },
+          {
+            "localizedValue": "For Sony Touch Edition"
+          },
+          {
+            "localizedValue": "For Sony VAIO Tap"
+          },
+          {
+            "localizedValue": "For Sony Xperia Z"
+          },
+          {
+            "localizedValue": "For Sony Xperia Z2"
+          },
+          {
+            "localizedValue": "For Sony Xperia Z3"
+          },
+          {
+            "localizedValue": "For Sony Xperia Z4"
+          },
+          {
+            "localizedValue": "For TECLAST X98"
+          },
+          {
+            "localizedValue": "For TECLAST X98 Air"
+          },
+          {
+            "localizedValue": "For TECLAST X98 Plus"
+          },
+          {
+            "localizedValue": "For TECLAST X98 Plus II"
+          },
+          {
+            "localizedValue": "For TECLAST X98 Pro"
+          },
+          {
+            "localizedValue": "For Tesco Hudl"
+          },
+          {
+            "localizedValue": "For Tesco Hudl 2"
+          },
+          {
+            "localizedValue": "For Tivax MiTraveler"
+          },
+          {
+            "localizedValue": "For T-Mobile SpringBoard"
+          },
+          {
+            "localizedValue": "For tolino page"
+          },
+          {
+            "localizedValue": "For tolino shine"
+          },
+          {
+            "localizedValue": "For tolino shine 2 HD"
+          },
+          {
+            "localizedValue": "For Tolino Tab 8"
+          },
+          {
+            "localizedValue": "For Toshiba AT100"
+          },
+          {
+            "localizedValue": "For Toshiba DynaPad"
+          },
+          {
+            "localizedValue": "For Toshiba Encore"
+          },
+          {
+            "localizedValue": "For Toshiba Encore 2"
+          },
+          {
+            "localizedValue": "For Toshiba Encore 2 Write"
+          },
+          {
+            "localizedValue": "For Toshiba Encore 7"
+          },
+          {
+            "localizedValue": "For Toshiba Encore Mini"
+          },
+          {
+            "localizedValue": "For Toshiba Excite"
+          },
+          {
+            "localizedValue": "For Toshiba Excite Go"
+          },
+          {
+            "localizedValue": "For Toshiba Excite PRO"
+          },
+          {
+            "localizedValue": "For Toshiba Folio 100"
+          },
+          {
+            "localizedValue": "For Toshiba Protege Z20t"
+          },
+          {
+            "localizedValue": "For Toshiba THRiVE"
+          },
+          {
+            "localizedValue": "For Toshiba WT8-B"
+          },
+          {
+            "localizedValue": "For TREKSTOR SurfTab Breeze"
+          },
+          {
+            "localizedValue": "For TREKSTOR SurfTAB TWIN"
+          },
+          {
+            "localizedValue": "For TREKSTOR SurfTab Wintron"
+          },
+          {
+            "localizedValue": "For ViewSonic gTablet"
+          },
+          {
+            "localizedValue": "For ViewSonic ViewPad"
+          },
+          {
+            "localizedValue": "For Vinci Tab II M"
+          },
+          {
+            "localizedValue": "For Visual Land Prestige"
+          },
+          {
+            "localizedValue": "For Vodafone Tab Prime 6"
+          },
+          {
+            "localizedValue": "For Wacom Cintiq Companion"
+          },
+          {
+            "localizedValue": "For Xiaomi Mi Pad"
+          },
+          {
+            "localizedValue": "For Xiaomi Mi Pad 2"
+          },
+          {
+            "localizedValue": "Universal"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "Country of Origin",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "SELECTION_ONLY",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "Afghanistan"
+          },
+          {
+            "localizedValue": "Albania"
+          },
+          {
+            "localizedValue": "Algeria"
+          },
+          {
+            "localizedValue": "Andorra"
+          },
+          {
+            "localizedValue": "Angola"
+          },
+          {
+            "localizedValue": "Anguilla"
+          },
+          {
+            "localizedValue": "Antigua and Barbuda"
+          },
+          {
+            "localizedValue": "Argentina"
+          },
+          {
+            "localizedValue": "Armenia"
+          },
+          {
+            "localizedValue": "Aruba"
+          },
+          {
+            "localizedValue": "Australia"
+          },
+          {
+            "localizedValue": "Austria"
+          },
+          {
+            "localizedValue": "Azerbaijan"
+          },
+          {
+            "localizedValue": "Bahamas"
+          },
+          {
+            "localizedValue": "Bahrain"
+          },
+          {
+            "localizedValue": "Bangladesh"
+          },
+          {
+            "localizedValue": "Barbados"
+          },
+          {
+            "localizedValue": "Belarus"
+          },
+          {
+            "localizedValue": "Belgium"
+          },
+          {
+            "localizedValue": "Belize"
+          },
+          {
+            "localizedValue": "Benin"
+          },
+          {
+            "localizedValue": "Bermuda"
+          },
+          {
+            "localizedValue": "Bhutan"
+          },
+          {
+            "localizedValue": "Bolivia"
+          },
+          {
+            "localizedValue": "Bosnia and Herzegovina"
+          },
+          {
+            "localizedValue": "Botswana"
+          },
+          {
+            "localizedValue": "Brazil"
+          },
+          {
+            "localizedValue": "British Indian Ocean Territory"
+          },
+          {
+            "localizedValue": "British Virgin Islands"
+          },
+          {
+            "localizedValue": "Brunei Darussalam"
+          },
+          {
+            "localizedValue": "Bulgaria"
+          },
+          {
+            "localizedValue": "Burkina Faso"
+          },
+          {
+            "localizedValue": "Burundi"
+          },
+          {
+            "localizedValue": "Cambodia"
+          },
+          {
+            "localizedValue": "Cameroon"
+          },
+          {
+            "localizedValue": "Canada"
+          },
+          {
+            "localizedValue": "Canary Islands"
+          },
+          {
+            "localizedValue": "Cape Verde"
+          },
+          {
+            "localizedValue": "Cayman Islands"
+          },
+          {
+            "localizedValue": "Central African Republic"
+          },
+          {
+            "localizedValue": "Chad"
+          },
+          {
+            "localizedValue": "Chile"
+          },
+          {
+            "localizedValue": "China"
+          },
+          {
+            "localizedValue": "Christmas Islands"
+          },
+          {
+            "localizedValue": "Cocos (Keeling) Islands"
+          },
+          {
+            "localizedValue": "Colombia"
+          },
+          {
+            "localizedValue": "Comoros"
+          },
+          {
+            "localizedValue": "Congo, Republic of the"
+          },
+          {
+            "localizedValue": "Congo, The Democratic Republic of the"
+          },
+          {
+            "localizedValue": "Cook Islands"
+          },
+          {
+            "localizedValue": "Costa Rica"
+          },
+          {
+            "localizedValue": "Côte d'Ivoire"
+          },
+          {
+            "localizedValue": "Croatia"
+          },
+          {
+            "localizedValue": "Cuba"
+          },
+          {
+            "localizedValue": "Curacao"
+          },
+          {
+            "localizedValue": "Cyprus"
+          },
+          {
+            "localizedValue": "Czech Republic"
+          },
+          {
+            "localizedValue": "Denmark"
+          },
+          {
+            "localizedValue": "Djibouti"
+          },
+          {
+            "localizedValue": "Dominica"
+          },
+          {
+            "localizedValue": "Dominican Republic"
+          },
+          {
+            "localizedValue": "Ecuador"
+          },
+          {
+            "localizedValue": "Egypt"
+          },
+          {
+            "localizedValue": "El Salvador"
+          },
+          {
+            "localizedValue": "Equatorial Guinea"
+          },
+          {
+            "localizedValue": "Eritrea"
+          },
+          {
+            "localizedValue": "Estonia"
+          },
+          {
+            "localizedValue": "Eswatini"
+          },
+          {
+            "localizedValue": "Ethiopia"
+          },
+          {
+            "localizedValue": "Falkland Islands"
+          },
+          {
+            "localizedValue": "Faroe Islands"
+          },
+          {
+            "localizedValue": "Fiji"
+          },
+          {
+            "localizedValue": "Finland"
+          },
+          {
+            "localizedValue": "France"
+          },
+          {
+            "localizedValue": "French Guiana"
+          },
+          {
+            "localizedValue": "French Polynesia Includes Tahiti"
+          },
+          {
+            "localizedValue": "French Southern Territories and Antartic Lands"
+          },
+          {
+            "localizedValue": "Gabon"
+          },
+          {
+            "localizedValue": "Gambia"
+          },
+          {
+            "localizedValue": "Gaza Strip"
+          },
+          {
+            "localizedValue": "Georgia"
+          },
+          {
+            "localizedValue": "Germany"
+          },
+          {
+            "localizedValue": "Ghana"
+          },
+          {
+            "localizedValue": "Gibraltar"
+          },
+          {
+            "localizedValue": "Greece"
+          },
+          {
+            "localizedValue": "Greenland"
+          },
+          {
+            "localizedValue": "Grenada"
+          },
+          {
+            "localizedValue": "Guadeloupe"
+          },
+          {
+            "localizedValue": "Guam"
+          },
+          {
+            "localizedValue": "Guatemala"
+          },
+          {
+            "localizedValue": "Guernsey"
+          },
+          {
+            "localizedValue": "Guinea"
+          },
+          {
+            "localizedValue": "Guinea-Bissau"
+          },
+          {
+            "localizedValue": "Guyana"
+          },
+          {
+            "localizedValue": "Haiti"
+          },
+          {
+            "localizedValue": "Heard Island and Mcdonald Islands"
+          },
+          {
+            "localizedValue": "Honduras"
+          },
+          {
+            "localizedValue": "Hong Kong"
+          },
+          {
+            "localizedValue": "Hungary"
+          },
+          {
+            "localizedValue": "Iceland"
+          },
+          {
+            "localizedValue": "India"
+          },
+          {
+            "localizedValue": "Indonesia"
+          },
+          {
+            "localizedValue": "Iran, Islamic Republic of"
+          },
+          {
+            "localizedValue": "Iraq"
+          },
+          {
+            "localizedValue": "Ireland"
+          },
+          {
+            "localizedValue": "Israel"
+          },
+          {
+            "localizedValue": "Italy"
+          },
+          {
+            "localizedValue": "Jamaica"
+          },
+          {
+            "localizedValue": "Japan"
+          },
+          {
+            "localizedValue": "Jersey"
+          },
+          {
+            "localizedValue": "Jordan"
+          },
+          {
+            "localizedValue": "Kazakhstan"
+          },
+          {
+            "localizedValue": "Kenya"
+          },
+          {
+            "localizedValue": "Kiribati"
+          },
+          {
+            "localizedValue": "Kosovo"
+          },
+          {
+            "localizedValue": "Kuwait"
+          },
+          {
+            "localizedValue": "Kyrgyzstan"
+          },
+          {
+            "localizedValue": "Lao People's Democratic Republic"
+          },
+          {
+            "localizedValue": "Latvia"
+          },
+          {
+            "localizedValue": "Lebanon"
+          },
+          {
+            "localizedValue": "Lesotho"
+          },
+          {
+            "localizedValue": "Liberia"
+          },
+          {
+            "localizedValue": "Libya"
+          },
+          {
+            "localizedValue": "Liechtenstein"
+          },
+          {
+            "localizedValue": "Lithuania"
+          },
+          {
+            "localizedValue": "Luxembourg"
+          },
+          {
+            "localizedValue": "Macau"
+          },
+          {
+            "localizedValue": "Madagascar"
+          },
+          {
+            "localizedValue": "Madeira Island"
+          },
+          {
+            "localizedValue": "Malawi"
+          },
+          {
+            "localizedValue": "Malaysia"
+          },
+          {
+            "localizedValue": "Maldives"
+          },
+          {
+            "localizedValue": "Mali"
+          },
+          {
+            "localizedValue": "Malta"
+          },
+          {
+            "localizedValue": "Marshall Islands"
+          },
+          {
+            "localizedValue": "Martinique"
+          },
+          {
+            "localizedValue": "Mauritania"
+          },
+          {
+            "localizedValue": "Mauritius"
+          },
+          {
+            "localizedValue": "Mayotte"
+          },
+          {
+            "localizedValue": "Mexico"
+          },
+          {
+            "localizedValue": "Micronesia, Federated States of"
+          },
+          {
+            "localizedValue": "Moldova, Republic of"
+          },
+          {
+            "localizedValue": "Monaco"
+          },
+          {
+            "localizedValue": "Mongolia"
+          },
+          {
+            "localizedValue": "Montenegro"
+          },
+          {
+            "localizedValue": "Montserrat"
+          },
+          {
+            "localizedValue": "Morocco"
+          },
+          {
+            "localizedValue": "Mozambique"
+          },
+          {
+            "localizedValue": "Myanmar / Burma"
+          },
+          {
+            "localizedValue": "Namibia"
+          },
+          {
+            "localizedValue": "Nauru"
+          },
+          {
+            "localizedValue": "Nepal"
+          },
+          {
+            "localizedValue": "Netherlands"
+          },
+          {
+            "localizedValue": "New Caledonia"
+          },
+          {
+            "localizedValue": "New Zealand"
+          },
+          {
+            "localizedValue": "Nicaragua"
+          },
+          {
+            "localizedValue": "Niger"
+          },
+          {
+            "localizedValue": "Nigeria"
+          },
+          {
+            "localizedValue": "Niue"
+          },
+          {
+            "localizedValue": "Norfolk Island"
+          },
+          {
+            "localizedValue": "Northern Mariana Islands"
+          },
+          {
+            "localizedValue": "North Korea (Democratic People's Republic of Korea)"
+          },
+          {
+            "localizedValue": "North Macedonia"
+          },
+          {
+            "localizedValue": "Norway"
+          },
+          {
+            "localizedValue": "Oman"
+          },
+          {
+            "localizedValue": "Pakistan"
+          },
+          {
+            "localizedValue": "Palau"
+          },
+          {
+            "localizedValue": "Panama"
+          },
+          {
+            "localizedValue": "Papua New Guinea"
+          },
+          {
+            "localizedValue": "Paraguay"
+          },
+          {
+            "localizedValue": "Peru"
+          },
+          {
+            "localizedValue": "Philippines"
+          },
+          {
+            "localizedValue": "Poland"
+          },
+          {
+            "localizedValue": "Portugal"
+          },
+          {
+            "localizedValue": "Puerto Rico"
+          },
+          {
+            "localizedValue": "Qatar"
+          },
+          {
+            "localizedValue": "Reunion"
+          },
+          {
+            "localizedValue": "Romania"
+          },
+          {
+            "localizedValue": "Russian Federation"
+          },
+          {
+            "localizedValue": "Rwanda"
+          },
+          {
+            "localizedValue": "Saint Barthélemy"
+          },
+          {
+            "localizedValue": "Saint Helena"
+          },
+          {
+            "localizedValue": "Saint Kitts and Nevis"
+          },
+          {
+            "localizedValue": "Saint Lucia"
+          },
+          {
+            "localizedValue": "Saint-Martin"
+          },
+          {
+            "localizedValue": "Saint Pierre and Miquelon"
+          },
+          {
+            "localizedValue": "Saint Vincent and the Grenadines"
+          },
+          {
+            "localizedValue": "Samoa"
+          },
+          {
+            "localizedValue": "San Marino"
+          },
+          {
+            "localizedValue": "Sao Tome and Principe"
+          },
+          {
+            "localizedValue": "Saudi Arabia"
+          },
+          {
+            "localizedValue": "Senegal"
+          },
+          {
+            "localizedValue": "Serbia"
+          },
+          {
+            "localizedValue": "Seychelles"
+          },
+          {
+            "localizedValue": "Sierra Leone"
+          },
+          {
+            "localizedValue": "Singapore"
+          },
+          {
+            "localizedValue": "Sint Eustatius"
+          },
+          {
+            "localizedValue": "Sint Maarten"
+          },
+          {
+            "localizedValue": "Slovakia"
+          },
+          {
+            "localizedValue": "Slovenia"
+          },
+          {
+            "localizedValue": "Solomon Islands"
+          },
+          {
+            "localizedValue": "Somalia"
+          },
+          {
+            "localizedValue": "South Africa"
+          },
+          {
+            "localizedValue": "South Georgia and the South Sandwich Islands"
+          },
+          {
+            "localizedValue": "South Korea (Republic of Korea)"
+          },
+          {
+            "localizedValue": "Spain"
+          },
+          {
+            "localizedValue": "Sri Lanka"
+          },
+          {
+            "localizedValue": "Sudan"
+          },
+          {
+            "localizedValue": "Suriname"
+          },
+          {
+            "localizedValue": "Svalbard and Jan Mayen"
+          },
+          {
+            "localizedValue": "Sweden"
+          },
+          {
+            "localizedValue": "Switzerland"
+          },
+          {
+            "localizedValue": "Syria"
+          },
+          {
+            "localizedValue": "Taiwan"
+          },
+          {
+            "localizedValue": "Tajikistan"
+          },
+          {
+            "localizedValue": "Tanzania, United Republic of"
+          },
+          {
+            "localizedValue": "Thailand"
+          },
+          {
+            "localizedValue": "Togo"
+          },
+          {
+            "localizedValue": "Tokelau"
+          },
+          {
+            "localizedValue": "Tonga"
+          },
+          {
+            "localizedValue": "Trinidad and Tobago"
+          },
+          {
+            "localizedValue": "Tristan da Cunha"
+          },
+          {
+            "localizedValue": "Tunisia"
+          },
+          {
+            "localizedValue": "Türkiye"
+          },
+          {
+            "localizedValue": "Turkmenistan"
+          },
+          {
+            "localizedValue": "Turks and Caicos Islands"
+          },
+          {
+            "localizedValue": "Tuvalu"
+          },
+          {
+            "localizedValue": "Uganda"
+          },
+          {
+            "localizedValue": "Ukraine"
+          },
+          {
+            "localizedValue": "United Arab Emirates"
+          },
+          {
+            "localizedValue": "United Kingdom"
+          },
+          {
+            "localizedValue": "United States"
+          },
+          {
+            "localizedValue": "Uruguay"
+          },
+          {
+            "localizedValue": "Uzbekistan"
+          },
+          {
+            "localizedValue": "Vanuatu"
+          },
+          {
+            "localizedValue": "Vatican City"
+          },
+          {
+            "localizedValue": "Venezuela"
+          },
+          {
+            "localizedValue": "Vietnam"
+          },
+          {
+            "localizedValue": "Virgin Islands"
+          },
+          {
+            "localizedValue": "Wallis and Futuna"
+          },
+          {
+            "localizedValue": "West Bank"
+          },
+          {
+            "localizedValue": "Yemen"
+          },
+          {
+            "localizedValue": "Zambia"
+          },
+          {
+            "localizedValue": "Zimbabwe"
+          }
+        ]
+      },
+      {
+        "localizedAspectName": "California Prop 65 Warning",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": false,
+          "aspectMaxLength": 800,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Item Height",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Item Length",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Item Width",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": true,
+          "aspectApplicableTo": [
+            "PRODUCT"
+          ]
+        }
+      },
+      {
+        "localizedAspectName": "Manufacturer Warranty",
+        "aspectConstraint": {
+          "aspectDataType": "STRING",
+          "itemToAspectCardinality": "SINGLE",
+          "aspectMode": "FREE_TEXT",
+          "aspectRequired": false,
+          "aspectUsage": "OPTIONAL",
+          "aspectEnabledForVariations": false,
+          "aspectApplicableTo": [
+            "ITEM"
+          ]
+        },
+        "aspectValues": [
+          {
+            "localizedValue": "1 Month"
+          },
+          {
+            "localizedValue": "3 Months"
+          },
+          {
+            "localizedValue": "6 Months"
+          },
+          {
+            "localizedValue": "9 Months"
+          },
+          {
+            "localizedValue": "1 Year"
+          },
+          {
+            "localizedValue": "2 Years"
+          },
+          {
+            "localizedValue": "3 Years"
+          },
+          {
+            "localizedValue": "4 Years"
+          },
+          {
+            "localizedValue": "5 Years"
+          },
+          {
+            "localizedValue": "10 Years"
+          },
+          {
+            "localizedValue": "Lifetime"
+          }
+        ]
+      }
+    ]
+  }
+}

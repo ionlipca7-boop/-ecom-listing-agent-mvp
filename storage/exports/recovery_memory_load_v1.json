@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "decision": "recovery_memory_loaded",
+  "memory_type": "recovery_registry",
+  "failures_count": 4,
+  "working_paths_count": 6,
+  "cmd_traps_count": 5,
+  "top_failure": {
+    "error": "401 Invalid access token",
+    "cause": "expired or wrong token type",
+    "solution": "use refresh_token flow and verify token",
+    "do_not_do": "do not rewrite API scripts immediately"
+  },
+  "top_working_path": "legacy OAuth recovery",
+  "top_cmd_trap": "avoid echo. usage"
+}

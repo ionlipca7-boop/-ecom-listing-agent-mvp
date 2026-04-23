@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_ARCHIVE_MOVE_BATCH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_ARCHIVE_ROOT_PATH_V1",
+  "input_status": "OK",
+  "archive_move_batch_prepared": true,
+  "archive_move_execution_performed": false,
+  "archive_target_root": "storage\\archive_candidates\\phase_cleanup_v1\\",
+  "move_batch": {
+    "drafts": "storage\\archive_candidates\\phase_cleanup_v1\\drafts",
+    "history": "storage\\archive_candidates\\phase_cleanup_v1\\history",
+    "control_room_history": "storage\\archive_candidates\\phase_cleanup_v1\\control_room_history",
+    "storage\\cleanup\\safe_cleanup_batch_v1": "storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v1",
+    "storage\\cleanup\\safe_cleanup_batch_v2": "storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v2",
+    "storage\\cleanup\\safe_cleanup_batch_v3": "storage\\archive_candidates\\phase_cleanup_v1\\safe_cleanup_batch_v3"
+  },
+  "keep_scope_protected": true,
+  "delete_allowed_now": false,
+  "next_allowed_action": "execute_archive_move_batch_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

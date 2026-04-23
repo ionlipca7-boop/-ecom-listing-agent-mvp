@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "CLEANUP_CONTROL_WAIT_STATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ARCHIVE_EXECUTION_VERIFICATION_V1",
+  "input_status": "OK",
+  "archive_path_confirmed": true,
+  "delete_allowed": false,
+  "state_mode": "WAIT",
+  "finish_reached_for_current_cleanup_segment": true,
+  "next_allowed_action": "STOP_AND_WAIT_FOR_EXPLICIT_NEXT_CLEANUP_CONTROL_INSTRUCTION"
+}

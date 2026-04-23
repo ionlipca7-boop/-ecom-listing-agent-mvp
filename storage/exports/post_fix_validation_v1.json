@@ -1,0 +1,29 @@
+{
+  "validation_status": "NO_FIX_APPLIED",
+  "post_fix_validation_status": "NO_FIX_APPLIED",
+  "next_step": "REBUILD_FIX_PLAN",
+  "issue_count": 1,
+  "covered_issues_count": 0,
+  "uncovered_issues_count": 1,
+  "applied_patch_count": 0,
+  "changed_fields": [],
+  "plan_fields": [],
+  "covered_issue_details": [],
+  "uncovered_issues": [
+    {
+      "issue": "unknown_issue",
+      "probable_fields": [
+        "brand",
+        "item_specifics",
+        "price"
+      ],
+      "matched_fields": [],
+      "coverage_status": "UNCOVERED"
+    }
+  ],
+  "source_files": {
+    "applied_fix_result": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\applied_fix_result_v1.json",
+    "auto_fix_error_map": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_fix_error_map_v2.json",
+    "fix_execution_plan": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_plan_v1.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "FINAL_SAFE_EXECUTION_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINAL_SAFE_EXECUTION_REVIEW_PREPARED_V1",
+  "input_status": "OK",
+  "final_safe_execution_review_built": true,
+  "review_result": "safe_plan_ready_for_explicit_execution_decision",
+  "review_targets_confirmed": {
+    ".gitignore": "keep_current_change",
+    "run_control_room.bat": "restore_deleted_tracked_file",
+    "agent/__pycache__/brain.cpython-314.pyc": "revert_tracked_cache_file"
+  },
+  "execution_now": "still_blocked",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "prepare_explicit_safe_execution_decision_v1"
+}

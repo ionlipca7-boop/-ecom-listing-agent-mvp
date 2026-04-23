@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "SAFE_TRACKED_EXECUTION_GATE_PREPARED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SAFE_TRACKED_EXECUTION_PLAN_V1",
+  "input_status": "OK",
+  "execution_gate_prepared": true,
+  "gate_scope": "tracked_restore_revert_keep_sequence_only",
+  "gate_conditions": {
+    "run_control_room_bat_restore_planned": true,
+    "tracked_pyc_revert_planned": true,
+    "gitignore_keep_planned": true,
+    "post_action_git_status_verify_planned": true
+  },
+  "execution_now": "still_blocked_until_gate_review_complete",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "build_safe_tracked_execution_gate_v1"
+}

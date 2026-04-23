@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_INPUT_INTAKE_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINALIZE_CONTROLLED_AUTOMATION_PATH_V1",
+  "input_status": "OK",
+  "contract_defined": true,
+  "contract_scope": "controlled_operator_input_intake",
+  "allowed_input_types": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "input_mode": "single_controlled_entry",
+  "entrypoint": "run_control_room.py",
+  "requires_validation_before_processing": true,
+  "requires_normalization_before_routing": true,
+  "approval_required_before_publish": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_controlled_input_intake_audit_v1"
+}

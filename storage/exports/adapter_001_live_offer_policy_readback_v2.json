@@ -1,0 +1,35 @@
+{
+  "offerId": "153365657011",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "marketplaceId": "EBAY_DE",
+  "format": "FIXED_PRICE",
+  "listingDescription": "Kompakter USB-C auf USB-A Adapter mit OTG Funktion und USB 3.0 Geschwindigkeit. Perfekt fur Smartphones, Tablets und Laptops wie Samsung oder MacBook. Unterstutzt schnelle Datenubertragung und vielseitige Nutzung im Alltag.",
+  "availableQuantity": 12,
+  "pricingSummary": {
+    "price": {
+      "value": "3.99",
+      "currency": "EUR"
+    }
+  },
+  "listingPolicies": {
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024",
+    "fulfillmentPolicyId": "257755855024",
+    "eBayPlusIfEligible": false
+  },
+  "categoryId": "44932",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "tax": {
+    "vatPercentage": 0.0,
+    "applyTax": false
+  },
+  "listing": {
+    "listingId": "318166440509",
+    "listingStatus": "ACTIVE",
+    "soldQuantity": 0
+  },
+  "status": "PUBLISHED",
+  "listingDuration": "GTC",
+  "includeCatalogProductDetails": true,
+  "hideBuyerDetails": false
+}

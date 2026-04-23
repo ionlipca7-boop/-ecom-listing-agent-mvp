@@ -1,0 +1,39 @@
+{
+  "status": "OK",
+  "decision": "prepare_first_real_multi_listing_run_v1_built",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "prepare_first_real_multi_listing_run_version": "v1",
+  "template_key": "baseline_template_v1",
+  "baseline_sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "baseline_offer_id": "153365657011",
+  "baseline_image_count": 9,
+  "selected_mode": "baseline_clone",
+  "run_contract": {
+    "mode_ready": true,
+    "baseline_clone_ready": true,
+    "variant_listing_ready": true,
+    "github_backup_ready": true,
+    "auto_push_now": false,
+    "live_publish_now": false
+  },
+  "required_runtime_inputs": [
+    "new_registry_key",
+    "new_sku",
+    "target_title",
+    "target_price",
+    "category_id",
+    "merchant_location_key",
+    "fulfillment_policy_id",
+    "payment_policy_id",
+    "return_policy_id"
+  ],
+  "pre_run_checks": [
+    "confirm_baseline_inventory_read",
+    "confirm_full_payload_mode",
+    "confirm_image_count_match",
+    "confirm_policy_ids_present",
+    "confirm_new_sku_not_empty",
+    "confirm_archive_after_success"
+  ],
+  "next_step": "build_first_real_multi_listing_input_stub_v1"
+}

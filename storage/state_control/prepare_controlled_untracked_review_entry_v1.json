@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_CONTROLLED_UNTRACKED_REVIEW_ENTRY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_NEW_CHAT_START_FROM_TRANSITION_ARCHIVE_V1",
+  "input_status": "OK",
+  "review_scope": "untracked_state_only",
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "project_material_presumption_active": true,
+  "untracked_total_expected": 738,
+  "cleanup_forbidden": true,
+  "delete_forbidden": true,
+  "sync_forbidden": true,
+  "git_push_forbidden": true,
+  "physical_move_forbidden": true,
+  "branching_allowed": false,
+  "current_position": "controlled_untracked_review_entry_prepared",
+  "next_allowed_action": "build_controlled_untracked_review_plan_v1"
+}

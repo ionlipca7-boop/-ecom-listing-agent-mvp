@@ -1,0 +1,17 @@
+{
+  "product_key": "adapter_001",
+  "specifics": {
+    "Produktart": "USB-C auf USB-A Adapter",
+    "Anschluss_A": "USB-C",
+    "Anschluss_B": "USB-A",
+    "Typ": "OTG Adapter",
+    "USB_Standard": "USB 3.0",
+    "Farbe": "Schwarz",
+    "Material": "Kunststoff",
+    "Kompatibilitaet": "Smartphones Tablets Laptops",
+    "Besonderheiten": "Schnelle Datenuebertragung Kompakt OTG",
+    "Marke": "Markenlos",
+    "Zustand": "Neu"
+  },
+  "status": "specifics_created"
+}

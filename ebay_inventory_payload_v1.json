@@ -1,0 +1,27 @@
+{
+  "sku": "usb-c-2m-60w-001",
+  "product": {
+    "title": "USB-C Ladekabel 2m 60W Schnellladen",
+    "description": "USB-C Kabel | 60W | 2m | Schnellladen",
+    "aspects": {
+      "Marke": [
+        "Markenlos"
+      ],
+      "Kabellänge": [
+        "2m"
+      ],
+      "Leistung": [
+        "60W"
+      ],
+      "Anschluss": [
+        "USB-C"
+      ]
+    }
+  },
+  "condition": "NEW",
+  "availability": {
+    "shipToLocationAvailability": {
+      "quantity": 10
+    }
+  }
+}

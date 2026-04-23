@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "GIT_CLEAN_STATE_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GIT_CLEAN_STATE_DECISION_V1",
+  "input_status": "OK",
+  "git_clean_gate_defined": true,
+  "git_state_clean": false,
+  "push_blocked": true,
+  "server_sync_blocked": true,
+  "delete_blocked": true,
+  "allowed_now": "analyze_and_classify_git_changes_only",
+  "next_allowed_action": "prepare_git_change_classification_v1"
+}

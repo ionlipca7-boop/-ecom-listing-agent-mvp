@@ -1,0 +1,17 @@
+VERIFY NEW CHAT TRANSITION PACKAGE STATE SYNC V1
+
+STATUS
+- stable transition package state sync verified
+- protection rules verified
+- archive move not started
+- delete not started
+
+VERIFIED TARGETS
+- last confirmed layer = REPAIR_NEW_CHAT_TRANSITION_PACKAGE_STATE_SYNC_V1
+- next allowed action = verify_new_chat_transition_package_state_sync_v1
+- do not archive yet
+- do not delete yet
+- do not move files yet
+
+NEXT SAFE ACTION
+- new_chat_transition_ready_final_v1

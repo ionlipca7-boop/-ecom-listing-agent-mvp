@@ -1,0 +1,30 @@
+{
+  "date": "2026-04-19",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "stage": 9,
+  "status": "TRANSITION_TO_NEW_CHAT_REQUIRED",
+  "achievements": [
+    "compact_core_transition_front_v1_built",
+    "compact_core_state_hub_v1_built",
+    "compact_core_execution_bridge_v1_built",
+    "preview_contract_logic_defined",
+    "full_pipeline_chain_connected_until_preview_layer"
+  ],
+  "errors": [
+    "broken_main_guard (__main__ syntax errors)",
+    "cmd_quote_instability",
+    "powershell_overcomplication",
+    "partial_fix_strategy_failed",
+    "chat_context_degradation_after_long_session"
+  ],
+  "lessons_learned": [
+    "if_layer_breaks_twice_rebuild_full_file",
+    "never_trust_voice_line_numbers_without_real_file_check",
+    "always_verify_real_file_before_fix",
+    "prefer_simple_cmd_over_powershell",
+    "one_block_create_run_audit_only",
+    "avoid_partial_repairs_when_structure_is_corrupted",
+    "chat_should_be_reset_every_2_3_cycles"
+  ],
+  "next_step": "restart_chat_and_rebuild_preview_contract_clean"
+}

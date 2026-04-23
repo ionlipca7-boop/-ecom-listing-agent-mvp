@@ -1,0 +1,47 @@
+{
+  "executed_at": "2026-04-15T18:53:01Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_plan_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_fix_executor_v1.json",
+  "executor_status": "READY",
+  "execution_mode": "DRY_RUN_QUEUE",
+  "issues_count": 1,
+  "action_count": 3,
+  "queued_actions": 3,
+  "manual_actions": 0,
+  "queue": [
+    {
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_1",
+      "target_field": "Brand",
+      "repair_action": "fill_required_aspect",
+      "source_layer": "template_or_item_specifics",
+      "instruction": "Заполнить обязательный аспект Brand допустимым значением для категории.",
+      "target_file": "ebay_upload_ready_v2.csv_or_template_mapper",
+      "execution_status": "QUEUED",
+      "executor_decision": "AUTO_READY"
+    },
+    {
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_2",
+      "target_field": "ItemSpecifics",
+      "repair_action": "repair_item_specifics",
+      "source_layer": "template_mapper",
+      "instruction": "Проверить и дополнить обязательные item specifics по шаблону eBay.",
+      "target_file": "run_ebay_template_mapper_v2.py",
+      "execution_status": "QUEUED",
+      "executor_decision": "AUTO_READY"
+    },
+    {
+      "issue_id": "ISSUE_1",
+      "step_id": "ISSUE_1_STEP_3",
+      "target_field": "StartPrice",
+      "repair_action": "normalize_price",
+      "source_layer": "price_optimizer",
+      "instruction": "Проверить формат цены и пересчитать цену в допустимом формате eBay.",
+      "target_file": "run_price_optimizer_v1.py",
+      "execution_status": "QUEUED",
+      "executor_decision": "AUTO_READY"
+    }
+  ],
+  "next_step": "APPLY_FIXES_TO_LISTING_DATA"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "AWAIT_RUN_CONTROL_ROOM_EXECUTION_GATE_CONFIRMATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_RUN_CONTROL_ROOM_EXECUTION_GATE_V1",
+  "input_status": "OK",
+  "approval_status": "APPROVED",
+  "run_control_room_execution_gate_prepared": true,
+  "awaiting_run_control_room_execution_gate_confirmation": true,
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "single_entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "record_run_control_room_execution_gate_confirmation_v1"
+}

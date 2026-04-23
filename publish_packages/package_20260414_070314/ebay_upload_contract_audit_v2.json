@@ -1,0 +1,19 @@
+{
+  "package_id": "package_20260414_070314",
+  "upload_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2.csv",
+  "template_file": "D:/ECOM_LISTING_AGENT_MVP/templates/eBay-category-listing-template-апр.-14-2026-11-44-17.csv",
+  "inspection_file": "publish_packages/package_20260414_070314/export_bundle_v2_inspection.json",
+  "upload_columns_count": 11,
+  "template_columns_count": 1,
+  "header_order_matches_template": false,
+  "validation_valid": false,
+  "inspection_valid": false,
+  "missing_columns_count": 1,
+  "extra_columns_count": 11,
+  "first_mismatch_index": 0,
+  "first_mismatch_upload_column": "title",
+  "first_mismatch_template_column": "Info;Version=1.0.0;Template=fx_category_template_EBAY_DE",
+  "conclusion": "not_ebay_upload_ready",
+  "recommended_next_layer": "prepare_fix_needed",
+  "generated_at": "2026-04-14T18:23:04.372156+00:00"
+}

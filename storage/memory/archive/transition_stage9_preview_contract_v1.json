@@ -1,0 +1,43 @@
+{
+  "date": "2026-04-19",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "stage": 9,
+  "status": "POST_STAGE9_MANAGEMENT_AND_FIRST_TECHNICAL_CHECK_COMPLETE",
+  "achievements": [
+    "stage9_compact_core_confirmed",
+    "post_stage9_direction_plan_built",
+    "preview_execution_validation_chain_completed",
+    "management_chain_fully_confirmed",
+    "first_technical_entrypoint_defined",
+    "preview_contract_integrity_check_completed",
+    "preview_contract_integrity_audit_ok",
+    "preview_contract_gap_decision_no_gap" 
+  ],
+  "errors": [
+    "utf8_bom_and_feff_in_python_files",
+    "broken_main_guard",
+    "fragile_echo_build_missing_lines",
+    "cmd_special_characters_breaking_scripts",
+    "windows_path_escape_errors",
+    "non_utf8_cyrillic_in_generated_files",
+    "chat_degradation_after_long_session" 
+  ],
+  "lessons_learned": [
+    "always_audit_before_action",
+    "sanitize_bom_before_logic_fix",
+    "if_file_breaks_twice_rebuild_full_file",
+    "prefer_writer_script_over_echo_build",
+    "use_raw_windows_paths",
+    "avoid_cyrillic_in_generated_python_files",
+    "one_step_only_after_each_ok",
+    "archive_before_new_chat" 
+  ],
+  "current_state": {
+    "management_complete": true,
+    "first_technical_check_complete": true,
+    "contract_integrity_confirmed": true,
+    "gap_detected": false
+  },
+  "next_direction": "build_preview_contract_transition_gate_v1",
+  "rule": "start_new_chat_after_archive" 
+}

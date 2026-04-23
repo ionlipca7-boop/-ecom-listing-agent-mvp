@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "NORMALIZE_PROJECT_STATE_AFTER_RUNNER_BRIDGE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "state_file": "project_state.json",
+  "phase": 8,
+  "current_step": "runner_checkpoint_integrated",
+  "next_step": "decide_next_project_specific_branch_after_runner_checkpoint",
+  "active_stage": "runner_checkpoint_integrated",
+  "current_phase": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+  "last_successful_action": "normalize_project_state_after_runner_bridge_v1",
+  "next_allowed_action": "decide_next_project_specific_branch_after_runner_checkpoint",
+  "runner_integrated": true,
+  "runner_safe_blocked": true,
+  "n8n_ready": false,
+  "compact_core_ready": false
+}

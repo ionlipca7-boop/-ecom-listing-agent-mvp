@@ -1,0 +1,48 @@
+{
+  "status": "ERROR",
+  "decision": "inventory_failed",
+  "updated_at_utc": "2026-04-18T08:27:23.005991+00:00",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "inventory_http_status": 400,
+  "offer_http_status": null,
+  "publish_http_status": null,
+  "offerId": null,
+  "listingId": null,
+  "inventory_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+      "aspects": {
+        "Produktart": "USB-C OTG Adapter",
+        "Anschluss A": "USB-C",
+        "Anschluss B": "USB-A",
+        "Farbe": "Schwarz"
+      },
+      "imageUrls": []
+    }
+  },
+  "inventory_response": {
+    "errors": [
+      {
+        "errorId": 2004,
+        "domain": "ACCESS",
+        "category": "REQUEST",
+        "message": "Invalid request",
+        "longMessage": "The request has errors. For help, see the documentation for this API.",
+        "parameters": [
+          {
+            "name": "reason",
+            "value": "Could not serialize field [product.aspects.Produktart]"
+          }
+        ]
+      }
+    ]
+  }
+}

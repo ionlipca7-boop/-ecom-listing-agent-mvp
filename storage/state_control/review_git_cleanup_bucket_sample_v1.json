@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "REVIEW_GIT_CLEANUP_BUCKET_SAMPLE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_GIT_CLEANUP_BUCKET_SAMPLE_CAPTURE_V1",
+  "input_status": "OK",
+  "target_bucket": "storage/archive_candidates/git_cleanup_v1",
+  "sample_reviewed": true,
+  "sample_count": 6,
+  "command_noise_strongly_confirmed": true,
+  "project_material_detected_in_sample": false,
+  "bucket_classification": "COMMAND_NOISE_CANDIDATE",
+  "cleanup_global_forbidden": true,
+  "current_position": "git_cleanup_bucket_sample_reviewed",
+  "next_allowed_action": "build_git_cleanup_bucket_decision_gate_v1"
+}

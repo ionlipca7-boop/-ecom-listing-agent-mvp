@@ -1,0 +1,30 @@
+PROJECT: ECOM LISTING AGENT MVP
+
+STATUS:
+- rename executed and verified
+- archive execution plan created and verified
+- archive precheck audit created and verified
+- front text format repaired and verified
+- front state sync repaired and verified
+- strict prompt encoding verified through UTF-8 read
+- stable transition package created and verified
+- stable transition package state sync repaired
+- no archive move yet
+- no delete yet
+
+CURRENT POSITION:
+- last confirmed layer = REPAIR_NEW_CHAT_TRANSITION_PACKAGE_STATE_SYNC_V1
+- next allowed action = verify_new_chat_transition_package_state_sync_v1
+
+CANONICAL DECISIONS:
+- run_control_room.py = main project runtime/state entry
+- run_publish_ready_pipeline.bat = operator utility batch for publish-ready flow
+- control_room.py = legacy manual shell only
+- control_room_run_all.py = support publish-ready utility flow
+
+STRICT RULE:
+- do not archive yet
+- do not delete yet
+- do not move files yet
+- verify stable transition package sync first
+- one next action only

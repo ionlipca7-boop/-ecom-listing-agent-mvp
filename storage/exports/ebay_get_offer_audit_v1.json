@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "http_status": 200,
+  "offerId": "152921341011",
+  "sku": "ECOM-TEST-CABLE-001",
+  "marketplaceId": "EBAY_DE",
+  "format": "FIXED_PRICE",
+  "keys": [
+    "offerId",
+    "sku",
+    "marketplaceId",
+    "format",
+    "pricingSummary",
+    "listingPolicies",
+    "tax",
+    "status",
+    "listingDuration",
+    "includeCatalogProductDetails",
+    "hideBuyerDetails"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "package_id": "package_20260414_070314",
+  "bundle_dir": "publish_packages/package_20260414_070314/export_bundle_v2",
+  "files": [
+    "publish_packages/package_20260414_070314/export_bundle_v2/ebay_upload_ready_v2.csv",
+    "publish_packages/package_20260414_070314/export_bundle_v2/ebay_upload_ready_v2_validation.json",
+    "publish_packages/package_20260414_070314/export_bundle_v2/ebay_upload_ready_v2_summary.json"
+  ],
+  "valid": false,
+  "total_rows": 7,
+  "total_columns": 11,
+  "generated_at": "2026-04-14T17:25:37.841807+00:00"
+}

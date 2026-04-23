@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_MANUAL_UNTRACKED_BUCKET_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_MANUAL_UNTRACKED_BUCKET_REVIEW_V1",
+  "input_status": "OK",
+  "manual_bucket_review_executed": true,
+  "review_buckets": {
+    "python_files": "pending_manual_bucket_review",
+    "json_files": "pending_manual_bucket_review",
+    "txt_files": "pending_manual_bucket_review",
+    "directories": "pending_manual_bucket_review"
+  },
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_manual_untracked_bucket_review_result_v1"
+}

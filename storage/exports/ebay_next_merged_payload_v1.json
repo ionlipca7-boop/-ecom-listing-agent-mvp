@@ -1,0 +1,69 @@
+{
+  "inventory_item": {
+    "sku": "ECOM-NEXT-SKU-001",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C Ladekabel 2m 60W Schnellladen",
+      "description": "USB-C Kabel 2m fuer Schnellladen und Datentransfer.",
+      "imageUrls": [
+        "https://i.ebayimg.com/images/g/9ecAAeSw-Expjhyh/s-l1600.webp"
+      ],
+      "brand": "Markenlos",
+      "mpn": "Nicht zutreffend",
+      "aspects": {
+        "Produktart": [
+          "USB-Kabel"
+        ],
+        "Marke": [
+          "Markenlos"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      }
+    }
+  },
+  "offer": {
+    "sku": "ECOM-NEXT-SKU-001",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 10,
+    "categoryId": "44932",
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "listingDuration": "GTC",
+    "pricingSummary": {
+      "price": {
+        "value": "5.49",
+        "currency": "EUR"
+      }
+    },
+    "listingPolicies": {
+      "fulfillmentPolicyId": "257755855024",
+      "paymentPolicyId": "257755913024",
+      "returnPolicyId": "257755877024"
+    }
+  },
+  "publish_requirements_confirmed": [
+    "Produktart",
+    "imageUrls",
+    "Marke",
+    "Herstellernummer",
+    "brand",
+    "mpn"
+  ],
+  "success_reference": {
+    "offerId": "152921341011",
+    "listingId": "318162033369",
+    "sku": "ECOM-TEST-CABLE-001"
+  },
+  "merge_meta": {
+    "status": "MERGED_READY",
+    "source_template": "storage\\exports\\ebay_live_template_v1.json",
+    "source_input": "storage\\exports\\next_product_input_v1.json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_CLASSIFICATION_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_CLASSIFICATION_PLAN_V1",
+  "input_status": "OK",
+  "classification_plan_built": true,
+  "classification_method": "manual_group_review_from_git_status_snapshot",
+  "classification_targets": {
+    "untracked_python_files": "review_required",
+    "untracked_json_files": "review_required",
+    "untracked_txt_files": "review_required",
+    "untracked_directories": "review_required"
+  },
+  "cleanup_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_untracked_classification_gate_v1"
+}

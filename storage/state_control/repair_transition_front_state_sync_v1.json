@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_TRANSITION_FRONT_STATE_SYNC_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_TRANSITION_FRONT_TEXT_FORMAT_V1",
+  "input_status": "OK",
+  "front_state_sync_repaired": true,
+  "front_last_confirmed_layer_updated_to": "REPAIR_TRANSITION_FRONT_STATE_SYNC_V1",
+  "front_next_allowed_action_updated_to": "verify_transition_front_state_sync_v1",
+  "archive_move_started": false,
+  "delete_started": false,
+  "strict_prompt_encoding_issue_still_pending": true,
+  "next_allowed_action": "verify_transition_front_state_sync_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

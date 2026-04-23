@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_LAYER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GENERATION_AUDIT_V1",
+  "input_status": "OK",
+  "preview_layer_defined": true,
+  "preview_input_contract": "generated_listing_preview_payload",
+  "preview_output_contract": "preview_review_payload",
+  "preview_mode": "controlled_pre_publish_preview",
+  "entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_preview_audit_v1"
+}

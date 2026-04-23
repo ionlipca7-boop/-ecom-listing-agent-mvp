@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_SAMPLE_BUCKET_READ_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_UNTRACKED_SAMPLE_BUCKET_READ_V1",
+  "input_status": "OK",
+  "sample_bucket_read_result_built": true,
+  "sample_bucket": "python_files",
+  "real_python_bucket_snapshot_ready": true,
+  "cleanup_allowed_now": false,
+  "physical_move_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "prepare_python_bucket_decision_v1"
+}

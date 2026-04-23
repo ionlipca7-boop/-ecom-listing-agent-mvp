@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "GENERATOR_INPUT_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_defined": true,
+  "product_type": "USB_C_CABLE",
+  "target_marketplace": "EBAY_DE",
+  "generation_mode": "standard_listing"
+}

@@ -1,0 +1,103 @@
+===== TEMPLATE STATUS =====
+{
+  "template_status": "READY",
+  "blocked_row_count": 0,
+  "ok_row_count": 1,
+  "next_step": "EXPORT_EBAY_TEMPLATE_FILE_READY",
+  "source_validation_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\required_template_fields_validation_v1.json"
+}
+===== FINAL PACKAGE CHECK =====
+{
+  "package_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "header_count": 96,
+  "data_row_count": 1,
+  "final_status": "READY"
+}
+===== FINAL STATUS =====
+{
+  "system_status": "READY",
+  "template_status": "READY",
+  "final_package_status": "READY",
+  "latest_package_id": "ebay_template_ready_20260415_134843",
+  "latest_output_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "header_count": 96,
+  "data_row_count": 1,
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY"
+}
+===== UPLOAD HANDOFF =====
+{
+  "handoff_status": "READY",
+  "package_id": "ebay_template_ready_20260415_134843",
+  "final_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "header_count": 96,
+  "data_row_count": 1,
+  "instruction": "Open eBay bulk listing upload and use the final CSV file from final_csv",
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY"
+}
+===== UPLOAD CHECKLIST =====
+{
+  "status": "READY",
+  "package_id": "ebay_template_ready_20260415_134843",
+  "final_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "steps": [
+    "1. Open eBay bulk listing upload",
+    "2. Select the final CSV file",
+    "3. Upload and run eBay validation",
+    "4. Review warnings or errors in eBay",
+    "5. If validation passes, continue to publish"
+  ]
+}
+===== SAMPLE LOADER =====
+{
+  "loader_status": "LOADED",
+  "next_step": "RUN_UPLOAD_RESULT_PARSER",
+  "samples_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_result_samples",
+  "target_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results",
+  "sample_count": 1,
+  "loaded_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_success_v1.json",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_result_samples\\ebay_result_sample_success_v1.json"
+}
+===== RESULT PARSER =====
+{
+  "parser_status": "NO_INPUT",
+  "upload_results_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results",
+  "message": "Place eBay upload result file into storage/upload_results and run again",
+  "latest_file": "",
+  "summary": {
+    "success_count": 0,
+    "warning_count": 0,
+    "error_count": 0,
+    "unknown_count": 0
+  },
+  "items": []
+}
+===== UPLOAD FEEDBACK =====
+{
+  "upload_feedback_status": "WAITING_RESULT",
+  "parser_status": "NO_INPUT",
+  "latest_file": "",
+  "success_count": 0,
+  "warning_count": 0,
+  "error_count": 0,
+  "unknown_count": 0,
+  "next_step": "PLACE_EBAY_RESULT_FILE_IN_UPLOAD_RESULTS"
+}
+===== MASTER STATUS =====
+{
+  "master_status": "READY_FOR_UPLOAD_RESULT",
+  "next_step": "PLACE_EBAY_RESULT_FILE_IN_UPLOAD_RESULTS",
+  "inputs": {
+    "final_status_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_final_status_v1.json",
+    "handoff_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\upload_handoff_v1.json",
+    "feedback_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_upload_feedback_v1.json"
+  },
+  "summary": {
+    "system_status": "READY",
+    "template_status": "READY",
+    "final_package_status": "READY",
+    "latest_package_id": "ebay_template_ready_20260415_134843",
+    "handoff_status": "READY",
+    "upload_feedback_status": "WAITING_RESULT",
+    "parser_status": "NO_INPUT"
+  }
+}

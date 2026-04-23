@@ -1,0 +1,13 @@
+{
+  "status": "ERROR",
+  "decision": "adapter_001_live_offer_fetch_failed",
+  "http_status": 401,
+  "offerId": "153365657011",
+  "sku": null,
+  "marketplaceId": null,
+  "format": null,
+  "availableQuantity": null,
+  "has_price": false,
+  "has_policies": false,
+  "categoryId": null
+}

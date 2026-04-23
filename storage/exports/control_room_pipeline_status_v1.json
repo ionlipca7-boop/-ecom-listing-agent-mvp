@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "system_status": "OK",
+  "overall_status": "OK",
+  "input_decision": "RUN_SINGLE",
+  "final_decision": "READY_NEXT",
+  "pipeline_status": "READY_NEXT",
+  "actions_count": 1,
+  "last_execution_status": "OK",
+  "executor_returncode": 0,
+  "error_reason": null,
+  "paths": {
+    "master_status_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v2.json",
+    "auto_agent_v4_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_agent_v4_audit.json",
+    "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_pipeline_status_v1.json"
+  }
+}

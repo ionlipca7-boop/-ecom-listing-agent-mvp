@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "decision": "generator_output_contract_inspected",
+  "stdout_exists": true,
+  "stdout_len": 103,
+  "parsed_ok": false,
+  "parsed_type": "none",
+  "has_title": false,
+  "has_description": false,
+  "has_price": false,
+  "parse_error": "Expecting value: line 1 column 1 (char 0)",
+  "stdout_preview": "GENERATOR_AGENT_V4_OK\noutput_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\generator_output_v4.json",
+  "next_step": "normalize_generator_stdout_v1"
+}

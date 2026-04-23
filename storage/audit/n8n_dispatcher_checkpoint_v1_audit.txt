@@ -1,0 +1,11 @@
+N8N_DISPATCHER_CHECKPOINT_V1_AUDIT
+status = OK
+phase = 8
+selected_branch = prepare_n8n_dispatcher_v1
+dispatcher_role = orchestrator_only
+n8n_real_connection_enabled = False
+n8n_ready = False
+execution_allowed = False
+final_decision = KEEP_BLOCKED
+dispatcher_checkpoint_ready = True
+next_allowed_action = build_n8n_dispatch_contract_v1

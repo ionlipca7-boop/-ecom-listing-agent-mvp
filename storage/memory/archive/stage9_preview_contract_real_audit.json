@@ -1,0 +1,40 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "stage": 9,
+  "files_found": {
+    "compact_core_transition_front_v1.py": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_transition_front_v1.py",
+    "compact_core_state_hub_v1.py": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_state_hub_v1.py",
+    "compact_core_execution_bridge_v1.py": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_execution_bridge_v1.py",
+    "compact_core_preview_contract_v1.py": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_preview_contract_v1.py"
+  },
+  "preview_contract_exists": true,
+  "preview_contract_line_count": 56,
+  "preview_contract_head": [
+    "﻿import json",
+    "from pathlib import Path",
+    "",
+    "BASE = Path(r\"D:\\ECOM_LISTING_AGENT_MVP\")",
+    "",
+    "def load_json(rel_path):",
+    "    p = BASE / rel_path",
+    "    if not p.exists():",
+    "        return {}, str(p), False",
+    "    return json.loads(p.read_text(encoding=\"utf-8\")), str(p), True",
+    "",
+    "def main():",
+    "    bridge_data, _, bridge_exists = load_json(Path(\"storage/state_compact_core/compact_core_execution_bridge_v1.json\"))",
+    "    hub_data, _, hub_exists = load_json(Path(\"storage/state_compact_core/compact_core_state_hub_v1.json\"))",
+    "    root_data, _, root_exists = load_json(Path(\"storage/state_compact_core/compact_core_transition_front_v1.json\"))",
+    "",
+    "    execution_input = bridge_data.get(\"execution_input\", {})",
+    "    links = bridge_data.get(\"links\", {})",
+    "    generator_output = hub_data.get(\"generator_output\", {})",
+    ""
+  ],
+  "preview_contract_compile": "BROKEN",
+  "preview_contract_error": "invalid non-printable character U+FEFF (compact_core_preview_contract_v1.py, line 1)",
+  "compact_core_transition_front_v1": "OK",
+  "compact_core_state_hub_v1": "BROKEN: invalid non-printable character U+FEFF (compact_core_state_hub_v1.py, line 1)",
+  "compact_core_execution_bridge_v1": "OK"
+}

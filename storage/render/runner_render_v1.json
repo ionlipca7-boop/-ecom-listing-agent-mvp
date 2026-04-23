@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_RENDER_LAYER_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "price": 6.75,
+  "currency": "EUR",
+  "html": "<h2>USB-C Ladekabel 2m 60W Schnellladen Datenkabel</h2><p>USB-C Kabel | Leistung: 60W | Lange: 2m | Funktion: Schnellladen und Datenubertragung</p>",
+  "visual": {
+    "primary_image": "image_1_main.jpg",
+    "gallery": [
+      "image_2_detail.jpg",
+      "image_3_usage.jpg"
+    ],
+    "image_count": 3
+  },
+  "ready_for_live": false,
+  "next_step": "prepare_runner_live_payload_layer_v1"
+}

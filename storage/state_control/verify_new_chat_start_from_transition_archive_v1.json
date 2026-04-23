@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_NEW_CHAT_START_FROM_TRANSITION_ARCHIVE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRANSITION_TO_NEW_CHAT_READY_V1",
+  "transition_archive_verified": true,
+  "front_verified": true,
+  "source_of_truth_confirmed": "transition_2026_04_22_untracked_resolution_checkpoint_ready_v1.json",
+  "last_confirmed_layer": "EXECUTE_TRANSITION_AFTER_UNTRACKED_RESOLUTION_CHECKPOINT_V1",
+  "current_position": "verified_new_chat_start_from_transition_archive",
+  "path_validation": "CORRECT",
+  "branching_detected": false,
+  "destructive_actions_detected": false,
+  "read_only_path_locked": true,
+  "next_allowed_action": "prepare_controlled_untracked_review_entry_v1"
+}

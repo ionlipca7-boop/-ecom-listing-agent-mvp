@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "decision": "generator_real_dry_run_executed",
+  "input_exists": true,
+  "stdout_exists": true,
+  "stderr_exists": true,
+  "stdout_len": 103,
+  "stderr_len": 0,
+  "stdout_preview": "GENERATOR_AGENT_V4_OK\noutput_file = D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\generator_output_v4.json\n",
+  "stderr_preview": "",
+  "next_step": "inspect_generator_output_contract_v1"
+}

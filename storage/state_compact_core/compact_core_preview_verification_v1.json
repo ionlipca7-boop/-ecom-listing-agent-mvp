@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "COMPACT_CORE_PREVIEW_VERIFICATION_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "source_exists": true,
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_preview_contract_v1.json",
+  "checks": {
+    "title_ready": true,
+    "price_ready": true,
+    "description_ready": true,
+    "html_ready": true,
+    "images_ready": true,
+    "links_ready": true
+  },
+  "summary": {
+    "title_length": 46,
+    "description_length": 127,
+    "html_length": 310,
+    "images_count": 6
+  },
+  "next_step": "preview_verified_ready_for_next_compact_core_layer"
+}

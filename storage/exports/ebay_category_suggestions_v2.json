@@ -1,0 +1,189 @@
+{
+  "categorySuggestions": [
+    {
+      "category": {
+        "categoryId": "3668",
+        "categoryName": "Sonstige"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "182094",
+          "categoryName": "Kabel & Steckverbinder",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=182094"
+        },
+        {
+          "categoryId": "58058",
+          "categoryName": "Computer, Tablets & Netzwerk",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=58058"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "32834",
+        "categoryName": "Videokabel & -stecker"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "14961",
+          "categoryName": "TV- & Heim-Audio-Zubehör",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=14961"
+        },
+        {
+          "categoryId": "293",
+          "categoryName": "TV, Video & Audio",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=293"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "123417",
+        "categoryName": "Ladegeräte & Dockingstationen"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "9394",
+          "categoryName": "Handy-Zubehör",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=9394"
+        },
+        {
+          "categoryId": "15032",
+          "categoryName": "Handys & Kommunikation",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=15032"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "9723",
+        "categoryName": "Schrittmotoren"
+      },
+      "categoryTreeNodeLevel": 4,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "181730",
+          "categoryName": "Elektromotoren",
+          "categoryTreeNodeLevel": 3,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=181730"
+        },
+        {
+          "categoryId": "42892",
+          "categoryName": "Automation, Antriebe & Motoren",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=42892"
+        },
+        {
+          "categoryId": "12576",
+          "categoryName": "Business & Industrie",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=12576"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "3709",
+        "categoryName": "Notebook-Dockingstationen"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "31530",
+          "categoryName": "Notebook- & Desktop-Zubehör",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=31530"
+        },
+        {
+          "categoryId": "58058",
+          "categoryName": "Computer, Tablets & Netzwerk",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=58058"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "1277",
+        "categoryName": "Sonstige"
+      },
+      "categoryTreeNodeLevel": 2,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "26395",
+          "categoryName": "Beauty & Gesundheit",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=26395"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "1310",
+        "categoryName": "Sonstige"
+      },
+      "categoryTreeNodeLevel": 2,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "3252",
+          "categoryName": "Reisen",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=3252"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "44932",
+        "categoryName": "USB-Kabel, -Hubs & -Adapter"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "182094",
+          "categoryName": "Kabel & Steckverbinder",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=182094"
+        },
+        {
+          "categoryId": "58058",
+          "categoryName": "Computer, Tablets & Netzwerk",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=58058"
+        }
+      ]
+    },
+    {
+      "category": {
+        "categoryId": "31510",
+        "categoryName": "Notebook-Netzteile/-Ladegeräte"
+      },
+      "categoryTreeNodeLevel": 3,
+      "categoryTreeNodeAncestors": [
+        {
+          "categoryId": "31530",
+          "categoryName": "Notebook- & Desktop-Zubehör",
+          "categoryTreeNodeLevel": 2,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=31530"
+        },
+        {
+          "categoryId": "58058",
+          "categoryName": "Computer, Tablets & Netzwerk",
+          "categoryTreeNodeLevel": 1,
+          "categorySubtreeNodeHref": "https://api.ebay.com/commerce/taxonomy/v1/category_tree/77/get_category_subtree?category_id=58058"
+        }
+      ]
+    }
+  ],
+  "categoryTreeId": "77",
+  "categoryTreeVersion": "135"
+}

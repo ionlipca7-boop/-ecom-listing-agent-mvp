@@ -1,0 +1,33 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 9,
+  "current_step": "compact_core_migration_contract",
+  "next_step": "control_layer_review",
+  "status": "PLANNED_NOT_EXECUTED",
+  "migration_mode": "COMPACT_CORE_PREPARATION_ONLY",
+  "migration_execution_enabled": false,
+  "source_layer": "CONTROL_LAYER",
+  "target_layer": "COMPACT_CORE",
+  "allowed_now": [
+    "migration_contract_definition",
+    "component_mapping",
+    "transition_preparation"
+  ],
+  "blocked_now": [
+    "real_migration_execution",
+    "core_rewrite",
+    "live_switch_over"
+  ],
+  "planned_mapping": {
+    "project_manifest.json": "compact_manifest.json",
+    "control_rules.json": "compact_rules.json",
+    "project_state.json": "compact_state.json",
+    "project_history.jsonl": "compact_history.jsonl",
+    "control_agent.py": "compact_control_agent.py",
+    "archivist_agent.py": "compact_archivist_agent.py",
+    "runner_agent.py": "compact_runner_agent.py",
+    "n8n_orchestration.json": "compact_orchestration_contract.json"
+  },
+  "success_condition": "control_contracts_fully_defined_before_any_real_migration"
+}

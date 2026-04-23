@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "OPERATOR_APPROVAL_ENTRY_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINALIZE_CONTROLLED_AUTOMATION_PATH_V1",
+  "input_status": "OK",
+  "approval_required": true,
+  "approval_status": "PENDING_OPERATOR_APPROVAL",
+  "publish_blocked_until_approval": true,
+  "live_execution": false,
+  "controlled_route_decision": "OPERATOR_APPROVAL_FIRST",
+  "parallel_branches": false,
+  "input_submission_deferred_until_approval_resolution": true,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "prepare_operator_approval_gate_v1"
+}

@@ -1,0 +1,40 @@
+{
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "locale": "de_DE",
+  "product": {
+    "title": "USB-C auf USB-A Adapter OTG USB 3.0 Schnell Datenadapter fur Samsung MacBook",
+    "aspects": {
+      "Marke": [
+        "Markenlos"
+      ],
+      "Produktart": [
+        "USB-C auf USB-A Adapter"
+      ],
+      "Kompatibel mit": [
+        "Samsung",
+        "MacBook",
+        "Android Gerate"
+      ]
+    },
+    "imageUrls": [
+      "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+    ]
+  },
+  "condition": "NEW",
+  "packageWeightAndSize": {
+    "weight": {
+      "value": 0.0,
+      "unit": "KILOGRAM"
+    },
+    "shippingIrregular": false
+  },
+  "availability": {
+    "shipToLocationAvailability": {
+      "quantity": 10,
+      "allocationByFormat": {
+        "auction": 0,
+        "fixedPrice": 10
+      }
+    }
+  }
+}

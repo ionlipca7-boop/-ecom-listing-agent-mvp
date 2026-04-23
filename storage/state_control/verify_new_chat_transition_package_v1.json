@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_NEW_CHAT_TRANSITION_PACKAGE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "STABILIZE_NEW_CHAT_TRANSITION_PACKAGE_V1",
+  "input_status": "OK",
+  "stable_front_verified": true,
+  "stable_instructions_verified": true,
+  "front_next_action_sync_issue_detected": true,
+  "front_next_action_sync_issue": "stable front still points to stabilize_new_chat_transition_package_v1",
+  "archive_move_started": false,
+  "delete_started": false,
+  "next_allowed_action": "repair_new_chat_transition_package_state_sync_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

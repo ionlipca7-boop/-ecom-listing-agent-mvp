@@ -1,0 +1,127 @@
+{
+  "run_started_at": "2026-04-15T07:43:55Z",
+  "checked_at": "2026-04-15T07:43:56Z",
+  "last_package_detected": "package_20260414_070314",
+  "pipeline_steps": [
+    {
+      "step": "generate_ebay_export_v1.py",
+      "ok": true,
+      "skipped": true,
+      "returncode": null,
+      "stdout": "",
+      "stderr": "optional file missing: generate_ebay_export_v1.py"
+    },
+    {
+      "step": "generate_ebay_template_matched_export_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "package_id: package_20260414_070314\nvalid_rows: 7\nskipped_rows: 0\noutput_path: publish_packages/package_20260414_070314/ebay_ready_for_upload_v1.csv",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\generate_ebay_template_matched_export_v1.py"
+      ]
+    },
+    {
+      "step": "audit_ebay_template_matched_export_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "package_id: package_20260414_070314\naudit_file: publish_packages/package_20260414_070314/ebay_template_matched_export_v1_audit.json\ncontract_ok: True\ndata_row_count: 7\ninvalid_row_count: 0",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\audit_ebay_template_matched_export_v1.py"
+      ]
+    },
+    {
+      "step": "prepare_ebay_upload_package_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "package_id: package_20260414_070314\noutput_dir: publish_packages/package_20260414_070314/ebay_upload_package_v1\nfiles_copied: 2\nstatus: READY_FOR_UPLOAD",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\prepare_ebay_upload_package_v1.py"
+      ]
+    },
+    {
+      "step": "publish_execution_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "package_id: package_20260414_070314\nstatus: SUCCESS\nresult_file: publish_packages/package_20260414_070314/ebay_upload_package_v1/publish_result_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\publish_execution_v1.py",
+        "--package",
+        "package_20260414_070314"
+      ]
+    },
+    {
+      "step": "generate_control_room_state_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\nlast_status: SUCCESS\nstate_file_path: control_room_state_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\generate_control_room_state_v1.py"
+      ]
+    },
+    {
+      "step": "decision_engine_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\nlast_status: SUCCESS\nnext_action: READY_FOR_REAL_PUBLISH\noutput_file: decision_output_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\decision_engine_v1.py"
+      ]
+    },
+    {
+      "step": "real_publish_gate_v1.py",
+      "ok": true,
+      "skipped": false,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\nnext_action: READY_FOR_REAL_PUBLISH\ngate_status: OPEN\noutput_file: real_publish_gate_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\real_publish_gate_v1.py"
+      ]
+    }
+  ],
+  "decision_file": {
+    "path": "decision_output_v1.json",
+    "ok": true,
+    "error": null,
+    "data": {
+      "last_package": "package_20260414_070314",
+      "last_status": "SUCCESS",
+      "last_step": "execution",
+      "next_action": "READY_FOR_REAL_PUBLISH",
+      "generated_at": "2026-04-15T07:43:56Z"
+    }
+  },
+  "gate_file": {
+    "path": "real_publish_gate_v1.json",
+    "ok": true,
+    "error": null,
+    "data": {
+      "last_package": "package_20260414_070314",
+      "last_status": "SUCCESS",
+      "next_action": "READY_FOR_REAL_PUBLISH",
+      "gate_status": "OPEN",
+      "checked_at": "2026-04-15T07:43:56Z"
+    }
+  },
+  "final_status": "READY",
+  "reasons": []
+}

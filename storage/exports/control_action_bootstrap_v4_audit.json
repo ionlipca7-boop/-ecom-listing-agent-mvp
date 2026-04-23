@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "action_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_action_v4.json",
+  "actions_count": 1,
+  "first_action": {
+    "action": "update_quantity",
+    "product_key": "cable_001",
+    "quantity": 35
+  }
+}

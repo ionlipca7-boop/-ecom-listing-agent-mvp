@@ -1,0 +1,86 @@
+{
+  "status": "ERROR",
+  "decision": "publish_failed",
+  "updated_at_utc": "2026-04-18T08:30:59.408002+00:00",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "inventory_http_status": 204,
+  "offer_http_status": 201,
+  "publish_http_status": 400,
+  "offerId": "153365657011",
+  "listingId": null,
+  "inventory_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+      "aspects": {
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ]
+      }
+    }
+  },
+  "inventory_response_text": "",
+  "offer_payload": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 10,
+    "categoryId": "44932",
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "pricingSummary": {
+      "price": {
+        "value": "3.99",
+        "currency": "EUR"
+      }
+    },
+    "listingPolicies": {
+      "fulfillmentPolicyId": "257755855024",
+      "paymentPolicyId": "257755913024",
+      "returnPolicyId": "257755877024"
+    }
+  },
+  "offer_response": {
+    "offerId": "153365657011"
+  },
+  "publish_response": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Das Artikelmerkmal Marke fehlt."
+          },
+          {
+            "name": "1",
+            "value": "Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal."
+          },
+          {
+            "name": "2",
+            "value": "Marke"
+          }
+        ]
+      }
+    ]
+  }
+}

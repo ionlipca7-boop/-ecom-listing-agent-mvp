@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "decision": "filled",
+  "input": {
+    "new_registry_key": "adapter_001",
+    "new_sku": "USB-C-OTG-Adapter-6A-120W-q10-p4.49",
+    "target_title": "USB-C OTG Adapter USB 3.0 Typ C auf USB-A 6A 120W Datenadapter",
+    "target_price": "4.49",
+    "category_id": "30363",
+    "merchant_location_key": "ECOM_DE_LOC_1",
+    "fulfillment_policy_id": "REPLACE_WITH_REAL",
+    "payment_policy_id": "REPLACE_WITH_REAL",
+    "return_policy_id": "REPLACE_WITH_REAL"
+  }
+}

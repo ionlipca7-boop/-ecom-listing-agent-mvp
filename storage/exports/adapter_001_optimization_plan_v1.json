@@ -1,0 +1,82 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_optimization_plan_built",
+  "updated_at_utc": "2026-04-18T09:10:48.987496+00:00",
+  "product_key": "adapter_001",
+  "listing_id": "318166440509",
+  "current_state": {
+    "is_live": true,
+    "photos_need_optimization": true,
+    "specifics_need_expansion": true,
+    "description_need_html": true
+  },
+  "photo_plan": {
+    "goal": "replace raw supplier photos with sales-oriented 1-7 photo system",
+    "needed_blocks": [
+      "hero_photo_clean",
+      "main_benefit_fast_charge_and_data",
+      "compatibility_use_case",
+      "connector_closeup",
+      "multi_color_or_real_variant_logic",
+      "size_compact_travel",
+      "package_or_delivery_info"
+    ],
+    "current_problem": "current photos are copied supplier images and not optimized for CTR or trust"
+  },
+  "specifics_plan": {
+    "required_keep": [
+      "Marke",
+      "Produktart",
+      "Anschluss A",
+      "Anschluss B"
+    ],
+    "recommended_fill": [
+      "Farbe strategy review",
+      "EAN fallback",
+      "Kompatible Marke",
+      "Kompatibles Modell",
+      "Herstellungsland und -region if known",
+      "Herstellernummer fallback",
+      "dimension fields only if reliable"
+    ],
+    "current_problem": "important specifics exist but commercial and search-support fields are still incomplete"
+  },
+  "description_plan": {
+    "goal": "replace plain short text with structured German HTML description",
+    "sections": [
+      "Kurze Einleitung",
+      "Vorteile",
+      "Kompatibilitaet",
+      "Technische Hinweise",
+      "Lieferumfang",
+      "Versandhinweis"
+    ],
+    "current_problem": "plain text description is too weak for trust, clarity, and conversion"
+  },
+  "ad_offer_plan": {
+    "start_ad_rate_percent": 7,
+    "rule_after_7_days_no_movement": "increase by 1 percent",
+    "offer_to_buyers_min_discount_percent": 5,
+    "note": "avoid chaotic price cutting; adjust ads first, then offers selectively"
+  },
+  "next_execution_order": [
+    "build_html_description_v1",
+    "build_specifics_upgrade_v1",
+    "prepare_photo_upgrade_plan_v1",
+    "prepare_live_revise_payload_v1"
+  ],
+  "memory_snapshot_keys": [
+    "status",
+    "decision",
+    "updated_at_utc",
+    "project",
+    "working_values",
+    "live_listings",
+    "resolved_errors",
+    "cmd_traps",
+    "working_paths",
+    "best_working_paths",
+    "media_sources",
+    "listing_reviews"
+  ]
+}

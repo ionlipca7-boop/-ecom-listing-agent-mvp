@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "AWAIT_RUN_CONTROL_ROOM_RUNTIME_ENTRY_PERMISSION_CONFIRMATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_RUN_CONTROL_ROOM_RUNTIME_ENTRY_PERMISSION_V1",
+  "input_status": "OK",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "permission_prepared": true,
+  "permission_confirmation_pending": true,
+  "permission_granted": false,
+  "manual_confirmation_required": true,
+  "auto_start_allowed": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "record_run_control_room_runtime_entry_permission_confirmation_v1"
+}

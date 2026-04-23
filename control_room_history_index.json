@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2026-04-15T07:51:32Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_075443.json"
+  },
+  {
+    "timestamp": "2026-04-15T07:51:32Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_075726.json"
+  },
+  {
+    "timestamp": "2026-04-15T07:59:23Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_075923.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:00:58Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_080059.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:32:13Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_083213.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:35:45Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_083545.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:35:45Z",
+    "status": "READY",
+    "package": null,
+    "next_step": null,
+    "reason": null,
+    "file": "control_room_history\\run_20260415_103545.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:37:05Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_083705.json"
+  },
+  {
+    "timestamp": "2026-04-15T08:37:05Z",
+    "status": "READY",
+    "package": null,
+    "next_step": null,
+    "reason": null,
+    "file": "control_room_history\\run_20260415_103705.json"
+  },
+  {
+    "timestamp": "2026-04-15T09:00:47Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": null
+  },
+  {
+    "timestamp": "2026-04-15T09:00:47Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": "control_room_history\\run_20260415_090047.json"
+  },
+  {
+    "timestamp": "2026-04-15T09:05:45Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": null
+  },
+  {
+    "timestamp": "2026-04-15T09:14:39Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": null
+  },
+  {
+    "timestamp": "2026-04-15T09:34:11Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": null,
+    "file": null
+  },
+  {
+    "timestamp": "2026-04-15T09:37:08Z",
+    "status": "SANDBOX_BLOCKED",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+    "reason": "Missing sandbox token (env EBAY_SANDBOX_TOKEN or ebay_sandbox_credentials_v1.json)",
+    "file": null
+  }
+]

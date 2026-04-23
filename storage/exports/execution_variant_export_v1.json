@@ -1,0 +1,45 @@
+{
+  "export_status": "READY",
+  "next_step": "READY_FOR_EXECUTION_OR_PUBLISH_LAYER",
+  "summary": {
+    "selected_variant_id": "VARIANT_1",
+    "selected_title": "60W USB-C Ladekabel 2m USB-C Schnellladen",
+    "selected_price": 5.5
+  },
+  "execution_payload": {
+    "Action": "Add",
+    "SKU": "SKU-001",
+    "Category": "Kabel",
+    "Title": "60W USB-C Ladekabel 2m USB-C Schnellladen",
+    "Description": "Produkt: USB-C Ladekabel\nLeistung: 60W\nLänge: 2m\n- Schnellladen\n- Robustes Kabel\n- Hohe Kompatibilität",
+    "Format": "FixedPrice",
+    "Quantity": "1",
+    "Price": 5.5,
+    "ConditionID": "1000",
+    "Brand": "Generic",
+    "MPN": "SKU-001",
+    "Model": "SKU-001",
+    "ProductType": "USB-C Ladekabel",
+    "Color": "Schwarz",
+    "CableLength": "2m",
+    "Connectivity": "USB-C",
+    "Features": "Schnellladen; Robustes Kabel; Hohe Kompatibilität",
+    "PhotoCount": 4,
+    "Photo1": "017fb548-a72c-4bf5-b1e9-908adcbabf60.png",
+    "Photo2": "5251f6fb-ed61-4d2a-b3ec-d18828a1e479.png",
+    "Photo3": "a676fbda-2b56-4c02-913b-53fb1b3a5f4a.png",
+    "Photo4": "c915ea5e-0acf-4127-b813-48af7784475b.png",
+    "Photo5": "",
+    "Photo6": "",
+    "Photo7": "",
+    "PhotoFiles": "017fb548-a72c-4bf5-b1e9-908adcbabf60.png; 5251f6fb-ed61-4d2a-b3ec-d18828a1e479.png; a676fbda-2b56-4c02-913b-53fb1b3a5f4a.png; c915ea5e-0acf-4127-b813-48af7784475b.png",
+    "Source": "real_ebay_template_export_v1",
+    "SelectedVariantID": "VARIANT_1",
+    "SelectedAngle": "baseline_ai_title",
+    "ExecutionSource": "execution_variant_export_v1"
+  },
+  "inputs": {
+    "ready_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_export_v1.json",
+    "selector_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\variant_selector_v1.json"
+  }
+}

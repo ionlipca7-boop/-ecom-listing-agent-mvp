@@ -1,0 +1,11 @@
+N8N_DISPATCH_PAYLOAD_CONTRACT_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+payload_contract_version = v1
+required_field_count = 8
+optional_field_count = 3
+forbidden_field_count = 5
+execution_allowed = False
+payload_contract_ready = True
+next_allowed_action = build_n8n_dispatch_decision_gate_v1

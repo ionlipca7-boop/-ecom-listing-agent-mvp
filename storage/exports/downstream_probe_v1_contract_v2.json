@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "decision": "downstream_probe_v1_against_contract_v2_completed",
+  "source_file": "storage\\exports\\generator_output_contract_v2.json",
+  "contract_version": "v2",
+  "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "title_length": 46,
+  "description_present": true,
+  "price_present": true,
+  "html_present": true,
+  "images_count": 6,
+  "titles_count": 3,
+  "ready_for_downstream": true,
+  "next_step": "promote_contract_v2_as_downstream_input"
+}

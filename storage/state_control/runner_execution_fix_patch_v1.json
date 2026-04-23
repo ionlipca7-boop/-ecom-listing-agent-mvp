@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_FIX_PATCH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_EXECUTION_FIX_CONTRACT_V1",
+  "input_status": "OK",
+  "patch_applied": true,
+  "patch_scope": "execution_switch_logic_only",
+  "expected_behavior_after_patch": "runner_switches_to_execution_when_intent_detected",
+  "execution_still_blocked": true,
+  "runner_execution_still_blocked": true,
+  "live_execution_still_blocked": true,
+  "verification_required": true,
+  "next_allowed_action": "build_runner_execution_fix_verification_v1"
+}

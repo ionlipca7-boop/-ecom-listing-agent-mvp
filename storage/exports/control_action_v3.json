@@ -1,0 +1,46 @@
+{
+  "status": "OK",
+  "refresh_exit_code": 0,
+  "refresh_status": "OK",
+  "refresh_http_status": 200,
+  "actions_count": 1,
+  "results": [
+    {
+      "action": "update_quantity",
+      "sku": "ECOM-TEST-CABLE-001",
+      "offerId": "152921341011",
+      "quantity": 30,
+      "status": "OK",
+      "http_status": 200,
+      "request_payload": {
+        "requests": [
+          {
+            "sku": "ECOM-TEST-CABLE-001",
+            "shipToLocationAvailability": {
+              "quantity": 30
+            },
+            "offers": [
+              {
+                "offerId": "152921341011",
+                "availableQuantity": 30
+              }
+            ]
+          }
+        ]
+      },
+      "response_json": {
+        "responses": [
+          {
+            "statusCode": 200,
+            "sku": "ECOM-TEST-CABLE-001"
+          },
+          {
+            "statusCode": 200,
+            "sku": "ECOM-TEST-CABLE-001",
+            "offerId": "152921341011"
+          }
+        ]
+      }
+    }
+  ]
+}

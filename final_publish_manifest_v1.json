@@ -1,0 +1,18 @@
+{
+  "manifest_status": "READY",
+  "last_package": "package_20260414_070314",
+  "publish_mode": "REAL",
+  "created_at": "2026-04-15T07:43:56Z",
+  "source_files": {
+    "control_room_run": "control_room_run_v1.json",
+    "decision_output": "decision_output_v1.json",
+    "real_publish_gate": "real_publish_gate_v1.json",
+    "real_publish_request": "real_publish_request_v1.json"
+  },
+  "checks": {
+    "control_room_run_ready": true,
+    "decision_ready_for_real_publish": true,
+    "real_publish_gate_open": true,
+    "real_publish_request_created": true
+  }
+}

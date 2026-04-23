@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-15T19:07:31Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1_approved.json",
+  "apply_status": "READY",
+  "applied_patch_count": 3,
+  "fields": {
+    "Brand": "REQUIRED_BRAND_VALUE_FROM_CATEGORY",
+    "ItemSpecifics": {
+      "mode": "MERGE_REQUIRED_ASPECTS",
+      "source": "CATEGORY_TEMPLATE"
+    },
+    "StartPrice": {
+      "mode": "RECALCULATE_AND_NORMALIZE",
+      "source": "PRICE_OPTIMIZER"
+    }
+  }
+}

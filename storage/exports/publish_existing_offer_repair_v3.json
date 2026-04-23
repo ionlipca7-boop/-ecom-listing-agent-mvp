@@ -1,0 +1,68 @@
+{
+  "status": "OK",
+  "decision": "publish_existing_offer_live_ok",
+  "updated_at_utc": "2026-04-18T08:45:27.505905+00:00",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "image_count": 9,
+  "repair_inventory_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+      "aspects": {
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Marke": [
+          "No-Name"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      },
+      "imageUrls": [
+        "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+        "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+        "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+        "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+        "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+        "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+        "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+        "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+        "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+      ]
+    }
+  },
+  "repair_inventory_http_status": 204,
+  "publish_http_status": 200,
+  "listingId": "318166440509",
+  "repair_inventory_response_text": "",
+  "publish_response": {
+    "listingId": "318166440509",
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      }
+    ]
+  }
+}

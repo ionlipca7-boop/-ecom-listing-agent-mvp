@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "ARCHIVE_MOVE_EXECUTION_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_ARCHIVE_MOVE_BATCH_V1",
+  "archive_execution_result": "ALREADY_EXECUTED_CONFIRMED_BY_TARGET_STATE",
+  "source_move_attempt": "NO_SOURCE_FOUND_ON_REPEAT_RUN",
+  "archive_target_verified": true,
+  "archive_executed": true,
+  "delete_allowed": false,
+  "next_allowed_action": "build_archive_execution_verification_v1"
+}

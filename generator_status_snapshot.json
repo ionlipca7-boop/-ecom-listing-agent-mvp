@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "GENERATOR_STATUS_SNAPSHOT",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "control_status": "CONTROL_LAYER_COMPLETE",
+  "canonical_line_complete": true,
+  "history_valid": true,
+  "input_contract_ready": true,
+  "input_sample_ready": true,
+  "output_ready": true,
+  "validation_ready": true,
+  "live_operations_enabled": false,
+  "next_step": "prepare_next_project_specific_generator_extension"
+}

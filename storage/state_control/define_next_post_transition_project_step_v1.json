@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "DEFINE_NEXT_POST_TRANSITION_PROJECT_STEP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_CHAT_CONTINUATION_AFTER_TRANSITION_READY_V1",
+  "input_status": "OK",
+  "current_mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "transition_package_final_ready": true,
+  "destructive_actions_still_forbidden": true,
+  "archive_move_started": false,
+  "delete_started": false,
+  "selected_post_transition_scope": "prepare_controlled_cleanup_decision_gate_v1",
+  "selection_reason": "transition package is complete; next safe project step is to define a cleanup decision gate before any archive or delete action",
+  "forbidden_now": [
+    "archive_move",
+    "delete",
+    "destructive_cleanup_execution",
+    "parallel_branching",
+    "live_execution"
+  ],
+  "next_allowed_action": "prepare_controlled_cleanup_decision_gate_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

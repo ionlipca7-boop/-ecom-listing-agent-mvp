@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_APPROVAL_REQUEST_LAYER_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_file": "storage\\gates\\runner_execution_gate_v1.json",
+  "approval_required": true,
+  "execution_allowed_now": false,
+  "block_reason": "EXPLICIT_APPROVAL_REQUIRED",
+  "runner_action_now": "DO_NOT_EXECUTE_LIVE",
+  "request_summary": {
+    "project_specific_only": true,
+    "live_execution_still_blocked": true,
+    "data_ready": true,
+    "has_title": true,
+    "has_price": true,
+    "has_description_html": true,
+    "sufficient_images": true
+  },
+  "requested_decision": "APPROVE_OR_KEEP_BLOCKED",
+  "default_decision": "KEEP_BLOCKED",
+  "next_step": "build_runner_approval_record_layer_v1"
+}

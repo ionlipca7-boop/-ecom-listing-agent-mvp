@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "INVENTORY_READ_LAYER_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GENERATOR_OUTPUT_V2",
+  "input_status": "OK",
+  "inventory_read_required": true,
+  "read_mode": "existing_inventory_lookup",
+  "execution_still_blocked": true
+}

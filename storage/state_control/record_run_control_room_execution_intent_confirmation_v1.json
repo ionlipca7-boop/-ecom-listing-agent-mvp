@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "RECORD_RUN_CONTROL_ROOM_EXECUTION_INTENT_CONFIRMATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "AWAIT_RUN_CONTROL_ROOM_EXECUTION_INTENT_CONFIRMATION_V1",
+  "input_status": "OK",
+  "approval_status": "APPROVED",
+  "run_control_room_execution_gate_confirmed": true,
+  "run_control_room_execution_intent_prepared": true,
+  "run_control_room_execution_intent_confirmed": true,
+  "execution_intent": "RUN_CONTROL_ROOM_ENTRYPOINT_READY",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "single_entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "prepare_run_control_room_pre_execute_review_v1"
+}

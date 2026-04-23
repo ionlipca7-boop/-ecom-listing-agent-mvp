@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "core_memory": [
+    "storage\\memory\\last_context.json",
+    "storage\\memory\\system_learning_rules_v1.json",
+    "storage\\memory\\adapter_001_lessons_v1.json",
+    "storage\\memory\\lessons\\offer_update_rules_v1.json"
+  ],
+  "core_archive": [
+    "storage\\memory\\archive\\transition_2026_04_18_chat1.json",
+    "storage\\memory\\archive\\transition_2026_04_18_chat2.json",
+    "storage\\memory\\archive\\transition_2026_04_18_chat3.json"
+  ],
+  "active_adapter_001": [
+    "storage\\exports\\adapter_001_live_inventory_fetch_v1.json",
+    "storage\\exports\\adapter_001_compare_inventory_v1.json",
+    "storage\\exports\\adapter_001_title_selected_v1.json",
+    "storage\\exports\\adapter_001_description_v1.json",
+    "storage\\exports\\adapter_001_specifics_v1.json",
+    "storage\\exports\\adapter_001_images_raw.json",
+    "storage\\exports\\adapter_001_images_final_v1.json",
+    "storage\\exports\\adapter_001_sales_config_v1.json",
+    "storage\\exports\\adapter_001_live_revise_package_v1.json"
+  ],
+  "cleanup_candidates_note": "root_has_cmd_artifacts_and_old_duplicate_runs",
+  "next_decision": "build_cleanup_candidates_list_before_any_delete"
+}

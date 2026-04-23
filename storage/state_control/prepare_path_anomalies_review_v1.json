@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PATH_ANOMALIES_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_GIT_CLEANUP_BUCKET_DECISION_GATE_V1",
+  "input_status": "OK",
+  "target_scope": "path_anomalies",
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "max_sample_paths": 20,
+  "full_scope_processing_forbidden": true,
+  "cleanup_forbidden": true,
+  "delete_forbidden": true,
+  "sync_forbidden": true,
+  "current_position": "path_anomalies_review_prepared",
+  "next_allowed_action": "execute_path_anomalies_sample_capture_v1"
+}

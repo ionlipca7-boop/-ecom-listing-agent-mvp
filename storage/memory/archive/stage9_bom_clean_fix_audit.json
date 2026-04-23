@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "stage": 9,
+  "action": "sanitize_utf8_bom",
+  "results": [
+    {
+      "file": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_state_hub_v1.py",
+      "exists": true,
+      "had_utf8_bom": true,
+      "compile_after": "OK",
+      "status": "REWRITTEN_UTF8_NO_BOM"
+    },
+    {
+      "file": "D:\\ECOM_LISTING_AGENT_MVP\\compact_core_preview_contract_v1.py",
+      "exists": true,
+      "had_utf8_bom": true,
+      "compile_after": "BROKEN: unterminated string literal (detected at line 55) (compact_core_preview_contract_v1.py, line 55)",
+      "status": "REWRITTEN_UTF8_NO_BOM"
+    }
+  ]
+}

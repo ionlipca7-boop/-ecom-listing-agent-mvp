@@ -1,0 +1,32 @@
+{
+  "status": "OK",
+  "layer": "BUILD_CONTROLLED_UNTRACKED_REVIEW_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_CONTROLLED_UNTRACKED_REVIEW_ENTRY_V1",
+  "input_status": "OK",
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "review_object": "untracked_project_state",
+  "untracked_total_expected": 738,
+  "review_strategy": {
+    "step_1": "capture_git_untracked_only_snapshot",
+    "step_2": "capture_top_level_untracked_distribution",
+    "step_3": "capture_limited_sample_paths_only",
+    "step_4": "classify_state_without_cleanup",
+    "step_5": "prepare_decision_gate_for_next_review_slice"
+  },
+  "forbidden_actions": {
+    "cleanup": true,
+    "delete": true,
+    "move": true,
+    "sync": true,
+    "git_push": true
+  },
+  "sample_policy": {
+    "top_level_only_first": true,
+    "limited_sample_only": true,
+    "full_mass_processing_forbidden": true
+  },
+  "branching_allowed": false,
+  "current_position": "controlled_untracked_review_plan_built",
+  "next_allowed_action": "execute_untracked_snapshot_capture_v1"
+}

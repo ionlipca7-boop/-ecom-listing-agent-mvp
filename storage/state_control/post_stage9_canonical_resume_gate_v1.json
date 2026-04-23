@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_CANONICAL_RESUME_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "POST_STAGE9_CANONICAL_ALIGNMENT_CHECKPOINT_V1",
+  "input_status": "OK",
+  "reentry_lock_confirmed": true,
+  "alignment_checkpoint_confirmed": true,
+  "canonical_resume_gate_defined": true,
+  "resume_scope": "controlled_return_from_post_stage9_reentry_to_canonical_project_flow",
+  "downstream_still_blocked_until_explicit_resume_decision": true,
+  "ready_for_resume_decision": true,
+  "next_allowed_action": "build_post_stage9_resume_decision_v1"
+}

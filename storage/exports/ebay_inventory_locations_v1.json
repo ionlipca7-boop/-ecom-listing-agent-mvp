@@ -1,0 +1,22 @@
+{
+  "total": 1,
+  "locations": [
+    {
+      "name": "ECOM DE MAIN LOCATION",
+      "location": {
+        "address": {
+          "addressLine1": "Musterstrasse 1",
+          "city": "Berlin",
+          "postalCode": "10115",
+          "country": "DE"
+        },
+        "locationId": "4FA31C653B687249E0643CFDFEF0B150"
+      },
+      "locationTypes": [
+        "WAREHOUSE"
+      ],
+      "merchantLocationKey": "ECOM_DE_LOC_1",
+      "merchantLocationStatus": "ENABLED"
+    }
+  ]
+}

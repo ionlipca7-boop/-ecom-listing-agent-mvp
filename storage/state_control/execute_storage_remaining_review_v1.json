@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_STORAGE_REMAINING_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_STORAGE_REMAINING_REVIEW_V1",
+  "input_status": "OK",
+  "storage_review_executed": true,
+  "review_mode": "READ_ONLY",
+  "current_position": "storage_remaining_review_executed",
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "prepare_storage_remaining_review_summary_v1"
+}

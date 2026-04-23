@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "http_status": 200,
+  "access_token_saved": true,
+  "refresh_token_saved": true,
+  "expires_in": 7200,
+  "refresh_token_expires_in": 47304000,
+  "token_type": "User Access Token"
+}

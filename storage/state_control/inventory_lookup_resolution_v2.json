@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "INVENTORY_LOOKUP_RESOLUTION_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INVENTORY_READ_CONTRACT_V2",
+  "input_status": "OK",
+  "resolution_path_selected": "product_registry_resolution_path",
+  "lookup_ready": true
+}

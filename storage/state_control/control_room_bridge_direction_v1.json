@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_BRIDGE_DIRECTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "architecture_bridge": {
+    "A": "GitHub_source_of_truth",
+    "B": "run_control_room.py_permanent_runtime_bridge",
+    "C": "n8n_trigger_bridge"
+  },
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "live_execution_allowed": false,
+  "parallel_branches_allowed": false,
+  "next_allowed_action": "build_control_room_runtime_bridge_v1"
+}

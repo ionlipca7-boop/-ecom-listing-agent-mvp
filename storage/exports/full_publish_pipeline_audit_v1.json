@@ -1,0 +1,4 @@
+{
+  "status": 401,
+  "text": "{\n  \"errors\": [\n    {\n      \"errorId\": 1001,\n      \"domain\": \"OAuth\",\n      \"category\": \"REQUEST\",\n      \"message\": \"Invalid access token\",\n      \"longMessage\": \"Invalid access token. Check the value of the Authorization HTTP request header.\"\n    }\n  ]\n}"
+}
