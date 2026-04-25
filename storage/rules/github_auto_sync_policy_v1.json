@@ -1,0 +1,21 @@
+{
+  "status": "ACTIVE",
+  "layer": "GITHUB_AUTO_SYNC_POLICY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "purpose": "prevent loss of control-room progress between chats",
+  "rule": "after every important control-room layer or before a new chat, archive state and push to GitHub branch before continuing",
+  "required_sync_steps": [
+    "write state_control json",
+    "write archive json when route changes or chat ends",
+    "git add storage drafts rules approval market images metadata",
+    "git commit with layer name and date",
+    "git push current branch",
+    "verify via GitHub fetch/search before continuing"
+  ],
+  "safe_default_branch_strategy": "work on control-room-sync branch first, merge only after explicit approval",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "n8n_status": "NOT_FOUND_IN_CONNECTED_TOOLS_OR_REPOSITORY_SEARCH",
+  "next_allowed_action": "continue_from_await_human_approval_v1"
+}
