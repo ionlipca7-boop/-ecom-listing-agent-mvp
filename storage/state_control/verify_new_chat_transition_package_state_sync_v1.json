@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_NEW_CHAT_TRANSITION_PACKAGE_STATE_SYNC_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REPAIR_NEW_CHAT_TRANSITION_PACKAGE_STATE_SYNC_V1",
+  "input_status": "OK",
+  "stable_front_state_sync_verified": true,
+  "stable_front_protection_rules_verified": true,
+  "archive_move_started": false,
+  "delete_started": false,
+  "next_allowed_action": "new_chat_transition_ready_final_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

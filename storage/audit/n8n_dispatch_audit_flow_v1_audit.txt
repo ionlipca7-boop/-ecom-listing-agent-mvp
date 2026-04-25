@@ -1,0 +1,9 @@
+N8N_DISPATCH_AUDIT_FLOW_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+audit_flow_version = v1
+audit_sequence_count = 6
+execution_allowed = False
+audit_flow_ready = True
+next_allowed_action = build_n8n_dispatch_payload_contract_v1

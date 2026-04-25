@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "total_products": 2,
+    "ready": 0,
+    "draft": 2
+  },
+  "items": [
+    {
+      "sku": "_template",
+      "status": "draft",
+      "photo_count": 0,
+      "checks": {
+        "product_json_exists": true,
+        "sku_present": false,
+        "title_present": false,
+        "description_present": false,
+        "price_present": false,
+        "photos_present": false,
+        "photos_full_set_7": false
+      },
+      "missing": [
+        "sku_present",
+        "title_present",
+        "description_present",
+        "price_present",
+        "photos_present",
+        "photos_full_set_7"
+      ],
+      "recommendations": [
+        "ADD_TITLE",
+        "ADD_DESCRIPTION",
+        "ADD_PRICE",
+        "ADD_PHOTOS"
+      ]
+    },
+    {
+      "sku": "SKU-001",
+      "status": "draft",
+      "photo_count": 0,
+      "checks": {
+        "product_json_exists": true,
+        "sku_present": true,
+        "title_present": true,
+        "description_present": true,
+        "price_present": true,
+        "photos_present": false,
+        "photos_full_set_7": false
+      },
+      "missing": [
+        "photos_present",
+        "photos_full_set_7"
+      ],
+      "recommendations": [
+        "ADD_PHOTOS"
+      ]
+    }
+  ]
+}

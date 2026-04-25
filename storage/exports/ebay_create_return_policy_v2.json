@@ -1,0 +1,63 @@
+{
+  "name": "ECOM_DE_RETURN_STD_V1",
+  "description": "Standard DE return policy created by ECOM Listing Agent MVP",
+  "marketplaceId": "EBAY_DE",
+  "categoryTypes": [
+    {
+      "name": "ALL_EXCLUDING_MOTORS_VEHICLES"
+    }
+  ],
+  "returnsAccepted": true,
+  "returnPeriod": {
+    "value": 30,
+    "unit": "DAY"
+  },
+  "returnShippingCostPayer": "BUYER",
+  "internationalOverride": {
+    "returnsAccepted": true,
+    "returnPeriod": {
+      "value": 30,
+      "unit": "DAY"
+    },
+    "returnShippingCostPayer": "BUYER"
+  },
+  "returnPolicyId": "257755877024",
+  "warnings": [
+    {
+      "errorId": 10005,
+      "domain": "ReturnPolicyService",
+      "message": "Die Rückgabemethode in der Anfrage wird auf dieser Website nicht unterstützt.",
+      "longMessage": "Die Rückgabemethode in der Anfrage wird auf dieser Website nicht unterstützt.",
+      "inputRefIds": [
+        "domestic.MoneyBackOrReplacement"
+      ],
+      "outputRefIds": [
+        "domestic.returnMethod"
+      ],
+      "parameters": [
+        {
+          "name": "domainErrorId",
+          "value": "200002"
+        }
+      ]
+    },
+    {
+      "errorId": 10005,
+      "domain": "ReturnPolicyService",
+      "message": "Die Rückgabemethode in der Anfrage wird auf dieser Website nicht unterstützt.",
+      "longMessage": "Die Rückgabemethode in der Anfrage wird auf dieser Website nicht unterstützt.",
+      "inputRefIds": [
+        "international.MoneyBackOrReplacement"
+      ],
+      "outputRefIds": [
+        "international.returnMethod"
+      ],
+      "parameters": [
+        {
+          "name": "domainErrorId",
+          "value": "200002"
+        }
+      ]
+    }
+  ]
+}

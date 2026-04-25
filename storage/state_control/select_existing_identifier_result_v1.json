@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "SELECT_EXISTING_IDENTIFIER_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "selected_result_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\live_identifier_resolution_result_v1.json",
+  "result_exists": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "verify_existing_identifier_result_v1",
+  "timestamp": "2026-04-25T11:29:36.638477+00:00"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "status":  "OK",
+    "imageUrls":  [
+                      "cd /d D:\\ECOM_LISTING_AGENT_MVP",
+                      "if not exist storage\\exports mkdir storage\\exports",
+                      "powershell -NoProfile -Command \"$u=(Get-Clipboard).Trim(); $obj=@{status=\u0027OK\u0027; decision=\u0027adapter_001_image_url_saved\u0027; product_key=\u0027adapter_001\u0027; imageUrls=@($u)} | ConvertTo-Json -Depth 5; Set-Content -Path \u0027storage\\exports\\adapter_001_image_urls_v1.json\u0027 -Value $obj -Encoding UTF8\""
+                  ],
+    "product_key":  "adapter_001",
+    "decision":  "adapter_001_image_url_saved"
+}

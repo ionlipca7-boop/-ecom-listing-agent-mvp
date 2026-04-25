@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_FINAL_IMAGE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "image_review_created": true,
+  "image_review_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\final_image_review_v1.json",
+  "images_status": "NOT_READY",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "await_product_images_v1",
+  "timestamp": "2026-04-25T10:25:09.519421+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_DIRECTION_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_stage": 9,
+  "last_confirmed_completed_stage": 9,
+  "current_phase": "POST_STAGE9_MANAGEMENT_CHECKPOINT",
+  "direction_plan_defined": true,
+  "current_state": {
+    "compact_core_confirmed": true,
+    "post_stage9_control_check_confirmed": true,
+    "technical_build_allowed_now": false,
+    "live_allowed_now": false,
+    "parallel_branches_allowed": false
+  },
+  "allowed_paths": [
+    "preview_execution_validation_planning",
+    "runner_path_validation_planning",
+    "project_specific_management_sequencing"
+  ],
+  "forbidden_paths": [
+    "new_technical_layer_before_direction_plan_lock",
+    "live_execution_jump",
+    "n8n_jump",
+    "parallel_branching",
+    "return_to_pre_stage9_canonical_revalidation_as_next_step"
+  ],
+  "risk_zones": [
+    "premature_technical_build",
+    "execution_without_management_lock",
+    "format_drift",
+    "multi_step_drift"
+  ],
+  "selected_direction": "PREVIEW_EXECUTION_VALIDATION_PLANNING_V1",
+  "selection_reason": "validate correct post_stage9 management direction before any technical expansion",
+  "next_phase": "PREVIEW_EXECUTION_VALIDATION_PLANNING_V1",
+  "do_now": "build_preview_execution_validation_planning_v1",
+  "one_next_step": "build_preview_execution_validation_planning_v1",
+  "execution_rules": [
+    "project_specific_only",
+    "one_step_only",
+    "audit_first",
+    "no_live",
+    "no_parallel_branches",
+    "no_new_technical_layer_before_management_confirmation"
+  ]
+}

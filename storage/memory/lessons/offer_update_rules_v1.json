@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "offer_update",
+  "lessons": [
+    "http_200_is_success_for_offer_update",
+    "warnings_are_not_errors",
+    "do_not_block_on_policy_warning",
+    "always_use_auto_offer_id_from_memory"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "layer": "PROJECT_MANIFEST_V1",
+  "role": "ROOT_CONTROL_DOCUMENT",
+  "root_path": "D:\\ECOM_LISTING_AGENT_MVP",
+  "phase_context": {
+    "phase_8_status": "CANON_COMPLETE",
+    "transition_verified": true,
+    "current_stage": "POST_PHASE_8_TRANSITION_VERIFIED"
+  },
+  "important_paths": [
+    "storage\\control_layer",
+    "storage\\state_transition",
+    "storage\\audit",
+    "storage\\memory\\archive"
+  ],
+  "source_of_truth": [
+    "storage\\control_layer\\project_manifest.json",
+    "storage\\state_transition\\compact_core_transition_front_v1_verified.json",
+    "storage\\audit\\canon_9_step_audit_v1.txt",
+    "storage\\memory\\archive\\canon_9_step_position_summary_v1.json"
+  ],
+  "agents": [
+    "control_agent",
+    "archivist_agent",
+    "runner_agent"
+  ],
+  "canonical_order": [
+    "manifest",
+    "rules",
+    "state",
+    "history",
+    "control_agent",
+    "archivist_agent",
+    "runner_agent",
+    "n8n_orchestration",
+    "compact_core_migration"
+  ],
+  "hard_rules": [
+    "no_live_actions_before_control_layer_complete",
+    "always_run_canon_audit_before_new_chat",
+    "stop_and_check_archive_if_unclear",
+    "one_step_at_a_time"
+  ],
+  "last_successful_action": "canon_9_step_audit_completed",
+  "next_allowed_action": "build_control_rules_v1",
+  "next_after_that": "build_project_state_v1"
+}

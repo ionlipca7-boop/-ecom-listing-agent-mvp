@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED",
+  "layer": "BUILD_LIVE_INVENTORY_READ_RETRY_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_identifier_resolved": false,
+  "allowed_next": "execute_guarded_live_ebay_readonly_wrapper_v1",
+  "reason": "retry read-only inventory call only after identifier resolution",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "repair_live_identifier_resolution_v1",
+  "timestamp": "2026-04-25T11:27:48.971430+00:00"
+}

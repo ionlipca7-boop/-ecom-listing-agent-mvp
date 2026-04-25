@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "RETURN_TO_CANON_TRANSITION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REENTRY_ALIGNMENT_CHECKPOINT_V1",
+  "input_status": "OK",
+  "returned_to_canonical_line": true,
+  "canonical_stage_restored": "RUNNER_LAYER_READY_FOR_CONTROLLED_FIX",
+  "execution_allowed": false,
+  "runner_execution_allowed": false,
+  "live_execution_allowed": false,
+  "next_allowed_action": "inspect_runner_execution_logic_v1"
+}

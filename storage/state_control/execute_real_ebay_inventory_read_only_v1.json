@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "layer": "EXECUTE_REAL_EBAY_INVENTORY_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_REAL_EBAY_INVENTORY_READ_EXECUTION_GATE_V1",
+  "api_call_used": false,
+  "read_only": true,
+  "items_read": 0,
+  "snapshot_saved": false,
+  "error": "HTTPError: HTTP Error 403: Forbidden",
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "repair_or_refresh_ebay_access_token_v1",
+  "timestamp": "2026-04-25T08:39:08.300633+00:00"
+}

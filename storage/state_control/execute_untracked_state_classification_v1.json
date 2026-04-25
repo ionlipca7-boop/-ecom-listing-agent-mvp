@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_UNTRACKED_STATE_CLASSIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_STATE_CLASSIFICATION_V1",
+  "input_status": "OK",
+  "untracked_lines_count": 738,
+  "classification_summary": {
+    "root_level_items": 635,
+    "storage_items": 103,
+    "directory_markers": 35,
+    "python_files": 570,
+    "json_files": 126,
+    "text_files": 5,
+    "pyc_files": 0
+  },
+  "read_only_operation": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "untracked_state_classified",
+  "next_allowed_action": "prepare_untracked_state_resolution_decision_v1"
+}

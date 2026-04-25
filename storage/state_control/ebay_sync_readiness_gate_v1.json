@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "EBAY_SYNC_READINESS_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "block": "B_EBAY_SYNC",
+  "current_result": "identifier_ready_but_56_active_listings_not_yet_fetched",
+  "finished": false,
+  "next_safe_step": "select_real_active_listings_fetch_executor_v1",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "timestamp": "2026-04-25T11:35:52.600994+00:00"
+}

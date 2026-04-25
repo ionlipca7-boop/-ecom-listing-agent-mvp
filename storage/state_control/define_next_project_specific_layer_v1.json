@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "DEFINE_NEXT_PROJECT_SPECIFIC_LAYER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROL_ROOM_INTERNAL_BRIDGE_FINAL_V1",
+  "bridge_final_confirmed": true,
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "live_execution": false,
+  "parallel_branches": false,
+  "selected_project_path": "new_listing_from_clone_baseline_flow",
+  "next_allowed_action": "prepare_new_listing_project_path_v1"
+}

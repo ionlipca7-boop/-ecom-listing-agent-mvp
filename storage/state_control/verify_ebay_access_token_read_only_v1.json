@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_EBAY_ACCESS_TOKEN_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "token_refreshed": true,
+  "token_refresh_http_status": 200,
+  "read_only_verify_attempted": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "secrets_printed": false,
+  "timestamp": "2026-04-25T13:46:46.199107+00:00",
+  "next_allowed_action": "reopen_phase4_one_live_listing_after_token_repair_v1"
+}

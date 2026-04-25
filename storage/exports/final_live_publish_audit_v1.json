@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "decision": "final_live_publish_recorded",
+  "pipeline_status": "LIVE_OK",
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "offerId": "153187814011",
+  "listingId": "318164247570",
+  "inventory_status": "OK",
+  "inventory_decision": "inventory_item_created",
+  "offer_status": "OK",
+  "offer_decision": "real_offer_created",
+  "publish_status": "OK",
+  "publish_decision": "real_offer_published",
+  "publish_http_status": 200,
+  "publish_warnings": [
+    {
+      "errorId": 25072,
+      "domain": "API_INVENTORY",
+      "subdomain": "Selling",
+      "category": "REQUEST",
+      "message": "Verkaufsprovision erlassen."
+    }
+  ],
+  "source_files": {
+    "inventory": "real_inventory_check_or_create_audit_v1.json",
+    "location": "resolved_merchant_location_key_v1.json",
+    "offer": "real_offer_create_audit_v2.json",
+    "publish": "real_offer_publish_audit_v1.json"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_STATUS_SNAPSHOT_LAYER_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "pipeline": {
+    "preview_ready": true,
+    "validation_ready": true,
+    "render_ready": true,
+    "live_payload_ready": true,
+    "guard_ready": true,
+    "gate_ready": true,
+    "approval_record_ready": true
+  },
+  "listing_summary": {
+    "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+    "price": 6.75,
+    "currency": "EUR",
+    "image_count": 3,
+    "has_html": true
+  },
+  "control_summary": {
+    "guard_result": "LIVE_BLOCKED_UNTIL_EXPLICIT_APPROVAL",
+    "execution_allowed": false,
+    "block_reason": "EXPLICIT_APPROVAL_REQUIRED",
+    "approval_status": "PENDING_EXPLICIT_APPROVAL",
+    "final_decision": "KEEP_BLOCKED",
+    "runner_live_permission": false
+  },
+  "next_step": "archive_runner_status_and_prepare_transition_checkpoint_v1"
+}

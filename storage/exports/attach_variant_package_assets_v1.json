@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-04-15T17:01:45Z",
+  "attach_status": "READY",
+  "next_step": "PACKAGE_WITH_ASSETS_READY",
+  "package_id": "variant_package_20260415_182127",
+  "package_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_variant_packages\\variant_package_20260415_182127",
+  "photos_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_variant_packages\\variant_package_20260415_182127\\photos",
+  "expected_count": 4,
+  "copied_count": 4,
+  "missing_count": 0,
+  "copied_files": [
+    "017fb548-a72c-4bf5-b1e9-908adcbabf60.png",
+    "5251f6fb-ed61-4d2a-b3ec-d18828a1e479.png",
+    "a676fbda-2b56-4c02-913b-53fb1b3a5f4a.png",
+    "c915ea5e-0acf-4127-b813-48af7784475b.png"
+  ],
+  "missing_files": []
+}

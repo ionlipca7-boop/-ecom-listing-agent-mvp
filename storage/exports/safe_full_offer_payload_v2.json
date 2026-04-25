@@ -1,0 +1,46 @@
+{
+  "status": "OK",
+  "decision": "safe_full_offer_payload_v2_built",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "item_id": "318166440509",
+  "offer_id": "153365657011",
+  "critical_fields_present": {
+    "price": true,
+    "listingPolicies": true,
+    "merchantLocationKey": true,
+    "listingDescription": true,
+    "availableQuantity": true,
+    "imageUrls": true
+  },
+  "missing_fields": [],
+  "payload": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 12,
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "listingDescription": "<h2>USB-C auf USB-A OTG Adapter USB 3.0</h2><p><b>Kompakt, schnell und alltagstauglich.</b></p><p>Dieser praktische OTG Adapter verbindet USB-A Geraete mit einem USB-C Anschluss und eignet sich ideal fuer Smartphone, Tablet, Laptop und viele weitere kompatible Geraete.</p><ul><li>USB-C auf USB-A Adapter</li><li>USB 3.0 fuer schnelle Datenuebertragung</li><li>Kompaktes Format fuer unterwegs</li><li>Passend fuer viele moderne Geraete mit USB-C</li><li>Ideal fuer USB-Stick, Maus, Tastatur und mehr</li></ul><p><b>Vorteile:</b></p><ul><li>Schnelle und stabile Verbindung</li><li>Einfache Nutzung ohne komplizierte Einrichtung</li><li>Leicht, platzsparend und reisetauglich</li></ul><p><b>Hinweis:</b> Bitte vor dem Kauf die Kompatibilitaet Ihres Geraets pruefen.</p><p><b>Schneller Versand aus Deutschland.</b></p>",
+    "listingPolicies": {
+      "eBayPlusIfEligible": false
+    },
+    "pricingSummary": {
+      "price": {
+        "value": "4.01",
+        "currency": "EUR"
+      }
+    },
+    "imageUrls": [
+      "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+      "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+      "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+      "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+      "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+      "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+      "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+      "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+      "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+    ]
+  },
+  "rule": "no_partial_offer_updates_use_full_payload",
+  "next_step": "build_real_full_offer_revise_v1"
+}

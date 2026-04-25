@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "EBAY_PUBLISH_LOCKED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "APPROVAL_GATE_V1",
+  "publish_system_prepared": true,
+  "publish_allowed": false,
+  "live_action_allowed": false,
+  "tokens_required": true,
+  "tokens_in_code_allowed": false,
+  "secrets_location": "storage/secrets or .env only",
+  "git_secret_rule": "storage/secrets must not go to Git",
+  "locked_rules": [
+    "no_publish_without_approval",
+    "no_live_ebay_api_call",
+    "no_token_in_code",
+    "no_git_push",
+    "publish_adapter_locked_until_operator_approval"
+  ],
+  "next_allowed_action": "prepare_server_runtime_plan_v1"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "EXCHANGE_EBAY_AUTH_CODE_FOR_TOKENS_V1",
+  "http_status": 200,
+  "has_access_token": true,
+  "has_refresh_token": true,
+  "expires_in": 7200,
+  "refresh_token_expires_in": 47304000,
+  "error": null,
+  "error_description": null,
+  "secret_values_printed": false,
+  "read_only": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "retry_sell_inventory_read_only_sync_v2",
+  "timestamp": "2026-04-25T09:16:34.300422+00:00"
+}

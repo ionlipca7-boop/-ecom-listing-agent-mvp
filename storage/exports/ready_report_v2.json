@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "total_products": 1,
+    "ready": 1,
+    "draft": 0,
+    "skipped_dirs": [
+      "_template"
+    ]
+  },
+  "items": [
+    {
+      "sku": "SKU-001",
+      "status": "ready",
+      "photo_count": 4,
+      "checks": {
+        "product_json_exists": true,
+        "sku_present": true,
+        "title_present": true,
+        "description_present": true,
+        "price_present": true,
+        "photos_present": true,
+        "photos_full_set_7": false
+      },
+      "missing": [
+        "photos_full_set_7"
+      ],
+      "recommendations": [
+        "COMPLETE_7_PHOTO_SET"
+      ]
+    }
+  ]
+}

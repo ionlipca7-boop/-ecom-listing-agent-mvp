@@ -1,0 +1,35 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "OK",
+  "decision": "working_listing_baseline_v1_archived",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "item_id": "318166440509",
+  "listing_status": "PUBLISHED",
+  "listing_id": "318166440509",
+  "price": "4.01",
+  "currency": "EUR",
+  "inventory_picture_count": 9,
+  "offer_picture_count": 0,
+  "inventory_image_urls": [
+    "https://i.ebayimg.com/images/g/7MsAAeSw7kpp4-UD/s-l1600.webp",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/dq4AAeSwmR5p4~gJ/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/g9EAAeSwQdhp4~gL/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/QgoAAeSwK89p4~gN/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/oEYAAeSwtppp4~gO/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/IIoAAeSwf8Fp4~gP/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/GXIAAeSwEdFp4~gR/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/tY0AAeSwpzNp4~gS/$_1.JPG?set_id=8800005007",
+    "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/4BsAAeSwa5xp4~gT/$_1.JPG?set_id=8800005007"
+  ],
+  "key_result": "live_listing_visually_confirmed_with_multiple_photos",
+  "rules_confirmed": [
+    "photo_path_external_to_eps_to_inventory",
+    "mandatory_aspects_required_for_inventory_update",
+    "offer_imageUrls_not_source_of_truth_for_this_flow",
+    "inventory_plus_live_page_are_truth_for_photo_verification",
+    "full_payload_preferred_over_partial_updates"
+  ],
+  "next_step": "improve_title_description_and_photo_order_v1"
+}

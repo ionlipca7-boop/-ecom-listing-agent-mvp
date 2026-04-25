@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_UNTRACKED_ITEM_REVIEW_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_MANUAL_UNTRACKED_ITEM_REVIEW_V1",
+  "input_status": "OK",
+  "manual_item_review_result_built": true,
+  "untracked_only_snapshot_ready": true,
+  "real_untracked_review_started": true,
+  "cleanup_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "prepare_untracked_keep_move_matrix_v1"
+}

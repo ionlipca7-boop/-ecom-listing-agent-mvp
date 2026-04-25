@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_ARCHIVE_ROOT_PATH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CREATE_CLEANUP_EXECUTION_GATE_V1",
+  "input_status": "OK",
+  "archive_root_created_if_missing": true,
+  "archive_root_verified_after_repair": true,
+  "archive_root_path": "storage\\\\archive_candidates\\\\phase_cleanup_v1\\\\",
+  "archive_scope_already_verified": true,
+  "keep_scope_already_verified": true,
+  "delete_allowed_now": false,
+  "cleanup_execution_allowed_now": false,
+  "next_allowed_action": "verify_archive_root_path_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

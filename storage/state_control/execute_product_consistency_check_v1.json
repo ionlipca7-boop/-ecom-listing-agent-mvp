@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PRODUCT_CONSISTENCY_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "consistency_report_created": true,
+  "consistency_status": "NEEDS_MANUAL_VISION_REVIEW",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "manual_confirm_images_same_product_v1",
+  "timestamp": "2026-04-25T10:31:23.317554+00:00"
+}

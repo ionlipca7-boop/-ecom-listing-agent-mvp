@@ -1,0 +1,115 @@
+{
+  "marketplace_id": "EBAY_DE",
+  "status": "OK",
+  "results": {
+    "fulfillment": {
+      "http_status": 200,
+      "data": {
+        "total": 1,
+        "fulfillmentPolicies": [
+          {
+            "name": "ECOM_DE_FULFILLMENT_STD_V1",
+            "description": "Standard DE fulfillment policy created by ECOM Listing Agent MVP",
+            "marketplaceId": "EBAY_DE",
+            "categoryTypes": [
+              {
+                "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+                "default": false
+              }
+            ],
+            "handlingTime": {
+              "value": 1,
+              "unit": "DAY"
+            },
+            "shipToLocations": {},
+            "shippingOptions": [
+              {
+                "optionType": "DOMESTIC",
+                "costType": "FLAT_RATE",
+                "shippingServices": [
+                  {
+                    "sortOrder": 1,
+                    "shippingCarrierCode": "DHL",
+                    "shippingServiceCode": "DE_DHLPaket",
+                    "shippingCost": {
+                      "value": "0.0",
+                      "currency": "EUR"
+                    },
+                    "additionalShippingCost": {
+                      "value": "0.0",
+                      "currency": "EUR"
+                    },
+                    "freeShipping": true,
+                    "buyerResponsibleForShipping": false,
+                    "buyerResponsibleForPickup": false
+                  }
+                ],
+                "shippingDiscountProfileId": "0",
+                "shippingPromotionOffered": false
+              }
+            ],
+            "globalShipping": false,
+            "pickupDropOff": false,
+            "freightShipping": false,
+            "fulfillmentPolicyId": "257755855024"
+          }
+        ]
+      }
+    },
+    "payment": {
+      "http_status": 200,
+      "data": {
+        "total": 1,
+        "paymentPolicies": [
+          {
+            "name": "ECOM_DE_PAYMENT_STD_V2_%Y%m%d_%H%M%S",
+            "description": "ECOM OS DE payment policy",
+            "marketplaceId": "EBAY_DE",
+            "categoryTypes": [
+              {
+                "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+                "default": false
+              }
+            ],
+            "paymentMethods": [],
+            "immediatePay": false,
+            "paymentPolicyId": "257755913024"
+          }
+        ]
+      }
+    },
+    "return": {
+      "http_status": 200,
+      "data": {
+        "total": 1,
+        "returnPolicies": [
+          {
+            "name": "ECOM_DE_RETURN_STD_V1",
+            "description": "Standard DE return policy created by ECOM Listing Agent MVP",
+            "marketplaceId": "EBAY_DE",
+            "categoryTypes": [
+              {
+                "name": "ALL_EXCLUDING_MOTORS_VEHICLES"
+              }
+            ],
+            "returnsAccepted": true,
+            "returnPeriod": {
+              "value": 30,
+              "unit": "DAY"
+            },
+            "returnShippingCostPayer": "BUYER",
+            "internationalOverride": {
+              "returnsAccepted": true,
+              "returnPeriod": {
+                "value": 30,
+                "unit": "DAY"
+              },
+              "returnShippingCostPayer": "BUYER"
+            },
+            "returnPolicyId": "257755877024"
+          }
+        ]
+      }
+    }
+  }
+}

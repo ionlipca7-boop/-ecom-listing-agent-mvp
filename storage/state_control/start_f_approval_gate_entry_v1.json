@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_F_APPROVAL_GATE_ENTRY_V1",
+  "input_layer": "FINISH_E_PRICE_RESEARCH_V1",
+  "current_block": "F_APPROVAL_GATE",
+  "previous_block_finished": "E_PRICE_RESEARCH",
+  "approval_required": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_f_approval_gate_local_scan_v1",
+  "timestamp": "2026-04-25T12:04:49.929995+00:00"
+}

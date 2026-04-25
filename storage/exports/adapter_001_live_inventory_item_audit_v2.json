@@ -1,0 +1,10 @@
+{
+  "status": "ERROR",
+  "decision": "adapter_001_live_inventory_item_v2_fetch_failed",
+  "http_status": 401,
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "has_title": false,
+  "has_description": false,
+  "image_urls_count": 0,
+  "aspects_count": 0
+}

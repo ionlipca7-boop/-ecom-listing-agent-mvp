@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "decision": "real_inventory_read_probe_v1_completed",
+  "source_file": "storage\\exports\\real_inventory_path_choice_v1.json",
+  "real_inventory_read_probe_version": "v1",
+  "chosen_path": "real_inventory_read_first",
+  "read_strategy": "read_live_inventory_before_full_update",
+  "probe_checks": {
+    "path_is_read_first": true,
+    "ready_for_read_probe": true
+  },
+  "ready_for_real_inventory_read_call": true,
+  "next_step": "build_real_inventory_read_call_v1"
+}

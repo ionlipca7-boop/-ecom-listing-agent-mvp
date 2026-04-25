@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_AFTER_POST_STORAGE_REVIEW_STOP_V1",
+  "last_confirmed_layer": "EXECUTE_POST_STORAGE_REVIEW_STOP_OR_NEXT_V1",
+  "current_position": "post_storage_review_stopped",
+  "next_allowed_action": "read_state_and_confirm_new_entry_layer",
+  "confirmed_facts": {
+    "post_storage_review_chain_complete": true,
+    "final_outcome": "STOP",
+    "cleanup_allowed": false,
+    "delete_allowed": false,
+    "sync_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must start from state verification and explicit next entry confirmation only"
+}

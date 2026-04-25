@@ -1,0 +1,26 @@
+{
+  "sku": "",
+  "name": "",
+  "brand": "",
+  "category": "",
+  "power": "",
+  "length": "",
+  "color": "",
+  "compatibility": [],
+  "features": [],
+  "cost_price": 0,
+  "target_price": 0,
+  "notes": "",
+  "status": "draft",
+  "photos": {
+    "main": "photos/01_main.jpg",
+    "angle": "photos/02_angle.jpg",
+    "ports": "photos/03_ports.jpg",
+    "specs": "photos/04_specs.jpg",
+    "size": "photos/05_size.jpg",
+    "package": "photos/06_package.jpg",
+    "lifestyle": "photos/07_lifestyle.jpg"
+  },
+  "created_at": "",
+  "updated_at": ""
+}

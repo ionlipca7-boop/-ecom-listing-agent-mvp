@@ -1,0 +1,96 @@
+{
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "locale": "de_DE",
+  "product": {
+    "title": "USB-C auf USB-A OTG Adapter USB 3.0 Datenadapter Handy Tablet",
+    "aspects": {
+      "Produktart": [
+        "OTG Adapter"
+      ],
+      "Besonderheiten": [
+        "Kompakt",
+        "Tragbar",
+        "OTG Funktion"
+      ],
+      "Modellkompatibilitaet": [
+        "Universal"
+      ],
+      "Hohe": [
+        "1"
+      ],
+      "Material": [
+        "Kunststoff"
+      ],
+      "Lange": [
+        "3"
+      ],
+      "Breite": [
+        "1"
+      ],
+      "Herstellernummer": [
+        "Nicht zutreffend"
+      ],
+      "Marke": [
+        "Markenlos"
+      ],
+      "Farbe": [
+        "Schwarz"
+      ],
+      "Version": [
+        "USB 3.0"
+      ],
+      "Markenkompatibilitaet": [
+        "Universal"
+      ],
+      "Ma?einheit": [
+        "Einheit"
+      ],
+      "Kompatibel mit": [
+        "Smartphone",
+        "Tablet",
+        "Laptop",
+        "USB-Stick",
+        "Maus",
+        "Tastatur"
+      ],
+      "Anschluss A": [
+        "USB-C"
+      ],
+      "Anschluss B": [
+        "USB-A"
+      ],
+      "Ursprungsland": [
+        "China"
+      ],
+      "Anzahl der Einheiten": [
+        "1"
+      ]
+    },
+    "imageUrls": [
+      "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+    ]
+  },
+  "condition": "NEW",
+  "packageWeightAndSize": {
+    "dimensions": {
+      "width": 2.0,
+      "length": 3.0,
+      "height": 1.0,
+      "unit": "CENTIMETER"
+    },
+    "weight": {
+      "value": 0.05,
+      "unit": "KILOGRAM"
+    },
+    "shippingIrregular": false
+  },
+  "availability": {
+    "shipToLocationAvailability": {
+      "quantity": 10,
+      "allocationByFormat": {
+        "auction": 0,
+        "fixedPrice": 10
+      }
+    }
+  }
+}

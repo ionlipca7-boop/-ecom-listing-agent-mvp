@@ -1,0 +1,8 @@
+TRANSITION_PHASE_8_TO_NEXT_CHAT_V1_AUDIT
+status = OK
+phase = 8
+phase_status = CANON_COMPLETE
+direction_locked = True
+selected_direction = prepare_compact_core_transition_front_v1
+execution_allowed = False
+next_step = build_compact_core_transition_front_v1

@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "GENERATION_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GENERATION_LAYER_V1",
+  "input_status": "OK",
+  "generation_layer_present": true,
+  "generation_mode_confirmed": true,
+  "routing_source_confirmed": true,
+  "generation_input_contract_confirmed": true,
+  "generation_output_contract_confirmed": true,
+  "entrypoint_confirmed": true,
+  "live_execution_still_false": true,
+  "parallel_branches_still_false": true,
+  "audit_result": "GENERATION_LAYER_CONFIRMED",
+  "next_allowed_action": "build_preview_layer_v1"
+}

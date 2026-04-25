@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_EXECUTION_START_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "MANUAL_APPROVAL_TRIGGER_V1",
+  "input_status": "APPROVED",
+  "execution_permission_granted": true,
+  "execution_mode": "CONTROLLED",
+  "live_execution_allowed": true,
+  "safety_checks_passed": true,
+  "next_allowed_action": "execute_runner_controlled_v1"
+}

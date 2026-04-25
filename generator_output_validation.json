@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "GENERATOR_OUTPUT_VALIDATION",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "checks": {
+    "status_is_ready": true,
+    "mode_is_project_specific": true,
+    "title_exists": true,
+    "title_len_le_80": true,
+    "description_exists": true,
+    "price_positive": true,
+    "draft_status_ok": true
+  },
+  "next_step": "archive_generator_validation_result"
+}

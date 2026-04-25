@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_PRE_RUNTIME_ENTRY_GATE_SAFE_V1",
+  "last_confirmed_layer": "RECORD_RUN_CONTROL_ROOM_PRE_RUNTIME_ENTRY_GATE_CONFIRMATION_V1",
+  "current_position": "pre_runtime_entry_gate_confirmation_recorded",
+  "next_allowed_action": "prepare_run_control_room_runtime_entry_permission_v1",
+  "confirmed_facts": {
+    "execution_target": "run_control_room.py",
+    "input_type": "link_input",
+    "input_value": "https://example.com/product",
+    "live_execution": false,
+    "auto_start_allowed": false,
+    "manual_start_only": true,
+    "parallel_branches": false,
+    "cleanup_allowed": false,
+    "delete_allowed": false,
+    "sync_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue strictly from runtime entry permission preparation"
+}

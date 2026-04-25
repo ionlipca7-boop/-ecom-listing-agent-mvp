@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "PHASE_REAL_INVENTORY_READ_PREP_READY",
+  "achievements": [
+    "safe_root_cleanup_completed",
+    "generator_v4_confirmed",
+    "title_recovery_layer_v1_completed",
+    "contract_normalizer_v2_completed",
+    "downstream_input_v1_promoted",
+    "publish_payload_probe_v1_fixed",
+    "publish_payload_mapper_v1_completed",
+    "real_publish_probe_v1_completed",
+    "real_publish_mapper_v1_completed",
+    "inventory_first_real_api_probe_v1_completed",
+    "inventory_full_payload_mapper_v1_completed",
+    "real_inventory_api_probe_v1_completed",
+    "real_inventory_read_path_chosen",
+    "real_inventory_read_call_v1_built",
+    "product_registry_identifier_resolution_probe_v1_completed",
+    "product_registry_lookup_call_v1_built",
+    "registry_key_injection_probe_v1_completed",
+    "registry_resolution_call_v1_built",
+    "live_identifier_resolution_result_stub_v1_created"
+  ],
+  "current_files": [
+    "storage\\exports\\generator_output_contract_v2.json",
+    "storage\\exports\\downstream_input_v1.json",
+    "storage\\exports\\publish_payload_mapper_v1.json",
+    "storage\\exports\\real_publish_mapper_v1.json",
+    "storage\\exports\\inventory_full_payload_mapper_v1.json",
+    "storage\\exports\\real_inventory_api_probe_v1.json",
+    "storage\\exports\\real_inventory_read_call_v1.json",
+    "storage\\exports\\registry_resolution_call_v1.json",
+    "storage\\exports\\live_identifier_resolution_result_stub_v1.json"
+  ],
+  "project_rules": [
+    "inventory_first_then_offer",
+    "read_live_first_then_build_full_update_payload",
+    "use_short_control_room_format",
+    "periodically_restructure_archive_and_clean_context"
+  ],
+  "next_step": "build_real_inventory_read_call_v2_with_identifier",
+  "goal_after_next_step": "perform_real_ebay_inventory_read_and_capture_live_baseline" 
+}

@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "UPDATE_APPROVAL_PACKET_WITH_IMAGES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "approval_packet_updated": true,
+  "images_status": "READY_FOR_APPROVAL",
+  "price_status": "MISSING",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_price_required_gate_v1",
+  "timestamp": "2026-04-25T10:42:20.253568+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "LISTING_IMPROVEMENT_PATH_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "POST_PREVIEW_CONTRACT_DIRECTION_DECISION_V1",
+  "input_status": "OK",
+  "direction_result": "post_preview_contract_direction_locked",
+  "selected_direction": "prepare_listing_improvement_path_gate_v1",
+  "listing_improvement_path_gate_defined": true,
+  "allowed_scope": "listing_improvement_path_control_only",
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "next_allowed_action": "build_listing_improvement_path_gate_audit_v1"
+}

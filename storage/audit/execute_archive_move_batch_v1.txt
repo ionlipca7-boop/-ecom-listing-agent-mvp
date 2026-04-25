@@ -1,0 +1,18 @@
+EXECUTE ARCHIVE MOVE BATCH V1
+
+STATUS
+- archive move batch executed
+- archive move verified
+- keep scope remains protected
+- delete still forbidden
+
+MOVED TO ARCHIVE ROOT
+- drafts
+- history
+- control_room_history
+- safe_cleanup_batch_v1
+- safe_cleanup_batch_v2
+- safe_cleanup_batch_v3
+
+NEXT SAFE ACTION
+- post_archive_cleanup_review_v1

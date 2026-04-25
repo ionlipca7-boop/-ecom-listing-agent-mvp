@@ -1,0 +1,68 @@
+{
+  "status": "OK",
+  "layer": "PARSE_TRADING_ACTIVE_LIST_ITEMARRAY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "source_file": "storage\\ebay\\trading_active_listings_read_only_v1.json",
+  "active_listing_count": 56,
+  "expected_active_listings": 56,
+  "count_matches_expected": true,
+  "sample_items": [
+    {
+      "ItemID": "317800706096",
+      "Title": "Schnellladegerät 45W PD USB-C mit Kabel | Super Fast Charging",
+      "SKU": null,
+      "Price": "9.39",
+      "Quantity": "16",
+      "QuantitySold": "12",
+      "WatchCount": "1",
+      "ViewItemURL": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-mit-Kabel-Super-Fast-Charging-/317800706096"
+    },
+    {
+      "ItemID": "317800714251",
+      "Title": "Schnellladegerät 45W PD USB-C | Super Fast Charging mit Kabel",
+      "SKU": null,
+      "Price": "9.49",
+      "Quantity": "7",
+      "QuantitySold": null,
+      "WatchCount": "2",
+      "ViewItemURL": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-Super-Fast-Charging-mit-Kabel-/317800714251"
+    },
+    {
+      "ItemID": "317805701358",
+      "Title": "Mini Bluetooth 5.0 USB Adapter für PC Laptop Audio Drucker Plug & Play",
+      "SKU": null,
+      "Price": "3.93",
+      "Quantity": "20",
+      "QuantitySold": null,
+      "WatchCount": null,
+      "ViewItemURL": "https://www.ebay.de/itm/Mini-Bluetooth-5-0-USB-Adapter-f-r-PC-Laptop-Audio-Drucker-Plug-Play-/317805701358"
+    },
+    {
+      "ItemID": "317805734449",
+      "Title": "Mini USB WiFi 6 WLAN Adapter 2,4GHz 286 Mbit/s für PC & Laptop",
+      "SKU": null,
+      "Price": "5.49",
+      "Quantity": "12",
+      "QuantitySold": "2",
+      "WatchCount": "1",
+      "ViewItemURL": "https://www.ebay.de/itm/Mini-USB-WiFi-6-WLAN-Adapter-2-4GHz-286-Mbit-s-f-r-PC-Laptop-/317805734449"
+    },
+    {
+      "ItemID": "317806061325",
+      "Title": "3-in-1 Magnetische Wireless Ladestation für iPhone Apple Watch AirPods – Faltbar",
+      "SKU": null,
+      "Price": "17.99",
+      "Quantity": "10",
+      "QuantitySold": "6",
+      "WatchCount": "7",
+      "ViewItemURL": "https://www.ebay.de/itm/3-in-1-Magnetische-Wireless-Ladestation-f-r-iPhone-Apple-Watch-AirPods-Faltbar-/317806061325"
+    }
+  ],
+  "read_only_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "prepare_active_listings_snapshot_v1",
+  "timestamp": "2026-04-25T09:35:09.861084+00:00"
+}

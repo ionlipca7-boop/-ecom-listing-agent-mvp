@@ -1,0 +1,9 @@
+﻿COMPACT_CORE_STATE_HUB_V1_FAILURE_ARCHIVE
+status = ERROR
+stage = 9
+layer = COMPACT_CORE_STATE_HUB_V1
+error_type = REPEATED_FILE_GENERATION_FAILURE
+root_cause = assignment_line_for_image_count_missing_in_real_python_file_before_usage
+symptom = NameError image_count is not defined
+required_rule = archive_failure_before_next_repair
+next_step = read_real_file_and_switch_repair_method

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "GIT_CLEAN_STATE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_GIT_CLEAN_STATE_DECISION_V1",
+  "input_status": "OK",
+  "git_state_clean": false,
+  "tracked_changes_present": true,
+  "untracked_files_present": true,
+  "observed_tracked_items": {
+    ".gitignore": "modified",
+    "agent/__pycache__/brain.cpython-314.pyc": "modified",
+    "run_control_room.bat": "deleted"
+  },
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "delete_allowed": false,
+  "decision_summary": "git working tree is not clean, cleanup decision required before any push or sync",
+  "next_allowed_action": "build_git_clean_state_gate_v1"
+}

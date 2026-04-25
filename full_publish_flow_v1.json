@@ -1,0 +1,70 @@
+{
+  "started_at": "2026-04-15T07:43:55Z",
+  "checked_at": "2026-04-15T07:43:57Z",
+  "last_package": "package_20260414_070314",
+  "steps": [
+    {
+      "step": "run_control_room_v1.py",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "CONTROL_ROOM_RUN:\noutput_file: control_room_run_v1.json\nlast_package_detected: package_20260414_070314\ndecision_file_ok: True\ngate_file_ok: True\nFINAL_STATUS: READY",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\run_control_room_v1.py"
+      ]
+    },
+    {
+      "step": "create_real_publish_request_v1.py",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\nrequest_status: CREATED\noutput_file: real_publish_request_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\create_real_publish_request_v1.py"
+      ]
+    },
+    {
+      "step": "final_publish_manifest_v1.py",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\nmanifest_status: READY\noutput_file: final_publish_manifest_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\final_publish_manifest_v1.py"
+      ]
+    },
+    {
+      "step": "approve_real_publish_v1.py",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "last_package: package_20260414_070314\napproval_status: APPROVED\noutput_file: real_publish_approval_v1.json",
+      "stderr": "",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\ECOM_LISTING_AGENT_MVP\\approve_real_publish_v1.py"
+      ]
+    }
+  ],
+  "approval_file": {
+    "path": "real_publish_approval_v1.json",
+    "ok": true,
+    "error": null,
+    "data": {
+      "last_package": "package_20260414_070314",
+      "approval_status": "APPROVED",
+      "publish_mode": "REAL",
+      "approved_at": "2026-04-15T07:43:56Z",
+      "source_files": {
+        "final_publish_manifest": "final_publish_manifest_v1.json"
+      },
+      "checks": {
+        "final_publish_manifest_ready": true
+      }
+    }
+  },
+  "flow_status": "APPROVED",
+  "reasons": []
+}

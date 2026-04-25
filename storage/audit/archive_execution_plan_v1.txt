@@ -1,0 +1,49 @@
+ECOM LISTING AGENT MVP - ARCHIVE EXECUTION PLAN V1
+
+INPUT_CONFIRMED
+- rename_execution_result_v1.txt = OK
+- archive_and_cleanup_plan_v1.txt = ACTIVE
+- clean_project_boundary_v1.txt = ACTIVE
+
+ARCHIVE_SCOPE_NOW
+- drafts\\
+- history\\
+- control_room_history\\
+- storage\\cleanup\\safe_cleanup_batch_v1\\
+- storage\\cleanup\\safe_cleanup_batch_v2\\
+- storage\\cleanup\\safe_cleanup_batch_v3\\
+
+ARCHIVE_TARGET_ROOT
+- storage\\archive_candidates\\phase_cleanup_v1\\
+
+RULES
+- move only full folders from ARCHIVE_SCOPE_NOW
+- do not move any active core files
+- do not move storage\\state_control\\*
+- do not move storage\\state_compact_core\\*
+- do not move storage\\state_bridge\\*
+- do not move storage\\state_transition\\*
+- do not move storage\\state_normalization\\*
+- do not move storage\\memory\\front\\*
+- do not move storage\\memory\\lessons\\*
+- do not move storage\\audit\\*
+- do not delete source in this planning step
+
+PRECHECK_REQUIRED_BEFORE_ARCHIVE
+- each source folder must be checked for existence
+- archive target root must be created first
+- archive move must be folder-by-folder with visible verification
+
+POSTCHECK_REQUIRED_AFTER_ARCHIVE
+- archived folder must exist under storage\\archive_candidates\\phase_cleanup_v1\\
+- source folder must no longer remain in original location only if move was executed
+- no active core path must be touched
+
+SAFETY
+- planning only
+- no move yet
+- no delete yet
+- no content edits
+
+NEXT_ALLOWED_ACTION
+- create archive precheck audit v1

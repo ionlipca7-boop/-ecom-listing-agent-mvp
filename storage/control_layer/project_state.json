@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "layer": "PROJECT_STATE_V1",
+  "state_scope": "PROJECT_SPECIFIC_ONLY",
+  "current_phase": "CONTROL_LAYER_V1",
+  "current_stage": "FOUNDATION_IN_PROGRESS",
+  "phase_8_status": "CANON_COMPLETE",
+  "transition_status": "POST_PHASE_8_TRANSITION_VERIFIED",
+  "foundation_status": {
+    "manifest": "OK",
+    "rules": "OK",
+    "state": "OK",
+    "history": "MISSING"
+  },
+  "later_layers_status": {
+    "control_agent": "OK",
+    "archivist_agent": "OK",
+    "runner_agent": "OK",
+    "n8n_orchestration": "OK",
+    "compact_core_migration": "PREPARED_NOT_BUILT"
+  },
+  "execution_allowed": false,
+  "ready_for_stage_9": false,
+  "last_successful_action": "build_control_rules_v1",
+  "next_allowed_action": "build_project_history_v1",
+  "next_after_that": "re_run_canon_9_step_audit_after_foundation_restore",
+  "current_focus": "close_last_missing_foundation_layer_history",
+  "stop_rule_active": true
+}

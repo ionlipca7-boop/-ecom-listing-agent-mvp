@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "has_offerId": false,
+  "has_sku": false,
+  "publish_file_exists": false,
+  "decision": "need_offer_creation_layer",
+  "next_step": "run_ebay_create_offer_from_draft_v1"
+}

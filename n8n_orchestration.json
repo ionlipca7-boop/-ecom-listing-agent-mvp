@@ -1,0 +1,39 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 8,
+  "current_step": "n8n_orchestration_contract",
+  "next_step": "compact_core_migration",
+  "status": "PLANNED_NOT_LIVE",
+  "orchestration_mode": "PROJECT_SPECIFIC_ONLY",
+  "live_execution_enabled": false,
+  "allowed_now": [
+    "control_contract_definition",
+    "step_mapping",
+    "future_flow_design"
+  ],
+  "blocked_now": [
+    "real_api_calls",
+    "live_listing_operations",
+    "production_triggers"
+  ],
+  "planned_flow": [
+    "read_project_state",
+    "read_control_rules",
+    "validate_allowed_stage",
+    "prepare_controlled_action",
+    "write_history_record",
+    "return_control_status"
+  ],
+  "inputs": [
+    "project_manifest.json",
+    "control_rules.json",
+    "project_state.json",
+    "project_history.jsonl"
+  ],
+  "outputs": [
+    "control_decision",
+    "history_append",
+    "runner_status"
+  ]
+}

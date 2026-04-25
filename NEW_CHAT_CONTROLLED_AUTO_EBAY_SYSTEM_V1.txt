@@ -1,0 +1,34 @@
+ION / E1 CONTROLLED AUTO EBAY SYSTEM V1
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+CURRENT STATE
+- layer = STOP_AFTER_REAL_EXECUTION_PREP_V1
+- system_status = STABLE
+- route_complete = TRUE
+- next_route = CONTROLLED_AUTO_EBAY_SYSTEM_V1
+
+EBAY STATUS
+- active_listings = 56
+
+MISSION
+build full controlled auto ebay system
+
+NEXT STEP
+VERIFY -> START ROUTE ENTRY -> EBAY SYNC
+
+CRITICAL
+- photo engine required
+- listing engine upgrade required
+- safe auto publish only
+- telegram notifications required
+- inventory system required
+- server 24/7 required
+
+RULE
+NO AUTO EXECUTION WITHOUT CONTROL
+NO MASS PUBLISH
+
+START
+VERIFY STOP -> START ROUTE

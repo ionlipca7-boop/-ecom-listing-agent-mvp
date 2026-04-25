@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_SAFE_UNTRACKED_REVIEW_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_SAFE_UNTRACKED_REVIEW_PLAN_V1",
+  "input_status": "OK",
+  "safe_untracked_review_plan_activated": true,
+  "review_mode": "read_only_bucketed_review",
+  "cleanup_forbidden_confirmed": true,
+  "sync_forbidden_confirmed": true,
+  "tracked_state_protection_confirmed": true,
+  "next_review_method": "bucket_map_before_deeper_sampling",
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "safe_untracked_review_plan_executed",
+  "next_allowed_action": "prepare_untracked_bucket_map_v1"
+}

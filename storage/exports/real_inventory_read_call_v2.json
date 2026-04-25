@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "decision": "real_inventory_read_call_v2_built",
+  "source_file": "storage\\exports\\real_inventory_read_probe_v1.json",
+  "real_inventory_read_call_version": "v1",
+  "chosen_path": "real_inventory_read_first",
+  "call_contract": {
+    "call_type": "inventory_read",
+    "mode": "real_api_read",
+    "requires_live_identifier": true,
+    "requires_token": true
+  },
+  "call_checks": {
+    "path_is_read_first": true,
+    "ready_for_call_build": true,
+    "call_contract_present": true
+  },
+  "ready_for_live_inventory_identifier_injection": true,
+  "next_step": "perform_real_inventory_read_v1",
+  "identifier_source": "resolved_live_identifier",
+  "identifier_type": "sku",
+  "identifier_value": "ECOM-TEST-CABLE-001",
+  "ready_for_real_inventory_read": true
+}

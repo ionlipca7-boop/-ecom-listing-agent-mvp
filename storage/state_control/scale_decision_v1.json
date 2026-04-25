@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "SCALE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SYSTEM_STABLE_AND_READY_FOR_SCALE",
+  "scale_mode_selected": "MULTI_LISTING",
+  "single_cycle_confirmed": true,
+  "multi_cycle_ready": true
+}

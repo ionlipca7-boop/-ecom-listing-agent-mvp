@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "TRACKED_REVIEW_DECISION_PREPARED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_BUCKET_DECISION_V1",
+  "input_status": "OK",
+  "tracked_review_required": true,
+  "tracked_items_present": true,
+  "tracked_modified_detected": true,
+  "tracked_deleted_detected": true,
+  "tracked_review_scope": "gitignore_and_deleted_bat_and_pyc",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "build_tracked_review_decision_v1"
+}

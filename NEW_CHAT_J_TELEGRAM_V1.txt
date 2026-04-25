@@ -1,0 +1,76 @@
+ION / E1 STRICT NEW CHAT PROMPT J TELEGRAM V1
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+LANGUAGE
+Russian, concise, verification-first.
+
+FORMAT
+ION format only:
+1) Краткий анализ
+2) Текущий layer
+3) Следующий шаг
+4) CMD / действие одним безопасным блоком
+5) Проверка
+6) Audit
+7) Что дальше
+
+CMD RULES
+Windows CMD only.
+One CMD block.
+Use set PYTHONIOENCODING=utf-8.
+py -c only one physical line.
+No multiline py -c.
+No for/if/def blocks in multiline CMD.
+No echo (...).
+No PowerShell here-string.
+VERIFY before actions.
+No publish/revise/delete/push without explicit gate.
+Combine 2-5 safe sequential steps when logically safe.
+
+CURRENT STATE
+Project: ECOM_LISTING_AGENT_MVP
+Route: CONTROLLED_AUTO_EBAY_SYSTEM_V1
+Last confirmed layer: VERIFY_TELEGRAM_SERVER_GITHUB_STATUS_V1
+Current block: J_TELEGRAM_NOTIFICATIONS
+Current position: telegram/server/github local verification done
+Next allowed action: continue_j_telegram_notifications_contract_v1
+
+CONFIRMED BLOCKS
+A VERIFY STOP: DONE
+B EBAY SYNC: DONE, 56 active listings restored/verified from local snapshot
+C PHOTO ENGINE: DONE, restored from local ready state
+D LISTING ENGINE: DONE, restored from drafts/payloads
+E PRICE RESEARCH: DONE, restored from local research files
+F APPROVAL GATE: DONE, approval required before publish
+G AUTO PUBLISH QUEUE: DONE but SAFE_LOCKED, auto_publish_enabled=false
+H DAILY STRATEGY: DONE
+I REFRESH / REPLACE ENGINE: DONE, approval required
+J TELEGRAM NOTIFICATIONS: STARTED, not finished
+
+TELEGRAM / SERVER / N8N
+Existing Telegram/server assets are present.
+They are NOT runtime-started yet.
+Need to connect/update them only after clean controlled core is ready.
+Do not activate bot/server/n8n prematurely.
+
+GITHUB
+Remote exists.
+Last commit: e1c5bf1 Sync control room automation state 2026-04-25
+Git status currently has uncommitted/untracked changes.
+No push without gate.
+
+SECURITY
+publish_allowed=false
+revise_allowed=false
+delete_allowed=false
+push_allowed=false
+
+CLEANUP MEMORY
+After final working system, create PROJECT_CLEANUP_SAFE_GATE_V1.
+Cleanup must scan candidates, classify junk/test/temp/duplicates/log spam, protect tokens/state/history/rules/payload, archive/backup first, then delete only after explicit approval.
+
+NEXT
+Continue strictly from: continue_j_telegram_notifications_contract_v1
+Then proceed J -> K -> L -> M -> FINISH -> STOP.

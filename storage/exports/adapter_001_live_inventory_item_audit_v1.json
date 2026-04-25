@@ -1,0 +1,60 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_live_inventory_item_fetched",
+  "http_status": 200,
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "snapshot_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\adapter_001_live_inventory_item_v1.json",
+  "top_level_keys": [
+    "sku",
+    "locale",
+    "product",
+    "condition",
+    "availability"
+  ],
+  "response_body": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "locale": "de_DE",
+    "product": {
+      "aspects": {
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ],
+        "Marke": [
+          "Markenlos"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Besonderheiten": [
+          "OTG"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Kompatibel mit": [
+          "Universal"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "USB Standard": [
+          "USB 3.0"
+        ]
+      }
+    },
+    "condition": "NEW",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 10
+        }
+      }
+    }
+  }
+}

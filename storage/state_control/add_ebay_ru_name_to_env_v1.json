@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "ADD_EBAY_RU_NAME_TO_ENV_V1",
+  "ru_name_added": true,
+  "ru_name": "Ion_Lipca-IonLipca-ECOMOS-bwwjioir",
+  "secret_values_printed": false,
+  "next_allowed_action": "create_ebay_oauth_authorization_url_v2",
+  "timestamp": "2026-04-25T09:12:37.202458+00:00"
+}

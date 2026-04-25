@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_CANONICAL_REENTRY_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "last_confirmed_completed_phase": "STAGE_9_COMPACT_CORE_MIGRATION_CONFIRMED_AT_PROJECT_LINE_LEVEL",
+  "current_detected_state": "DOWNSTREAM_PROJECT_SPECIFIC_CHAIN_STARTED_BEFORE_REENTRY_LOCK",
+  "deviation_confirmed": true,
+  "deviation_type": "downstream_started_without_post_stage9_reentry_lock",
+  "local_chain_status": "VALID_BUT_PARKED",
+  "global_alignment_required": true,
+  "decision": "ENFORCE_CANONICAL_REENTRY_BEFORE_ANY_DOWNSTREAM_CONTINUATION",
+  "downstream_execution_allowed": false,
+  "next_allowed_action": "build_post_stage9_reentry_lock_v1",
+  "final_target": "FIRST_CONTROLLED_END_TO_END_LISTING_PIPELINE_READY_FOR_APPROVED_LIVE_EXECUTION"
+}

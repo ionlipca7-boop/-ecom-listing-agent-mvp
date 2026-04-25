@@ -1,0 +1,45 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "L_SERVER_24_7",
+  "layer": "BUILD_L_SERVER_24_7_CONTRACT_V1",
+  "server_contract": {
+    "mode": "prepared_not_started",
+    "server_runtime_started": false,
+    "telegram_runtime_started": false,
+    "n8n_runtime_started": false,
+    "required_services": [
+      "control_room_loop",
+      "telegram_notifications",
+      "inventory_reader",
+      "approval_gate",
+      "daily_strategy_scheduler"
+    ],
+    "safe_start_requires": [
+      "explicit_runtime_gate",
+      "env_check",
+      "credentials_check",
+      "dry_run_check",
+      "operator_approval"
+    ],
+    "forbidden_now": [
+      "publish",
+      "revise",
+      "delete",
+      "push",
+      "server_start",
+      "telegram_start",
+      "n8n_start"
+    ]
+  },
+  "security": {
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false,
+    "runtime_start_allowed": false
+  },
+  "next_allowed_action": "finish_l_server_24_7_v1",
+  "timestamp": "2026-04-25T12:27:50.230934+00:00"
+}

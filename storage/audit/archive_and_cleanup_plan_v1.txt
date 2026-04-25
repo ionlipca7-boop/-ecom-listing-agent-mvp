@@ -1,0 +1,79 @@
+ECOM LISTING AGENT MVP - ARCHIVE AND CLEANUP PLAN V1
+
+INPUT
+- project_file_classification_v1.txt
+- main_entry_switch_plan_v1.txt
+- rename_execution_plan_v1.txt
+- clean_project_boundary_v1.txt
+
+GOAL
+Clean the project in a controlled way without breaking canonical runtime/state architecture.
+
+DO_NOT_TOUCH_NOW
+- run_control_room.py
+- control_room_agent.py
+- control_agent.py
+- runner_agent.py
+- archivist_agent.py
+- control_room_run_all.py
+- run_publish_ready_flow.py
+- control_room_publish_status.py
+- control_room_summary.py
+- control_room.py
+- storage\state_control\*
+- storage\state_compact_core\*
+- storage\state_bridge\*
+- storage\state_transition\*
+- storage\state_normalization\*
+- storage\memory\front\*
+- storage\memory\lessons\*
+- storage\audit\*
+
+ARCHIVE_FIRST_GROUP
+- drafts\
+- history\
+- control_room_history\
+- storage\cleanup\safe_cleanup_batch_*\
+- backup files already replaced by canonical files
+- old transition snapshots no longer used as current front
+
+DELETE_LATER_ONLY_AFTER_SEPARATE_VERIFICATION
+- __pycache__\
+- obvious junk root files
+- broken temp leftovers
+- accidental garbage-name files
+- duplicate leftovers after canonical replacement is confirmed
+
+LEGACY_KEEP_UNTIL_LATER
+- control_room.py
+- old manual shell wrappers
+- old helper launchers if still useful for reading/reference
+
+ORDER_OF_EXECUTION
+STEP_1
+- execute batch rename only for run_control_room.bat -> run_publish_ready_pipeline.bat
+
+STEP_2
+- verify rename result and content integrity
+
+STEP_3
+- create archive execution plan for ARCHIVE_FIRST_GROUP
+
+STEP_4
+- archive old noisy folders/files without deleting core files
+
+STEP_5
+- create delete verification plan for __pycache__ and junk leftovers
+
+STEP_6
+- only then perform final low-risk cleanup
+
+SAFETY_RULES
+- no direct delete in this step
+- no archive move in this step
+- no content edits in this step
+- this file is planning layer only
+- every future destructive action must have rollback visibility or prior archive target
+
+NEXT_ALLOWED_ACTION
+- execute safe batch rename v1

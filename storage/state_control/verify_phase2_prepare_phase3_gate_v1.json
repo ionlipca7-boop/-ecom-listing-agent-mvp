@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_PHASE2_AND_PREPARE_PHASE3_DRY_RUN_FULL_FLOW_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase2_result": "PASS",
+  "phase3": "PHASE_3_DRY_RUN_FULL_FLOW",
+  "dry_flow_gate_ready": true,
+  "allowed_flow": "generate -> notify -> approve -> queue",
+  "live_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "queue_live_execute_allowed": false,
+  "timestamp": "2026-04-25T13:32:23.394160+00:00",
+  "next_allowed_action": "execute_phase3_dry_run_full_flow_v1"
+}

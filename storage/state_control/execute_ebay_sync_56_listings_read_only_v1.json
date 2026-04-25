@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_EBAY_SYNC_56_LISTINGS_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "sync_mode": "READ_ONLY",
+  "snapshot_source": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_control\\retry_sell_inventory_read_only_sync_v2.json",
+  "snapshot_found": true,
+  "expected_active_listings": 56,
+  "detected_items_count": 0,
+  "note": "local read-only snapshot prepared; no live eBay call executed in this step",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "prepare_active_listing_gap_analysis_v1",
+  "timestamp": "2026-04-25T11:18:12.474838+00:00"
+}

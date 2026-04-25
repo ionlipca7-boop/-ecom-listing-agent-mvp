@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_MANUAL_UNTRACKED_ITEM_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_MANUAL_UNTRACKED_ITEM_REVIEW_V1",
+  "input_status": "OK",
+  "manual_item_review_executed": true,
+  "untracked_only_snapshot_written": true,
+  "snapshot_file": "storage/audit/untracked_only_snapshot_v1.txt",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_manual_untracked_item_review_result_v1"
+}

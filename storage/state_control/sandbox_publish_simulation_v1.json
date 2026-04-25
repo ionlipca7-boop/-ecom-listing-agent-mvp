@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "BUILD_SANDBOX_PUBLISH_SIMULATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TEST_UNLOCK_WITHOUT_PUBLISH_V1",
+  "simulation_mode": "SANDBOX_ONLY_NO_EXTERNAL_CALL",
+  "sandbox_publish_simulated": true,
+  "publish_called": false,
+  "real_ebay_api_call_allowed": false,
+  "publish_allowed": false,
+  "server_run_allowed": false,
+  "telegram_token_used": false,
+  "next_allowed_action": "final_pre_real_publish_gate_v1"
+}

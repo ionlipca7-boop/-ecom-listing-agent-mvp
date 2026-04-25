@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_INVENTORY_READ_CHAIN_RESUME_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "POST_STAGE9_RESUME_DECISION_V1",
+  "input_status": "OK",
+  "resume_source": "previous_valid_parked_chain",
+  "resume_allowed": true,
+  "chain_integrity_preserved": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_operations_blocked": true,
+  "next_allowed_action": "build_current_inventory_read_call_v2"
+}

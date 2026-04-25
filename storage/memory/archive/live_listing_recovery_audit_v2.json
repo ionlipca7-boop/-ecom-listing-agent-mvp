@@ -1,0 +1,123 @@
+{
+  "status": "OK",
+  "decision": "live_listing_recovery_audit_v2_completed",
+  "item_id": "318166440509",
+  "tokens": [
+    {
+      "path": "storage\\secrets\\ebay_access_token.txt",
+      "exists": true,
+      "length": 2688,
+      "starts_with": "v^1.1#i^1#f^"
+    },
+    {
+      "path": "storage\\secrets\\ebay_refresh_token.txt",
+      "exists": true,
+      "length": 96,
+      "starts_with": "v^1.1#i^1#r^"
+    },
+    {
+      "path": "ebay_access_token.txt",
+      "exists": false,
+      "length": 0
+    },
+    {
+      "path": "ebay_refresh_token.txt",
+      "exists": false,
+      "length": 0
+    }
+  ],
+  "json_hits_count": 18,
+  "offer_id_candidates": [
+    "153365657011",
+    "153187814011"
+  ],
+  "sku_candidates": [
+    "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "USBCLadekabel2m60WSchnellladenDatenkabelq10p675"
+  ],
+  "sample_hits": [
+    {
+      "path": "storage\\exports\\adapter_001_enriched_revise_payload_v1.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_enriched_revise_payload_v2.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_enriched_revise_payload_v3.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_listing_review_v1.json",
+      "offer_ids": [],
+      "skus": []
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_offer_v2.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_offer_v3.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_revise_audit_v3.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_specifics_revise_audit_v1.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_live_specifics_revise_audit_v2.json",
+      "offer_ids": [
+        "153365657011"
+      ],
+      "skus": [
+        "USBCOTGAdapterUSB3TypCaufUSBAq10p399"
+      ]
+    },
+    {
+      "path": "storage\\exports\\adapter_001_optimization_plan_v1.json",
+      "offer_ids": [],
+      "skus": []
+    }
+  ],
+  "next_step": "use_offer_candidate_for_live_offer_read_and_inventory_bridge_restore"
+}

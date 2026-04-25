@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_SYNC_ADAPTER_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EBAY_SYNC_READ_ONLY_GATE_V1",
+  "adapter_mode": "READ_ONLY",
+  "required_methods": [
+    "verify_token_presence",
+    "get_active_listings",
+    "normalize_listing",
+    "save_inventory_snapshot"
+  ],
+  "forbidden_methods": [
+    "publish_listing",
+    "revise_listing",
+    "end_listing",
+    "bulk_update"
+  ],
+  "expected_count": 56,
+  "write_allowed": false,
+  "next_allowed_action": "prepare_ebay_inventory_snapshot_schema_v1",
+  "timestamp": "2026-04-25T07:30:44.918345+00:00"
+}

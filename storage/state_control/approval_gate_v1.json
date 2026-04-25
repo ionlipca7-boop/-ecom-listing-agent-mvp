@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "APPROVAL_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LISTING_OUTPUT_CONTRACT_V1",
+  "approval_required": true,
+  "publish_allowed": false,
+  "live_action_allowed": false,
+  "default_approval_status": "review",
+  "allowed_decisions": [
+    "APPROVE_LISTING",
+    "REJECT_LISTING",
+    "REQUEST_CHANGES"
+  ],
+  "gate_rules": [
+    "no_publish_without_APPROVE_LISTING",
+    "publish_ready_false_by_default",
+    "approval_decision_must_be_recorded",
+    "operator_confirmation_required"
+  ],
+  "next_allowed_action": "prepare_ebay_publish_locked_v1"
+}

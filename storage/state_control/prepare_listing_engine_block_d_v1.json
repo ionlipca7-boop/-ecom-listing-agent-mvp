@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LISTING_ENGINE_BLOCK_D_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "D_LISTING_ENGINE_V2",
+  "input_layer": "FINISH_PHOTO_ENGINE_BLOCK_C_LOCAL_READY_V1",
+  "goal": "German SEO listing engine with title description item specifics HTML draft",
+  "execution_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_listing_engine_v2_contract_v1",
+  "timestamp": "2026-04-25T10:05:28.279049+00:00"
+}

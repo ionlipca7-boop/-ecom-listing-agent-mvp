@@ -1,0 +1,18 @@
+NEW CHAT TRANSITION READY FINAL V1
+
+STATUS
+- final transition package ready
+- strict prompt verified
+- stable front verified
+- stable instructions verified
+- archive move not started
+- delete not started
+- destructive actions still forbidden
+
+APPROVED TRANSITION FILES
+- storage\\memory\\front\\ION_STRICT_NEW_CHAT_PROMPT_CMD_SAFE_V1.txt
+- storage\\memory\\front\\NEW_CHAT_FRONT_STABLE_V1.txt
+- storage\\memory\\front\\NEW_CHAT_INSTRUCTIONS_STABLE_V1.txt
+
+NEXT SAFE ACTION
+- open new chat and use stable transition package

@@ -1,0 +1,49 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_specifics_upgrade_built",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "listingId": "318166440509",
+  "source_memory_files": {
+    "project_memory_v1": true,
+    "project_memory_active_v1": true,
+    "chat_transition_archive_v1": true
+  },
+  "recommended_item_specifics": {
+    "Marke": [
+      "Markenlos"
+    ],
+    "Herstellernummer": [
+      "Nicht zutreffend"
+    ],
+    "Produktart": [
+      "USB-C OTG Adapter"
+    ],
+    "Anschluss A": [
+      "USB-C"
+    ],
+    "Anschluss B": [
+      "USB-A"
+    ],
+    "USB Standard": [
+      "USB 3.0"
+    ],
+    "Besonderheiten": [
+      "OTG"
+    ],
+    "Kompatibel mit": [
+      "Universal"
+    ],
+    "Farbe": [
+      "Schwarz"
+    ]
+  },
+  "next_action": "revise_live_item_specifics_for_adapter_001",
+  "notes": [
+    "memory_first_then_action",
+    "marke_included",
+    "safe_specifics_upgrade_only",
+    "ready_for_live_revise_layer"
+  ]
+}

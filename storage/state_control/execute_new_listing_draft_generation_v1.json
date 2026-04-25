@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_NEW_LISTING_DRAFT_GENERATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RECORD_NEW_LISTING_DRAFT_GENERATION_CONFIRMATION_V1",
+  "input_status": "OK",
+  "source_runtime_layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "draft_generation_confirmed": true,
+  "draft_generation_confirmation_recorded": true,
+  "draft_generation_started": true,
+  "execution_output_file": "storage\\\\audit\\\\execute_new_listing_draft_generation_v1_output.txt",
+  "listing_draft_created": "UNKNOWN_UNTIL_VERIFIED",
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "executed_at": "2026-04-23T20:07:38",
+  "next_allowed_action": "verify_new_listing_draft_generation_execution_v1"
+}

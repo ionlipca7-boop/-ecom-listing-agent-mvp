@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_I_REFRESH_REPLACE_ENGINE_ENTRY_V1",
+  "input_layer": "FINISH_H_DAILY_STRATEGY_V1",
+  "current_block": "I_REFRESH_REPLACE_ENGINE",
+  "previous_block_finished": "H_DAILY_STRATEGY",
+  "refresh_rules": {
+    "update_after_no_views_days": "5-7",
+    "replace_after_days": "10-14",
+    "approval_required": true
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_i_refresh_replace_engine_contract_v1",
+  "timestamp": "2026-04-25T12:16:34.073974+00:00"
+}

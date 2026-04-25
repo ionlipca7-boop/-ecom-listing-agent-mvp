@@ -1,0 +1,20 @@
+{
+  "project": "ECOM OS V3 - Listing Agent",
+  "version": "MVP",
+  "status": "BUILDING STORAGE SYSTEM",
+  "current_phase": "PRODUCT_STORAGE + PHOTO_SYSTEM",
+  "next_phase": "MEMORY + UI + GENERATION LINK",
+  "marketplaces": ["eBay"],
+  "future_marketplaces": ["Amazon", "Shopify"],
+  "strategy": {
+    "goal": "Build scalable listing system",
+    "priority": "speed + automation",
+    "monetization": "eBay listings via CSV then API"
+  },
+  "notes": [
+    "System must be portable",
+    "Control Room is central brain",
+    "Products stored locally",
+    "Photos standardized"
+  ]
+}

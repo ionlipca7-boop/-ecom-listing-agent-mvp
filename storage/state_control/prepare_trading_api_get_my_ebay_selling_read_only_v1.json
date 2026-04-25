@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_TRADING_API_GET_MY_EBAY_SELLING_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_REAL_EBAY_INVENTORY_READ_ONLY_V1",
+  "reason": "inventory_api_403_probably_wrong_path_for_existing_active_listings",
+  "new_read_path": "TRADING_API_GET_MY_EBAY_SELLING",
+  "target": "read_56_existing_active_listings",
+  "allowed_action": "READ_ONLY_ACTIVE_LISTINGS",
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "end",
+    "bulk_update",
+    "delete"
+  ],
+  "api_call_used": false,
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "build_trading_api_active_listings_fetcher_v1",
+  "timestamp": "2026-04-25T08:39:59.696997+00:00"
+}

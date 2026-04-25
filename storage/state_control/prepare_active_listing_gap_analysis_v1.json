@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_ACTIVE_LISTING_GAP_ANALYSIS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "expected_active_listings": 56,
+  "detected_items_count": 0,
+  "missing_count": 56,
+  "gap_detected": true,
+  "reason": "local_snapshot_has_no_active_listing_items",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_live_ebay_active_listings_read_only_gate_v1",
+  "timestamp": "2026-04-25T11:19:12.155129+00:00"
+}

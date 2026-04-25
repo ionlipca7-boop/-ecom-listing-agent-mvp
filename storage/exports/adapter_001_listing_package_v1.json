@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-18",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "price": "4.19",
+  "quantity": 12,
+  "title": "USB-C auf USB-A Adapter OTG USB 3.0 Schnell Datenadapter",
+  "description_html": "<h2>USB-C auf USB-A Adapter</h2><p><b>Schnell, kompakt und zuverlassig</b></p><ul><li>USB 3.0 fur schnelle Datenubertragung</li><li>OTG Funktion fur direkte Verbindung</li><li>Kompaktes Design - ideal fur unterwegs</li><li>Kompatibel mit Smartphones, Tablets und Laptops</li></ul><p><b>Perfekt geeignet fur:</b></p><ul><li>Datenubertragung</li><li>USB Gerate anschlie?en</li><li>Unterwegs und im Alltag</li></ul><p><b>? Hohe Qualitat<br>? Schneller Versand<br>? Top Preis-Leistung</b></p><p>Weitere Produkte folgen bald - kombinieren und sparen!</p>",
+  "specifics": {
+    "Produktart": "USB-C auf USB-A Adapter",
+    "Anschluss_A": "USB-C",
+    "Anschluss_B": "USB-A",
+    "Typ": "OTG Adapter",
+    "USB_Standard": "USB 3.0",
+    "Farbe": "Schwarz",
+    "Material": "Kunststoff",
+    "Kompatibilitaet": "Smartphones Tablets Laptops",
+    "Besonderheiten": "Schnelle Datenuebertragung Kompakt OTG",
+    "Marke": "Markenlos",
+    "Zustand": "Neu"
+  },
+  "status": "listing_package_created"
+}

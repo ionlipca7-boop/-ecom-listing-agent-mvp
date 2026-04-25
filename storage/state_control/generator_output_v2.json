@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "GENERATOR_OUTPUT_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GENERATOR_INPUT_V2",
+  "generation_performed": true,
+  "log_file": "storage/logs/generator_output_v2.txt",
+  "output_ready": true,
+  "next_allowed_action": "build_inventory_read_layer_v2"
+}

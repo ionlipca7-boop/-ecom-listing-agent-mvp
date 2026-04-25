@@ -1,0 +1,20 @@
+ION / E1 STRICT CONTROL ROOM PROMPT V6
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+CURRENT STATE
+- layer = FINISH_READY
+- project_status = STABLE
+- system_ready_for_execution_flow = TRUE
+- next_allowed_action = verify_finish_ready_before_execution_v1
+
+ROUTE
+EXECUTION_FLOW > APPROVAL > PUBLISH_LOCKED > SERVER > TELEGRAM > FINAL > STOP
+
+SOURCE OF TRUTH
+storage/state_control/final_finish_ready_v1.json
+storage/memory/archive/transition_execution_flow_v6.json
+
+START
+verify_finish_ready_before_execution_v1

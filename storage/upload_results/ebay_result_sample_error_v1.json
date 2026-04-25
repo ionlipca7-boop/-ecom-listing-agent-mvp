@@ -1,0 +1,6 @@
+{
+  "result_status": "ERROR",
+  "result_code": "MISSING_REQUIRED_FIELD",
+  "message": "Missing required item specific Brand and invalid price format",
+  "sku": "SKU-ERROR-0001"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "REDO_OPERATOR_APPROVAL_DECISION_CAPTURE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INVALID_OPERATOR_APPROVAL_RECORD_DETECTED_V1",
+  "input_status": "OK",
+  "invalid_prior_record_replaced": true,
+  "real_operator_decision_captured": true,
+  "operator_decision": "APPROVE",
+  "approval_status": "APPROVED",
+  "publish_blocked_until_approval": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "prepare_controlled_input_submission_v1"
+}

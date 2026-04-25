@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_LIVE_GUARD_LAYER_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_file": "storage\\live_payload\\runner_live_payload_v1.json",
+  "checks": {
+    "project_specific_only": true,
+    "payload_type_live_draft_only": true,
+    "live_execution_still_blocked": true,
+    "has_title": true,
+    "has_price": true,
+    "has_description_html": true
+  },
+  "image_count": 3,
+  "guard_result": "LIVE_BLOCKED_UNTIL_EXPLICIT_APPROVAL",
+  "next_step": "build_runner_execution_gate_v1"
+}

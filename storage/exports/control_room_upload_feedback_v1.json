@@ -1,0 +1,10 @@
+{
+  "upload_feedback_status": "SUCCESS",
+  "parser_status": "SUCCESS",
+  "latest_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_success_v1.json",
+  "success_count": 1,
+  "warning_count": 0,
+  "error_count": 0,
+  "unknown_count": 0,
+  "next_step": "UPLOAD_CONFIRMED"
+}

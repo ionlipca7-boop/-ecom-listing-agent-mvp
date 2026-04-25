@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "CREATE_LISTING_ENGINE_TEST_PRODUCT_INPUT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "product": {
+    "raw_name": "67W PD USB-C Schnellladegerät mit EU-Stecker und 1m USB-C Kabel",
+    "category": "charger",
+    "condition": "Neu",
+    "features": [
+      "67W Schnellladen",
+      "EU-Stecker",
+      "inklusive USB-C Kabel",
+      "für Smartphones und kompatible USB-C Geräte",
+      "kompaktes Design"
+    ],
+    "language": "de",
+    "photo_folder": "storage\\photo_engine\\test_input_v1\\ebay_ready"
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "open_listing_engine_v2_execution_gate_v1",
+  "timestamp": "2026-04-25T10:13:13.589994+00:00"
+}

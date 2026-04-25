@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_CHECKPOINT_STATE_BRIDGE_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "checkpoint_file": "storage\\checkpoints\\runner_transition_checkpoint_v1.json",
+  "state_file": "project_state.json",
+  "runner_state_written": true,
+  "current_phase": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+  "last_successful_action": "build_runner_checkpoint_state_bridge_v1",
+  "next_allowed_action": "decide_next_project_specific_branch_after_runner_checkpoint",
+  "runner_state": {
+    "status": "completed_blocked_safe",
+    "checkpoint_layer": "RUNNER_TRANSITION_CHECKPOINT_V1",
+    "runner_pipeline_complete": true,
+    "execution_allowed": false,
+    "final_decision": "KEEP_BLOCKED",
+    "runner_live_permission": false,
+    "transition_state": "SAFE_TO_CONTINUE_WITH_BLOCKED_RUNNER_FLOW"
+  }
+}

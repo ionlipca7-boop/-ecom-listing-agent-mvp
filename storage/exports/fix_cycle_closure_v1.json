@@ -1,0 +1,16 @@
+{
+  "closure_status": "SUCCESS",
+  "closure_gate": "CLOSED_AS_SUCCESS",
+  "next_step": "READY_FOR_NEXT_LISTING_OR_NEW_CASE",
+  "compare_status": "FIX_CONFIRMED",
+  "fix_successful": "YES",
+  "closed_fields": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "source_files": {
+    "post_reupload_compare": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\post_reupload_compare_v1.json",
+    "manual_fixed_reupload_handoff": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\manual_fixed_reupload_handoff_v1.json"
+  }
+}

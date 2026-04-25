@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "decision": "generator_output_fields_audited",
+  "is_dict": true,
+  "keys": [
+    "titles",
+    "main_title",
+    "price",
+    "description",
+    "html",
+    "category",
+    "images"
+  ],
+  "has_title": false,
+  "has_description": true,
+  "has_price": true,
+  "next_step": "build_title_recovery_layer_v1"
+}

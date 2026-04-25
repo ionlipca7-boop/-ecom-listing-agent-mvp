@@ -1,0 +1,74 @@
+ECOM LISTING AGENT MVP - CLEAN PROJECT BOUNDARY V1
+
+PURPOSE
+Create a strict cleanliness boundary so the final project remains clean, working, and low-noise.
+
+CORE_KEEP_ZONE
+- run_control_room.py
+- control_room_agent.py
+- control_agent.py
+- runner_agent.py
+- archivist_agent.py
+- project_manifest.json
+- control_rules.json
+- project_state.json
+- project_history.jsonl
+- control_layer_review.json
+- compact_core_*.py
+- build_*.py
+- write_*.py
+- storage\\state_control\\
+- storage\\state_compact_core\\
+- storage\\state_bridge\\
+- storage\\state_transition\\
+- storage\\state_normalization\\
+- storage\\memory\\front\\
+- storage\\memory\\lessons\\
+- storage\\audit\\
+
+SUPPORT_KEEP_ZONE
+- control_room_run_all.py
+- run_publish_ready_flow.py
+- control_room_publish_status.py
+- control_room_summary.py
+- future operator utility batch files with clear names
+
+LEGACY_REFERENCE_ZONE
+- control_room.py
+- old manual shell files
+- old menu/history/export wrappers kept only as reference until archive step
+
+ARCHIVE_ZONE
+- drafts\\
+- history\\
+- control_room_history\\
+- storage\\memory\\archive\\
+- storage\\cleanup\\safe_cleanup_batch_*\\
+- backup snapshots
+- transition snapshots no longer active
+
+DELETE_ONLY_AFTER_VERIFICATION_ZONE
+- __pycache__\\
+- obvious junk root files
+- broken temp leftovers
+- accidental garbage names
+- duplicate leftovers already replaced by verified canonical files
+
+CLEANLINESS_RULES
+- New audits go only into storage\\audit\\
+- New front continuity files go only into storage\\memory\\front\\
+- New archive snapshots go only into storage\\memory\\archive\\
+- Do not create new random root files unless they are canonical entry files
+- Do not mix archive data into active core folders
+- Do not delete anything before role classification and rollback visibility
+
+FINAL_CLEAN_PROJECT_TARGET
+- small clear root
+- canonical runtime entry clearly named
+- support utilities clearly named
+- legacy files isolated or archived
+- noisy temp/cache artifacts removed only after verification
+- project remains executable and understandable
+
+NEXT_ALLOWED_ACTION
+- create safe archive_and_cleanup_plan_v1 based on this boundary

@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_HELPER_AGENT_STATUS_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_HELPER_AGENT_PLAN_V1",
+  "input_status": "OK",
+  "contract_target_file": "storage\\\\agent_feedback\\\\helper_agent_status_v1.json",
+  "contract_source_file": "storage\\\\preview\\\\runner_preview_v3.json",
+  "contract_mode": "read_preview_write_compact_status",
+  "required_fields": [
+    "status",
+    "project",
+    "source_layer",
+    "source_preview_file",
+    "preview_data_present",
+    "compact_summary",
+    "next_allowed_action",
+    "execution_blocked",
+    "live_execution"
+  ],
+  "rules": {
+    "read_only_source": true,
+    "additive_only": true,
+    "delete_forbidden": true,
+    "publish_forbidden": true,
+    "side_effects_forbidden": true,
+    "live_execution": false
+  },
+  "next_allowed_action": "build_helper_agent_status_contract_v1"
+}

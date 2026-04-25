@@ -1,0 +1,21 @@
+{
+  "status": "CHECK_REQUIRED",
+  "layer": "EXECUTE_PHASE4_RETRY_ONE_LIVE_PUBLISH_WITH_AUTO_TOKEN_GUARD_V1",
+  "token_guard_ran": true,
+  "token_guard_returncode": 0,
+  "publish_called": true,
+  "publish_returncode": 1,
+  "refresh_stdout_tail": "OK\nD:\\ECOM_LISTING_AGENT_MVP\\storage\\state_control\\run_safe_ebay_token_refresh_v2.json\n",
+  "refresh_stderr_tail": "",
+  "publish_stdout_tail": "PUBLISH_OFFER_V6_DONE\nhttp_status = 401\nofferId = 152921341011\nfirst_error_code = 1001\nfirst_error_message = Invalid access token\nfirst_error_json =\n{\n  \"errorId\": 1001,\n  \"domain\": \"OAuth\",\n  \"category\": \"REQUEST\",\n  \"message\": \"Invalid access token\",\n  \"longMessage\": \"Invalid access token. Check the value of the Authorization HTTP request header.\"\n}\n",
+  "publish_stderr_tail": "",
+  "safety": {
+    "one_live_only": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "verify_phase4_retry_one_live_publish_result_v1",
+  "timestamp": "2026-04-25T14:06:41.769671+00:00"
+}

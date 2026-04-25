@@ -1,0 +1,37 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_EXECUTION_FLOW_V6",
+  "last_confirmed_layer": "FINISH_READY",
+  "current_position": "clean_controlled_system_ready_for_execution_flow",
+  "next_allowed_action": "verify_finish_ready_before_execution_v1",
+  "confirmed_facts": {
+    "clean_project_ready": true,
+    "listing_generator_ready": true,
+    "approval_gate_ready": true,
+    "publish_system_locked": true,
+    "server_runtime_planned": true,
+    "telegram_control_planned": true,
+    "publish_allowed": false,
+    "run_allowed": false,
+    "telegram_run_allowed": false
+  },
+  "next_route": [
+    "EXECUTION_FLOW",
+    "APPROVAL_DECISION",
+    "PUBLISH_PAYLOAD_LOCKED",
+    "SERVER_PREP",
+    "TELEGRAM_PREP",
+    "FINAL_PRE_PUBLISH"
+  ],
+  "lessons_learned": [
+    "use_only_one_line_py_c",
+    "no_multiline_py_c",
+    "no_echo_writer_scripts",
+    "no_powershell_here_string",
+    "always_pre_audit_before_delete",
+    "utf8_env_fix_for_windows",
+    "strict_ion_format_only"
+  ],
+  "operator_rule": "new chat must start from execution flow route v6 only"
+}

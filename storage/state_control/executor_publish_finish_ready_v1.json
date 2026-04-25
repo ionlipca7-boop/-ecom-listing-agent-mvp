@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "executor_publish_route_prepared": true,
+  "publish_allowed": false,
+  "live_action_executed": false,
+  "next_allowed_action": "STOP"
+}

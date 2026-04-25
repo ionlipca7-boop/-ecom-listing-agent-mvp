@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "APPROVAL_PUBLISH_AND_AUTOMATION_READY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LISTING_GENERATION_AND_PREVIEW_V1",
+  "approval_gate": {
+    "approval_required": true,
+    "approval_status": "PENDING_OPERATOR_APPROVAL"
+  },
+  "publish_gate": {
+    "publish_path_defined": true,
+    "live_execution": false,
+    "publish_blocked_until_approval": true
+  },
+  "automation_ready_state": {
+    "controlled_automation_ready": true,
+    "operator_input_types": [
+      "link_input",
+      "photo_input",
+      "description_input"
+    ],
+    "single_entrypoint": "run_control_room.py"
+  },
+  "mode": "CONTROLLED_PRE_AUTOMATION",
+  "parallel_branches": false,
+  "next_allowed_action": "finalize_controlled_automation_path_v1"
+}

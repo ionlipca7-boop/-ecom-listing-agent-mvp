@@ -1,0 +1,41 @@
+{
+  "date": "2026-04-19",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_type": "NEW_CHAT",
+  "status": "OK",
+  "current_layer": "CONTROL_LAYER",
+  "phase": 10,
+  "current_step": "finalize_control_layer_review",
+  "next_step": "wait_for_next_project_specific_instruction",
+  "control_layer_complete": true,
+  "canonical_line_complete": true,
+  "history_valid": true,
+  "history_lines": 10,
+  "live_operations_enabled": false,
+  "migration_executed": false,
+  "synced_agents": {
+    "control_agent": true,
+    "runner_agent": true,
+    "source_of_truth": "control_layer_review.json"
+  },
+  "completed_assets": [
+    "project_manifest.json",
+    "control_rules.json",
+    "project_state.json",
+    "project_history.jsonl",
+    "control_agent.py",
+    "archivist_agent.py",
+    "runner_agent.py",
+    "n8n_orchestration.json",
+    "compact_core_migration.json",
+    "control_layer_review.json",
+    "control_sync_review.json"
+  ],
+  "lessons_learned": [
+    "cmd_echo_can_break_python_indentation",
+    "windows_cmd_encoding_can_break_utf8_reads",
+    "history_jsonl_must_be_checked_for_line_integrity",
+    "control_agents_must_read_final_source_of_truth_not_static_phase"
+  ],
+  "next_chat_goal": "wait_for_next_project_specific_instruction_on_top_of_completed_control_layer"
+}

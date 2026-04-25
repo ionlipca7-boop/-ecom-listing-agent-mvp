@@ -1,0 +1,8 @@
+{
+  "load": "latest_archive",
+  "path": "storage\\memory\\archive\\transition_2026_04_18_chat2.json",
+  "mode": "CONTROL_ROOM",
+  "format": "short",
+  "rules": "token_guard_full_payload_no_partial",
+  "product": "adapter_001"
+}

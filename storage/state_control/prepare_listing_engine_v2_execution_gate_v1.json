@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LISTING_ENGINE_V2_EXECUTION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_LISTING_ENGINE_V2_OUTPUT_SCHEMA_V1",
+  "execution_allowed_now": false,
+  "reason": "No product draft input selected yet. Gate prepared only.",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "select_listing_engine_test_product_v1",
+  "timestamp": "2026-04-25T10:12:14.304985+00:00"
+}

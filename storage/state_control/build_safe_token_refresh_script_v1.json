@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "BUILD_SAFE_TOKEN_REFRESH_SCRIPT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "reason": "Use existing .env.local secrets without printing them. Next step will run existing token repair safely.",
+  "env_exists": true,
+  "secrets_printed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "timestamp": "2026-04-25T13:43:35.956754+00:00",
+  "next_allowed_action": "run_safe_ebay_token_refresh_v1"
+}

@@ -1,0 +1,7 @@
+{
+  "target_scope": "path_anomalies",
+  "sample_paths": [
+    "\"storage/archive_candidates/phase_cleanup_v1/safe_cleanup_batch_v3/cleanup_backup/templates/eBay-category-listing-template-\\320\\260\\320\\277\\321\\200.-14-2026-11-44-17.csv\"",
+    "\"templates/eBay-category-listing-template-\\320\\260\\320\\277\\321\\200.-14-2026-11-44-17.csv\""
+  ]
+}

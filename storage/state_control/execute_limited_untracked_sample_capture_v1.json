@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_LIMITED_UNTRACKED_SAMPLE_CAPTURE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_LIMITED_UNTRACKED_SAMPLE_PLAN_V1",
+  "input_status": "OK",
+  "sample_file": "storage/audit/limited_untracked_sample_v1.json",
+  "sample_capture_executed": true,
+  "review_mode": "CONTROLLED_READ_ONLY",
+  "sampling_limits_applied": true,
+  "max_paths_per_bucket": 10,
+  "cleanup_performed": false,
+  "delete_performed": false,
+  "sync_performed": false,
+  "current_position": "limited_untracked_sample_captured",
+  "next_allowed_action": "review_limited_untracked_sample_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_UNTRACKED_SNAPSHOT_CAPTURE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_CONTROLLED_UNTRACKED_REVIEW_PLAN_V1",
+  "input_status": "OK",
+  "snapshot_file": "storage/audit/untracked_snapshot_raw_v1.txt",
+  "snapshot_captured": true,
+  "untracked_count_detected": 1707,
+  "snapshot_mode": "READ_ONLY",
+  "cleanup_performed": false,
+  "delete_performed": false,
+  "sync_performed": false,
+  "branching_detected": false,
+  "current_position": "untracked_snapshot_captured",
+  "next_allowed_action": "build_top_level_untracked_distribution_v1"
+}

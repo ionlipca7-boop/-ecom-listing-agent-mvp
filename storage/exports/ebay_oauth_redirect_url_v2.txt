@@ -1,0 +1,1 @@
+﻿https://auth2.ebay.com/oauth2/ThirdPartyAuthSucessFailure?isAuthSuccessful=true&code=v%5E1.1%23i%5E1%23f%5E0%23p%5E3%23I%5E3%23r%5E1%23t%5EUl41Xzc6QkU5QTU2MTY2RUY2ODBDOTg2N0IzRDFFRTgxNDE5RkVfMV8xI0VeMjYw&expires_in=299

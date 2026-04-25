@@ -1,0 +1,52 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "LIVE_OFFER_OK_INVENTORY_BRIDGE_MISSING",
+  "current_anchor": {
+    "item_id": "318166440509",
+    "product_type": "USB-C auf USB-A OTG Adapter USB 3.0",
+    "offer_get_status": 200,
+    "inventory_get_status": 404
+  },
+  "confirmed_working": [
+    "ebay_access_token_refresh_ok",
+    "offer_layer_live_access_ok",
+    "live_listing_anchor_restored",
+    "full_revise_must_be_whole_not_partial"
+  ],
+  "confirmed_blockers": [
+    "inventory_sku_bridge_not_restored",
+    "working_and_experiment_paths_mixed",
+    "format_drift_happened_multiple_times"
+  ],
+  "listing_goals": [
+    "title_upgrade",
+    "photo_upgrade",
+    "item_specifics_fill",
+    "html_add",
+    "reasonable_price",
+    "shipping_dhl_2_3_days",
+    "location_delmenhorst_if_key_exists",
+    "ads_7_percent_after_base_revise",
+    "variations_later_or_carefully"
+  ],
+  "working_mode_rules": [
+    "one_reply_one_step",
+    "one_cmd_block_only",
+    "inside_cmd_create_run_verify_final_audit",
+    "no_long_one_line_cmd",
+    "no_copy_con",
+    "no_echo_labyrinth",
+    "no_new_helper_files_without_direct_value",
+    "read_live_then_build_full_then_revise",
+    "keep_working_and_experiment_separate"
+  ],
+  "do_not_repeat": [
+    "do_not_mix_formats",
+    "do_not_guess_product",
+    "do_not_return_to_probe_stub_loops",
+    "do_not_change_listing_in_chunks"
+  ],
+  "next_step": "restore_live_inventory_bridge_from_offer_and_prepare_real_full_revise",
+  "next_chat_goal": "separate_working_path_from_experiment_and_continue_from_live_offer_anchor"
+}

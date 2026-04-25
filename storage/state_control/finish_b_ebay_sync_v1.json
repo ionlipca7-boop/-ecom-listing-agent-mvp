@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_B_EBAY_SYNC_V1",
+  "input_layer": "RESTORE_EBAY_SYNC_CONFIRMED_STATE_FROM_ARCHIVE_V1",
+  "finished_block": "B_EBAY_SYNC",
+  "block_b_finished": true,
+  "active_56_listings_verified": true,
+  "source_file": "storage\\ebay\\active_listings_snapshot_v1.json",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "C_PHOTO_ENGINE",
+  "next_allowed_action": "start_c_photo_engine_entry_v1",
+  "timestamp": "2026-04-25T11:50:50.791213+00:00"
+}

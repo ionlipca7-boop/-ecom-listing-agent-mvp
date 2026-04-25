@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-04-15T18:07:26Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ebay_upload_result_parsed_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_fix_error_map_v1.json",
+  "status": "READY",
+  "issues_found": 1,
+  "summary": {
+    "total_issues": 1,
+    "severity_counts": {
+      "ERROR": 1
+    },
+    "issue_type_counts": {
+      "MISSING_REQUIRED_FIELD": 1
+    }
+  },
+  "issues": [
+    {
+      "issue_id": "ISSUE_1",
+      "source_bucket": "ERROR",
+      "source_code": "MISSING_REQUIRED_FIELD",
+      "source_message": "{\"result_status\": \"ERROR\", \"result_code\": \"MISSING_REQUIRED_FIELD\", \"message\": \"Missing required item specific Brand and invalid price format\", \"sku\": \"SKU-ERROR-0001\"}",
+      "issue_type": "MISSING_REQUIRED_FIELD",
+      "severity": "ERROR",
+      "probable_field": "price",
+      "probable_cause": "обязательное поле отсутствует или пустое; вероятное поле: price",
+      "recommended_fix": "заполнить обязательное поле по шаблону eBay и прогнать повторную валидацию",
+      "automation_level": "RULE_BASED"
+    }
+  ],
+  "source_parser_status": "HAS_ERRORS",
+  "source_latest_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_error_v1.json",
+  "source_summary": {
+    "success_count": 0,
+    "warning_count": 0,
+    "error_count": 1,
+    "unknown_count": 0
+  }
+}

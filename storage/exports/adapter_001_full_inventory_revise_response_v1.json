@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "errorId": 25709,
+      "domain": "API_INVENTORY",
+      "subdomain": "Selling",
+      "category": "Request",
+      "message": "Invalid value for weight.value."
+    }
+  ]
+}

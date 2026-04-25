@@ -1,0 +1,11 @@
+POST_RUNNER_BRANCH_DECISION_V1_AUDIT
+status = OK
+phase = 8
+current_phase = RUNNER_CHECKPOINT_INTEGRATED_V1
+runner_pipeline_complete = True
+execution_allowed = False
+final_decision = KEEP_BLOCKED
+selected_branch = prepare_n8n_dispatcher_v1
+next_allowed_action = build_n8n_dispatcher_checkpoint_v1
+do_not_restart_from_manifest = True
+do_not_offer_live = True

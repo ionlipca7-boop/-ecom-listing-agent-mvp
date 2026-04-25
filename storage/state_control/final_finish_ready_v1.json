@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINAL_FULL_SYSTEM_CHECK_V1",
+  "clean_project_ready": true,
+  "listing_generator_ready": true,
+  "approval_gate_ready": true,
+  "publish_system_locked": true,
+  "server_runtime_planned": true,
+  "telegram_control_planned": true,
+  "publish_allowed": false,
+  "run_allowed": false,
+  "telegram_run_allowed": false,
+  "next_allowed_action": "STOP"
+}

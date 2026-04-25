@@ -1,0 +1,44 @@
+import json
+import urllib.request
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent
+SECRETS_DIR = BASE_DIR / "storage" / "secrets"
+EXPORTS_DIR = BASE_DIR / "storage" / "exports"
+API_URL = "https://api.ebay.com/sell/account/v1/payment_policy"
+def main():
+    token = (SECRETS_DIR / "ebay_access_token.txt").read_text(encoding="utf-8").strip()
+    payload_obj = {
+        "name": "ECOM_DE_PAYMENT_STD_V1",
+        "description": "Standard DE payment policy created by ECOM Listing Agent MVP",
+        "marketplaceId": "EBAY_DE",
+        "categoryTypes": [{"name": "ALL_EXCLUDING_MOTORS_VEHICLES"}],
+        "immediatePay": True,
+        "paymentMethods": [
+            {"paymentMethodType": "EBAY_PAYMENT"}
+        ]
+    }
+    payload = json.dumps(payload_obj).encode("utf-8")
+    request = urllib.request.Request(API_URL, data=payload, headers={"Authorization": f"Bearer {token}", "Accept": "application/json", "Content-Type": "application/json"}, method="POST")
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            body = response.read().decode("utf-8", errors="replace")
+            status_code = response.getcode()
+            location = response.headers.get("Location", "")
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        audit = {"status": "FAILED", "http_status": e.code, "body": body}
+        (EXPORTS_DIR / "ebay_create_payment_policy_audit_v1.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("CREATE_PAYMENT_POLICY_FAILED")
+        print("http_status =", e.code)
+        print(body)
+        exit(1)
+    data = json.loads(body) if body.strip() else {}
+    (EXPORTS_DIR / "ebay_create_payment_policy_v1.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    audit = {"status": "OK", "http_status": status_code, "location": location, "top_keys": list(data.keys())[:10]}
+    (EXPORTS_DIR / "ebay_create_payment_policy_audit_v1.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("CREATE_PAYMENT_POLICY_OK")
+    print("http_status =", status_code)
+    print("location =", location)
+    print("top_keys =", list(data.keys())[:10])
+if __name__ == "__main__":
+    main()

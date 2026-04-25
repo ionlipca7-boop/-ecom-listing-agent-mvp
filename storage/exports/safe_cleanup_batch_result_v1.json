@@ -1,0 +1,144 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "safe_cleanup_batch_v1_executed",
+  "root_path": "D:\\ECOM_LISTING_AGENT_MVP",
+  "quarantine_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\cleanup\\safe_cleanup_batch_v1",
+  "moved_count": 1,
+  "skipped_count": 434,
+  "moved": [
+    {
+      "name": "__pycache__",
+      "type": "dir"
+    }
+  ],
+  "skipped_sample": [
+    {
+      "name": ".git",
+      "reason": "protected_dir"
+    },
+    {
+      "name": ".gitignore",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "agent",
+      "reason": "protected_dir"
+    },
+    {
+      "name": "app",
+      "reason": "protected_dir"
+    },
+    {
+      "name": "approval_action.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "approve_all_review.bat",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "approve_latest.bat",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "approve_real_publish_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "archive_control_room_run_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "audit_ebay_feed.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "audit_ebay_template_matched_export_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "audit_final_ebay_feed.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "auto_archive_on_run_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_dedup_ebay_feed.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_ebay_feed.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_final_ebay_feed.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_publish_manifest.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_publish_package.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "build_publish_ready_summary.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "bulk_action.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "cd",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "chcp",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "cleanup_backup",
+      "reason": "non_safe_dir"
+    },
+    {
+      "name": "configs",
+      "reason": "protected_dir"
+    },
+    {
+      "name": "config_loader_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "control_room.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "control_room_audit_v1.json",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "control_room_audit_v1.py",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "control_room_dashboard_v1.json",
+      "reason": "protected_or_non_safe_file"
+    },
+    {
+      "name": "control_room_dashboard_v2.json",
+      "reason": "protected_or_non_safe_file"
+    }
+  ],
+  "rules": [
+    "do_not_touch_core",
+    "do_not_touch_storage",
+    "do_not_touch_active_adapter_001",
+    "move_only_safe_artifacts",
+    "no_hard_delete"
+  ]
+}

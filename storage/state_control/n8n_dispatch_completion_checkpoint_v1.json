@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_COMPLETION_CHECKPOINT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "completion_checkpoint_version": "v1",
+  "dispatcher_chain_status": {
+    "checkpoint_ready": true,
+    "contract_ready": true,
+    "state_map_ready": true,
+    "audit_flow_ready": true,
+    "payload_contract_ready": true,
+    "decision_gate_ready": true,
+    "runner_handoff_ready": true,
+    "archivist_handoff_ready": true,
+    "state_update_handoff_ready": true
+  },
+  "chain_closed": true,
+  "n8n_real_connection_enabled": false,
+  "n8n_ready": false,
+  "execution_allowed": false,
+  "final_decision": "KEEP_BLOCKED",
+  "live_execution_forbidden": true,
+  "dispatcher_completion_ready": true,
+  "next_allowed_action": "run_full_phase_8_canonical_audit_v1"
+}

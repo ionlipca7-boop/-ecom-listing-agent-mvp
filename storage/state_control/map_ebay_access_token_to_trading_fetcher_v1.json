@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "MAP_EBAY_ACCESS_TOKEN_TO_TRADING_FETCHER_V1",
+  "target": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "changed": true,
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "secret_values_printed": false,
+  "read_only": true,
+  "execution_allowed": false,
+  "next_allowed_action": "execute_trading_api_read_only_fetcher_v1",
+  "timestamp": "2026-04-25T08:55:31.827229+00:00"
+}

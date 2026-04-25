@@ -1,0 +1,11 @@
+N8N_DISPATCH_ARCHIVIST_HANDOFF_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+archivist_handoff_version = v1
+handoff_mode = record_required
+required_handoff_field_count = 7
+blocked_condition_count = 3
+execution_allowed = False
+archivist_handoff_ready = True
+next_allowed_action = build_n8n_dispatch_state_update_handoff_v1

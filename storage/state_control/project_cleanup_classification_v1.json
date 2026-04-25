@@ -1,0 +1,40 @@
+{
+  "status": "OK",
+  "layer": "PROJECT_CLEANUP_CLASSIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PROJECT_INVENTORY_MAP_RESULT_V1",
+  "classification": {
+    "KEEP": [
+      "storage/state_control/project_cleanup_audit_v1.json",
+      "storage/state_control/project_inventory_map_result_v1.json",
+      "storage/state_control/block_0_security_fix_result_v1.json",
+      "storage/state_control/block_7_run_confirmed_stop_v1.json"
+    ],
+    "ARCHIVE_CANDIDATE": [
+      "storage/audit/build_helper_agent_plan_v1.txt",
+      "storage/audit/helper_agent_status_contract_v1.txt",
+      "storage/audit/snapshot_commit_files_183f6b6_v1.txt",
+      "storage/memory/archive/transition_2026_04_23_preview_route_map_safe_v1.json",
+      "storage/memory/archive/transition_2026_04_25_local_snapshot_security_risk_confirmed_v1.json",
+      "storage/memory/front/FRONT_2026_04_25_SECURITY_CONTROL_BRIDGE_START_V1.txt",
+      "storage/memory/front_new_chat_preview_route_safe_v1.txt"
+    ],
+    "DELETE_CANDIDATE": [
+      "nul",
+      "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json"
+    ],
+    "REVIEW": [
+      "prepare_helper_agent_status_builder_v1.json",
+      "prepare_helper_agent_status_contract_v1.json",
+      "confirmed_new_chat_entry_state_v1.json"
+    ]
+  },
+  "rules": {
+    "delete_allowed": false,
+    "archive_allowed": false,
+    "publish_allowed": false,
+    "run_allowed": false
+  },
+  "next_allowed_action": "project_cleanup_decision_gate_v1",
+  "created_at": "2026-04-25T07:03:08.044726"
+}

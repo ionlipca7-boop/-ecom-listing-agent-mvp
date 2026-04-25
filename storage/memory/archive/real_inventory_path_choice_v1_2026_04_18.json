@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "decision": "real_inventory_read_path_chosen",
+  "source_file": "storage\\exports\\real_inventory_api_probe_v1.json",
+  "path_choice_version": "v1",
+  "ready_for_branching": true,
+  "chosen_path": "real_inventory_read_first",
+  "reason": "project_rule_read_live_first_then_build_full_update_payload",
+  "next_step": "build_real_inventory_read_probe_v1"
+}

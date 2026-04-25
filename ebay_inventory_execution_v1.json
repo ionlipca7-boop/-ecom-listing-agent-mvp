@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "reason": "Missing sandbox token (env EBAY_SANDBOX_TOKEN or ebay_sandbox_credentials_v1.json)",
+  "http_status": null,
+  "response_body": null,
+  "request_sent": false
+}

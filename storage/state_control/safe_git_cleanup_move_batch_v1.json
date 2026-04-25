@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "SAFE_GIT_CLEANUP_MOVE_BATCH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SAFE_GIT_CLEANUP_GUARD_V1",
+  "input_status": "OK",
+  "execution_mode": "PREPARE_ONLY",
+  "archive_target_root": "storage/archive_candidates/git_cleanup_v1",
+  "root_noise_move_candidates": [
+    "(",
+    "0",
+    "Kabel",
+    "cd",
+    "if",
+    "type"
+  ],
+  "tracked_review_not_in_move_batch": [
+    "run_control_room.bat",
+    "agent/__pycache__/brain.cpython-314.pyc"
+  ],
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "cleanup_move_execution_allowed": false,
+  "next_allowed_action": "review_safe_git_cleanup_move_batch_v1"
+}

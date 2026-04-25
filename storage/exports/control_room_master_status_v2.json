@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "system_status": "OK",
+  "overall_status": "OK",
+  "actions_count": 1,
+  "decision": "RUN_SINGLE",
+  "last_execution_status": "OK",
+  "executor_returncode": 0,
+  "paths": {
+    "status_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_status_v1.json",
+    "action_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_action_v5.json",
+    "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v2.json"
+  },
+  "error_reason": null
+}

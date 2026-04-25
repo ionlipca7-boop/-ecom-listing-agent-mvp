@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_REAL_EBAY_READ_ONLY_API_IMPLEMENTATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_LOCAL_ENV_FILE_V1",
+  "credentials_ready": true,
+  "api_mode": "REAL_EBAY_READ_ONLY",
+  "allowed_api_actions": [
+    "get_active_listings_only"
+  ],
+  "forbidden_api_actions": [
+    "publish",
+    "revise",
+    "end",
+    "bulk_update",
+    "delete"
+  ],
+  "expected_active_listings": 56,
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "build_real_ebay_read_only_inventory_fetcher_v1",
+  "timestamp": "2026-04-25T08:31:49.042547+00:00"
+}

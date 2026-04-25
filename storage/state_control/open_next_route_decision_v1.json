@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "OPEN_NEXT_ROUTE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "decision": "OPEN_BLOCK_N_LOCAL_OPERATOR_CONTROL_PREP",
+  "checks": {
+    "previous_finish_ready_ok": true,
+    "previous_next_is_stop": true,
+    "publish_locked": true,
+    "server_locked": true,
+    "telegram_locked": true
+  },
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "prepare_local_operator_control_plan_v1"
+}

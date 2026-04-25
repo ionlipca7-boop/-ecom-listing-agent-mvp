@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_EXECUTION_INPUT_LAYER_V1",
+  "input_status": "OK",
+  "runner_gate_defined": true,
+  "payload_validated": true,
+  "identifier_confirmed": true,
+  "api_target_confirmed": true,
+  "execution_ready": true,
+  "execution_allowed_now": true,
+  "runner_unblocked": true,
+  "live_operations_blocked": true,
+  "next_allowed_action": "execute_runner_inventory_read_v1"
+}

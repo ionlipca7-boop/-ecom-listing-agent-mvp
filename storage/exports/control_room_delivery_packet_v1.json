@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "delivery_status": "READY",
+  "delivery_action": "SEND_NOW",
+  "pipeline_status": "READY_NEXT",
+  "alert_state": "SEND_READY_NEXT",
+  "scheduler_action": "RUN_NOW",
+  "message_type": "READY_NEXT",
+  "title": "CONTROL ROOM READY NEXT",
+  "message_text": "system_status=OK; overall_status=OK; final_decision=READY_NEXT; pipeline_status=READY_NEXT; alert_state=SEND_READY_NEXT; actions_count=1; alert_reason=pipeline_ready_for_next_step",
+  "actions_count": 1,
+  "gate_reason": "ready_next_and_alert_present",
+  "error_reason": null,
+  "paths": {
+    "snapshot_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_snapshot_v1.json",
+    "message_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_message_payload_v1.json",
+    "scheduler_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_scheduler_gate_v1.json",
+    "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_delivery_packet_v1.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_RUN_CONTROL_ROOM_ROUTE_FIX_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_RUNTIME_PATH_RESET_ROOT_CAUSE_CHECK_V1",
+  "input_status": "OK",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "path_reset_confirmed": true,
+  "root_cause_check_verified": true,
+  "verified_root_cause": "run_control_room.py_returns_base_runtime_bridge_step_without_progressing_to_draft_generation_route",
+  "route_fix_plan_prepared": true,
+  "route_fix_plan_scope": "force_progression_from_runtime_bridge_to_draft_generation_path",
+  "code_fix_started": false,
+  "listing_draft_created": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_run_control_room_route_fix_plan_v1"
+}

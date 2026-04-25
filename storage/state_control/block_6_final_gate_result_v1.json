@@ -1,0 +1,16 @@
+{
+  "status": "FINISH_READY",
+  "layer": "BLOCK_6_FINAL_GATE_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "confirmed_state": {
+    "blocks_0_to_5_ok": true,
+    "main_compile_ok": true,
+    "secrets_visible_in_git_status": false,
+    "missing_required_parts": false,
+    "delete_allowed": false,
+    "publish_allowed": false,
+    "run_allowed": true
+  },
+  "next_allowed_action": "RUN",
+  "created_at": "2026-04-25T06:33:36.959265"
+}

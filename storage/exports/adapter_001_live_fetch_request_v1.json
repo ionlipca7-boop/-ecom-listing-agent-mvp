@@ -1,0 +1,17 @@
+{
+  "date": "2026-04-18",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "action": "live_fetch_before_revise",
+  "purpose": "read_live_inventory_and_offer_before_full_update",
+  "compare_targets": [
+    "title",
+    "description",
+    "specifics",
+    "price",
+    "quantity",
+    "imageUrls"
+  ],
+  "rule": "fetch_then_full_payload_then_revise_then_verify",
+  "status": "live_fetch_request_prepared"
+}

@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-04-15T18:50:49Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_plan_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_status_v1.json",
+  "fix_execution_status": "READY",
+  "issues_count": 1,
+  "action_count": 3,
+  "automation_ready_actions": 3,
+  "manual_review_actions": 0,
+  "next_step": "BUILD_REAL_FIX_EXECUTOR"
+}

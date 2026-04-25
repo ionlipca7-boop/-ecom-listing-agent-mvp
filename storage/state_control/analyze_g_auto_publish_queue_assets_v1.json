@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "ANALYZE_G_AUTO_PUBLISH_QUEUE_ASSETS_V1",
+  "input_layer": "SCAN_G_AUTO_PUBLISH_QUEUE_ASSETS_V1",
+  "mode": "LOCAL_ANALYSIS_ONLY_NO_PUBLISH",
+  "current_block": "G_AUTO_PUBLISH_QUEUE",
+  "preferred_sources": [
+    "publish_packages\\publish_index.json",
+    "storage\\approval\\runner_approval_request_v1.json",
+    "storage\\contracts\\publish_instruction_contract_v1.json",
+    "storage\\exports\\control_room_scheduler_gate_v1.json",
+    "storage\\exports\\manual_publish_ready_status_v1.json"
+  ],
+  "queue_assets_exist": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "restore_g_auto_publish_queue_safe_locked_v1",
+  "timestamp": "2026-04-25T12:12:25.165748+00:00"
+}

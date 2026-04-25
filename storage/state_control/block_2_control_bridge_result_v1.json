@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "BLOCK_2_CONTROL_BRIDGE_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "confirmed_state": {
+    "local_snapshot_source_of_truth": true,
+    "codex_refs_present": true,
+    "github_remote_present": true,
+    "n8n_files_present": true,
+    "control_room_files_present": true,
+    "helper_files_present": true,
+    "agent_files_present": true,
+    "delete_allowed": false,
+    "publish_allowed": false,
+    "run_allowed": false
+  },
+  "next_allowed_action": "block_3_full_project_audit_v1",
+  "created_at": "2026-04-25T06:22:57.891000"
+}

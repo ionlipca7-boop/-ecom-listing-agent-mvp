@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_SYNC_56_LISTINGS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_N8N_ORCHESTRATION_CONFIG_V1",
+  "sync_mode": "READ_ONLY",
+  "expected_active_listings": 56,
+  "allowed_actions": [
+    "read_inventory",
+    "read_active_listings",
+    "save_snapshot"
+  ],
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "delete",
+    "end_listing",
+    "bulk_update"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_ebay_sync_56_listings_read_only_v1",
+  "timestamp": "2026-04-25T11:17:28.195191+00:00"
+}

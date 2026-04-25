@@ -1,0 +1,21 @@
+{
+  "index_build_rc": 2,
+  "index_build_out": "",
+  "index_build_err": "C:\\Python314\\python.exe: can't open file 'D:\\\\ECOM_LISTING_AGENT_MVP\\\\run_build_archive_index_v1.py': [Errno 2] No such file or directory",
+  "branch": "codex/add-simulation-verdict-layer",
+  "branch_rc": 0,
+  "git_add_rc": 0,
+  "git_add_out": "",
+  "git_add_err": "",
+  "diff_rc": 1,
+  "has_changes": true,
+  "git_commit_rc": 0,
+  "git_commit_out": "[codex/add-simulation-verdict-layer 61ca5d2] archive sync v1\n 40 files changed, 910 insertions(+)\n create mode 100644 storage/memory/archive/archive_bridge_file_audit_v1.json\n create mode 100644 storage/memory/archive/contract_normalizer_v2_2026_04_18.json\n create mode 100644 storage/memory/archive/downstream_probe_v1_contract_v2_2026_04_18.json\n create mode 100644 storage/memory/archive/generator_dry_run_v1.json\n create mode 100644 storage/memory/archive/generator_entrypoint_inspect_error_archive_v1.json\n create mode 100644 storage/memory/archive/generator_entrypoint_writer_missing_json_v1.json\n create mode 100644 storage/memory/archive/generator_output_contract_v1.json\n create mode 100644 storage/memory/archive/generator_output_fields_audit_v1.json\n create mode 100644 storage/memory/archive/generator_output_v4_direct_read_v1.json\n create mode 100644 storage/memory/archive/generator_probe_error_archive_v1.json\n create mode 100644 storage/memory/archive/generator_real_dry_input_v1.json\n create mode 100644 storage/memory/archive/generator_stdout_normalized_v1.json\n create mode 100644 storage/memory/archive/inventory_first_real_api_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/inventory_full_payload_mapper_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/live_identifier_resolution_result_stub_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/live_inventory_identifier_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/live_inventory_identifier_source_choice_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/product_registry_identifier_resolution_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/product_registry_lookup_call_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/promote_contract_v2_as_downstream_input_2026_04_18.json\n create mode 100644 storage/memory/archive/publish_payload_mapper_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/publish_payload_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/raw_stdout_preview_v1.json\n create mode 100644 storage/memory/archive/real_inventory_api_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/real_inventory_path_choice_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/real_inventory_read_call_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/real_inventory_read_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/real_publish_mapper_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/real_publish_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/registry_key_injection_probe_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/registry_resolution_call_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/root_cleanup_final_summary_v1.json\n create mode 100644 storage/memory/archive/selected_generator_io_contract_v1.json\n create mode 100644 storage/memory/archive/title_recovery_layer_v1_2026_04_18.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_chat1.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_chat2.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_chat3.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_chat4.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_chat_next.json\n create mode 100644 storage/memory/archive/transition_2026_04_18_live_listing_reset.json",
+  "git_commit_err": "",
+  "commit_created": true,
+  "git_push_rc": 0,
+  "git_push_out": "",
+  "git_push_err": "To https://github.com/ionlipca7-boop/-ecom-listing-agent-mvp.git\n   51155d1..61ca5d2  codex/add-simulation-verdict-layer -> codex/add-simulation-verdict-layer",
+  "status": "CHECK",
+  "decision": "archive_bridge_sync_v1_completed"
+}

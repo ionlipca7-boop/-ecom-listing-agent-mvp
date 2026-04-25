@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_E_PRICE_RESEARCH_V1",
+  "input_layer": "ANALYZE_E_PRICE_RESEARCH_EXISTING_ASSETS_V1",
+  "finished_block": "E_PRICE_RESEARCH",
+  "block_e_finished": true,
+  "price_research_ready": true,
+  "source_mode": "LOCAL_RESTORE_FROM_PRICE_RESEARCH_FILES",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "F_APPROVAL_GATE",
+  "next_allowed_action": "start_f_approval_gate_entry_v1",
+  "timestamp": "2026-04-25T12:02:04.176524+00:00"
+}

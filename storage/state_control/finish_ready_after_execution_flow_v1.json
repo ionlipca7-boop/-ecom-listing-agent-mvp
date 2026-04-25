@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY_AFTER_EXECUTION_FLOW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "final_layer": "FINISH_READY",
+  "execution_flow_complete": true,
+  "next_allowed_action": "STOP",
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  }
+}

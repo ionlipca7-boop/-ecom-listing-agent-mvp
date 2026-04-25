@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "SCAN_H_DAILY_STRATEGY_ASSETS_V1",
+  "input_layer": "PREPARE_H_DAILY_STRATEGY_CONTRACT_V1",
+  "mode": "LOCAL_SCAN_ONLY_NO_ACTION",
+  "matched_files_count": 11,
+  "matched_files_sample": [
+    "storage\\ebay\\token_refresh_result_safe_v1.json",
+    "storage\\exports\\ebay_refresh_access_token_audit_v1.json",
+    "storage\\exports\\ebay_refresh_access_token_audit_v2.json",
+    "storage\\exports\\listing_performance_v1.json",
+    "storage\\exports\\refresh_access_token_audit_v1.json",
+    "storage\\exports\\refresh_user_access_token_v1.json",
+    "storage\\state_control\\build_ebay_token_refresh_tool_v1.json",
+    "storage\\state_control\\execute_token_refresh_and_retry_sell_inventory_v1.json",
+    "storage\\state_control\\prepare_ebay_token_refresh_with_required_scopes_v1.json",
+    "storage\\state_control\\repair_or_refresh_ebay_access_token_v1.json",
+    "storage\\state_control\\start_h_daily_strategy_entry_v1.json"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "analyze_h_daily_strategy_assets_v1",
+  "timestamp": "2026-04-25T12:16:34.073907+00:00"
+}

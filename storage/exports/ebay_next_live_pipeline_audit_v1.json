@@ -1,0 +1,48 @@
+{
+  "sku": "ECOM-NEXT-SKU-001",
+  "steps": {
+    "inventory_upsert": {
+      "http_status": 204,
+      "response_json": {
+        "raw_text": ""
+      }
+    },
+    "create_offer": {
+      "http_status": 201,
+      "response_json": {
+        "offerId": "152963617011"
+      }
+    },
+    "publish_offer": {
+      "http_status": 400,
+      "response_json": {
+        "errors": [
+          {
+            "errorId": 25002,
+            "domain": "API_INVENTORY",
+            "subdomain": "Selling",
+            "category": "Request",
+            "message": "A user error has occurred. Es sieht so aus, als ob dieses Angebot für einen Artikel ist, den Sie bereits bei eBay eingestellt haben: USB-C Ladekabel 2m 60W Schnellladen (318162033369). Verkäufer dürfen bei eBay nicht mehrere Angebote mit identischen Artikeln zur gleichen Zeit einstellen. Wenn Sie mehrere identische Artikel einstellen möchten, erstellen Sie bitte ein Festpreisangebot mit mehreren Artikeln.",
+            "parameters": [
+              {
+                "name": "0",
+                "value": "USB-C Ladekabel 2m 60W Schnellladen"
+              },
+              {
+                "name": "1",
+                "value": "318162033369"
+              },
+              {
+                "name": "2",
+                "value": "http://pages.ebay.de/help/policies/listing-multi.html"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "offerId": "152963617011",
+  "listingId": null,
+  "status": "FAILED"
+}

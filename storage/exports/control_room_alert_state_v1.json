@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "pipeline_status": "READY_NEXT",
+  "final_decision": "READY_NEXT",
+  "actions_count": 1,
+  "alert_state": "SEND_READY_NEXT",
+  "alert_reason": "pipeline_ready_for_next_step",
+  "source_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_pipeline_status_v1.json",
+  "audit_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_alert_state_v1.json"
+}

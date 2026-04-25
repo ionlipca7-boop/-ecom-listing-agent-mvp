@@ -1,0 +1,12 @@
+NEW CHAT START ORDER
+
+1. Paste ION_STRICT_NEW_CHAT_PROMPT_CMD_SAFE_V1.txt
+2. Paste NEW_CHAT_FRONT_V2_POST_CLEANUP_READY.txt
+3. Paste latest CMD output if needed
+4. Ask for ONE CMD block
+
+EXPECTED FIRST RESPONSE
+- confirm PREPARE_ARCHIVE_MOVE_BATCH_V1
+- execute_archive_move_batch_v1
+- no archive planning again
+- no delete

@@ -1,0 +1,11 @@
+{
+  "warnings": [
+    {
+      "errorId": 25072,
+      "domain": "API_INVENTORY",
+      "subdomain": "Selling",
+      "category": "REQUEST",
+      "message": "Verkaufsprovision erlassen."
+    }
+  ]
+}

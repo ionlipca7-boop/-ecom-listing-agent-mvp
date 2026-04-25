@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "REENTRY_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "POST_STAGE9_CANONICAL_ALIGNMENT_CHECKPOINT_V1",
+  "input_status": "OK",
+  "reentry_required": true,
+  "reentry_mode": "STRICT_CANONICAL_RETURN",
+  "allowed_path": "REENTRY_LOCK -> ALIGNMENT_CHECKPOINT -> RETURN_TO_CANON",
+  "execution_still_blocked": true,
+  "runner_execution_still_blocked": true,
+  "live_execution_still_blocked": true,
+  "next_allowed_action": "build_reentry_lock_v1"
+}

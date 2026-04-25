@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "BUILD_EBAY_TOKEN_REFRESH_TOOL_V1",
+  "target": "publisher\\ebay_token_refresh_tool.py",
+  "execution_allowed": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "compile_ebay_token_refresh_tool_v1",
+  "timestamp": "2026-04-25T09:07:44.803132+00:00"
+}

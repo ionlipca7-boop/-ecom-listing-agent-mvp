@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "PARSE_ACTIVE_LISTINGS_FETCH_RESULT_V1",
+  "input_layer": "EXECUTE_GUARDED_ACTIVE_LISTINGS_FETCH_V1",
+  "block": "B_EBAY_SYNC",
+  "block_finished": false,
+  "route_finished": false,
+  "result": "EBAY_SYNC_READY_FOR_NEXT_VERIFY",
+  "facts": {
+    "inventory_http_status": null,
+    "offer_http_status": null,
+    "trading_http_status": null,
+    "trading_ack": null,
+    "identifier_ready": null,
+    "identifier_value": null,
+    "active_56_listings_verified": false,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "verify_active_56_listings_snapshot_v1",
+  "timestamp": "2026-04-25T11:45:10.400328+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "generator_entrypoint_inspected",
+  "files": [
+    {
+      "file": "run_generator_agent_v1.py",
+      "exists": true,
+      "size": 1615,
+      "has_main_guard": true,
+      "has_main_def": true,
+      "has_print": true,
+      "has_json": true
+    },
+    {
+      "file": "run_generator_agent_v2.py",
+      "exists": true,
+      "size": 2306,
+      "has_main_guard": true,
+      "has_main_def": true,
+      "has_print": true,
+      "has_json": true
+    },
+    {
+      "file": "run_generator_agent_v3.py",
+      "exists": true,
+      "size": 2282,
+      "has_main_guard": true,
+      "has_main_def": true,
+      "has_print": true,
+      "has_json": true
+    },
+    {
+      "file": "run_generator_agent_v4.py",
+      "exists": true,
+      "size": 2382,
+      "has_main_guard": true,
+      "has_main_def": true,
+      "has_print": true,
+      "has_json": true
+    },
+    {
+      "file": "run_generator_agent_v5.py",
+      "exists": true,
+      "size": 2245,
+      "has_main_guard": true,
+      "has_main_def": true,
+      "has_print": true,
+      "has_json": true
+    }
+  ]
+}

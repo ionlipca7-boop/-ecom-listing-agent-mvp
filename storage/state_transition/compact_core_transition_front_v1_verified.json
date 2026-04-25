@@ -1,0 +1,37 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "layer": "COMPACT_CORE_TRANSITION_FRONT_V1_VERIFIED",
+  "phase": 8,
+  "phase_status": "CANON_COMPLETE",
+  "current_point": "post_phase_8_closure_transition_verified",
+  "direction_locked": true,
+  "selected_direction": "prepare_compact_core_transition_front_v1",
+  "execution_allowed": false,
+  "transition_front_exists": true,
+  "transition_front_verified": true,
+  "transition_front_promoted_as_source_of_truth": true,
+  "confirmed_done": [
+    "phase_8_canon_complete",
+    "dispatcher_chain_closed",
+    "runner_checkpoint_integrated",
+    "closure_front_done",
+    "direction_lock_applied",
+    "compact_core_transition_front_v1_created",
+    "compact_core_transition_front_v1_verified"
+  ],
+  "not_now": [
+    "no_parallel_branches",
+    "no_live_execution",
+    "no_n8n_integration",
+    "no_return_to_closed_phase_without_reason"
+  ],
+  "remaining_work": [
+    "prepare_first_compact_core_build_step_after_transition_front",
+    "build_first_compact_core_post_transition_layer",
+    "verify_post_transition_compact_core_step"
+  ],
+  "last_successful_action": "verify_compact_core_transition_front_v1",
+  "next_allowed_action": "prepare_first_compact_core_build_step_after_transition_front",
+  "next_after_that": "build_first_compact_core_post_transition_layer" 
+}

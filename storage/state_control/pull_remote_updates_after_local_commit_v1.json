@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "PULL_REMOTE_UPDATES_AFTER_LOCAL_COMMIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "last_commits": [
+    "6858946 Save safe activation local state before runtime sync",
+    "a0a5ed7 Add GitHub auto sync policy v1",
+    "e1c5bf1 Sync control room automation state 2026-04-25"
+  ],
+  "remaining_dirty_lines": [
+    "?? .env.local",
+    "?? 3",
+    "?? nul",
+    "?? storage/state_control/commit_safe_local_state_v1.json"
+  ],
+  "pull_rebase_done": true,
+  "runtime_start_allowed": false,
+  "push_allowed": "only_after_verify",
+  "next_allowed_action": "verify_post_pull_runtime_gate_v1"
+}

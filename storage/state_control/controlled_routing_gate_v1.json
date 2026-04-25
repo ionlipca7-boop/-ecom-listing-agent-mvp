@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_ROUTING_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_INPUT_NORMALIZATION_AUDIT_V1",
+  "input_status": "OK",
+  "routing_gate_defined": true,
+  "routing_input_contract": "normalized_unified_input_payload",
+  "routing_mode": "project_specific_single_path",
+  "selected_project_path": "new_listing_from_clone_baseline_flow",
+  "entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_controlled_routing_audit_v1"
+}

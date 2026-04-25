@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_CONTRACT_INTEGRITY_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase": "FIRST_SAFE_TECHNICAL_ENTRY_DEFINED",
+  "input_layer": "FIRST_TECHNICAL_ENTRYPOINT_PLAN_V1",
+  "check_defined": true,
+  "check_scope": "preview_contract_only",
+  "selected_entrypoint_confirmed": true,
+  "integrity_targets": [
+    "compact_core_preview_contract_v1",
+    "compact_core_preview_verification_v1",
+    "compact_core_preview_ready_gate_v1"
+  ],
+  "check_rules": {
+    "contract_surface_only": true,
+    "no_runner_execution": true,
+    "no_live_execution": true,
+    "no_parallel_branching": true
+  },
+  "expected_result": "preview_contract_path_integrity_confirmed_or_gap_detected",
+  "do_now": "build_preview_contract_integrity_audit_v1",
+  "one_next_step": "build_preview_contract_integrity_audit_v1"
+}

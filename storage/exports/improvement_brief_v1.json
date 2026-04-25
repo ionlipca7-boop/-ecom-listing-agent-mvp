@@ -1,0 +1,65 @@
+{
+  "status": "OK",
+  "decision": "improvement_brief_v1_built",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "item_id": "318166440509",
+  "baseline_price": "4.01",
+  "baseline_inventory_picture_count": 9,
+  "target_title": "USB-C OTG Adapter USB 3.0 Typ C auf USB-A 6A 120W Datenadapter",
+  "target_description_html": "^<h2^>USB-C OTG Adapter USB 3.0^</h2^>^<p^><b^>Kompakter Adapter fuer Laden und Datenuebertragung.^</b^>^</p^>^<ul^>^<li^>USB-C auf USB-A OTG Adapter^</li^>^<li^>USB 3.0 fuer schnelle Datenuebertragung^</li^>^<li^>Geeignet fuer Smartphone, Tablet, Laptop und Zubehoer^</li^>^<li^>Kompaktes Format fuer unterwegs^</li^>^<li^>Farbe: Schwarz/Orange^</li^>^</ul^>^<p^><b^>Hinweis:^</b^> Bitte vor dem Kauf die Kompatibilitaet Ihres Geraets pruefen.^</p^>^<p^><b^>Schneller Versand aus Deutschland.^</b^>^</p^>",
+  "photo_order_plan": [
+    {
+      "position": 1,
+      "label": "Hero / Hauptbild",
+      "url": "https://i.ebayimg.com/images/g/7MsAAeSw7kpp4-UD/s-l1600.webp"
+    },
+    {
+      "position": 2,
+      "label": "Frontansicht",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/dq4AAeSwmR5p4~gJ/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 3,
+      "label": "Produkt im Set",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/g9EAAeSwQdhp4~gL/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 4,
+      "label": "Anschluss Detail",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/QgoAAeSwK89p4~gN/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 5,
+      "label": "Nutzung am Smartphone",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/oEYAAeSwtppp4~gO/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 6,
+      "label": "Anwendung Beispiel",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/IIoAAeSwf8Fp4~gP/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 7,
+      "label": "Seitenansicht",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/GXIAAeSwEdFp4~gR/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 8,
+      "label": "Kompatibilitaet Bild",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/tY0AAeSwpzNp4~gS/$_1.JPG?set_id=8800005007"
+    },
+    {
+      "position": 9,
+      "label": "Zusatzbild / Reserve",
+      "url": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/4BsAAeSwa5xp4~gT/$_1.JPG?set_id=8800005007"
+    }
+  ],
+  "rules": [
+    "do_not_break_working_price",
+    "do_not_break_required_aspects",
+    "do_not_replace_eps_images_with_external_urls",
+    "next_live_step_should_use_full_payload"
+  ],
+  "next_step": "build_live_improvement_update_v1"
+}

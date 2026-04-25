@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "decision": "live_quantity_updated_via_registry",
+  "product_key": "cable_001",
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "requested_quantity": 12,
+  "get_http_status": 200,
+  "put_http_status": 200,
+  "listing_state": "LIVE",
+  "pipeline_status": "LIVE_OK",
+  "response_text": "{\"warnings\":[{\"errorId\":25072,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"REQUEST\",\"message\":\"Verkaufsprovision erlassen.\"},{\"errorId\":25402,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"REQUEST\",\"message\":\"System warning. Der Verkäufer hat Rahmenbedingungen aktiviert. Bitte verwenden Sie die IDs für Rahmenbedingungen anstelle der Felder für Versand, Zahlung und Rücknahme. Andernfalls werden für diesen Verkäufer neue Rahmenbedingungen erstellt.\"}]}",
+  "previous_quantity": 10,
+  "new_quantity": 12
+}

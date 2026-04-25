@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-04-15T09:00:47Z",
+  "dashboard_status": "READY",
+  "last_package": "package_20260414_070314",
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API",
+  "system_state": "UNSTABLE",
+  "decision": "WAIT_AND_MONITOR",
+  "summary": {
+    "report_status": "OK",
+    "handoff_status": "READY_FOR_MANUAL_UPLOAD"
+  }
+}

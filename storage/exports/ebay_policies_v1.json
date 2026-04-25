@@ -1,0 +1,58 @@
+{
+  "status": "OK",
+  "decision": "policies_fetched",
+  "marketplace_id": "EBAY_DE",
+  "http_statuses": {
+    "fulfillment": 200,
+    "payment": 200,
+    "return": 200
+  },
+  "counts": {
+    "fulfillment": 1,
+    "payment": 1,
+    "return": 1
+  },
+  "fulfillment_policies": [
+    {
+      "id": "257755855024",
+      "name": "ECOM_DE_FULFILLMENT_STD_V1",
+      "marketplaceId": "EBAY_DE",
+      "categoryTypes": [
+        {
+          "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "payment_policies": [
+    {
+      "id": "257755913024",
+      "name": "ECOM_DE_PAYMENT_STD_V2_%Y%m%d_%H%M%S",
+      "marketplaceId": "EBAY_DE",
+      "categoryTypes": [
+        {
+          "name": "ALL_EXCLUDING_MOTORS_VEHICLES",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "return_policies": [
+    {
+      "id": "257755877024",
+      "name": "ECOM_DE_RETURN_STD_V1",
+      "marketplaceId": "EBAY_DE",
+      "categoryTypes": [
+        {
+          "name": "ALL_EXCLUDING_MOTORS_VEHICLES"
+        }
+      ]
+    }
+  ],
+  "raw_errors": {
+    "fulfillment": {},
+    "payment": {},
+    "return": {}
+  }
+}

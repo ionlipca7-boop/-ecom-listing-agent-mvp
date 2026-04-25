@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_INTENT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "execution_intent_defined": true,
+  "execution_type": "inventory_read",
+  "target_api": "getInventoryItem",
+  "input_payload_source": "RUNNER_EXECUTION_INPUT_LAYER_V1",
+  "runner_should_execute": true,
+  "control_mode_override": "execution_mode",
+  "next_allowed_action": "execute_runner_inventory_read_v1_with_intent"
+}

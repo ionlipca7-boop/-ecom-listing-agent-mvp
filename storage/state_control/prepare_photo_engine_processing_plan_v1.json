@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHOTO_ENGINE_PROCESSING_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_PHOTO_INPUT_SAFE_V1",
+  "image_count": 9,
+  "processing_mode": "local_safe_prepare_only",
+  "ebay_photo_rules": {
+    "min_longest_side_px": 500,
+    "recommended_square": true,
+    "no_added_text_or_marketing": true,
+    "no_watermarks": true,
+    "no_borders": true,
+    "api_upload_later": "HTTPS PictureURL or EPS/Media upload"
+  },
+  "planned_outputs": [
+    "normalized_jpg_images",
+    "photo_audit_json",
+    "approval_preview"
+  ],
+  "execution_now": false,
+  "image_processing_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_photo_engine_local_normalize_v1",
+  "timestamp": "2026-04-25T10:00:01.722817+00:00"
+}

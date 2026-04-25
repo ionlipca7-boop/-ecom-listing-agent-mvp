@@ -1,0 +1,12 @@
+POST_PHASE_8_DIRECTION_LOCK_V1_AUDIT
+status = OK
+phase = 8
+phase_status = CANON_COMPLETE
+direction_lock_version = v1
+single_direction_required = True
+parallel_direction_forbidden = True
+selected_direction = prepare_compact_core_transition_front_v1
+execution_allowed = False
+final_decision = KEEP_BLOCKED
+direction_lock_ready = True
+next_allowed_action = build_compact_core_transition_front_v1

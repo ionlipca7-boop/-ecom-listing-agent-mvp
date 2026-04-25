@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "BUILD_IDENTIFIER_RESOLUTION_FROM_REAL_SKU_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "identifier_type": "sku",
+  "identifier_value": "ECOM-TEST-CABLE-001",
+  "resolved_ok": true,
+  "export_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\live_identifier_resolution_result_v1.json",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "rebuild_real_inventory_read_call_v2_with_real_identifier_v1",
+  "timestamp": "2026-04-25T11:31:59.987718+00:00"
+}

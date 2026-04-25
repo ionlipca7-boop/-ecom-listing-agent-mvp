@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "POST_PHASE_8_DIRECTION_LOCK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "phase_status": "CANON_COMPLETE",
+  "current_phase": "POST_PHASE_8_DIRECTION_LOCKED",
+  "direction_lock_version": "v1",
+  "single_direction_required": true,
+  "parallel_direction_forbidden": true,
+  "allowed_directions": [
+    "prepare_real_n8n_readiness_front_v1",
+    "prepare_compact_core_transition_front_v1",
+    "prepare_return_to_listing_operations_front_v1"
+  ],
+  "selected_direction": "prepare_compact_core_transition_front_v1",
+  "selection_reason": "after phase 8 canon closure lock one single direction before any new build",
+  "do_not_do": [
+    "do_not_enable_live",
+    "do_not_start_real_n8n_connection",
+    "do_not_run_parallel_fronts",
+    "do_not_reopen_closed_phase_8"
+  ],
+  "execution_allowed": false,
+  "final_decision": "KEEP_BLOCKED",
+  "direction_lock_ready": true,
+  "next_allowed_action": "build_compact_core_transition_front_v1"
+}

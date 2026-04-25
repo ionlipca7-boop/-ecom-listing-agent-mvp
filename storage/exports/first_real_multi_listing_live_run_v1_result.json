@@ -1,0 +1,22 @@
+{
+  "status": "ERROR",
+  "decision": "first_real_multi_listing_live_run_v1_executed",
+  "runtime_ready_for_live": true,
+  "blocking_fields": [],
+  "sku": "USB-C-OTG-Adapter-6A-120W-q10-p4.49",
+  "marketplace_id": "EBAY_DE",
+  "inventory_http_status": 400,
+  "inventory_response": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Invalid request. The request payload is empty."
+      }
+    ]
+  },
+  "published": false,
+  "next_step": "inspect_inventory_error"
+}

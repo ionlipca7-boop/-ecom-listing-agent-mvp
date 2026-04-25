@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_specifics_cleanup_v3_completed",
+  "get_status": 200,
+  "put_status": 200,
+  "aspect_count": 18,
+  "compat_count": 6,
+  "weight_value": "0.05",
+  "dimensions": {
+    "length": "3",
+    "width": "2",
+    "height": "1",
+    "unit": "CENTIMETER"
+  },
+  "next_step": "user_check_listing_specifics_and_package_fields_then_photo_and_location_upgrade"
+}

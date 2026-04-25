@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_RUN_CONTROL_ROOM_ROUTE_FIX_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_RUN_CONTROL_ROOM_ROUTE_FIX_PLAN_V1",
+  "input_status": "OK",
+  "route_fix_execution_started": true,
+  "pre_fix_snapshot_created": true,
+  "snapshot_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\memory\\archive\\run_control_room_before_route_fix_v1.py",
+  "target_file": "D:\\ECOM_LISTING_AGENT_MVP\\run_control_room.py",
+  "fix_scope": "route_progression_only",
+  "live_execution": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "inspect_run_control_room_route_progression_and_apply_targeted_fix_v1",
+  "created_at": "2026-04-23T20:21:11"
+}

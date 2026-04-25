@@ -1,0 +1,20 @@
+PROJECT: ECOM_LISTING_AGENT_MVP / CONTROL ROOM
+
+STATUS:
+- safe execution decision built
+- execution not started
+- gate not opened
+
+LAST CONFIRMED LAYER:
+- EXPLICIT_SAFE_EXECUTION_DECISION_V1 = OK
+
+CURRENT POSITION:
+- execution_gate_pending_open
+
+EXECUTION PLAN:
+- .gitignore = keep_current_change
+- run_control_room.bat = restore_deleted_tracked_file
+- agent/__pycache__/brain.cpython-314.pyc = revert_tracked_cache_file
+
+NEXT ALLOWED ACTION:
+- prepare_safe_execution_open_gate_v1

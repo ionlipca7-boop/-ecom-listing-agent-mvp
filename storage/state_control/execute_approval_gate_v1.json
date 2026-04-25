@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_APPROVAL_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "approval_packet_created": true,
+  "approval_status": "PENDING_HUMAN_APPROVAL",
+  "approval_packet_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\approval\\approval_packet_v1.json",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "await_human_approval_v1",
+  "timestamp": "2026-04-25T10:23:08.272810+00:00"
+}

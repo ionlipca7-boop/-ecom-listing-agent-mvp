@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "FINALIZE_CONTROLLED_AUTOMATION_PATH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "APPROVAL_PUBLISH_AND_AUTOMATION_READY_V1",
+  "input_status": "OK",
+  "control_room_path_finalized": true,
+  "current_mode": "CONTROLLED_PRE_AUTOMATION",
+  "approval_required": true,
+  "approval_status": "PENDING_OPERATOR_APPROVAL",
+  "publish_path_defined": true,
+  "publish_blocked_until_approval": true,
+  "live_execution": false,
+  "controlled_automation_ready": true,
+  "single_entrypoint": "run_control_room.py",
+  "accepted_operator_inputs": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "operator_approval_or_controlled_input_submission"
+}

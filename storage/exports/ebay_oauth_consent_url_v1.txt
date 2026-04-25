@@ -1,0 +1,1 @@
+https://auth.ebay.com/oauth2/authorize?client_id=IonLipca-ECOMOSV3-PRD-d84c0e5fe-a31d5575&redirect_uri=Ion_Lipca-IonLipca-ECOMOS-bwwjioir&response_type=code&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.account.readonly&state=ECOM-0201d465861c551e

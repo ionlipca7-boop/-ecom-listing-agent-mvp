@@ -1,0 +1,15 @@
+NEW CHAT START ORDER
+
+1. Open new chat.
+2. Paste content of: storage\memory\front\ION_STRICT_NEW_CHAT_PROMPT_CMD_SAFE_V1.txt
+3. Paste content of: storage\memory\front\NEW_CHAT_FRONT_STABLE_V1.txt
+4. Paste the newest CMD output if needed.
+5. Ask for exactly one next CMD block.
+
+EXPECTED FIRST RESPONSE IN NEW CHAT
+- verify latest confirmed layer
+- confirm next allowed action
+- produce exactly one CMD block
+- do not archive yet
+- do not delete yet
+- do not move files yet

@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "FINAL_PRE_REAL_PUBLISH_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_SANDBOX_PUBLISH_SIMULATION_V1",
+  "controlled_real_execution_prep_ready": true,
+  "real_publish_allowed": false,
+  "manual_operator_gate_required": true,
+  "publish_payload_locked": true,
+  "publish_called": false,
+  "real_ebay_api_call_allowed": false,
+  "next_allowed_action": "FINISH_READY_REAL_EXECUTION"
+}

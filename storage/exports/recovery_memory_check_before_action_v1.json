@@ -1,0 +1,39 @@
+{
+  "status": "OK",
+  "decision": "pre_action_memory_check_completed",
+  "action_name": "real_offer_create",
+  "matched_failures_count": 3,
+  "recommended_working_paths_count": 3,
+  "matched_failures": [
+    {
+      "error": "invalid Content-Language",
+      "cause": "missing or incorrect header",
+      "solution": "add Content-Language: de-DE for EBAY_DE",
+      "do_not_do": "do not change payload"
+    },
+    {
+      "error": "invalid SKU format",
+      "cause": "non-alphanumeric or too long",
+      "solution": "sanitize SKU to alphanumeric <= 50 chars",
+      "do_not_do": "do not send raw SKU"
+    },
+    {
+      "error": "SKU not found in eBay inventory",
+      "cause": "inventory item not created before offer",
+      "solution": "create or verify inventory item before creating offer",
+      "do_not_do": "do not retry offer blindly"
+    }
+  ],
+  "recommended_working_paths": [
+    "policy fetch API",
+    "category suggestion API",
+    "payload injection pipeline"
+  ],
+  "recommended_cmd_traps": [
+    "avoid echo. usage",
+    "do not combine type and python in one line",
+    "avoid > inside echo strings",
+    "avoid broken echo blocks",
+    "ensure all lines are written correctly"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "layer": "CONTROL_RULES_V1",
+  "rule_scope": "PROJECT_SPECIFIC_ONLY",
+  "canonical_line": [
+    "manifest",
+    "rules",
+    "state",
+    "history",
+    "control_agent",
+    "archivist_agent",
+    "runner_agent",
+    "n8n_orchestration",
+    "compact_core_migration"
+  ],
+  "transition_rules": [
+    "inventory_then_offer_then_publish",
+    "read_or_check_before_any_action",
+    "full_payload_only_when_revising_or_updating",
+    "existing_live_listing_is_not_new_listing",
+    "one_logical_step_at_a_time"
+  ],
+  "safety_rules": [
+    "no_live_actions_before_control_layer_complete",
+    "no_parallel_branches",
+    "no_early_stage_9_before_foundation_confirmed",
+    "stop_and_check_archive_if_unclear",
+    "do_not_repeat_known_error_without_archive_check"
+  ],
+  "chat_rules": [
+    "every_new_chat_starts_with_canon_9_step_audit",
+    "use_audit_to_determine_current_stage",
+    "use_archive_to_check_errors_fixes_and_last_successful_action",
+    "if_direction_is_unclear_stop_before_next_action"
+  ],
+  "control_gate": {
+    "stage_9_allowed_only_if": "manifest_rules_state_history_control_agent_archivist_agent_runner_agent_n8n_are_all_confirmed",
+    "current_ready_for_stage_9": false
+  },
+  "last_successful_action": "build_project_manifest_v1",
+  "next_allowed_action": "build_project_state_v1",
+  "next_after_that": "build_project_history_v1"
+}

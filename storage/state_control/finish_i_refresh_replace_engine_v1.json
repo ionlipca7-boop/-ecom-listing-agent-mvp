@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_I_REFRESH_REPLACE_ENGINE_V1",
+  "input_layer": "RESTORE_I_REFRESH_REPLACE_ENGINE_READY_STATE_V1",
+  "finished_block": "I_REFRESH_REPLACE_ENGINE",
+  "block_i_finished": true,
+  "refresh_replace_ready": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "J_TELEGRAM_NOTIFICATIONS",
+  "next_allowed_action": "start_j_telegram_notifications_entry_v1",
+  "timestamp": "2026-04-25T12:17:56.562099+00:00"
+}

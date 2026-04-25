@@ -1,0 +1,50 @@
+{
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "locale": "de_DE",
+  "product": {
+    "title": "USB-C auf USB-A OTG Adapter USB 3.0 Typ-C Datenadapter",
+    "aspects": {
+      "Marke": [
+        "Markenlos"
+      ],
+      "Produktart": [
+        "OTG Adapter"
+      ],
+      "Kompatibel mit": [
+        "Samsung",
+        "MacBook",
+        "Android Gerate"
+      ],
+      "Anschluss A": [
+        "USB-C"
+      ],
+      "Anschluss B": [
+        "USB-A"
+      ],
+      "Version": [
+        "USB 3.0"
+      ]
+    },
+    "imageUrls": [
+      "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+    ],
+    "description": "USB-C auf USB-A OTG Adapter fuer schnelle Datenuebertragung und einfache Verbindung von USB-A Geraeten an USB-C Anschluesse. Ideal fuer Smartphone, Tablet, Laptop und Alltag. Kompakt, leicht und praktisch fuer unterwegs."
+  },
+  "condition": "NEW",
+  "packageWeightAndSize": {
+    "weight": {
+      "value": 0.0,
+      "unit": "KILOGRAM"
+    },
+    "shippingIrregular": false
+  },
+  "availability": {
+    "shipToLocationAvailability": {
+      "quantity": 10,
+      "allocationByFormat": {
+        "auction": 0,
+        "fixedPrice": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,1297 @@
+{
+  "status": "OK",
+  "decision": "oauth_recovery_scan_ready",
+  "files_found": 84,
+  "results": [
+    {
+      "file": "ebay_api_config_v1.py",
+      "hits": [
+        {
+          "line": 12,
+          "term": "oauth",
+          "text": "# OAuth / user token"
+        },
+        {
+          "line": 13,
+          "term": "RuName",
+          "text": "EBAY_REDIRECT_URI = \"PASTE_RUNAME_HERE\""
+        },
+        {
+          "line": 13,
+          "term": "redirect_uri",
+          "text": "EBAY_REDIRECT_URI = \"PASTE_RUNAME_HERE\""
+        },
+        {
+          "line": 14,
+          "term": "access_token",
+          "text": "EBAY_ACCESS_TOKEN = \"PASTE_SANDBOX_ACCESS_TOKEN_HERE\""
+        }
+      ]
+    },
+    {
+      "file": "ebay_api_config_v1.py.txt",
+      "hits": [
+        {
+          "line": 10,
+          "term": "oauth",
+          "text": "# OAuth / user token"
+        },
+        {
+          "line": 11,
+          "term": "RuName",
+          "text": "EBAY_REDIRECT_URI = \"PASTE_RUNAME_HERE\""
+        },
+        {
+          "line": 11,
+          "term": "redirect_uri",
+          "text": "EBAY_REDIRECT_URI = \"PASTE_RUNAME_HERE\""
+        },
+        {
+          "line": 12,
+          "term": "access_token",
+          "text": "EBAY_ACCESS_TOKEN = \"PASTE_SANDBOX_ACCESS_TOKEN_HERE\""
+        }
+      ]
+    },
+    {
+      "file": "ebay_api_executor_sandbox_v1.py",
+      "hits": [
+        {
+          "line": 8,
+          "term": "access_token",
+          "text": "ACCESS_TOKEN = \"YOUR_SANDBOX_TOKEN_HERE\""
+        },
+        {
+          "line": 22,
+          "term": "access_token",
+          "text": "        \"Authorization\": f\"Bearer {ACCESS_TOKEN}\","
+        }
+      ]
+    },
+    {
+      "file": "run_access_token_audit_v1.py",
+      "hits": [
+        {
+          "line": 5,
+          "term": "access_token",
+          "text": "TOKEN_PATH = BASE_DIR / \"storage\" / \"secrets\" / \"ebay_access_token.txt\""
+        },
+        {
+          "line": 6,
+          "term": "access_token",
+          "text": "OUTPUT_PATH = BASE_DIR / \"storage\" / \"exports\" / \"ebay_access_token_audit_v1.json\""
+        },
+        {
+          "line": 21,
+          "term": "access_token",
+          "text": "        \"looks_like_access_token\": len(token) > 200 and \"v^1.1#\" not in token"
+        },
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    print(\"ACCESS_TOKEN_AUDIT_V1\")"
+        },
+        {
+          "line": 30,
+          "term": "access_token",
+          "text": "    print(\"looks_like_access_token =\", result[\"looks_like_access_token\"])"
+        }
+      ]
+    },
+    {
+      "file": "run_cleanup_audit_v2.py",
+      "hits": [
+        {
+          "line": 23,
+          "term": "oauth",
+          "text": "    keep_auth = pick(py_files, [\"oauth\", \"refresh_access_token\", \"token_smoke_test\", \"access_token_smoke_test\"])"
+        },
+        {
+          "line": 23,
+          "term": "access_token",
+          "text": "    keep_auth = pick(py_files, [\"oauth\", \"refresh_access_token\", \"token_smoke_test\", \"access_token_smoke_test\"])"
+        }
+      ]
+    },
+    {
+      "file": "run_control_action_v2.py",
+      "hits": [
+        {
+          "line": 33,
+          "term": "access_token",
+          "text": "    refresh_run = subprocess.run([\"python\", \"run_ebay_refresh_access_token_v2.py\"])"
+        },
+        {
+          "line": 34,
+          "term": "access_token",
+          "text": "    refresh_audit = read_json(EXPORTS_DIR / \"ebay_refresh_access_token_audit_v2.json\")"
+        },
+        {
+          "line": 41,
+          "term": "access_token",
+          "text": "        token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_control_action_v3.py",
+      "hits": [
+        {
+          "line": 30,
+          "term": "access_token",
+          "text": "    refresh_run = subprocess.run([\"python\", \"run_ebay_refresh_access_token_v2.py\"])"
+        },
+        {
+          "line": 31,
+          "term": "access_token",
+          "text": "    refresh_audit = read_json(EXPORTS_DIR / \"ebay_refresh_access_token_audit_v2.json\")"
+        },
+        {
+          "line": 33,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\") if refresh_ok else \"\""
+        }
+      ]
+    },
+    {
+      "file": "run_control_action_v4.py",
+      "hits": [
+        {
+          "line": 39,
+          "term": "access_token",
+          "text": "    refresh_run = subprocess.run([\"python\", \"run_ebay_refresh_access_token_v2.py\"])"
+        },
+        {
+          "line": 40,
+          "term": "access_token",
+          "text": "    refresh_audit = read_json(EXPORTS_DIR / \"ebay_refresh_access_token_audit_v2.json\")"
+        },
+        {
+          "line": 42,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\") if refresh_ok else \"\""
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_access_token_smoke_test_v3.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        },
+        {
+          "line": 30,
+          "term": "access_token",
+          "text": "        (EXPORTS_DIR / \"ebay_access_token_smoke_test_v3.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 42,
+          "term": "access_token",
+          "text": "    (EXPORTS_DIR / \"ebay_access_token_smoke_test_v3.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_business_policies_readiness_v1.py",
+      "hits": [
+        {
+          "line": 25,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_fulfillment_policy_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v1.py",
+      "hits": [
+        {
+          "line": 16,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v2.py",
+      "hits": [
+        {
+          "line": 16,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v3.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    access_token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        },
+        {
+          "line": 27,
+          "term": "access_token",
+          "text": "        \"Authorization\": f\"Bearer {access_token}\","
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v4.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v5.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_item_v6.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_inventory_location_v1.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_offer_v1.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_payment_policy_v1.py",
+      "hits": [
+        {
+          "line": 9,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_payment_policy_v2.py",
+      "hits": [
+        {
+          "line": 19,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_return_policy_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_create_return_policy_v2.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_exchange_code_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "ACCESS_TOKEN_PATH = SECRETS_DIR / \"ebay_access_token.txt\""
+        },
+        {
+          "line": 12,
+          "term": "refresh_token",
+          "text": "REFRESH_TOKEN_PATH = SECRETS_DIR / \"ebay_refresh_token.txt\""
+        },
+        {
+          "line": 14,
+          "term": "oauth",
+          "text": "TOKEN_URL = \"https://api.ebay.com/identity/v1/oauth2/token\""
+        },
+        {
+          "line": 23,
+          "term": "redirect_uri",
+          "text": "    redirect_uri = read_text(SECRETS_DIR / \"ebay_redirect_uri.txt\")"
+        },
+        {
+          "line": 31,
+          "term": "redirect_uri",
+          "text": "    data = {\"grant_type\": \"authorization_code\", \"code\": code, \"redirect_uri\": redirect_uri}"
+        },
+        {
+          "line": 37,
+          "term": "access_token",
+          "text": "    access_token = response_json.get(\"access_token\", \"\")"
+        },
+        {
+          "line": 38,
+          "term": "refresh_token",
+          "text": "    refresh_token = response_json.get(\"refresh_token\", \"\")"
+        },
+        {
+          "line": 39,
+          "term": "access_token",
+          "text": "    if access_token:"
+        },
+        {
+          "line": 40,
+          "term": "access_token",
+          "text": "        ACCESS_TOKEN_PATH.write_text(access_token.strip(), encoding=\"utf-8\")"
+        },
+        {
+          "line": 41,
+          "term": "refresh_token",
+          "text": "    if refresh_token:"
+        },
+        {
+          "line": 42,
+          "term": "refresh_token",
+          "text": "        REFRESH_TOKEN_PATH.write_text(refresh_token.strip(), encoding=\"utf-8\")"
+        },
+        {
+          "line": 43,
+          "term": "access_token",
+          "text": "    result = {\"status\": \"OK\" if response.status_code == 200 and bool(access_token) else \"FAILED\", \"http_status\": response.status_code, \"has_access_token\": bool(access_token), \"access_token_length\": len(access_token), \"ha"
+        },
+        {
+          "line": 43,
+          "term": "refresh_token",
+          "text": "    result = {\"status\": \"OK\" if response.status_code == 200 and bool(access_token) else \"FAILED\", \"http_status\": response.status_code, \"has_access_token\": bool(access_token), \"access_token_length\": len(access_token), \"ha"
+        },
+        {
+          "line": 47,
+          "term": "access_token",
+          "text": "    print(\"has_access_token =\", bool(access_token))"
+        },
+        {
+          "line": 48,
+          "term": "access_token",
+          "text": "    print(\"access_token_length =\", len(access_token))"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_category_aspects_v1.py",
+      "hits": [
+        {
+          "line": 18,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_category_suggestions_v1.py",
+      "hits": [
+        {
+          "line": 17,
+          "term": "oauth",
+          "text": "    form = urllib.parse.urlencode({\"grant_type\": \"client_credentials\", \"scope\": \"https://api.ebay.com/oauth/api_scope\"}).encode(\"utf-8\")"
+        },
+        {
+          "line": 17,
+          "term": "api.ebay.com/oauth",
+          "text": "    form = urllib.parse.urlencode({\"grant_type\": \"client_credentials\", \"scope\": \"https://api.ebay.com/oauth/api_scope\"}).encode(\"utf-8\")"
+        },
+        {
+          "line": 18,
+          "term": "oauth",
+          "text": "    req = urllib.request.Request(\"https://api.ebay.com/identity/v1/oauth2/token\", data=form, headers={\"Content-Type\": \"application/x-www-form-urlencoded\", \"Authorization\": \"Basic \" + basic}, method=\"POST\")"
+        },
+        {
+          "line": 20,
+          "term": "access_token",
+          "text": "        return json.loads(resp.read().decode(\"utf-8\")).get(\"access_token\", \"\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_category_suggestions_v2.py",
+      "hits": [
+        {
+          "line": 17,
+          "term": "oauth",
+          "text": "    form = urllib.parse.urlencode({\"grant_type\": \"client_credentials\", \"scope\": \"https://api.ebay.com/oauth/api_scope\"}).encode(\"utf-8\")"
+        },
+        {
+          "line": 17,
+          "term": "api.ebay.com/oauth",
+          "text": "    form = urllib.parse.urlencode({\"grant_type\": \"client_credentials\", \"scope\": \"https://api.ebay.com/oauth/api_scope\"}).encode(\"utf-8\")"
+        },
+        {
+          "line": 18,
+          "term": "oauth",
+          "text": "    req = urllib.request.Request(\"https://api.ebay.com/identity/v1/oauth2/token\", data=form, headers={\"Content-Type\": \"application/x-www-form-urlencoded\", \"Authorization\": \"Basic \" + basic}, method=\"POST\")"
+        },
+        {
+          "line": 20,
+          "term": "access_token",
+          "text": "        return json.loads(resp.read().decode(\"utf-8\")).get(\"access_token\", \"\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_inventory_item_v1.py",
+      "hits": [
+        {
+          "line": 17,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_inventory_locations_v1.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_offer_v1.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_offer_v3.py",
+      "hits": [
+        {
+          "line": 17,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_opted_in_programs_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_get_seller_profile_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_consent_precheck_v1.py",
+      "hits": [
+        {
+          "line": 8,
+          "term": "ru_name",
+          "text": "RU_NAME_PATH = SECRETS_DIR / \"ebay_ru_name.txt\""
+        },
+        {
+          "line": 9,
+          "term": "oauth",
+          "text": "STATE_PATH = SECRETS_DIR / \"ebay_oauth_state_v1.txt\""
+        },
+        {
+          "line": 10,
+          "term": "oauth",
+          "text": "OUTPUT_PATH = EXPORTS_DIR / \"ebay_oauth_consent_precheck_v1.json\""
+        },
+        {
+          "line": 19,
+          "term": "ru_name",
+          "text": "    ru_name = read_text_if_exists(RU_NAME_PATH)"
+        },
+        {
+          "line": 23,
+          "term": "ru_name",
+          "text": "    if not RU_NAME_PATH.exists():"
+        },
+        {
+          "line": 24,
+          "term": "ru_name",
+          "text": "        missing.append(\"ebay_ru_name.txt\")"
+        },
+        {
+          "line": 27,
+          "term": "ru_name",
+          "text": "    if RU_NAME_PATH.exists() and not ru_name:"
+        },
+        {
+          "line": 28,
+          "term": "ru_name",
+          "text": "        missing.append(\"ebay_ru_name.txt_empty\")"
+        },
+        {
+          "line": 32,
+          "term": "oauth",
+          "text": "        \"decision\": \"oauth_consent_ready\" if is_ready else \"missing_oauth_inputs\","
+        },
+        {
+          "line": 36,
+          "term": "ru_name",
+          "text": "        \"ru_name_exists\": RU_NAME_PATH.exists(),"
+        },
+        {
+          "line": 38,
+          "term": "ru_name",
+          "text": "        \"ru_name_value\": ru_name,"
+        },
+        {
+          "line": 42,
+          "term": "oauth",
+          "text": "    print(\"EBAY_OAUTH_CONSENT_PRECHECK_V1\")"
+        },
+        {
+          "line": 46,
+          "term": "ru_name",
+          "text": "    print(\"ru_name_exists =\", RU_NAME_PATH.exists())"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_consent_url_v1.py",
+      "hits": [
+        {
+          "line": 10,
+          "term": "ru_name",
+          "text": "RU_NAME_PATH = SECRETS_DIR / \"ebay_ru_name.txt\""
+        },
+        {
+          "line": 11,
+          "term": "oauth",
+          "text": "STATE_PATH = SECRETS_DIR / \"ebay_oauth_state_v1.txt\""
+        },
+        {
+          "line": 12,
+          "term": "oauth",
+          "text": "OUTPUT_PATH = EXPORTS_DIR / \"ebay_oauth_consent_url_v1.json\""
+        },
+        {
+          "line": 15,
+          "term": "oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope\","
+        },
+        {
+          "line": 15,
+          "term": "api.ebay.com/oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope\","
+        },
+        {
+          "line": 16,
+          "term": "oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.inventory\","
+        },
+        {
+          "line": 16,
+          "term": "api.ebay.com/oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.inventory\","
+        },
+        {
+          "line": 17,
+          "term": "oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.account\","
+        },
+        {
+          "line": 17,
+          "term": "api.ebay.com/oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.account\","
+        },
+        {
+          "line": 18,
+          "term": "oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.fulfillment\","
+        },
+        {
+          "line": 18,
+          "term": "api.ebay.com/oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.fulfillment\","
+        },
+        {
+          "line": 19,
+          "term": "oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.analytics.readonly\""
+        },
+        {
+          "line": 19,
+          "term": "api.ebay.com/oauth",
+          "text": "    \"https://api.ebay.com/oauth/api_scope/sell.analytics.readonly\""
+        },
+        {
+          "line": 24,
+          "term": "ru_name",
+          "text": "    ru_name = RU_NAME_PATH.read_text(encoding=\"utf-8\").strip()"
+        },
+        {
+          "line": 29,
+          "term": "ru_name",
+          "text": "        \"redirect_uri\": ru_name,"
+        },
+        {
+          "line": 29,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri\": ru_name,"
+        },
+        {
+          "line": 34,
+          "term": "oauth",
+          "text": "    consent_url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        },
+        {
+          "line": 34,
+          "term": "auth.ebay.com",
+          "text": "    consent_url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        },
+        {
+          "line": 38,
+          "term": "ru_name",
+          "text": "        \"redirect_uri_name\": ru_name,"
+        },
+        {
+          "line": 38,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri_name\": ru_name,"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_consent_url_v2.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "redirect_uri",
+          "text": "    redirect_uri = read_secret(\"ebay_redirect_uri.txt\")"
+        },
+        {
+          "line": 18,
+          "term": "oauth",
+          "text": "        \"https://api.ebay.com/oauth/api_scope/sell.account\","
+        },
+        {
+          "line": 18,
+          "term": "api.ebay.com/oauth",
+          "text": "        \"https://api.ebay.com/oauth/api_scope/sell.account\","
+        },
+        {
+          "line": 19,
+          "term": "oauth",
+          "text": "        \"https://api.ebay.com/oauth/api_scope/sell.inventory\""
+        },
+        {
+          "line": 19,
+          "term": "api.ebay.com/oauth",
+          "text": "        \"https://api.ebay.com/oauth/api_scope/sell.inventory\""
+        },
+        {
+          "line": 23,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri\": redirect_uri,"
+        },
+        {
+          "line": 28,
+          "term": "oauth",
+          "text": "    url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        },
+        {
+          "line": 28,
+          "term": "auth.ebay.com",
+          "text": "    url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        },
+        {
+          "line": 29,
+          "term": "oauth",
+          "text": "    (EXPORTS_DIR / \"ebay_oauth_consent_url_v2.txt\").write_text(url, encoding=\"utf-8\")"
+        },
+        {
+          "line": 30,
+          "term": "oauth",
+          "text": "    (EXPORTS_DIR / \"ebay_oauth_state_v2.txt\").write_text(state, encoding=\"utf-8\")"
+        },
+        {
+          "line": 31,
+          "term": "oauth",
+          "text": "    print(\"EBAY_OAUTH_CONSENT_URL_V2_READY\")"
+        },
+        {
+          "line": 33,
+          "term": "oauth",
+          "text": "    print(\"consent_url_file = storage\\\\exports\\\\ebay_oauth_consent_url_v2.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_consent_v2.py",
+      "hits": [
+        {
+          "line": 6,
+          "term": "redirect_uri",
+          "text": "REDIRECT_URI = (SECRETS / \"ebay_redirect_uri.txt\").read_text().strip()"
+        },
+        {
+          "line": 7,
+          "term": "oauth",
+          "text": "SCOPES = \"https://api.ebay.com/oauth/api_scope https://api.ebay.com/oauth/api_scope/sell.inventory https://api.ebay.com/oauth/api_scope/sell.account https://api.ebay.com/oauth/api_scope/sell.fulfillment\""
+        },
+        {
+          "line": 7,
+          "term": "api.ebay.com/oauth",
+          "text": "SCOPES = \"https://api.ebay.com/oauth/api_scope https://api.ebay.com/oauth/api_scope/sell.inventory https://api.ebay.com/oauth/api_scope/sell.account https://api.ebay.com/oauth/api_scope/sell.fulfillment\""
+        },
+        {
+          "line": 11,
+          "term": "redirect_uri",
+          "text": "    \"redirect_uri\": REDIRECT_URI,"
+        },
+        {
+          "line": 14,
+          "term": "oauth",
+          "text": "url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        },
+        {
+          "line": 14,
+          "term": "auth.ebay.com",
+          "text": "url = \"https://auth.ebay.com/oauth2/authorize?\" + urllib.parse.urlencode(params)"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_scope_audit_v1.py",
+      "hits": [
+        {
+          "line": 6,
+          "term": "oauth",
+          "text": "CONSENT_FILE = BASE_DIR / \"storage\" / \"exports\" / \"ebay_oauth_consent_url_v1.txt\""
+        },
+        {
+          "line": 14,
+          "term": "oauth",
+          "text": "    print(\"OAUTH_SCOPE_AUDIT\")"
+        },
+        {
+          "line": 16,
+          "term": "oauth",
+          "text": "    print(\"has_sell_inventory =\", \"https://api.ebay.com/oauth/api_scope/sell.inventory\" in scopes)"
+        },
+        {
+          "line": 16,
+          "term": "api.ebay.com/oauth",
+          "text": "    print(\"has_sell_inventory =\", \"https://api.ebay.com/oauth/api_scope/sell.inventory\" in scopes)"
+        },
+        {
+          "line": 17,
+          "term": "oauth",
+          "text": "    print(\"has_sell_account =\", \"https://api.ebay.com/oauth/api_scope/sell.account\" in scopes)"
+        },
+        {
+          "line": 17,
+          "term": "api.ebay.com/oauth",
+          "text": "    print(\"has_sell_account =\", \"https://api.ebay.com/oauth/api_scope/sell.account\" in scopes)"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_token_exchange_v1.py",
+      "hits": [
+        {
+          "line": 9,
+          "term": "oauth",
+          "text": "TOKEN_URL = \"https://api.ebay.com/identity/v1/oauth2/token\""
+        },
+        {
+          "line": 15,
+          "term": "redirect_uri",
+          "text": "    redirect_uri = read_text(\"ebay_redirect_uri.txt\")"
+        },
+        {
+          "line": 28,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri\": redirect_uri,"
+        },
+        {
+          "line": 50,
+          "term": "access_token",
+          "text": "    access_token = data.get(\"access_token\", \"\").strip()"
+        },
+        {
+          "line": 51,
+          "term": "refresh_token",
+          "text": "    refresh_token = data.get(\"refresh_token\", \"\").strip()"
+        },
+        {
+          "line": 52,
+          "term": "access_token",
+          "text": "    if not access_token:"
+        },
+        {
+          "line": 53,
+          "term": "access_token",
+          "text": "        raise SystemExit(\"ERROR: access_token missing in response\")"
+        },
+        {
+          "line": 54,
+          "term": "access_token",
+          "text": "    (SECRETS_DIR / \"ebay_access_token.txt\").write_text(access_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 55,
+          "term": "refresh_token",
+          "text": "    if refresh_token:"
+        },
+        {
+          "line": 56,
+          "term": "refresh_token",
+          "text": "        (SECRETS_DIR / \"ebay_refresh_token.txt\").write_text(refresh_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 60,
+          "term": "access_token",
+          "text": "        \"access_token_saved\": bool(access_token),"
+        },
+        {
+          "line": 61,
+          "term": "refresh_token",
+          "text": "        \"refresh_token_saved\": bool(refresh_token),"
+        },
+        {
+          "line": 63,
+          "term": "refresh_token",
+          "text": "        \"refresh_token_expires_in\": data.get(\"refresh_token_expires_in\"),"
+        },
+        {
+          "line": 66,
+          "term": "oauth",
+          "text": "    (EXPORTS_DIR / \"ebay_oauth_token_exchange_audit_v1.json\").write_text("
+        },
+        {
+          "line": 72,
+          "term": "access_token",
+          "text": "    print(\"access_token_saved =\", bool(access_token))"
+        },
+        {
+          "line": 73,
+          "term": "refresh_token",
+          "text": "    print(\"refresh_token_saved =\", bool(refresh_token))"
+        },
+        {
+          "line": 75,
+          "term": "refresh_token",
+          "text": "    print(\"refresh_token_expires_in =\", data.get(\"refresh_token_expires_in\"))"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_token_exchange_v2.py",
+      "hits": [
+        {
+          "line": 10,
+          "term": "oauth",
+          "text": "TOKEN_URL = \"https://api.ebay.com/identity/v1/oauth2/token\""
+        },
+        {
+          "line": 18,
+          "term": "redirect_uri",
+          "text": "    redirect_uri = read_text(\"ebay_redirect_uri.txt\")"
+        },
+        {
+          "line": 21,
+          "term": "redirect_uri",
+          "text": "    print(\"REDIRECT_URI =\", redirect_uri)"
+        },
+        {
+          "line": 38,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri\": redirect_uri,"
+        },
+        {
+          "line": 50,
+          "term": "oauth",
+          "text": "        (EXPORTS_DIR / \"ebay_oauth_token_exchange_audit_v2.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 57,
+          "term": "access_token",
+          "text": "    access_token = data.get(\"access_token\", \"\").strip()"
+        },
+        {
+          "line": 58,
+          "term": "refresh_token",
+          "text": "    refresh_token = data.get(\"refresh_token\", \"\").strip()"
+        },
+        {
+          "line": 60,
+          "term": "access_token",
+          "text": "    if not access_token:"
+        },
+        {
+          "line": 61,
+          "term": "access_token",
+          "text": "        raise SystemExit(\"ERROR: access_token missing in response\")"
+        },
+        {
+          "line": 63,
+          "term": "access_token",
+          "text": "    (SECRETS_DIR / \"ebay_access_token.txt\").write_text(access_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 64,
+          "term": "refresh_token",
+          "text": "    if refresh_token:"
+        },
+        {
+          "line": 65,
+          "term": "refresh_token",
+          "text": "        (SECRETS_DIR / \"ebay_refresh_token.txt\").write_text(refresh_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 67,
+          "term": "access_token",
+          "text": "    audit = {\"status\": \"OK\", \"http_status\": status_code, \"access_token_saved\": bool(access_token), \"refresh_token_saved\": bool(refresh_token), \"expires_in\": data.get(\"expires_in\"), \"refresh_token_expires_in\": data.get(\"r"
+        },
+        {
+          "line": 67,
+          "term": "refresh_token",
+          "text": "    audit = {\"status\": \"OK\", \"http_status\": status_code, \"access_token_saved\": bool(access_token), \"refresh_token_saved\": bool(refresh_token), \"expires_in\": data.get(\"expires_in\"), \"refresh_token_expires_in\": data.get(\"r"
+        },
+        {
+          "line": 68,
+          "term": "oauth",
+          "text": "    (EXPORTS_DIR / \"ebay_oauth_token_exchange_audit_v2.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 72,
+          "term": "access_token",
+          "text": "    print(\"access_token_saved =\", bool(access_token))"
+        },
+        {
+          "line": 73,
+          "term": "refresh_token",
+          "text": "    print(\"refresh_token_saved =\", bool(refresh_token))"
+        },
+        {
+          "line": 75,
+          "term": "refresh_token",
+          "text": "    print(\"refresh_token_expires_in =\", data.get(\"refresh_token_expires_in\"))"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_oauth_token_exchange_v3.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "oauth",
+          "text": "REDIRECT_URL_FILE = EXPORTS_DIR / \"ebay_oauth_redirect_url_v2.txt\""
+        },
+        {
+          "line": 20,
+          "term": "redirect_uri",
+          "text": "    redirect_uri = read_secret(\"ebay_redirect_uri.txt\")"
+        },
+        {
+          "line": 31,
+          "term": "redirect_uri",
+          "text": "        \"redirect_uri\": redirect_uri"
+        },
+        {
+          "line": 34,
+          "term": "oauth",
+          "text": "        \"https://api.ebay.com/identity/v1/oauth2/token\","
+        },
+        {
+          "line": 47,
+          "term": "access_token",
+          "text": "        access_token = data.get(\"access_token\", \"\")"
+        },
+        {
+          "line": 48,
+          "term": "refresh_token",
+          "text": "        refresh_token = data.get(\"refresh_token\", \"\")"
+        },
+        {
+          "line": 49,
+          "term": "access_token",
+          "text": "        if access_token:"
+        },
+        {
+          "line": 50,
+          "term": "access_token",
+          "text": "            (SECRETS_DIR / \"ebay_access_token.txt\").write_text(access_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 51,
+          "term": "refresh_token",
+          "text": "        if refresh_token:"
+        },
+        {
+          "line": 52,
+          "term": "refresh_token",
+          "text": "            (SECRETS_DIR / \"ebay_refresh_token.txt\").write_text(refresh_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 53,
+          "term": "oauth",
+          "text": "        (EXPORTS_DIR / \"ebay_oauth_token_exchange_v3.json\").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 57,
+          "term": "access_token",
+          "text": "            \"access_token_saved\": bool(access_token),"
+        },
+        {
+          "line": 58,
+          "term": "refresh_token",
+          "text": "            \"refresh_token_saved\": bool(refresh_token),"
+        },
+        {
+          "line": 61,
+          "term": "refresh_token",
+          "text": "            \"refresh_token_expires_in\": data.get(\"refresh_token_expires_in\"),"
+        },
+        {
+          "line": 64,
+          "term": "oauth",
+          "text": "        (EXPORTS_DIR / \"ebay_oauth_token_exchange_audit_v3.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 67,
+          "term": "access_token",
+          "text": "        print(\"access_token_saved =\", bool(access_token))"
+        },
+        {
+          "line": 68,
+          "term": "refresh_token",
+          "text": "        print(\"refresh_token_saved =\", bool(refresh_token))"
+        },
+        {
+          "line": 74,
+          "term": "oauth",
+          "text": "        (EXPORTS_DIR / \"ebay_oauth_token_exchange_audit_v3.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_opt_in_business_policies_v1.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_opt_in_business_policies_v2.py",
+      "hits": [
+        {
+          "line": 11,
+          "term": "access_token",
+          "text": "    token = (SECRETS_DIR / \"ebay_access_token.txt\").read_text(encoding=\"utf-8\").strip()"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v1.py",
+      "hits": [
+        {
+          "line": 15,
+          "term": "access_token",
+          "text": "    token = read_secret(\"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v2.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    access_token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        },
+        {
+          "line": 27,
+          "term": "access_token",
+          "text": "        \"Authorization\": f\"Bearer {access_token}\","
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v3.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    access_token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        },
+        {
+          "line": 27,
+          "term": "access_token",
+          "text": "        \"Authorization\": f\"Bearer {access_token}\","
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v4.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v5.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_publish_offer_v6.py",
+      "hits": [
+        {
+          "line": 24,
+          "term": "access_token",
+          "text": "    token = read_text(SECRETS_DIR / \"ebay_access_token.txt\")"
+        }
+      ]
+    },
+    {
+      "file": "run_ebay_refresh_access_token_v1.py",
+      "hits": [
+        {
+          "line": 10,
+          "term": "oauth",
+          "text": "TOKEN_URL = \"https://api.ebay.com/identity/v1/oauth2/token\""
+        },
+        {
+          "line": 18,
+          "term": "refresh_token",
+          "text": "    refresh_token = read_text(\"ebay_refresh_token.txt\")"
+        },
+        {
+          "line": 24,
+          "term": "refresh_token",
+          "text": "        \"grant_type\": \"refresh_token\","
+        },
+        {
+          "line": 25,
+          "term": "refresh_token",
+          "text": "        \"refresh_token\": refresh_token,"
+        },
+        {
+          "line": 26,
+          "term": "oauth",
+          "text": "        \"scope\": \"https://api.ebay.com/oauth/api_scope/sell.account.readonly\","
+        },
+        {
+          "line": 26,
+          "term": "api.ebay.com/oauth",
+          "text": "        \"scope\": \"https://api.ebay.com/oauth/api_scope/sell.account.readonly\","
+        },
+        {
+          "line": 38,
+          "term": "access_token",
+          "text": "        (EXPORTS_DIR / \"ebay_refresh_access_token_audit_v1.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 45,
+          "term": "access_token",
+          "text": "    access_token = data.get(\"access_token\", \"\").strip()"
+        },
+        {
+          "line": 47,
+          "term": "access_token",
+          "text": "    if not access_token:"
+        },
+        {
+          "line": 48,
+          "term": "access_token",
+          "text": "        raise SystemExit(\"ERROR: access_token missing in refresh response\")"
+        },
+        {
+          "line": 50,
+          "term": "access_token",
+          "text": "    (SECRETS_DIR / \"ebay_access_token.txt\").write_text(access_token, encoding=\"utf-8\")"
+        },
+        {
+          "line": 52,
+          "term": "access_token",
+          "text": "    audit = {\"status\": \"OK\", \"http_status\": status_code, \"access_token_saved\": True, \"expires_in\": data.get(\"expires_in\"), \"token_type\": data.get(\"token_type\")}"
+        },
+        {
+          "line": 53,
+          "term": "access_token",
+          "text": "    (EXPORTS_DIR / \"ebay_refresh_access_token_audit_v1.json\").write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding=\"utf-8\")"
+        },
+        {
+          "line": 57,
+          "term": "access_token",
+          "text": "    print(\"access_token_saved =\", True)"
+        }
+      ]
+    }
+  ]
+}

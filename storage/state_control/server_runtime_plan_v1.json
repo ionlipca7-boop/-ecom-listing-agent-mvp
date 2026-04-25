@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "SERVER_RUNTIME_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EBAY_PUBLISH_LOCKED_V1",
+  "server_prepared": false,
+  "server_run_allowed": false,
+  "local_stable_required": true,
+  "runtime_targets": [
+    "local_control_room",
+    "future_server_runtime",
+    "future_api_bridge"
+  ],
+  "server_rules": [
+    "no_server_run_before_local_stable",
+    "no_public_endpoint_without_auth",
+    "no_tokens_in_code",
+    "no_live_publish_from_server",
+    "approval_gate_required_before_any_action"
+  ],
+  "planned_components": [
+    "server_entrypoint",
+    "runtime_env_loader",
+    "health_check",
+    "approval_bridge",
+    "telegram_bridge_later"
+  ],
+  "next_allowed_action": "prepare_telegram_bot_plan_v1"
+}

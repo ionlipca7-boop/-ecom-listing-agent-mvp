@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "ANALYZE_C_PHOTO_ENGINE_EXISTING_ASSETS_V1",
+  "input_layer": "PREPARE_C_PHOTO_ENGINE_LOCAL_INVENTORY_SCAN_V1",
+  "mode": "LOCAL_ANALYSIS_ONLY_NO_IMAGE_EDIT_NO_API",
+  "ready_image_candidates_count": 18,
+  "raw_or_input_image_candidates_count": 18,
+  "prior_finish_files": [
+    "storage\\state_control\\finish_photo_engine_block_c_local_ready_v1.json"
+  ],
+  "qa_files": [
+    "storage\\images\\final_image_review_v1.json",
+    "storage\\images\\image_text_quality_check_v1.json",
+    "storage\\images\\processed_image_review_v1.json",
+    "storage\\state_control\\execute_final_image_review_v1.json",
+    "storage\\state_control\\execute_image_text_quality_check_v1.json",
+    "storage\\state_control\\execute_processed_image_review_v1.json",
+    "storage\\state_control\\prepare_final_image_review_v1.json",
+    "storage\\state_control\\prepare_image_text_quality_check_v1.json",
+    "storage\\state_control\\prepare_processed_image_review_v1.json"
+  ],
+  "photo_engine_local_assets_exist": true,
+  "photo_engine_can_restore_from_local": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "restore_c_photo_engine_ready_state_v1",
+  "timestamp": "2026-04-25T11:53:13.940021+00:00"
+}

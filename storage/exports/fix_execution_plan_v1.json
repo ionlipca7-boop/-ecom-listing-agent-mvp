@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-04-15T18:48:19Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_fix_error_map_v2.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_plan_v1.json",
+  "plan_status": "READY",
+  "issues_count": 1,
+  "action_count": 3,
+  "plans": [
+    {
+      "issue_id": "ISSUE_1",
+      "issue_type": "MISSING_REQUIRED_FIELD",
+      "severity": "ERROR",
+      "source_code": "MISSING_REQUIRED_FIELD",
+      "probable_fields": [
+        "brand",
+        "item_specifics",
+        "price"
+      ],
+      "repair_actions": [
+        {
+          "step_id": "ISSUE_1_STEP_1",
+          "target_field": "Brand",
+          "repair_action": "fill_required_aspect",
+          "source_layer": "template_or_item_specifics",
+          "instruction": "Заполнить обязательный аспект Brand допустимым значением для категории.",
+          "automation_ready": "YES"
+        },
+        {
+          "step_id": "ISSUE_1_STEP_2",
+          "target_field": "ItemSpecifics",
+          "repair_action": "repair_item_specifics",
+          "source_layer": "template_mapper",
+          "instruction": "Проверить и дополнить обязательные item specifics по шаблону eBay.",
+          "automation_ready": "YES"
+        },
+        {
+          "step_id": "ISSUE_1_STEP_3",
+          "target_field": "StartPrice",
+          "repair_action": "normalize_price",
+          "source_layer": "price_optimizer",
+          "instruction": "Проверить формат цены и пересчитать цену в допустимом формате eBay.",
+          "automation_ready": "YES"
+        }
+      ]
+    }
+  ]
+}

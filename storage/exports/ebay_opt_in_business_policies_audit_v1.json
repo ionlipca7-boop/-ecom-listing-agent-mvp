@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "body": "{\"errors\":[{\"errorId\":20401,\"domain\":\"API_ACCOUNT\",\"category\":\"REQUEST\",\"message\":\"Missing field programType.\",\"parameters\":[{\"name\":\"fieldName\",\"value\":\"programType\"},{\"name\":\"additionalInfo\",\"value\":\"\"}]}]}"
+}

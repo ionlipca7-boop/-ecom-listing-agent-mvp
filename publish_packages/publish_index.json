@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-04-14T07:08:56Z",
+  "total_packages": 2,
+  "latest_package": "package_20260414_070314",
+  "packages": [
+    {
+      "package_id": "package_20260414_070134",
+      "generated_at": "2026-04-14T07:01:34Z",
+      "total_items": 23,
+      "path": "publish_packages/package_20260414_070134"
+    },
+    {
+      "package_id": "package_20260414_070314",
+      "generated_at": "2026-04-14T07:03:14Z",
+      "total_items": 23,
+      "path": "publish_packages/package_20260414_070314"
+    }
+  ]
+}

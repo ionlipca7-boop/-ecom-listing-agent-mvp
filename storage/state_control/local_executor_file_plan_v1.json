@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LOCAL_EXECUTOR_FILE_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "target_file": "tools/local_command_executor.py",
+  "file_mode": "CREATE_SAFE_DRAFT_ONLY",
+  "allowed_runtime": "none",
+  "checks": {
+    "previous_ok": true,
+    "next_action_ok": true,
+    "publish_locked": true,
+    "server_locked": true,
+    "telegram_locked": true,
+    "git_push_locked": true
+  },
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "build_local_executor_file_contract_v1"
+}

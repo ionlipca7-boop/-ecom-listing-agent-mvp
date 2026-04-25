@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "REAL_TRACKED_ITEM_EVIDENCE_READ_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRACKED_ITEM_EVIDENCE_REVIEW_V1",
+  "input_status": "OK",
+  "evidence_read_mode": "read_only",
+  "evidence_output_file": "storage/audit/tracked_item_evidence_read_v1.txt",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "review_real_tracked_item_evidence_v1"
+}

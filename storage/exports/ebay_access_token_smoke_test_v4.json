@@ -1,0 +1,16 @@
+{
+  "status": "FAILED",
+  "http_status": 403,
+  "token_length": 2412,
+  "response": {
+    "errors": [
+      {
+        "errorId": 1100,
+        "domain": "ACCESS",
+        "category": "REQUEST",
+        "message": "Access denied",
+        "longMessage": "Insufficient permissions to fulfill the request."
+      }
+    ]
+  }
+}

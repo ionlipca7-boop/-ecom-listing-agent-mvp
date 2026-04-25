@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "TRACKED_REVIEW_VALIDATION_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_TRACKED_REVIEW_VALIDATION_V1",
+  "input_status": "OK",
+  "run_control_room_bat": {
+    "exists": false,
+    "state": "not_found",
+    "action_required": "separate_analysis"
+  },
+  "pycache_file": {
+    "exists": true,
+    "state": "present",
+    "action_required": "optional_cleanup_later"
+  },
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "validation_result_built": true,
+  "next_allowed_action": "build_tracked_review_final_decision_v1"
+}

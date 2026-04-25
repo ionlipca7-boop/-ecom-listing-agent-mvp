@@ -1,0 +1,63 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "J_TELEGRAM_NOTIFICATIONS",
+  "layer": "BUILD_J_TELEGRAM_COMMAND_ROUTER_CONTRACT_V1",
+  "input_layer": "BUILD_J_TELEGRAM_NOTIFICATION_PAYLOADS_V1",
+  "input_status_ok": true,
+  "runtime_started": false,
+  "router": {
+    "/status": {
+      "mode": "READ_ONLY",
+      "returns": [
+        "route",
+        "current_block",
+        "last_layer",
+        "next_allowed_action",
+        "security_flags"
+      ],
+      "mutates_state": false
+    },
+    "/inventory": {
+      "mode": "READ_ONLY",
+      "returns": [
+        "active_count",
+        "draft_count",
+        "blocked_count",
+        "inventory_snapshot_path"
+      ],
+      "mutates_state": false
+    },
+    "/approve": {
+      "mode": "APPROVAL_ONLY",
+      "requires": [
+        "pending_action_id",
+        "operator_confirmation"
+      ],
+      "direct_publish": false,
+      "direct_revise": false,
+      "direct_delete": false,
+      "mutates_state": "approval_record_only"
+    },
+    "/reject": {
+      "mode": "APPROVAL_ONLY",
+      "requires": [
+        "pending_action_id",
+        "operator_confirmation"
+      ],
+      "direct_publish": false,
+      "direct_revise": false,
+      "direct_delete": false,
+      "mutates_state": "rejection_record_only"
+    }
+  },
+  "security": {
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false
+  },
+  "next_allowed_action": "build_j_telegram_approval_mapping_v1",
+  "timestamp": "2026-04-25T12:26:49.591623+00:00"
+}

@@ -1,0 +1,5 @@
+ECOM_CONTROL_LINE_STATUS
+current_phase = 
+last_completed_phase = 
+current_task = 
+suspected_deviation = 

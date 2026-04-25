@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "decision": "live_listing_snapshot_v1_captured",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "item_id": "318166440509",
+  "inventory_http_status": 401,
+  "offer_http_status": 401,
+  "trading_http_status": 200,
+  "trading_ack": "Failure",
+  "trading_title": "",
+  "trading_price": "",
+  "trading_picture_count": 0,
+  "inventory_picture_count": 0,
+  "offer_picture_count": 0,
+  "trading_picture_urls": [],
+  "inventory_payload": {},
+  "offer_payload": {},
+  "next_step": "archive_working_listing_baseline_v1"
+}

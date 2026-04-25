@@ -1,0 +1,49 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "PHASE_API_SUCCESS_AND_WORKFLOW_FIXED",
+  "achievements": [
+    "inventory_read_ok",
+    "inventory_full_revise_ok",
+    "offer_read_ok",
+    "offer_full_update_ok",
+    "live_verification_ok",
+    "workflow_fixed_and_stable"
+  ],
+  "lessons_learned": [
+    "always_use_full_payload",
+    "token_guard_required",
+    "401_fix_via_refresh_token",
+    "400_fix_via_required_fields_image_title_description",
+    "archive_then_audit_then_prompt_rule",
+    "use_cmd_echo_json_not_fragile_methods"
+  ],
+  "workflow": {
+    "format": "short_control_room",
+    "steps": [
+      "analysis",
+      "action",
+      "cmd_create",
+      "cmd_check",
+      "audit",
+      "expectation"
+    ],
+    "audit_mode": "copy_back_to_chat",
+    "eye_check_default": false
+  },
+  "current_product": {
+    "product_key": "adapter_001",
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "price": "4.19",
+    "quantity": 12
+  },
+  "next_steps": [
+    "improve_listing_photos",
+    "seo_title_upgrade",
+    "html_description_upgrade",
+    "location_update_delmenhorst",
+    "ads_enable_7_percent",
+    "market_analysis_layer",
+    "product_memory_layer"
+  ]
+}

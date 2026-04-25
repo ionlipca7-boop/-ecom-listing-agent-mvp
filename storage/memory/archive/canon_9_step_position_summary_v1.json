@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "summary_type": "CURRENT_CANON_POSITION_AFTER_AUDIT",
+  "manifest": "MISSING",
+  "rules": "MISSING",
+  "state": "MISSING",
+  "history": "MISSING",
+  "control_agent": "OK",
+  "archivist_agent": "OK",
+  "runner_agent": "OK",
+  "n8n_orchestration": "OK",
+  "compact_core_migration": "PREPARED_NOT_BUILT",
+  "ready_for_stage_9": "NO",
+  "honest_conclusion": "project_has_later_layers_but_canonical_foundation_is_not_fully_confirmed",
+  "next_focus": "restore_or_create_confirmed_manifest_rules_state_history_layer"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "OK",
+  "layer": "COMPACT_CORE_PREVIEW_CONTRACT_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "front_exists": true,
+  "hub_exists": true,
+  "bridge_exists": true,
+  "sources": {
+    "transition_front": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_transition_front_v1.json",
+    "state_hub": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_state_hub_v1.json",
+    "execution_bridge": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_execution_bridge_v1.json"
+  },
+  "preview_contract": {
+    "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+    "price": 6.75,
+    "description": "Hochwertiges USB-C Ladekabel mit 60W Leistung. Ideal fur schnelles Laden und sichere Datenubertragung im Alltag und auf Reisen.",
+    "html": "<h2>USB-C Ladekabel</h2><p><b>Schnellladen & zuverlassige Qualitat</b></p><ul><li>Leistung: 60W</li><li>Lange: 2m</li><li>Schnelle Datenubertragung</li></ul><p><b>? Hohe Qualitat<br>? Schneller Versand<br>? Top Preis-Leistung</b></p><p>Weitere Produkte finden Sie in unserem Shop (bald mit direkten Links).</p>",
+    "category": "Kabel & Adapter",
+    "images": [
+      "Hero",
+      "Use Case",
+      "Benefits",
+      "Specs",
+      "Trust",
+      "Close-up"
+    ],
+    "links": {
+      "control_to_runner": true,
+      "runner_to_generator": true,
+      "generator_to_output": true
+    }
+  },
+  "next_step": "preview_contract_ready_for_stage9_verification"
+}

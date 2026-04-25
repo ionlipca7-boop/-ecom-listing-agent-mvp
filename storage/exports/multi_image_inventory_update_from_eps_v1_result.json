@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "decision": "multi_image_inventory_update_from_eps_v1_executed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "read_before_status": 200,
+  "update_status": 200,
+  "read_after_status": 200,
+  "images_sent": 9,
+  "live_image_count": 9,
+  "next_step": "read_live_offer_after_multi_image_inventory_update_v1"
+}

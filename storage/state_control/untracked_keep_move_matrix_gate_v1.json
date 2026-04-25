@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_KEEP_MOVE_MATRIX_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_KEEP_MOVE_MATRIX_V1",
+  "input_status": "OK",
+  "keep_move_matrix_gate_defined": true,
+  "allowed_now": "prepare_untracked_sample_bucket_read_v1",
+  "physical_move_blocked": true,
+  "delete_blocked": true,
+  "push_blocked": true,
+  "server_sync_blocked": true,
+  "next_allowed_action": "prepare_untracked_sample_bucket_read_v1"
+}

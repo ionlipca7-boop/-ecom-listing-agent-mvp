@@ -1,0 +1,46 @@
+{
+  "status": "OK",
+  "decision": "policy_scope_recovery_audit_v1_completed",
+  "problem_confirmed": "access_token_missing_required_sell_account_scope",
+  "files_checked": [
+    {
+      "file": "ebay_access_token.txt",
+      "exists": true,
+      "size": 2424
+    },
+    {
+      "file": "ebay_refresh_token.txt",
+      "exists": true,
+      "size": 96
+    },
+    {
+      "file": "ebay_redirect_uri.txt",
+      "exists": true,
+      "size": 34
+    },
+    {
+      "file": "ebay_client_id.txt",
+      "exists": true,
+      "size": 40
+    },
+    {
+      "file": "ebay_client_secret.txt",
+      "exists": true,
+      "size": 36
+    },
+    {
+      "file": "ebay_scopes.txt",
+      "exists": false,
+      "size": 0
+    },
+    {
+      "file": "ebay_auth_code.txt",
+      "exists": false,
+      "size": 0
+    }
+  ],
+  "ready_for_refresh": true,
+  "ready_for_consent": true,
+  "recommended_path": "refresh_existing_user_token",
+  "next_step": "refresh_user_access_token_with_correct_scopes"
+}

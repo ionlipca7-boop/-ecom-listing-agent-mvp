@@ -1,0 +1,41 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 8,
+  "current_step": "runner_checkpoint_integrated",
+  "next_step": "decide_next_project_specific_branch_after_runner_checkpoint",
+  "status": "CONTROL_LAYER_ACTIVE",
+  "active_stage": "runner_checkpoint_integrated",
+  "completed_stages": [
+    "project_manifest.json",
+    "control_rules.json",
+    "project_state.json",
+    "project_history.jsonl",
+    "control_agent.py",
+    "archivist_agent.py",
+    "runner_agent.py"
+  ],
+  "current_focus": "normalize_control_state_before_n8n_stage",
+  "live_operations_allowed": false,
+  "migration_allowed": false,
+  "side_branches_allowed": false,
+  "history_ready": true,
+  "control_agents_ready": true,
+  "runner_ready": true,
+  "n8n_ready": false,
+  "compact_core_ready": false,
+  "runner_state": {
+    "status": "completed_blocked_safe",
+    "checkpoint_layer": "RUNNER_TRANSITION_CHECKPOINT_V1",
+    "runner_pipeline_complete": true,
+    "execution_allowed": false,
+    "final_decision": "KEEP_BLOCKED",
+    "runner_live_permission": false,
+    "transition_state": "SAFE_TO_CONTINUE_WITH_BLOCKED_RUNNER_FLOW"
+  },
+  "current_phase": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+  "last_successful_action": "normalize_project_state_after_runner_bridge_v1",
+  "next_allowed_action": "decide_next_project_specific_branch_after_runner_checkpoint",
+  "runner_integrated": true,
+  "runner_safe_blocked": true
+}

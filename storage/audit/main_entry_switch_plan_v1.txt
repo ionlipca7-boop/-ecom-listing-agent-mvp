@@ -1,0 +1,48 @@
+ECOM LISTING AGENT MVP - MAIN ENTRY SWITCH PLAN V1
+
+CURRENT_STATE
+- run_control_room.bat -> control_room_run_all.py
+- run_control_room.py -> runtime bridge/state writer
+- control_room.py -> old manual interactive shell
+- control_room_agent.py -> background feedback/agent loop
+
+OFFICIAL_DECISION
+- MAIN_PROJECT_ENTRY = run_control_room.py
+- MAIN_OPERATOR_BATCH = to be renamed from run_control_room.bat
+- SUPPORT_FLOW = control_room_run_all.py
+- LEGACY_MANUAL_UI = control_room.py
+- AGENT_RUNTIME = control_room_agent.py
+
+WHY
+- run_control_room.py matches current controlled state architecture
+- control_room.py is old menu shell and not canonical core anymore
+- run_control_room.bat name conflicts with existing run_control_room.py meaning
+- control_room_run_all.py is publish-ready utility flow, not whole project identity
+
+SAFE_RENAME_PLAN
+STEP_1
+- keep all files unchanged
+- mark naming mismatch officially
+
+STEP_2
+- rename run_control_room.bat -> run_publish_ready_pipeline.bat
+
+STEP_3
+- keep run_control_room.py as official state/runtime entry
+
+STEP_4
+- keep control_room.py as legacy_reference_only
+
+STEP_5
+- later optional rename control_room.py -> control_room_legacy_menu.py
+
+DO_NOT_TOUCH_YET
+- run_control_room.py
+- control_room_agent.py
+- control_agent.py
+- runner_agent.py
+- archivist_agent.py
+- storage\state_control\*
+
+NEXT_ALLOWED_ACTION
+- create rename execution plan v1

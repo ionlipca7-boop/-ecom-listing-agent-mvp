@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "generator_entrypoint_inspect_error_archived",
+  "error_name": "multiline_python_c_split",
+  "root_cause": "multi_line_python_c_was_executed_as_separate_cmd_lines",
+  "failed_target": "generator_entrypoint_inspect_v1.json",
+  "lesson": "for_long_inspection_logic_use_python_file_via_write_text_not_multiline_python_c",
+  "next_step": "rebuild_generator_entrypoint_inspect_as_py_file"
+}

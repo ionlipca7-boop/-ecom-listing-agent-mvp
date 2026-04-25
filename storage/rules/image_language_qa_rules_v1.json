@@ -1,0 +1,31 @@
+{
+  "status": "ACTIVE",
+  "layer": "IMAGE_LANGUAGE_QA_RULES_V1",
+  "target_listing_language": "de",
+  "detect_policy": "detect_any_visible_text_language",
+  "allowed_text_languages": [
+    "de"
+  ],
+  "non_german_text_policy": "FLAG_FOR_REMOVAL_OR_GERMAN_OVERLAY",
+  "examples": [
+    "en",
+    "zh",
+    "ru",
+    "vi",
+    "fr",
+    "es",
+    "it",
+    "pl",
+    "tr",
+    "ar",
+    "unknown"
+  ],
+  "actions": [
+    "keep_if_german_and_relevant",
+    "remove_if_brandless_foreign_marketing_text",
+    "replace_with_german_overlay_if_useful",
+    "block_if_watermark_or_seller_logo",
+    "ask_human_if_uncertain"
+  ],
+  "publish_allowed": false
+}

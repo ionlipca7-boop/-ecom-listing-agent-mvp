@@ -1,0 +1,11 @@
+N8N_DISPATCH_STATE_UPDATE_HANDOFF_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+state_update_handoff_version = v1
+handoff_mode = state_update_required
+required_handoff_field_count = 7
+blocked_condition_count = 3
+execution_allowed = False
+state_update_handoff_ready = True
+next_allowed_action = build_n8n_dispatch_completion_checkpoint_v1

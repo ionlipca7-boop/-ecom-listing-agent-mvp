@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_TRADING_ACTIVE_LIST_READ_ONLY_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_TRADING_ACTIVE_LIST_READ_ONLY_V1",
+  "result_file_exists": true,
+  "result_file": "storage\\ebay\\trading_active_listings_read_only_v1.json",
+  "result_top_keys": [
+    "status",
+    "layer",
+    "http_status",
+    "read_only",
+    "publish_called",
+    "revise_called",
+    "timestamp",
+    "raw_xml"
+  ],
+  "active_listing_count": 0,
+  "expected_active_listings": 56,
+  "count_matches_expected": false,
+  "sample_items": [],
+  "read_only_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "prepare_active_listings_snapshot_v1",
+  "timestamp": "2026-04-25T09:33:13.504170+00:00"
+}

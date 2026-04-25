@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_AND_INSPECT_TRADING_READ_ONLY_AFTER_XML_CHECK_V1",
+  "returncode": 0,
+  "stderr": "",
+  "http_status": 200,
+  "ack": [
+    "Success"
+  ],
+  "raw_length": 368,
+  "contains_active_list": false,
+  "contains_item_id": false,
+  "item_id_count": 0,
+  "expected_active_listings": 56,
+  "matches_expected_56": false,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "inspect_ebay_account_active_list_visibility_v1",
+  "timestamp": "2026-04-25T08:59:40.989641+00:00"
+}

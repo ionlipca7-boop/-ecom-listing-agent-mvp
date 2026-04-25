@@ -1,0 +1,7 @@
+CONTROL_RULES_V1_AUDIT
+status = OK
+rules_created = True
+canonical_line_defined = True
+chat_start_audit_rule_included = True
+stage_9_gate_defined = True
+next_allowed_action = build_project_state_v1

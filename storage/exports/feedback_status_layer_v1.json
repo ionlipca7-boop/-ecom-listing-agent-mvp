@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-04-15T17:18:43Z",
+  "feedback_layer_status": "READY",
+  "next_step": "BUILD_AUTO_FIX_LAYER",
+  "parser_status": "SUCCESS",
+  "feedback_status": "SUCCESS",
+  "route_status": "CONFIRMED",
+  "route_target": "POST_UPLOAD_CONFIRMED_FLOW",
+  "master_status": "UPLOAD_CONFIRMED",
+  "latest_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_success_v1.json",
+  "success_count": 1,
+  "warning_count": 0,
+  "error_count": 0,
+  "unknown_count": 0,
+  "inbox_status": "READY"
+}

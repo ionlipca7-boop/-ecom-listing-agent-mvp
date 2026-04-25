@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "GENERATION_LAYER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_ROUTING_AUDIT_V1",
+  "input_status": "OK",
+  "generation_layer_defined": true,
+  "generation_mode": "project_specific_new_listing_from_clone_baseline",
+  "routing_source": "new_listing_from_clone_baseline_flow",
+  "generation_input_contract": "normalized_unified_input_payload",
+  "generation_output_contract": "generated_listing_preview_payload",
+  "entrypoint": "run_control_room.py",
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_generation_audit_v1"
+}

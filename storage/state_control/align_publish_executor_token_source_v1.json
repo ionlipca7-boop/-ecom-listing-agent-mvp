@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "ALIGN_PUBLISH_EXECUTOR_TOKEN_SOURCE_V1",
+  "publish_called": false,
+  "wrapper_created": true,
+  "wrapper_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\run_ebay_publish_offer_v6_env_token_wrapper_v1.py",
+  "fix": "wrapper loads .env.local into os.environ before running publish executor",
+  "next_allowed_action": "verify_aligned_publish_executor_token_source_v1",
+  "timestamp": "2026-04-25T14:12:16.494180+00:00"
+}

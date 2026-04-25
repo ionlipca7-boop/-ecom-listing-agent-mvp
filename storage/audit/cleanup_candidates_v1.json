@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "rule": "do_not_delete_yet_only_mark_candidates",
+  "root_cmd_artifacts": [
+    "cd",
+    "chcp",
+    "del",
+    "dict",
+    "echo",
+    "list",
+    "None",
+    "python",
+    "str",
+    "type"
+  ],
+  "broken_names": [
+    "run_ebay_create_inventory_item_v3.pycd",
+    "run_ebay_get_category_suggestions_v1.pypython",
+    "run_ebay_publish_draft_v1.pycd"
+  ],
+  "decision": "review_candidates_then_build_safe_cleanup_plan"
+}

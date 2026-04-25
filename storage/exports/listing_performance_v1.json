@@ -1,0 +1,21 @@
+{
+  "performance_status": "READY",
+  "stage": "BASELINE_TRACKING_OPENED",
+  "next_step": "COLLECT_REAL_MARKET_METRICS",
+  "summary": {
+    "master_status": "UPLOAD_CONFIRMED",
+    "route_status": "CONFIRMED",
+    "route_target": "POST_UPLOAD_CONFIRMED_FLOW"
+  },
+  "tracking_fields": {
+    "views": 0,
+    "watchers": 0,
+    "quantity_sold": 0,
+    "returns": 0,
+    "revenue": 0
+  },
+  "inputs": {
+    "router_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ebay_upload_result_router_v1.json",
+    "master_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_room_master_status_v1.json"
+  }
+}

@@ -1,0 +1,24 @@
+PROJECT: ECOM_LISTING_AGENT_MVP / CONTROL ROOM
+
+STATUS:
+- tracked review resolution reached
+- manual review required before any action
+- delete forbidden
+- cleanup forbidden
+- git push forbidden
+- server sync forbidden
+- physical move forbidden
+
+LAST CONFIRMED LAYER:
+- TRACKED_REVIEW_RESOLUTION_V1 = OK
+
+CURRENT POSITION:
+- tracked_review_manual_resolution_required
+
+TRACKED ITEMS STILL RELEVANT:
+- .gitignore = modified
+- agent/__pycache__/brain.cpython-314.pyc = modified
+- run_control_room.bat = deleted
+
+NEXT ALLOWED ACTION:
+- manual_tracked_review_in_new_chat_v1

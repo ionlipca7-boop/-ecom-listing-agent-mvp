@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "EXECUTION_RESULT_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTION_RESULT_ANALYSIS_V1",
+  "execution_successful": true,
+  "pipeline_end_to_end_confirmed": true,
+  "system_status": "LIVE_EXECUTION_SUCCESSFUL",
+  "next_allowed_action": "ARCHIVE_AND_CLOSE_CYCLE"
+}

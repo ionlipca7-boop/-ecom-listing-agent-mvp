@@ -1,0 +1,13 @@
+REPAIR ARCHIVE ROOT PATH V1
+
+STATUS
+- missing archive root handled
+- archive root created if missing
+- delete still forbidden
+- cleanup execution still blocked until verification
+
+TARGET ROOT
+- storage\\archive_candidates\\phase_cleanup_v1\\
+
+NEXT SAFE ACTION
+- verify_archive_root_path_v1

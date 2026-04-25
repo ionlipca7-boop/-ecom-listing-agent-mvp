@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_IMAGE_PROCESSING_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "processing_plan_created": true,
+  "processing_plan_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\image_processing_plan_v1.json",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_image_processing_stub_v1",
+  "timestamp": "2026-04-25T10:37:15.573969+00:00"
+}

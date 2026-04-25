@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_LISTING_READ_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_LISTING_READ_CONTRACT_AUDIT_V1",
+  "input_status": "OK",
+  "gate_defined": true,
+  "scope_target": "existing_working_listing_improvement",
+  "read_mode": "current_listing_state_only",
+  "inventory_read_required": true,
+  "offer_read_required": true,
+  "compare_input_required": true,
+  "gate_open_for_contract_path_only": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "execution_layer_not_allowed_yet": true,
+  "decision": "current_listing_read_gate_confirmed",
+  "next_allowed_action": "build_current_inventory_read_preparation_v1"
+}

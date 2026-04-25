@@ -1,0 +1,34 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_SELL_INVENTORY_OK_V1",
+  "last_confirmed_layer": "RETRY_SELL_INVENTORY_READ_ONLY_SYNC_V2",
+  "current_position": "sell_inventory_read_only_sync_http_200_done",
+  "next_allowed_action": "prepare_ebay_inventory_snapshot_v1",
+  "confirmed_facts": {
+    "sell_inventory_http_status": 200,
+    "sell_inventory_result_status": "OK",
+    "inventory_item_count": 4,
+    "expected_active_listings": 56,
+    "sample_skus": [
+      "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+      "ECOM-TEST-CABLE-001",
+      "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+      "ECOM-NEXT-SKU-001"
+    ],
+    "new_oauth_grant_completed": true,
+    "publish_called": false,
+    "revise_called": false,
+    "delete_called": false,
+    "read_only_only": true
+  },
+  "important_note": "Sell Inventory returned 4 inventory items, not 56 active listings. Next chat must inspect why 56 eBay listings differ from inventory items and prepare inventory snapshot safely.",
+  "operator_lessons": {
+    "format": "EON / ION strict Russian concise format",
+    "cmd_rule": "one safe CMD block; short one-line py-c only; no copy con; no multiline py-c; no PowerShell here-string; no echo writer blocks",
+    "safety": "no publish/update/delete/bulk update without explicit gate",
+    "secrets": "never print tokens/client secret"
+  },
+  "next_chat_start": "verify archive -> prepare_ebay_inventory_snapshot_v1 -> inspect 4 inventory items -> map gap vs 56 active listings -> STOP",
+  "timestamp": "2026-04-25T09:26:12.153625+00:00"
+}

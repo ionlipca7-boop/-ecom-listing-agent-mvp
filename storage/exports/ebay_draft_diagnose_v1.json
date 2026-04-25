@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "input_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ebay_draft_v1.json",
+  "has_offerId": false,
+  "has_sku": false,
+  "offerId": null,
+  "sku": null,
+  "main_title": null,
+  "price": 6.75,
+  "draft_keys": [
+    "category_hint",
+    "currency",
+    "description",
+    "format",
+    "price",
+    "quantity",
+    "status",
+    "title"
+  ],
+  "next_step": "need_offer_creation_layer"
+}

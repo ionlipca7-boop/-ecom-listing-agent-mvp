@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PRICE_REQUIRED_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "price_required": true,
+  "current_price": null,
+  "price_decision": "PENDING_MARKET_DATA",
+  "blocking_reason": "price_missing",
+  "manual_price_input_required": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "manual_set_listing_price_v1",
+  "timestamp": "2026-04-25T10:43:10.794709+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PENDING_HUMAN_FINAL_IMAGE_REVIEW",
+  "layer": "PROCESSED_IMAGE_REVIEW_V1",
+  "output_folder": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\ebay_ready",
+  "output_count": 9,
+  "output_images": [
+    "8c8b596f-428a-49bc-a12f-5bd9aa91a1d9.png",
+    "a98b143a-8f3b-4460-978d-c28d01d9819c.png",
+    "b2b94845-6c94-4233-b1d3-36db3a844ba0.png",
+    "bfef8938-9eff-4eab-ac2f-b0ad5ca0a387.png",
+    "ce46caa8-ab2d-43a7-90b6-cf655d3a203f.png",
+    "cfc1ec94-c4b8-4cc0-b81d-3afe0d49c19b.png",
+    "e2f07862-878c-476e-9a3d-47698f317111.png",
+    "fae4f0f9-ff6b-4cdd-a4bf-7af2c5b8ef5c.png",
+    "image-1771875860883.jpg"
+  ],
+  "review_checks": [
+    "final_language_de_only",
+    "no_watermark",
+    "no_mixed_products",
+    "quality_ok",
+    "ebay_ready_style"
+  ],
+  "images_ebay_ready": false,
+  "possible_outcomes": [
+    "APPROVE_IMAGES_EBAY_READY",
+    "REQUEST_IMAGE_FIX"
+  ],
+  "publish_allowed": false
+}

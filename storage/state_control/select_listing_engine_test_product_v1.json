@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "SELECT_LISTING_ENGINE_TEST_PRODUCT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "selected_product": "USB-C Schnellladegerät Set 67W mit EU-Stecker und Kabel",
+  "category_hint": "charger",
+  "photo_set_ready": 9,
+  "next_allowed_action": "create_listing_engine_test_product_input_v1",
+  "timestamp": "2026-04-25T10:13:13.589994+00:00"
+}

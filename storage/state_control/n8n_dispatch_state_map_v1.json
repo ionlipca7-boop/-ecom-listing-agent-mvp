@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_STATE_MAP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "state_map_version": "v1",
+  "entry_state": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+  "allowed_state_transitions": [
+    {
+      "from": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+      "action": "build_n8n_dispatcher_checkpoint_v1",
+      "to": "N8N_DISPATCHER_CHECKPOINT_V1",
+      "runner_allowed": false,
+      "audit_required": true
+    },
+    {
+      "from": "N8N_DISPATCHER_CHECKPOINT_V1",
+      "action": "build_n8n_dispatch_contract_v1",
+      "to": "N8N_DISPATCH_CONTRACT_V1",
+      "runner_allowed": false,
+      "audit_required": true
+    },
+    {
+      "from": "N8N_DISPATCH_CONTRACT_V1",
+      "action": "build_n8n_dispatch_state_map_v1",
+      "to": "N8N_DISPATCH_STATE_MAP_V1",
+      "runner_allowed": false,
+      "audit_required": true
+    }
+  ],
+  "dispatch_gates": {
+    "control_agent_required_before_runner": true,
+    "audit_required_before_state_update": true,
+    "live_execution_forbidden": true,
+    "side_branch_activation_forbidden": true
+  },
+  "current_state_confirmed": "N8N_DISPATCH_STATE_MAP_V1",
+  "execution_allowed": false,
+  "state_map_ready": true,
+  "next_allowed_action": "build_n8n_dispatch_audit_flow_v1"
+}

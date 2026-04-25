@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_UNTRACKED_CLASSIFICATION_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_GROUPING_REVIEW_RESULT_V1",
+  "input_status": "OK",
+  "untracked_classification_plan_prepared": true,
+  "plan_scope": "manual_classification_of_untracked_items_only",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_untracked_classification_plan_v1"
+}

@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "mapped_rows": 1,
+    "csv_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ebay_template_mapped_v2.csv"
+  },
+  "fieldnames": [
+    "Action",
+    "SKU",
+    "Category",
+    "Title",
+    "Description",
+    "Price",
+    "Quantity",
+    "Condition",
+    "Format",
+    "Brand",
+    "Model",
+    "ProductType",
+    "Color",
+    "CableLength",
+    "Connectivity",
+    "Features",
+    "PhotoCount",
+    "PhotoFiles"
+  ],
+  "rows": [
+    {
+      "Action": "Add",
+      "SKU": "SKU-001",
+      "Category": "Kabel",
+      "Title": "60W USB-C Ladekabel 2m",
+      "Description": "Produkt: USB-C Ladekabel\nLeistung: 60W\nLänge: 2m\n- Schnellladen\n- Robustes Kabel\n- Hohe Kompatibilität",
+      "Price": 5.5,
+      "Quantity": 1,
+      "Condition": "New",
+      "Format": "FixedPrice",
+      "Brand": "Generic",
+      "Model": "SKU-001",
+      "ProductType": "USB-C Ladekabel",
+      "Color": "Schwarz",
+      "CableLength": "2m",
+      "Connectivity": "USB-C",
+      "Features": "['Schnellladen', 'Robustes Kabel', 'Hohe Kompatibilität']",
+      "PhotoCount": 4,
+      "PhotoFiles": "017fb548-a72c-4bf5-b1e9-908adcbabf60.png, 5251f6fb-ed61-4d2a-b3ec-d18828a1e479.png, a676fbda-2b56-4c02-913b-53fb1b3a5f4a.png, c915ea5e-0acf-4127-b813-48af7784475b.png"
+    }
+  ]
+}

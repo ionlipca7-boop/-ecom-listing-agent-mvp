@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_PHOTO_INPUT_SAFE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "source_folder": "storage\\photo_engine\\test_input_v1\\raw",
+  "image_count": 9,
+  "images": [
+    "05575e43-1601-4422-9d6c-d4a9446cd76a.png",
+    "0ab4d859-92d7-49ea-b6b6-de9feb48d961-md.jpeg",
+    "0c650745-fc85-4083-9825-fb05b74b162d-md.jpeg",
+    "29d8e991-8a11-4cae-8c4c-d1c5c839cc07-md.jpeg",
+    "4a68a22c-1627-4049-9707-4bf2c66b558c-md.jpeg",
+    "78183f20-e2f5-422a-9094-0206c14aadc4-md.jpeg",
+    "9dd86a89-8708-4735-9fb7-259605a744f1-md.jpeg",
+    "f0fb8776-3594-4a4d-9a00-25c1fabc2b6b-md.jpeg",
+    "fec7f88d-cd3d-42b5-a4e5-9f90580c22f3-md.jpeg"
+  ],
+  "valid_range": true,
+  "ready_for_processing": true,
+  "note": "resolution not checked (no PIL)",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_photo_engine_processing_plan_v1",
+  "timestamp": "2026-04-25T09:59:04.502847+00:00"
+}

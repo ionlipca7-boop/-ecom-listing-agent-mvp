@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "LOCK_EBAY_WRITE_ACTIONS_BEHIND_AUTO_TOKEN_GUARD_V1",
+  "guard_verified": true,
+  "mandatory_before": [
+    "publish",
+    "revise",
+    "delete"
+  ],
+  "rules": {
+    "run_token_guard_before_every_write": true,
+    "reload_env_after_refresh": true,
+    "no_direct_publish_executor_without_guard": true,
+    "print_secrets": false,
+    "publish_called": false,
+    "revise_called": false,
+    "delete_called": false,
+    "auto_publish_allowed": false
+  },
+  "next_allowed_action": "prepare_phase4_retry_v2_final_confirmation_after_token_guard_lock_v1",
+  "timestamp": "2026-04-25T14:19:38.913996+00:00"
+}

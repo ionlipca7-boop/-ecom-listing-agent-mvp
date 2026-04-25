@@ -1,0 +1,20 @@
+{
+  "layer": "COMPACT_CORE_STAGE9_DECISION_GATE_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "status": "OK",
+  "decision": "STAGE_9_CONFIRMED",
+  "next_step": "stage9_decision_gate_ready_for_archive_snapshot",
+  "source_exists": true,
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_stage9_summary_v1.json",
+  "stage9_ready": true,
+  "decision_ready": true,
+  "confirmed_layers_count": 10,
+  "decision_checks": {
+    "title_ready": true,
+    "price_ready": true,
+    "description_ready": true,
+    "html_ready": true,
+    "images_ready": true
+  }
+}

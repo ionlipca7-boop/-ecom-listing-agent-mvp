@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "INVENTORY_READ_CONTRACT_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INVENTORY_READ_LAYER_V2",
+  "input_status": "OK",
+  "contract_defined": true,
+  "lookup_required": true,
+  "compare_with_existing": true,
+  "next_allowed_action": "build_inventory_lookup_resolution_v2"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_CONTRACT_TRANSITION_GATE_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREVIEW_CONTRACT_TRANSITION_GATE_V1",
+  "input_status": "OK",
+  "transition_gate_defined": true,
+  "direction_locked": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "audit_result": "preview_contract_transition_gate_verified",
+  "next_allowed_action": "build_preview_contract_post_gate_direction_decision_v1"
+}

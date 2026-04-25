@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-04-15T17:22:34Z",
+  "optimization_layer_status": "READY",
+  "next_step": "BUILD_AI_SYSTEM_LAYER",
+  "optimization_mode": "POST_UPLOAD_CLEAN_OPTIMIZATION",
+  "optimization_reason": "Feedback clean, auto-fix not required",
+  "auto_fix_status": "READY",
+  "recommended_action": "NO_FIX_NEEDED",
+  "performance_status": "READY",
+  "price_optimizer_status": "READY",
+  "title_optimizer_status": "READY",
+  "latest_listing_id": "EBAY-SAMPLE-0001",
+  "latest_sku": "SKU-SAMPLE-0001",
+  "selected_title": "60W USB-C Ladekabel 2m USB-C Schnellladen",
+  "selected_price": 5.5,
+  "selected_angle": "baseline_ai_title"
+}

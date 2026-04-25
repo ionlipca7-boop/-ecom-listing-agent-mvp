@@ -1,0 +1,9 @@
+{
+  "actions": [
+    {
+      "action": "update_quantity",
+      "product_key": "cable_001",
+      "quantity": 35
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_CONTROLLED_INPUT_SUBMISSION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REDO_OPERATOR_APPROVAL_DECISION_CAPTURE_V1",
+  "input_status": "OK",
+  "approval_status": "APPROVED",
+  "operator_decision": "APPROVE",
+  "controlled_input_submission_prepared": true,
+  "accepted_operator_inputs": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "single_entrypoint": "run_control_room.py",
+  "publish_blocked_until_approval": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "next_allowed_action": "await_controlled_input_submission_v1"
+}

@@ -1,0 +1,236 @@
+{
+  "status": "OK",
+  "decision": "listing_review_added_to_memory",
+  "updated_at_utc": "2026-04-18T09:21:40.164720+00:00",
+  "project": "ECOM LISTING AGENT MVP / CONTROL ROOM",
+  "memory_version": "v1",
+  "working_values": {
+    "marketplaceId": "EBAY_DE",
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "fulfillmentPolicyId": "257755855024",
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024",
+    "working_categoryId": "44932"
+  },
+  "live_listings": [
+    {
+      "product_key": "cable_001",
+      "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+      "offerId": "153187814011",
+      "listingId": "318164247570",
+      "pipeline_status": "LIVE_OK",
+      "listing_state": "LIVE"
+    },
+    {
+      "product_key": "adapter_001",
+      "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+      "offerId": "153365657011",
+      "listingId": "318166440509",
+      "pipeline_status": "LIVE_OK",
+      "listing_state": "LIVE",
+      "image_count": 9
+    }
+  ],
+  "resolved_errors": [
+    {
+      "error": "SKU not found in system",
+      "cause": "offer attempted before inventory item existed",
+      "solution": "create or verify inventory item before offer creation",
+      "tags": [
+        "sku",
+        "inventory",
+        "offer"
+      ]
+    },
+    {
+      "error": "Location information not found",
+      "cause": "invalid or missing merchantLocationKey",
+      "solution": "use merchantLocationKey ECOM_DE_LOC_1",
+      "tags": [
+        "location",
+        "merchantLocationKey"
+      ]
+    },
+    {
+      "error": "Produktart fehlt",
+      "cause": "missing Produktart in product aspects",
+      "solution": "add Produktart in product.aspects before publish",
+      "tags": [
+        "produktart",
+        "aspects",
+        "publish"
+      ]
+    },
+    {
+      "error": "mindestens 1 Foto",
+      "cause": "missing imageUrls",
+      "solution": "add at least one image URL before publish",
+      "tags": [
+        "photo",
+        "imageUrls",
+        "publish"
+      ]
+    },
+    {
+      "error": "401 Invalid access token",
+      "cause": "expired or invalid access token in storage secrets",
+      "solution": "first do token audit and refresh or recovery before API actions",
+      "tags": [
+        "401",
+        "token",
+        "oauth",
+        "recovery"
+      ]
+    },
+    {
+      "error": "Das Artikelmerkmal Marke fehlt",
+      "cause": "required item specific Marke missing at publish",
+      "solution": "add aspects Marke with fallback value No-Name before publish",
+      "tags": [
+        "publish",
+        "marke",
+        "aspects",
+        "required-field"
+      ]
+    },
+    {
+      "error": "Fugen Sie mindestens 1 Foto hinzu",
+      "cause": "imageUrls missing at publish",
+      "solution": "add one or more valid imageUrls before publish",
+      "tags": [
+        "publish",
+        "photo",
+        "imageUrls",
+        "required-field"
+      ]
+    }
+  ],
+  "cmd_traps": [
+    "avoid echo. usage",
+    "do not combine type and python in one line",
+    "avoid broken multiline python -c blocks",
+    "avoid fragile here-string style blocks for Windows CMD",
+    "if python or py is missing in PATH use C:\\Python314\\python.exe"
+  ],
+  "working_paths": [
+    "recovery memory first",
+    "token audit before live API action",
+    "inventory first then offer then publish",
+    "verify loop after live update",
+    "registry update after successful publish"
+  ],
+  "lessons_learned": [
+    "do not start new live action blindly",
+    "first read memory then decide action",
+    "preserve working values centrally",
+    "store blockers and fixes for reuse in next chats",
+    "prefer short reliable CMD blocks"
+  ],
+  "next_target": {
+    "product_key": null,
+    "input_file": null,
+    "goal": "choose next product"
+  },
+  "media_sources": [
+    {
+      "product_key": "adapter_001",
+      "source_type": "image_urls",
+      "image_count": 9,
+      "image_urls": [
+        "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+        "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+        "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+        "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+        "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+        "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+        "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+        "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+        "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+      ],
+      "updated_at_utc": "2026-04-18T08:50:18.829024+00:00"
+    }
+  ],
+  "best_working_paths": [
+    "publish existing offer after adding Marke and imageUrls"
+  ],
+  "registry_snapshot": {
+    "products": [
+      {
+        "product_key": "adapter_001",
+        "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+        "offerId": "153365657011",
+        "listingId": "318166440509",
+        "listing_state": "LIVE",
+        "updated_at_utc": "2026-04-18T08:45:32.646318+00:00"
+      }
+    ]
+  },
+  "listing_reviews": [
+    {
+      "status": "OK",
+      "decision": "listing_review_saved",
+      "updated_at_utc": "2026-04-18T09:08:46.804772+00:00",
+      "product_key": "adapter_001",
+      "listing_id": "318166440509",
+      "review_findings": {
+        "photos_need_optimization": true,
+        "photos_current_state": "supplier_urls_used_without_sales_optimization",
+        "title_keep_for_now": true,
+        "specifics_need_expansion": true,
+        "color_current_issue": "single_color_set_but_photos_show_multiple_colors",
+        "description_need_html": true,
+        "description_current_issue": "plain_short_text_without_sales_structure",
+        "payment_policy_check_needed": true,
+        "shipping_policy_check_needed": true,
+        "ad_rate_target_percent": 7,
+        "ad_rule_after_7_days_no_movement": "increase_by_1_percent",
+        "offer_discount_min_percent": 5,
+        "manual_ui_review_source": "user_screenshots_2026_04_18"
+      },
+      "next_optimization_blocks": [
+        "photo_system_upgrade",
+        "item_specifics_upgrade",
+        "html_description_upgrade",
+        "ad_settings_standardization",
+        "offer_settings_standardization"
+      ]
+    }
+  ],
+  "competitor_reviews": [
+    {
+      "status": "OK",
+      "decision": "adapter_001_competitor_review_saved",
+      "updated_at_utc": "2026-04-18T09:21:40.164695+00:00",
+      "product_key": "adapter_001",
+      "competitor_examples": [
+        {
+          "source": "ebay_item_358331490487",
+          "takeaways": [
+            "8 photos used",
+            "price point around 9.99 EUR",
+            "EAN fallback used",
+            "dimensions and weight shown",
+            "product type wording weaker than desired"
+          ]
+        },
+        {
+          "source": "ebay_item_236686202391",
+          "takeaways": [
+            "richer specifics set",
+            "benefit-oriented fields like Besonderheiten",
+            "brand compatibility included",
+            "material and dimensions included",
+            "free shipping and free return visible"
+          ]
+        }
+      ],
+      "actionable_rules": [
+        "strengthen specifics beyond minimum",
+        "do not rely only on supplier photos",
+        "prepare stronger HTML description",
+        "keep title improvement for later test phase",
+        "use competitor review as reference not copy"
+      ]
+    }
+  ]
+}

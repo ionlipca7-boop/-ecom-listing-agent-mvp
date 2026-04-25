@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_MANUAL_UNTRACKED_BUCKET_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_CLASSIFICATION_GATE_V1",
+  "input_status": "OK",
+  "manual_bucket_review_prepared": true,
+  "review_scope": "manual_bucket_review_of_untracked_items",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "execute_manual_untracked_bucket_review_v1"
+}

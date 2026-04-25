@@ -1,0 +1,40 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_CLEAN_WORKING_ROUTE_V2",
+  "last_confirmed_layer": "FINISH_READY",
+  "current_position": "executor_publish_route_completed_and_stopped",
+  "next_allowed_action": "verify_current_stop_state_v1",
+  "confirmed_facts": {
+    "executor_built": true,
+    "publish_system_locked": true,
+    "local_execution_verified": true,
+    "cleanup_logical_done": true,
+    "cleanup_physical_done": false,
+    "delete_used": false,
+    "server_not_prepared": true,
+    "telegram_not_connected": true
+  },
+  "completed_blocks": [
+    "EXECUTOR_BUILD",
+    "RUNTIME_BRIDGE",
+    "RESULT_WRITER",
+    "FINISH_READY",
+    "CONTROLLED_EXECUTION_ENTRY"
+  ],
+  "next_route": [
+    "CLEAN_PROJECT",
+    "LISTING_MVP",
+    "APPROVAL_GATE",
+    "PUBLISH_PREPARE",
+    "SERVER_PREPARE",
+    "TELEGRAM_CONTROL"
+  ],
+  "lessons_learned": [
+    "use writer-script for complex files",
+    "always verify state before next step",
+    "no delete without decision gate",
+    "one-command execution entry works"
+  ],
+  "operator_rule": "new chat must start strictly from STOP verification and continue CLEAN route only"
+}

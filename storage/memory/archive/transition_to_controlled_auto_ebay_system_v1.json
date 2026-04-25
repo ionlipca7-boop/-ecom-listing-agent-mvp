@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "last_confirmed_layer": "STOP_AFTER_REAL_EXECUTION_PREP_V1",
+  "next_route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "current_position": "ready_to_start_full_auto_controlled_system",
+  "known_ebay_active_listings": 56,
+  "critical_modules": {
+    "photo_engine": true,
+    "listing_engine_v2": true,
+    "price_research": true,
+    "approval_gate": true,
+    "auto_publish_queue": true,
+    "strategy_engine": true,
+    "telegram_notifications": true,
+    "inventory_system": true,
+    "server_24_7": true
+  },
+  "safety": {
+    "real_publish_allowed": false,
+    "publish_only_after_approval": true,
+    "no_mass_publish": true
+  },
+  "next_allowed_action": "START_NEW_CHAT_WITH_FRONT",
+  "timestamp": "2026-04-25T07:25:31.551666+00:00"
+}

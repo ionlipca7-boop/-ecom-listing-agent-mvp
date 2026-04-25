@@ -1,0 +1,32 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_FINISH_READY_BEFORE_EXECUTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "checked_files": [
+    "storage\\state_control\\final_finish_ready_v1.json",
+    "storage\\state_control\\final_full_system_check_v1.json",
+    "storage\\contracts\\listing_input_contract_v1.json",
+    "storage\\contracts\\listing_output_contract_v1.json",
+    "storage\\state_control\\approval_gate_v1.json",
+    "storage\\state_control\\ebay_publish_locked_v1.json",
+    "storage\\state_control\\server_runtime_plan_v1.json",
+    "storage\\state_control\\telegram_bot_plan_v1.json",
+    "storage\\state_control\\telegram_token_gate_v1.json"
+  ],
+  "missing_files": [],
+  "gates": {
+    "finish_ok": true,
+    "full_check_ok": true,
+    "clean_project_ready": true,
+    "publish_locked": true,
+    "publish_forbidden": true,
+    "run_forbidden": true,
+    "telegram_forbidden": true,
+    "all_sources_present": true
+  },
+  "publish_allowed": false,
+  "run_allowed": false,
+  "telegram_run_allowed": false,
+  "git_push_allowed": false,
+  "next_allowed_action": "build_listing_flow_contract_v1"
+}

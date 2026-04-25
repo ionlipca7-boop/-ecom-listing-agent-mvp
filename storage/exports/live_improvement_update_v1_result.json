@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "decision": "live_improvement_update_v1_executed",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "inventory_put_status": 200,
+  "inventory_read_status": 200,
+  "offer_put_status": 200,
+  "offer_read_status": 200,
+  "inventory_title_after": "USB-C OTG Adapter USB 3.0 Typ C auf USB-A 6A 120W Datenadapter",
+  "inventory_image_count_after": 9,
+  "offer_price_after": "4.01",
+  "offer_has_description_after": true,
+  "next_step": "read_visual_result_and_archive_improved_baseline_v1"
+}

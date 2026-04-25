@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_UNTRACKED_RESOLUTION_CHECKPOINT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_RESOLUTION_CHECKPOINT_V1",
+  "input_status": "OK",
+  "checkpoint_executed": true,
+  "project_material_presumption_locked": true,
+  "cleanup_forbidden_confirmed": true,
+  "sync_forbidden_confirmed": true,
+  "read_only_path_locked": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "untracked_resolution_checkpoint_executed",
+  "next_allowed_action": "prepare_transition_after_untracked_resolution_checkpoint_v1"
+}

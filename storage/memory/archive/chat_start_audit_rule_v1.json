@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "rule_name": "CHAT_START_CANON_AUDIT_AND_STOP_CHECK_V1",
+  "must_do_at_new_chat_start": [
+    "run_canon_9_step_audit_first",
+    "determine_current_stage_before_new_action",
+    "determine_next_allowed_action_before_building_any_step",
+    "read_archive_and_error_history_if_anything_is_unclear",
+    "stop_before_repeating_known_error"
+  ],
+  "stop_rule": "if_answer_is_missing_or_direction_is_unclear_stop_and_check_archive_before_next_step",
+  "goal": "reduce_repeated_errors_and_keep_straight_project_line",
+  "applies_from_now_on": true
+}

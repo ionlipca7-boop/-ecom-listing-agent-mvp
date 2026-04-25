@@ -1,0 +1,50 @@
+{
+  "status": "OK",
+  "layer": "IMAGE_PIPELINE_STANDARD_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROL_ROOM_AUTONOMY_EXTENSION_V1",
+  "input_status": "OK",
+  "image_pipeline_standard_defined": true,
+  "main_image_rules": {
+    "background": "pure_white_required",
+    "product_only": true,
+    "no_text": true,
+    "no_logos": true,
+    "no_watermarks": true,
+    "centered_product": true,
+    "ebay_compliant_required": true
+  },
+  "secondary_images_rules": {
+    "allowed_count_range": "2_to_9",
+    "infographic_allowed": true,
+    "selling_elements_allowed": true,
+    "text_language": "german_default",
+    "features_highlight": true,
+    "icons_allowed": true,
+    "lifestyle_images_allowed": true
+  },
+  "image_processing_logic": {
+    "analyze_existing_images": true,
+    "rebuild_if_low_quality": true,
+    "rebuild_if_wrong_language": true,
+    "rebuild_if_not_ebay_compliant": true,
+    "keep_if_good_quality": true
+  },
+  "localization": {
+    "source_language": "any",
+    "target_language": "german_default",
+    "auto_translate_text_on_images": true
+  },
+  "generation_modes": {
+    "fast_mode": "full_rebuild_images_for_conversion",
+    "safe_mode": "minimal_changes_only"
+  },
+  "integration_into_pipeline": {
+    "image_step_position": "after_listing_read_before_preview",
+    "auto_trigger_allowed": true
+  },
+  "decision_model": "auto_decide_based_on_quality_and_compliance",
+  "repeated_discussion_not_required": true,
+  "project_standard_locked": true,
+  "next_allowed_action": "WAIT_FOR_HIGH_LEVEL_OPERATOR_COMMAND"
+}

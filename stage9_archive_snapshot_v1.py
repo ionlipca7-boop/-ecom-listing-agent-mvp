@@ -1,0 +1,80 @@
+import json
+from pathlib import Path
+
+BASE = Path(r"D:\ECOM_LISTING_AGENT_MVP")
+
+def read_json(rel_path):
+    p = BASE / Path(rel_path)
+    if not p.exists():
+        return None, str(p), False
+    return json.loads(p.read_text(encoding="utf-8")), str(p), True
+
+def main():
+    decision_data, decision_path, decision_exists = read_json("storage\state_compact_core\compact_core_stage9_decision_gate_v1.json")
+    summary_data, summary_path, summary_exists = read_json("storage\state_compact_core\compact_core_stage9_summary_v1.json")
+    checkpoint_data, checkpoint_path, checkpoint_exists = read_json("storage\state_compact_core\compact_core_checkpoint_v1.json")
+    payload = {}
+    payload["date"] = "2026-04-19"
+    payload["project"] = "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM"
+    payload["stage"] = 9
+    payload["archive_type"] = "STAGE9_ARCHIVE_SNAPSHOT_V1"
+    payload["mode"] = "PROJECT_SPECIFIC_ONLY"
+    payload["decision_gate_exists"] = decision_exists
+    payload["summary_exists"] = summary_exists
+    payload["checkpoint_exists"] = checkpoint_exists
+    stage9_confirmed = False
+    if decision_exists:
+        stage9_confirmed = bool(decision_data.get("stage9_ready")) and bool(decision_data.get("decision_ready")) and decision_data.get("decision") == "STAGE_9_CONFIRMED"
+    payload["stage9_confirmed"] = stage9_confirmed
+    if stage9_confirmed:
+        payload["status"] = "OK"
+        payload["next_step"] = "stage9_archived_ready_for_new_decision"
+    else:
+        payload["status"] = "BLOCKED"
+        payload["next_step"] = "stage9_archive_blocked_stop_here"
+    payload["sources"] = {}
+    payload["sources"]["decision_gate"] = decision_path
+    payload["sources"]["summary"] = summary_path
+    payload["sources"]["checkpoint"] = checkpoint_path
+    payload["decision"] = decision_data.get("decision") if decision_exists else ""
+    payload["confirmed_layers_count"] = decision_data.get("confirmed_layers_count", 0) if decision_exists else 0
+    payload["checkpoint_ready"] = checkpoint_data.get("checkpoint_ready", False) if checkpoint_exists else False
+    payload["summary_ready"] = summary_data.get("stage9_ready", False) if summary_exists else False
+    payload["achievements"] = [
+        "compact_core_transition_front_v1_ok",
+        "compact_core_state_hub_v1_ok",
+        "compact_core_execution_bridge_v1_ok",
+        "compact_core_preview_contract_v1_ok",
+        "compact_core_preview_verification_v1_ok",
+        "compact_core_preview_ready_gate_v1_ok",
+        "compact_core_runner_payload_v1_ok",
+        "compact_core_runner_handoff_gate_v1_ok",
+        "compact_core_delivery_state_v1_ok",
+        "compact_core_checkpoint_v1_ok",
+        "compact_core_stage9_summary_v1_ok",
+        "compact_core_stage9_decision_gate_v1_ok"
+    ]
+    payload["lessons_learned"] = [
+        "verify_real_file_before_fix",
+        "sanitize_bom_before_logic_repair",
+        "avoid_partial_repairs_when_structure_is_corrupted",
+        "prefer_writer_script_over_fragile_direct_echo_build",
+        "one_step_only_after_ok_audit",
+        "project_specific_only_no_live_jump"
+    ]
+    out_file = BASE / Path("storage\memory\archive\stage9_archive_snapshot_v1.json")
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("STAGE9_ARCHIVE_SNAPSHOT_V1_AUDIT")
+    print("status =", payload["status"])
+    print("stage =", payload["stage"])
+    print("decision_gate_exists =", payload["decision_gate_exists"])
+    print("summary_exists =", payload["summary_exists"])
+    print("checkpoint_exists =", payload["checkpoint_exists"])
+    print("stage9_confirmed =", payload["stage9_confirmed"])
+    print("confirmed_layers_count =", payload["confirmed_layers_count"])
+    print("decision =", payload["decision"])
+    print("output_file =", str(out_file))
+
+if __name__ == "__main__":
+    main()

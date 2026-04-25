@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "layer": "DISCOVER_REAL_SKU_CANDIDATE_V1",
+  "selected_sku_candidate": "ECOM-TEST-CABLE-001",
+  "candidate_count": 23935,
+  "next_allowed_action": "build_identifier_resolution_from_real_sku_v1",
+  "timestamp": "2026-04-25T11:31:07.472811+00:00"
+}

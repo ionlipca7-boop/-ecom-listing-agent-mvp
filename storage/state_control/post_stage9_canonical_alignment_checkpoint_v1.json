@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_CANONICAL_ALIGNMENT_CHECKPOINT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "reentry_lock_confirmed": true,
+  "global_alignment_in_progress": true,
+  "local_chain_status": "PARKED_AND_PROTECTED",
+  "downstream_execution_blocked": true,
+  "alignment_scope": "return_to_canonical_project_line",
+  "ready_to_resume_canonical_flow": false,
+  "next_allowed_action": "build_post_stage9_canonical_resume_gate_v1"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "decision": "inventory_location_resolved",
+  "http_status": 200,
+  "resolved_merchantLocationKey": "ECOM_DE_LOC_1",
+  "locations_count": 1,
+  "response_text": "{\"total\":1,\"locations\":[{\"name\":\"ECOM DE MAIN LOCATION\",\"location\":{\"address\":{\"addressLine1\":\"Musterstrasse 1\",\"city\":\"Berlin\",\"postalCode\":\"10115\",\"country\":\"DE\"},\"locationId\":\"4FA31C653B687249E0643CFDFEF0B150\"},\"locationTypes\":[\"WAREHOUSE\"],\"merchantLocationKey\":\"ECOM_DE_LOC_1\",\"merchantLocationStatus\":\"ENABLED\"}]}",
+  "response_json": {
+    "total": 1,
+    "locations": [
+      {
+        "name": "ECOM DE MAIN LOCATION",
+        "location": {
+          "address": {
+            "addressLine1": "Musterstrasse 1",
+            "city": "Berlin",
+            "postalCode": "10115",
+            "country": "DE"
+          },
+          "locationId": "4FA31C653B687249E0643CFDFEF0B150"
+        },
+        "locationTypes": [
+          "WAREHOUSE"
+        ],
+        "merchantLocationKey": "ECOM_DE_LOC_1",
+        "merchantLocationStatus": "ENABLED"
+      }
+    ]
+  }
+}

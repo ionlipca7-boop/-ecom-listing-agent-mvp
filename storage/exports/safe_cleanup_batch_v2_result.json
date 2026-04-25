@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "safe_cleanup_batch_v2_executed",
+  "quarantine_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\cleanup\\safe_cleanup_batch_v2",
+  "safe_names_count": 13,
+  "moved_count": 13,
+  "not_found_count": 0,
+  "failed_count": 0,
+  "moved": [
+    "cd",
+    "chcp",
+    "del",
+    "dict",
+    "echo",
+    "list",
+    "None",
+    "python",
+    "str",
+    "type",
+    "run_ebay_create_inventory_item_v3.pycd",
+    "run_ebay_get_category_suggestions_v1.pypython",
+    "run_ebay_publish_draft_v1.pycd"
+  ],
+  "not_found": [],
+  "failed": [],
+  "rule": "delete_only_from_safe_list_first"
+}

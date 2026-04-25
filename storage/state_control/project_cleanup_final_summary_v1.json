@@ -1,0 +1,19 @@
+{
+  "status": "FINISH_READY",
+  "layer": "PROJECT_CLEANUP_FINAL_SUMMARY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "confirmed_state": {
+    "cleanup_audit_started": true,
+    "inventory_mapped": true,
+    "classification_done": true,
+    "archive_move_done": true,
+    "archive_verified": true,
+    "review_items_kept": true,
+    "root_noise_marked_delete_candidate": true,
+    "delete_used": false,
+    "publish_allowed": false,
+    "run_allowed": false
+  },
+  "next_allowed_action": "STOP",
+  "created_at": "2026-04-25T07:12:35.675445"
+}

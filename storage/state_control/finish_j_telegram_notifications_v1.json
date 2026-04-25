@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "J_TELEGRAM_NOTIFICATIONS",
+  "layer": "FINISH_J_TELEGRAM_NOTIFICATIONS_V1",
+  "confirmed_facts": {
+    "telegram_notifications_contract_done": true,
+    "telegram_command_router_done": true,
+    "telegram_approval_mapping_done": true,
+    "runtime_started": false,
+    "existing_assets_only": true,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false
+  },
+  "next_allowed_action": "start_k_inventory_system_entry_v1",
+  "timestamp": "2026-04-25T12:26:49.591652+00:00"
+}

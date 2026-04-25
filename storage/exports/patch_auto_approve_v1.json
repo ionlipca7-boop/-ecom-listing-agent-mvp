@@ -1,0 +1,11 @@
+{
+  "approved_at": "2026-04-15T19:05:15Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\patch_auto_approve_v1.json",
+  "updated_payload_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1_approved.json",
+  "approval_status": "READY",
+  "patch_count": 3,
+  "approved_count": 3,
+  "skipped_count": 0,
+  "next_step": "RUN_PATCH_APPLIER"
+}

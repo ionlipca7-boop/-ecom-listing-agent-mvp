@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_NEW_LISTING_DRAFT_GENERATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_NEW_LISTING_FROM_CLONE_BASELINE_V1",
+  "input_status": "OK",
+  "source_runtime_layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+  "execution_target": "run_control_room.py",
+  "input_type": "link_input",
+  "input_value": "https://example.com/product",
+  "clone_baseline_build_verified": true,
+  "draft_generation_prepared": true,
+  "draft_generation_started": false,
+  "listing_draft_created": false,
+  "live_execution": false,
+  "parallel_branches": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "await_new_listing_draft_generation_confirmation_v1"
+}

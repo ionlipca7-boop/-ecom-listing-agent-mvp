@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_CONFIRM_IMAGE_QA_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "human_decision": "NEEDS_TEXT_REMOVAL_OR_OVERLAY",
+  "target_listing_language": "de",
+  "non_german_text_policy": "FLAG_FOR_REMOVAL_OR_GERMAN_OVERLAY",
+  "image_count": 9,
+  "images_ebay_ready": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_image_processing_plan_v1",
+  "timestamp": "2026-04-25T10:36:38.885751+00:00"
+}

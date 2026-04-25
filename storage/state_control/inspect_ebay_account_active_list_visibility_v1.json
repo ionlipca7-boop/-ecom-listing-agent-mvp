@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_EBAY_ACCOUNT_ACTIVE_LIST_VISIBILITY_V1",
+  "http_status": 200,
+  "raw_length": 368,
+  "summary_fields": {
+    "Ack": [
+      "Success"
+    ],
+    "Version": [
+      "1271"
+    ],
+    "TotalSoldCount": [
+      "0"
+    ],
+    "TotalSoldValue": [],
+    "SoldDurationInDays": [
+      "31"
+    ],
+    "ActiveAuctionCount": [],
+    "AuctionSellingCount": [],
+    "TotalAuctionSellingValue": []
+  },
+  "active_list_returned": false,
+  "item_returned": false,
+  "diagnosis": "connection_ok_but_no_active_list_container_returned",
+  "possible_causes": [
+    "token_account_has_no_visible_active_selling_items_for_trading_call",
+    "token_scope_or_user_context_not_matching_seller_account",
+    "request_needs_alternate_api_or_container_for_active_inventory"
+  ],
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_alternate_sell_inventory_read_only_sync_v1",
+  "timestamp": "2026-04-25T09:00:19.600267+00:00"
+}

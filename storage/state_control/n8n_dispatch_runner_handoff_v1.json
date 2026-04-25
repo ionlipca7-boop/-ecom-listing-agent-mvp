@@ -1,0 +1,35 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_RUNNER_HANDOFF_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "runner_handoff_version": "v1",
+  "handoff_mode": "blocked_contract_only",
+  "required_handoff_fields": [
+    "status",
+    "dispatch_step",
+    "decision_source",
+    "action_allowed",
+    "execution_allowed",
+    "next_allowed_action",
+    "audit_reference"
+  ],
+  "handoff_rules": {
+    "control_agent_decision_required": true,
+    "audit_required_before_handoff": true,
+    "payload_contract_required": true,
+    "execution_allowed_must_be_true_for_real_runner_call": true,
+    "execution_allowed_false_means_blocked_handoff_only": true
+  },
+  "blocked_handoff_reasons": [
+    "execution_allowed_false",
+    "live_execution_forbidden",
+    "runner_is_not_decision_maker"
+  ],
+  "runner_handoff_ready": true,
+  "execution_allowed": false,
+  "next_allowed_action": "build_n8n_dispatch_archivist_handoff_v1"
+}

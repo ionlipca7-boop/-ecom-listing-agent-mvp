@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_C_PHOTO_ENGINE_ENTRY_V1",
+  "input_layer": "FINISH_B_EBAY_SYNC_V1",
+  "current_block": "C_PHOTO_ENGINE",
+  "previous_block_finished": "B_EBAY_SYNC",
+  "photo_engine_requirements": {
+    "input_sources": [
+      "AliExpress",
+      "Alibaba"
+    ],
+    "output": "EBAY_READY_IMAGES",
+    "language": "German",
+    "min_images": 3,
+    "max_images": 9,
+    "remove_chinese_english_text": true,
+    "add_german_text": true,
+    "improve_quality": true,
+    "unified_style": true
+  },
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_c_photo_engine_local_inventory_scan_v1",
+  "timestamp": "2026-04-25T11:51:27.716715+00:00"
+}

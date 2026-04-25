@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-04-15T19:01:20Z",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\apply_fix_payload_v1.json",
+  "output_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\patch_review_status_v1.json",
+  "review_status": "WAITING_APPROVAL",
+  "patch_count": 3,
+  "pending_review": 3,
+  "approved": 0,
+  "rejected": 0,
+  "unknown": 0,
+  "next_step": "APPROVE_PATCHES_OR_BUILD_APPLIER"
+}

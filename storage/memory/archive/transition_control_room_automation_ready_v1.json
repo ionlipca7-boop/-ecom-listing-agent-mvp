@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_CONTROL_ROOM_AUTOMATION_READY_V1",
+  "last_confirmed_layer": "APPROVAL_PUBLISH_AND_AUTOMATION_READY_V1",
+  "bridge_final_confirmed": true,
+  "foundation_locked": true,
+  "selected_project_path": "new_listing_from_clone_baseline_flow",
+  "automation_ready": true,
+  "accepted_inputs": [
+    "link_input",
+    "photo_input",
+    "description_input"
+  ],
+  "current_mode": "CONTROLLED_PRE_AUTOMATION",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "finalize_controlled_automation_path_v1"
+}

@@ -1,0 +1,8 @@
+{
+  "package_id": "ebay_template_ready_20260415_134843",
+  "created_at_utc": "2026-04-15T13:48:43Z",
+  "template_status": "READY",
+  "source_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_header_mapped_v1.csv",
+  "output_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\publish_packages\\ebay_template_ready_20260415_134843\\ebay_template_upload_ready_v1.csv",
+  "next_step": "UPLOAD_TO_EBAY_OR_RUN_FINAL_PACKAGE_CHECK"
+}

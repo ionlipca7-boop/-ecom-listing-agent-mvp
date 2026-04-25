@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "PYTHON_BUCKET_DECISION_PREPARED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_SAMPLE_BUCKET_READ_RESULT_V1",
+  "input_status": "OK",
+  "python_bucket_sample_result": "empty",
+  "decision": "no_untracked_python_files_detected",
+  "risk_level": "none",
+  "action_required": "no_action",
+  "cleanup_still_forbidden": true,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "prepare_untracked_bucket_decision_v1"
+}

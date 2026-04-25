@@ -1,0 +1,106 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "cmd_failure_diagnostic_completed",
+  "file_status": [
+    {
+      "path": "run_generator_agent_v1.py",
+      "exists": true,
+      "size": 1615,
+      "has_generator_ready": false,
+      "has_probe_ready": false,
+      "has_main_guard": true
+    },
+    {
+      "path": "run_generator_agent_v2.py",
+      "exists": true,
+      "size": 2306,
+      "has_generator_ready": false,
+      "has_probe_ready": false,
+      "has_main_guard": true
+    },
+    {
+      "path": "run_generator_agent_v3.py",
+      "exists": true,
+      "size": 2282,
+      "has_generator_ready": false,
+      "has_probe_ready": false,
+      "has_main_guard": true
+    },
+    {
+      "path": "run_generator_agent_v4.py",
+      "exists": true,
+      "size": 2382,
+      "has_generator_ready": false,
+      "has_probe_ready": false,
+      "has_main_guard": true
+    },
+    {
+      "path": "run_generator_agent_v5.py",
+      "exists": true,
+      "size": 2245,
+      "has_generator_ready": false,
+      "has_probe_ready": false,
+      "has_main_guard": true
+    },
+    {
+      "path": "run_generator_layer_readiness_audit_v1_fix.py",
+      "exists": true,
+      "size": 1669,
+      "has_generator_ready": true,
+      "has_probe_ready": false,
+      "has_main_guard": false
+    },
+    {
+      "path": "run_generator_execution_probe_v1_fix.py",
+      "exists": true,
+      "size": 1649,
+      "has_generator_ready": false,
+      "has_probe_ready": true,
+      "has_main_guard": false
+    },
+    {
+      "path": "run_generator_entrypoint_inspect_v1.py",
+      "exists": false,
+      "size": 0
+    }
+  ],
+  "json_status": [
+    {
+      "path": "storage\\exports\\generator_layer_readiness_audit_v1.json",
+      "exists": true,
+      "size": 327
+    },
+    {
+      "path": "storage\\exports\\generator_execution_probe_v1.json",
+      "exists": true,
+      "size": 701
+    },
+    {
+      "path": "storage\\exports\\generator_entrypoint_inspect_v1.json",
+      "exists": false,
+      "size": 0
+    },
+    {
+      "path": "storage\\memory\\archive\\generator_probe_error_archive_v1.json",
+      "exists": true,
+      "size": 483
+    },
+    {
+      "path": "storage\\memory\\archive\\generator_entrypoint_inspect_error_archive_v1.json",
+      "exists": true,
+      "size": 480
+    }
+  ],
+  "symptoms": [
+    "entrypoint_inspect_file_not_created",
+    "entrypoint_inspect_json_missing"
+  ],
+  "recommendations": [
+    "do_not_use_multiline_python_c_in_cmd",
+    "do_not_use_long_echo_file_build_for_logic_files",
+    "prefer_small_physical_py_writer_script_for_next_repairs",
+    "archive_each_cmd_pattern_failure_immediately"
+  ],
+  "next_step": "build_safe_writer_script_v1"
+}

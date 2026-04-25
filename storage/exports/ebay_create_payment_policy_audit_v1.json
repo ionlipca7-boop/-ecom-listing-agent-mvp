@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "http_status": 400,
+  "body": "{\"errors\":[{\"errorId\":2004,\"domain\":\"ACCESS\",\"category\":\"REQUEST\",\"message\":\"Invalid request\",\"longMessage\":\"The request has errors. For help, see the documentation for this API.\",\"parameters\":[{\"name\":\"reason\",\"value\":\"Could not serialize field [paymentMethods.null.paymentMethodType]\"}]}]}"
+}

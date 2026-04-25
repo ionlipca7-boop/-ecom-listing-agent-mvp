@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "archive_type": "MANIFEST_CREATED",
+  "phase": "CONTROL_LAYER_V1",
+  "manifest_created": true,
+  "previous_missing_now_fixed": "manifest",
+  "next_step": "build_control_rules_v1"
+}

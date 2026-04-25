@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_EXECUTION_AUTHORIZATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINISH_READY_V1",
+  "input_status": "OK",
+  "system_position": "POST_FINISH_CONTROLLED_CONTINUATION",
+  "control_room_authorized": true,
+  "authorized_orchestrator": "ChatGPT_CONTROL_ROOM",
+  "authorized_execution_path": [
+    "publish_instruction_contract_v1",
+    "local_executor_runner_agent",
+    "run_control_room.py"
+  ],
+  "authorized_bridge_components": [
+    "runner_agent",
+    "executor_bridge",
+    "runtime_result_writer",
+    "finish_ready_writer"
+  ],
+  "authorized_project_helpers": [
+    "github_path",
+    "bridge_path",
+    "local_agents",
+    "project_helpers"
+  ],
+  "operator_request_model": "explicit_operator_instruction_triggers_authorized_bridge_execution",
+  "repeated_capability_revalidation_not_required": true,
+  "rebuild_forbidden": true,
+  "baseline_return_forbidden": true,
+  "parallel_branches_forbidden": true,
+  "project_specific_only": true,
+  "verification_first": true,
+  "cmd_only_execution": true,
+  "live_execution_not_auto_enabled": true,
+  "live_execution_requires_explicit_command": true,
+  "allowed_next_actions": [
+    "dry_run_publish_validation_v1",
+    "run_controlled_publish_execution_v1",
+    "improvement_proposals_only"
+  ],
+  "decision_rule": "execute_only_the_next_explicitly_selected_action_through_authorized_bridge",
+  "next_allowed_action": "WAIT_FOR_EXPLICIT_OPERATOR_COMMAND_THROUGH_AUTHORIZED_BRIDGE"
+}

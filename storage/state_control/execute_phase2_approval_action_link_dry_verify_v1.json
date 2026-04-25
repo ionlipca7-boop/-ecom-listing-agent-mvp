@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PHASE2_APPROVAL_ACTION_LINK_DRY_VERIFY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_2_APPROVAL_ACTION_LINK",
+  "timestamp": "2026-04-25T13:31:51.223114+00:00",
+  "simulated_command": "/approve DRY_RUN_ITEM_001",
+  "approval_state_written": true,
+  "internal_approval_marked": true,
+  "next_gate_unlocked_dry": true,
+  "approval_direct_publish_called": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "contracts_loaded_count": 4,
+  "contract_files_exist": true,
+  "result": "PASS_DRY_VERIFY",
+  "next_allowed_action": "verify_phase2_approval_action_link_v1"
+}

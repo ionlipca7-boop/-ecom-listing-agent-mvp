@@ -1,0 +1,53 @@
+{
+  "status": "OK",
+  "decision": "live_status_loaded_via_registry",
+  "product_key": "cable_001",
+  "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+  "offerId": "153187814011",
+  "listingId": "318164247570",
+  "registry_listing_state": "LIVE",
+  "registry_pipeline_status": "LIVE_OK",
+  "inventory_http_status": 200,
+  "live_quantity": 12,
+  "image_count": null,
+  "has_produktart": true,
+  "response_text": "{\"sku\":\"USBCLadekabel2m60WSchnellladenDatenkabelq10p675\",\"locale\":\"de_DE\",\"product\":{\"title\":\"USB-C Ladekabel 2m 60W Schnellladen Datenkabel\",\"aspects\":{\"Marke\":[\"Markenlos\"],\"Produktart\":[\"USB-C Ladekabel\"],\"Typ\":[\"USB-C Ladekabel\"],\"Leistung\":[\"60W\"],\"Kabellaenge\":[\"2 m\"]},\"description\":\"Hochwertiges USB-C Ladekabel mit 60W Leistung fuer schnelles Laden und Datentransfer.\",\"imageUrls\":[\"https://i.ebayimg.com/images/g/tkoAAeSwFOBpuYyi/s-l1600.webp\"]},\"condition\":\"NEW\",\"availability\":{\"shipToLocationAvailability\":{\"quantity\":12,\"allocationByFormat\":{\"auction\":0,\"fixedPrice\":12}}}}",
+  "inventory_snapshot": {
+    "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+    "locale": "de_DE",
+    "product": {
+      "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+      "aspects": {
+        "Marke": [
+          "Markenlos"
+        ],
+        "Produktart": [
+          "USB-C Ladekabel"
+        ],
+        "Typ": [
+          "USB-C Ladekabel"
+        ],
+        "Leistung": [
+          "60W"
+        ],
+        "Kabellaenge": [
+          "2 m"
+        ]
+      },
+      "description": "Hochwertiges USB-C Ladekabel mit 60W Leistung fuer schnelles Laden und Datentransfer.",
+      "imageUrls": [
+        "https://i.ebayimg.com/images/g/tkoAAeSwFOBpuYyi/s-l1600.webp"
+      ]
+    },
+    "condition": "NEW",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 12,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 12
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "STABILIZE_NEW_CHAT_TRANSITION_PACKAGE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_STRICT_PROMPT_ENCODING_V1",
+  "input_status": "OK",
+  "stable_front_created": true,
+  "stable_instructions_created": true,
+  "transition_package_stable": true,
+  "archive_move_started": false,
+  "delete_started": false,
+  "next_allowed_action": "verify_new_chat_transition_package_v1",
+  "mode": "CONTROLLED_CLEANUP_SEQUENCE",
+  "parallel_branches": false,
+  "live_execution": false
+}

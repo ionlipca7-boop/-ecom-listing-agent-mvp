@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_APPROVE_PROCESSED_IMAGES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "human_decision": "APPROVE_IMAGES_EBAY_READY",
+  "output_count": 9,
+  "images_ebay_ready": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "update_approval_packet_with_images_v1",
+  "timestamp": "2026-04-25T10:41:26.973382+00:00"
+}

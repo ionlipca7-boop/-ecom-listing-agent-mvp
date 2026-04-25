@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FULL_WORKING_PASS_AUDIT_V1",
+  "input_status": "OK",
+  "finish_reached": true,
+  "finish_scope": "full_working_pass_completed",
+  "full_working_pass_confirmed": true,
+  "stop_required_now": true,
+  "post_finish_execution_forbidden": true,
+  "allowed_after_finish": [
+    "final_status_review",
+    "improvement_proposals_only"
+  ],
+  "live_execution": false,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "entrypoint": "run_control_room.py",
+  "next_allowed_action": "STOP_AT_FINISH"
+}

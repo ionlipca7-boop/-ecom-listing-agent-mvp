@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "REENTRY_LOCK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REENTRY_DECISION_V1",
+  "input_status": "OK",
+  "reentry_locked": true,
+  "lock_scope": "FULL_PIPELINE_AND_EXECUTION",
+  "execution_allowed": false,
+  "runner_execution_allowed": false,
+  "live_execution_allowed": false,
+  "parallel_branches_allowed": false,
+  "only_allowed_path": "ALIGNMENT_CHECKPOINT",
+  "next_allowed_action": "build_reentry_alignment_checkpoint_v1"
+}

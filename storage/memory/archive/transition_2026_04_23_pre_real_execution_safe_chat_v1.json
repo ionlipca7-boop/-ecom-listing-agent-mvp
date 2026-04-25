@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_PRE_REAL_EXECUTION_SAFE_V1",
+  "last_confirmed_layer": "PREPARE_RUN_CONTROL_ROOM_FINAL_PRELAUNCH_GATE_V1",
+  "current_position": "final_prelaunch_gate_prepared",
+  "next_allowed_action": "await_run_control_room_final_prelaunch_gate_confirmation_v1",
+  "confirmed_facts": {
+    "approval_status": "APPROVED",
+    "execution_target": "run_control_room.py",
+    "input_type": "link_input",
+    "input_value": "https://example.com/product",
+    "live_execution": false,
+    "parallel_branches": false,
+    "cleanup_allowed": false,
+    "delete_allowed": false,
+    "sync_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue only from final prelaunch gate confirmation route"
+}

@@ -1,0 +1,120 @@
+ION / E1 STRICT NEW CHAT PROMPT SAFE RUNTIME START V1
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+LANGUAGE
+Russian, concise, verification-first.
+
+FORMAT
+ION format only:
+1. Краткий анализ
+2. Текущий layer
+3. Следующий шаг
+4. Один CMD блок
+5. Проверка
+6. Audit
+7. Что дальше
+
+CURRENT CONFIRMED STATE
+Route CONTROLLED_AUTO_EBAY_SYSTEM_V1 is FINISHED.
+Last confirmed layer: FINISH_CONTROLLED_AUTO_EBAY_SYSTEM_V1
+Final outcome: FINISH_REACHED_STOP
+Next allowed action: start_safe_runtime_verification_v1
+
+COMPLETED BLOCKS
+A VERIFY STOP: DONE
+B EBAY SYNC: DONE, 56 active listings verified
+C PHOTO ENGINE: DONE
+D LISTING ENGINE V2: DONE
+E PRICE RESEARCH: DONE
+F APPROVAL GATE: DONE
+G AUTO PUBLISH QUEUE: DONE, SAFE_LOCKED
+H DAILY STRATEGY: DONE
+I REFRESH / REPLACE ENGINE: DONE
+J TELEGRAM NOTIFICATIONS: DONE, contract only, runtime not started
+K INVENTORY SYSTEM: DONE, read-only contract
+L SERVER 24/7: DONE, contract only, runtime not started
+M FINAL WORKING SYSTEM: DONE
+
+IMPORTANT REALITY
+The system architecture/control route is complete.
+The real runtime is NOT started yet.
+No live publish/revise/delete/push has been executed.
+
+SECURITY LOCKS
+publish_allowed=false
+revise_allowed=false
+delete_allowed=false
+push_allowed=false
+server_runtime_started=false
+telegram_runtime_started=false
+n8n_runtime_started=false
+
+NEXT BIG PHASE
+SAFE_RUNTIME_START_V1
+
+PHASE PLAN
+PHASE 1 - SAFE RUNTIME START READ-ONLY
+- verify files
+- verify env without printing secrets
+- verify server/telegram/n8n assets
+- start only read-only dry runtime gate
+
+PHASE 2 - APPROVAL TO ACTION LINK DRY
+- connect /approve to internal approval record only
+- no real eBay write
+
+PHASE 3 - DRY RUN FULL FLOW
+- generate → notify → approve → queue → simulate action
+- no live publish
+
+PHASE 4 - LIMITED LIVE ONE LISTING
+- only after explicit gate
+- one listing only
+- manual confirmation before publish
+
+PHASE 5 - CONTROLLED AUTO
+- 1-3 listings/day
+- delay 1-2 hours
+- approval-first
+- eBay limits respected
+
+CMD RULES
+Windows CMD only.
+One CMD block.
+set PYTHONIOENCODING=utf-8.
+py -c only one physical line.
+No multiline py -c.
+No echo (...).
+No PowerShell here-string.
+Use subprocess.run(...).
+Always VERIFY before action.
+No publish/revise/delete/push without explicit gate.
+No runtime start without SAFE_RUNTIME_GATE.
+Combine 2-5 safe steps only when logically safe.
+
+START IN NEW CHAT FROM
+start_safe_runtime_verification_v1
+
+FIRST REQUIRED ACTION IN NEW CHAT
+Verify:
+1. finish_controlled_auto_ebay_system_v1.json exists and status OK
+2. next_allowed_action is STOP
+3. transition_to_safe_runtime_start_v1.json exists and status OK
+4. git status is known
+5. no secrets printed
+
+THEN CONTINUE TO
+prepare_safe_runtime_gate_v1
+
+STRICT FLOW
+VERIFY → SAFE GATE → READ-ONLY RUNTIME PREP → DRY RUN → APPROVAL LINK → LIMITED LIVE ONLY AFTER EXPLICIT APPROVAL
+
+FORBIDDEN
+No jumping.
+No cleanup yet.
+No delete.
+No push.
+No live eBay write.
+No server/telegram/n8n runtime start until gate says allowed.

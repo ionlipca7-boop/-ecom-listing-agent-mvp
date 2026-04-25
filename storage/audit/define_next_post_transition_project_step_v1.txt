@@ -1,0 +1,19 @@
+DEFINE NEXT POST TRANSITION PROJECT STEP V1
+
+STATUS
+- transition package remains ready
+- current chat continuation remains allowed
+- destructive actions remain forbidden
+- archive move not started
+- delete not started
+
+SELECTED NEXT PROJECT STEP
+- prepare_controlled_cleanup_decision_gate_v1
+
+SELECTION REASON
+- transition work is complete
+- cleanup execution is still forbidden
+- decision gate must exist before any archive or delete path
+
+NEXT SAFE ACTION
+- prepare_controlled_cleanup_decision_gate_v1

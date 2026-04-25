@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_GIT_CHANGE_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "GIT_CHANGE_CLASSIFICATION_RESULT_V1",
+  "input_status": "OK",
+  "git_change_decision_prepared": true,
+  "decision_scope": "tracked_and_untracked_classified_state_only",
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_git_change_decision_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_COUNT_MISMATCH_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_UNTRACKED_SNAPSHOT_CAPTURE_V1",
+  "input_status": "OK",
+  "previous_expected_untracked_total": 738,
+  "actual_untracked_total_detected": 1707,
+  "count_mismatch_detected": true,
+  "path_status": "STILL_CORRECT",
+  "control_decision": "continue_read_only_review",
+  "cleanup_forbidden": true,
+  "delete_forbidden": true,
+  "sync_forbidden": true,
+  "current_position": "untracked_count_mismatch_recorded",
+  "next_allowed_action": "build_top_level_untracked_distribution_v1"
+}

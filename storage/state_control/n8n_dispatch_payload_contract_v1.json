@@ -1,0 +1,41 @@
+{
+  "status": "OK",
+  "layer": "N8N_DISPATCH_PAYLOAD_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "dispatcher_role": "orchestrator_only",
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "payload_contract_version": "v1",
+  "required_payload_fields": [
+    "status",
+    "project",
+    "phase",
+    "dispatch_step",
+    "decision_source",
+    "action_allowed",
+    "next_allowed_action",
+    "audit_reference"
+  ],
+  "optional_payload_fields": [
+    "history_reference",
+    "state_reference",
+    "notes"
+  ],
+  "forbidden_payload_fields": [
+    "live_token",
+    "direct_publish_command",
+    "manual_state_override",
+    "side_branch_switch",
+    "unapproved_runner_command"
+  ],
+  "validation_rules": {
+    "missing_required_field_blocks_dispatch": true,
+    "forbidden_field_blocks_dispatch": true,
+    "audit_reference_required": true,
+    "next_allowed_action_required": true
+  },
+  "execution_allowed": false,
+  "payload_contract_ready": true,
+  "next_allowed_action": "build_n8n_dispatch_decision_gate_v1"
+}

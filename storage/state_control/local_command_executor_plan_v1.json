@@ -1,0 +1,37 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LOCAL_COMMAND_EXECUTOR_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "goal": "prepare_executor_contract_only_no_runtime_execution",
+  "executor_scope": [
+    "route_allowed_local_commands",
+    "return_blocked_forbidden_commands",
+    "record_command_decision",
+    "read_only_status_checks"
+  ],
+  "forbidden": [
+    "publish",
+    "real_ebay_api_call",
+    "server_run",
+    "telegram_run",
+    "write_token",
+    "git_push",
+    "delete_without_gate"
+  ],
+  "checks": {
+    "previous_ok": true,
+    "next_action_ok": true,
+    "publish_locked": true,
+    "server_locked": true,
+    "telegram_locked": true,
+    "git_push_locked": true
+  },
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "build_local_command_executor_contract_v1"
+}

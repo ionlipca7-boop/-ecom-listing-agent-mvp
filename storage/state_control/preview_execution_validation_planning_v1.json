@@ -1,0 +1,34 @@
+{
+  "status": "OK",
+  "layer": "PREVIEW_EXECUTION_VALIDATION_PLANNING_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_stage": 9,
+  "input_direction_plan": "POST_STAGE9_DIRECTION_PLAN_V1",
+  "planning_defined": true,
+  "purpose": "define management validation scope for preview execution path without building technical layer",
+  "validation_scope": {
+    "compact_core_to_preview_path_only": true,
+    "technical_build_in_scope": false,
+    "live_execution_in_scope": false,
+    "runner_handoff_execution_in_scope": false
+  },
+  "must_validate": [
+    "preview_path_is_next_correct_management_target",
+    "compact_core_contract_remains_intact",
+    "preview_validation_can_be_planned_without_technical_jump",
+    "one_step_only_rule_remains_active"
+  ],
+  "must_not_do": [
+    "build_new_technical_layer",
+    "execute_runner_flow",
+    "start_live_flow",
+    "open_parallel_branch"
+  ],
+  "expected_output": {
+    "management_validation_map": true,
+    "preview_path_constraints": true,
+    "single_next_step_after_planning": true
+  },
+  "do_now": "build_preview_execution_validation_map_v1",
+  "one_next_step": "build_preview_execution_validation_map_v1"
+}

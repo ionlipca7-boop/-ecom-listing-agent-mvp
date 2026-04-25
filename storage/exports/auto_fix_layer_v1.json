@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-04-15T17:21:00Z",
+  "auto_fix_status": "READY",
+  "next_step": "BUILD_OPTIMIZATION_STATUS_LAYER",
+  "recommended_action": "NO_FIX_NEEDED",
+  "fix_reason": "Upload feedback is clean",
+  "feedback_layer_status": "READY",
+  "success_count": 1,
+  "warning_count": 0,
+  "error_count": 0,
+  "unknown_count": 0,
+  "latest_item_status": "SUCCESS",
+  "latest_listing_id": "EBAY-SAMPLE-0001",
+  "latest_sku": "SKU-SAMPLE-0001"
+}

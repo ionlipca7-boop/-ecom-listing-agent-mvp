@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHASE4_SELECTED_EXECUTOR_FINAL_PREFLIGHT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "selected_executor": "run_ebay_publish_offer_v6.py",
+  "has_publish_offer_endpoint": true,
+  "has_loop": false,
+  "has_revise_delete": false,
+  "publish_executed": false,
+  "max_live_listings_now": 1,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "timestamp": "2026-04-25T13:37:45.584271+00:00",
+  "next_allowed_action": "execute_phase4_one_live_listing_v1_if_preflight_ok"
+}

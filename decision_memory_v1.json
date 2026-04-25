@@ -1,0 +1,7 @@
+{
+  "total_runs": 10,
+  "ready_runs": 8,
+  "consecutive_ready": 0,
+  "system_state": "UNSTABLE",
+  "decision": "WAIT_AND_MONITOR"
+}

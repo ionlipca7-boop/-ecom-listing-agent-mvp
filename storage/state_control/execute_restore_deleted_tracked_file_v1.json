@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_RESTORE_DELETED_TRACKED_FILE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_RESTORE_DELETED_TRACKED_FILE_V1",
+  "input_status": "OK",
+  "target_file": "run_control_room.bat",
+  "restore_command": "git restore --source=HEAD -- run_control_room.bat",
+  "restore_executed": true,
+  "target_file_exists_after_restore": true,
+  "git_status_after_restore": "",
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "deleted_tracked_file_restored",
+  "next_allowed_action": "prepare_revert_tracked_cache_file_v1"
+}

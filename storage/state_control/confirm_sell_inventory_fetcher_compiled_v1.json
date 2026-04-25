@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CONFIRM_SELL_INVENTORY_FETCHER_COMPILED_V1",
+  "target": "publisher\\ebay_sell_inventory_fetcher.py",
+  "compile_returncode": 0,
+  "compile_stdout": "",
+  "compile_stderr": "",
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_sell_inventory_read_only_execution_gate_v1",
+  "timestamp": "2026-04-25T09:02:38.186794+00:00"
+}

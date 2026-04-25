@@ -1,0 +1,71 @@
+{
+  "status": "OK",
+  "layer": "RECOVER_BROKEN_CMD_AFTER_PHASE4_PUBLISH_ATTEMPT_V1",
+  "problem": "previous CMD used multiline py-c and broke in Windows CMD",
+  "publish_called_now": false,
+  "repeated_publish_allowed": false,
+  "info": {
+    "storage\\state_control\\execute_phase4_one_live_listing_v1.json": {
+      "exists": true,
+      "mtime": "2026-04-25T15:39:48.185340",
+      "size": 1021,
+      "status": "CHECK_REQUIRED"
+    },
+    "storage\\state_control\\await_explicit_operator_confirmation_for_one_live_publish_after_token_repair_v1.json": {
+      "exists": true,
+      "mtime": "2026-04-25T15:57:01.054791",
+      "size": 749,
+      "status": "AWAIT_CONFIRMATION"
+    },
+    "storage\\state_control\\verify_ebay_access_token_read_only_v1.json": {
+      "exists": true,
+      "mtime": "2026-04-25T15:46:46.199426",
+      "size": 501,
+      "status": "OK"
+    },
+    "storage\\exports\\ebay_publish_offer_audit_v6.json": {
+      "exists": true,
+      "mtime": "2026-04-25T15:39:48.133734",
+      "size": 407,
+      "status": "FAILED"
+    }
+  },
+  "git_status_lines": [
+    "M storage/exports/ebay_get_offer_audit_v3.json",
+    " M storage/exports/ebay_publish_offer_audit_v6.json",
+    " M storage/state_control/prepare_safe_runtime_gate_v1.json",
+    "?? .env.local",
+    "?? 3",
+    "?? NEW_CHAT_AFTER_TOKEN_REPAIR_PHASE4_V1.txt",
+    "?? nul",
+    "?? storage/memory/archive/transition_after_token_repair_to_new_chat_v1.json",
+    "?? storage/state_control/await_explicit_operator_confirmation_for_one_live_publish_after_token_repair_v1.json",
+    "?? storage/state_control/build_safe_token_refresh_script_v1.json",
+    "?? storage/state_control/commit_post_pull_gate_state_v1.json",
+    "?? storage/state_control/execute_phase1_safe_runtime_start_read_only_v1.json",
+    "?? storage/state_control/execute_phase2_approval_action_link_dry_verify_v1.json",
+    "?? storage/state_control/execute_phase3_dry_run_full_flow_v1.json",
+    "?? storage/state_control/execute_phase4_one_live_listing_v1.json",
+    "?? storage/state_control/open_phase4_one_live_listing_gate_v1.json",
+    "?? storage/state_control/open_safe_runtime_gate_v1.json",
+    "?? storage/state_control/prepare_ebay_access_token_repair_gate_v1.json",
+    "?? storage/state_control/prepare_phase2_approval_action_link_gate_v1.json",
+    "?? storage/state_control/prepare_phase4_live_candidate_review_v1.json",
+    "?? storage/state_control/prepare_phase4_one_live_listing_executor_v1.json",
+    "?? storage/state_control/prepare_phase4_selected_executor_final_preflight_after_token_repair_v1.json",
+    "?? storage/state_control/prepare_phase4_selected_executor_final_preflight_v1.json",
+    "?? storage/state_control/push_safe_activation_state_v1.json",
+    "?? storage/state_control/reopen_phase4_one_live_listing_after_token_repair_v1.json",
+    "?? storage/state_control/run_safe_ebay_token_refresh_v2.json",
+    "?? storage/state_control/select_phase4_one_live_listing_executor_v1.json",
+    "?? storage/state_control/start_safe_activation_verification_v1.json",
+    "?? storage/state_control/verify_ebay_access_token_read_only_v1.json",
+    "?? storage/state_control/verify_phase1_safe_runtime_start_v1.json",
+    "?? storage/state_control/verify_phase2_prepare_phase3_gate_v1.json",
+    "?? storage/state_control/verify_phase3_prepare_phase4_gate_v1.json",
+    "?? storage/state_control/verify_phase4_failed_token_prepare_repair_gate_v1.json",
+    "?? storage/tools/safe_ebay_token_refresh_v1.py"
+  ],
+  "next_allowed_action": "verify_phase4_result_and_token_state_before_any_retry_v1",
+  "timestamp": "2026-04-25T14:01:07.275724+00:00"
+}

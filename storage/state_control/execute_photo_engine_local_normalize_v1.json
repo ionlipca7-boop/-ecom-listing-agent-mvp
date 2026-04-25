@@ -1,0 +1,64 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PHOTO_ENGINE_LOCAL_NORMALIZE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_PHOTO_ENGINE_PROCESSING_PLAN_V1",
+  "source_image_count": 9,
+  "output_image_count": 9,
+  "output_folder": "storage\\photo_engine\\test_input_v1\\ebay_ready",
+  "outputs": [
+    {
+      "source": "05575e43-1601-4422-9d6c-d4a9446cd76a.png",
+      "output": "ebay_ready_01.jpg",
+      "ok": true
+    },
+    {
+      "source": "0ab4d859-92d7-49ea-b6b6-de9feb48d961-md.jpeg",
+      "output": "ebay_ready_02.jpg",
+      "ok": true
+    },
+    {
+      "source": "0c650745-fc85-4083-9825-fb05b74b162d-md.jpeg",
+      "output": "ebay_ready_03.jpg",
+      "ok": true
+    },
+    {
+      "source": "29d8e991-8a11-4cae-8c4c-d1c5c839cc07-md.jpeg",
+      "output": "ebay_ready_04.jpg",
+      "ok": true
+    },
+    {
+      "source": "4a68a22c-1627-4049-9707-4bf2c66b558c-md.jpeg",
+      "output": "ebay_ready_05.jpg",
+      "ok": true
+    },
+    {
+      "source": "78183f20-e2f5-422a-9094-0206c14aadc4-md.jpeg",
+      "output": "ebay_ready_06.jpg",
+      "ok": true
+    },
+    {
+      "source": "9dd86a89-8708-4735-9fb7-259605a744f1-md.jpeg",
+      "output": "ebay_ready_07.jpg",
+      "ok": true
+    },
+    {
+      "source": "f0fb8776-3594-4a4d-9a00-25c1fabc2b6b-md.jpeg",
+      "output": "ebay_ready_08.jpg",
+      "ok": true
+    },
+    {
+      "source": "fec7f88d-cd3d-42b5-a4e5-9f90580c22f3-md.jpeg",
+      "output": "ebay_ready_09.jpg",
+      "ok": true
+    }
+  ],
+  "processing_done": "format_convert_resize_max_1600_jpg",
+  "text_removal_done": false,
+  "note": "local normalization only; AI text removal/enhancement is next separate gate",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "inspect_photo_engine_outputs_v1",
+  "timestamp": "2026-04-25T10:01:12.127372+00:00"
+}

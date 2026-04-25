@@ -1,0 +1,41 @@
+import json
+from pathlib import Path
+
+p = Path(r"storage\memory\archive\hosted_multi_image_source_v1.json")
+p.parent.mkdir(parents=True, exist_ok=True)
+
+data = {
+  "status": "OK",
+  "decision": "hosted_multi_image_source_v1_built",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offer_id": "153365657011",
+  "item_id": "318166440509",
+  "live_price_confirmed": "4.01",
+  "hosted_ready_urls": [
+    "https://i.ebayimg.com/images/g/7MsAAeSw7kpp4-UD/s-l1600.webp"
+  ],
+  "pending_external_urls": [
+    "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+    "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+    "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+    "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+    "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+    "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+    "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+    "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+  ],
+  "hosted_ready_count": 1,
+  "pending_external_count": 8,
+  "rule": "listing_images_must_come_from_hosted_or_eps_urls_only",
+  "next_step": "build_eps_upload_queue_v1"
+}
+
+p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+print("HOSTED_MULTI_IMAGE_SOURCE_V1_FINAL_AUDIT")
+print("status =", data["status"])
+print("decision =", data["decision"])
+print("sku =", data["sku"])
+print("hosted_ready_count =", data["hosted_ready_count"])
+print("pending_external_count =", data["pending_external_count"])
+print("live_price_confirmed =", data["live_price_confirmed"])
+print("next_step =", data["next_step"])

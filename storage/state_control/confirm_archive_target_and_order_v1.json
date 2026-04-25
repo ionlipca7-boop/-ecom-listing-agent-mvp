@@ -1,0 +1,32 @@
+{
+  "status": "OK",
+  "layer": "CONFIRM_ARCHIVE_TARGET_AND_ORDER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CLASSIFY_CLEANUP_SCOPE_KEEP_ARCHIVE_DELETE_V1",
+  "input_status": "OK",
+  "archive_target_confirmed": true,
+  "archive_target_root": "storage\\archive_candidates\\phase_cleanup_v1\\",
+  "non_destructive_order_confirmed": true,
+  "execution_order": [
+    "verify_archive_root",
+    "verify_archive_scope_exists",
+    "verify_keep_scope_protected",
+    "create_cleanup_execution_gate",
+    "execute_archive_move_only_after_gate"
+  ],
+  "archive_scope_confirmed": [
+    "drafts\\",
+    "history\\",
+    "control_room_history\\",
+    "storage\\cleanup\\safe_cleanup_batch_v1\\",
+    "storage\\cleanup\\safe_cleanup_batch_v2\\",
+    "storage\\cleanup\\safe_cleanup_batch_v3\\"
+  ],
+  "delete_scope_confirmed_empty": true,
+  "archive_move_allowed_now": false,
+  "delete_allowed_now": false,
+  "cleanup_execution_allowed_now": false,
+  "next_allowed_action": "create_cleanup_execution_gate_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

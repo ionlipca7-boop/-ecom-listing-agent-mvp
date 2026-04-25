@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "BUILD_NEW_LISTING_FROM_CLONE_BASELINE_V1",
+  "decision": "new_listing_from_clone_baseline_v1_built",
+  "baseline_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\listing_clone_baseline_v1.json",
+  "offerId": "153365657011",
+  "listingId": "318166440509",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "title_selected": "USB-C auf USB-A OTG Adapter USB 3.0 Typ C Datenadapter Schwarz",
+  "price_selected": "4.19",
+  "next_allowed_action": "build_clone_runner_preview_v1"
+}

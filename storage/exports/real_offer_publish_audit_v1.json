@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "decision": "real_offer_published",
+  "offerId": "153187814011",
+  "http_status": 200,
+  "response_text": "{\"listingId\":\"318164247570\",\"warnings\":[{\"errorId\":25072,\"domain\":\"API_INVENTORY\",\"subdomain\":\"Selling\",\"category\":\"REQUEST\",\"message\":\"Verkaufsprovision erlassen.\"}]}",
+  "response_json": {
+    "listingId": "318164247570",
+    "warnings": [
+      {
+        "errorId": 25072,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "REQUEST",
+        "message": "Verkaufsprovision erlassen."
+      }
+    ]
+  }
+}

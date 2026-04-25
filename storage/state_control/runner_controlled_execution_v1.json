@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_CONTROLLED_EXECUTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_EXECUTION_START_GATE_V1",
+  "execution_triggered": true,
+  "execution_mode": "CONTROLLED",
+  "log_file": "storage/logs/runner_execution_output.txt",
+  "result_captured": true,
+  "live_execution_attempted": true,
+  "next_allowed_action": "build_execution_result_analysis_v1"
+}

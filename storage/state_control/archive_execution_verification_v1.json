@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "ARCHIVE_EXECUTION_VERIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ARCHIVE_MOVE_EXECUTION_RESULT_V1",
+  "input_status": "OK",
+  "verification_scope": "archive_target_state_only",
+  "archive_target_verified": true,
+  "archive_executed_confirmed": true,
+  "repeat_move_not_required": true,
+  "delete_allowed": false,
+  "next_allowed_action": "wait_for_next_cleanup_control_instruction"
+}

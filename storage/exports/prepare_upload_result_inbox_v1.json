@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-04-15T17:12:40Z",
+  "inbox_status": "READY",
+  "next_step": "RUN_RESULT_PARSER_ON_REAL_UPLOAD_FILE",
+  "package_id": "variant_package_20260415_182127",
+  "inbox_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results_inbox",
+  "sample_json": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results_inbox\\sample_upload_result.json",
+  "sample_csv": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results_inbox\\sample_upload_result.csv",
+  "readme_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results_inbox\\README_UPLOAD_RESULT.txt"
+}

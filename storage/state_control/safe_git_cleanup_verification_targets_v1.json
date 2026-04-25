@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "layer": "SAFE_GIT_CLEANUP_VERIFICATION_TARGETS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SAFE_GIT_CLEANUP_MOVE_BATCH_V1",
+  "input_status": "OK",
+  "verify_after_future_move": [
+    "storage/archive_candidates/git_cleanup_v1"
+  ],
+  "verify_root_should_keep": [
+    "agent",
+    "app",
+    "configs",
+    "publisher",
+    "scripts",
+    "storage",
+    "templates",
+    "tests",
+    "test_run.py",
+    "run_control_room.py",
+    ".gitignore"
+  ],
+  "verify_tracked_review_pending": [
+    "run_control_room.bat",
+    "agent/__pycache__/brain.cpython-314.pyc"
+  ],
+  "next_allowed_action": "review_safe_git_cleanup_move_batch_v1"
+}

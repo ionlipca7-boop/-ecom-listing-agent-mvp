@@ -1,0 +1,18 @@
+REPAIR STRICT PROMPT ENCODING V1
+
+STATUS
+- strict new chat prompt rewritten
+- broken Cyrillic headings removed
+- required response format headers restored
+- archive move not started
+- delete not started
+
+RESTORED HEADERS
+- Краткий анализ
+- Один CMD блок
+- Проверка
+- Audit
+- Что ожидаем
+
+NEXT SAFE ACTION
+- verify_strict_prompt_encoding_v1

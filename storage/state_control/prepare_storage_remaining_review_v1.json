@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_STORAGE_REMAINING_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_POST_PATH_ANOMALIES_DECISION_GATE_V1",
+  "input_status": "OK",
+  "current_position": "storage_remaining_review_prepared",
+  "review_scope": "storage_directory_remaining_read_only_review",
+  "destructive_actions_allowed": false,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "read_only_review_continues": true,
+  "next_allowed_action": "execute_storage_remaining_review_v1"
+}

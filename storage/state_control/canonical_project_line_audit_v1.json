@@ -1,0 +1,40 @@
+{
+  "status": "OK",
+  "layer": "CANONICAL_PROJECT_LINE_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "current_phase_claim": "current_inventory_read_chain_master_audit_v1_followed_by_request_to_continue_inventory_read_subphase",
+  "last_confirmed_completed_phase": "STAGE_9_COMPACT_CORE_MIGRATION_CONFIRMED_AT_PROJECT_LINE_LEVEL",
+  "current_task": "audit_current_inventory_read_chain_against_canonical_project_line",
+  "suspected_deviation": "inventory_read_subphase_progression_without_explicit_post_stage9_canonical_reentry_decision",
+  "notes": "local_chain_is_coherent_but_global_canonical_alignment_must_be_restored_before_any_further_downstream_bridge_or_execution_path",
+  "canonical_line": [
+    "STAGE_1_PROJECT_MANIFEST",
+    "STAGE_2_CONTROL_RULES",
+    "STAGE_3_PROJECT_STATE",
+    "STAGE_4_PROJECT_HISTORY",
+    "STAGE_5_CONTROL_AGENT",
+    "STAGE_6_ARCHIVIST_AGENT",
+    "STAGE_7_RUNNER_AGENT",
+    "STAGE_8_N8N_ORCHESTRATION",
+    "STAGE_9_COMPACT_CORE_MIGRATION" 
+  ],
+  "current_stage_by_canon": "POST_STAGE_9_REENTRY_REQUIRED",
+  "next_correct_stage_by_canon": "POST_STAGE_9_CANONICAL_REENTRY_DECISION",
+  "deviation_present": true,
+  "deviation_type": "downstream_project_specific_subphase_expanded_before_explicit_post_stage9_reentry_lock",
+  "what_is_not_allowed_now": [
+    "continue_current_inventory_read_call_v2_as_if_it_were_the_next_canonical_stage",
+    "discuss_execution_stub_as_next_step",
+    "define_finish_gate_for_inventory_subphase_before_reentry_decision",
+    "start_mcp_bridge_as_next_step" 
+  ],
+  "what_must_be_parked": [
+    "CURRENT_INVENTORY_READ_CALL_V2",
+    "CURRENT_INVENTORY_READ_CALL_V2_AUDIT",
+    "EXECUTION_STUB_DISCUSSION",
+    "MCP_BRIDGE_DIRECTION" 
+  ],
+  "one_next_step_only": "build_post_stage9_canonical_reentry_decision_v1",
+  "audit_result": "canonical_deviation_detected_and_reentry_required",
+  "next_allowed_action": "build_post_stage9_canonical_reentry_decision_v1" 
+}

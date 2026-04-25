@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_REVERT_TRACKED_CACHE_FILE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_REVERT_TRACKED_CACHE_FILE_V1",
+  "input_status": "OK",
+  "target_file": "agent/__pycache__/brain.cpython-314.pyc",
+  "revert_command": "git restore --source=HEAD -- agent/__pycache__/brain.cpython-314.pyc",
+  "revert_executed": true,
+  "target_file_exists_after_revert": true,
+  "git_status_after_revert": "",
+  "tracked_cache_reverted_clean": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "tracked_cache_file_reverted",
+  "next_allowed_action": "prepare_post_execution_git_review_v1"
+}

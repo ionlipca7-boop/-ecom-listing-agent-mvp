@@ -1,0 +1,68 @@
+{
+  "status": "OK",
+  "layer": "UPGRADE_PHOTO_ENGINE_SMART_DESIGN_RULES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "photo_strategy": "smart_ebay_compliant_visual_selling_system",
+  "main_image_rule": "clean neutral bright product-focused image; no text; no watermark; no border",
+  "gallery_strategy": [
+    "main_clean_product",
+    "lifestyle_in_use",
+    "hand_or_scale_context",
+    "plugged_in_usage",
+    "detail_closeup",
+    "compatibility_context_without_text_overlay",
+    "package_or_included_parts",
+    "angle_variation",
+    "trust_clean_final_view"
+  ],
+  "category_logic": {
+    "charger": [
+      "main_clean",
+      "plugged_into_socket",
+      "phone_charging_context",
+      "cable_and_adapter_set",
+      "port_closeup",
+      "size_in_hand"
+    ],
+    "wifi_adapter": [
+      "main_clean",
+      "plugged_into_laptop",
+      "scale_in_hand",
+      "port_detail",
+      "desk_usage_context"
+    ],
+    "cable": [
+      "main_clean",
+      "connector_closeup",
+      "phone_or_laptop_connected",
+      "length_context",
+      "bend_quality_detail"
+    ]
+  },
+  "ai_actions_allowed": [
+    "brightness_contrast",
+    "shadow_soften",
+    "background_cleanup",
+    "neutral_or_light_lifestyle_background",
+    "object_centering",
+    "crop_square_1600",
+    "remove_existing_foreign_text_if_present"
+  ],
+  "ai_actions_forbidden": [
+    "add_marketing_text",
+    "fake_product_features",
+    "watermark",
+    "border",
+    "logo_overlay",
+    "misleading_human_use"
+  ],
+  "ebay_compliance": [
+    "no added text/artwork/marketing",
+    "no watermark",
+    "no borders",
+    "accurate product representation",
+    "neutral clean background preferred"
+  ],
+  "next_allowed_action": "prepare_listing_engine_v2_contract_v1",
+  "timestamp": "2026-04-25T10:11:02.782824+00:00"
+}

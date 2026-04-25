@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "decision": "listing_review_saved",
+  "updated_at_utc": "2026-04-18T09:08:46.804772+00:00",
+  "product_key": "adapter_001",
+  "listing_id": "318166440509",
+  "review_findings": {
+    "photos_need_optimization": true,
+    "photos_current_state": "supplier_urls_used_without_sales_optimization",
+    "title_keep_for_now": true,
+    "specifics_need_expansion": true,
+    "color_current_issue": "single_color_set_but_photos_show_multiple_colors",
+    "description_need_html": true,
+    "description_current_issue": "plain_short_text_without_sales_structure",
+    "payment_policy_check_needed": true,
+    "shipping_policy_check_needed": true,
+    "ad_rate_target_percent": 7,
+    "ad_rule_after_7_days_no_movement": "increase_by_1_percent",
+    "offer_discount_min_percent": 5,
+    "manual_ui_review_source": "user_screenshots_2026_04_18"
+  },
+  "next_optimization_blocks": [
+    "photo_system_upgrade",
+    "item_specifics_upgrade",
+    "html_description_upgrade",
+    "ad_settings_standardization",
+    "offer_settings_standardization"
+  ]
+}

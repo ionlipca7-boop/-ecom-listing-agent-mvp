@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_V2",
+  "last_confirmed_layer": "FINISH_READY_EXECUTION_FLOW_V1",
+  "current_position": "execution_flow_finished_stop",
+  "next_allowed_action": "start_block_n_local_control_runtime",
+  "confirmed_facts": {
+    "execution_flow_complete": true,
+    "local_listing_flow_ready": true,
+    "approval_decision_ready": true,
+    "publish_payload_locked": true,
+    "server_runtime_files_prepared": true,
+    "telegram_control_files_prepared": true,
+    "publish_allowed": false,
+    "run_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false,
+    "real_ebay_api_call_allowed": false
+  },
+  "next_route": [
+    "BLOCK_N_LOCAL_CONTROL_RUNTIME",
+    "BLOCK_O_TELEGRAM_CONTROL",
+    "BLOCK_P_APPROVAL_UNLOCK",
+    "BLOCK_Q_SANDBOX_EXECUTION"
+  ],
+  "timestamp": "2026-04-25T06:40:39.231020"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_H_DAILY_STRATEGY_ENTRY_V1",
+  "input_layer": "FINISH_G_AUTO_PUBLISH_QUEUE_V1",
+  "current_block": "H_DAILY_STRATEGY",
+  "previous_block_finished": "G_AUTO_PUBLISH_QUEUE",
+  "strategy_rules": {
+    "min_listings_per_day": 1,
+    "max_listings_per_day": 3,
+    "approval_required": true,
+    "auto_publish_enabled": false,
+    "respect_ebay_limits": true
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_h_daily_strategy_contract_v1",
+  "timestamp": "2026-04-25T12:14:55.962139+00:00"
+}

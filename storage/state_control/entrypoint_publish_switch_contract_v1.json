@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "ENTRYPOINT_PUBLISH_SWITCH_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "ENTRYPOINT_PUBLISH_PATH_MISMATCH_AUDIT_V1",
+  "entrypoint": "run_control_room.py",
+  "current_entry_behavior": "old_control_room_runtime_bridge_path",
+  "required_entry_behavior": "publish_instruction_contract_primary_path",
+  "primary_contract": "storage/state_control/publish_instruction_contract_v1.json",
+  "required_executor_contract": "storage/state_control/local_executor_agent_v1.json",
+  "required_gate": "storage/state_control/controlled_publish_check_gate_v1.json",
+  "required_runtime_result_target": "storage/state_control/runtime_result_v1.json",
+  "required_finish_target": "storage/state_control/finish_ready_v1.json",
+  "switch_rule": {
+    "if_publish_instruction_contract_exists": true,
+    "if_controlled_publish_check_gate_ready": true,
+    "then_route_to": "publish_executor_path",
+    "fallback_route_allowed": "old_runtime_bridge_only_if_publish_contract_missing"
+  },
+  "live_execution_not_started_yet": true,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "next_allowed_action": "build_entrypoint_publish_switch_audit_v1"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_KEEP_MOVE_MATRIX_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_UNTRACKED_KEEP_MOVE_MATRIX_V1",
+  "input_status": "OK",
+  "keep_move_matrix_built": true,
+  "matrix_rules": {
+    "python_files": "review_required_before_keep_or_move",
+    "json_files": "review_required_before_keep_or_move",
+    "txt_files": "review_required_before_keep_or_move",
+    "directories": "review_required_before_keep_or_move"
+  },
+  "physical_move_allowed_now": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_untracked_keep_move_matrix_gate_v1"
+}

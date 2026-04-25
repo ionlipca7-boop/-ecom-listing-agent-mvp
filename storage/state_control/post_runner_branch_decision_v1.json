@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "layer": "POST_RUNNER_BRANCH_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "current_phase": "RUNNER_CHECKPOINT_INTEGRATED_V1",
+  "runner_pipeline_complete": true,
+  "execution_allowed": false,
+  "final_decision": "KEEP_BLOCKED",
+  "runner_live_permission": false,
+  "system_flags": {
+    "live_operations_allowed": false,
+    "migration_allowed": false,
+    "side_branches_allowed": false,
+    "n8n_ready": false,
+    "compact_core_ready": false
+  },
+  "available_project_specific_branches": [
+    "prepare_n8n_dispatcher_v1",
+    "prepare_compact_core_transition_v1"
+  ],
+  "selected_branch": "prepare_n8n_dispatcher_v1",
+  "selection_reason": "runner is complete and safely blocked; next canonical step is dispatcher preparation before compact core transition",
+  "do_not_restart_from_manifest": true,
+  "do_not_offer_live": true,
+  "next_allowed_action": "build_n8n_dispatcher_checkpoint_v1"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "OK",
+  "decision": "real_offer_payload_prepared",
+  "sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "payload": {
+    "sku": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 10,
+    "categoryId": "0",
+    "merchantLocationKey": "DEFAULT",
+    "pricingSummary": {
+      "price": {
+        "value": "6.75",
+        "currency": "EUR"
+      }
+    },
+    "listingPolicies": {
+      "fulfillmentPolicyId": "REPLACE_ME",
+      "paymentPolicyId": "REPLACE_ME",
+      "returnPolicyId": "REPLACE_ME"
+    }
+  },
+  "missing_runtime_values": [
+    "real_categoryId",
+    "merchantLocationKey",
+    "fulfillmentPolicyId",
+    "paymentPolicyId",
+    "returnPolicyId"
+  ],
+  "next_step": "run_real_offer_payload_gate_v1"
+}

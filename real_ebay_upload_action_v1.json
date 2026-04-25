@@ -1,0 +1,15 @@
+{
+  "last_package": "package_20260414_070314",
+  "action_status": "READY_TO_EXECUTE",
+  "publish_mode": "REAL",
+  "action_type": "REAL_EBAY_UPLOAD",
+  "prepared_at": "2026-04-15T07:46:45Z",
+  "source_files": {
+    "real_publish_approval": "real_publish_approval_v1.json",
+    "final_publish_manifest": "final_publish_manifest_v1.json"
+  },
+  "checks": {
+    "approval_is_approved": true,
+    "manifest_is_ready": true
+  }
+}

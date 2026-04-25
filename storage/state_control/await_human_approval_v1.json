@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "AWAIT_HUMAN_APPROVAL_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "approval_status": "PENDING_HUMAN_APPROVAL",
+  "ready_for_approval": false,
+  "blocking_reasons": [
+    "price_missing",
+    "images_not_final"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_final_image_review_v1",
+  "timestamp": "2026-04-25T10:24:03.455577+00:00"
+}

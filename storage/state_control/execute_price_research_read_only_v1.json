@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PRICE_RESEARCH_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "price_research_created": true,
+  "price_research_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\market\\price_research_read_only_v1.json",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_approval_gate_v1",
+  "timestamp": "2026-04-25T10:21:28.805712+00:00"
+}

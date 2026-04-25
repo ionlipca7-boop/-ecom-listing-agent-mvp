@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_ACCESS_TOKEN_REPAIR_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "env_exists": true,
+  "required_secret_keys_present": {
+    "EBAY_ACCESS_TOKEN": true,
+    "EBAY_REFRESH_TOKEN": true,
+    "EBAY_CLIENT_ID": true,
+    "EBAY_CLIENT_SECRET": true,
+    "EBAY_REDIRECT_URI": false
+  },
+  "secrets_printed": false,
+  "token_repair_required": true,
+  "publish_allowed_after_repair": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "timestamp": "2026-04-25T13:41:28.053630+00:00",
+  "next_allowed_action": "refresh_ebay_access_token_v1_if_refresh_token_present_else_manual_oauth_required_v1"
+}

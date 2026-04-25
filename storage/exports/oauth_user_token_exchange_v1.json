@@ -1,0 +1,13 @@
+{
+  "status": "ERROR",
+  "decision": "oauth_user_token_exchange_completed",
+  "http_status": 400,
+  "token_type": null,
+  "expires_in": null,
+  "refresh_token_present": false,
+  "access_token_present": false,
+  "response_preview": {
+    "error": "invalid_grant",
+    "error_description": "the provided authorization grant code is invalid or was issued to another client"
+  }
+}

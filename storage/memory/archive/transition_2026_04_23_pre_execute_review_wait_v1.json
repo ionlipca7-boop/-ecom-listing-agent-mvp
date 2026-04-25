@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_PRE_EXECUTE_REVIEW_WAIT_V1",
+  "last_confirmed_layer": "PREPARE_RUN_CONTROL_ROOM_PRE_EXECUTE_REVIEW_V1",
+  "current_position": "pre_execute_review_prepared",
+  "next_allowed_action": "await_run_control_room_pre_execute_review_confirmation_v1",
+  "confirmed_facts": {
+    "approval_status": "APPROVED",
+    "input_type": "link_input",
+    "input_value": "https://example.com/product",
+    "execution_target": "run_control_room.py",
+    "live_execution": false,
+    "parallel_branches": false,
+    "cleanup_allowed": false,
+    "delete_allowed": false,
+    "sync_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue only from active pre-execute review route"
+}

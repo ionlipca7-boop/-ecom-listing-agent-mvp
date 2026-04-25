@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "CREATE_EBAY_OAUTH_AUTHORIZATION_URL_V2",
+  "client_id_exists": true,
+  "ru_name_exists": true,
+  "required_scopes": [
+    "https://api.ebay.com/oauth/api_scope",
+    "https://api.ebay.com/oauth/api_scope/sell.inventory"
+  ],
+  "authorization_url": "https://auth.ebay.com/oauth2/authorize?client_id=IonLipca-ECOMOSV3-PRD-d84c0e5fe-a31d5575&redirect_uri=Ion_Lipca-IonLipca-ECOMOS-bwwjioir&response_type=code&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope+https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fsell.inventory",
+  "secret_values_printed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "open_url_and_capture_authorization_code_v1",
+  "timestamp": "2026-04-25T09:13:24.716725+00:00"
+}

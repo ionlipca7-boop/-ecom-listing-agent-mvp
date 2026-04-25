@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_D_LISTING_ENGINE_ENTRY_V1",
+  "input_layer": "FINISH_C_PHOTO_ENGINE_V1",
+  "current_block": "D_LISTING_ENGINE",
+  "previous_block_finished": "C_PHOTO_ENGINE",
+  "listing_engine_requirements": {
+    "language": "German",
+    "seo_required": true,
+    "ai_optimization_required": true,
+    "html_required": true,
+    "images_required": true,
+    "min_images": 3,
+    "max_images": 9,
+    "approval_required_before_publish": true
+  },
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_d_listing_engine_local_inventory_scan_v1",
+  "timestamp": "2026-04-25T11:57:58.959799+00:00"
+}

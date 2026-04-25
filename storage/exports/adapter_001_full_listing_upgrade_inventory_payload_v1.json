@@ -1,0 +1,64 @@
+{
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "locale": "de_DE",
+  "product": {
+    "title": "USB-C auf USB-A OTG Adapter USB 3.0 Datenadapter Handy Tablet",
+    "aspects": {
+      "Marke": [
+        "Markenlos"
+      ],
+      "Produktart": [
+        "OTG Adapter"
+      ],
+      "Version": [
+        "USB 3.0"
+      ],
+      "Kompatibel mit": [
+        "Smartphone",
+        "Tablet",
+        "Laptop",
+        "USB-Stick",
+        "Maus",
+        "Tastatur"
+      ],
+      "Anschluss A": [
+        "USB-C"
+      ],
+      "Anschluss B": [
+        "USB-A"
+      ],
+      "Farbe": [
+        "Schwarz"
+      ],
+      "Material": [
+        "Kunststoff"
+      ],
+      "Besonderheiten": [
+        "Kompakt",
+        "Tragbar",
+        "OTG Funktion"
+      ]
+    },
+    "description": "USB-C auf USB-A OTG Adapter fuer schnelle Datenuebertragung und die einfache Verbindung von USB-A Geraeten mit USB-C Anschluessen. Ideal fuer Smartphone, Tablet, Laptop, USB-Stick, Tastatur, Maus und andere kompatible Geraete. Kompakt, leicht und praktisch fuer Alltag, Reisen, Auto und Buero.",
+    "imageUrls": [
+      "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+    ]
+  },
+  "condition": "NEW",
+  "packageWeightAndSize": {
+    "weight": {
+      "value": "0.05",
+      "unit": "KILOGRAM"
+    },
+    "shippingIrregular": false
+  },
+  "availability": {
+    "shipToLocationAvailability": {
+      "quantity": 10,
+      "allocationByFormat": {
+        "auction": 0,
+        "fixedPrice": 10
+      }
+    }
+  }
+}

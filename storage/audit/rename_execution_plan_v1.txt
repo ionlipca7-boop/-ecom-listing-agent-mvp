@@ -1,0 +1,33 @@
+ECOM LISTING AGENT MVP - RENAME EXECUTION PLAN V1
+
+TARGET
+- remove naming conflict between run_control_room.bat and run_control_room.py
+
+RENAME_NOW
+- run_control_room.bat -> run_publish_ready_pipeline.bat
+
+NO_CONTENT_CHANGE
+- do not edit python logic
+- do not edit run_control_room.py
+- do not edit control_room_run_all.py
+- do not edit control_room.py
+
+PRE_RENAME_CHECK
+- source file must exist: run_control_room.bat
+- target file must not exist: run_publish_ready_pipeline.bat
+
+POST_RENAME_CHECK
+- run_publish_ready_pipeline.bat must exist
+- run_control_room.bat must not exist
+- file content must still call: python control_room_run_all.py
+
+CANONICAL_ROLE_AFTER_RENAME
+- run_control_room.py = main project runtime/state entry
+- run_publish_ready_pipeline.bat = operator utility batch for publish-ready flow
+- control_room.py = legacy manual shell
+
+ROLLBACK
+- if needed rename back: run_publish_ready_pipeline.bat -> run_control_room.bat
+
+NEXT_ALLOWED_ACTION
+- execute safe batch rename v1

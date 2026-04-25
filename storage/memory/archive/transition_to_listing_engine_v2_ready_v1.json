@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_LISTING_ENGINE_V2_READY_V1",
+  "last_confirmed_layer": "OPEN_LISTING_ENGINE_V2_EXECUTION_GATE_V1",
+  "current_position": "listing_engine_v2_execution_ready",
+  "next_allowed_action": "execute_listing_engine_v2_draft_v1",
+  "confirmed_facts": {
+    "photo_engine_ready": true,
+    "image_count": 9,
+    "listing_engine_gate_open": true,
+    "execution_allowed": true,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue from execute_listing_engine_v2_draft_v1 only",
+  "timestamp": "2026-04-25T10:14:22.842586+00:00"
+}

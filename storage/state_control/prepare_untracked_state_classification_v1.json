@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_UNTRACKED_STATE_CLASSIFICATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REVIEW_UNEXPECTED_GIT_STATE_V1",
+  "input_status": "OK",
+  "classification_scope": "untracked_git_state_only",
+  "classification_method": "git_status_short_parse",
+  "read_only_operation": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "current_position": "untracked_state_classification_prepared",
+  "next_allowed_action": "execute_untracked_state_classification_v1"
+}

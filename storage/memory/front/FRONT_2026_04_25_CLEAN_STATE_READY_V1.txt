@@ -1,0 +1,29 @@
+ON STRICT NEW CHAT PROMPT V3
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+MISSION
+A -> B -> FINISH -> STOP
+NO BRANCHES
+
+LANGUAGE
+- Russian
+- concise
+- verification-first
+
+MODE
+- one step at a time
+- no destructive actions
+
+CURRENT STATE
+- layer = CLEAN_PROJECT_READY
+- project_status = STABLE
+- cleanup = DONE
+- delete_used = FALSE
+
+NEXT STEP
+- build_local_executor_publish_system_v1
+
+STRICT FLOW
+VERIFY -> ONE STEP -> EXECUTE -> VERIFY -> STOP

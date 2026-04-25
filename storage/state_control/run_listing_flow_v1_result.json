@@ -1,0 +1,125 @@
+{
+  "status": "OK",
+  "layer": "RUN_LISTING_FLOW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_payload": {
+    "name": "USB-C Ladekabel",
+    "power": "60W",
+    "length": "2m",
+    "category": "Kabel"
+  },
+  "listing_output": {
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+    "price": 7.99,
+    "item_specifics": {
+      "Typ": "USB-C Ladekabel",
+      "Länge": "2m",
+      "Leistung": "60W",
+      "Anschluss": "USB-C",
+      "Produktart": "Kabel",
+      "Zustand": "Neu"
+    },
+    "images": [
+      "image_main.jpg",
+      "image_angle.jpg",
+      "image_detail.jpg"
+    ],
+    "search_intents": [
+      "usb c cable 2m fast charging",
+      "60w usb c cable",
+      "usb c kabel schnellladen"
+    ],
+    "compatibility_keywords": [
+      "USB-C Geräte",
+      "Samsung",
+      "Android",
+      "MacBook"
+    ],
+    "use_case_keywords": [
+      "Schnellladen",
+      "Alltag",
+      "Reise",
+      "Büro",
+      "Zuhause",
+      "Datenübertragung"
+    ],
+    "seo_keywords": [
+      "USB-C Kabel 2m",
+      "USB-C 60W",
+      "Schnellladekabel",
+      "Datenkabel"
+    ],
+    "buyer_questions": [
+      "Ist das Kabel für Schnellladen geeignet?",
+      "Wie lang ist das Kabel (2m)?",
+      "Passt das Kabel zu meinem USB-C Gerät?"
+    ],
+    "ai_summary": "Robustes USB-C Kabel mit 2m Länge und 60W, geeignet für Schnellladen und tägliche Nutzung zu Hause, im Büro oder unterwegs.",
+    "status": "review",
+    "listing_quality_score": 100,
+    "quality_gate_ready": true,
+    "approval_status": "review",
+    "publish_ready": false,
+    "listing_warnings": [],
+    "listing_improvements": [],
+    "final_listing_bundle": {
+      "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+      "category": "Kabel & Adapter",
+      "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+      "price": 7.99,
+      "item_specifics": {
+        "Typ": "USB-C Ladekabel",
+        "Länge": "2m",
+        "Leistung": "60W",
+        "Anschluss": "USB-C",
+        "Produktart": "Kabel",
+        "Zustand": "Neu"
+      },
+      "images": [
+        "image_main.jpg",
+        "image_angle.jpg",
+        "image_detail.jpg"
+      ],
+      "search_intents": [
+        "usb c cable 2m fast charging",
+        "60w usb c cable",
+        "usb c kabel schnellladen"
+      ],
+      "compatibility_keywords": [
+        "USB-C Geräte",
+        "Samsung",
+        "Android",
+        "MacBook"
+      ],
+      "use_case_keywords": [
+        "Schnellladen",
+        "Alltag",
+        "Reise",
+        "Büro",
+        "Zuhause",
+        "Datenübertragung"
+      ],
+      "seo_keywords": [
+        "USB-C Kabel 2m",
+        "USB-C 60W",
+        "Schnellladekabel",
+        "Datenkabel"
+      ],
+      "buyer_questions": [
+        "Ist das Kabel für Schnellladen geeignet?",
+        "Wie lang ist das Kabel (2m)?",
+        "Passt das Kabel zu meinem USB-C Gerät?"
+      ],
+      "ai_summary": "Robustes USB-C Kabel mit 2m Länge und 60W, geeignet für Schnellladen und tägliche Nutzung zu Hause, im Büro oder unterwegs.",
+      "status": "review",
+      "approval_status": "review",
+      "quality_gate_ready": true,
+      "publish_ready": false
+    }
+  },
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "next_allowed_action": "build_approval_decision_record_v1"
+}

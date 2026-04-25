@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_INTERNAL_BRIDGE_FINAL_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "bridge_scope": "A_to_B_to_C_internal_bridge",
+  "bridge_completed": true,
+  "foundation_locked": true,
+  "runtime_bridge_ready": true,
+  "n8n_trigger_ready": true,
+  "github_source_of_truth_confirmed": true,
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "define_next_project_specific_layer_v1"
+}

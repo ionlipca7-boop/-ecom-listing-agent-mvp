@@ -1,0 +1,57 @@
+[TRANSITION TEMPLATE - ECOM CONTROL ROOM]
+
+1. ALWAYS verify last confirmed layer first
+   - if not exist <last_layer_file> echo ERROR: MISSING_LAST_CONFIRMED_LAYER & exit /b 1
+   - type <last_layer_file>
+
+2. ALWAYS build archive json
+   path:
+   storage\memory\archive\transition_<layer_name>_<date>_v1.json
+
+3. ALWAYS archive:
+   - date
+   - project
+   - status
+   - last_confirmed_layer
+   - achievements
+   - current_state
+   - still_blocked
+   - lessons_learned
+   - next_step
+
+4. ALWAYS build front continuity file
+   path:
+   storage\transition\new_chat_front_<layer_name>_v1.txt
+
+5. FRONT FILE MUST CONTAIN ONLY:
+   - project
+   - confirmed status
+   - last confirmed layer
+   - current next step
+   - current state
+   - hard rules
+   - canonical response format
+   - task in new chat
+
+6. WRITE VERIFICATION AFTER FILE CREATION
+   - if not exist archive_file echo ARCHIVE_WRITE_FAILED & exit /b 1
+   - if not exist front_file echo FRONT_WRITE_FAILED & exit /b 1
+
+7. EXECUTION RULE
+   - if several next steps can be safely combined in one CMD block without control drift, combine them
+   - if verification becomes weaker or ambiguity appears, return to one-step-only mode
+
+8. HARD RULES
+   - project-specific only
+   - no side branches
+   - no live without explicit decision
+   - no runner execution without explicit decision
+   - no parallel branching
+   - local CMD output is source of truth
+
+9. CANONICAL RESPONSE FORMAT
+   1. Краткий анализ
+   2. Один CMD блок
+   3. Проверка
+   4. Audit
+   5. Что ожидаем

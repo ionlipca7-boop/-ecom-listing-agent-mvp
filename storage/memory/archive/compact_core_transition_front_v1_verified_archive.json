@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "archive_type": "POST_PHASE_8_TRANSITION_FRONT_VERIFIED",
+  "phase": 8,
+  "honest_conclusion": "front_already_exists_so_rebuild_is_not_needed",
+  "done": [
+    "phase_8_canon_complete",
+    "dispatcher_chain_closed",
+    "runner_checkpoint_integrated",
+    "closure_front_done",
+    "direction_lock_applied",
+    "compact_core_transition_front_v1_created",
+    "compact_core_transition_front_v1_verified_and_promoted"
+  ],
+  "remaining": [
+    "prepare_first_compact_core_build_step_after_transition_front",
+    "build_first_compact_core_post_transition_layer",
+    "verify_post_transition_compact_core_step"
+  ],
+  "next_step": "prepare_first_compact_core_build_step_after_transition_front" 
+}

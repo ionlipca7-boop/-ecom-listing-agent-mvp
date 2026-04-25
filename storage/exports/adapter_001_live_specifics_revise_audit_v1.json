@@ -1,0 +1,65 @@
+{
+  "status": "ERROR",
+  "decision": "adapter_001_live_specifics_revise_failed",
+  "http_status": 400,
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "listingId": "318166440509",
+  "sent_specifics_count": 9,
+  "request_payload": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "product": {
+      "aspects": {
+        "Marke": [
+          "Markenlos"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ],
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "USB Standard": [
+          "USB 3.0"
+        ],
+        "Besonderheiten": [
+          "OTG"
+        ],
+        "Kompatibel mit": [
+          "Universal"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ]
+      }
+    }
+  },
+  "response_body": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details."
+          },
+          {
+            "name": "1",
+            "value": "Fügen Sie mindestens 1 Foto hinzu. Je mehr Fotos, desto besser! Zeigen Sie Ihren Artikel von allen Seiten und vergrößern Sie Details."
+          }
+        ]
+      }
+    ]
+  }
+}

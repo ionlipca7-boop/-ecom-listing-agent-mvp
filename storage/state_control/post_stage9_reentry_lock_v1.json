@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_REENTRY_LOCK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "reentry_lock_enabled": true,
+  "lock_scope": "global_canonical_alignment",
+  "downstream_blocked": true,
+  "execution_blocked": true,
+  "runner_blocked": true,
+  "live_operations_blocked": true,
+  "allowed_only": "canonical_reentry_alignment_steps",
+  "next_allowed_action": "build_post_stage9_canonical_alignment_checkpoint_v1"
+}

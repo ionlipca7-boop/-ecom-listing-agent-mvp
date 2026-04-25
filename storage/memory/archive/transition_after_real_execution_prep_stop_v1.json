@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_AFTER_REAL_EXECUTION_PREP_STOP_V1",
+  "last_confirmed_layer": "STOP_AFTER_REAL_EXECUTION_PREP_V1",
+  "finish_layer": "FINISH_READY_REAL_EXECUTION",
+  "current_position": "controlled_real_execution_prep_finished_stop",
+  "route_complete": true,
+  "controlled_real_execution_prep": true,
+  "confirmed_facts": {
+    "real_publish_allowed": false,
+    "publish_called": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_token_used": false,
+    "git_push_allowed": false,
+    "manual_operator_gate_required": true
+  },
+  "next_allowed_action": "STOP",
+  "timestamp": "2026-04-25T06:49:24.898298+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "post_cleanup_project_audit_completed",
+  "overall_status": "ATTENTION",
+  "dirs_ok_count": 8,
+  "dirs_missing_count": 1,
+  "files_ok_count": 9,
+  "files_missing_count": 0,
+  "dirs_missing": [
+    "core"
+  ],
+  "files_missing": [],
+  "next_step": "start_next_feature_layer_if_overall_ok"
+}

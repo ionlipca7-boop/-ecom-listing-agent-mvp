@@ -1,0 +1,51 @@
+{
+  "status": "OK",
+  "decision": "safe_full_offer_payload_v1_built",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "item_id": "318166440509",
+  "offer_id": "153365657011",
+  "scanned_exports_count": 358,
+  "scanned_exports_sample": [
+    "adapter_001_marker_update_inventory_readback_v1.json",
+    "adapter_001_marker_update_offer_readback_v1.json",
+    "adapter_001_marker_update_offer_response_v1.json",
+    "adapter_001_marker_update_offer_payload_v1.json",
+    "adapter_001_specifics_cleanup_response_v3.json",
+    "adapter_001_specifics_cleanup_payload_v3.json",
+    "adapter_001_content_upgrade_offer_response_v2.json",
+    "adapter_001_content_upgrade_offer_payload_v2.json",
+    "adapter_001_content_upgrade_inventory_response_v2.json",
+    "adapter_001_content_upgrade_inventory_payload_v2.json"
+  ],
+  "critical_fields_present": {
+    "price": true,
+    "listingPolicies": true,
+    "merchantLocationKey": true,
+    "listingDescription": true,
+    "availableQuantity": true,
+    "imageUrls": false
+  },
+  "missing_fields": [
+    "imageUrls"
+  ],
+  "payload": {
+    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 12,
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "listingDescription": "<h2>USB-C auf USB-A OTG Adapter USB 3.0</h2><p><b>Kompakt, schnell und alltagstauglich.</b></p><p>Dieser praktische OTG Adapter verbindet USB-A Geraete mit einem USB-C Anschluss und eignet sich ideal fuer Smartphone, Tablet, Laptop und viele weitere kompatible Geraete.</p><ul><li>USB-C auf USB-A Adapter</li><li>USB 3.0 fuer schnelle Datenuebertragung</li><li>Kompaktes Format fuer unterwegs</li><li>Passend fuer viele moderne Geraete mit USB-C</li><li>Ideal fuer USB-Stick, Maus, Tastatur und mehr</li></ul><p><b>Vorteile:</b></p><ul><li>Schnelle und stabile Verbindung</li><li>Einfache Nutzung ohne komplizierte Einrichtung</li><li>Leicht, platzsparend und reisetauglich</li></ul><p><b>Hinweis:</b> Bitte vor dem Kauf die Kompatibilitaet Ihres Geraets pruefen.</p><p><b>Schneller Versand aus Deutschland.</b></p>",
+    "listingPolicies": {
+      "eBayPlusIfEligible": false
+    },
+    "pricingSummary": {
+      "price": {
+        "value": "4.01",
+        "currency": "EUR"
+      }
+    },
+    "imageUrls": []
+  },
+  "rule": "no_partial_offer_updates_use_full_payload",
+  "next_step": "review_missing_fields_then_build_real_full_offer_revise_v1"
+}

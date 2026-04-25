@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "layer": "RUNTIME_RESULT_WRITER_V1",
+  "bridge_layer": "PUBLISH_RUNTIME_BRIDGE_V1",
+  "publish_allowed": false,
+  "live_action_executed": false,
+  "next_allowed_action": "build_finish_ready_writer_v1"
+}

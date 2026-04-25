@@ -1,0 +1,78 @@
+{
+  "package_id": "package_20260414_070314",
+  "generated_at": "2026-04-14T21:38:01Z",
+  "checked_files": [
+    {
+      "file": "ebay_mapping_v2.json",
+      "exists": true,
+      "file_type": "json",
+      "status": "ok",
+      "critical": true,
+      "json_root_type": "object"
+    },
+    {
+      "file": "ebay_template_output_v2.csv",
+      "exists": true,
+      "file_type": "csv",
+      "status": "ok",
+      "critical": true,
+      "header_count": 96,
+      "row_count": 7
+    },
+    {
+      "file": "ebay_upload_ready_v2.csv",
+      "exists": true,
+      "file_type": "csv",
+      "status": "ok",
+      "critical": true,
+      "header_count": 11,
+      "row_count": 7
+    },
+    {
+      "file": "ebay_upload_ready_v2_validation.json",
+      "exists": true,
+      "file_type": "json",
+      "status": "ok",
+      "critical": true,
+      "json_root_type": "object"
+    },
+    {
+      "file": "ebay_upload_ready_v2_summary.json",
+      "exists": true,
+      "file_type": "json",
+      "status": "ok",
+      "critical": true,
+      "json_root_type": "object"
+    },
+    {
+      "file": "ebay_upload_contract_v2_audit.json",
+      "exists": true,
+      "file_type": "json",
+      "status": "ok",
+      "critical": false,
+      "json_root_type": "object"
+    },
+    {
+      "file": "export_bundle_v2_inspection.json",
+      "exists": true,
+      "file_type": "json",
+      "status": "ok",
+      "critical": false,
+      "json_root_type": "object"
+    }
+  ],
+  "checks_passed": [
+    "package_dir_exists",
+    "valid_json:ebay_mapping_v2.json",
+    "valid_csv:ebay_template_output_v2.csv",
+    "valid_csv:ebay_upload_ready_v2.csv",
+    "valid_json:ebay_upload_ready_v2_validation.json",
+    "valid_json:ebay_upload_ready_v2_summary.json",
+    "valid_json:ebay_upload_contract_v2_audit.json",
+    "valid_json:export_bundle_v2_inspection.json"
+  ],
+  "checks_failed": [],
+  "warnings": [],
+  "verdict": "SAFE",
+  "recommended_next_action": "Proceed to next control-room step and keep artifacts unchanged."
+}

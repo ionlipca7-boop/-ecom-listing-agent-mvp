@@ -1,0 +1,13 @@
+N8N_DISPATCH_CONTRACT_V1_AUDIT
+status = OK
+phase = 8
+dispatcher_role = orchestrator_only
+contract_version = v1
+dispatch_order_count = 6
+required_input_count = 3
+required_output_count = 6
+forbidden_behavior_count = 5
+execution_allowed = False
+n8n_ready = False
+contract_ready = True
+next_allowed_action = build_n8n_dispatch_state_map_v1

@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_LISTING_ENGINE_V2_DRAFT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_archive_exists": true,
+  "input_next_allowed_action": "execute_listing_engine_v2_draft_v1",
+  "draft_created": true,
+  "draft_path": "D:\\ECOM_LISTING_AGENT_MVP\\drafts\\listing_engine_v2_draft_v1.json",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_price_research_v1",
+  "timestamp": "2026-04-25T10:16:36.357667+00:00"
+}

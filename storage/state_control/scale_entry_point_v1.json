@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "SCALE_ENTRY_POINT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SCALE_DECISION_V1",
+  "mode": "MULTI_LISTING",
+  "batch_mode_enabled": true,
+  "cycle_type": "LOOP_EXECUTION",
+  "execution_still_controlled": true,
+  "next_allowed_action": "build_multi_generator_input_v1"
+}

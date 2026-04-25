@@ -1,0 +1,42 @@
+{
+  "validation_status": "READY_FOR_REVALIDATION",
+  "post_fix_validation_status": "READY_FOR_REVALIDATION",
+  "next_step": "RUN_TEMPLATE_REVALIDATION",
+  "issue_count": 1,
+  "covered_issues_count": 1,
+  "uncovered_issues_count": 0,
+  "applied_patch_count": 3,
+  "changed_fields": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "plan_fields": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "covered_issue_details": [
+    {
+      "issue_id": "ISSUE_1",
+      "issue_type": "MISSING_REQUIRED_FIELD",
+      "probable_fields": [
+        "brand",
+        "item_specifics",
+        "price"
+      ],
+      "matched_fields": [
+        "brand",
+        "item_specifics",
+        "price"
+      ],
+      "coverage_status": "COVERED"
+    }
+  ],
+  "uncovered_issues": [],
+  "source_files": {
+    "applied_fix_result": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\applied_fix_result_v1.json",
+    "auto_fix_error_map": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\auto_fix_error_map_v2.json",
+    "fix_execution_plan": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_execution_plan_v1.json"
+  }
+}

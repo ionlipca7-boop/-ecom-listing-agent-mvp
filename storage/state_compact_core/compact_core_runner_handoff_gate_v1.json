@@ -1,0 +1,22 @@
+{
+  "layer": "COMPACT_CORE_RUNNER_HANDOFF_GATE_V1",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "stage": 9,
+  "status": "OK",
+  "next_step": "runner_handoff_ready_for_next_compact_core_layer",
+  "source_exists": true,
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_compact_core\\compact_core_runner_payload_v1.json",
+  "runner_payload_ready": true,
+  "handoff_ready": true,
+  "gate_checks": {
+    "title_ready": true,
+    "price_ready": true,
+    "description_ready": true,
+    "html_ready": true,
+    "images_ready": true
+  },
+  "summary": {
+    "images_count": 6,
+    "title_length": 46
+  }
+}

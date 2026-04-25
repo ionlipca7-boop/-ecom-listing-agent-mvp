@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_CONTROLLED_CLEANUP_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "DEFINE_NEXT_POST_TRANSITION_PROJECT_STEP_V1",
+  "input_status": "OK",
+  "cleanup_decision_gate_prepared": true,
+  "cleanup_execution_allowed_now": false,
+  "archive_move_allowed_now": false,
+  "delete_allowed_now": false,
+  "required_before_execution": [
+    "classify_keep_archive_delete_scope",
+    "confirm_archive_target",
+    "confirm_non_destructive_order",
+    "create_cleanup_execution_gate"
+  ],
+  "current_scope": "decision_gate_only",
+  "next_allowed_action": "classify_cleanup_scope_keep_archive_delete_v1",
+  "parallel_branches": false,
+  "live_execution": false
+}

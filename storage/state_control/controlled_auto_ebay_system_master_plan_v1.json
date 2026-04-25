@@ -1,0 +1,59 @@
+{
+  "status": "OK",
+  "layer": "CONTROLLED_AUTO_EBAY_SYSTEM_MASTER_PLAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "STOP_AFTER_REAL_EXECUTION_PREP_V1",
+  "route_name": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "goal": "full_controlled_auto_listing_publish_strategy_inventory_telegram_server",
+  "known_ebay_active_listings_count_from_user": 56,
+  "requirements": {
+    "ebay_sync_existing_listings": true,
+    "auto_listing_generation": true,
+    "auto_publish_after_approval": true,
+    "photo_engine_required": true,
+    "photo_count_target": "1_to_9_images",
+    "source_photos_allowed": [
+      "AliExpress",
+      "Alibaba",
+      "own_photos",
+      "supplier_photos"
+    ],
+    "photo_language_target": "German",
+    "photo_quality_upgrade": true,
+    "ebay_safe_image_rules_required": true,
+    "price_research_required": true,
+    "inventory_required": true,
+    "telegram_notifications_required": true,
+    "desktop_control_required": true,
+    "daily_publish_limit": "1_to_3_per_day",
+    "publish_spacing": "1_to_2_hours_between_listings",
+    "refresh_rule": "5_to_7_days_no_views_update",
+    "replace_rule": "10_to_14_days_bad_performance_replace_or_remove",
+    "ai_search_optimized_listing_required": true,
+    "server_24_7_required": true
+  },
+  "blocks": [
+    "A_VERIFY_STOP_AND_START_ROUTE",
+    "B_EBAY_SYNC_EXISTING_56_LISTINGS",
+    "C_PHOTO_ENGINE_V1",
+    "D_LISTING_ENGINE_V2",
+    "E_PRICE_RESEARCH_ENGINE_V1",
+    "F_APPROVAL_GATE_V1",
+    "G_AUTO_PUBLISH_QUEUE_V1",
+    "H_DAILY_STRATEGY_ENGINE_V1",
+    "I_REFRESH_REPLACE_ENGINE_V1",
+    "J_TELEGRAM_CONTROL_NOTIFICATIONS_V1",
+    "K_INVENTORY_ENGINE_V1",
+    "L_SERVER_24_7_RUNTIME_V1",
+    "M_FINAL_WORKING_SYSTEM_STOP"
+  ],
+  "security": {
+    "real_publish_allowed_now": false,
+    "publish_only_after_manual_approval": true,
+    "telegram_token_usage_now": false,
+    "server_run_now": false,
+    "git_push_now": false
+  },
+  "next_allowed_action": "build_route_entry_controlled_auto_ebay_system_v1",
+  "timestamp": "2026-04-25T07:19:18.056960+00:00"
+}

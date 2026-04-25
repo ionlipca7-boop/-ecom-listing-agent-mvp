@@ -1,0 +1,65 @@
+{
+  "status": "ERROR",
+  "decision": "publish_existing_offer_failed",
+  "updated_at_utc": "2026-04-18T08:33:03.100252+00:00",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "offerId": "153365657011",
+  "repair_inventory_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ-C auf USB-A Schnellladen Daten",
+      "description": "USB-C auf USB-A Adapter für Datenübertragung und schnelles Laden. Kompakt und ideal für unterwegs.",
+      "aspects": {
+        "Produktart": [
+          "USB-C OTG Adapter"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ]
+      }
+    }
+  },
+  "repair_inventory_http_status": 204,
+  "publish_http_status": 400,
+  "listingId": null,
+  "repair_inventory_response_text": "",
+  "publish_response": {
+    "errors": [
+      {
+        "errorId": 25002,
+        "domain": "API_INVENTORY",
+        "subdomain": "Selling",
+        "category": "Request",
+        "message": "A user error has occurred. Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal.",
+        "parameters": [
+          {
+            "name": "0",
+            "value": "Das Artikelmerkmal Marke fehlt."
+          },
+          {
+            "name": "1",
+            "value": "Das Artikelmerkmal Marke fehlt. Fügen Sie Marke zu diesem Angebot hinzu, geben Sie einen gültigen Wert ein und versuchen Sie es dann noch einmal."
+          },
+          {
+            "name": "2",
+            "value": "Marke"
+          }
+        ]
+      }
+    ]
+  }
+}

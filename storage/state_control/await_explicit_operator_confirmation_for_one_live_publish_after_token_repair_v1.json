@@ -1,0 +1,17 @@
+{
+  "status": "AWAIT_CONFIRMATION",
+  "layer": "AWAIT_EXPLICIT_OPERATOR_CONFIRMATION_FOR_ONE_LIVE_PUBLISH_AFTER_TOKEN_REPAIR_V1",
+  "previous_layer": "PREPARE_PHASE4_SELECTED_EXECUTOR_FINAL_PREFLIGHT_AFTER_TOKEN_REPAIR_V1",
+  "confirmation_required": true,
+  "operator_must_confirm_exact_phrase": "CONFIRM ONE LIVE EBAY PUBLISH NOW",
+  "safety": {
+    "publish_called": false,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "execute_phase4_one_live_listing_v1_only_after_exact_confirmation",
+  "note": "hard gate; no publish allowed without exact operator confirmation",
+  "timestamp": "2026-04-25T13:57:01.055180+00:00"
+}

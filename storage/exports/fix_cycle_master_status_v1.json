@@ -1,0 +1,21 @@
+{
+  "master_status": "READY",
+  "system_state": "FIX_LOOP_PROVEN",
+  "next_step": "READY_FOR_NEXT_LISTING_OR_NEW_CASE",
+  "closure_status": "SUCCESS",
+  "closure_gate": "CLOSED_AS_SUCCESS",
+  "compare_status": "FIX_CONFIRMED",
+  "fix_successful": "YES",
+  "parser_status": "SUCCESS",
+  "result_code": "UPLOAD_OK",
+  "closed_fields": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "source_files": {
+    "fix_cycle_closure": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\fix_cycle_closure_v1.json",
+    "post_reupload_compare": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\post_reupload_compare_v1.json",
+    "next_cycle_upload_result_parsed": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\next_cycle_upload_result_parsed_v1.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "decision": "generator_entrypoint_writer_missing_json_archived",
+  "error_name": "safe_writer_generator_entrypoint_json_missing",
+  "root_cause": "previous_writer_step_did_not_finish_with_result_json",
+  "lesson": "before_reading_audit_json_always_confirm_writer_result_json_exists",
+  "next_step": "direct_rebuild_of_entrypoint_inspect_jsons"
+}

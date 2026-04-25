@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "POST_FOUNDATION_NEXT_LAYER_PREP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROL_ROOM_FOUNDATION_LOCK_V1",
+  "foundation_locked": true,
+  "bridge_basis_confirmed": true,
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "define_next_project_specific_layer_v1"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "layer": "AUTOMATION_INPUT_CONTRACT_AND_NORMALIZATION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_NEW_LISTING_PROJECT_PATH_V1",
+  "accepted_inputs": {
+    "link_input": {
+      "type": "url",
+      "required": false
+    },
+    "photo_input": {
+      "type": "image",
+      "required": false
+    },
+    "description_input": {
+      "type": "text",
+      "required": false
+    }
+  },
+  "normalization_rules": {
+    "link_input": "extract_title_price_images",
+    "photo_input": "generate_title_description",
+    "description_input": "clean_and_structure_text"
+  },
+  "validation_rule": "at_least_one_input_required",
+  "output_format": "normalized_listing_input_v1",
+  "mode": "CONTROLLED_PRE_AUTOMATION",
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "build_listing_generation_layer_v1"
+}

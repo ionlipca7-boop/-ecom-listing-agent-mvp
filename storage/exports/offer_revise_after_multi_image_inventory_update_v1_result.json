@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "decision": "offer_revise_after_multi_image_inventory_update_v1_executed",
+  "put_status": 200,
+  "read_status": 200,
+  "images_sent": 9,
+  "live_image_count": 0,
+  "next_step": "inspect_offer_image_failure_v1"
+}

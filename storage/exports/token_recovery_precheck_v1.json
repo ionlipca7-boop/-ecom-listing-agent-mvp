@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "decision": "access_token_refreshed",
+  "updated_at_utc": "2026-04-18T08:21:59.194143+00:00",
+  "memory_next_target": "adapter_001",
+  "access_token_file": "storage\\secrets\\ebay_access_token.txt",
+  "refresh_token_file": "storage\\secrets\\ebay_refresh_token.txt",
+  "client_id_file": "storage\\secrets\\ebay_client_id.txt",
+  "client_secret_file": "storage\\secrets\\ebay_client_secret.txt",
+  "access_token_length": 2484,
+  "refresh_token_length": 96,
+  "client_id_present": true,
+  "client_secret_present": true,
+  "refresh_attempted": true,
+  "refresh_http_status": 200,
+  "refresh_ok": true,
+  "refresh_response_keys": [
+    "access_token",
+    "expires_in",
+    "token_type"
+  ],
+  "new_access_token_file": "storage\\secrets\\ebay_access_token.txt",
+  "new_access_token_length": 2464
+}

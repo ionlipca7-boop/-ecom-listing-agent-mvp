@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "LOCAL_CONTROL_RUNTIME_ENTRY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINISH_READY_EXECUTION_FLOW_V1",
+  "input_status": "OK",
+  "source_of_truth_checked": true,
+  "execution_flow_complete": true,
+  "publish_payload_locked": true,
+  "publish_lock_layer": "BUILD_PUBLISH_PAYLOAD_LOCKED_V1",
+  "real_ebay_api_call_allowed": false,
+  "publish_allowed": false,
+  "server_run_allowed": false,
+  "telegram_run_allowed": false,
+  "git_push_allowed": false,
+  "runtime_entry_ready": true,
+  "next_allowed_action": "build_run_control_room_local_v1",
+  "timestamp": "2026-04-25T06:46:26.790060+00:00"
+}

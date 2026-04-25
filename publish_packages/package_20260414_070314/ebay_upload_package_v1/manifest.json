@@ -1,0 +1,7 @@
+{
+  "package_id": "package_20260414_070314",
+  "status": "READY_FOR_UPLOAD",
+  "source_csv": "publish_packages/package_20260414_070314/ebay_ready_for_upload_v1.csv",
+  "audit_file": "publish_packages/package_20260414_070314/ebay_template_matched_export_v1_audit.json",
+  "created_at": "2026-04-15T07:43:56Z"
+}

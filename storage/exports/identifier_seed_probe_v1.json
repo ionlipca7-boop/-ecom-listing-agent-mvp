@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "decision": "identifier_seed_probe_v1_completed",
+  "product_key": null,
+  "product_registry_key": null,
+  "sku": null,
+  "inventory_item_key": null,
+  "has_any_seed": false,
+  "next_step": "inspect_upstream_mapper_outputs_for_missing_seed"
+}

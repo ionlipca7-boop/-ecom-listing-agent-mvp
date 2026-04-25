@@ -1,0 +1,17 @@
+{
+  "compare_status": "FIX_CONFIRMED",
+  "next_step": "CLOSE_FIX_CYCLE_AS_SUCCESS",
+  "fix_successful": "YES",
+  "status_changed": "YES",
+  "old_status": "ERROR",
+  "old_code": "MISSING_REQUIRED_FIELD",
+  "old_message": "Missing required item specific Brand and invalid price format",
+  "new_parser_status": "SUCCESS",
+  "new_status_bucket": "SUCCESS",
+  "new_code": "UPLOAD_OK",
+  "new_message": "Fixed reupload accepted",
+  "source_files": {
+    "old_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_sample_error_v1.json",
+    "new_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\next_cycle_upload_result_parsed_v1.json"
+  }
+}

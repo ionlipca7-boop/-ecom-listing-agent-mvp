@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_APPROVAL_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_PRICE_RESEARCH_READ_ONLY_V1",
+  "market_status": "READY",
+  "approval_required": true,
+  "approval_status": "PENDING_HUMAN_APPROVAL",
+  "approval_scope": [
+    "title",
+    "description_html",
+    "images",
+    "price",
+    "shipping",
+    "category",
+    "item_specifics"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_approval_gate_v1",
+  "timestamp": "2026-04-25T10:22:19.628130+00:00"
+}

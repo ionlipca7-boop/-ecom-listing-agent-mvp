@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_INVENTORY_SNAPSHOT_SCHEMA_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_EBAY_SYNC_ADAPTER_CONTRACT_V1",
+  "snapshot_path": "storage\\inventory\\ebay_active_listings_snapshot_v1.json",
+  "schema_fields": [
+    "item_id",
+    "title",
+    "price",
+    "currency",
+    "quantity",
+    "status",
+    "url",
+    "image_urls",
+    "views",
+    "watchers",
+    "last_updated",
+    "raw"
+  ],
+  "minimum_expected_items": 56,
+  "mode": "READ_ONLY_SNAPSHOT",
+  "next_allowed_action": "prepare_ebay_credentials_check_plan_v1",
+  "timestamp": "2026-04-25T07:30:44.918345+00:00"
+}

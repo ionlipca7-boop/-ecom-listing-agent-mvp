@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "LISTING_IMPROVEMENT_SCOPE_AUDIT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LISTING_IMPROVEMENT_SCOPE_DEFINITION_V1",
+  "input_status": "OK",
+  "listing_improvement_path_verified": true,
+  "scope_defined": true,
+  "scope_mode": "planning_only",
+  "scope_target": "existing_working_listing_improvement",
+  "allowed_actions_count": 3,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_still_blocked": true,
+  "parallel_branching_forbidden": true,
+  "audit_result": "listing_improvement_scope_verified",
+  "next_allowed_action": "build_current_listing_read_plan_v1"
+}

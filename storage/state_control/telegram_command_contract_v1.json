@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "BUILD_TELEGRAM_COMMAND_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_TELEGRAM_CONTROL_INTERFACE_V1",
+  "contract": {
+    "/status": "read_state_only",
+    "/draft": "prepare_draft_only",
+    "/approve": "approval_marker_only_no_publish",
+    "/reject": "reject_marker_only",
+    "/lock": "keep_publish_locked",
+    "/help": "show_commands"
+  },
+  "hard_blocks": {
+    "telegram_token_used": false,
+    "telegram_bot_started": false,
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "test_telegram_control_dry_v1"
+}

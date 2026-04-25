@@ -1,0 +1,15 @@
+CREATE CLEANUP EXECUTION GATE V1
+
+STATUS
+- archive root verification executed
+- archive scope verification executed
+- keep scope verification executed
+- cleanup execution gate created
+- delete still forbidden
+
+GATE RULE
+- archive move is allowed only if archive root, archive scope, and keep scope are all verified
+- delete remains forbidden
+
+NEXT SAFE ACTION
+- prepare_archive_move_batch_v1

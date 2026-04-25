@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "M_FINAL_WORKING_SYSTEM",
+  "layer": "FINISH_M_FINAL_WORKING_SYSTEM_V1",
+  "confirmed_blocks": [
+    "A_VERIFY_STOP",
+    "B_EBAY_SYNC_56",
+    "C_PHOTO_ENGINE",
+    "D_LISTING_ENGINE_V2",
+    "E_PRICE_RESEARCH",
+    "F_APPROVAL_GATE",
+    "G_AUTO_PUBLISH_QUEUE_SAFE_LOCKED",
+    "H_DAILY_STRATEGY",
+    "I_REFRESH_REPLACE_ENGINE",
+    "J_TELEGRAM_NOTIFICATIONS",
+    "K_INVENTORY_SYSTEM",
+    "L_SERVER_24_7",
+    "M_FINAL_WORKING_SYSTEM"
+  ],
+  "system_ready_contract": {
+    "generates_listings": true,
+    "photo_engine_ready": true,
+    "price_research_ready": true,
+    "approval_first": true,
+    "safe_publish_queue_locked": true,
+    "daily_strategy_ready": true,
+    "refresh_replace_ready": true,
+    "telegram_contract_ready": true,
+    "inventory_contract_ready": true,
+    "server_contract_ready": true,
+    "runtime_started": false
+  },
+  "security": {
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false,
+    "runtime_start_allowed": false
+  },
+  "next_allowed_action": "finish_controlled_auto_ebay_system_v1",
+  "timestamp": "2026-04-25T12:28:50.784298+00:00"
+}

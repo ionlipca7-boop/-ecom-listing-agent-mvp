@@ -1,0 +1,24 @@
+CONFIRM ARCHIVE TARGET AND ORDER V1
+
+STATUS
+- archive target confirmed
+- non-destructive order confirmed
+- cleanup execution still forbidden
+- archive move still forbidden
+- delete still forbidden
+
+CONFIRMED ARCHIVE TARGET
+- storage\\archive_candidates\\phase_cleanup_v1\\
+
+CONFIRMED ORDER
+- verify archive root
+- verify archive scope exists
+- verify keep scope protected
+- create cleanup execution gate
+- execute archive move only after gate
+
+DELETE SCOPE
+- confirmed empty
+
+NEXT SAFE ACTION
+- create_cleanup_execution_gate_v1

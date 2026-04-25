@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_SAFE_EXECUTION_OPEN_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXPLICIT_SAFE_EXECUTION_DECISION_V1",
+  "input_status": "OK",
+  "current_position": "execution_gate_preparation_created",
+  "execution_gate_ready_to_open": true,
+  "execution_not_started": true,
+  "destructive_actions_allowed": false,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "plan_locked": true,
+  "next_allowed_action": "execute_safe_execution_open_gate_v1"
+}

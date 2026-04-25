@@ -1,0 +1,35 @@
+{
+  "status": "OK",
+  "layer": "BUILD_LOCAL_EXECUTOR_FILE_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "target_file": "tools/local_command_executor.py",
+  "contract_mode": "FILE_SPEC_ONLY",
+  "required_functions": [
+    "load_json",
+    "save_json",
+    "execute_local_command",
+    "block_forbidden_command"
+  ],
+  "must_not_include": [
+    "ebay_api_call",
+    "telegram_token_write",
+    "server_start",
+    "git_push",
+    "delete_without_gate"
+  ],
+  "checks": {
+    "previous_ok": true,
+    "next_action_ok": true,
+    "target_ok": true,
+    "runtime_none": true,
+    "publish_locked": true
+  },
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "verify_local_executor_file_contract_v1"
+}

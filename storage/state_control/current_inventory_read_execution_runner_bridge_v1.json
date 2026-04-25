@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_INVENTORY_READ_EXECUTION_RUNNER_BRIDGE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CURRENT_INVENTORY_READ_EXECUTION_TRIGGER_V1",
+  "input_status": "OK",
+  "bridge_defined": true,
+  "bridge_type": "control_to_runner_execution_bridge",
+  "execution_ready_to_pass": true,
+  "runner_interface_prepared": true,
+  "execution_allowed_now": false,
+  "runner_still_blocked": true,
+  "live_operations_blocked": true,
+  "next_allowed_action": "build_runner_execution_input_layer_v1"
+}

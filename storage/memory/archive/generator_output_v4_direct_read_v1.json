@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "decision": "generator_output_v4_read_direct_completed",
+  "output_exists": true,
+  "parsed_ok": true,
+  "has_title": false,
+  "has_description": true,
+  "has_price": true,
+  "parse_error": "",
+  "preview": "{\n  \"titles\": [\n    \"USB-C Ladekabel 2m 60W Schnellladen Datenkabel\",\n    \"60W USB-C Kabel 2m Super Fast Charging Datenkabel\",\n    \"USB-C Kabel 2m 60W fur iPhone Samsung Xiaomi Schnellladekabel\"\n  ],\n  \"main_title\": \"USB-C Ladekabel 2m 60W Schnellladen Datenkabel\",\n  \"price\": 6.75,\n  \"description\": \"Hochwertiges USB-C Ladekabel mit 60W Leistung. Ideal fur schnelles Laden und sichere Datenubertragu",
+  "next_step": "promote_generator_v4_as_operational_entrypoint"
+}

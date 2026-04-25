@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CONFIRM_TRADING_FETCHER_COMPILED_V1",
+  "target": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "compile_returncode": 0,
+  "compile_stdout": "",
+  "compile_stderr": "",
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_trading_api_read_only_execution_gate_v1",
+  "timestamp": "2026-04-25T08:49:52.204272+00:00"
+}

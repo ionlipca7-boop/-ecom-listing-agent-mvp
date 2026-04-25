@@ -1,0 +1,34 @@
+{
+  "status": "OK",
+  "archive_type": "PHASE_8_CLOSURE_AND_NEXT_FRONT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "CONTROL_LAYER",
+  "phase": 8,
+  "phase_status": "CANON_COMPLETE",
+  "current_phase": "N8N_DISPATCH_BRANCH_CANON_CLOSED",
+  "last_successful_action": "run_full_phase_8_canonical_audit_v1",
+  "canonical_audit_result": {
+    "expected_component_count": 11,
+    "completed_component_count": 11,
+    "all_components_present": true,
+    "phase_confirmed": true,
+    "selected_branch_confirmed": true,
+    "chain_closed": true,
+    "dispatcher_completion_ready": true,
+    "execution_allowed": false,
+    "final_decision": "KEEP_BLOCKED",
+    "n8n_ready": false,
+    "phase_8_canon_complete": true
+  },
+  "do_not_do": [
+    "do_not_restart_from_manifest",
+    "do_not_enable_live",
+    "do_not_start_real_n8n_connection",
+    "do_not_jump_to_compact_core_without_front",
+    "do_not_rebuild_closed_phase_8_layers"
+  ],
+  "chosen_next_front": "PREPARE_NEXT_STAGE_FRONT_V1",
+  "chosen_next_step": "define_single_post_phase_8_direction_before_new_build",
+  "selection_reason": "after canon closure the safest next move is to fix one explicit post-phase-8 direction and prevent future drift, restarts, and premature live or integration steps",
+  "next_allowed_action": "build_post_phase_8_direction_lock_v1"
+}

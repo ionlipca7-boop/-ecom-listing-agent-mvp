@@ -1,0 +1,59 @@
+{
+  "status": "OK",
+  "layer": "SELECT_LIVE_EBAY_READONLY_EXECUTOR_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "inspection_rows": [
+    {
+      "file": "run_build_real_inventory_read_call_v2.py",
+      "exists": true,
+      "size": 1606,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_inventory_read_call_v1.py",
+      "exists": true,
+      "size": 2340,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_inventory_read_probe_v1.py",
+      "exists": true,
+      "size": 2048,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_inventory_api_probe_v1.py",
+      "exists": true,
+      "size": 2827,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_adapter_001_inventory_readback_verify_v1.py",
+      "exists": true,
+      "size": 2270,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "ebay_api_executor_inventory_v1.py",
+      "exists": true,
+      "size": 4297,
+      "has_read_terms": true,
+      "has_write_terms": false
+    }
+  ],
+  "selected_executor": "run_build_real_inventory_read_call_v2.py",
+  "selection_confidence": "HIGH",
+  "execution_allowed_now": false,
+  "reason": "executor selected for guarded read-only wrapper; direct run still blocked until guard is built",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "build_guarded_live_readonly_executor_wrapper_v1",
+  "timestamp": "2026-04-25T11:20:35.278375+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_EBAY_ENV_TOKEN_KEY_V1",
+  "env_exists": true,
+  "env_key_count": 4,
+  "token_or_ebay_keys_found": [
+    "EBAY_ACCESS_TOKEN",
+    "EBAY_REFRESH_TOKEN",
+    "EBAY_CLIENT_ID",
+    "EBAY_CLIENT_SECRET"
+  ],
+  "secret_values_printed": false,
+  "next_allowed_action": "map_existing_token_key_to_fetcher_v1",
+  "timestamp": "2026-04-25T08:54:37.142377+00:00"
+}

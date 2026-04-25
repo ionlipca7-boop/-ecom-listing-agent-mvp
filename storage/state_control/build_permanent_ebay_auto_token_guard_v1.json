@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "BUILD_PERMANENT_EBAY_AUTO_TOKEN_GUARD_V1",
+  "guard_created": true,
+  "guard_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\ebay_auto_token_guard_v1.py",
+  "purpose": "permanent guard: refresh token and reload .env.local before every eBay write action",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "verify_permanent_ebay_auto_token_guard_v1",
+  "timestamp": "2026-04-25T14:18:07.370914+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "TRACKED_ITEM_EVIDENCE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRACKED_ITEM_EVIDENCE_REVIEW_PREPARED_V1",
+  "input_status": "OK",
+  "evidence_review_required": true,
+  "evidence_targets_confirmed": [
+    "run_control_room.bat",
+    "agent/__pycache__/brain.cpython-314.pyc",
+    ".gitignore"
+  ],
+  "evidence_review_scope": "tracked_items_read_only",
+  "evidence_review_result": "ready_for_real_item_evidence_read",
+  "delete_allowed": false,
+  "cleanup_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "physical_move_allowed": false,
+  "next_allowed_action": "prepare_real_tracked_item_evidence_read_v1"
+}

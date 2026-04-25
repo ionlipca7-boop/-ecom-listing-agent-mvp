@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_TELEGRAM_CONTROL_FILES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "telegram_control_status": "PREPARED_NOT_STARTED",
+  "checks": {
+    "server_prep_ok": true,
+    "server_not_started": true,
+    "telegram_token_not_written": true,
+    "telegram_run_allowed_false": true
+  },
+  "security": {
+    "telegram_run_allowed": false,
+    "telegram_token_written": false,
+    "server_run_allowed": false,
+    "publish_allowed": false
+  },
+  "next_allowed_action": "final_pre_publish_system_check_v1"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_FULL_BRIDGE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "bridge_review": "PASS",
+  "github_source_of_truth": true,
+  "runtime_bridge_ready": true,
+  "n8n_trigger_ready": true,
+  "new_listing_layer_synced": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "lock_bridge_as_control_room_foundation_v1"
+}

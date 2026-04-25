@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "SAFE_CLEANUP_DELETE_REPAIR_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "DELETE_DECISION_GATE_V1",
+  "original_candidates": [
+    "executor/",
+    "nul",
+    "run_executor_entry_v1.bat",
+    "storage/archive_candidates/project_cleanup_v1/",
+    "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json"
+  ],
+  "existing_before_repair": [
+    "nul",
+    "run_executor_entry_v1.bat",
+    "storage/archive_candidates/project_cleanup_v1/",
+    "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json"
+  ],
+  "safe_deleted": [
+    "run_executor_entry_v1.bat",
+    "storage/archive_candidates/project_cleanup_v1/",
+    "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json"
+  ],
+  "blocked_not_deleted": [
+    "nul"
+  ],
+  "delete_executed": true,
+  "partial_previous_failure": "PermissionError on nul",
+  "next_allowed_action": "verify_clean_project_structure_v1"
+}

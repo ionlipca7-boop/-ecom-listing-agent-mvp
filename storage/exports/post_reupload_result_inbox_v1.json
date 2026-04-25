@@ -1,0 +1,19 @@
+{
+  "inbox_status": "READY",
+  "inbox_gate": "OPEN",
+  "next_step": "WAIT_FOR_NEW_UPLOAD_RESULT_FILE",
+  "handoff_status": "READY",
+  "handoff_gate": "OPEN",
+  "source_handoff_next_step": "DO_MANUAL_FIXED_REUPLOAD",
+  "expected_result_file_name": "ebay_result_after_fixed_reupload_v1.json",
+  "expected_result_file_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\upload_results\\ebay_result_after_fixed_reupload_v1.json",
+  "manual_checklist": [
+    "Выполнить ручную повторную загрузку в eBay",
+    "Сохранить новый результат загрузки в storage\\\\upload_results",
+    "Назвать файл ebay_result_after_fixed_reupload_v1.json",
+    "После сохранения запустить parser следующего цикла"
+  ],
+  "source_files": {
+    "manual_fixed_reupload_handoff": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\manual_fixed_reupload_handoff_v1.json"
+  }
+}

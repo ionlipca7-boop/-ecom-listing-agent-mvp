@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_BUCKET_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "UNTRACKED_BUCKET_DECISION_V1",
+  "input_status": "OK",
+  "bucket_decision_gate_defined": true,
+  "allowed_now": "prepare_manual_untracked_item_review_v1",
+  "cleanup_blocked": true,
+  "push_blocked": true,
+  "server_sync_blocked": true,
+  "next_allowed_action": "prepare_manual_untracked_item_review_v1"
+}

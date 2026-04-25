@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "decision": "photo_source_archived_v2",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "item_id": "318166440509",
+  "offer_id": "153365657011",
+  "source_type": "remote_image_manifest",
+  "supplier": {
+    "store_name": "NNBILI Global Store",
+    "variant": "mixed-6pcs",
+    "order_date": "2026-03-10",
+    "order_id": "3069744098223117",
+    "quantity_packs": 20,
+    "unit_price_eur": 1.99,
+    "total_paid_eur": 32.8
+  },
+  "image_urls": [
+    "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg",
+    "https://ae01.alicdn.com/kf/Sc68f16cdbb0e48ca9f68da607d90f55fO.jpg",
+    "https://ae01.alicdn.com/kf/Sceae79ed63dc4d5aab039de4a52879c8r.jpg",
+    "https://ae01.alicdn.com/kf/S8893d5727a1446bb860b97548ede5410X.jpg",
+    "https://ae01.alicdn.com/kf/S4f8750a0169946e0b4fc1a0f1b23089aB.jpg",
+    "https://ae01.alicdn.com/kf/S3a9306f37bbf44d28dcc5d7b5aaa5c7bl.jpg",
+    "https://ae01.alicdn.com/kf/Sadcd253f429a49b8a3460fe75febf721R.jpg",
+    "https://ae01.alicdn.com/kf/Se63d8168e9664e28b5c0878026e2445an.jpg",
+    "https://ae01.alicdn.com/kf/S21d6d1cf19c341c7928d286cd6a6e8957.jpg"
+  ],
+  "image_count": 9,
+  "rule": "photo_source_data_is_project_memory_truth_for_this_listing",
+  "next_step": "rebuild_safe_full_offer_payload_v1_from_photo_source_archive_v2"
+}

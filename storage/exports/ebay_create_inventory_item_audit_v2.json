@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "http_status": 204,
+  "sku": "ECOM-TEST-CABLE-001",
+  "request_payload": {
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10
+      }
+    },
+    "condition": "NEW"
+  },
+  "body": {}
+}

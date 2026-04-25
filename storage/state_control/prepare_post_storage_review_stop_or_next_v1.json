@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_POST_STORAGE_REVIEW_STOP_OR_NEXT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_POST_STORAGE_REVIEW_FINAL_DECISION_V1",
+  "input_status": "OK",
+  "decision_mode": "READ_ONLY_CONTROLLED_SEQUENCE",
+  "current_position": "post_storage_review_stop_or_next_prepared",
+  "basis_final_decision": "POST_STORAGE_REVIEW_FULL_READ_ONLY_CHAIN_COMPLETE_NO_CLEANUP_APPROVED",
+  "destructive_actions_still_forbidden": true,
+  "cleanup_allowed": false,
+  "delete_allowed": false,
+  "sync_allowed": false,
+  "recommended_outcome": "STOP",
+  "next_allowed_action": "execute_post_storage_review_stop_or_next_v1"
+}

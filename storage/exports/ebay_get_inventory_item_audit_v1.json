@@ -1,0 +1,27 @@
+{
+  "http_status": 200,
+  "sku": "ECOM-TEST-CABLE-001",
+  "response_json": {
+    "sku": "ECOM-TEST-CABLE-001",
+    "locale": "de_DE",
+    "product": {
+      "title": "USB-C Ladekabel 2m 60W Schnellladen",
+      "aspects": {
+        "Produktart": [
+          "USB-Kabel"
+        ]
+      },
+      "description": "USB-C Kabel 2m fuer Schnellladen und Datentransfer."
+    },
+    "condition": "NEW",
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 10
+        }
+      }
+    }
+  }
+}

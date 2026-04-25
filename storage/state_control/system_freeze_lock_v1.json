@@ -1,0 +1,11 @@
+{
+  "status": "SYSTEM_FROZEN_WAITING_APPROVAL",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "freeze_reason": "manual_approval_required_before_execution",
+  "modifications_allowed": false,
+  "new_layers_allowed": false,
+  "optimization_allowed": false,
+  "execution_allowed": false,
+  "only_allowed_action": "manual_approval_trigger",
+  "next_step": "WAIT_FOR_MANUAL_APPROVAL"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "OPEN_BLOCK_O_LOCAL_COMMAND_EXECUTOR_PREP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "decision": "OPEN_BLOCK_O_LOCAL_COMMAND_EXECUTOR_PREP",
+  "goal": "prepare_safe_local_command_executor_without_publish_or_runtime_start",
+  "checks": {
+    "previous_ok": true,
+    "previous_stop": true,
+    "block_n_complete": true,
+    "publish_locked": true,
+    "server_locked": true,
+    "telegram_locked": true,
+    "git_push_locked": true
+  },
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "prepare_local_command_executor_plan_v1"
+}

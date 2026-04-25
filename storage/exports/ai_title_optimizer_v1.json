@@ -1,0 +1,20 @@
+{
+  "optimizer_status": "READY",
+  "next_step": "GENERATE_MORE_TITLE_VARIANTS_LATER",
+  "summary": {
+    "price_status": "READY",
+    "source_title": "60W USB-C Ladekabel 2m",
+    "optimized_title": "60W USB-C Ladekabel 2m USB-C Schnellladen",
+    "title_length": 41,
+    "max_title_length": 80
+  },
+  "rules": {
+    "rule_1": "keep title at or below 80 chars",
+    "rule_2": "prioritize power plus product type plus length",
+    "rule_3": "keep high intent keyword Schnellladen"
+  },
+  "inputs": {
+    "ready_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\real_ebay_template_export_v1.json",
+    "price_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\price_optimizer_v1.json"
+  }
+}

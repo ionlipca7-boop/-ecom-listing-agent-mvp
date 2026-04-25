@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "REAL_EBAY_READ_READY_OR_BLOCKED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REAL_EBAY_READ_CREDENTIALS_DECISION_V1",
+  "real_read_ready": false,
+  "real_read_blocked": true,
+  "active_listings_expected": 56,
+  "api_call_used": false,
+  "safe_stop": true,
+  "next_allowed_action": "prepare_ebay_credentials_setup_instruction_v1",
+  "timestamp": "2026-04-25T07:32:09.706201+00:00"
+}

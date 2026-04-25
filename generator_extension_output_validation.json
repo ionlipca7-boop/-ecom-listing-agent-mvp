@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "GENERATOR_EXTENSION_OUTPUT_VALIDATION",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "checks": {
+    "source_exists": true,
+    "status_is_extension_ready": true,
+    "mode_is_project_specific": true,
+    "title_exists": true,
+    "description_exists": true,
+    "price_positive": true,
+    "draft_status_ok": true,
+    "html_exists": true,
+    "category_exists": true,
+    "images_present": true
+  },
+  "next_step": "archive_generator_extension_validation_result"
+}

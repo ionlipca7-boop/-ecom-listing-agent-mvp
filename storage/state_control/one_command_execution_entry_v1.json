@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "ONE_COMMAND_EXECUTION_ENTRY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINISH_READY_WRITER_V1",
+  "entry_mode": "single_command_operator_path",
+  "entry_command": "py run_control_room.py",
+  "entry_contract": "storage/state_control/publish_instruction_contract_v1.json",
+  "executor_contract": "storage/state_control/local_executor_agent_v1.json",
+  "runtime_result_target": "storage/state_control/runtime_result_v1.json",
+  "finish_target": "storage/state_control/finish_ready_v1.json",
+  "operator_input_required": "source_listing_url_already_locked_in_contract",
+  "live_path_enabled": true,
+  "parallel_branches": false,
+  "project_specific_only": true,
+  "one_command_entry_ready": true,
+  "next_allowed_action": "build_controlled_publish_check_gate_v1"
+}

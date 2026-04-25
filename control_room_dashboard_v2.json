@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-04-15T09:37:07Z",
+  "dashboard_status": "READY",
+  "system_state": "STABLE",
+  "valid_runs": 14,
+  "invalid_runs": 0,
+  "last_valid_run": {
+    "file": null,
+    "timestamp": "2026-04-15T09:34:11Z",
+    "status": "READY",
+    "package": "package_20260414_070314",
+    "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API"
+  },
+  "next_step": "UPLOAD_TO_EBAY_MANUALLY_OR_CONNECT_REAL_API"
+}

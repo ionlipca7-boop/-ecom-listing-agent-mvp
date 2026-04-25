@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_READ_CALL_V2_READY_CONDITION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "patched": true,
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_guarded_live_ebay_readonly_wrapper_v1",
+  "timestamp": "2026-04-25T11:34:43.998761+00:00"
+}

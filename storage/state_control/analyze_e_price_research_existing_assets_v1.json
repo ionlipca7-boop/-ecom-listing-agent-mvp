@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "ANALYZE_E_PRICE_RESEARCH_EXISTING_ASSETS_V1",
+  "input_layer": "PREPARE_E_PRICE_RESEARCH_LOCAL_INVENTORY_SCAN_V1",
+  "mode": "LOCAL_ANALYSIS_ONLY_NO_API_NO_PRICE_CHANGE",
+  "current_block": "E_PRICE_RESEARCH",
+  "preferred_sources": [
+    "storage\\exports\\adapter_001_competitor_review_v1.json",
+    "storage\\exports\\price_optimizer_v1.json",
+    "storage\\market\\price_research_read_only_v1.json",
+    "storage\\state_control\\execute_price_research_read_only_v1.json"
+  ],
+  "price_research_local_assets_exist": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_e_price_research_v1",
+  "timestamp": "2026-04-25T12:02:04.175963+00:00"
+}

@@ -1,0 +1,14 @@
+REPAIR TRANSITION FRONT STATE SYNC V1
+
+STATUS
+- front state sync repaired
+- front now matches current controlled cleanup sequence
+- archive move not started
+- delete not started
+
+UPDATED FRONT TARGETS
+- last confirmed layer = REPAIR_TRANSITION_FRONT_STATE_SYNC_V1
+- next allowed action = verify_transition_front_state_sync_v1
+
+NEXT SAFE ACTION
+- verify_transition_front_state_sync_v1

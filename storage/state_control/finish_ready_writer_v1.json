@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "FINISH_READY_WRITER_V1",
+  "input_layer": "RUNTIME_RESULT_WRITER_V1",
+  "executor_publish_route_prepared": true,
+  "publish_allowed": false,
+  "live_action_executed": false,
+  "next_allowed_action": "build_one_command_execution_entry_v1"
+}

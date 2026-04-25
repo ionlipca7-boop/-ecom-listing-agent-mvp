@@ -1,0 +1,72 @@
+{
+  "status": "OK",
+  "decision": "category_selected",
+  "query": "USB-C-Ladekabel-2m-60W-Schnellladen-Datenkabel-q10-p6.75",
+  "category_tree_id": "77",
+  "http_statuses": {
+    "default_tree": 200,
+    "suggestions": 200
+  },
+  "selected_category": {
+    "categoryId": "44932",
+    "categoryName": "USB-Kabel, -Hubs & -Adapter",
+    "categoryTreeNodeLevel": 3,
+    "categorySubtreeNodeHref": ""
+  },
+  "suggestions": [
+    {
+      "categoryId": "44932",
+      "categoryName": "USB-Kabel, -Hubs & -Adapter",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "123417",
+      "categoryName": "Ladegeräte & Dockingstationen",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "123422",
+      "categoryName": "Kabel & Adapter",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "3709",
+      "categoryName": "Notebook-Dockingstationen",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "31510",
+      "categoryName": "Notebook-Netzteile/-Ladegeräte",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "3668",
+      "categoryName": "Sonstige",
+      "categoryTreeNodeLevel": 3,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "162",
+      "categoryName": "Sonstige",
+      "categoryTreeNodeLevel": 2,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "4678",
+      "categoryName": "Sonstige Messgeräte",
+      "categoryTreeNodeLevel": 5,
+      "categorySubtreeNodeHref": ""
+    },
+    {
+      "categoryId": "7867",
+      "categoryName": "Berlin-Ganzsachen",
+      "categoryTreeNodeLevel": 4,
+      "categorySubtreeNodeHref": ""
+    }
+  ]
+}

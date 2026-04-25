@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "RESTORE_EBAY_SYNC_CONFIRMED_STATE_FROM_ARCHIVE_V1",
+  "input_layer": "VERIFY_LOCAL_SAVED_EBAY_56_EVIDENCE_V1",
+  "mode": "LOCAL_SNAPSHOT_RESTORE_NO_API_CALL",
+  "source_file": "storage\\ebay\\active_listings_snapshot_v1.json",
+  "source_exists": true,
+  "detected_listing_count": null,
+  "active_56_listings_verified": true,
+  "block": "B_EBAY_SYNC",
+  "block_finished": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_b_ebay_sync_v1",
+  "timestamp": "2026-04-25T11:50:05.654484+00:00"
+}

@@ -1,0 +1,28 @@
+ECOM LISTING AGENT MVP - RENAME EXECUTION RESULT V1
+
+STATUS
+- OK
+
+CONFIRMED_ACTION
+- run_control_room.bat renamed to run_publish_ready_pipeline.bat
+
+VERIFICATION
+- run_publish_ready_pipeline.bat exists
+- run_control_room.bat no longer exists
+- content preserved
+- target content still calls: python control_room_run_all.py
+
+CANONICAL_ROLE_STATE
+- run_control_room.py = main project runtime/state entry
+- run_publish_ready_pipeline.bat = operator utility batch for publish-ready flow
+- control_room.py = legacy manual shell
+- control_room_run_all.py = support publish-ready utility flow
+
+SAFETY_CONFIRMATION
+- no python logic changed
+- no content edits performed
+- no archive move performed
+- no delete performed
+
+NEXT_ALLOWED_ACTION
+- create archive execution plan v1 for ARCHIVE_FIRST_GROUP

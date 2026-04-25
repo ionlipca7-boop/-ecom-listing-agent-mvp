@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHOTO_ENGINE_EXECUTION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_PHOTO_ENGINE_CONTRACT_V1",
+  "gate": "PHOTO_ENGINE_PRE_EXECUTION_GATE",
+  "execution_allowed_now": false,
+  "reason": "No source product/images selected yet. Gate prepared only.",
+  "allowed_next_action": "select_photo_engine_test_input_v1",
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "delete",
+    "bulk_update",
+    "auto_publish"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "select_photo_engine_test_input_v1",
+  "timestamp": "2026-04-25T09:39:19.455998+00:00"
+}

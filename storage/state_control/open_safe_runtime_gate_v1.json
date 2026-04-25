@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "OPEN_SAFE_RUNTIME_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_1_SAFE_RUNTIME_START",
+  "runtime_assets_confirmed": true,
+  "required_entrypoints": {
+    "run_control_room.py": true,
+    "bot.py": true,
+    "n8n_orchestration.json": true
+  },
+  "server_start_allowed": true,
+  "telegram_read_only_start_allowed": true,
+  "telegram_write_allowed": false,
+  "ebay_write_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "git_status_lines": [
+    "?? .env.local",
+    "?? 3",
+    "?? nul",
+    "?? storage/state_control/commit_post_pull_gate_state_v1.json",
+    "?? storage/state_control/push_safe_activation_state_v1.json"
+  ],
+  "secrets_printed": false,
+  "operator_rule": "Only read-only runtime start allowed. No publish/revise/delete. No auto actions.",
+  "next_allowed_action": "execute_phase1_safe_runtime_start_read_only_v1"
+}

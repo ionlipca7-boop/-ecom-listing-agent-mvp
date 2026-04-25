@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "GENERATOR_INPUT_CONTRACT",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_of_truth": "control_layer_review.json",
+  "input_required": [
+    "product_title",
+    "product_type",
+    "product_specs",
+    "target_marketplace" 
+  ],
+  "input_optional": [
+    "brand",
+    "price_hint",
+    "image_count_hint" 
+  ],
+  "output_targets": [
+    "title",
+    "description",
+    "price",
+    "status" 
+  ],
+  "live_operations_enabled": false,
+  "next_step": "prepare_generator_input_sample" 
+}

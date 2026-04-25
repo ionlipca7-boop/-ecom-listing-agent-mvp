@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_full_listing_upgrade_v1_completed",
+  "inventory_get_status": 200,
+  "inventory_put_status": 200,
+  "offer_get_status": 200,
+  "offer_put_status": 200,
+  "title": "USB-C auf USB-A OTG Adapter USB 3.0 Datenadapter Handy Tablet",
+  "image_count_preserved": 1,
+  "price_value": "3.99",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "listingPolicies": {
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024",
+    "fulfillmentPolicyId": "257755855024",
+    "eBayPlusIfEligible": false
+  },
+  "next_step": "user_check_live_listing_then_decide_photo_set_upgrade"
+}

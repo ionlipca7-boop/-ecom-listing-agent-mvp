@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "product_key": "adapter_001",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "live_title": "USB-C auf USB-A OTG Adapter USB 3.0 Typ C Datenadapter Schwarz",
+  "planned_title": "USB-C auf USB-A Adapter OTG USB 3.0 Schnell Datenadapter",
+  "title_changed": true,
+  "live_aspects_count": 9,
+  "planned_specifics_count": 11,
+  "revise_ready": true,
+  "decision": "prepare_full_inventory_revise_if_title_or_aspects_need_update"
+}

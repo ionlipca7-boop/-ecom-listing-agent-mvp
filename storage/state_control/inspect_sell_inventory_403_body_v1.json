@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_SELL_INVENTORY_403_BODY_V1",
+  "http_status": 403,
+  "result_status": "HTTP_ERROR",
+  "body_keys": [
+    "errors"
+  ],
+  "body_safe": {
+    "errors": [
+      {
+        "errorId": 1100,
+        "domain": "ACCESS",
+        "category": "REQUEST",
+        "message": "Access denied",
+        "longMessage": "Insufficient permissions to fulfill the request."
+      }
+    ]
+  },
+  "secret_values_printed": false,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "repair_ebay_token_scope_for_sell_inventory_v1",
+  "timestamp": "2026-04-25T09:04:00.196882+00:00"
+}

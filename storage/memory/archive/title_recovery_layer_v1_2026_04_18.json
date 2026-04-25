@@ -1,0 +1,13 @@
+{
+  "date": "2026-04-18",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "status": "OK",
+  "decision": "build_title_recovery_layer_v1_completed",
+  "source_file": "storage\\exports\\generator_output_v4.json",
+  "normalized_file": "storage\\exports\\generator_output_v4_title_recovered.json",
+  "title_source": "main_title",
+  "had_title_before": false,
+  "has_title_after": true,
+  "has_main_title": true,
+  "next_step": "use_normalized_output_contract_or_add_contract_normalizer_v2"
+}

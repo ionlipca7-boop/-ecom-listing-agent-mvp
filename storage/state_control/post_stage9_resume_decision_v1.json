@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "POST_STAGE9_RESUME_DECISION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "POST_STAGE9_CANONICAL_RESUME_GATE_V1",
+  "input_status": "OK",
+  "resume_decision_defined": true,
+  "decision": "ALLOW_CONTROLLED_RETURN_TO_PROJECT_SPECIFIC_PIPELINE",
+  "downstream_unlocked": true,
+  "execution_still_blocked": true,
+  "runner_still_blocked": true,
+  "live_operations_blocked": true,
+  "allowed_scope": "resume_inventory_read_chain_from_valid_parked_state",
+  "next_allowed_action": "resume_current_inventory_read_chain_v2_from_parked_state"
+}

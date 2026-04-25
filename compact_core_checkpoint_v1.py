@@ -1,0 +1,63 @@
+import json
+from pathlib import Path
+
+BASE = Path(r"D:\ECOM_LISTING_AGENT_MVP")
+
+def main():
+    source = BASE / Path("storage\state_compact_core\compact_core_delivery_state_v1.json")
+    payload = {}
+    payload["layer"] = "COMPACT_CORE_CHECKPOINT_V1"
+    payload["mode"] = "PROJECT_SPECIFIC_ONLY"
+    payload["stage"] = 9
+
+    if not source.exists():
+        payload["status"] = "BROKEN"
+        payload["source_exists"] = False
+        payload["delivery_ready"] = False
+        payload["checkpoint_ready"] = False
+        payload["reason"] = "delivery_state_missing"
+        payload["next_step"] = "restore_delivery_state_v1"
+
+    else:
+        data = json.loads(source.read_text(encoding="utf-8"))
+        delivery_ready = bool(data.get("delivery_ready"))
+        checks = data.get("delivery_checks", {})
+        title_ready = bool(checks.get("title_ready"))
+        price_ready = bool(checks.get("price_ready"))
+        description_ready = bool(checks.get("description_ready"))
+        html_ready = bool(checks.get("html_ready"))
+        images_ready = bool(checks.get("images_ready"))
+        checkpoint_ready = delivery_ready and title_ready and price_ready and description_ready and html_ready and images_ready
+        if checkpoint_ready:
+            payload["status"] = "OK"
+            payload["next_step"] = "compact_checkpoint_ready_for_stage9_summary"
+        else:
+            payload["status"] = "BLOCKED"
+            payload["next_step"] = "compact_checkpoint_not_ready_stop_here"
+        payload["source_exists"] = True
+        payload["source_file"] = str(source)
+        payload["delivery_ready"] = delivery_ready
+        payload["checkpoint_ready"] = checkpoint_ready
+        payload["checkpoint_checks"] = {}
+        payload["checkpoint_checks"]["title_ready"] = title_ready
+        payload["checkpoint_checks"]["price_ready"] = price_ready
+        payload["checkpoint_checks"]["description_ready"] = description_ready
+        payload["checkpoint_checks"]["html_ready"] = html_ready
+        payload["checkpoint_checks"]["images_ready"] = images_ready
+
+    out_file = BASE / Path("storage\state_compact_core\compact_core_checkpoint_v1.json")
+    out_file.parent.mkdir(parents=True, exist_ok=True)
+    out_file.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    print("COMPACT_CORE_CHECKPOINT_V1_AUDIT")
+    print("status =", payload["status"])
+    print("layer =", payload["layer"])
+    print("mode =", payload["mode"])
+    print("stage =", payload["stage"])
+    print("source_exists =", payload["source_exists"])
+    print("delivery_ready =", payload["delivery_ready"])
+    print("checkpoint_ready =", payload["checkpoint_ready"])
+    print("output_file =", str(out_file))
+
+if __name__ == "__main__":
+    main()

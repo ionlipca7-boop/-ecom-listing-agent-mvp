@@ -1,0 +1,10 @@
+{
+  "package_id": "package_20260414_070314",
+  "input_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2.csv",
+  "validation_file": "publish_packages/package_20260414_070314/ebay_upload_ready_v2_validation.json",
+  "total_rows": 7,
+  "total_columns": 11,
+  "valid": false,
+  "template_file": "templates/eBay-category-listing-template-апр.-14-2026-11-44-17.csv",
+  "generated_at": "2026-04-14T17:25:37.713907+00:00"
+}

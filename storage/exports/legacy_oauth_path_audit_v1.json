@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "decision": "legacy_refresh_path_ready",
+  "is_ready_for_refresh": true,
+  "redirect_uri": {
+    "exists": true,
+    "size": 34,
+    "preview": "Ion_Lipca-IonLipca-ECOMOS-bwwjioir"
+  },
+  "refresh_token": {
+    "exists": true,
+    "size": 96,
+    "preview": "v^1.1#i^1#r^1#p^3#I^3#f^0#t^Ul4xMF80OjUyMDEzRTJBM0M3NjQ2MThENDE5NjgyRTJBMUMyNTBE"
+  },
+  "access_token": {
+    "exists": true,
+    "size": 2456,
+    "preview": "v^1.1#i^1#r^0#f^0#p^3#I^3#t^H4sIAAAAAAAA/+VZa4wbRx0/3/mORiWhkCsNoVRmW1BFWHtnX16v"
+  }
+}

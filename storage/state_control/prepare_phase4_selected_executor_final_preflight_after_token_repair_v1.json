@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHASE4_SELECTED_EXECUTOR_FINAL_PREFLIGHT_AFTER_TOKEN_REPAIR_V1",
+  "previous_layer": "REOPEN_PHASE4_ONE_LIVE_LISTING_AFTER_TOKEN_REPAIR_V1",
+  "inputs": {
+    "gate_exists": true,
+    "candidate_exists": true,
+    "executor_exists": true,
+    "token_verify_exists": true,
+    "gate_status": "OK",
+    "candidate_status": "OK",
+    "executor_status": "OK",
+    "token_status": "OK"
+  },
+  "safety": {
+    "publish_called": false,
+    "one_live_publish_preflight_allowed": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "await_explicit_operator_confirmation_for_one_live_publish_after_token_repair_v1",
+  "note": "final preflight only; no eBay write action executed",
+  "timestamp": "2026-04-25T13:56:24.681862+00:00"
+}

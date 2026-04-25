@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "AWAIT_PRODUCT_IMAGES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_folder": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\input",
+  "image_count": 0,
+  "required_min": 3,
+  "required_max": 9,
+  "images_ready": false,
+  "blocking_reasons": [
+    "need_3_to_9_images"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "add_product_images_to_storage_images_input",
+  "timestamp": "2026-04-25T10:25:55.418895+00:00"
+}

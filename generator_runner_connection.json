@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "GENERATOR_RUNNER_CONNECTION",
+  "mode": "PROJECT_SPECIFIC_ONLY",
+  "source_snapshot": "generator_full_status_snapshot.json",
+  "generator_ready": true,
+  "runner_source": "runner_agent.py",
+  "handoff_contract": {
+    "input_file": "generator_output_extended.json",
+    "receiver": "runner_agent.py",
+    "mode": "PROJECT_SPECIFIC_ONLY",
+    "live_operations_enabled": false
+  },
+  "next_step": "build_runner_input_read_layer"
+}

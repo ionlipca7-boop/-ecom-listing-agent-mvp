@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "decision": "token_present",
+  "file_exists": true,
+  "token_length": 2456,
+  "starts_with": "v^1.1#i^1#r^0#f^0#p^",
+  "has_bom_in_raw": false,
+  "has_whitespace_edges": false,
+  "looks_like_user_token": true,
+  "looks_like_access_token": false
+}

@@ -1,0 +1,10 @@
+COMPACT_CORE_EXECUTION_BRIDGE_V1_AUDIT
+status = OK
+stage = 9
+root_role = compact_execution_bridge
+hub_connected = True
+root_connected = True
+generator_source_connected = True
+bridge_ready = True
+execution_mode = PREVIEW_ONLY_NO_LIVE
+next_step = build_compact_core_preview_contract_v1

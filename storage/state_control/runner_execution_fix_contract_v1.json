@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_FIX_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_EXECUTION_FIX_PLAN_V1",
+  "input_status": "OK",
+  "contract_defined": true,
+  "target_file": "runner_agent.py",
+  "target_scope": "execution_switch_logic_only",
+  "required_conditions": [
+    "runner_detects_execution_intent_from_input",
+    "runner_switches_mode_from_control_to_execution",
+    "runner_executes_payload_when_execution_required",
+    "runner_does_not_return_control_layer_when_execution_expected"
+  ],
+  "forbidden_changes": [
+    "no_changes_to_control_layer_logic",
+    "no_changes_to_generator_or_input_layers",
+    "no_live_execution_enable"
+  ],
+  "execution_still_blocked": true,
+  "runner_execution_still_blocked": true,
+  "live_execution_still_blocked": true,
+  "next_allowed_action": "build_runner_execution_fix_patch_v1"
+}

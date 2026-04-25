@@ -1,0 +1,14 @@
+VERIFY NEW CHAT TRANSITION PACKAGE V1
+
+STATUS
+- stable front verified
+- stable instructions verified
+- archive move not started
+- delete not started
+
+REAL FINDING
+- stable front next action is stale
+- current state requires sync repair before transition is final
+
+NEXT SAFE ACTION
+- repair_new_chat_transition_package_state_sync_v1

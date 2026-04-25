@@ -1,0 +1,7 @@
+CHAT_START_RULE_AND_CANON_POSITION_AUDIT
+status = OK
+startup_rule_saved = True
+future_chat_must_start_with_canon_9_step_audit = True
+stop_and_check_archive_before_repeating_error = True
+current_ready_for_stage_9 = NO
+next_focus = restore_or_create_confirmed_manifest_rules_state_history_layer

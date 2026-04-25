@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_SELL_INVENTORY_READ_ONLY_SYNC_V1",
+  "tool_path": "publisher\\ebay_sell_inventory_fetcher.py",
+  "returncode": 0,
+  "stderr": "",
+  "result_exists": true,
+  "http_status": 403,
+  "result_status": "HTTP_ERROR",
+  "inventory_item_count": 0,
+  "expected_active_listings": 56,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "inspect_sell_inventory_result_v1",
+  "timestamp": "2026-04-25T09:03:26.581485+00:00"
+}

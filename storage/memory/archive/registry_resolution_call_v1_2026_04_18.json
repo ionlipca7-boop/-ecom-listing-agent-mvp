@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "decision": "registry_resolution_call_v1_built",
+  "source_file": "storage\\exports\\registry_key_injection_probe_v1.json",
+  "registry_resolution_call_version": "v1",
+  "chosen_source": "product_registry_key",
+  "chosen_path": "real_inventory_read_first",
+  "resolution_call_contract": {
+    "call_type": "registry_resolution",
+    "input_identifier_type": "product_registry_key",
+    "target_output_identifier": "sku",
+    "target_usage": "live_inventory_read"
+  },
+  "call_checks": {
+    "source_is_product_registry_key": true,
+    "path_is_read_first": true,
+    "ready_for_resolution_call": true,
+    "resolution_call_contract_present": true
+  },
+  "ready_for_live_identifier_resolution_execution": true,
+  "next_step": "build_live_identifier_resolution_result_stub_v1"
+}

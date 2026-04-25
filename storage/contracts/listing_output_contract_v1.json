@@ -1,0 +1,53 @@
+{
+  "status": "OK",
+  "layer": "LISTING_OUTPUT_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LISTING_INPUT_CONTRACT_V1",
+  "contract_name": "listing_output_contract",
+  "required_fields": [
+    "title",
+    "category",
+    "description",
+    "price",
+    "item_specifics",
+    "images",
+    "status",
+    "approval_status",
+    "publish_ready"
+  ],
+  "quality_fields": [
+    "listing_quality_score",
+    "quality_gate_ready",
+    "listing_warnings",
+    "listing_improvements"
+  ],
+  "security_rules": [
+    "publish_ready_must_default_false",
+    "approval_required_before_publish",
+    "no_tokens_in_output",
+    "no_live_action_in_contract"
+  ],
+  "allowed_status": [
+    "draft",
+    "review",
+    "approved",
+    "rejected"
+  ],
+  "example_output": {
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "description": "German listing description",
+    "price": 7.99,
+    "item_specifics": {
+      "Typ": "USB-C Kabel",
+      "Länge": "2m"
+    },
+    "images": [
+      "image_main.jpg"
+    ],
+    "status": "review",
+    "approval_status": "review",
+    "publish_ready": false
+  },
+  "next_allowed_action": "build_approval_gate_v1"
+}

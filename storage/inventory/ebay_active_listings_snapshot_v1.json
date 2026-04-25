@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "mode": "READ_ONLY_SNAPSHOT",
+  "count": 1,
+  "items": [
+    {
+      "item_id": "SAFE_SAMPLE_001",
+      "title": "READ ONLY SAMPLE LISTING",
+      "price": 0,
+      "currency": "EUR",
+      "quantity": 0,
+      "status": "sample",
+      "url": null,
+      "image_urls": [],
+      "views": null,
+      "watchers": null,
+      "last_updated": null,
+      "raw": {
+        "ItemID": "SAFE_SAMPLE_001",
+        "Title": "READ ONLY SAMPLE LISTING",
+        "Price": 0,
+        "Currency": "EUR",
+        "Quantity": 0,
+        "Status": "sample",
+        "PictureURL": []
+      }
+    }
+  ],
+  "created_at": "2026-04-25T07:31:44.364778+00:00"
+}

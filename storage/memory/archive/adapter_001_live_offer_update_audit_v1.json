@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_live_offer_update_v1_completed",
+  "offer_id": "153365657011",
+  "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "update_status": 200,
+  "price_value": "3.99",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "policy_keys": [
+    "eBayPlusIfEligible"
+  ],
+  "next_step": "read_back_offer_after_update_then_prepare_shipping_location_policy_changes_if_needed"
+}

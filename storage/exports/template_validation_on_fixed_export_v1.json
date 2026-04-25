@@ -1,0 +1,27 @@
+{
+  "validation_status": "READY",
+  "validation_gate": "OPEN",
+  "next_step": "RUN_FIXED_REUPLOAD_PREP",
+  "reexport_status": "READY",
+  "reexport_gate": "OPEN",
+  "revalidation_status": "READY",
+  "field_alignment_ok": "YES",
+  "payload_complete": "YES",
+  "export_fields": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "payload_keys": [
+    "brand",
+    "item_specifics",
+    "price"
+  ],
+  "missing_in_payload": [],
+  "post_fix_status": "READY_FOR_REVALIDATION",
+  "source_files": {
+    "reexport": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\reexport_from_fixed_data_v1.json",
+    "revalidation": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\template_revalidation_v1.json",
+    "post_fix_validation": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\post_fix_validation_v2.json"
+  }
+}

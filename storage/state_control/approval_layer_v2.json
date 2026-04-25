@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "layer": "APPROVAL_LAYER_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREVIEW_LAYER_V2",
+  "input_status": "OK",
+  "approval_required": true,
+  "approval_auto_granted": true,
+  "approved": true
+}

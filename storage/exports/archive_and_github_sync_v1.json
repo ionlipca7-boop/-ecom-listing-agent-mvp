@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "decision": "archive_and_github_sync_v1_built",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "archive_and_github_sync_version": "v1",
+  "template_key": "baseline_template_v1",
+  "baseline_sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+  "baseline_offer_id": "153365657011",
+  "baseline_image_count": 9,
+  "archive_contract": {
+    "save_local_archive": true,
+    "verify_archive_after_write": true,
+    "archive_after_success": true,
+    "preserve_phase_history": true
+  },
+  "github_sync_contract": {
+    "github_sync_ready": true,
+    "auto_push_now": false,
+    "manual_review_before_push": true,
+    "use_github_as_backup_not_runtime": true
+  },
+  "future_flow": [
+    "step_success",
+    "write_local_archive",
+    "verify_archive",
+    "prepare_git_status",
+    "manual_review",
+    "optional_github_push"
+  ],
+  "next_step": "archive_multi_listing_system_v1"
+}

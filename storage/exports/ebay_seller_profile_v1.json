@@ -1,0 +1,10 @@
+{
+  "sellingLimit": {
+    "amount": {
+      "value": "50000",
+      "currency": "EUR"
+    },
+    "quantity": 5000
+  },
+  "sellerRegistrationCompleted": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "UNTRACKED_GROUPING_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_UNTRACKED_GROUPING_V1",
+  "input_status": "OK",
+  "untracked_grouping_result_built": true,
+  "snapshot_source": "storage/audit/git_status_snapshot_v1.txt",
+  "manual_grouping_pending": true,
+  "cleanup_allowed_now": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "prepare_untracked_grouping_review_v1"
+}

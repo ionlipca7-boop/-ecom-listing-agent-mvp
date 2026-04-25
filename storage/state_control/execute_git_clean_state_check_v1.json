@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_GIT_CLEAN_STATE_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_GIT_CLEAN_STATE_CHECK_V1",
+  "input_status": "OK",
+  "git_status_executed": true,
+  "delete_allowed": false,
+  "git_push_allowed": false,
+  "server_sync_allowed": false,
+  "next_allowed_action": "build_git_clean_state_check_result_v1"
+}

@@ -1,0 +1,16 @@
+{
+  "marketplace_id": "EBAY_DE",
+  "status": "OK",
+  "fulfillment": {
+    "http_status": 200,
+    "count": 1
+  },
+  "payment": {
+    "http_status": 200,
+    "count": 1
+  },
+  "return": {
+    "http_status": 200,
+    "count": 1
+  }
+}

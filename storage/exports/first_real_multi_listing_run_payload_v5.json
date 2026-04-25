@@ -1,0 +1,123 @@
+{
+  "status": "OK",
+  "decision": "real_multi_listing_run_payload_v5_built_from_archived_real_sources",
+  "mode": "baseline_clone",
+  "runtime_ready_for_live": true,
+  "blocking_fields": [],
+  "inventory_payload": {
+    "sku": "USB-C-OTG-Adapter-6A-120W-q10-p4.49",
+    "locale": "de_DE",
+    "product": {
+      "title": "USB-C OTG Adapter USB 3.0 Typ C auf USB-A 6A 120W Datenadapter",
+      "aspects": {
+        "Marke": [
+          "Markenlos"
+        ],
+        "Farbe": [
+          "Schwarz"
+        ],
+        "Produktart": [
+          "OTG Adapter"
+        ],
+        "Version": [
+          "USB 3.0"
+        ],
+        "Besonderheiten": [
+          "Kompakt",
+          "Tragbar",
+          "OTG Funktion"
+        ],
+        "Kompatibel mit": [
+          "Smartphone",
+          "Tablet",
+          "Laptop",
+          "USB-Stick",
+          "Maus",
+          "Tastatur"
+        ],
+        "Anschluss A": [
+          "USB-C"
+        ],
+        "Anschluss B": [
+          "USB-A"
+        ],
+        "Material": [
+          "Kunststoff"
+        ],
+        "Markenkompatibilitaet": [
+          "Universal"
+        ],
+        "Modellkompatibilitaet": [
+          "Universal"
+        ],
+        "Herstellernummer": [
+          "Nicht zutreffend"
+        ],
+        "Anzahl der Einheiten": [
+          "1"
+        ]
+      },
+      "description": "USB-C auf USB-A OTG Adapter mit USB 3.0 fuer schnelle Datenuebertragung und einfache Verbindung von USB-A Geraeten an USB-C Anschluesse. Geeignet fuer Smartphone, Tablet, Laptop, USB-Stick, Tastatur, Maus und weiteres kompatibles Zubehoer. Kompakt, leicht und ideal fuer Alltag, Reisen, Auto, Schule und Buero.",
+      "imageUrls": [
+        "https://ae01.alicdn.com/kf/S42fabc33d69c4f5592466804c540a072T.jpg"
+      ]
+    },
+    "condition": "NEW",
+    "packageWeightAndSize": {
+      "weight": {
+        "value": "0.05",
+        "unit": "KILOGRAM"
+      },
+      "shippingIrregular": false
+    },
+    "availability": {
+      "shipToLocationAvailability": {
+        "quantity": 10,
+        "allocationByFormat": {
+          "auction": 0,
+          "fixedPrice": 10
+        }
+      }
+    }
+  },
+  "offer_payload": {
+    "sku": "USB-C-OTG-Adapter-6A-120W-q10-p4.49",
+    "marketplaceId": "EBAY_DE",
+    "format": "FIXED_PRICE",
+    "availableQuantity": 12,
+    "categoryId": "30363",
+    "merchantLocationKey": "ECOM_DE_LOC_1",
+    "listingPolicies": {
+      "paymentPolicyId": "257755913024",
+      "returnPolicyId": "257755877024",
+      "fulfillmentPolicyId": "257755855024",
+      "eBayPlusIfEligible": false
+    },
+    "pricingSummary": {
+      "price": {
+        "value": "4.49",
+        "currency": "EUR"
+      }
+    },
+    "listingDescription": "<h2>USB-C auf USB-A OTG Adapter USB 3.0</h2><p><b>Kompakt, schnell und vielseitig einsetzbar.</b></p><p>Mit diesem Adapter verbinden Sie USB-A Geraete einfach mit modernen USB-C Anschluessen. Ideal fuer Smartphone, Tablet, Laptop und viele weitere kompatible Geraete.</p><ul><li>USB-C Stecker auf USB-A Buchse</li><li>USB 3.0 fuer schnelle Datenuebertragung</li><li>Geeignet fuer USB-Stick, Maus, Tastatur und weiteres Zubehoer</li><li>Kompaktes Format fuer unterwegs</li><li>Einfache Nutzung ohne komplizierte Einrichtung</li></ul><p><b>Einsatzbereiche:</b></p><ul><li>Handy und Tablet</li><li>Laptop und Notebook</li><li>USB-Stick und Speichergeraete</li><li>Maus, Tastatur und kleines USB-Zubehoer</li></ul><p><b>Hinweis:</b> Bitte vor dem Kauf die Anschluesse und die Kompatibilitaet Ihres Geraets pruefen.</p><p><b>Schneller Versand aus Deutschland.</b></p>",
+    "tax": {
+      "vatPercentage": 0.0,
+      "applyTax": false
+    }
+  },
+  "next_step": "execute_first_real_multi_listing_live_run_v2",
+  "payload": {
+    "listingPolicies": {
+      "fulfillmentPolicyId": "257755855024",
+      "paymentPolicyId": "257755913024",
+      "returnPolicyId": "257755877024"
+    }
+  },
+  "applied_real_policy_ids": {
+    "fulfillmentPolicyId": "257755855024",
+    "paymentPolicyId": "257755913024",
+    "returnPolicyId": "257755877024"
+  },
+  "payload_source_inventory": "adapter_001_content_upgrade_inventory_payload_v2.json",
+  "payload_source_offer": "adapter_001_content_upgrade_offer_payload_v2.json"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "CONTROL_ROOM_RUNTIME_BRIDGE_V1",
+  "input_exists": true,
+  "target_script_exists": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "next_allowed_action": "build_new_listing_from_clone_baseline_v1"
+}

@@ -1,0 +1,2 @@
+GENERATOR_AGENT_V4_OK
+output_file = D:\ECOM_LISTING_AGENT_MVP\storage\exports\generator_output_v4.json

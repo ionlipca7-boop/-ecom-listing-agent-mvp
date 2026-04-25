@@ -1,0 +1,12 @@
+{
+  "last_package": "package_20260414_070314",
+  "approval_status": "APPROVED",
+  "publish_mode": "REAL",
+  "approved_at": "2026-04-15T07:43:56Z",
+  "source_files": {
+    "final_publish_manifest": "final_publish_manifest_v1.json"
+  },
+  "checks": {
+    "final_publish_manifest_ready": true
+  }
+}

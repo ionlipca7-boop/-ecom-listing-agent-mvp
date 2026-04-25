@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "registry_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\products_registry_v1.json",
+  "action_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\control_action_v4.json",
+  "resolved_count": 1,
+  "resolved_actions": [
+    {
+      "action": "update_quantity",
+      "product_key": "cable_001",
+      "quantity": 35,
+      "sku": "ECOM-TEST-CABLE-001",
+      "offerId": "152921341011",
+      "status": "OK"
+    }
+  ]
+}

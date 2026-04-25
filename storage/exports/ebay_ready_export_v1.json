@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "exported_rows": 1,
+    "csv_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\ebay_ready_export_v1.csv"
+  },
+  "fieldnames": [
+    "sku",
+    "title",
+    "description",
+    "price",
+    "status"
+  ],
+  "rows": [
+    {
+      "sku": "SKU-001",
+      "title": "60W USB-C Ladekabel 2m",
+      "description": "Produkt: USB-C Ladekabel\nLeistung: 60W\nLänge: 2m\n- Schnellladen\n- Robustes Kabel\n- Hohe Kompatibilität",
+      "price": 5.5,
+      "status": "ready"
+    }
+  ]
+}

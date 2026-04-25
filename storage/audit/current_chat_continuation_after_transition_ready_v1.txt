@@ -1,0 +1,12 @@
+CURRENT CHAT CONTINUATION AFTER TRANSITION READY V1
+
+STATUS
+- transition package remains final ready
+- operator decided to continue in current chat
+- new chat remains allowed but is not mandatory now
+- destructive actions still forbidden
+- archive move not started
+- delete not started
+
+NEXT SAFE ACTION
+- define_next_post_transition_project_step_v1

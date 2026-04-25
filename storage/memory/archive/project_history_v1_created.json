@@ -1,0 +1,10 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP_CONTROL_ROOM",
+  "archive_type": "PROJECT_HISTORY_CREATED",
+  "phase": "CONTROL_LAYER_V1",
+  "history_created": true,
+  "previous_missing_now_fixed": "history",
+  "foundation_restored": true,
+  "next_step": "re_run_canon_9_step_audit_after_foundation_restore"
+}

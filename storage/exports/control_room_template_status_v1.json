@@ -1,0 +1,7 @@
+{
+  "template_status": "READY",
+  "blocked_row_count": 0,
+  "ok_row_count": 1,
+  "next_step": "EXPORT_EBAY_TEMPLATE_FILE_READY",
+  "source_validation_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\required_template_fields_validation_v1.json"
+}

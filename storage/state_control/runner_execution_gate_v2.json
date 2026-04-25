@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "layer": "RUNNER_EXECUTION_GATE_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "RUNNER_PREPARATION_V2",
+  "execution_allowed": true,
+  "execution_mode": "CONTROLLED"
+}

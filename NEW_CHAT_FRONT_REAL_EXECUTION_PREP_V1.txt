@@ -1,0 +1,22 @@
+ION / E1 NEW CHAT ENTRY - REAL EXECUTION PREP STOP V1
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+CURRENT STATE
+- layer = STOP_AFTER_REAL_EXECUTION_PREP_V1
+- finish_layer = FINISH_READY_REAL_EXECUTION
+- route_complete = TRUE
+- controlled_real_execution_prep = TRUE
+- real_publish_allowed = FALSE
+- publish_called = FALSE
+- real_ebay_api_call_allowed = FALSE
+- next_allowed_action = STOP
+
+SOURCE OF TRUTH
+storage/state_control/finish_ready_real_execution_v1.json
+storage/state_control/stop_after_real_execution_prep_v1.json
+storage/memory/archive/transition_after_real_execution_prep_stop_v1.json
+
+STRICT RULE
+Do not continue execution automatically. Next chat starts from STOP verification only.

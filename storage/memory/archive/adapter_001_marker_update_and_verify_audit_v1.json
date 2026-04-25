@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "decision": "adapter_001_marker_update_and_verify_v1_completed",
+  "offer_get_status": 200,
+  "offer_put_status": 200,
+  "offer_readback_status": 200,
+  "inventory_readback_status": 200,
+  "price_value": "4.01",
+  "merchantLocationKey": "ECOM_DE_LOC_1",
+  "image_count": 1,
+  "listingPolicies": {
+    "eBayPlusIfEligible": false
+  },
+  "photo_upgrade_ready": "yes",
+  "next_step": "use_real_new_photo_urls_or_uploaded_photos_for_photo_upgrade"
+}

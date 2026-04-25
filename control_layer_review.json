@@ -1,0 +1,30 @@
+{
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "CONTROL_LAYER",
+  "phase": 10,
+  "current_step": "finalize_control_layer_review",
+  "next_step": "wait_for_next_project_specific_instruction",
+  "status": "CONTROL_LAYER_COMPLETE",
+  "canonical_line_complete": true,
+  "history_valid": true,
+  "live_operations_enabled": false,
+  "migration_executed": false,
+  "completed_assets": [
+    "project_manifest.json",
+    "control_rules.json",
+    "project_state.json",
+    "project_history.jsonl",
+    "control_agent.py",
+    "archivist_agent.py",
+    "runner_agent.py",
+    "n8n_orchestration.json",
+    "compact_core_migration.json"
+  ],
+  "review_result": {
+    "project_specific_only": true,
+    "side_branches_used": false,
+    "live_actions_performed": false,
+    "control_contracts_defined": true
+  },
+  "mode": "PROJECT_SPECIFIC_ONLY"
+}
