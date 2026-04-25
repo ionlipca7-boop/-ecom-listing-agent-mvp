@@ -1,0 +1,29 @@
+ION / E1 NEW CHAT AFTER TOKEN REPAIR V1
+
+PROJECT: ECOM LISTING AGENT MVP / CONTROL ROOM
+LANGUAGE: Russian only
+FORMAT: Strict ION
+
+LAST CONFIRMED LAYER: VERIFY_EBAY_ACCESS_TOKEN_READ_ONLY_V1
+CURRENT POSITION: phase4_limited_live_token_repaired_read_only_verified
+NEXT ALLOWED ACTION: reopen_phase4_one_live_listing_after_token_repair_v1
+
+CONFIRMED:
+- Phase 1 safe runtime PASS, Telegram already active
+- Phase 2 approval link dry PASS
+- Phase 3 dry full flow PASS
+- Phase 4 limited live gate opened
+- First live publish attempt failed safely: 401 invalid access token
+- Token refresh repaired: HTTP 200, token_refreshed true
+- Read-only token verify OK
+- live listing created: false
+- publish/revise/delete/auto currently false
+
+STRICT RULES:
+- Continue only from next_allowed_action
+- No batch publish
+- No auto publish
+- No revise/delete
+- One live listing only after gate
+- Use writer-script for complex Python
+- No multiline complex py -c

@@ -1,0 +1,18 @@
+{
+  "status": "AWAIT_CONFIRMATION",
+  "layer": "PREPARE_PHASE4_RETRY_WRAPPER_V2_WITH_ALIGNED_TOKEN_SOURCE_V1",
+  "wrapper_created": true,
+  "wrapper_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\phase4_retry_wrapper_v2_with_aligned_token_source_v1.py",
+  "confirmation_required": true,
+  "operator_must_confirm_exact_phrase": "CONFIRM RUN PHASE4 RETRY V2 ALIGNED TOKEN ONE LIVE PUBLISH NOW",
+  "publish_called": false,
+  "safety": {
+    "one_live_only": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "await_confirmation_run_phase4_retry_wrapper_v2_v1",
+  "timestamp": "2026-04-25T14:16:41.122395+00:00"
+}

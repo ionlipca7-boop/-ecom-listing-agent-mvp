@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "REOPEN_PHASE4_ONE_LIVE_LISTING_AFTER_TOKEN_REPAIR_V1",
+  "previous_layer": "PREPARE_SAFE_RUNTIME_GATE_V1",
+  "token_verify_file_exists": true,
+  "token_verify_status": "OK",
+  "candidate_file_exists": true,
+  "candidate_status": "OK",
+  "gate": {
+    "phase4_reopened": true,
+    "one_live_listing_allowed_after_manual_confirmation": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "prepare_phase4_selected_executor_final_preflight_v1",
+  "note": "gate reopened only; no publish call executed",
+  "timestamp": "2026-04-25T13:55:41.792751+00:00"
+}

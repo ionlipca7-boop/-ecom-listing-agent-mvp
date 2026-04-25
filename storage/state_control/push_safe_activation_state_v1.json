@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PUSH_SAFE_ACTIVATION_STATE_AND_VERIFY_SYNC_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "branch_status": "## control-room-sync-2026-04-25...origin/control-room-sync-2026-04-25\n?? .env.local\n?? 3\n?? nul\n?? storage/state_control/commit_post_pull_gate_state_v1.json",
+  "last_commits": [
+    "52a4c88 Record post pull runtime gate state v1",
+    "6858946 Save safe activation local state before runtime sync",
+    "a0a5ed7 Add GitHub auto sync policy v1"
+  ],
+  "remaining_dirty_lines": [
+    "?? .env.local",
+    "?? 3",
+    "?? nul",
+    "?? storage/state_control/commit_post_pull_gate_state_v1.json"
+  ],
+  "push_done": true,
+  "runtime_start_allowed": false,
+  "server_start_allowed": false,
+  "telegram_start_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "open_safe_runtime_gate_v1"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_PHASE4_RESULT_AND_TOKEN_STATE_BEFORE_ANY_RETRY_V1",
+  "publish_called_now": false,
+  "old_exec_status": "CHECK_REQUIRED",
+  "old_audit_status": "FAILED",
+  "old_http_status": 401,
+  "token_verify_status": "OK",
+  "executor_exists": true,
+  "mtimes": {
+    "recovery": "2026-04-25T16:01:07.275654",
+    "exec": "2026-04-25T15:39:48.185340",
+    "audit": "2026-04-25T15:39:48.133734",
+    "token": "2026-04-25T15:46:46.199426",
+    "confirm": "2026-04-25T15:57:01.054791",
+    "executor": "2026-04-17T11:49:16.831589"
+  },
+  "decision": {
+    "retry_possible_after_new_gate": true,
+    "retry_allowed_now": false,
+    "publish_allowed_now": false,
+    "needs_new_exact_confirmation": true
+  },
+  "next_allowed_action": "prepare_phase4_retry_gate_with_writer_script_v1",
+  "timestamp": "2026-04-25T14:01:52.304222+00:00"
+}

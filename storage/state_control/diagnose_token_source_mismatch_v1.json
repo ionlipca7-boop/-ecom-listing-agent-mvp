@@ -1,0 +1,70 @@
+{
+  "status": "OK",
+  "layer": "DIAGNOSE_TOKEN_SOURCE_MISMATCH_V1",
+  "publish_called": false,
+  "problem": "refresh returncode 0 but publish still 401, likely token source mismatch",
+  "scan": {
+    "storage\\tools\\safe_ebay_token_refresh_v1.py": {
+      "exists": true,
+      "size": 2635,
+      "mtime": "2026-04-25T15:45:56.159052",
+      "mentions": {
+        "env_local": true,
+        "dotenv": false,
+        "os_environ": false,
+        "EBAY_ACCESS_TOKEN": true,
+        "ACCESS_TOKEN": true,
+        "Authorization": true,
+        "Bearer": false
+      }
+    },
+    "run_ebay_publish_offer_v6.py": {
+      "exists": true,
+      "size": 2031,
+      "mtime": "2026-04-17T11:49:16.831589",
+      "mentions": {
+        "env_local": false,
+        "dotenv": false,
+        "os_environ": false,
+        "EBAY_ACCESS_TOKEN": false,
+        "ACCESS_TOKEN": false,
+        "Authorization": true,
+        "Bearer": true
+      }
+    },
+    ".env.local": {
+      "exists": true,
+      "size": 2744,
+      "mtime": "2026-04-25T16:06:40.040010",
+      "keys": [
+        "EBAY_CLIENT_ID",
+        "EBAY_CLIENT_SECRET",
+        "EBAY_RU_NAME",
+        "EBAY_ACCESS_TOKEN",
+        "EBAY_REFRESH_TOKEN"
+      ]
+    },
+    "storage\\state_control\\run_safe_ebay_token_refresh_v2.json": {
+      "exists": true,
+      "size": 537,
+      "mtime": "2026-04-25T16:06:40.041092",
+      "json_status": "OK",
+      "json_http_status": 200,
+      "json_token_refreshed": true
+    },
+    "storage\\state_control\\execute_phase4_retry_one_live_publish_with_auto_token_guard_v1.json": {
+      "exists": true,
+      "size": 1134,
+      "mtime": "2026-04-25T16:06:41.769666",
+      "json_status": "CHECK_REQUIRED",
+      "json_http_status": null,
+      "json_token_refreshed": null
+    }
+  },
+  "decision": {
+    "retry_allowed_now": false,
+    "publish_allowed_now": false,
+    "next_fix": "align_publish_executor_token_source_v1"
+  },
+  "timestamp": "2026-04-25T14:07:34.473704+00:00"
+}

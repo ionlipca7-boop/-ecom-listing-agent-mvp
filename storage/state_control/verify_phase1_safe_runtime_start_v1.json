@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_PHASE1_SAFE_RUNTIME_START_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_1_SAFE_RUNTIME_START",
+  "server_ok": true,
+  "telegram_getme_ok": true,
+  "telegram_getupdates_conflict": true,
+  "telegram_runtime_already_active": true,
+  "second_telegram_instance_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "phase1_result": "PASS_WITH_TELEGRAM_ALREADY_ACTIVE",
+  "next_allowed_action": "prepare_phase2_approval_action_link_gate_v1"
+}

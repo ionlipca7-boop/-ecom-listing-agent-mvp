@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_ALIGNED_PUBLISH_EXECUTOR_TOKEN_SOURCE_V1",
+  "publish_called": false,
+  "wrapper_exists": true,
+  "publish_executor_exists": true,
+  "env_exists": true,
+  "wrapper_loads_env_local": true,
+  "wrapper_sets_os_environ": true,
+  "wrapper_runs_executor": true,
+  "decision": {
+    "token_source_aligned": true,
+    "retry_allowed_now": false,
+    "needs_exact_confirmation": true,
+    "github_push_allowed_now": false
+  },
+  "next_allowed_action": "prepare_phase4_retry_wrapper_v2_with_aligned_token_source_v1",
+  "timestamp": "2026-04-25T14:12:52.781835+00:00"
+}

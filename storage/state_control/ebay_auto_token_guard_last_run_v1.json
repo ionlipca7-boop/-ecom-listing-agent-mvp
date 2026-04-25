@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "EBAY_AUTO_TOKEN_GUARD_LAST_RUN_V1",
+  "returncode": 0,
+  "stdout_tail": "OK\nD:\\ECOM_LISTING_AGENT_MVP\\storage\\state_control\\run_safe_ebay_token_refresh_v2.json\n",
+  "stderr_tail": "",
+  "secrets_printed": false,
+  "timestamp": "2026-04-25T14:19:06.254073+00:00"
+}

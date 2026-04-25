@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "RUN_SAFE_EBAY_TOKEN_REFRESH_V2",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "env_exists": true,
+  "required_keys_present": true,
+  "http_status": 200,
+  "token_refreshed": true,
+  "expires_in_seconds": 7200,
+  "error_type": null,
+  "secrets_printed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "timestamp": "2026-04-25T14:19:06.213308+00:00",
+  "next_allowed_action": "verify_ebay_access_token_read_only_v1"
+}

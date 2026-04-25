@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "BUILD_PHASE4_RETRY_EXECUTOR_WITH_AUTO_TOKEN_GUARD_V1",
+  "wrapper_created": true,
+  "wrapper_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\phase4_retry_one_live_publish_with_auto_token_guard_v1.py",
+  "publish_called": false,
+  "next_allowed_action": "await_confirmation_to_run_phase4_retry_wrapper_v1",
+  "timestamp": "2026-04-25T14:05:06.073235+00:00"
+}

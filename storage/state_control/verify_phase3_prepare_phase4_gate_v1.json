@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_PHASE3_AND_PREPARE_PHASE4_LIMITED_LIVE_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase3_result": "PASS",
+  "phase4": "PHASE_4_LIMITED_LIVE",
+  "limited_live_gate_ready": true,
+  "one_listing_manual_allowed": false,
+  "operator_confirmation_required": true,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "publish_allowed": false,
+  "reason": "PHASE 4 gate prepared only. One live listing requires explicit next approval.",
+  "timestamp": "2026-04-25T13:33:23.894319+00:00",
+  "next_allowed_action": "await_phase4_one_live_listing_explicit_approval_v1"
+}

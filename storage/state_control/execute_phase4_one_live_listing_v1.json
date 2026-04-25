@@ -1,0 +1,31 @@
+{
+  "status": "CHECK_REQUIRED",
+  "layer": "EXECUTE_PHASE4_ONE_LIVE_LISTING_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "executor": "run_ebay_publish_offer_v6.py",
+  "returncode": 1,
+  "stdout_tail": [
+    "PUBLISH_OFFER_V6_DONE",
+    "http_status = 401",
+    "offerId = 152921341011",
+    "first_error_code = 1001",
+    "first_error_message = Invalid access token",
+    "first_error_json =",
+    "{",
+    "  \"errorId\": 1001,",
+    "  \"domain\": \"OAuth\",",
+    "  \"category\": \"REQUEST\",",
+    "  \"message\": \"Invalid access token\",",
+    "  \"longMessage\": \"Invalid access token. Check the value of the Authorization HTTP request header.\"",
+    "}"
+  ],
+  "stderr_tail": [],
+  "max_live_listings_now": 1,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "timestamp": "2026-04-25T13:39:48.184776+00:00",
+  "next_allowed_action": "verify_phase4_one_live_listing_v1"
+}

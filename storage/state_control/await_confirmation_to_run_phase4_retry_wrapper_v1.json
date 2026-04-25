@@ -1,0 +1,18 @@
+{
+  "status": "AWAIT_CONFIRMATION",
+  "layer": "AWAIT_CONFIRMATION_TO_RUN_PHASE4_RETRY_WRAPPER_V1",
+  "previous_layer": "BUILD_PHASE4_RETRY_EXECUTOR_WITH_AUTO_TOKEN_GUARD_V1",
+  "confirmation_required": true,
+  "operator_must_confirm_exact_phrase": "CONFIRM RUN PHASE4 TOKEN GUARD ONE LIVE PUBLISH NOW",
+  "will_run": "token_guard_then_one_live_publish",
+  "safety": {
+    "publish_called": false,
+    "one_live_only": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "run_phase4_retry_wrapper_after_exact_confirmation_v1",
+  "timestamp": "2026-04-25T14:05:41.960452+00:00"
+}

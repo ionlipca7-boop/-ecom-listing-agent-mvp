@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHASE2_APPROVAL_ACTION_LINK_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_2_APPROVAL_ACTION_LINK",
+  "required_contracts": {
+    "storage/state_control/build_j_telegram_approval_mapping_v1.json": true,
+    "storage/state_control/build_j_telegram_command_router_contract_v1.json": true,
+    "storage/state_control/build_j_telegram_notification_payloads_v1.json": true,
+    "storage/state_control/finish_f_approval_gate_v1.json": true,
+    "storage/state_control/finish_g_auto_publish_queue_v1.json": true
+  },
+  "approval_link_gate_ready": true,
+  "approve_command_allowed": true,
+  "approval_may_unlock_next_gate": true,
+  "approval_direct_publish_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "telegram_write_allowed": false,
+  "operator_rule": "/approve may only mark internal approval state or unlock next gate. It must not publish directly.",
+  "next_allowed_action": "execute_phase2_approval_action_link_dry_verify_v1"
+}

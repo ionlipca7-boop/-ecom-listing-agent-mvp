@@ -1,0 +1,11 @@
+ION / E1 TOKEN GUARD LOCKED BEFORE PHASE4 RETRY V1
+
+LAST CONFIRMED LAYER: LOCK_EBAY_WRITE_ACTIONS_BEHIND_AUTO_TOKEN_GUARD_V1
+CURRENT POSITION: token_guard_fixed_verified_locked_no_live_retry_yet
+NEXT ALLOWED ACTION: prepare_github_gate_for_token_guard_state_v1
+
+RULES:
+- no direct publish executor without guard
+- no live retry before new gate
+- no push before git gate
+- no secrets printed

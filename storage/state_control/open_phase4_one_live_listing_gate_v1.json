@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "OPEN_PHASE4_ONE_LIVE_LISTING_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "operator_approval_received": true,
+  "one_listing_manual_allowed": true,
+  "max_live_listings_now": 1,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "publish_allowed": true,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "safety_rules": [
+    "ONLY ONE LISTING",
+    "MANUAL CONTROL ONLY",
+    "NO BATCH",
+    "NO AUTO LOOP",
+    "VERIFY AFTER EXECUTION"
+  ],
+  "live_action_executed": false,
+  "timestamp": "2026-04-25T13:35:14.164566+00:00",
+  "next_allowed_action": "execute_phase4_one_live_listing_v1"
+}

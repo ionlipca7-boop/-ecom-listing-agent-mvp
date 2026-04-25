@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PHASE3_DRY_RUN_FULL_FLOW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_3_DRY_RUN_FULL_FLOW",
+  "timestamp": "2026-04-25T13:32:50.421185+00:00",
+  "flow_steps": [
+    "generate_dry_listing",
+    "notify_dry_payload",
+    "approve_dry_command",
+    "queue_dry_item"
+  ],
+  "generated_item": {
+    "sku": "DRY_RUN_ITEM_001",
+    "title": "DRY RUN LISTING - NO LIVE EBAY ACTION",
+    "status": "draft"
+  },
+  "notification_payload_built": true,
+  "approval_command": "/approve DRY_RUN_ITEM_001",
+  "internal_approval_marked": true,
+  "queue_item_created": true,
+  "queue_live_execute_allowed": false,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "auto_publish_allowed": false,
+  "result": "PASS_DRY_FULL_FLOW",
+  "next_allowed_action": "verify_phase3_dry_run_full_flow_v1"
+}

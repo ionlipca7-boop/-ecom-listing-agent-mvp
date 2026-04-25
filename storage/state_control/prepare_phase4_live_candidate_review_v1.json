@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHASE4_LIVE_CANDIDATE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "candidate_files": {
+    "storage\\exports\\listing_clone_baseline_v1.json": true,
+    "storage\\exports\\live_listing_snapshot_v1.json": true,
+    "storage\\exports\\publish_variant_control_room_v1.json": true
+  },
+  "operator_explicit_approval_required": true,
+  "one_listing_manual_allowed": false,
+  "publish_allowed": false,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "live_action_executed": false,
+  "timestamp": "2026-04-25T13:34:05.176884+00:00",
+  "next_allowed_action": "operator_must_confirm_phase4_one_live_listing_v1"
+}

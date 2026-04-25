@@ -1,0 +1,20 @@
+{
+  "status": "AWAIT_CONFIRMATION",
+  "layer": "PREPARE_PHASE4_RETRY_GATE_WITH_WRITER_SCRIPT_V1",
+  "previous_layer": "VERIFY_PHASE4_RESULT_AND_TOKEN_STATE_BEFORE_ANY_RETRY_V1",
+  "executor": "run_ebay_publish_offer_v6.py",
+  "writer_script_required": true,
+  "confirmation_required": true,
+  "operator_must_confirm_exact_phrase": "CONFIRM PHASE4 RETRY ONE LIVE EBAY PUBLISH NOW",
+  "safety": {
+    "publish_called": false,
+    "retry_allowed_now": false,
+    "one_live_only": true,
+    "batch_publish_allowed": false,
+    "auto_publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false
+  },
+  "next_allowed_action": "await_explicit_operator_confirmation_for_phase4_retry_one_live_publish_v1",
+  "timestamp": "2026-04-25T14:02:57.813365+00:00"
+}

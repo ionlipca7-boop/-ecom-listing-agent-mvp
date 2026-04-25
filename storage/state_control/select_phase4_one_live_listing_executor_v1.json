@@ -1,0 +1,158 @@
+{
+  "status": "OK",
+  "layer": "SELECT_PHASE4_ONE_LIVE_LISTING_EXECUTOR_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "safe_executor_candidates_count": 22,
+  "safe_executor_candidates": [
+    {
+      "file": "run_adapter_001_live_offer_policy_readback_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2157
+    },
+    {
+      "file": "run_adapter_001_live_offer_policy_update_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 3657
+    },
+    {
+      "file": "run_adapter_001_live_offer_readback_verify_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2400
+    },
+    {
+      "file": "run_adapter_001_live_offer_update_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 3472
+    },
+    {
+      "file": "run_adapter_001_offer_update_auto_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1195
+    },
+    {
+      "file": "run_adapter_001_offer_update_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1144
+    },
+    {
+      "file": "run_ebay_get_offer_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2322
+    },
+    {
+      "file": "run_ebay_get_offer_v3.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1121
+    },
+    {
+      "file": "run_ebay_publish_offer_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2359
+    },
+    {
+      "file": "run_ebay_publish_offer_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2580
+    },
+    {
+      "file": "run_ebay_publish_offer_v3.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2184
+    },
+    {
+      "file": "run_ebay_publish_offer_v4.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2040
+    },
+    {
+      "file": "run_ebay_publish_offer_v5.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2031
+    },
+    {
+      "file": "run_ebay_publish_offer_v6.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2031
+    },
+    {
+      "file": "run_ebay_update_offer_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 3053
+    },
+    {
+      "file": "run_ebay_update_offer_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2803
+    },
+    {
+      "file": "run_get_live_offer_adapter_001_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 2031
+    },
+    {
+      "file": "run_get_live_offer_adapter_001_v2.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1688
+    },
+    {
+      "file": "run_get_live_offer_adapter_001_v3.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1710
+    },
+    {
+      "file": "run_get_offer_details_v1.py",
+      "has_publish_call": true,
+      "has_batch_words": false,
+      "has_delete_or_revise": false,
+      "size": 1505
+    }
+  ],
+  "all_scanned_count": 92,
+  "selected_executor": "run_adapter_001_live_offer_policy_readback_v2.py",
+  "publish_executed": false,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "timestamp": "2026-04-25T13:36:57.389159+00:00",
+  "next_allowed_action": "prepare_phase4_selected_executor_final_preflight_v1"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_BY_TOKEN",
+  "layer": "VERIFY_PHASE4_FAILED_TOKEN_PREPARE_TOKEN_REPAIR_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "phase": "PHASE_4_LIMITED_LIVE",
+  "publish_attempted": true,
+  "publish_success": false,
+  "http_401_invalid_token": true,
+  "offerId": "152921341011",
+  "token_repair_required": true,
+  "live_listing_created": false,
+  "batch_publish_allowed": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "secrets_printed": false,
+  "timestamp": "2026-04-25T13:40:37.691483+00:00",
+  "next_allowed_action": "repair_ebay_access_token_v1"
+}
