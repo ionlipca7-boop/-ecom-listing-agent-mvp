@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "COMMIT_SAFE_LOCAL_STATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "last_commit": "6529e97 Save safe activation local state before runtime sync",
+  "remaining_dirty_lines": [
+    "?? .env.local",
+    "?? 3",
+    "?? nul"
+  ],
+  "env_still_untracked": true,
+  "pull_allowed": true,
+  "push_allowed": false,
+  "runtime_start_allowed": false,
+  "next_allowed_action": "pull_remote_updates_after_local_commit_v1"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_POST_PULL_RUNTIME_GATE_AND_PREPARE_PUSH_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "runtime_assets_confirmed": true,
+  "required_entrypoints": {
+    "run_control_room.py": true,
+    "bot.py": true,
+    "n8n_orchestration.json": true,
+    "storage/state_control/telegram_token_gate_v1.json": true,
+    "storage/state_control/server_runtime_plan_v1.json": true,
+    "storage/state_control/telegram_bot_plan_v1.json": true
+  },
+  "last_commits": [
+    "6858946 Save safe activation local state before runtime sync",
+    "a0a5ed7 Add GitHub auto sync policy v1",
+    "e1c5bf1 Sync control room automation state 2026-04-25",
+    "183f6b6 CONTROL_ROOM_SNAPSHOT_V1",
+    "61ca5d2 archive sync v1"
+  ],
+  "branch_status": "## control-room-sync-2026-04-25...origin/control-room-sync-2026-04-25 [ahead 1]\n?? .env.local\n?? 3\n?? nul\n?? storage/state_control/commit_safe_local_state_v1.json\n?? storage/state_control/pull_remote_updates_after_local_commit_v1.json",
+  "remaining_dirty_lines": [
+    "?? .env.local",
+    "?? 3",
+    "?? nul",
+    "?? storage/state_control/commit_safe_local_state_v1.json",
+    "?? storage/state_control/pull_remote_updates_after_local_commit_v1.json"
+  ],
+  "only_allowed_dirty": false,
+  "server_start_allowed": false,
+  "telegram_start_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "push_allowed": false,
+  "push_gate_prepared": true,
+  "next_allowed_action": "commit_post_pull_gate_state_v1_then_push_or_open_safe_runtime_gate_v1"
+}
