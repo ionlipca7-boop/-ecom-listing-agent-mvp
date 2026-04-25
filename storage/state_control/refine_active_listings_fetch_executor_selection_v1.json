@@ -1,0 +1,51 @@
+{
+  "status": "OK",
+  "layer": "REFINE_ACTIVE_LISTINGS_FETCH_EXECUTOR_SELECTION_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "inspection_rows": [
+    {
+      "file": "run_capture_live_listing_snapshot_v1.py",
+      "exists": true,
+      "score": 6,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_live_listing_recovery_audit_v2.py",
+      "exists": true,
+      "score": 4,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_live_listing_recovery_audit_v1.py",
+      "exists": true,
+      "score": 4,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_manage_live_listing_v2.py",
+      "exists": true,
+      "score": 5,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_post_inventory_read_verification_v1.py",
+      "exists": true,
+      "score": 4,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_current_listing_read_plan_v1.py",
+      "exists": true,
+      "score": 4,
+      "has_write_terms": false
+    }
+  ],
+  "selected_executor": "run_capture_live_listing_snapshot_v1.py",
+  "selection_reason": "prefer live/snapshot/read candidate over contract builder",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "build_guarded_active_listings_fetch_wrapper_v1",
+  "timestamp": "2026-04-25T11:37:52.426066+00:00"
+}

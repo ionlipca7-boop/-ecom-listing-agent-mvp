@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "PREPARE_G_AUTO_PUBLISH_QUEUE_CONTRACT_V1",
+  "input_layer": "START_G_AUTO_PUBLISH_QUEUE_ENTRY_V1",
+  "current_block": "G_AUTO_PUBLISH_QUEUE",
+  "contract": {
+    "mode": "SAFE_LOCKED",
+    "max_publish_per_day": 3,
+    "min_publish_per_day": 1,
+    "interval_hours_min": 1,
+    "interval_hours_max": 2,
+    "approval_required_before_each_publish": true,
+    "auto_publish_enabled": false,
+    "mass_publish_forbidden": true,
+    "ebay_limits_required": true
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "scan_g_auto_publish_queue_assets_v1",
+  "timestamp": "2026-04-25T12:11:34.411978+00:00"
+}

@@ -1,0 +1,87 @@
+{
+  "status": "OK",
+  "layer": "DISCOVER_LIVE_IDENTIFIER_RESOLVER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "reason": "real read blocked because identifier placeholder is not resolved",
+  "candidate_count": 101,
+  "best_candidates": [
+    {
+      "file": "run_audit_identifier_source_chain_v1.py",
+      "size": 2513,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_live_identifier_resolution_result_stub_v1.py",
+      "size": 2229,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_live_identifier_resolution_result_v1.py",
+      "size": 1575,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_live_inventory_identifier_probe_v1.py",
+      "size": 2547,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_product_registry_identifier_resolution_probe_v1.py",
+      "size": 2566,
+      "has_identifier": true,
+      "has_sku": false,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_inventory_read_call_v1.py",
+      "size": 2340,
+      "has_identifier": true,
+      "has_sku": false,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_inventory_read_call_v2.py",
+      "size": 1606,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_choose_live_inventory_identifier_source_v1.py",
+      "size": 2411,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_identifier_seed_probe_v1.py",
+      "size": 2950,
+      "has_identifier": true,
+      "has_sku": true,
+      "has_read": true,
+      "has_write_terms": false
+    }
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "select_live_identifier_resolver_v1",
+  "timestamp": "2026-04-25T11:22:42.823989+00:00"
+}

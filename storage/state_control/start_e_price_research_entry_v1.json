@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_E_PRICE_RESEARCH_ENTRY_V1",
+  "input_layer": "FINISH_D_LISTING_ENGINE_V1",
+  "current_block": "E_PRICE_RESEARCH",
+  "previous_block_finished": "D_LISTING_ENGINE",
+  "price_research_requirements": {
+    "language": "German",
+    "market": "eBay Germany",
+    "compare_competitors": true,
+    "safe_price_suggestion": true,
+    "approval_required_before_publish": true
+  },
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_e_price_research_local_inventory_scan_v1",
+  "timestamp": "2026-04-25T12:01:07.955871+00:00"
+}

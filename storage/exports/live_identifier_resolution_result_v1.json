@@ -1,9 +1,12 @@
 {
   "status": "OK",
-  "decision": "live_identifier_resolution_result_v1_created",
-  "identifier_source": "registry_resolution_call_v1",
+  "decision": "real_sku_identifier_resolution_created",
+  "identifier_source": "local_verified_sku_candidate",
   "identifier_type": "sku",
-  "identifier_value": "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER",
-  "resolved_ok": false,
+  "identifier_value": "ECOM-TEST-CABLE-001",
+  "resolved_ok": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
   "next_step": "rebuild_real_inventory_read_call_v2_with_real_identifier"
 }

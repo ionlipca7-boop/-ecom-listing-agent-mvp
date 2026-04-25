@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_LIVE_EBAY_ACTIVE_LISTINGS_READ_ONLY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "executor": "D:\\ECOM_LISTING_AGENT_MVP\\run_build_real_inventory_read_call_v2.py",
+  "guard_ok": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "timestamp": "2026-04-25T11:35:12.700664+00:00",
+  "returncode": 0,
+  "stdout_tail": "REAL_INVENTORY_READ_CALL_V2_OK\nidentifier_type = sku\nidentifier_value = ECOM-TEST-CABLE-001\nready_for_real_inventory_read = True\n",
+  "stderr_tail": "",
+  "next_allowed_action": "parse_live_ebay_active_listings_snapshot_v1"
+}

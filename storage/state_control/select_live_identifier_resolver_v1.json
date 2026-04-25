@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "layer": "SELECT_LIVE_IDENTIFIER_RESOLVER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "inspection_rows": [
+    {
+      "file": "run_build_live_identifier_resolution_result_v1.py",
+      "exists": true,
+      "size": 1575,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_choose_live_inventory_identifier_source_v1.py",
+      "exists": true,
+      "size": 2411,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_live_inventory_identifier_probe_v1.py",
+      "exists": true,
+      "size": 2547,
+      "has_read_terms": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_identifier_seed_probe_v1.py",
+      "exists": true,
+      "size": 2950,
+      "has_read_terms": true,
+      "has_write_terms": false
+    }
+  ],
+  "selected_resolver": "run_build_live_identifier_resolution_result_v1.py",
+  "execution_allowed_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "build_guarded_live_identifier_resolver_wrapper_v1",
+  "timestamp": "2026-04-25T11:25:26.381393+00:00"
+}

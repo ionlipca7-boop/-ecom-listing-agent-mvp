@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_G_AUTO_PUBLISH_QUEUE_V1",
+  "input_layer": "RESTORE_G_AUTO_PUBLISH_QUEUE_SAFE_LOCKED_V1",
+  "finished_block": "G_AUTO_PUBLISH_QUEUE",
+  "block_g_finished": true,
+  "queue_ready": true,
+  "queue_mode": "SAFE_LOCKED",
+  "auto_publish_enabled": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "H_DAILY_STRATEGY",
+  "next_allowed_action": "start_h_daily_strategy_entry_v1",
+  "timestamp": "2026-04-25T12:14:55.961678+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "J_TELEGRAM_NOTIFICATIONS",
+  "layer": "BUILD_J_TELEGRAM_NOTIFICATION_PAYLOADS_V1",
+  "input_layer": "CONTINUE_J_TELEGRAM_NOTIFICATIONS_CONTRACT_V1",
+  "input_status_ok": true,
+  "runtime_started": false,
+  "payloads": {
+    "listing_without_views": {
+      "trigger": "views_0_after_5_7_days",
+      "text_ru": "Листинг без просмотров: {title} / {item_id}",
+      "action": "UPDATE_CANDIDATE"
+    },
+    "ready_for_update": {
+      "trigger": "update_candidate_ready",
+      "text_ru": "Готов к обновлению: {title} / {item_id}",
+      "action": "WAIT_APPROVAL"
+    },
+    "new_listing_created": {
+      "trigger": "draft_created",
+      "text_ru": "Новый листинг создан: {title} / {sku}",
+      "action": "WAIT_APPROVAL"
+    },
+    "approval_required": {
+      "trigger": "publish_or_update_requires_approval",
+      "text_ru": "Требуется подтверждение: {operation} / {title}",
+      "action": "APPROVE_OR_REJECT"
+    },
+    "inventory_status": {
+      "trigger": "inventory_command",
+      "text_ru": "Inventory: active={active_count}, drafts={draft_count}, blocked={blocked_count}",
+      "action": "READ_ONLY_STATUS"
+    }
+  },
+  "commands": {
+    "/status": "return_control_room_status_read_only",
+    "/approve": "approve_pending_action_by_id_only_no_auto_publish",
+    "/reject": "reject_pending_action_by_id",
+    "/inventory": "return_inventory_snapshot_read_only"
+  },
+  "security": {
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false
+  },
+  "next_allowed_action": "build_j_telegram_command_router_contract_v1",
+  "timestamp": "2026-04-25T12:25:50.158267+00:00"
+}

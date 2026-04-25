@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_INTEGRATION_ACTIVATION_MAP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "activation_map_created": true,
+  "activation_map_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\rules\\integration_activation_map_v1.json",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "verify_n8n_orchestration_config_v1",
+  "timestamp": "2026-04-25T11:13:23.663588+00:00"
+}

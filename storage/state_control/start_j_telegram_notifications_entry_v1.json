@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "START_J_TELEGRAM_NOTIFICATIONS_ENTRY_V1",
+  "input_layer": "FINISH_I_REFRESH_REPLACE_ENGINE_V1",
+  "current_block": "J_TELEGRAM_NOTIFICATIONS",
+  "previous_block_finished": "I_REFRESH_REPLACE_ENGINE",
+  "telegram_scope": {
+    "notifications": [
+      "listing_no_views",
+      "ready_for_update",
+      "new_listing_created"
+    ],
+    "commands": [
+      "/status",
+      "/approve",
+      "/reject",
+      "/inventory"
+    ],
+    "bot_runtime_enabled": false
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_j_telegram_notifications_contract_v1",
+  "timestamp": "2026-04-25T12:17:56.562099+00:00"
+}

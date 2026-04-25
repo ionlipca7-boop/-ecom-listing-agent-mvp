@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "BUILD_GUARDED_LIVE_READONLY_EXECUTOR_WRAPPER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "selected_executor": "run_build_real_inventory_read_call_v2.py",
+  "executor_exists": true,
+  "source_guard_safe": true,
+  "wrapper_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\guarded_live_ebay_readonly_executor_v1.py",
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "execution_allowed_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_guarded_live_ebay_readonly_wrapper_v1",
+  "timestamp": "2026-04-25T11:21:25.098649+00:00"
+}

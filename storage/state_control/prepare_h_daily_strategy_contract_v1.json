@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "PREPARE_H_DAILY_STRATEGY_CONTRACT_V1",
+  "input_layer": "START_H_DAILY_STRATEGY_ENTRY_V1",
+  "current_block": "H_DAILY_STRATEGY",
+  "contract": {
+    "min_listings_per_day": 1,
+    "max_listings_per_day": 3,
+    "update_after_no_views_days_min": 5,
+    "update_after_no_views_days_max": 7,
+    "replace_after_days_min": 10,
+    "replace_after_days_max": 14,
+    "approval_required": true
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "scan_h_daily_strategy_assets_v1",
+  "timestamp": "2026-04-25T12:16:34.073870+00:00"
+}

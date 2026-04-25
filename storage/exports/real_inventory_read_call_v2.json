@@ -19,6 +19,6 @@
   "next_step": "perform_real_inventory_read_v1",
   "identifier_source": "resolved_live_identifier",
   "identifier_type": "sku",
-  "identifier_value": "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER",
-  "ready_for_real_inventory_read": false
+  "identifier_value": "ECOM-TEST-CABLE-001",
+  "ready_for_real_inventory_read": true
 }

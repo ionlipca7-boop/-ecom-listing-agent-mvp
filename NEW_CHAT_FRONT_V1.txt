@@ -1,0 +1,22 @@
+ION / E1 NEW CHAT ENTRY V1
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+CURRENT STATE
+- layer = FINISH_READY
+- project_status = STABLE
+- all_blocks_completed = TRUE
+- executor_file_contract_ready = TRUE
+- file_not_created = TRUE
+- next_allowed_action = open_next_block_after_executor_file_v1
+
+RULE
+START WITH VERIFY -> THEN OPEN NEXT ROUTE
+
+SOURCE OF TRUTH
+storage/state_control/finish_ready_local_executor_file_prep_v1.json
+storage/memory/archive/transition_to_new_chat_v1.json
+
+START
+verify_state_before_next_block_v1

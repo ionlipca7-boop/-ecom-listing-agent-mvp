@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "RESTORE_C_PHOTO_ENGINE_READY_STATE_V1",
+  "input_layer": "ANALYZE_C_PHOTO_ENGINE_EXISTING_ASSETS_V1",
+  "mode": "LOCAL_RESTORE_NO_IMAGE_EDIT_NO_API",
+  "source_finish_file": "storage\\state_control\\finish_photo_engine_block_c_local_ready_v1.json",
+  "source_exists": true,
+  "previous_finish_status": "OK",
+  "current_block": "C_PHOTO_ENGINE",
+  "photo_engine_ready": true,
+  "ready_image_candidates_count": 18,
+  "raw_or_input_image_candidates_count": 18,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_c_photo_engine_v1",
+  "timestamp": "2026-04-25T11:53:58.237013+00:00"
+}

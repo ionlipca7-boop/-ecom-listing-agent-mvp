@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "RESTORE_D_LISTING_ENGINE_READY_STATE_V1",
+  "input_layer": "ANALYZE_D_LISTING_ENGINE_EXISTING_ASSETS_V1",
+  "mode": "LOCAL_RESTORE_FROM_DRAFTS_NO_GENERATION_NO_API",
+  "current_block": "D_LISTING_ENGINE",
+  "listing_engine_ready": true,
+  "preferred_sources": [
+    "drafts\\listing_engine_v2_draft_v1.json",
+    "storage\\exports\\final_listing_payload_v1.json",
+    "storage\\exports\\ready_listings_v1.json",
+    "storage\\state_control\\execute_listing_engine_v2_draft_v1.json"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_d_listing_engine_v1",
+  "timestamp": "2026-04-25T11:59:40.394349+00:00"
+}

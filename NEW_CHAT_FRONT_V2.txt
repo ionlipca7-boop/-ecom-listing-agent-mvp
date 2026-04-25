@@ -1,0 +1,20 @@
+ION / E1 NEW CHAT ENTRY V2
+
+PROJECT
+ECOM LISTING AGENT MVP / CONTROL ROOM
+
+CURRENT STATE
+- layer = FINISH_READY_EXECUTION_FLOW_V1
+- execution_flow_complete = TRUE
+- publish_payload_locked = TRUE
+- next_allowed_action = start_block_n_local_control_runtime
+
+RULE
+START WITH VERIFY -> THEN BLOCK N
+
+SOURCE OF TRUTH
+storage/state_control/finish_ready_execution_flow_v1.json
+storage/memory/archive/transition_to_new_chat_v2.json
+
+START
+build_local_control_runtime_entry_v1

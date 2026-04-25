@@ -1,0 +1,35 @@
+{
+  "status": "ACTIVE",
+  "layer": "INTEGRATION_ACTIVATION_MAP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "activation_order": [
+    "github_auto_sync",
+    "n8n_dispatch_layer",
+    "telegram_control_layer",
+    "runner_agent_layer",
+    "server_runtime_layer"
+  ],
+  "found_counts": {
+    "n8n": 41,
+    "telegram": 8,
+    "server": 3,
+    "agents_runner_dispatcher": 125
+  },
+  "activation_status": {
+    "github_auto_sync": "ACTIVE_BRANCH_SYNCED",
+    "n8n_dispatch_layer": "CODE_PRESENT_NEEDS_RUNTIME_CHECK",
+    "telegram_control_layer": "CODE_PRESENT_NEEDS_TOKEN_RUNTIME_CHECK",
+    "runner_agent_layer": "CODE_PRESENT_NEEDS_SAFE_DRY_RUN_CHECK",
+    "server_runtime_layer": "PLAN_PRESENT_NEEDS_RUNTIME_CHECK"
+  },
+  "forbidden_now": [
+    "publish",
+    "revise",
+    "delete",
+    "server_24_7_start",
+    "telegram_live_send",
+    "n8n_live_webhook_call"
+  ],
+  "next_safe_step": "verify_n8n_orchestration_config_v1",
+  "publish_allowed": false
+}

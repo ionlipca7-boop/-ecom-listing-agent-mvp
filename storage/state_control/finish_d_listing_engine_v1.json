@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_D_LISTING_ENGINE_V1",
+  "input_layer": "RESTORE_D_LISTING_ENGINE_READY_STATE_V1",
+  "finished_block": "D_LISTING_ENGINE",
+  "block_d_finished": true,
+  "listing_engine_ready": true,
+  "source_mode": "LOCAL_RESTORE_FROM_DRAFTS",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "E_PRICE_RESEARCH",
+  "next_allowed_action": "start_e_price_research_entry_v1",
+  "timestamp": "2026-04-25T11:59:40.394843+00:00"
+}

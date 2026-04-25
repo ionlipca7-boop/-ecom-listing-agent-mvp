@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_CONTROLLED_AUTO_SYSTEM_V1",
+  "last_confirmed_layer": "PREPARE_INTEGRATION_ACTIVATION_MAP_V1",
+  "current_position": "integration_activation_map_ready",
+  "next_allowed_action": "verify_n8n_orchestration_config_v1",
+  "confirmed_facts": {
+    "github_sync_active": true,
+    "n8n_code_present": true,
+    "telegram_code_present": true,
+    "runner_agents_present": true,
+    "server_plan_present": true,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "operator_rule": "new chat must continue from verify_n8n_orchestration_config_v1 only",
+  "timestamp": "2026-04-25T11:14:37.406218+00:00"
+}

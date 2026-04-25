@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "PARSE_LIVE_IDENTIFIER_RESOLUTION_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "result_file": null,
+  "result_found": false,
+  "identifier_resolved": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "repair_live_identifier_resolution_v1",
+  "timestamp": "2026-04-25T11:27:48.971409+00:00"
+}

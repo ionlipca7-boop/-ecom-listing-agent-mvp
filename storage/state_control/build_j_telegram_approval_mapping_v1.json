@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "J_TELEGRAM_NOTIFICATIONS",
+  "layer": "BUILD_J_TELEGRAM_APPROVAL_MAPPING_V1",
+  "input_layer": "BUILD_J_TELEGRAM_COMMAND_ROUTER_CONTRACT_V1",
+  "input_status_ok": true,
+  "runtime_started": false,
+  "approval_mapping": {
+    "approval_first": true,
+    "approve_does_not_publish": true,
+    "approve_only_unlocks_next_gate": true,
+    "publish_requires_separate_gate": true,
+    "allowed_after_approval": [
+      "prepare_publish_candidate",
+      "prepare_update_candidate",
+      "prepare_reject_record"
+    ],
+    "blocked_direct_actions": [
+      "publish",
+      "revise",
+      "delete",
+      "push",
+      "runtime_start"
+    ]
+  },
+  "next_allowed_action": "finish_j_telegram_notifications_v1",
+  "timestamp": "2026-04-25T12:26:49.591644+00:00"
+}

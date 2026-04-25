@@ -1,0 +1,31 @@
+{
+  "status": "BLOCKED",
+  "layer": "VERIFY_EXISTING_IDENTIFIER_RESULT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "selected_result_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\exports\\live_identifier_resolution_result_v1.json",
+  "identifier_resolved": false,
+  "result_keys": [
+    "status",
+    "decision",
+    "identifier_source",
+    "identifier_type",
+    "identifier_value",
+    "resolved_ok",
+    "next_step"
+  ],
+  "result_preview": {
+    "status": "OK",
+    "decision": "live_identifier_resolution_result_v1_created",
+    "identifier_source": "registry_resolution_call_v1",
+    "identifier_type": "sku",
+    "identifier_value": "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER",
+    "resolved_ok": false,
+    "next_step": "rebuild_real_inventory_read_call_v2_with_real_identifier"
+  },
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "patch_identifier_resolver_output_path_v1",
+  "timestamp": "2026-04-25T11:29:36.638502+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_F_APPROVAL_GATE_V1",
+  "input_layer": "RESTORE_F_APPROVAL_GATE_READY_STATE_V1",
+  "finished_block": "F_APPROVAL_GATE",
+  "block_f_finished": true,
+  "approval_gate_ready": true,
+  "approval_required": true,
+  "operator_must_approve_before_publish": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "G_AUTO_PUBLISH_QUEUE",
+  "next_allowed_action": "start_g_auto_publish_queue_entry_v1",
+  "timestamp": "2026-04-25T12:10:53.170205+00:00"
+}

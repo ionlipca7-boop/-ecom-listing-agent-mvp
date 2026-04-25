@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "PARSE_LIVE_EBAY_ACTIVE_LISTINGS_SNAPSHOT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "readiness_confirmed": true,
+  "identifier_confirmed": true,
+  "live_active_listing_count_verified": false,
+  "note": "read-call builder is ready; active 56 listing count still needs real read executor, not builder",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "select_real_active_listings_fetch_executor_v1",
+  "timestamp": "2026-04-25T11:35:52.600950+00:00"
+}

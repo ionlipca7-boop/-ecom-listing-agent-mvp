@@ -4,85 +4,17 @@
   "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
   "offer_id": "153365657011",
   "item_id": "318166440509",
-  "inventory_http_status": 200,
-  "offer_http_status": 200,
+  "inventory_http_status": 401,
+  "offer_http_status": 401,
   "trading_http_status": 200,
   "trading_ack": "Failure",
   "trading_title": "",
   "trading_price": "",
   "trading_picture_count": 0,
-  "inventory_picture_count": 9,
+  "inventory_picture_count": 0,
   "offer_picture_count": 0,
   "trading_picture_urls": [],
-  "inventory_payload": {
-    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
-    "locale": "de_DE",
-    "product": {
-      "title": "USB-C OTG Adapter 120W Typ C auf USB A Schnellladen",
-      "aspects": {
-        "Herstellernummer": [
-          "Nicht zutreffend"
-        ],
-        "Marke": [
-          "Markenlos"
-        ],
-        "Produktart": [
-          "Adapter"
-        ]
-      },
-      "description": "USB-C OTG Adapter fur Datenubertragung und Schnellladen. Kompatibel mit Samsung, MacBook und weiteren Geraten.",
-      "imageUrls": [
-        "https://i.ebayimg.com/images/g/7MsAAeSw7kpp4-UD/s-l1600.webp",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/dq4AAeSwmR5p4~gJ/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/g9EAAeSwQdhp4~gL/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/QgoAAeSwK89p4~gN/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/oEYAAeSwtppp4~gO/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/IIoAAeSwf8Fp4~gP/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/GXIAAeSwEdFp4~gR/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/tY0AAeSwpzNp4~gS/$_1.JPG?set_id=8800005007",
-        "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/4BsAAeSwa5xp4~gT/$_1.JPG?set_id=8800005007"
-      ]
-    },
-    "condition": "NEW",
-    "availability": {
-      "shipToLocationAvailability": {
-        "quantity": 10,
-        "allocationByFormat": {
-          "auction": 0,
-          "fixedPrice": 10
-        }
-      }
-    }
-  },
-  "offer_payload": {
-    "offerId": "153365657011",
-    "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
-    "marketplaceId": "EBAY_DE",
-    "format": "FIXED_PRICE",
-    "listingDescription": "<h2>USB-C auf USB-A OTG Adapter USB 3.0</h2><p><b>Kompakt, schnell und alltagstauglich.</b></p><p>Dieser praktische OTG Adapter verbindet USB-A Geraete mit einem USB-C Anschluss und eignet sich ideal fuer Smartphone, Tablet, Laptop und viele weitere kompatible Geraete.</p><ul><li>USB-C auf USB-A Adapter</li><li>USB 3.0 fuer schnelle Datenuebertragung</li><li>Kompaktes Format fuer unterwegs</li><li>Passend fuer viele moderne Geraete mit USB-C</li><li>Ideal fuer USB-Stick, Maus, Tastatur und mehr</li></ul><p><b>Vorteile:</b></p><ul><li>Schnelle und stabile Verbindung</li><li>Einfache Nutzung ohne komplizierte Einrichtung</li><li>Leicht, platzsparend und reisetauglich</li></ul><p><b>Hinweis:</b> Bitte vor dem Kauf die Kompatibilitaet Ihres Geraets pruefen.</p><p><b>Schneller Versand aus Deutschland.</b></p>",
-    "availableQuantity": 12,
-    "pricingSummary": {
-      "price": {
-        "value": "4.01",
-        "currency": "EUR"
-      }
-    },
-    "listingPolicies": {
-      "eBayPlusIfEligible": false
-    },
-    "merchantLocationKey": "ECOM_DE_LOC_1",
-    "tax": {
-      "applyTax": false
-    },
-    "listing": {
-      "listingId": "318166440509",
-      "listingStatus": "ACTIVE",
-      "soldQuantity": 0
-    },
-    "status": "PUBLISHED",
-    "listingDuration": "GTC",
-    "includeCatalogProductDetails": true,
-    "hideBuyerDetails": false
-  },
+  "inventory_payload": {},
+  "offer_payload": {},
   "next_step": "archive_working_listing_baseline_v1"
 }

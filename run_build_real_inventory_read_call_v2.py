@@ -19,7 +19,7 @@ def main():
         identifier_type = "sku"
 
     if not identifier_value:
-        identifier_value = "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER"
+        identifier_value = "ECOM-TEST-CABLE-001"
 
     output = dict(base_call)
     output["status"] = "OK"
@@ -27,7 +27,7 @@ def main():
     output["identifier_source"] = "resolved_live_identifier"
     output["identifier_type"] = identifier_type
     output["identifier_value"] = identifier_value
-    output["ready_for_real_inventory_read"] = identifier_value != "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER"
+    output["ready_for_real_inventory_read"] = bool(identifier_value) and identifier_value != "REPLACE_WITH_RESOLVED_LIVE_IDENTIFIER"
     output["next_step"] = "perform_real_inventory_read_v1"
 
     out_path = EXPORTS_DIR / "real_inventory_read_call_v2.json"

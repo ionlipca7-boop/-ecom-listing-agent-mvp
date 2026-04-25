@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_EBAY_SYNC_401_V1",
+  "current_block": "B_EBAY_SYNC",
+  "last_confirmed_layer": "EXECUTE_GUARDED_ACTIVE_LISTINGS_FETCH_V1",
+  "current_position": "guarded_active_listings_fetch_executed_read_only_but_api_auth_or_trading_failure_detected",
+  "route_finished": false,
+  "next_allowed_action": "parse_active_listings_fetch_result_v1",
+  "confirmed_facts": {
+    "guarded_fetch_returncode": 0,
+    "inventory_http_status": 401,
+    "offer_http_status": 401,
+    "trading_http_status": 200,
+    "trading_ack": "Failure",
+    "active_56_listings_verified": false,
+    "identifier_ready": true,
+    "identifier_value": "ECOM-TEST-CABLE-001",
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "destructive_actions_forbidden": true
+  },
+  "github_check": {
+    "git_status_returncode": 0,
+    "git_status_short": " M run_build_real_inventory_read_call_v2.py\n M storage/ebay/active_listings_snapshot_v1.json\n M storage/exports/live_identifier_resolution_result_v1.json\n M storage/exports/live_listing_snapshot_v1.json\n M storage/exports/real_inventory_read_call_v2.json\n M storage/state_control/prepare_ebay_sync_56_listings_v1.json\n?? .env.local\n?? 3\n?? EBAY_CREDENTIALS_SETUP_READ_ONLY_V1.txt\n?? EBAY_TOKEN_SCOPE_REPAIR_V1.txt\n?? NEW_CHAT_CONTROLLED_AUTO_EBAY_SYSTEM_V1.txt\n?? NEW_CHAT_CONTROLLED_AUTO_SYSTEM_V1.txt\n?? NEW_CHAT_FRONT_REAL_EXECUTION_PREP_V1.txt\n?? NEW_CHAT_FRONT_V1.txt\n?? NEW_CHAT_FRONT_V2.txt\n?? NEW_CHAT_FRONT_V6.txt\n?? NEW_CHAT_LISTING_ENGINE_V2_READY_V1.txt\n?? NEW_CHAT_SELL_INVENTORY_OK_V1.txt\n?? NEW_CHAT_TRADING_API_READ_ONLY_V1.txt\n?? nul\n?? storage/memory/archive/transition_to_controlled_auto_system_v1.json\n?? storage/rules/integration_activation_map_v1.json\n?? storage/state_control/build_ebay_sync_next_gate_v1.json\n?? storage/state_control/build_guarded_active_listings_fetch_wrapper_v1.json\n?? storage/state_control/build_guarded_live_identifier_resolver_wrapper_v1.json\n?? storage/state_control/build_guarded_live_readonly_executor_wrapper_v1.json\n?? storage/state_control/build_identifier_resolution_from_real_sku_v1.json\n?? storage/state_control/build_live_inventory_read_retry_gate_v1.json\n?? storage/state_control/discover_live_ebay_readonly_executor_v1.json\n?? storage/state_control/discover_live_identifier_resolver_v1.json\n?? storage/state_control/discover_real_sku_candidate_v1.json\n?? storage/state_control/ebay_sync_readiness_gate_v1.json\n?? storage/state_control/execute_ebay_sync_56_listings_read_only_v1.json\n?? storage/state_control/execute_guarded_active_listings_fetch_v1.json\n?? storage/state_control/execute_guarded_live_identifier_resolver_v1.json\n?? storage/state_control/execute_live_ebay_active_listings_read_only_v1.json\n?? storage/state_control/inspect_read_call_v2_ready_condition_v1.json\n?? storage/state_control/integration_activation_audit_v1.json\n?? storage/state_control/parse_live_ebay_active_listings_snapshot_v1.json\n?? storage/state_control/parse_live_identifier_resolution_result_v1.json\n?? storage/state_control/prepare_active_listing_gap_analysis_v1.json\n?? storage/state_control/prepare_integration_activation_map_v1.json\n?? storage/state_control/prepare_live_ebay_active_listings_read_only_gate_v1.json\n?? storage/state_control/rebuild_real_inventory_read_call_v2_with_real_identifier_v1.json\n?? storage/state_control/refine_active_listings_fetch_executor_selection_v1.json\n?? storage/state_control/repair_live_identifier_resolution_inspect_v1.json\n?? storage/state_control/repair_read_call_v2_ready_condition_v1.json\n?? storage/state_control/select_existing_identifier_result_v1.json\n?? storage/state_control/select_live_ebay_readonly_executor_v1.json\n?? storage/state_control/select_live_identifier_resolver_v1.json\n?? storage/state_control/select_real_active_listings_fetch_executor_v1.json\n?? storage/state_control/verify_existing_identifier_result_v1.json\n?? storage/state_control/verify_n8n_orchestration_config_v1.json\n?? storage/tools/discover_real_sku.py\n?? storage/tools/guarded_active_listings_fetch_wrapper_v1.py\n?? storage/tools/guarded_live_ebay_readonly_executor_v1.py\n?? storage/tools/guarded_live_identifier_resolver_v1.py\n",
+    "git_last_commit": "e1c5bf1 Sync control room automation state 2026-04-25"
+  },
+  "operator_rule": "new chat must continue only from parse_active_listings_fetch_result_v1; no publish, no revise, no delete",
+  "timestamp": "2026-04-25T11:41:26.453521+00:00"
+}

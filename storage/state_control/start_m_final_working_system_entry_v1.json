@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "M_FINAL_WORKING_SYSTEM",
+  "layer": "START_M_FINAL_WORKING_SYSTEM_ENTRY_V1",
+  "input_layer": "FINISH_L_SERVER_24_7_V1",
+  "input_status_ok": true,
+  "next_allowed_action": "finish_m_final_working_system_v1",
+  "timestamp": "2026-04-25T12:28:50.784266+00:00"
+}

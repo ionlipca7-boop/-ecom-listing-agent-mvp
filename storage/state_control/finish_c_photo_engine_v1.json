@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "FINISH_C_PHOTO_ENGINE_V1",
+  "input_layer": "RESTORE_C_PHOTO_ENGINE_READY_STATE_V1",
+  "finished_block": "C_PHOTO_ENGINE",
+  "block_c_finished": true,
+  "photo_engine_ready": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_block": "D_LISTING_ENGINE",
+  "next_allowed_action": "start_d_listing_engine_entry_v1",
+  "timestamp": "2026-04-25T11:57:22.532876+00:00"
+}

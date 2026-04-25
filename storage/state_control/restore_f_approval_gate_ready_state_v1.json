@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "RESTORE_F_APPROVAL_GATE_READY_STATE_V1",
+  "input_layer": "ANALYZE_F_APPROVAL_GATE_EXISTING_ASSETS_V1",
+  "mode": "LOCAL_RESTORE_NO_APPROVAL_NO_PUBLISH",
+  "current_block": "F_APPROVAL_GATE",
+  "approval_gate_ready": true,
+  "approval_required": true,
+  "operator_must_approve_before_publish": true,
+  "preferred_sources": [
+    "storage\\approval\\approval_packet_v1.json",
+    "storage\\approval\\runner_approval_request_v1.json",
+    "storage\\state_control\\approval_gate_v1.json",
+    "storage\\state_control\\await_human_approval_v1.json",
+    "storage\\state_control\\execute_approval_gate_v1.json",
+    "storage\\state_control\\prepare_approval_gate_v1.json",
+    "storage\\state_control\\prepare_operator_approval_gate_v1.json"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_f_approval_gate_v1",
+  "timestamp": "2026-04-25T12:10:10.401724+00:00"
+}

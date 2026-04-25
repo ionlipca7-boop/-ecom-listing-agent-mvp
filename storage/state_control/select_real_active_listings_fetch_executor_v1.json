@@ -1,0 +1,190 @@
+{
+  "status": "OK",
+  "layer": "SELECT_REAL_ACTIVE_LISTINGS_FETCH_EXECUTOR_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "candidate_count": 97,
+  "best_candidates": [
+    {
+      "file": "build_current_listing_read_contract_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_current_listing_read_plan_audit_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_current_listing_read_plan_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_listing_improvement_path_gate_audit_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_listing_improvement_path_gate_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "build_listing_improvement_scope_audit_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_adapter_001_full_listing_upgrade_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_archive_multi_listing_system_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_archive_working_listing_baseline_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_first_real_multi_listing_run_payload_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_inventory_image_payload_builder_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_listing_clone_execution_plan_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_listing_template_registry_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_multi_listing_layer_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_multi_listing_payload_builder_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_post_inventory_read_verification_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_build_real_multi_listing_payload_v5.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_capture_live_listing_snapshot_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_inventory_payload_audit_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_listing_performance_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_live_listing_recovery_audit_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_live_listing_recovery_audit_v2.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_manage_live_listing_v2.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_memory_add_listing_review_v1.py",
+      "has_active": true,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    },
+    {
+      "file": "run_multi_listing_generator_v1.py",
+      "has_active": false,
+      "has_listing": true,
+      "has_get": true,
+      "has_write_terms": false
+    }
+  ],
+  "selected_executor": "build_current_listing_read_contract_v1.py",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "build_guarded_active_listings_fetch_wrapper_v1",
+  "timestamp": "2026-04-25T11:36:42.489190+00:00"
+}

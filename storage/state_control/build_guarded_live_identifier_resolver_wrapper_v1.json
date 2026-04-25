@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "BUILD_GUARDED_LIVE_IDENTIFIER_RESOLVER_WRAPPER_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "selected_resolver": "run_build_live_identifier_resolution_result_v1.py",
+  "wrapper_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\guarded_live_identifier_resolver_v1.py",
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "execution_allowed_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_guarded_live_identifier_resolver_v1",
+  "timestamp": "2026-04-25T11:25:26.381423+00:00"
+}

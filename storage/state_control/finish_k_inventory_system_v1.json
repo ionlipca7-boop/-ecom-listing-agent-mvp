@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "K_INVENTORY_SYSTEM",
+  "layer": "FINISH_K_INVENTORY_SYSTEM_V1",
+  "confirmed_facts": {
+    "inventory_entry_done": true,
+    "inventory_contract_done": true,
+    "local_snapshots_only": true,
+    "read_only": true,
+    "active_listings_expected": 56,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "push_allowed": false,
+    "runtime_started": false
+  },
+  "next_allowed_action": "start_l_server_24_7_entry_v1",
+  "timestamp": "2026-04-25T12:27:20.625702+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LIVE_EBAY_ACTIVE_LISTINGS_READ_ONLY_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "purpose": "prepare controlled live read-only call to fetch active listings count and details",
+  "allowed_api_intent": [
+    "GetMyeBaySelling_active_listings_read_only",
+    "read_active_listings_only"
+  ],
+  "forbidden_api_intent": [
+    "AddItem",
+    "ReviseItem",
+    "EndItem",
+    "publish",
+    "delete",
+    "bulk_update"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "destructive_actions_forbidden": true,
+  "next_allowed_action": "execute_live_ebay_active_listings_read_only_v1",
+  "timestamp": "2026-04-25T11:19:12.155151+00:00"
+}

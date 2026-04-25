@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "layer": "RESTORE_I_REFRESH_REPLACE_ENGINE_READY_STATE_V1",
+  "input_layer": "ANALYZE_I_REFRESH_REPLACE_ENGINE_ASSETS_V1",
+  "current_block": "I_REFRESH_REPLACE_ENGINE",
+  "refresh_replace_ready": true,
+  "engine_mode": "SAFE_APPROVAL_REQUIRED",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_i_refresh_replace_engine_v1",
+  "timestamp": "2026-04-25T12:17:56.562099+00:00"
+}
