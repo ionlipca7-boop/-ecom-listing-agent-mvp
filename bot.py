@@ -1,9 +1,11 @@
 import json
 import os
+import threading
 import time
 from pathlib import Path
 
 import requests
+from flask import Flask, jsonify
 
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 if not TOKEN:
@@ -16,6 +18,8 @@ APPROVAL_PACKET = ROOT / "storage" / "approval" / "first_listing_telegram_approv
 CONTROL_ACTION = ROOT / "storage" / "control_action.json"
 
 offset = 0
+polling_started = False
+app = Flask(__name__)
 
 
 def read_json(path: Path) -> dict:
@@ -69,39 +73,25 @@ def build_approval_text() -> str:
 
 def handle_text(chat_id: int, text: str) -> None:
     normalized = (text or "").strip().lower()
-
     if normalized in {"/start", "start"}:
         send_message(chat_id, "ECOM Agent connected. Use /status, /approval, /auto, /help.")
-        return
-
-    if normalized in {"/help", "help"}:
+    elif normalized in {"/help", "help"}:
         send_message(chat_id, "Commands: /status, /approval, /auto, /approve, /reject. Auto publish is locked until a later gate.")
-        return
-
-    if normalized in {"/status", "status"}:
+    elif normalized in {"/status", "status"}:
         send_message(chat_id, build_status_text())
-        return
-
-    if normalized in {"/approval", "approval"}:
+    elif normalized in {"/approval", "approval"}:
         buttons = {"inline_keyboard": [[{"text": "APPROVE", "callback_data": "APPROVE_FIRST_LISTING"}, {"text": "REJECT", "callback_data": "REJECT_FIRST_LISTING"}], [{"text": "STATUS", "callback_data": "STATUS"}]]}
         send_message(chat_id, build_approval_text(), buttons)
-        return
-
-    if normalized in {"/auto", "auto"}:
+    elif normalized in {"/auto", "auto"}:
         send_message(chat_id, "AUTO MODE: locked. Current mode is approval-first. No batch publish, no auto publish.")
-        return
-
-    if normalized in {"/approve", "approve"}:
+    elif normalized in {"/approve", "approve"}:
         write_json(CONTROL_ACTION, {"status": "PENDING_TOKEN_GUARD", "action": "APPROVE_FIRST_LISTING", "source": "telegram_text_command", "publish_allowed": False})
         send_message(chat_id, "Approval recorded. Token guard must run before one real eBay publish.")
-        return
-
-    if normalized in {"/reject", "reject"}:
+    elif normalized in {"/reject", "reject"}:
         write_json(CONTROL_ACTION, {"status": "REJECTED", "action": "REJECT_FIRST_LISTING", "source": "telegram_text_command", "publish_allowed": False})
         send_message(chat_id, "Listing rejected. No publish will run.")
-        return
-
-    send_message(chat_id, "Unknown command. Use /status, /approval, /auto, /help.")
+    else:
+        send_message(chat_id, "Unknown command. Use /status, /approval, /auto, /help.")
 
 
 def handle_callback(callback: dict) -> None:
@@ -111,7 +101,6 @@ def handle_callback(callback: dict) -> None:
     data = callback.get("data")
     if not chat_id:
         return
-
     if data == "STATUS":
         send_message(chat_id, build_status_text())
     elif data == "APPROVE_FIRST_LISTING":
@@ -122,9 +111,9 @@ def handle_callback(callback: dict) -> None:
         send_message(chat_id, "Rejected. No publish will run.")
 
 
-def main() -> None:
+def polling_loop() -> None:
     global offset
-    print("ECOM CONTROL ROOM TELEGRAM BOT STARTED")
+    print("ECOM CONTROL ROOM TELEGRAM POLLING STARTED")
     while True:
         try:
             response = requests.get(f"{BASE_URL}/getUpdates", params={"timeout": 30, "offset": offset + 1}, timeout=35)
@@ -146,6 +135,32 @@ def main() -> None:
         except Exception as exc:
             print("RUNTIME ERROR:", exc)
             time.sleep(3)
+
+
+def ensure_polling_started() -> None:
+    global polling_started
+    if not polling_started:
+        polling_started = True
+        thread = threading.Thread(target=polling_loop, daemon=True)
+        thread.start()
+
+
+@app.get("/")
+def root():
+    ensure_polling_started()
+    return jsonify({"status": "OK", "service": "ECOM_CONTROL_ROOM_BOT", "polling_started": polling_started})
+
+
+@app.get("/health")
+def health():
+    ensure_polling_started()
+    return jsonify({"status": "OK", "runtime_state_exists": RUNTIME_STATE.exists(), "approval_packet_exists": APPROVAL_PACKET.exists()})
+
+
+def main() -> None:
+    ensure_polling_started()
+    port = int(os.environ.get("PORT", "8080"))
+    app.run(host="0.0.0.0", port=port)
 
 
 if __name__ == "__main__":
