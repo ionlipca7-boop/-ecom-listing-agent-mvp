@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_TRADING_API_READ_ONLY_EXECUTION_GATE_V1",
+  "input_layer": "CONFIRM_TRADING_FETCHER_COMPILED_V1",
+  "input_status": "OK",
+  "compile_confirmed": true,
+  "tool_path": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "api_call": "GetMyeBaySelling",
+  "expected_active_listings": 56,
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "bulk_update_allowed": false,
+  "next_allowed_action": "await_trading_api_read_only_execution_approval_v1",
+  "timestamp": "2026-04-25T08:50:49.358409+00:00"
+}

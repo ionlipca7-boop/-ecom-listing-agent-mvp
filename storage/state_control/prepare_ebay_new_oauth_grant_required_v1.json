@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_NEW_OAUTH_GRANT_REQUIRED_V1",
+  "reason": "refresh_token_invalid_or_issued_to_another_client",
+  "required_action": "generate_new_ebay_oauth_tokens_for_current_client_id",
+  "required_scopes": [
+    "https://api.ebay.com/oauth/api_scope",
+    "https://api.ebay.com/oauth/api_scope/sell.inventory"
+  ],
+  "keep_current_state": true,
+  "read_only": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "create_ebay_oauth_authorization_url_v1",
+  "timestamp": "2026-04-25T09:09:47.440839+00:00"
+}

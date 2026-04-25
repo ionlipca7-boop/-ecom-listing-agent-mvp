@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "layer": "TEST_RUN_LISTING_FLOW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_LISTING_FLOW_CONTRACT_V1",
+  "runner_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\run_listing_flow_v1.py",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\run_listing_flow_v1.py\", line 2, in <module>\n    from agent.brain import ListingBrain\nModuleNotFoundError: No module named 'agent'\n",
+  "publish_allowed": false,
+  "run_allowed": false,
+  "telegram_run_allowed": false,
+  "git_push_allowed": false,
+  "next_allowed_action": "repair_run_listing_flow_v1"
+}

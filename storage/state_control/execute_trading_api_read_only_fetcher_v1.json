@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "layer": "EXECUTE_TRADING_API_READ_ONLY_FETCHER_V1",
+  "input_layer": "APPROVE_TRADING_API_READ_ONLY_EXECUTION_V1",
+  "tool_path": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "BLOCKED: missing EBAY_AUTH_TOKEN / EBAY_USER_TOKEN\n",
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "repair_trading_api_read_only_execution_v1",
+  "timestamp": "2026-04-25T08:53:50.784629+00:00"
+}

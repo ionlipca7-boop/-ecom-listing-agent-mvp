@@ -1,0 +1,9 @@
+{
+  "status": "OK",
+  "layer": "BUILD_TRADING_API_ACTIVE_LISTINGS_FETCHER_V1",
+  "tool_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "execution_allowed": false,
+  "read_only": true,
+  "next_allowed_action": "compile_trading_api_active_listings_fetcher_v1",
+  "timestamp": "2026-04-25T08:45:19.141744+00:00"
+}

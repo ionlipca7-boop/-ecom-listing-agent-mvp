@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "BUILD_SELL_INVENTORY_READ_ONLY_FETCHER_V1",
+  "target": "publisher\\ebay_sell_inventory_fetcher.py",
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "compile_sell_inventory_read_only_fetcher_v1",
+  "timestamp": "2026-04-25T09:01:55.181174+00:00"
+}

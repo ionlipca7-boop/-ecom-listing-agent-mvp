@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "FINAL_PRE_PUBLISH_SYSTEM_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layers": [
+    "BUILD_PUBLISH_PAYLOAD_LOCKED_V1",
+    "PREPARE_SERVER_RUNTIME_FILES_V1",
+    "PREPARE_TELEGRAM_CONTROL_FILES_V1"
+  ],
+  "checks": {
+    "publish_payload_locked": true,
+    "approved_for_publish": false,
+    "publish_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "telegram_token_written": false
+  },
+  "next_allowed_action": "finish_ready_execution_flow_v1"
+}

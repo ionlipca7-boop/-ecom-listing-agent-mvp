@@ -1,0 +1,81 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_INVENTORY_LISTING_MAP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_ACTIVE_LISTINGS_SNAPSHOT_V1",
+  "active_listing_count": 56,
+  "inventory_item_count": 4,
+  "known_inventory_skus": [
+    "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+    "ECOM-TEST-CABLE-001",
+    "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+    "ECOM-NEXT-SKU-001"
+  ],
+  "mapped_listing_count": 3,
+  "unmapped_listing_count": 53,
+  "mapping_gap_detected": true,
+  "sample_unmapped_listings": [
+    {
+      "item_id": "317800706096",
+      "title": "Schnellladegerät 45W PD USB-C mit Kabel | Super Fast Charging",
+      "sku": null,
+      "price": "9.39",
+      "quantity": "16",
+      "quantity_sold": "12",
+      "watch_count": "1",
+      "time_left": "PT1H48M45S",
+      "url": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-mit-Kabel-Super-Fast-Charging-/317800706096"
+    },
+    {
+      "item_id": "317800714251",
+      "title": "Schnellladegerät 45W PD USB-C | Super Fast Charging mit Kabel",
+      "sku": null,
+      "price": "9.49",
+      "quantity": "7",
+      "quantity_sold": null,
+      "watch_count": "2",
+      "time_left": "PT1H52M56S",
+      "url": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-Super-Fast-Charging-mit-Kabel-/317800714251"
+    },
+    {
+      "item_id": "317805701358",
+      "title": "Mini Bluetooth 5.0 USB Adapter für PC Laptop Audio Drucker Plug & Play",
+      "sku": null,
+      "price": "3.93",
+      "quantity": "20",
+      "quantity_sold": null,
+      "watch_count": null,
+      "time_left": "P1DT7H16M50S",
+      "url": "https://www.ebay.de/itm/Mini-Bluetooth-5-0-USB-Adapter-f-r-PC-Laptop-Audio-Drucker-Plug-Play-/317805701358"
+    },
+    {
+      "item_id": "317805734449",
+      "title": "Mini USB WiFi 6 WLAN Adapter 2,4GHz 286 Mbit/s für PC & Laptop",
+      "sku": null,
+      "price": "5.49",
+      "quantity": "12",
+      "quantity_sold": "2",
+      "watch_count": "1",
+      "time_left": "P1DT7H28M7S",
+      "url": "https://www.ebay.de/itm/Mini-USB-WiFi-6-WLAN-Adapter-2-4GHz-286-Mbit-s-f-r-PC-Laptop-/317805734449"
+    },
+    {
+      "item_id": "317806061325",
+      "title": "3-in-1 Magnetische Wireless Ladestation für iPhone Apple Watch AirPods – Faltbar",
+      "sku": null,
+      "price": "17.99",
+      "quantity": "10",
+      "quantity_sold": "6",
+      "watch_count": "7",
+      "time_left": "P1DT9H26M48S",
+      "url": "https://www.ebay.de/itm/3-in-1-Magnetische-Wireless-Ladestation-f-r-iPhone-Apple-Watch-AirPods-Faltbar-/317806061325"
+    }
+  ],
+  "read_only_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "finish_ebay_sync_block_b_v1",
+  "timestamp": "2026-04-25T09:36:31.398197+00:00"
+}

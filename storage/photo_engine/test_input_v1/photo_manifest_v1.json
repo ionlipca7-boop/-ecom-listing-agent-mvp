@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "layer": "VERIFY_PHOTO_INPUT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "source_folder": "storage\\photo_engine\\test_input_v1\\raw",
+  "image_count": 0,
+  "images": [],
+  "valid_range": false,
+  "ready_for_processing": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "fix_photo_input_v1",
+  "timestamp": "2026-04-25T09:47:48.910815+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "layer": "LISTING_INPUT_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "REPAIR_LISTING_GENERATOR_UTF8_VERIFY_V1",
+  "contract_name": "listing_input_contract",
+  "required_fields": [
+    "product_name",
+    "category",
+    "condition",
+    "price_basis",
+    "features",
+    "images"
+  ],
+  "optional_fields": [
+    "brand",
+    "model",
+    "color",
+    "size",
+    "keywords",
+    "notes"
+  ],
+  "security_rules": [
+    "no_tokens_in_input",
+    "no_live_publish_flag",
+    "no_secret_fields"
+  ],
+  "example_input": {
+    "product_name": "USB-C Kabel 2m 60W",
+    "category": "Kabel & Adapter",
+    "condition": "Neu",
+    "price_basis": 7.99,
+    "features": [
+      "USB-C",
+      "2m",
+      "60W",
+      "Schnellladen"
+    ],
+    "images": [
+      "image_main.jpg"
+    ]
+  },
+  "next_allowed_action": "build_listing_output_contract_v1"
+}

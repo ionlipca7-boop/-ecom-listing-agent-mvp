@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_TRADING_ACTIVE_LIST_READ_ONLY_EXECUTION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_TRADING_ACTIVE_LIST_READ_ONLY_CONTRACT_V1",
+  "gate": "READ_ONLY_ACTIVE_LIST_EXECUTION_GATE",
+  "allowed_action": "execute_trading_active_list_read_only_v1",
+  "api": "Trading API",
+  "call": "GetMyeBaySelling",
+  "target": "ActiveList",
+  "expected_active_listings": 56,
+  "execution_allowed_now": true,
+  "read_only_only": true,
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "delete",
+    "bulk_update",
+    "auto_publish",
+    "inventory_write"
+  ],
+  "write_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "execute_trading_active_list_read_only_v1",
+  "timestamp": "2026-04-25T09:31:53.757051+00:00"
+}

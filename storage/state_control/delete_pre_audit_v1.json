@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "layer": "DELETE_PRE_AUDIT_V1",
+  "candidate_count": 5,
+  "exists_count": 5,
+  "safe_count": 5,
+  "protected_blocked": []
+}

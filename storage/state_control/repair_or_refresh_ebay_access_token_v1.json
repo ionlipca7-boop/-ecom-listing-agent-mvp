@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "REPAIR_OR_REFRESH_EBAY_ACCESS_TOKEN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_REAL_EBAY_INVENTORY_READ_ONLY_V1",
+  "detected_error": "HTTPError: HTTP Error 403: Forbidden",
+  "probable_cause": "missing_or_wrong_oauth_scope_for_sell_inventory_api",
+  "required_scopes": [
+    "https://api.ebay.com/oauth/api_scope/sell.inventory.readonly",
+    "https://api.ebay.com/oauth/api_scope/sell.inventory"
+  ],
+  "instruction_file": "D:\\ECOM_LISTING_AGENT_MVP\\EBAY_TOKEN_SCOPE_REPAIR_V1.txt",
+  "api_call_used": false,
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "replace_access_token_with_inventory_scope_then_retry_read_only_v1",
+  "timestamp": "2026-04-25T08:36:11.085067+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_TELEGRAM_CONTROL_FILES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_SERVER_RUNTIME_FILES_V1",
+  "telegram_token_written": false,
+  "telegram_run_allowed": false,
+  "publish_allowed": false,
+  "token_gate_present": true,
+  "control_mode": "prepared_only_no_runtime",
+  "next_allowed_action": "final_pre_publish_system_check_v1"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "READY",
+  "mode": "READ_ONLY",
+  "product_title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "currency": "EUR",
+  "input_price": 5.99,
+  "recommended_price": 5.99,
+  "price_decision": "MANUAL_PRICE_SET",
+  "sources_required": [
+    "active_inventory_snapshot",
+    "sold_items_snapshot",
+    "competitor_snapshot"
+  ],
+  "publish_allowed": false
+}

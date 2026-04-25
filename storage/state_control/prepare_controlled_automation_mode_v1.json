@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_CONTROLLED_AUTOMATION_MODE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "controlled_automation_active": true,
+  "approval_packet_ready": true,
+  "price": 5.99,
+  "images_status": "READY_FOR_APPROVAL",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "await_human_approval_v1",
+  "timestamp": "2026-04-25T10:46:56.302106+00:00"
+}

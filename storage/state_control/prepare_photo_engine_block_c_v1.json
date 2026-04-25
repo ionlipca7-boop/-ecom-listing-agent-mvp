@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHOTO_ENGINE_BLOCK_C_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "route": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "block": "C_PHOTO_ENGINE",
+  "input_layer": "FINISH_EBAY_SYNC_BLOCK_B_V1",
+  "goal": "AliExpress/Alibaba/local photos -> eBay-ready German image set",
+  "min_images": 3,
+  "max_images": 9,
+  "image_processing_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_photo_engine_contract_v1",
+  "timestamp": "2026-04-25T09:39:19.455998+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_SERVER_RUNTIME_FILES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_PUBLISH_PAYLOAD_LOCKED_V1",
+  "files_prepared": [
+    "server_runtime_entry_placeholder",
+    "local_dry_run_contract"
+  ],
+  "server_run_allowed": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "next_allowed_action": "prepare_telegram_control_files_v1"
+}

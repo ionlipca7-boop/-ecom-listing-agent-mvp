@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_SYNC_56_LISTINGS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "START_CONTROLLED_AUTO_EBAY_SYSTEM_ROUTE_ENTRY_V1",
+  "input_status": "OK",
+  "known_ebay_active_listings": 56,
+  "sync_mode": "READ_ONLY_PREP",
+  "target": "read_existing_active_ebay_listings",
+  "allowed_actions": [
+    "verify_credentials_later",
+    "read_inventory_later",
+    "store_snapshot_later"
+  ],
+  "forbidden_actions": [
+    "publish",
+    "revise_listing",
+    "end_listing",
+    "bulk_update",
+    "delete"
+  ],
+  "real_publish_allowed": false,
+  "publish_called": false,
+  "next_allowed_action": "open_ebay_sync_read_only_gate_v1",
+  "timestamp": "2026-04-25T07:30:13.379777+00:00"
+}

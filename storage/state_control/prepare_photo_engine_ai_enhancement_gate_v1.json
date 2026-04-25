@@ -1,0 +1,26 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHOTO_ENGINE_AI_ENHANCEMENT_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INSPECT_PHOTO_ENGINE_OUTPUTS_V1",
+  "current_outputs_ready": true,
+  "ai_enhancement_allowed_now": false,
+  "reason": "AI/image editing requires separate tool or manual approval; local pipeline already produced eBay-ready JPG basics.",
+  "allowed_ai_actions": [
+    "quality_enhance",
+    "background_cleanup",
+    "remove_existing_foreign_text_if_present"
+  ],
+  "forbidden_ai_actions": [
+    "add_marketing_text",
+    "add_watermark",
+    "add_border",
+    "misleading_product_change"
+  ],
+  "ebay_compliance_decision": "do_not_add_german_text_to_images; use German text in listing title/description instead",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "finish_photo_engine_block_c_local_ready_v1",
+  "timestamp": "2026-04-25T10:04:17.338960+00:00"
+}

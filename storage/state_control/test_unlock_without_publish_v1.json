@@ -1,0 +1,16 @@
+{
+  "status": "OK",
+  "layer": "TEST_UNLOCK_WITHOUT_PUBLISH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_PUBLISH_UNLOCK_GATE_V1",
+  "dry_approval_command": "/approve",
+  "unlock_tested": true,
+  "real_publish_unlocked": false,
+  "publish_called": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "server_run_allowed": false,
+  "telegram_token_used": false,
+  "sandbox_allowed": true,
+  "next_allowed_action": "build_sandbox_publish_simulation_v1"
+}

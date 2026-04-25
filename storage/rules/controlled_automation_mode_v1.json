@@ -1,0 +1,29 @@
+{
+  "status": "ACTIVE",
+  "layer": "CONTROLLED_AUTOMATION_MODE_V1",
+  "automation_goal": "system_generates_checks_prepares_and_waits_for_human_approval_before_publish",
+  "manual_now": [
+    "approval_decision",
+    "fix_request",
+    "price_override_if_needed",
+    "final_publish_confirmation"
+  ],
+  "automatic_now": [
+    "draft_generation",
+    "image_count_check",
+    "image_pipeline_state",
+    "approval_packet_update",
+    "price_gate",
+    "safety_locks"
+  ],
+  "future_telegram_commands": [
+    "/status",
+    "/approve",
+    "/reject",
+    "/fix",
+    "/redo",
+    "/inventory"
+  ],
+  "publish_policy": "publish_only_after_explicit_human_approval",
+  "publish_allowed": false
+}

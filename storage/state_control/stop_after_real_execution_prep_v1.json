@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "STOP_AFTER_REAL_EXECUTION_PREP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "FINISH_READY_REAL_EXECUTION",
+  "final_outcome": "STOP",
+  "route_complete": true,
+  "no_real_publish_confirmed": true,
+  "no_external_api_confirmed": true,
+  "next_allowed_action": "STOP"
+}

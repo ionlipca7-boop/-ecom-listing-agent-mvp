@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_TRADING_API_READ_ONLY_RESULT_V1",
+  "http_status": 200,
+  "read_only": true,
+  "item_id_count": 0,
+  "title_count": 0,
+  "expected_active_listings": 56,
+  "matches_expected_56": false,
+  "sample_item_ids": [],
+  "sample_titles": [],
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_ebay_sync_snapshot_v1",
+  "timestamp": "2026-04-25T08:56:54.604998+00:00"
+}

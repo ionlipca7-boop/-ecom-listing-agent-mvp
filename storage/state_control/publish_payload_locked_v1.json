@@ -1,0 +1,66 @@
+{
+  "status": "OK",
+  "layer": "BUILD_PUBLISH_PAYLOAD_LOCKED_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_APPROVAL_TO_PUBLISH_LOCK_V1",
+  "payload_locked": true,
+  "publish_payload": {
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+    "price": 7.99,
+    "item_specifics": {
+      "Typ": "USB-C Ladekabel",
+      "Länge": "2m",
+      "Leistung": "60W",
+      "Anschluss": "USB-C",
+      "Produktart": "Kabel",
+      "Zustand": "Neu"
+    },
+    "images": [
+      "image_main.jpg",
+      "image_angle.jpg",
+      "image_detail.jpg"
+    ],
+    "search_intents": [
+      "usb c cable 2m fast charging",
+      "60w usb c cable",
+      "usb c kabel schnellladen"
+    ],
+    "compatibility_keywords": [
+      "USB-C Geräte",
+      "Samsung",
+      "Android",
+      "MacBook"
+    ],
+    "use_case_keywords": [
+      "Schnellladen",
+      "Alltag",
+      "Reise",
+      "Büro",
+      "Zuhause",
+      "Datenübertragung"
+    ],
+    "seo_keywords": [
+      "USB-C Kabel 2m",
+      "USB-C 60W",
+      "Schnellladekabel",
+      "Datenkabel"
+    ],
+    "buyer_questions": [
+      "Ist das Kabel für Schnellladen geeignet?",
+      "Wie lang ist das Kabel (2m)?",
+      "Passt das Kabel zu meinem USB-C Gerät?"
+    ],
+    "ai_summary": "Robustes USB-C Kabel mit 2m Länge und 60W, geeignet für Schnellladen und tägliche Nutzung zu Hause, im Büro oder unterwegs.",
+    "status": "review",
+    "approval_status": "review",
+    "quality_gate_ready": true,
+    "publish_ready": false
+  },
+  "approved_for_publish": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "lock_reason": "human_approval_required_before_real_ebay_publish",
+  "next_allowed_action": "prepare_server_runtime_files_v1"
+}

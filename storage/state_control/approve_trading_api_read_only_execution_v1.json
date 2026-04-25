@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "APPROVE_TRADING_API_READ_ONLY_EXECUTION_V1",
+  "input_layer": "PREPARE_TRADING_API_READ_ONLY_EXECUTION_GATE_V1",
+  "approval_status": "APPROVED",
+  "read_only": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_trading_api_read_only_fetcher_v1",
+  "timestamp": "2026-04-25T08:53:48.479317+00:00"
+}

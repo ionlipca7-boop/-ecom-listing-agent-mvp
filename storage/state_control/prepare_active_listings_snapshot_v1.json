@@ -1,0 +1,52 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_ACTIVE_LISTINGS_SNAPSHOT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PARSE_TRADING_ACTIVE_LIST_ITEMARRAY_V1",
+  "snapshot_file": "storage\\ebay\\active_listings_snapshot_v1.json",
+  "active_listing_count": 56,
+  "expected_active_listings": 56,
+  "count_matches_expected": true,
+  "sample_items": [
+    {
+      "item_id": "317800706096",
+      "title": "Schnellladegerät 45W PD USB-C mit Kabel | Super Fast Charging",
+      "sku": null,
+      "price": "9.39",
+      "quantity": "16",
+      "quantity_sold": "12",
+      "watch_count": "1",
+      "time_left": "PT1H48M45S",
+      "url": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-mit-Kabel-Super-Fast-Charging-/317800706096"
+    },
+    {
+      "item_id": "317800714251",
+      "title": "Schnellladegerät 45W PD USB-C | Super Fast Charging mit Kabel",
+      "sku": null,
+      "price": "9.49",
+      "quantity": "7",
+      "quantity_sold": null,
+      "watch_count": "2",
+      "time_left": "PT1H52M56S",
+      "url": "https://www.ebay.de/itm/Schnellladeger-t-45W-PD-USB-C-Super-Fast-Charging-mit-Kabel-/317800714251"
+    },
+    {
+      "item_id": "317805701358",
+      "title": "Mini Bluetooth 5.0 USB Adapter für PC Laptop Audio Drucker Plug & Play",
+      "sku": null,
+      "price": "3.93",
+      "quantity": "20",
+      "quantity_sold": null,
+      "watch_count": null,
+      "time_left": "P1DT7H16M50S",
+      "url": "https://www.ebay.de/itm/Mini-Bluetooth-5-0-USB-Adapter-f-r-PC-Laptop-Audio-Drucker-Plug-Play-/317805701358"
+    }
+  ],
+  "read_only_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "secret_values_printed": false,
+  "next_allowed_action": "prepare_inventory_listing_map_v1",
+  "timestamp": "2026-04-25T09:35:49.423075+00:00"
+}

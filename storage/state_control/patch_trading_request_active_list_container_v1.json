@@ -1,0 +1,15 @@
+{
+  "status": "BLOCKED",
+  "layer": "PATCH_TRADING_REQUEST_ACTIVE_LIST_CONTAINER_V1",
+  "target": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "changed": false,
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "inspect_trading_fetcher_xml_request_v1",
+  "timestamp": "2026-04-25T08:58:18.802960+00:00"
+}

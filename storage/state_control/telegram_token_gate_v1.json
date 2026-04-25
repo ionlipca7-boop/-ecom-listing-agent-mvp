@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "TELEGRAM_TOKEN_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TELEGRAM_BOT_PLAN_V1",
+  "token_required": true,
+  "token_present": false,
+  "token_value_stored": false,
+  "token_in_code_allowed": false,
+  "token_location_allowed": [
+    "storage/secrets/.env",
+    "local .env"
+  ],
+  "git_secret_rule": "do_not_commit_tokens",
+  "telegram_connected": false,
+  "telegram_run_allowed": false,
+  "gate_rules": [
+    "replace_token_only_in_secret_file",
+    "never_print_token",
+    "never_commit_secret_file",
+    "verify_gitignore_before_token",
+    "server_ready_required_before_run"
+  ],
+  "next_allowed_action": "final_full_system_check_v1"
+}

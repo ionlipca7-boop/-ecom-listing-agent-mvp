@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_LOCAL_ENV_FILE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "env_file_exists": true,
+  "credentials_present": {
+    "EBAY_ACCESS_TOKEN": true,
+    "EBAY_REFRESH_TOKEN": true,
+    "EBAY_CLIENT_ID": true,
+    "EBAY_CLIENT_SECRET": true
+  },
+  "credential_lengths_only": {
+    "EBAY_ACCESS_TOKEN": 1964,
+    "EBAY_REFRESH_TOKEN": 2700,
+    "EBAY_CLIENT_ID": 40,
+    "EBAY_CLIENT_SECRET": 36
+  },
+  "all_credentials_ready": true,
+  "secrets_logged": false,
+  "api_call_used": false,
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "prepare_real_ebay_read_only_api_implementation_v1",
+  "timestamp": "2026-04-25T08:30:52.477454+00:00"
+}

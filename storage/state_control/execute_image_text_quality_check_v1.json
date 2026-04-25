@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_IMAGE_TEXT_QUALITY_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "qa_report_created": true,
+  "qa_status": "NEEDS_MANUAL_IMAGE_QA",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "manual_confirm_image_qa_v1",
+  "timestamp": "2026-04-25T10:34:27.935923+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "BUILD_TELEGRAM_CONTROL_INTERFACE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TEST_LOCAL_CONTROL_RUNTIME_V1",
+  "telegram_token_used": false,
+  "telegram_bot_started": false,
+  "server_run_allowed": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "interface_mode": "DRY_CONTRACT_ONLY",
+  "commands_declared": [
+    "/status",
+    "/draft",
+    "/approve",
+    "/reject",
+    "/lock",
+    "/help"
+  ],
+  "next_allowed_action": "build_telegram_command_contract_v1"
+}

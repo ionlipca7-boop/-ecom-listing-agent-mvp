@@ -1,0 +1,12 @@
+{
+  "status": "HTTP_ERROR",
+  "layer": "EBAY_TOKEN_REFRESH_TOOL_V1",
+  "http_status": 400,
+  "has_access_token": false,
+  "token_type": null,
+  "expires_in": null,
+  "error": "invalid_grant",
+  "error_description": "the provided authorization refresh token is invalid or was issued to another client",
+  "secret_values_printed": false,
+  "timestamp": "2026-04-25T09:08:29.768881+00:00"
+}

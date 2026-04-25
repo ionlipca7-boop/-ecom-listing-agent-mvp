@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_ACTIVE_LISTINGS_READ_ONLY_SOURCE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "INSPECT_INVENTORY_VS_ACTIVE_LISTINGS_GAP_V1",
+  "reason": "Inventory API returned 4 SKUs/items; active eBay listings require read-only ActiveList source.",
+  "selected_source": "Trading API GetMyeBaySelling ActiveList",
+  "api_call_planned": "GetMyeBaySelling",
+  "read_target": "ActiveList",
+  "expected_active_listings": 56,
+  "allowed_action": "prepare_read_only_call_contract_only",
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "delete",
+    "bulk_update",
+    "auto_publish",
+    "inventory_write"
+  ],
+  "write_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "api_execution_now": false,
+  "next_allowed_action": "prepare_trading_active_list_read_only_contract_v1",
+  "timestamp": "2026-04-25T09:30:39.091574+00:00"
+}

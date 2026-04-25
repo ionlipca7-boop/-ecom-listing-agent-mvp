@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_V1",
+  "last_confirmed_layer": "FINISH_READY_LOCAL_EXECUTOR_FILE_PREP_V1",
+  "current_position": "all_blocks_completed_up_to_executor_file_prep",
+  "next_allowed_action": "open_next_block_after_executor_file_v1",
+  "confirmed_facts": {
+    "execution_flow_complete": true,
+    "local_operator_control_ready": true,
+    "local_command_executor_ready": true,
+    "executor_file_contract_ready": true,
+    "file_not_created": true,
+    "publish_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_route": [
+    "NEXT_BLOCK_UNDEFINED_OPEN_REQUIRED"
+  ],
+  "operator_rule": "new chat must start from state verification and next route decision"
+}

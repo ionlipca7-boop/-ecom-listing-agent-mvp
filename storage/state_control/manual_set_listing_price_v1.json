@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_SET_LISTING_PRICE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "manual_price_set": true,
+  "price": 5.99,
+  "currency": "EUR",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "await_human_approval_v1",
+  "timestamp": "2026-04-25T10:44:42.012753+00:00"
+}

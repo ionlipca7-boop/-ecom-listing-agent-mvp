@@ -1,0 +1,28 @@
+{
+  "status": "OK",
+  "layer": "BUILD_LISTING_FLOW_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_FINISH_READY_BEFORE_EXECUTION_V1",
+  "flow": [
+    "INPUT",
+    "LISTING_GENERATOR",
+    "OUTPUT_CONTRACT",
+    "APPROVAL_GATE",
+    "APPROVAL_DECISION_RECORD",
+    "PUBLISH_PAYLOAD_LOCKED"
+  ],
+  "safety": {
+    "publish_allowed": false,
+    "run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false,
+    "real_ebay_api_call_allowed": false
+  },
+  "contracts": {
+    "input_contract": "storage\\contracts\\listing_input_contract_v1.json",
+    "output_contract": "storage\\contracts\\listing_output_contract_v1.json",
+    "approval_gate": "storage\\state_control\\approval_gate_v1.json",
+    "publish_lock": "storage\\state_control\\ebay_publish_locked_v1.json"
+  },
+  "next_allowed_action": "build_run_listing_flow_v1"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_TRADING_API_READ_ONLY_V1",
+  "last_stable_layer": "PREPARE_TRADING_API_GET_MY_EBAY_SELLING_READ_ONLY_V1",
+  "current_position": "trading_api_read_only_route_prepared",
+  "failed_step": "build_trading_api_active_listings_fetcher_v1",
+  "failure_reason": "inline_py_c_syntax_error_due_complex_code",
+  "next_allowed_action": "build_trading_api_active_listings_fetcher_v1_using_writer_script",
+  "known_ebay_active_listings": 56,
+  "credentials_status": "env_local_ready_true_previous_check",
+  "api_path": "TRADING_API_GET_MY_EBAY_SELLING",
+  "safety": {
+    "write_allowed": false,
+    "publish_allowed": false,
+    "delete_allowed": false,
+    "bulk_update_allowed": false
+  },
+  "strict_rule": "next chat must use writer-script for fetcher build, no long py-c code",
+  "timestamp": "2026-04-25T08:43:14.731654+00:00"
+}

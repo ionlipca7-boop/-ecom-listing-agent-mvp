@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_TRADING_FETCHER_XML_REQUEST_V1",
+  "target": "storage\\tools\\ebay\\trading_get_my_ebay_selling_fetcher_v1.py",
+  "matches": [
+    {
+      "line": 29,
+      "text": "    xml = f\"\"\"<?xml version='1.0' encoding='utf-8'?><GetMyeBaySellingRequest xmlns='urn:ebay:apis:eBLBaseComponents'><RequesterCredentials><eBayAuthToken>{token}</eBayAuthToken></RequesterCredentials><ActiveList><Include>true</Include><IncludeNotes>false</IncludeNotes><Pagination><EntriesPerPage>200</EntriesPerPage><PageNumber>1</PageNumber></Pagination></ActiveList><DetailLevel>ReturnAll</DetailLevel></GetMyeBaySellingRequest>\"\"\""
+    }
+  ],
+  "read_only": true,
+  "execution_allowed": false,
+  "next_allowed_action": "patch_trading_request_using_real_xml_line_v1",
+  "timestamp": "2026-04-25T08:58:54.364658+00:00"
+}

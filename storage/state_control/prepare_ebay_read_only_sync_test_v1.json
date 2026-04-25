@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_READ_ONLY_SYNC_TEST_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_EBAY_READ_ONLY_SYNC_STUB_V1",
+  "module_import_ok": true,
+  "token_check_api_call_used": false,
+  "sample_snapshot_created": true,
+  "sample_snapshot_count": 1,
+  "snapshot_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\inventory\\ebay_active_listings_snapshot_v1.json",
+  "real_ebay_items_read": false,
+  "api_call_used": false,
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "prepare_real_ebay_read_credentials_gate_v1",
+  "timestamp": "2026-04-25T07:31:44.365212+00:00"
+}

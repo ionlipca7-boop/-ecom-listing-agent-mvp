@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_IMAGE_INPUT_SCAN_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "image_count": 9,
+  "scan_created": true,
+  "image_scan_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\image_input_scan_v1.json",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "prepare_product_consistency_check_v1",
+  "timestamp": "2026-04-25T10:29:52.017659+00:00"
+}

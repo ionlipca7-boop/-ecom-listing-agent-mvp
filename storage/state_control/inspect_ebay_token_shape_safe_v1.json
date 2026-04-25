@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_EBAY_TOKEN_SHAPE_SAFE_V1",
+  "access_token_exists": true,
+  "access_token_length": 1964,
+  "access_token_dot_count": 1,
+  "access_token_starts_with_v_prefix": true,
+  "access_token_likely_ebay_opaque": true,
+  "refresh_token_exists": true,
+  "refresh_token_length": 2700,
+  "secret_values_printed": false,
+  "read_only": true,
+  "next_allowed_action": "prepare_ebay_token_refresh_with_required_scopes_v1",
+  "timestamp": "2026-04-25T09:05:33.986976+00:00"
+}

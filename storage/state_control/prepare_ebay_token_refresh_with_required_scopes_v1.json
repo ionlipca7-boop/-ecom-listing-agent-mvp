@@ -1,0 +1,19 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_EBAY_TOKEN_REFRESH_WITH_REQUIRED_SCOPES_V1",
+  "input_layer": "INSPECT_EBAY_TOKEN_SHAPE_SAFE_V1",
+  "refresh_token_available": true,
+  "required_scopes": [
+    "https://api.ebay.com/oauth/api_scope",
+    "https://api.ebay.com/oauth/api_scope/sell.inventory"
+  ],
+  "reason": "Sell Inventory API returned 403 insufficient permissions",
+  "secret_values_printed": false,
+  "execution_allowed": false,
+  "read_only": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "build_ebay_token_refresh_tool_v1",
+  "timestamp": "2026-04-25T09:06:23.732119+00:00"
+}

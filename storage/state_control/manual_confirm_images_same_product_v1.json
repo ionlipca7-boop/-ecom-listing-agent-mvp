@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "MANUAL_CONFIRM_IMAGES_SAME_PRODUCT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "human_decision": "PASS_SAME_PRODUCT",
+  "product_title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "image_count": 9,
+  "images_consistent": true,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_image_text_quality_check_v1",
+  "timestamp": "2026-04-25T10:33:21.242653+00:00"
+}

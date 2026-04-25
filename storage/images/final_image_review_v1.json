@@ -1,0 +1,22 @@
+{
+  "status": "WAITING_FOR_IMAGES",
+  "layer": "FINAL_IMAGE_REVIEW_V1",
+  "image_count": 0,
+  "required_min": 3,
+  "required_max": 9,
+  "checks_ready": [
+    "image_count_3_to_9",
+    "single_product_consistency",
+    "no_mixed_products",
+    "title_photo_match",
+    "specs_photo_match",
+    "foreign_text_detection",
+    "needs_german_text_overlay",
+    "quality_ready_for_ebay",
+    "human_fix_required_if_conflict"
+  ],
+  "conflict_status": "PENDING_IMAGE_INPUT",
+  "images_status": "NOT_READY",
+  "human_message": "Bitte Produktfotos hochladen: mindestens 3, maximal 9 Bilder.",
+  "publish_allowed": false
+}

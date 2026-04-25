@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PRICE_RESEARCH_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_LISTING_ENGINE_V2_DRAFT_V1",
+  "input_status": "OK",
+  "draft_status": "draft",
+  "product_title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "price_research_mode": "READ_ONLY",
+  "price_sources": [
+    "existing_ebay_inventory",
+    "manual_market_check_later",
+    "competitor_snapshot_later"
+  ],
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_price_research_read_only_v1",
+  "timestamp": "2026-04-25T10:17:14.124397+00:00"
+}

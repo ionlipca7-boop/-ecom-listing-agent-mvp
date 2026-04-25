@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_LOCAL_COMMAND_EXECUTOR_PREP_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "checks": {
+    "contract_ok": true,
+    "executor_not_executed": true,
+    "publish_blocked": true,
+    "server_blocked": true,
+    "telegram_blocked": true,
+    "git_push_blocked": true
+  },
+  "local_command_executor_ready": true,
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "FINISH_READY"
+}

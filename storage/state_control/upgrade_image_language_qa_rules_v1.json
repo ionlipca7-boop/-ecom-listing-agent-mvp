@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "UPGRADE_IMAGE_LANGUAGE_QA_RULES_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "rules_created": true,
+  "rules_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\rules\\image_language_qa_rules_v1.json",
+  "target_listing_language": "de",
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "manual_confirm_image_qa_v1",
+  "timestamp": "2026-04-25T10:35:54.858198+00:00"
+}

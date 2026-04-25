@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "BUILD_RUN_CONTROL_ROOM_LOCAL_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LOCAL_CONTROL_RUNTIME_ENTRY_V1",
+  "entry_gate_ok": true,
+  "tool_path": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\tools\\run_control_room_local_v1.py",
+  "compile_returncode": 0,
+  "compile_stderr": "",
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "server_run_allowed": false,
+  "telegram_run_allowed": false,
+  "next_allowed_action": "test_local_control_runtime_v1"
+}

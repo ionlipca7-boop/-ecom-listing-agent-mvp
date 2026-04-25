@@ -1,0 +1,11 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_APPROVAL_TO_PUBLISH_LOCK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_APPROVAL_DECISION_RECORD_V1",
+  "publish_lock_confirmed": true,
+  "approved_for_publish": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "next_allowed_action": "build_publish_payload_locked_v1"
+}

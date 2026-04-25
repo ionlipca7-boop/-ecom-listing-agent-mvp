@@ -1,24 +1,8 @@
 {
   "status": "OK",
   "layer": "RUNTIME_RESULT_WRITER_V1",
-  "project": "ECOM_LISTING_AGENT_MVP",
-  "input_layer": "LOCAL_EXECUTOR_AGENT_V1",
-  "writer_target": "storage/state_control/runtime_result_v1.json",
-  "writer_role": "persist_runtime_publish_result_for_control_room",
-  "required_result_fields": [
-    "status",
-    "layer",
-    "project",
-    "source_listing_url",
-    "publish_attempted",
-    "publish_success",
-    "ebay_offer_id",
-    "ebay_listing_id",
-    "sku",
-    "message"
-  ],
-  "parallel_branches": false,
-  "project_specific_only": true,
-  "runtime_result_writer_ready": true,
+  "bridge_layer": "PUBLISH_RUNTIME_BRIDGE_V1",
+  "publish_allowed": false,
+  "live_action_executed": false,
   "next_allowed_action": "build_finish_ready_writer_v1"
 }

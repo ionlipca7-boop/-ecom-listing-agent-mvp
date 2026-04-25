@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_ALTERNATE_SELL_INVENTORY_READ_ONLY_SYNC_V1",
+  "input_layer": "INSPECT_EBAY_ACCOUNT_ACTIVE_LIST_VISIBILITY_V1",
+  "reason": "Trading API connection OK but ActiveList not returned",
+  "alternate_api": "Sell Inventory API",
+  "endpoint": "/sell/inventory/v1/inventory_item",
+  "expected_active_listings": 56,
+  "read_only": true,
+  "execution_allowed": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "bulk_update_allowed": false,
+  "next_allowed_action": "build_sell_inventory_read_only_fetcher_v1",
+  "timestamp": "2026-04-25T09:00:57.740063+00:00"
+}

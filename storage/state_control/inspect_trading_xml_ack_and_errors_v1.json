@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_TRADING_XML_ACK_AND_ERRORS_V1",
+  "http_status": 200,
+  "raw_length": 368,
+  "ack": [
+    "Success"
+  ],
+  "error_codes": [],
+  "short_messages": [],
+  "first_tags": [
+    "GetMyeBaySellingResponse",
+    "Timestamp",
+    "Ack",
+    "Version",
+    "Summary",
+    "TotalSoldCount",
+    "TotalSoldValue",
+    "SoldDurationInDays"
+  ],
+  "contains_active_list": false,
+  "contains_item": false,
+  "contains_item_id": false,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "repair_or_adjust_trading_request_v1",
+  "timestamp": "2026-04-25T08:57:27.928008+00:00"
+}

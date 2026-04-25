@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_REAL_EBAY_INVENTORY_READ_EXECUTION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_REAL_EBAY_READ_ONLY_INVENTORY_FETCHER_V1",
+  "allowed_action": "READ_ONLY_INVENTORY_FETCH",
+  "forbidden_actions": [
+    "publish",
+    "revise",
+    "end",
+    "bulk_update",
+    "delete"
+  ],
+  "write_allowed": false,
+  "publish_allowed": false,
+  "next_allowed_action": "execute_real_ebay_inventory_read_only_v1",
+  "timestamp": "2026-04-25T08:34:19.132746+00:00"
+}

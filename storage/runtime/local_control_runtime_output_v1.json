@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "LOCAL_CONTROL_RUNTIME_OUTPUT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "LOCAL_CONTROL_RUNTIME_ENTRY_V1",
+  "mode": "DRY_LOCAL_CONTROL_RUNTIME",
+  "real_ebay_api_call_allowed": false,
+  "publish_allowed": false,
+  "server_run_allowed": false,
+  "telegram_run_allowed": false,
+  "git_push_allowed": false,
+  "local_runtime_executed": true,
+  "next_allowed_action": "build_telegram_control_interface_v1",
+  "timestamp": "2026-04-25T06:47:23.076670+00:00"
+}

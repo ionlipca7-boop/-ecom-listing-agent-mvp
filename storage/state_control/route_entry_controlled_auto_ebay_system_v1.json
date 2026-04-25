@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "ROUTE_ENTRY_CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "CONTROLLED_AUTO_EBAY_SYSTEM_MASTER_PLAN_V1",
+  "route_name": "CONTROLLED_AUTO_EBAY_SYSTEM_V1",
+  "route_opened": true,
+  "active_goal": "controlled_auto_generation_approval_publish_strategy_inventory_telegram_server",
+  "execution_mode": "CONTROLLED_SAFE_BUILD",
+  "real_publish_allowed": false,
+  "ebay_api_call_allowed": false,
+  "telegram_token_usage_allowed": false,
+  "server_run_allowed": false,
+  "git_push_allowed": false,
+  "first_build_block": "B_EBAY_SYNC_EXISTING_56_LISTINGS",
+  "next_allowed_action": "prepare_ebay_sync_existing_listings_v1",
+  "timestamp": "2026-04-25T07:19:54.568971+00:00"
+}

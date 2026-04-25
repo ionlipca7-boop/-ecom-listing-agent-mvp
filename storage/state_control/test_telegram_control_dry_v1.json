@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "TEST_TELEGRAM_CONTROL_DRY_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_TELEGRAM_COMMAND_CONTRACT_V1",
+  "sample_command": {
+    "command": "/status",
+    "expected_action": "read_state_only",
+    "no_network": true
+  },
+  "dry_test_passed": true,
+  "telegram_token_used": false,
+  "telegram_bot_started": false,
+  "server_run_allowed": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "next_allowed_action": "build_approval_to_unlock_logic_v1"
+}

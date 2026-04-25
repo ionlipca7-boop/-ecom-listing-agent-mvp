@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_LOCAL_OPERATOR_CONTROL_CONTRACTS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "checks": {
+    "command_ok": true,
+    "router_ok": true,
+    "next_action_ok": true,
+    "publish_blocked": true,
+    "server_blocked": true,
+    "telegram_blocked": true,
+    "router_local_only": true
+  },
+  "local_operator_control_ready": true,
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "FINISH_READY"
+}

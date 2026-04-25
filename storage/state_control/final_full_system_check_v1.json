@@ -1,0 +1,25 @@
+{
+  "status": "OK",
+  "layer": "FINAL_FULL_SYSTEM_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "checked_layers": [
+    "verify_clean_project_structure_v1.json",
+    "repair_listing_generator_utf8_verify_v1.json",
+    "approval_gate_v1.json",
+    "ebay_publish_locked_v1.json",
+    "server_runtime_plan_v1.json",
+    "telegram_bot_plan_v1.json",
+    "telegram_token_gate_v1.json"
+  ],
+  "missing_layers": [],
+  "all_required_layers_ok": true,
+  "publish_allowed": false,
+  "run_allowed": false,
+  "telegram_run_allowed": false,
+  "delete_used": true,
+  "blocked_not_deleted": [
+    "nul"
+  ],
+  "final_ready": true,
+  "next_allowed_action": "FINISH_READY"
+}

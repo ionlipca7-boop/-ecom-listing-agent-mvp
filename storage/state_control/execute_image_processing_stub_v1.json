@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_IMAGE_PROCESSING_STUB_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "mode": "COPY_ONLY_STUB_NO_AI_EDIT",
+  "copied_count": 0,
+  "output_folder": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\images\\ebay_ready",
+  "images_ebay_ready": false,
+  "requires_human_review_after_processing": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "repair_image_processing_stub_v1",
+  "timestamp": "2026-04-25T10:38:32.036944+00:00"
+}

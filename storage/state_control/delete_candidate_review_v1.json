@@ -1,0 +1,196 @@
+{
+  "status": "OK",
+  "layer": "DELETE_CANDIDATE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "VERIFY_CURRENT_STOP_STATE_V1",
+  "delete_executed": false,
+  "delete_allowed": false,
+  "review_only": true,
+  "candidate_count": 5,
+  "keep_count": 31,
+  "delete_candidates": [
+    {
+      "git_status": "??",
+      "path": "executor/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "nul",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "run_executor_entry_v1.bat",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/archive_candidates/project_cleanup_v1/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    }
+  ],
+  "keep_or_project_material": [
+    {
+      "git_status": "M",
+      "path": "storage/state_control/finish_ready_writer_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "M",
+      "path": "storage/state_control/runtime_result_writer_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "3",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "NEW_CHAT_FRONT_V2.txt",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/contracts/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/memory/archive/transition_2026_04_25_cleanup_finish_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/memory/archive/transition_2026_04_25_full_finish_to_clean_route_v2.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/memory/front/FRONT_2026_04_25_CLEAN_STATE_READY_V1.txt",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/plans/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_0_security_fix_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_1_local_github_verify_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_2_control_bridge_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_3_full_project_audit_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_4_clean_route_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_5_build_missing_parts_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_6_final_gate_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/block_7_run_confirmed_stop_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/confirmed_new_chat_entry_state_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/executor_publish_finish_ready_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/prepare_helper_agent_status_builder_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/prepare_helper_agent_status_contract_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_archive_move_execute_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_archive_move_prepare_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_archive_move_verify_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_audit_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_classification_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_decision_gate_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_final_summary_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_pending_decision_gate_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_cleanup_review_pending_items_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/state_control/project_inventory_map_result_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    }
+  ],
+  "next_allowed_action": "build_delete_decision_gate_v1"
+}

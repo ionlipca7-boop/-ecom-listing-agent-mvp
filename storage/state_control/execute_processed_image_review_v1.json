@@ -1,0 +1,12 @@
+{
+  "status": "OK",
+  "layer": "EXECUTE_PROCESSED_IMAGE_REVIEW_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "processed_review_created": true,
+  "images_ebay_ready": false,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "manual_approve_processed_images_v1",
+  "timestamp": "2026-04-25T10:40:39.488459+00:00"
+}

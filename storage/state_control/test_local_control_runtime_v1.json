@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "TEST_LOCAL_CONTROL_RUNTIME_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "BUILD_RUN_CONTROL_ROOM_LOCAL_V1",
+  "run_returncode": 0,
+  "run_stdout": "{\n  \"status\": \"OK\",\n  \"layer\": \"LOCAL_CONTROL_RUNTIME_OUTPUT_V1\",\n  \"project\": \"ECOM_LISTING_AGENT_MVP\",\n  \"input_layer\": \"LOCAL_CONTROL_RUNTIME_ENTRY_V1\",\n  \"mode\": \"DRY_LOCAL_CONTROL_RUNTIME\",\n  \"real_ebay_api_call_allowed\": false,\n  \"publish_allowed\": false,\n  \"server_run_allowed\": false,\n  \"telegram_run_allowed\": false,\n  \"git_push_allowed\": false,\n  \"local_runtime_executed\": true,\n  \"next_allowed_action\": \"build_telegram_control_interface_v1\",\n  \"timestamp\": \"2026-04-25T06:47:23.076670+00:00\"\n}\n",
+  "run_stderr": "",
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "server_run_allowed": false,
+  "telegram_run_allowed": false,
+  "local_control_runtime_tested": true,
+  "next_allowed_action": "build_telegram_control_interface_v1"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LISTING_ENGINE_V2_OUTPUT_SCHEMA_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_LISTING_ENGINE_V2_CONTRACT_V1",
+  "schema": {
+    "seo_title_de": "string_max_80",
+    "description_html_de": "safe_html",
+    "item_specifics": "dict",
+    "condition": "new_or_used",
+    "photo_set": "3_to_9_images",
+    "approval_required": true
+  },
+  "forbidden": [
+    "auto_publish_without_approval",
+    "fake_specs",
+    "policy_violating_claims"
+  ],
+  "next_allowed_action": "prepare_listing_engine_v2_execution_gate_v1",
+  "timestamp": "2026-04-25T10:12:14.304985+00:00"
+}

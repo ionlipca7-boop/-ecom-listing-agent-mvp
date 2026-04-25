@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PRODUCT_INPUT_VALIDATION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "reason": "insert safety gate before price research and publish pipeline",
+  "checks": [
+    "single_product_consistency",
+    "photo_title_match",
+    "photo_specs_match",
+    "duplicate_or_mixed_product_detection",
+    "image_count_3_to_9",
+    "foreign_text_detection",
+    "missing_specs_detection",
+    "price_sanity_check",
+    "human_fix_required_if_conflict"
+  ],
+  "input_layer": "PREPARE_PRICE_RESEARCH_V1",
+  "input_status": "OK",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_product_input_validation_gate_v1",
+  "timestamp": "2026-04-25T10:20:06.190377+00:00"
+}

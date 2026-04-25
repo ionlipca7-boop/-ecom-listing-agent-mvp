@@ -1,0 +1,25 @@
+{
+  "status": "ACTIVE",
+  "gate": "PRODUCT_INPUT_VALIDATION_GATE_V1",
+  "mode": "HUMAN_APPROVAL_ON_CONFLICT",
+  "required_inputs": [
+    "product_title",
+    "product_specs",
+    "price_input",
+    "photo_set_3_to_9"
+  ],
+  "conflict_rules": [
+    "stop_if_multiple_products_detected",
+    "stop_if_title_photo_mismatch",
+    "stop_if_specs_photo_mismatch",
+    "stop_if_missing_required_specs",
+    "stop_if_foreign_text_unhandled",
+    "stop_if_price_outlier"
+  ],
+  "allowed_outcomes": [
+    "PASS_CONTINUE",
+    "NEEDS_HUMAN_FIX",
+    "BLOCKED_CONFLICT"
+  ],
+  "publish_allowed": false
+}

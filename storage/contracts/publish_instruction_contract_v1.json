@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "BUILD_PUBLISH_INSTRUCTION_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "publish_allowed": false,
+  "live_publish_allowed": false,
+  "approval_required": true,
+  "tokens_in_code_allowed": false,
+  "secrets_location": "storage/secrets or .env",
+  "git_push_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "build_local_executor_agent_v1"
+}

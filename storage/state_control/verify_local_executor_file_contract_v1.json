@@ -1,0 +1,24 @@
+{
+  "status": "OK",
+  "layer": "VERIFY_LOCAL_EXECUTOR_FILE_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "checks": {
+    "contract_ok": true,
+    "next_action_ok": true,
+    "file_spec_only": true,
+    "target_ok": true,
+    "forbidden_api": true,
+    "forbidden_token": true,
+    "forbidden_server": true,
+    "forbidden_git": true
+  },
+  "local_executor_file_contract_ready": true,
+  "security": {
+    "publish_allowed": false,
+    "real_ebay_api_call_allowed": false,
+    "server_run_allowed": false,
+    "telegram_run_allowed": false,
+    "git_push_allowed": false
+  },
+  "next_allowed_action": "FINISH_READY"
+}

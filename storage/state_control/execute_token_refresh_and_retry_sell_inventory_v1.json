@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED",
+  "layer": "EXECUTE_TOKEN_REFRESH_AND_RETRY_SELL_INVENTORY_V1",
+  "refresh_returncode": 0,
+  "refresh_http_status": 400,
+  "refresh_status": "HTTP_ERROR",
+  "has_access_token": false,
+  "sell_inventory_returncode": 1,
+  "sell_inventory_http_status": 403,
+  "sell_inventory_status": "HTTP_ERROR",
+  "inventory_item_count": 0,
+  "secret_values_printed": false,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "next_allowed_action": "repair_ebay_token_scope_or_auth_flow_v1",
+  "timestamp": "2026-04-25T09:08:29.839238+00:00"
+}

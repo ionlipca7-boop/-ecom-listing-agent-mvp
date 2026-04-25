@@ -1,0 +1,33 @@
+{
+  "status": "NEEDS_MANUAL_IMAGE_QA",
+  "layer": "IMAGE_TEXT_QUALITY_CHECK_V1",
+  "image_count": 9,
+  "images": [
+    "8c8b596f-428a-49bc-a12f-5bd9aa91a1d9.png",
+    "a98b143a-8f3b-4460-978d-c28d01d9819c.png",
+    "b2b94845-6c94-4233-b1d3-36db3a844ba0.png",
+    "bfef8938-9eff-4eab-ac2f-b0ad5ca0a387.png",
+    "ce46caa8-ab2d-43a7-90b6-cf655d3a203f.png",
+    "cfc1ec94-c4b8-4cc0-b81d-3afe0d49c19b.png",
+    "e2f07862-878c-476e-9a3d-47698f317111.png",
+    "fae4f0f9-ff6b-4cdd-a4bf-7af2c5b8ef5c.png",
+    "image-1771875860883.jpg"
+  ],
+  "checks": [
+    "detect_chinese_text",
+    "detect_english_text",
+    "detect_logo_or_watermark",
+    "check_resolution",
+    "check_blur",
+    "check_background",
+    "decide_german_overlay_needed",
+    "prepare_ebay_ready_output"
+  ],
+  "qa_decision": "PENDING_HUMAN_QA_CONFIRMATION",
+  "possible_outcomes": [
+    "PASS_EBAY_READY",
+    "NEEDS_TEXT_REMOVAL_OR_OVERLAY",
+    "NEEDS_IMAGE_REPLACEMENT"
+  ],
+  "publish_allowed": false
+}

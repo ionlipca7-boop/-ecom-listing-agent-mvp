@@ -1,0 +1,13 @@
+{
+  "status": "OK",
+  "layer": "SELECT_PHOTO_ENGINE_TEST_INPUT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_PHOTO_ENGINE_EXECUTION_GATE_V1",
+  "test_input_mode": "local_folder",
+  "source_folder": "storage\\photo_engine\\test_input_v1\\raw",
+  "output_folder": "storage\\photo_engine\\test_input_v1\\ebay_ready",
+  "required_user_action": "put 3-9 source images into source_folder",
+  "image_processing_now": false,
+  "next_allowed_action": "prepare_photo_engine_local_folders_v1",
+  "timestamp": "2026-04-25T09:39:52.537380+00:00"
+}

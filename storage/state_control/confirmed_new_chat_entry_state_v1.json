@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "CONFIRMED_NEW_CHAT_ENTRY_STATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TRANSITION_TO_NEW_CHAT_AFTER_PREVIEW_ROUTE_MAP_V1",
+  "input_status": "OK",
+  "real_current_layer": "PREVIEW_ROUTE_MAP_REAL_ENTRY_CONFIRMED_V1",
+  "real_preview_entrypoint": "runner_preview_mapping_layer_v1.py",
+  "real_preview_output": "storage\\\\preview\\\\runner_preview_v3.json",
+  "execution_blocked": true,
+  "live_execution": false,
+  "parallel_branches": false,
+  "old_context_execute_archive_move_batch_v1_rejected": true,
+  "next_allowed_action": "build_helper_agent_plan_v1"
+}

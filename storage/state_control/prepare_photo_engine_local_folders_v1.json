@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_PHOTO_ENGINE_LOCAL_FOLDERS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "SELECT_PHOTO_ENGINE_TEST_INPUT_V1",
+  "source_folder_exists": true,
+  "output_folder_exists": true,
+  "allowed_extensions": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".webp"
+  ],
+  "min_images": 3,
+  "max_images": 9,
+  "next_allowed_action": "create_photo_engine_empty_manifest_v1",
+  "timestamp": "2026-04-25T09:39:52.537380+00:00"
+}

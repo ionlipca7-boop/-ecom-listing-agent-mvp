@@ -1,0 +1,30 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_LISTING_ENGINE_V2_CONTRACT_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "block": "D_LISTING_ENGINE_V2",
+  "input_layer": "UPGRADE_PHOTO_ENGINE_SMART_DESIGN_RULES_V1",
+  "language": "de",
+  "contract_inputs": [
+    "product_title_raw",
+    "product_features",
+    "photo_strategy",
+    "price_context",
+    "category_hint"
+  ],
+  "contract_outputs": [
+    "seo_title_de",
+    "subtitle_optional",
+    "html_description_de",
+    "item_specifics",
+    "photo_usage_plan",
+    "draft_payload"
+  ],
+  "title_max_chars": 80,
+  "execution_now": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_listing_engine_v2_output_schema_v1",
+  "timestamp": "2026-04-25T10:12:14.304985+00:00"
+}

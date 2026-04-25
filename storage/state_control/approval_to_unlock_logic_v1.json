@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "BUILD_APPROVAL_TO_UNLOCK_LOGIC_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "TEST_TELEGRAM_CONTROL_DRY_V1",
+  "approval_source": "DRY_TELEGRAM_APPROVE_COMMAND",
+  "approval_marker_allowed": true,
+  "unlock_real_publish_allowed": false,
+  "publish_allowed": false,
+  "real_ebay_api_call_allowed": false,
+  "telegram_token_used": false,
+  "server_run_allowed": false,
+  "next_allowed_action": "build_publish_unlock_gate_v1"
+}

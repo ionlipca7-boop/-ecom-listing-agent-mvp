@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_TO_NEW_CHAT_AFTER_CLEANUP_V1",
+  "last_confirmed_layer": "PROJECT_CLEANUP_FINAL_SUMMARY_V1",
+  "current_position": "cleanup_finished_project_clean",
+  "next_allowed_action": "start_new_chat_from_clean_state",
+  "confirmed_facts": {
+    "cleanup_completed": true,
+    "archive_done": true,
+    "review_items_kept": true,
+    "root_noise_marked": true,
+    "delete_not_used": true,
+    "project_stable": true
+  },
+  "operator_rule": "new chat must start from clean stable project state and continue controlled execution"
+}

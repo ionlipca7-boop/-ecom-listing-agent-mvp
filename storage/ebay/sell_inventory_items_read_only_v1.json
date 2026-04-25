@@ -1,0 +1,155 @@
+{
+  "status": "OK",
+  "layer": "SELL_INVENTORY_READ_ONLY_FETCHER_V1",
+  "http_status": 200,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "timestamp": "2026-04-25T09:17:53.474745+00:00",
+  "body": {
+    "total": 4,
+    "size": 4,
+    "href": "/sell/inventory/v1/inventory_item?offset=0&limit=200",
+    "limit": 200,
+    "inventoryItems": [
+      {
+        "sku": "USBCOTGAdapterUSB3TypCaufUSBAq10p399",
+        "locale": "de_DE",
+        "product": {
+          "title": "USB-C OTG Adapter USB 3.0 Typ C auf USB-A 6A 120W Datenadapter",
+          "aspects": {
+            "Herstellernummer": [
+              "Nicht zutreffend"
+            ],
+            "Marke": [
+              "Markenlos"
+            ],
+            "Produktart": [
+              "Adapter"
+            ]
+          },
+          "description": "USB-C OTG Adapter fuer Laden und Datenuebertragung. Geeignet fuer Smartphone, Tablet, Laptop und Zubehoer.",
+          "imageUrls": [
+            "https://i.ebayimg.com/images/g/7MsAAeSw7kpp4-UD/s-l1600.webp",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/dq4AAeSwmR5p4~gJ/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/g9EAAeSwQdhp4~gL/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/QgoAAeSwK89p4~gN/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/oEYAAeSwtppp4~gO/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/IIoAAeSwf8Fp4~gP/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/GXIAAeSwEdFp4~gR/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/tY0AAeSwpzNp4~gS/$_1.JPG?set_id=8800005007",
+            "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/4BsAAeSwa5xp4~gT/$_1.JPG?set_id=8800005007"
+          ]
+        },
+        "condition": "NEW",
+        "packageWeightAndSize": {
+          "dimensions": {
+            "width": 2.0,
+            "length": 3.0,
+            "height": 1.0,
+            "unit": "CENTIMETER"
+          },
+          "weight": {
+            "value": 0.0,
+            "unit": "KILOGRAM"
+          }
+        }
+      },
+      {
+        "sku": "ECOM-TEST-CABLE-001",
+        "locale": "de_DE",
+        "product": {
+          "title": "USB-C Ladekabel 2m 60W Schnellladen",
+          "aspects": {
+            "Herstellernummer": [
+              "Nicht zutreffend"
+            ],
+            "Marke": [
+              "Markenlos"
+            ],
+            "Produktart": [
+              "USB-Kabel"
+            ]
+          },
+          "description": "USB-C Kabel 2m fuer Schnellladen und Datentransfer.",
+          "brand": "Markenlos",
+          "mpn": "Nicht zutreffend",
+          "imageUrls": [
+            "https://i.ebayimg.com/images/g/9ecAAeSw-Expjhyh/s-l1600.webp"
+          ]
+        },
+        "condition": "NEW",
+        "availability": {
+          "shipToLocationAvailability": {
+            "quantity": 20
+          }
+        }
+      },
+      {
+        "sku": "USBCLadekabel2m60WSchnellladenDatenkabelq10p675",
+        "locale": "de_DE",
+        "product": {
+          "title": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+          "aspects": {
+            "Marke": [
+              "Markenlos"
+            ],
+            "Produktart": [
+              "USB-C Ladekabel"
+            ],
+            "Typ": [
+              "USB-C Ladekabel"
+            ],
+            "Leistung": [
+              "60W"
+            ],
+            "Kabellaenge": [
+              "2 m"
+            ]
+          },
+          "description": "Hochwertiges USB-C Ladekabel mit 60W Leistung fuer schnelles Laden und Datentransfer.",
+          "imageUrls": [
+            "https://i.ebayimg.com/images/g/tkoAAeSwFOBpuYyi/s-l1600.webp"
+          ]
+        },
+        "condition": "NEW",
+        "availability": {
+          "shipToLocationAvailability": {
+            "quantity": 12
+          }
+        }
+      },
+      {
+        "sku": "ECOM-NEXT-SKU-001",
+        "locale": "de_DE",
+        "product": {
+          "title": "USB-C Ladekabel 2m 60W Schnellladen",
+          "aspects": {
+            "Herstellernummer": [
+              "Nicht zutreffend"
+            ],
+            "Marke": [
+              "Markenlos"
+            ],
+            "Produktart": [
+              "USB-Kabel"
+            ]
+          },
+          "description": "USB-C Kabel 2m fuer Schnellladen und Datentransfer.",
+          "brand": "Markenlos",
+          "mpn": "Nicht zutreffend",
+          "imageUrls": [
+            "https://i.ebayimg.com/images/g/9ecAAeSw-Expjhyh/s-l1600.webp"
+          ]
+        },
+        "condition": "NEW",
+        "availability": {
+          "shipToLocationAvailability": {
+            "quantity": 10
+          }
+        }
+      }
+    ]
+  }
+}

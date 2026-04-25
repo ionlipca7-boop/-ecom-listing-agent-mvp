@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "EBAY_SYNC_READ_ONLY_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "PREPARE_EBAY_SYNC_56_LISTINGS_V1",
+  "gate": "READ_ONLY_EBAY_SYNC",
+  "active_listings_expected": 56,
+  "api_write_allowed": false,
+  "publish_allowed": false,
+  "update_allowed": false,
+  "delete_allowed": false,
+  "safe_to_continue_to_next": "YES",
+  "next_allowed_action": "prepare_ebay_sync_adapter_contract_v1",
+  "timestamp": "2026-04-25T07:30:13.379804+00:00"
+}

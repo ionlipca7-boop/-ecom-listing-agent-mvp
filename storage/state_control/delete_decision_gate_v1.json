@@ -1,0 +1,53 @@
+{
+  "status": "OK",
+  "layer": "DELETE_DECISION_GATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "DELETE_CANDIDATE_REVIEW_V1",
+  "input_status": "OK",
+  "delete_allowed": true,
+  "delete_executed": true,
+  "decision_required": true,
+  "candidate_count": 5,
+  "delete_candidates": [
+    {
+      "git_status": "??",
+      "path": "executor/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "nul",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "run_executor_entry_v1.bat",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "storage/archive_candidates/project_cleanup_v1/",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    },
+    {
+      "git_status": "??",
+      "path": "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json",
+      "decision": "REVIEW_ONLY_NO_DELETE"
+    }
+  ],
+  "allowed_decisions": [
+    "APPROVE_SAFE_DELETE",
+    "REJECT_DELETE_KEEP_ALL"
+  ],
+  "current_decision": "APPROVE_SAFE_DELETE",
+  "next_allowed_action": "verify_clean_project_structure_v1",
+  "deleted_items": [
+    "run_executor_entry_v1.bat",
+    "storage/archive_candidates/project_cleanup_v1/",
+    "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json",
+    "executor/"
+  ],
+  "blocked_not_deleted": [
+    "nul"
+  ]
+}

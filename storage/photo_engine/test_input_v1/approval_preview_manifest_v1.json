@@ -1,0 +1,62 @@
+{
+  "status": "OK",
+  "layer": "INSPECT_PHOTO_ENGINE_OUTPUTS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "input_layer": "EXECUTE_PHOTO_ENGINE_LOCAL_NORMALIZE_V1",
+  "output_folder": "storage\\photo_engine\\test_input_v1\\ebay_ready",
+  "output_image_count": 9,
+  "files": [
+    {
+      "file": "ebay_ready_01.jpg",
+      "size_bytes": 172946,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_01.jpg"
+    },
+    {
+      "file": "ebay_ready_02.jpg",
+      "size_bytes": 402657,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_02.jpg"
+    },
+    {
+      "file": "ebay_ready_03.jpg",
+      "size_bytes": 406060,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_03.jpg"
+    },
+    {
+      "file": "ebay_ready_04.jpg",
+      "size_bytes": 334756,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_04.jpg"
+    },
+    {
+      "file": "ebay_ready_05.jpg",
+      "size_bytes": 363758,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_05.jpg"
+    },
+    {
+      "file": "ebay_ready_06.jpg",
+      "size_bytes": 343487,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_06.jpg"
+    },
+    {
+      "file": "ebay_ready_07.jpg",
+      "size_bytes": 411789,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_07.jpg"
+    },
+    {
+      "file": "ebay_ready_08.jpg",
+      "size_bytes": 351381,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_08.jpg"
+    },
+    {
+      "file": "ebay_ready_09.jpg",
+      "size_bytes": 368638,
+      "path": "storage\\photo_engine\\test_input_v1\\ebay_ready\\ebay_ready_09.jpg"
+    }
+  ],
+  "approval_preview_ready": true,
+  "text_removal_done": false,
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "prepare_photo_engine_ai_enhancement_gate_v1",
+  "timestamp": "2026-04-25T10:02:15.669161+00:00"
+}

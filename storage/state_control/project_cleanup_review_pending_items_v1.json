@@ -1,0 +1,23 @@
+{
+  "status": "OK",
+  "layer": "PROJECT_CLEANUP_REVIEW_PENDING_ITEMS_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "confirmed_state": {
+    "review_items_exist": true,
+    "review_items": [
+      "confirmed_new_chat_entry_state_v1.json",
+      "prepare_helper_agent_status_builder_v1.json",
+      "prepare_helper_agent_status_contract_v1.json"
+    ],
+    "root_noise_present": true,
+    "root_noise_candidates": [
+      "nul",
+      "toragememoryarchivetransition_2026_04_25_branch_mismatch_confirmed_v1.json"
+    ],
+    "delete_allowed": false,
+    "publish_allowed": false,
+    "run_allowed": false
+  },
+  "next_allowed_action": "project_cleanup_pending_decision_gate_v1",
+  "created_at": "2026-04-25T07:10:22.354529"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "OK",
+  "layer": "PREPARE_IMAGE_TEXT_QUALITY_CHECK_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "image_count": 9,
+  "checks": [
+    "detect_chinese_text",
+    "detect_english_text",
+    "detect_logo_or_watermark",
+    "check_resolution",
+    "check_blur",
+    "check_background",
+    "decide_german_overlay_needed",
+    "prepare_ebay_ready_output"
+  ],
+  "mode": "IMAGE_QA_RULE_PREP",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "next_allowed_action": "execute_image_text_quality_check_v1",
+  "timestamp": "2026-04-25T10:33:53.243262+00:00"
+}
