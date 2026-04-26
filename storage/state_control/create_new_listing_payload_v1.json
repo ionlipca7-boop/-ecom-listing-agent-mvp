@@ -1,0 +1,144 @@
+{
+  "timestamp": "20260426_190648",
+  "raw_input": "USB-C Ladekabel 2m 60W Schnellladen Datenkabel",
+  "parsed_product": {
+    "type": "USB-C Ladekabel",
+    "power": "60W",
+    "length": "2m"
+  },
+  "listing_result": {
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+    "price": 7.99,
+    "item_specifics": {
+      "Typ": "USB-C Ladekabel",
+      "Länge": "2m",
+      "Leistung": "60W",
+      "Anschluss": "USB-C",
+      "Produktart": "Kabel",
+      "Zustand": "Neu"
+    },
+    "images": [
+      "image_main.jpg",
+      "image_angle.jpg",
+      "image_detail.jpg"
+    ],
+    "search_intents": [
+      "usb c cable 2m fast charging",
+      "60w usb c cable",
+      "usb c kabel schnellladen"
+    ],
+    "compatibility_keywords": [
+      "USB-C Geräte",
+      "Samsung",
+      "Android",
+      "MacBook"
+    ],
+    "use_case_keywords": [
+      "Schnellladen",
+      "Alltag",
+      "Reise",
+      "Büro",
+      "Zuhause",
+      "Datenübertragung"
+    ],
+    "seo_keywords": [
+      "USB-C Kabel 2m",
+      "USB-C 60W",
+      "Schnellladekabel",
+      "Datenkabel"
+    ],
+    "buyer_questions": [
+      "Ist das Kabel für Schnellladen geeignet?",
+      "Wie lang ist das Kabel (2m)?",
+      "Passt das Kabel zu meinem USB-C Gerät?"
+    ],
+    "ai_summary": "Robustes USB-C Kabel mit 2m Länge und 60W, geeignet für Schnellladen und tägliche Nutzung zu Hause, im Büro oder unterwegs.",
+    "status": "review",
+    "listing_quality_score": 100,
+    "quality_gate_ready": true,
+    "approval_status": "review",
+    "publish_ready": false,
+    "listing_warnings": [],
+    "listing_improvements": [],
+    "final_listing_bundle": {
+      "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+      "category": "Kabel & Adapter",
+      "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+      "price": 7.99,
+      "item_specifics": {
+        "Typ": "USB-C Ladekabel",
+        "Länge": "2m",
+        "Leistung": "60W",
+        "Anschluss": "USB-C",
+        "Produktart": "Kabel",
+        "Zustand": "Neu"
+      },
+      "images": [
+        "image_main.jpg",
+        "image_angle.jpg",
+        "image_detail.jpg"
+      ],
+      "search_intents": [
+        "usb c cable 2m fast charging",
+        "60w usb c cable",
+        "usb c kabel schnellladen"
+      ],
+      "compatibility_keywords": [
+        "USB-C Geräte",
+        "Samsung",
+        "Android",
+        "MacBook"
+      ],
+      "use_case_keywords": [
+        "Schnellladen",
+        "Alltag",
+        "Reise",
+        "Büro",
+        "Zuhause",
+        "Datenübertragung"
+      ],
+      "seo_keywords": [
+        "USB-C Kabel 2m",
+        "USB-C 60W",
+        "Schnellladekabel",
+        "Datenkabel"
+      ],
+      "buyer_questions": [
+        "Ist das Kabel für Schnellladen geeignet?",
+        "Wie lang ist das Kabel (2m)?",
+        "Passt das Kabel zu meinem USB-C Gerät?"
+      ],
+      "ai_summary": "Robustes USB-C Kabel mit 2m Länge und 60W, geeignet für Schnellladen und tägliche Nutzung zu Hause, im Büro oder unterwegs.",
+      "status": "review",
+      "approval_status": "review",
+      "quality_gate_ready": true,
+      "publish_ready": false
+    },
+    "optimized": true,
+    "optimization_notes": [
+      "Listing marked as optimized",
+      "Final listing bundle rebuilt after optimization"
+    ]
+  },
+  "publish_result": {
+    "published": false,
+    "channel": "local_simulator",
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "price": 7.99,
+    "timestamp": "20260426_190648",
+    "status": "failed"
+  },
+  "pipeline_summary": {
+    "quality_score": 100,
+    "approval_status": "review",
+    "quality_gate_ready": true,
+    "publish_ready": false,
+    "warnings_count": 0,
+    "improvements_count": 0,
+    "optimization_notes_count": 2,
+    "publish_status": "failed"
+  }
+}
