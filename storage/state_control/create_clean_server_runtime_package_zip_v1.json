@@ -1,0 +1,14 @@
+{
+  "status": "OK",
+  "layer": "CREATE_CLEAN_SERVER_RUNTIME_PACKAGE_ZIP_V1",
+  "zip": "D:\\ECOM_LISTING_AGENT_MVP\\SERVER_RUNTIME_PACKAGE_V1.zip",
+  "files_in_zip": 48,
+  "excluded_cache_output": true,
+  "requirements_created": true,
+  "env_example_created": true,
+  "publish_called": false,
+  "delete_called": false,
+  "secrets_printed": false,
+  "next_allowed_action": "TRANSFER_PACKAGE_TO_SERVER_V1",
+  "timestamp": "2026-04-26T11:42:49.992880+00:00"
+}
