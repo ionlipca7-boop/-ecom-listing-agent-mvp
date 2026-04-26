@@ -1,0 +1,44 @@
+{
+  "status": "OK",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "transition_layer": "TRANSITION_AFTER_PHASE4_LIVE_SUCCESS_TO_CREATE_NEW_LISTING_V1",
+  "last_confirmed_layer": "ARCHIVE_PHASE4_SUCCESS_AND_STOP_V1",
+  "current_position": "phase4_first_live_listing_success_stopped_ready_create_new_listing",
+  "confirmed_facts": {
+    "server_runtime_ok": true,
+    "telegram_active": true,
+    "active_listings_before": 56,
+    "publish_pipeline_real_tested": true,
+    "published_existing_offer": true,
+    "offerId": "152921341011",
+    "listingId": "318162033369",
+    "http_status": 200,
+    "new_listing_created": false,
+    "publish_route_stopped": true,
+    "phase4_success_archive_committed": true,
+    "git_commit": "39e004a",
+    "token_solution": ".env.local -> storage/secrets/ebay_access_token.txt -> publish executor"
+  },
+  "mandatory_rules": [
+    "Russian only",
+    "ION format only",
+    "no restart",
+    "no parallel branches",
+    "before any CMD check GitHub/source first",
+    "if issue exists search GitHub/local/archive/server before creating fix",
+    "every CMD must include WHERE/PATH/PASTE",
+    "server bash uses # not REM",
+    "no publish/revise/delete without explicit approval",
+    "no repeat publish after error without analysis",
+    "do not pollute server with temporary junk",
+    "one step then STOP"
+  ],
+  "next_allowed_action": "create_new_listing_payload_v1",
+  "planned_route": [
+    "create_new_listing_payload_v1",
+    "create_offer_on_server_v1",
+    "verify_offer_draft_v1",
+    "publish_new_offer_after_approval_v1"
+  ],
+  "timestamp": "2026-04-26T16:56:02.120048+00:00"
+}

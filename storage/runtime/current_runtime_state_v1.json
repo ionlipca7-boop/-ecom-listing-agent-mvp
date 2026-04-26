@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "layer": "CURRENT_RUNTIME_STATE_V1",
+  "project": "ECOM_LISTING_AGENT_MVP",
+  "telegram_bot": "ACTIVE_EXISTING_INSTANCE",
+  "telegram_username": "ecom_agent_2026_bot",
+  "server_runtime": "LOCAL_CONTROL_ROOM_AVAILABLE",
+  "github_branch": "main",
+  "last_commit": "956edbe Merge pull request #107 from ionlipca7-boop/control-room-sync-2026-04-25",
+  "token_guard": "LOCKED_REQUIRED_BEFORE_EBAY_WRITE",
+  "publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "auto_publish_allowed": false,
+  "active_rule": "do not start second Telegram polling; use existing bot bridge only",
+  "next_allowed_action": "connect_existing_telegram_bot_to_control_room_state_bridge_v1",
+  "timestamp": "2026-04-25T15:48:43.826354+00:00"
+}

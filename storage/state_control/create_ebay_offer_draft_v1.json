@@ -1,0 +1,24 @@
+{
+  "status": "READY_DRAFT_ONLY",
+  "publish_called": false,
+  "offer_draft": {
+    "title": "60W USB-C Ladekabel 2m Schnellladen Datenkabel",
+    "category": "Kabel & Adapter",
+    "price": 7.99,
+    "description": "Typ: USB-C Ladekabel\nLeistung: 60W + Schnellladen\nLänge: 2m\nZuverlässige Qualität für hohe Kompatibilität.\n✔ Schnellladen\n✔ Hohe Qualität\n✔ Kompatibel mit vielen Geräten",
+    "item_specifics": {
+      "Typ": "USB-C Ladekabel",
+      "Länge": "2m",
+      "Leistung": "60W",
+      "Anschluss": "USB-C",
+      "Produktart": "Kabel",
+      "Zustand": "Neu"
+    },
+    "images": [
+      "image_main.jpg",
+      "image_angle.jpg",
+      "image_detail.jpg"
+    ],
+    "approval_status": "PENDING_APPROVAL"
+  }
+}

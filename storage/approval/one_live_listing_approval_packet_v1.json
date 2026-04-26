@@ -1,0 +1,20 @@
+{
+  "status": "PENDING_APPROVAL",
+  "layer": "ONE_LIVE_LISTING_APPROVAL_PACKET_V1",
+  "scope": "ONE_LISTING_ONLY",
+  "allowed_action": "ONE_LIVE_PUBLISH_ATTEMPT_AFTER_APPROVAL_ONLY",
+  "server_path": "/home/ionlipca7/runtime_eco_v1",
+  "preconditions": {
+    "server_verified": true,
+    "active_listings_56": true,
+    "token_ok": true,
+    "read_only_pass": true
+  },
+  "publish_allowed_now": false,
+  "auto_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "requires_user_approval": true,
+  "approval_phrase": "APPROVE_ONE_LIVE_LISTING_PHASE4",
+  "timestamp": "2026-04-26T14:05:21.298439+00:00"
+}

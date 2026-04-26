@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "layer": "SERVER_ACTIVE_LISTINGS_56_READONLY_SNAPSHOT_V1",
+  "source_file": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\state_control\\execute_guarded_active_listings_fetch_v1.json",
+  "expected_active_listings": 56,
+  "read_only": true,
+  "publish_called": false,
+  "revise_called": false,
+  "delete_called": false,
+  "source_payload": {
+    "status": "OK",
+    "layer": "EXECUTE_GUARDED_ACTIVE_LISTINGS_FETCH_V1",
+    "project": "ECOM_LISTING_AGENT_MVP",
+    "executor": "D:\\ECOM_LISTING_AGENT_MVP\\run_capture_live_listing_snapshot_v1.py",
+    "guard_ok": true,
+    "publish_allowed": false,
+    "revise_allowed": false,
+    "delete_allowed": false,
+    "destructive_actions_forbidden": true,
+    "timestamp": "2026-04-25T11:39:44.546561+00:00",
+    "returncode": 0,
+    "stdout_tail": "LIVE_LISTING_SNAPSHOT_V1_FINAL_AUDIT\nstatus = OK\ndecision = live_listing_snapshot_v1_captured\ninventory_http_status = 401\noffer_http_status = 401\ntrading_http_status = 200\ntrading_ack = Failure\ntrading_price = \ntrading_picture_count = 0\ninventory_picture_count = 0\noffer_picture_count = 0\nnext_step = archive_working_listing_baseline_v1\n",
+    "stderr_tail": "",
+    "next_allowed_action": "parse_active_listings_fetch_result_v1"
+  },
+  "timestamp": "2026-04-26T13:48:40.694320+00:00"
+}

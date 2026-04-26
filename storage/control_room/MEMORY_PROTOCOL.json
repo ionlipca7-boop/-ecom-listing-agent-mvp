@@ -1,0 +1,16 @@
+{
+  "system": "CONTROL_ROOM_MEMORY_SYSTEM_V1",
+  "layers": {
+    "1_archive": "long-term history, never used as start point",
+    "2_pointer": "single source of truth for current state",
+    "3_route": "A -> B -> FINISH -> STOP inside pointer",
+    "4_session": "chat interaction, not reliable memory"
+  },
+  "rules": [
+    "Always read CURRENT_POINTER before any action",
+    "Never restart from archive",
+    "Only follow next_allowed_action",
+    "No parallel branches"
+  ],
+  "updated_at": "2026-04-26T12:38:44.691809+00:00"
+}
