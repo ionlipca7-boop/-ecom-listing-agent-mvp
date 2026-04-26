@@ -1,0 +1,15 @@
+{
+  "status": "OK",
+  "layer": "FIRST_LIVE_LISTING_SUCCESS_V1",
+  "http_status": 200,
+  "offerId": "152921341011",
+  "listingId": "318162033369",
+  "publish_called": true,
+  "repeat_publish_allowed": false,
+  "revise_allowed": false,
+  "delete_allowed": false,
+  "archive_layer": "ARCHIVE_PHASE4_SUCCESS_AND_STOP_V1",
+  "current_position": "phase4_first_live_listing_success_stopped",
+  "publish_route_stopped": true,
+  "next_allowed_action": "git_commit_phase4_success_archive_v1"
+}
