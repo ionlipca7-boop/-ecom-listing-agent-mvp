@@ -1,0 +1,24 @@
+{
+  "status": "DRAFT",
+  "version": "V1",
+  "architecture": "MODULAR_MONOLITH_WITH_BRAIN",
+  "modules": [
+    {"name": "brain_orchestrator", "role": "controls flow, reads pointer, enforces gates"},
+    {"name": "telegram_block", "role": "user control panel, approvals, notifications"},
+    {"name": "listing_builder_block", "role": "title, description, category, payload"},
+    {"name": "photo_block", "role": "image processing, cleanup, formatting"},
+    {"name": "price_block", "role": "pricing logic and research"},
+    {"name": "ebay_api_block", "role": "inventory, offer, publish, verify"},
+    {"name": "approval_gate_block", "role": "manual control of risky actions"},
+    {"name": "strategy_block", "role": "refresh, replace, daily logic"},
+    {"name": "archive_memory_block", "role": "history and transitions"},
+    {"name": "server_runtime_block", "role": "env, secrets, execution"},
+    {"name": "github_sync_block", "role": "repo state and version control"}
+  ],
+  "rules": [
+    "no direct module-to-module control",
+    "all actions through brain",
+    "publish only after approval",
+    "no delete without safety gate"
+  ]
+}
