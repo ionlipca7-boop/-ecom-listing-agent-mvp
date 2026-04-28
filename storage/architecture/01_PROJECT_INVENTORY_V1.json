@@ -1,0 +1,90 @@
+{
+  "status": "DRAFT_FROM_GITHUB_SEARCH",
+  "version": "V1",
+  "source": "GitHub search and known project state, no server access, no live calls",
+  "method_guard": {
+    "main_changed": false,
+    "server_touched": false,
+    "publish_called": false,
+    "secrets_read": false,
+    "files_moved": false,
+    "files_deleted": false
+  },
+  "inventory_groups": [
+    {
+      "block": "telegram_block",
+      "evidence": [
+        "bot.py",
+        "NEW_CHAT_J_TELEGRAM_V1.txt",
+        "storage/state_control/telegram_bot_plan_v1.json",
+        "storage/state_control/continue_j_telegram_notifications_contract_v1.json"
+      ],
+      "role": "operator panel, approval input, notifications",
+      "risk": "medium",
+      "audit_note": "Telegram exists but must not directly publish; it should send intent to brain/orchestrator."
+    },
+    {
+      "block": "brain_orchestrator",
+      "evidence": [
+        "storage/control_room/CURRENT_POINTER.json (project convention)",
+        "storage/state_control/open_next_route_decision_v1.json",
+        "storage/rules/controlled_automation_mode_v1.json"
+      ],
+      "role": "single decision authority, next_allowed_action, state gates",
+      "risk": "high",
+      "audit_note": "Brain is conceptual but not yet fully enforced as one executable boundary."
+    },
+    {
+      "block": "ebay_api_block",
+      "evidence": [
+        "run_ebay_publish_offer_v6.py",
+        "storage/tools/run_ebay_publish_offer_v6_env_token_wrapper_v1.py",
+        "storage/tools/phase4_retry_wrapper_v2_with_aligned_token_source_v1.py",
+        "storage/exports/ebay_publish_offer_audit_v6.json",
+        "storage/exports/ebay_get_offer_audit_v3.json"
+      ],
+      "role": "offer creation, publish, get offer, read-only verification",
+      "risk": "high",
+      "audit_note": "Must separate API call success from real eBay visible active listing verification."
+    },
+    {
+      "block": "server_runtime_block",
+      "evidence": [
+        "SERVER_RUNTIME_PACKAGE_V1.zip",
+        "storage/state_control/clean_server_runtime_manifest_v1.json",
+        "storage/state_control/verify_github_runtime_cloud_assets_v1.json"
+      ],
+      "role": "runtime, env, secrets, tmux, execution location",
+      "risk": "high",
+      "audit_note": "Audit branch must not touch server. Future steps need explicit server read-only gate."
+    },
+    {
+      "block": "archive_memory_block",
+      "evidence": [
+        "storage/memory/archive/transition_*.json",
+        "storage/memory/archive/archive_phase4_success_and_stop_v1.json"
+      ],
+      "role": "history, transitions, last confirmed state",
+      "risk": "medium",
+      "audit_note": "Archive stores truth but current action must come from pointer/current route."
+    },
+    {
+      "block": "github_sync_block",
+      "evidence": [
+        "storage/audit/git_status_snapshot_v1.txt",
+        "storage/state_control/local_git_runtime_audit_v1.json",
+        "storage/state_control/execute_post_execution_git_review_v1.json"
+      ],
+      "role": "source-of-code audit, branch management, repo history",
+      "risk": "medium",
+      "audit_note": "GitHub can verify source state, not live eBay/server state."
+    }
+  ],
+  "next_required_inventory_work": [
+    "expand file-to-block mapping",
+    "identify duplicate wrappers",
+    "identify direct live action paths",
+    "create block boundaries document",
+    "create risk register"
+  ]
+}
