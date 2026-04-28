@@ -1,0 +1,90 @@
+{
+  "status": "DRAFT_STRATEGY_ONLY",
+  "branch": "architecture-audit-v1",
+  "main_changed": false,
+  "server_touched": false,
+  "publish_called": false,
+  "purpose": "Define module capabilities so future upgrades can be added without breaking core architecture.",
+  "global_rules": [
+    "All capabilities must be called through Brain/Orchestrator.",
+    "Live capabilities require Approval Gate.",
+    "Dangerous capabilities require explicit safety gate.",
+    "Every capability must declare risk level and verification requirement.",
+    "No capability may print or store secrets in GitHub."
+  ],
+  "capabilities": [
+    {
+      "module": "telegram_operator_layer",
+      "capabilities": ["text_intent", "voice_intent_future", "ru_response", "approval_buttons"],
+      "risk_level": "medium",
+      "live_action_allowed": false
+    },
+    {
+      "module": "brain_orchestrator",
+      "capabilities": ["route_next_action", "enforce_pointer", "dispatch_module", "block_unsafe_action"],
+      "risk_level": "high",
+      "live_action_allowed": false
+    },
+    {
+      "module": "universal_listing_core",
+      "capabilities": ["build_product_model", "generate_german_listing", "generate_html", "quality_score_input"],
+      "risk_level": "medium",
+      "live_action_allowed": false
+    },
+    {
+      "module": "photo_engine",
+      "capabilities": ["validate_images", "select_hero_image", "detect_bad_quality", "marketplace_photo_readiness"],
+      "risk_level": "medium",
+      "live_action_allowed": false
+    },
+    {
+      "module": "price_market_research",
+      "capabilities": ["competitor_snapshot", "price_range", "target_price", "margin_guard"],
+      "risk_level": "medium",
+      "live_action_allowed": false
+    },
+    {
+      "module": "inventory_sales_core",
+      "capabilities": ["track_purchase", "track_stock", "reserve_stock", "sync_sales", "oversell_guard", "bundle_component_guard"],
+      "risk_level": "high",
+      "live_action_allowed": false
+    },
+    {
+      "module": "ebay_adapter",
+      "capabilities": ["read_inventory", "create_offer", "publish_offer", "verify_active_visibility", "send_offer", "promoted_listing"],
+      "risk_level": "high",
+      "live_action_allowed": true,
+      "requires_approval": true,
+      "requires_verify_after_action": true
+    },
+    {
+      "module": "amazon_adapter_future",
+      "capabilities": ["product_type_schema", "catalog_research", "listing_validation", "publish_future", "verify_future"],
+      "risk_level": "high",
+      "live_action_allowed": false,
+      "requires_approval": true,
+      "status": "future"
+    },
+    {
+      "module": "ads_offers_strategy",
+      "capabilities": ["recommend_offer", "recommend_ad_rate", "margin_check", "acos_roi_check_future"],
+      "risk_level": "medium_high",
+      "live_action_allowed": false
+    },
+    {
+      "module": "finance_connector",
+      "capabilities": ["export_sales", "export_purchases", "export_fees", "archive_receipt_metadata"],
+      "risk_level": "medium",
+      "live_action_allowed": false
+    },
+    {
+      "module": "n8n_agents_future",
+      "capabilities": ["workflow_orchestration", "agent_routing", "scheduled_checks"],
+      "risk_level": "high",
+      "live_action_allowed": false,
+      "status": "future_after_core_stable"
+    }
+  ],
+  "finish": "Capability registry draft recorded.",
+  "stop": "No runtime action from this file."
+}
