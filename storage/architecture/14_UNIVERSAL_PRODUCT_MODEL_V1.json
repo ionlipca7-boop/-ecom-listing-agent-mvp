@@ -1,0 +1,81 @@
+{
+  "status": "DRAFT_MODEL_ONLY",
+  "goal": "Create one neutral product object before marketplace-specific payload generation.",
+  "rules": [
+    "Marketplace payloads are generated from this model.",
+    "No marketplace owns the core product structure.",
+    "All listings must support AI-search-ready structured facts.",
+    "Inventory and bundles must reference shared stock logic."
+  ],
+  "product_model": {
+    "product_identity": {
+      "internal_product_id": "",
+      "supplier_sku": "",
+      "brand": "",
+      "product_family": "",
+      "barcode_optional": ""
+    },
+    "supplier_data": {
+      "supplier_name": "",
+      "country": "",
+      "purchase_price": 0,
+      "currency": "EUR",
+      "shipping_cost": 0,
+      "purchase_date": ""
+    },
+    "inventory": {
+      "quantity_total": 0,
+      "quantity_reserved": 0,
+      "quantity_available": 0,
+      "quantity_sold": 0,
+      "oversell_protection": true
+    },
+    "listing_strategy": {
+      "mode": "single | variation | bundle | kit | multi_quantity",
+      "recommended_marketplaces": [],
+      "target_margin_percent": 0,
+      "ad_strategy": {}
+    },
+    "variants": [],
+    "bundle_components": [],
+    "content": {
+      "title_de": "",
+      "description_de": "",
+      "html_template": "",
+      "compatibility": [],
+      "use_cases": [],
+      "buyer_questions": []
+    },
+    "media": {
+      "hero_image": "",
+      "images": [],
+      "quality_score": 0
+    },
+    "market_research": {
+      "competitor_snapshot": [],
+      "price_range": {},
+      "recommended_positioning": ""
+    },
+    "marketplace_payloads": {
+      "ebay": {},
+      "amazon": {},
+      "future": {}
+    },
+    "approval": {
+      "draft_approved": false,
+      "publish_approved": false,
+      "requires_manual_review": true
+    },
+    "verification": {
+      "marketplace_visibility": {},
+      "sales_performance": {}
+    },
+    "audit": {
+      "created_by": "",
+      "created_at": "",
+      "last_modified": ""
+    }
+  },
+  "finish": "Universal product model defined.",
+  "stop": "No runtime generation from this model yet."
+}
