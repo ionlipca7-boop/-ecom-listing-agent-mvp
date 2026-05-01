@@ -1,0 +1,8 @@
+# ECOM OS V3 local sandbox requirements
+# Current local core uses Python standard library only.
+# Keep this file so Windows/server setup can verify dependencies explicitly.
+
+# Future optional adapters may require packages later:
+# requests
+# python-dotenv
+# pillow
