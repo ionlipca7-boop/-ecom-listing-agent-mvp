@@ -1,0 +1,60 @@
+{
+  "status": "EXECUTABLE_LOCAL_SANDBOX_PACKAGE_INDEX_V1",
+  "root": "storage/tools/ecom_os_v3",
+  "purpose": "Local Windows sandbox package for ECOM OS V3 listing agents before server deployment.",
+  "safety": {
+    "server": "not_used",
+    "ebay_live": "not_used",
+    "eps": "not_used",
+    "delete_cleanup": "not_used"
+  },
+  "entrypoints": {
+    "windows_bat": "storage/tools/ecom_os_v3/run_local_sandbox_v1.bat",
+    "python_runner": "storage/tools/ecom_os_v3/local_sandbox_runner_v1.py"
+  },
+  "test_inputs": {
+    "usb_c_cable_stand": "storage/tools/ecom_os_v3/test_inputs/usb_c_cable_stand_v1.json",
+    "usb_adapter_6pcs": "storage/tools/ecom_os_v3/test_inputs/usb_adapter_6pcs_v1.json"
+  },
+  "agents": {
+    "url_intake": "storage/tools/ecom_os_v3/agents/url_intake_agent_v1.py",
+    "product_passport": "storage/tools/ecom_os_v3/agents/product_passport_agent_v1.py",
+    "evidence": "storage/tools/ecom_os_v3/agents/evidence_agent_v1.py",
+    "photo_blueprint": "storage/tools/ecom_os_v3/agents/photo_blueprint_agent_v1.py",
+    "image_critic": "storage/tools/ecom_os_v3/agents/image_critic_agent_v1.py",
+    "title": "storage/tools/ecom_os_v3/agents/title_agent_v1.py",
+    "item_specifics": "storage/tools/ecom_os_v3/agents/item_specifics_agent_v1.py",
+    "html": "storage/tools/ecom_os_v3/agents/html_agent_v1.py",
+    "critic": "storage/tools/ecom_os_v3/agents/critic_agent_v1.py",
+    "teacher": "storage/tools/ecom_os_v3/agents/teacher_agent_v1.py"
+  },
+  "templates": {
+    "ebay_description_html": "storage/tools/ecom_os_v3/templates/ebay_description_template_v1.html"
+  },
+  "output_root": "storage/outputs/ecom_os_v3/local_sandbox/<RUN_ID>",
+  "expected_output_files": [
+    "00_product_input.json",
+    "01_source_packet.json",
+    "02_product_passport.json",
+    "03_evidence_map.json",
+    "04_photo_blueprint.json",
+    "05_image_critic_report.json",
+    "06_title_candidates.json",
+    "07_item_specifics.json",
+    "08_ebay_description_preview.html",
+    "08_html_result.json",
+    "09_critic_report.json",
+    "10_teacher_lessons.json",
+    "artifact_index.json",
+    "11_run_summary.json"
+  ],
+  "next_missing_blocks": [
+    "image_generation_adapter_v1",
+    "canva_template_adapter_v1",
+    "telegram_preview_adapter_v1",
+    "n8n_workflow_json_v1",
+    "server_readonly_cleanup_audit_script_v1",
+    "ebay_dry_run_payload_builder_v1"
+  ],
+  "next_allowed_action": "RUN_WINDOWS_LOCAL_SANDBOX_V1"
+}
