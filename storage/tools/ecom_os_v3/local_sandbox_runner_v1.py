@@ -21,6 +21,10 @@ from agents.item_specifics_agent_v1 import ItemSpecificsAgentV1
 from agents.html_agent_v1 import HtmlAgentV1
 from agents.critic_agent_v1 import CriticAgentV1
 from agents.teacher_agent_v1 import TeacherAgentV1
+from adapters.image_generation_adapter_v1 import ImageGenerationAdapterV1
+from adapters.canva_template_adapter_v1 import CanvaTemplateAdapterV1
+from adapters.telegram_preview_adapter_v1 import TelegramPreviewAdapterV1
+from adapters.ebay_dry_run_payload_builder_v1 import EbayDryRunPayloadBuilderV1
 
 
 def write_json(path: Path, data: Dict[str, Any]) -> None:
@@ -107,6 +111,28 @@ def main() -> int:
     teacher = TeacherAgentV1().run(run_context).to_dict()
     write_json(out_dir / "10_teacher_lessons.json", teacher)
 
+    adapters_dir = out_dir / "adapters"
+    image_adapter = ImageGenerationAdapterV1().run(photo_blueprint, adapters_dir).to_dict()
+    write_json(out_dir / "12_image_generation_adapter_result.json", image_adapter)
+
+    canva_adapter = CanvaTemplateAdapterV1().run(product_input, photo_blueprint, adapters_dir).to_dict()
+    write_json(out_dir / "13_canva_template_adapter_result.json", canva_adapter)
+
+    artifact_payload = {
+        "product_passport": passport,
+        "evidence_status": evidence.get("status"),
+        "photo_blueprint": photo_blueprint,
+        "title_result": title_result,
+        "specifics_result": specifics_result,
+        "html_preview_path": str(html_output),
+        "critic": critic,
+    }
+    telegram_preview = TelegramPreviewAdapterV1().run(artifact_payload, adapters_dir).to_dict()
+    write_json(out_dir / "14_telegram_preview_adapter_result.json", telegram_preview)
+
+    ebay_dry_run = EbayDryRunPayloadBuilderV1().run(artifact_payload, adapters_dir).to_dict()
+    write_json(out_dir / "15_ebay_dry_run_payload_builder_result.json", ebay_dry_run)
+
     artifact_index = {
         "run_id": run_id,
         "artifacts": {
@@ -122,7 +148,12 @@ def main() -> int:
             "html_result": "08_html_result.json",
             "critic_report": "09_critic_report.json",
             "teacher_lessons": "10_teacher_lessons.json",
-            "run_summary": "11_run_summary.json",
+            "image_generation_adapter_result": "12_image_generation_adapter_result.json",
+            "canva_template_adapter_result": "13_canva_template_adapter_result.json",
+            "telegram_preview_adapter_result": "14_telegram_preview_adapter_result.json",
+            "ebay_dry_run_payload_builder_result": "15_ebay_dry_run_payload_builder_result.json",
+            "adapter_generated_files_dir": "adapters/",
+            "run_summary": "16_run_summary.json",
         },
     }
     write_json(out_dir / "artifact_index.json", artifact_index)
@@ -138,12 +169,16 @@ def main() -> int:
         "critic_status": critic.get("status"),
         "critic_issues": critic.get("issues", []),
         "teacher_status": teacher.get("status"),
+        "image_generation_adapter_status": image_adapter.get("status"),
+        "canva_template_adapter_status": canva_adapter.get("status"),
+        "telegram_preview_adapter_status": telegram_preview.get("status"),
+        "ebay_dry_run_payload_status": ebay_dry_run.get("status"),
         "next_allowed_action": critic.get("next_allowed_action"),
         "no_server": True,
         "no_live_ebay": True,
         "no_delete": True,
     }
-    write_json(out_dir / "11_run_summary.json", summary)
+    write_json(out_dir / "16_run_summary.json", summary)
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0 if summary["status"] == "PASS" else 2
 
