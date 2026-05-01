@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MARKETPLACE_VISUAL_LISTING_AGENT_V1",
+  "type": "object",
+  "required": [
+    "status",
+    "product_passport",
+    "evidence_map",
+    "marketplace_rules",
+    "visual_asset_qualification",
+    "photo_pack_blueprint",
+    "critic_result",
+    "telegram_review_gate",
+    "live_update_gate"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "PASS", "BLOCKED", "STOP_SAFE"]
+    },
+    "product_passport": {
+      "type": "object",
+      "required": ["status", "sku", "product_identity", "included_items", "uncertainties"],
+      "properties": {
+        "status": { "type": "string", "enum": ["PASS", "BLOCKED"] },
+        "sku": { "type": "string" },
+        "product_identity": { "type": "string" },
+        "included_items": { "type": "array", "items": { "type": "string" } },
+        "variant": { "type": "string" },
+        "quantity": { "type": ["integer", "null"] },
+        "uncertainties": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "evidence_map": {
+      "type": "object",
+      "required": ["status", "claims"],
+      "properties": {
+        "status": { "type": "string", "enum": ["PASS", "BLOCKED"] },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "evidence_source", "confidence"],
+            "properties": {
+              "claim": { "type": "string" },
+              "evidence_source": { "type": "string" },
+              "confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "marketplace_rules": {
+      "type": "object",
+      "required": ["ebay_photo_policy_pass", "main_image_no_text", "no_watermark", "no_border", "min_longest_side_px"],
+      "properties": {
+        "ebay_photo_policy_pass": { "type": "boolean" },
+        "main_image_no_text": { "type": "boolean" },
+        "no_watermark": { "type": "boolean" },
+        "no_border": { "type": "boolean" },
+        "min_longest_side_px": { "type": "integer", "minimum": 500 }
+      },
+      "additionalProperties": false
+    },
+    "visual_asset_qualification": {
+      "type": "object",
+      "required": ["status", "assets", "main_hero_candidate_count"],
+      "properties": {
+        "status": { "type": "string", "enum": ["PASS", "BLOCKED"] },
+        "main_hero_candidate_count": { "type": "integer", "minimum": 0 },
+        "assets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["asset_id", "visual_role", "decision", "reason"],
+            "properties": {
+              "asset_id": { "type": "string" },
+              "visual_role": {
+                "type": "string",
+                "enum": ["MAIN_HERO", "SECONDARY", "DETAIL", "CONTEXT", "REJECT"]
+              },
+              "decision": { "type": "string", "enum": ["KEEP", "EDIT", "REJECT"] },
+              "reason": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "photo_pack_blueprint": {
+      "type": "object",
+      "required": ["status", "slots"],
+      "properties": {
+        "status": { "type": "string", "enum": ["PASS", "BLOCKED"] },
+        "slots": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 9,
+          "items": {
+            "type": "object",
+            "required": ["slot", "role", "asset_id", "requires_edit"],
+            "properties": {
+              "slot": { "type": "integer", "minimum": 1, "maximum": 9 },
+              "role": { "type": "string" },
+              "asset_id": { "type": "string" },
+              "requires_edit": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "critic_result": {
+      "type": "object",
+      "required": ["technical_pass", "visual_pass", "policy_pass", "evidence_pass", "status"],
+      "properties": {
+        "technical_pass": { "type": "boolean" },
+        "visual_pass": { "type": "boolean" },
+        "policy_pass": { "type": "boolean" },
+        "evidence_pass": { "type": "boolean" },
+        "status": { "type": "string", "enum": ["PASS", "BLOCKED"] }
+      },
+      "additionalProperties": false
+    },
+    "telegram_review_gate": {
+      "type": "object",
+      "required": ["required", "status"],
+      "properties": {
+        "required": { "type": "boolean", "const": true },
+        "status": { "type": "string", "enum": ["AWAITING_REVIEW", "APPROVED", "REJECTED"] }
+      },
+      "additionalProperties": false
+    },
+    "live_update_gate": {
+      "type": "object",
+      "required": ["allowed", "requires_operator_approval", "protected_fields"],
+      "properties": {
+        "allowed": { "type": "boolean" },
+        "requires_operator_approval": { "type": "boolean", "const": true },
+        "protected_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["price", "quantity", "title", "category"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
