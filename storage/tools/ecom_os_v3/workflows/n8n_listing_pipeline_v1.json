@@ -1,0 +1,73 @@
+{
+  "name": "ECOM OS V3 Listing Pipeline Draft V1",
+  "status": "DRAFT_NOT_IMPORTED_NOT_ACTIVE",
+  "purpose": "Telegram -> local/server controlled listing pipeline orchestration. No live eBay action without gates.",
+  "nodes": [
+    {
+      "id": "telegram_trigger",
+      "name": "Telegram Trigger",
+      "type": "telegram_trigger_stub",
+      "description": "Receives Russian text, voice, URL, or photos from operator."
+    },
+    {
+      "id": "route_classifier",
+      "name": "Route Classifier",
+      "type": "function_stub",
+      "description": "Classifies intent: create listing draft, preview, rework photos, title, stop, cleanup audit."
+    },
+    {
+      "id": "url_intake",
+      "name": "URL Intake Agent",
+      "type": "python_runner_stub",
+      "description": "Creates source packet from URL/screenshot/photo input."
+    },
+    {
+      "id": "local_sandbox_runner",
+      "name": "Local/Server Sandbox Runner",
+      "type": "python_runner_stub",
+      "description": "Runs Product Passport, Evidence, Photo Blueprint, Title, Specifics, HTML, Critic, Teacher."
+    },
+    {
+      "id": "telegram_preview",
+      "name": "Telegram Preview Packet",
+      "type": "telegram_send_stub",
+      "description": "Sends Russian preview packet to operator."
+    },
+    {
+      "id": "operator_approval_gate",
+      "name": "Operator Approval Gate",
+      "type": "manual_gate_stub",
+      "description": "Records approve/reject/rework. No live action here."
+    },
+    {
+      "id": "ebay_dry_run_payload",
+      "name": "eBay Dry Run Payload Builder",
+      "type": "python_runner_stub",
+      "description": "Builds payload file only; does not call eBay."
+    },
+    {
+      "id": "live_gate_stop",
+      "name": "STOP Before Live Gate",
+      "type": "stop_stub",
+      "description": "Stops before any real eBay publish/revise/delete."
+    }
+  ],
+  "edges": [
+    ["telegram_trigger", "route_classifier"],
+    ["route_classifier", "url_intake"],
+    ["url_intake", "local_sandbox_runner"],
+    ["local_sandbox_runner", "telegram_preview"],
+    ["telegram_preview", "operator_approval_gate"],
+    ["operator_approval_gate", "ebay_dry_run_payload"],
+    ["ebay_dry_run_payload", "live_gate_stop"]
+  ],
+  "hard_rules": [
+    "n8n is orchestration only, not source of truth.",
+    "No eBay live action in this draft.",
+    "No delete/cleanup in this draft.",
+    "Critic PASS required before Telegram approval packet.",
+    "Operator approval required before dry-run payload is promoted to live gate.",
+    "Live gate must be separate and explicit."
+  ],
+  "next_allowed_action": "IMPORT_AS_DISABLED_DRAFT_ONLY_AFTER_LOCAL_SANDBOX_PASS"
+}
