@@ -1,0 +1,44 @@
+ION / ECOM OS V3 — WINDOWS LOCAL SANDBOX RUN V1
+
+Где выполнять:
+WINDOWS CMD
+
+Точный путь:
+D:\ECOM_LISTING_AGENT_MVP
+
+Что делает:
+- запускает local sandbox без сервера
+- проверяет 2 тестовых товара
+- создаёт outputs в storage\outputs\ecom_os_v3\local_sandbox\<RUN_ID>
+- не трогает eBay live
+- не удаляет файлы
+- не использует EPS
+
+CMD:
+
+cd /d D:\ECOM_LISTING_AGENT_MVP
+set PYTHONIOENCODING=utf-8
+echo ===== ECOM_OS_V3_LOCAL_SANDBOX_RUN_BOTH_PRODUCTS_V1 =====
+echo NO_SERVER=YES
+echo NO_LIVE_EBAY=YES
+echo NO_DELETE=YES
+echo ----- VERIFY PACKAGE -----
+if not exist storage\tools\ecom_os_v3\run_local_sandbox_v1.bat echo MISSING_BAT
+if not exist storage\tools\ecom_os_v3\local_sandbox_runner_v1.py echo MISSING_RUNNER
+if not exist storage\tools\ecom_os_v3\test_inputs\usb_c_cable_stand_v1.json echo MISSING_INPUT_CABLE
+if not exist storage\tools\ecom_os_v3\test_inputs\usb_adapter_6pcs_v1.json echo MISSING_INPUT_ADAPTER
+if not exist storage\tools\ecom_os_v3\run_local_sandbox_v1.bat exit /b 2
+if not exist storage\tools\ecom_os_v3\local_sandbox_runner_v1.py exit /b 2
+if not exist storage\tools\ecom_os_v3\test_inputs\usb_c_cable_stand_v1.json exit /b 2
+if not exist storage\tools\ecom_os_v3\test_inputs\usb_adapter_6pcs_v1.json exit /b 2
+echo ----- RUN TEST 1: USB C CABLE STAND -----
+storage\tools\ecom_os_v3\run_local_sandbox_v1.bat storage\tools\ecom_os_v3\test_inputs\usb_c_cable_stand_v1.json
+echo ----- RUN TEST 2: USB ADAPTER 6PCS -----
+storage\tools\ecom_os_v3\run_local_sandbox_v1.bat storage\tools\ecom_os_v3\test_inputs\usb_adapter_6pcs_v1.json
+echo ----- SHOW OUTPUT ROOT -----
+dir storage\outputs\ecom_os_v3\local_sandbox /ad /o-d
+echo ===== DONE_ECOM_OS_V3_LOCAL_SANDBOX_RUN_BOTH_PRODUCTS_V1 =====
+
+Что прислать обратно в чат:
+- весь вывод CMD
+- если есть BLOCKED, прислать 11_run_summary.json из последней output-папки
