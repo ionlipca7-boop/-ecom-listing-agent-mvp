@@ -1,0 +1,37 @@
+{
+  "source_url": "LOCAL_SANDBOX_SOURCE_SCREENSHOT_OR_URL_USB_C_CABLE_STAND",
+  "marketplace": "ebay_de",
+  "raw_title": "USB-C auf USB-C Kabel 240W mit klappbarem Handy-Ständer",
+  "operator_note": "Schwarzes geflochtenes USB-C auf USB-C Kabel mit integriertem klappbarem Handy-Ständer. Produkt wurde im Chat visuell geprüft. Ziel: eBay Deutschland Listing-Preview.",
+  "screenshots_or_photos": [
+    "source_screenshot_usb_c_cable_with_phone_stand",
+    "generated_visual_proof_clean_main",
+    "generated_visual_proof_german_infographic"
+  ],
+  "visible_claims": [
+    "USB-C auf USB-C",
+    "240 W Schnellladen",
+    "480 Mbit/s Datenübertragung",
+    "Geflochtenes Kabel",
+    "Integrierter klappbarer Handy-Ständer"
+  ],
+  "variants": [
+    "Schwarz/Dunkelgrau",
+    "Kabellänge nicht bestätigt"
+  ],
+  "product_identity": "USB-C auf USB-C Kabel mit klappbarem Handy-Ständer",
+  "product_type": "USB-C Kabel",
+  "bundle_quantity": 1,
+  "color": "Schwarz/Dunkelgrau",
+  "connector_or_variant": "USB-C auf USB-C",
+  "included_items": [
+    "1x USB-C Kabel mit integriertem Handy-Ständer"
+  ],
+  "confirmed_features": [
+    "USB-C auf USB-C",
+    "240 W Schnellladen",
+    "480 Mbit/s Datenübertragung",
+    "Geflochtenes Kabel",
+    "Integrierter klappbarer Handy-Ständer"
+  ]
+}
