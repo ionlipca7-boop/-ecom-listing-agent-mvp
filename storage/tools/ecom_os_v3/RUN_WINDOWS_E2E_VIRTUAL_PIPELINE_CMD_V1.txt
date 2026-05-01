@@ -1,0 +1,38 @@
+ION / ECOM OS V3 — WINDOWS E2E VIRTUAL PIPELINE RUN V1
+
+Где выполнять:
+WINDOWS CMD
+
+Точный путь:
+D:\ECOM_LISTING_AGENT_MVP
+
+Что делает:
+- запускает полный virtual route A -> B -> FINISH -> STOP
+- прогоняет 2 тестовых товара
+- создаёт local sandbox outputs
+- создаёт e2e system audit
+- создаёт final report
+- не трогает сервер
+- не трогает eBay live
+- не удаляет файлы
+
+CMD:
+
+cd /d D:\ECOM_LISTING_AGENT_MVP
+set PYTHONIOENCODING=utf-8
+echo ===== VERIFY_ECOM_OS_V3_E2E_PACKAGE_V1 =====
+if not exist storage\tools\ecom_os_v3\run_e2e_virtual_pipeline_v1.bat echo MISSING_E2E_BAT
+if not exist storage\tools\ecom_os_v3\e2e_virtual_pipeline_v1.py echo MISSING_E2E_RUNNER
+if not exist storage\tools\ecom_os_v3\agents\system_audit_agent_v1.py echo MISSING_SYSTEM_AUDIT_AGENT
+if not exist storage\tools\ecom_os_v3\run_e2e_virtual_pipeline_v1.bat exit /b 2
+if not exist storage\tools\ecom_os_v3\e2e_virtual_pipeline_v1.py exit /b 2
+if not exist storage\tools\ecom_os_v3\agents\system_audit_agent_v1.py exit /b 2
+echo ===== RUN_ECOM_OS_V3_E2E_VIRTUAL_PIPELINE_V1 =====
+storage\tools\ecom_os_v3\run_e2e_virtual_pipeline_v1.bat
+echo ===== SHOW_E2E_OUTPUT_ROOT =====
+dir storage\outputs\ecom_os_v3\e2e_virtual /ad /o-d
+echo ===== DONE_ECOM_OS_V3_E2E_VIRTUAL_PIPELINE_CMD_V1 =====
+
+Что прислать обратно в чат:
+- весь вывод CMD
+- последний файл storage\outputs\ecom_os_v3\e2e_virtual\<RUN_ID>\02_e2e_final_report.json
