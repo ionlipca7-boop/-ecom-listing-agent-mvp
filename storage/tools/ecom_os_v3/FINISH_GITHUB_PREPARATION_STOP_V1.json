@@ -1,0 +1,40 @@
+{
+  "status": "FINISH_GITHUB_PREPARATION_STOP_V1",
+  "layer": "ECOM_OS_V3_GITHUB_PREPARATION",
+  "decision": "FINISH_STOP_FOR_GITHUB_PREPARATION_STAGE",
+  "summary": "GitHub preparation stage is complete for local Windows testing. No more GitHub preparation work is required before first Windows full local check unless a blocker is found.",
+  "completed": [
+    "listing creation core agents",
+    "evidence, critic, teacher agents",
+    "photo blueprint and image critic",
+    "German title, item specifics, and HTML agents",
+    "portfolio and post-listing strategy agents",
+    "security secrets guard",
+    "marketplace access gate",
+    "eBay token preflight guard",
+    "package audit",
+    "bootstrap verify",
+    "E2E virtual pipeline",
+    "portfolio strategy runner",
+    "server readonly audit and diff tools",
+    "merge manifest template",
+    "deploy filter",
+    "clean transfer rules"
+  ],
+  "not_completed_by_design": [
+    "real image provider integration",
+    "Canva live/editable integration",
+    "Telegram live runtime",
+    "n8n active workflow import",
+    "eBay live runtime",
+    "server deployment"
+  ],
+  "reason_not_completed": "These require Windows/server runtime, env keys, secrets, operator approval, and live gates.",
+  "next_allowed_action": "RUN_WINDOWS_FULL_LOCAL_CHECK_V1",
+  "safety": {
+    "server_touched": false,
+    "ebay_live_touched": false,
+    "delete_performed": false,
+    "secrets_committed": false
+  }
+}
