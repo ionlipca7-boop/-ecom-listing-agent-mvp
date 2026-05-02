@@ -1,0 +1,91 @@
+{
+  "status": "EXECUTABLE_LOCAL_PACKAGE_INDEX_V2",
+  "root": "storage/tools/ecom_os_v3",
+  "purpose": "Complete local Windows package for ECOM OS V3 listing creation, audit, portfolio strategy, and controlled server merge preparation.",
+  "safety": {
+    "server": "not_used_by_local_check",
+    "ebay_live": "not_used",
+    "eps": "not_used",
+    "delete_cleanup": "not_used",
+    "auto_reorder": "not_used"
+  },
+  "main_entrypoint": "storage/tools/ecom_os_v3/run_full_local_check_v1.bat",
+  "runners": {
+    "local_listing_pipeline": "local_sandbox_runner_v1.py",
+    "e2e_virtual_pipeline": "e2e_virtual_pipeline_v1.py",
+    "portfolio_strategy": "portfolio_strategy_runner_v1.py",
+    "package_audit": "package_audit_v1.py",
+    "deploy_filter": "deploy_filter_v1.py",
+    "bootstrap_verify": "bootstrap_verify_local_package_v1.py"
+  },
+  "listing_creation_agents": [
+    "url_intake_agent_v1.py",
+    "product_passport_agent_v1.py",
+    "evidence_agent_v1.py",
+    "photo_blueprint_agent_v1.py",
+    "image_critic_agent_v1.py",
+    "title_agent_v1.py",
+    "item_specifics_agent_v1.py",
+    "html_agent_v1.py",
+    "critic_agent_v1.py",
+    "teacher_agent_v1.py",
+    "system_audit_agent_v1.py"
+  ],
+  "post_listing_agents": [
+    "listing_lifecycle_agent_v1.py",
+    "promotion_offers_agent_v1.py",
+    "cross_sell_bundle_agent_v1.py",
+    "listing_health_dashboard_agent_v1.py",
+    "variation_agent_v1.py",
+    "inventory_reorder_agent_v1.py"
+  ],
+  "adapters_safe_local": [
+    "image_generation_adapter_v1.py = BLOCKED_NOT_CONFIGURED until provider exists",
+    "canva_template_adapter_v1.py = BLOCKED_NOT_CONFIGURED until Canva route exists",
+    "telegram_preview_adapter_v1.py = READY_NOT_SENT local preview only",
+    "ebay_dry_run_payload_builder_v1.py = file-only payload, no API send"
+  ],
+  "server_tools_readonly": [
+    "server_readonly_cleanup_audit_v1.py",
+    "server_existing_runtime_audit_and_diff_v1.py"
+  ],
+  "merge_tools": [
+    "MERGE_MANIFEST_TEMPLATE_V1.json",
+    "deploy_filter_v1.py"
+  ],
+  "test_inputs": [
+    "test_inputs/usb_c_cable_stand_v1.json",
+    "test_inputs/usb_adapter_6pcs_v1.json",
+    "test_inputs/sample_portfolio_v1.json"
+  ],
+  "expected_full_local_outputs": {
+    "package_audit": "storage/tools/ecom_os_v3/package_audit_result_v1.json",
+    "bootstrap_verify": "storage/tools/ecom_os_v3/bootstrap_verify_local_package_result_v1.json",
+    "e2e_final_report": "storage/outputs/ecom_os_v3/e2e_virtual/<RUN_ID>/02_e2e_final_report.json",
+    "portfolio_summary": "storage/outputs/ecom_os_v3/portfolio_strategy/<RUN_ID>/07_portfolio_strategy_summary.json"
+  },
+  "completed_real_blocks": [
+    "local listing artifact generation",
+    "evidence map",
+    "photo blueprint",
+    "image structural critic",
+    "German title candidates",
+    "German item specifics",
+    "German HTML preview",
+    "marketplace critic",
+    "teacher lessons",
+    "E2E virtual pipeline",
+    "portfolio strategy runner",
+    "merge manifest template",
+    "deploy filter",
+    "server readonly diff/audit tools"
+  ],
+  "remaining_external_integrations": [
+    "real image generation provider",
+    "Canva editable design route",
+    "Telegram live runtime send/receive",
+    "n8n active import/activation",
+    "eBay live/dry API runtime with token guard"
+  ],
+  "next_allowed_action": "RUN_WINDOWS_FULL_LOCAL_CHECK_V1"
+}
