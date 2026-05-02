@@ -1,0 +1,71 @@
+{
+  "status": "EXECUTABLE_LOCAL_PACKAGE_INDEX_V4_ORCHESTRATOR_SECURITY",
+  "root": "storage/tools/ecom_os_v3",
+  "purpose": "Complete local Windows package with single control brain, security guard, listing creation, portfolio strategy, token/access gates, audit, and controlled server merge preparation.",
+  "main_entrypoint": "storage/tools/ecom_os_v3/run_full_local_check_v1.bat",
+  "route": "CONTROL_ORCHESTRATOR -> SECURITY_SECRETS_GUARD -> PACKAGE_AUDIT -> BOOTSTRAP_VERIFY -> E2E_LISTING_PIPELINE -> PORTFOLIO_STRATEGY -> STOP",
+  "safety": {
+    "server": "not_used_by_local_check",
+    "ebay_live": "not_used",
+    "eps": "not_used",
+    "delete_cleanup": "not_used",
+    "auto_reorder": "not_used",
+    "secret_values_should_not_be_printed": true,
+    "marketplace_access_gate_required_before_live": true,
+    "one_brain_route_control": true
+  },
+  "control_brain": "agents/control_orchestrator_agent_v1.py",
+  "security_and_access": [
+    "agents/security_secrets_guard_agent_v1.py",
+    "agents/marketplace_access_gate_agent_v1.py",
+    "adapters/ebay_token_preflight_guard_v1.py"
+  ],
+  "listing_creation_core": [
+    "agents/url_intake_agent_v1.py",
+    "agents/product_passport_agent_v1.py",
+    "agents/evidence_agent_v1.py",
+    "agents/marketplace_rules_agent_v1.py",
+    "agents/photo_blueprint_agent_v1.py",
+    "agents/image_critic_agent_v1.py",
+    "agents/title_agent_v1.py",
+    "agents/item_specifics_agent_v1.py",
+    "agents/html_agent_v1.py",
+    "agents/critic_agent_v1.py",
+    "agents/teacher_agent_v1.py",
+    "agents/system_audit_agent_v1.py"
+  ],
+  "post_listing_portfolio": [
+    "agents/listing_lifecycle_agent_v1.py",
+    "agents/promotion_offers_agent_v1.py",
+    "agents/cross_sell_bundle_agent_v1.py",
+    "agents/listing_health_dashboard_agent_v1.py",
+    "agents/variation_agent_v1.py",
+    "agents/inventory_reorder_agent_v1.py",
+    "agents/price_competition_agent_v1.py"
+  ],
+  "archive_cleanup_state": [
+    "agents/archive_package_agent_v1.py",
+    "agents/cleanup_archivist_agent_v1.py",
+    "state_handoff_schema_v1.json"
+  ],
+  "runners": [
+    "local_sandbox_runner_v1.py",
+    "e2e_virtual_pipeline_v1.py",
+    "portfolio_strategy_runner_v1.py",
+    "package_audit_v1.py",
+    "bootstrap_verify_local_package_v1.py",
+    "deploy_filter_v1.py"
+  ],
+  "readonly_server_tools": [
+    "server/server_readonly_cleanup_audit_v1.py",
+    "server/server_existing_runtime_audit_and_diff_v1.py"
+  ],
+  "remaining_external_integrations": [
+    "real image generation provider",
+    "Canva editable design route",
+    "Telegram live runtime send/receive",
+    "n8n active import/activation",
+    "eBay live runtime with token guard and approval gate"
+  ],
+  "next_allowed_action": "RUN_WINDOWS_FULL_LOCAL_CHECK_V1"
+}
