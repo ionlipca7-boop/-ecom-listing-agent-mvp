@@ -1,0 +1,79 @@
+{
+  "status": "MERGE_MANIFEST_TEMPLATE_V1",
+  "purpose": "Controlled merge from GitHub ECOM OS V3 package into existing production server runtime without copying trash or overwriting working files.",
+  "route": "WINDOWS_LOCAL_PASS -> SERVER_READONLY_DIFF -> MERGE_MANIFEST -> OPERATOR_APPROVAL -> DEPLOY_APPROVED_ONLY -> VERIFY_RUNTIME -> STOP",
+  "safety_rules": {
+    "no_blind_copy": true,
+    "no_delete_without_cleanup_gate": true,
+    "no_overwrite_without_backup_and_approval": true,
+    "no_live_ebay_action": true,
+    "no_secret_copy": true,
+    "server_is_production_runtime": true,
+    "github_is_design_and_package_source": true
+  },
+  "server_keep_do_not_touch": [
+    ".env",
+    "storage/secrets/**",
+    "storage/control_room/CURRENT_POINTER.json",
+    "bot.py unless diff audit approves a controlled handler merge",
+    "existing eBay token guard files",
+    "existing eBay access/refresh token files",
+    "existing live eBay wrappers unless replacement is approved",
+    "final archive/proof files",
+    "current working Telegram runtime"
+  ],
+  "github_add_safe_after_windows_pass": [
+    "storage/tools/ecom_os_v3/local_sandbox_runner_v1.py",
+    "storage/tools/ecom_os_v3/e2e_virtual_pipeline_v1.py",
+    "storage/tools/ecom_os_v3/package_audit_v1.py",
+    "storage/tools/ecom_os_v3/bootstrap_verify_local_package_v1.py",
+    "storage/tools/ecom_os_v3/run_full_local_check_v1.bat",
+    "storage/tools/ecom_os_v3/agents/*.py",
+    "storage/tools/ecom_os_v3/adapters/*.py",
+    "storage/tools/ecom_os_v3/templates/*.html",
+    "storage/tools/ecom_os_v3/server/server_readonly_cleanup_audit_v1.py",
+    "storage/tools/ecom_os_v3/server/server_existing_runtime_audit_and_diff_v1.py",
+    "storage/tools/ecom_os_v3/workflows/n8n_listing_pipeline_v1.json",
+    "storage/tools/ecom_os_v3/test_inputs/*.json"
+  ],
+  "review_before_replace": [
+    "old photo V3/V4/V5 scripts",
+    "old title/listing generation scripts",
+    "old Telegram message handlers",
+    "old archive/state wrappers",
+    "any existing server file with same path but different hash"
+  ],
+  "archive_then_delete_candidates_after_gate_only": [
+    "temporary V3/V4/V5 photo experiment outputs",
+    "temp/tmp/rebuild experiment artifacts",
+    "old generated galleries not referenced by final proof/archive",
+    "duplicate sandbox outputs on production server"
+  ],
+  "deploy_forbidden": [
+    "__pycache__/**",
+    "*.pyc",
+    "*.log",
+    "*.tmp",
+    "*.bak",
+    "storage/outputs/** unless explicitly archived as proof",
+    "local .env with real secrets",
+    "any live token file from local machine",
+    "unreviewed generated images"
+  ],
+  "required_reports_before_merge": [
+    "storage/tools/ecom_os_v3/package_audit_result_v1.json",
+    "storage/tools/ecom_os_v3/bootstrap_verify_local_package_result_v1.json",
+    "storage/outputs/ecom_os_v3/e2e_virtual/<RUN_ID>/02_e2e_final_report.json",
+    "storage/state_control/server_existing_runtime_audit_and_diff_v1.json"
+  ],
+  "merge_decision_classes": [
+    "KEEP_SERVER_WORKING",
+    "ADD_NEW_SAFE_BLOCK",
+    "REVIEW_BEFORE_REPLACE",
+    "REPLACE_AFTER_BACKUP_AND_APPROVAL",
+    "DO_NOT_TOUCH",
+    "ARCHIVE_THEN_DELETE_CANDIDATE",
+    "DEPLOY_FORBIDDEN"
+  ],
+  "next_allowed_action": "CREATE_DEPLOY_FILTER_AND_MERGE_REPORT_BUILDER_V1"
+}
