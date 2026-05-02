@@ -1,0 +1,192 @@
+{
+  "status": "PASS_GITHUB_ARCHIVE_READY",
+  "project": "ECOM OS V3 / ECOM LISTING AGENT MVP / CONTROL ROOM",
+  "transition_layer": "ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3",
+  "timestamp_utc": "2026-05-02T21:45:00Z",
+  "operator": "Ion / ION",
+  "archive_location": "GitHub: storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3_20260502T2145Z.json",
+  "last_confirmed_layer": "VERIFY_TEXT_INPUTS_AND_INSPECT_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_V1",
+  "current_position": "new_product_text_inputs_verified_photo_receipt_dynamic_target_blocked",
+  "next_allowed_action": "FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1",
+  "working_environment_next": "SERVER VM BASH only after new chat reads this GitHub archive and pointer; no server archive commands needed for transition",
+  "active_product": {
+    "canonical_key": "alibaba:1601257433477",
+    "platform": "alibaba",
+    "product_id": "1601257433477",
+    "url": "https://www.alibaba.com/product-detail/HAWEEL-Flexible-1m-1-5m-2m_1601257433477.html?spm=a2756.trade-list-buyer.0.0.109676e96utXBF",
+    "quantity": 10,
+    "purchase_price": "3.50 USD",
+    "target_sale_price": "12.99 EUR",
+    "photos_count": 0,
+    "receipts_count": 0
+  },
+  "previous_product_preserved": {
+    "canonical_key": "alibaba:10000038437444",
+    "title_de": "240W USB-C Ladekabel mit Handyhalter Schnellladekabel USB C",
+    "quantity": 10,
+    "purchase_price": "3.50 USD",
+    "target_sale_price": "12.99 EUR",
+    "photos_count": 3,
+    "receipts_count": 1,
+    "status": "dry_review_kept_only_no_live",
+    "not_ready_for_live_reasons": [
+      "receipt_is_test_image_or_matches_product_photo",
+      "duplicate_product_photos_exist",
+      "category_not_final",
+      "color_length_connector_not_final",
+      "live_gate_closed"
+    ]
+  },
+  "confirmed_facts": {
+    "telegram_bot_running_before_transition": true,
+    "old_dry_review_route_finished": true,
+    "old_dry_review_archive_created_on_server": true,
+    "new_product_session_route_built": true,
+    "ecom_new_patched_and_phone_tested": true,
+    "new_alibaba_url_accepted": true,
+    "ecom_preview_new_product_pass": true,
+    "ecom_draft_new_product_pass": true,
+    "ecom_files_initially_wrong_old_product": true,
+    "ecom_files_dynamic_pointer_fix_pass": true,
+    "multiline_parser_bug_fixed": true,
+    "ecom_files_after_parser_repair_pass": true,
+    "text_inputs_verified": true,
+    "photo_receipt_intake_dynamic_target_not_confirmed": true,
+    "live_gate": "CLOSED",
+    "delete_gate": "CLOSED",
+    "github_push": "BLOCKED_READONLY_DEPLOY_KEY",
+    "server_cleanup_delete": "NOT_ALLOWED_YET"
+  },
+  "what_happened_in_this_chat": [
+    "Finished and archived the dry review route for alibaba:10000038437444; kept as dry-review only, not live-ready.",
+    "Operator chose GITHUB_SYNC after dry-review stop; safe scope was built and committed locally on server as 3bb6dd00d07e2edcee8c0791e6adbabd4c82929f but push failed because the deploy key is read-only.",
+    "Operator corrected direction: project work should continue; cleanup is later and separate.",
+    "Project gap audit identified next route: build Telegram new product session reset and pointer route.",
+    "Built telegram_new_product_session_reset_bridge_v1.py and patched /ecom_new into bot.py.",
+    "Restarted bot after /ecom_new patch and phone-tested /ecom_new successfully.",
+    "Accepted new Alibaba product URL alibaba:1601257433477 via Telegram.",
+    "Verified /ecom_preview and /ecom_draft for the new product.",
+    "Detected /ecom_files still showed old product alibaba:10000038437444.",
+    "Rewrote telegram_real_product_evidence_bridge_v1.py to read active product from CURRENT_POINTER dynamically.",
+    "Phone-tested /ecom_files successfully for alibaba:1601257433477 with 0 photos and 0 receipts.",
+    "Detected multiline input bug where quantity became 103501299 when three lines were sent together.",
+    "Patched parser to V3_MULTILINE_SAFE and repaired values to quantity=10, purchase_price=3.50 USD, target_sale_price=12.99 EUR.",
+    "Phone-tested /ecom_files after repair; correct values confirmed.",
+    "Inspected photo/receipt intake before sending files and found direct image URL bridge still hardcoded to old product. STOP reached before fixing it."
+  ],
+  "errors_and_fixes": [
+    {
+      "error": "Assistant gave server archive block while operator requested GitHub archive",
+      "cause": "Wrong environment chosen for transition archive",
+      "fix": "Archive is now written directly into GitHub storage/memory/archive and front prompt in repo root; no server CMD needed for this transition."
+    },
+    {
+      "error": "/ecom_files returned old product after new URL",
+      "cause": "telegram_real_product_evidence_bridge_v1.py hardcoded storage/evidence/real_products/alibaba_10000038437444",
+      "fix": "Bridge rewritten to read CURRENT_POINTER active_canonical_key dynamically and create product-specific evidence dirs.",
+      "status": "FIXED"
+    },
+    {
+      "error": "quantity became 103501299",
+      "cause": "Parser treated multiline text as a single quantity field and extracted all digits from all lines.",
+      "fix": "V3_MULTILINE_SAFE parser parses line by line and updates multiple fields separately.",
+      "status": "FIXED"
+    },
+    {
+      "error": "GitHub push from server failed",
+      "cause": "SSH deploy key is read-only; HTTPS also lacked auth in server terminal.",
+      "fix": "Stopped push attempts; local commit remains on server; future push requires write auth or direct GitHub connector path.",
+      "status": "BLOCKED_NOT_RETRY"
+    },
+    {
+      "error": "Direct image URL bridge may still save photos/receipts to old product",
+      "cause": "telegram_direct_image_url_evidence_bridge_v1.py still mentions old key/slug and does not use CURRENT_POINTER.",
+      "fix": "NOT FIXED YET. Next chat must fix this first before operator sends photos/receipts.",
+      "status": "OPEN_BLOCKER"
+    }
+  ],
+  "current_blocker": {
+    "name": "DIRECT_IMAGE_BRIDGE_MAY_STILL_TARGET_OLD_OR_STATIC_PRODUCT",
+    "file": "/home/ionlipca7/runtime_eco_v1/storage/tools/ecom_os_v3/server/telegram_direct_image_url_evidence_bridge_v1.py",
+    "inspection_source": "/home/ionlipca7/runtime_eco_v1/storage/state_control/verify_text_inputs_and_inspect_photo_receipt_intake_dynamic_target_v1.json",
+    "inspection_result": {
+      "mentions_old_key": true,
+      "mentions_old_slug": true,
+      "mentions_new_key": false,
+      "mentions_pointer": false,
+      "mentions_dynamic_slug": false,
+      "mentions_receipts": true,
+      "mentions_photos": true
+    },
+    "do_not_do_before_fix": [
+      "Do not send product photos in Telegram.",
+      "Do not send receipt in Telegram.",
+      "Do not run live eBay publish/revise.",
+      "Do not run cleanup delete.",
+      "Do not retry GitHub push from server."
+    ]
+  },
+  "next_chat_required_first_checks": [
+    "Read this GitHub archive file first.",
+    "Read GitHub/front prompt if available: NEW_CHAT_ECOM_OS_V3_CONTINUATION_FRONT_V3.txt.",
+    "On server, verify CURRENT_POINTER only when starting execution, not during transition archive creation.",
+    "Verify state_control/verify_text_inputs_and_inspect_photo_receipt_intake_dynamic_target_v1.json before patching direct image bridge."
+  ],
+  "next_chat_exact_next_route": {
+    "layer": "FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1",
+    "goal": "Patch telegram_direct_image_url_evidence_bridge_v1.py to use CURRENT_POINTER active product dynamically.",
+    "must_do": [
+      "Backup bridge before rewrite.",
+      "Use CURRENT_POINTER active_canonical_key, platform, product_id, url.",
+      "Build evidence dir from canonical key: alibaba:1601257433477 -> storage/evidence/real_products/alibaba_1601257433477/.",
+      "Infer kind receipts when text contains чек/receipt/rechnung/invoice/beleg/закуп/purchase/cost; otherwise photos.",
+      "Support --dry-run --json to verify target path without downloading.",
+      "Compile bridge after patch.",
+      "Dry-run with image URL must return target_dir ending in alibaba_1601257433477/photos.",
+      "Source scan after patch must show no alibaba:10000038437444 and no alibaba_10000038437444.",
+      "NO_EBAY_API_CALL=YES, NO_LIVE_EBAY_WRITE=YES, NO_DELETE=YES, NO_COMMIT=YES, NO_PUSH=YES, NO_SECRET_PRINT=YES, NO_BOT_RESTART=YES."
+    ],
+    "after_that": [
+      "Inspect normal Telegram photo upload branch in bot.py, because bot.py also mentions old slug.",
+      "Patch normal Telegram photo upload target if needed.",
+      "Only after both direct image URL and normal photo upload target checks PASS, ask operator to send photo/receipt."
+    ]
+  },
+  "operator_rules": {
+    "language": "Russian",
+    "format": "ION",
+    "ion_format_sections": [
+      "1. Краткий анализ",
+      "2. Текущий layer",
+      "3. Следующий шаг",
+      "4. ▶️ Где выполнять",
+      "5. CMD / действие одним безопасным блоком",
+      "6. Проверка",
+      "7. Audit",
+      "8. Что дальше"
+    ],
+    "route": "A → B → FINISH → STOP",
+    "combine_safe_steps": "2-5 safe sequential steps when logically safe",
+    "no_parallel_branches": true,
+    "verify_before_execute": true,
+    "repeated_error_rule": "STOP_SAFE → inspect → official docs/web if needed → then next CMD",
+    "environment_rule": "Always state SERVER VM BASH / WINDOWS CMD / GITHUB / TELEGRAM. Never mix environments in one command block.",
+    "server_rule": "Do not create transition archives on server when operator asks GitHub archive. Server runtime is production/runtime, not archive scratchpad.",
+    "github_rule": "Use GitHub archive path storage/memory/archive for continuity records. Do not push from server until write auth fixed.",
+    "delete_rule": "No delete without explicit cleanup gate, candidate list, protected-path check, archive, audit, and operator approval.",
+    "live_rule": "No live eBay publish/revise/delete without explicit live gate and token/payload/readonly verification."
+  },
+  "github_context": {
+    "repository": "ionlipca7-boop/-ecom-listing-agent-mvp",
+    "archive_dir": "storage/memory/archive",
+    "existing_archive_examples": [
+      "storage/memory/archive/transition_to_new_chat_j_telegram_v1.json",
+      "storage/memory/archive/transition_to_new_chat_ebay_sync_401_v1.json",
+      "storage/memory/archive/transition_after_cleanup_ready_v1.json"
+    ],
+    "server_local_commit_not_pushed": "3bb6dd00d07e2edcee8c0791e6adbabd4c82929f",
+    "server_push_blocked_reason": "GitHub deploy key read-only",
+    "this_archive_created_directly_via_github_connector": true
+  },
+  "final_instruction_for_next_chat": "Start from FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1. Do not ask the operator to resend photos/receipts until direct image bridge and normal Telegram photo upload target are both verified dynamic for alibaba:1601257433477."
+}
