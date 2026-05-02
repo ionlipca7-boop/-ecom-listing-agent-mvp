@@ -1,0 +1,52 @@
+{
+  "status": "STATE_HANDOFF_SCHEMA_V1",
+  "purpose": "Standard handoff object for Windows local, server runtime, Telegram, n8n, and eBay gates.",
+  "required_fields": [
+    "route_id",
+    "stage",
+    "layer",
+    "status",
+    "environment",
+    "input_refs",
+    "output_refs",
+    "agent_statuses",
+    "safety_flags",
+    "operator_approval",
+    "next_allowed_action"
+  ],
+  "environments": [
+    "WINDOWS_LOCAL",
+    "SERVER_VM",
+    "GITHUB",
+    "TELEGRAM",
+    "N8N",
+    "EBAY_DRY_RUN",
+    "EBAY_LIVE_GATE"
+  ],
+  "safety_flags": {
+    "no_server": true,
+    "no_live_ebay": true,
+    "no_delete": true,
+    "no_eps": true,
+    "requires_operator_approval_for_live": true
+  },
+  "example": {
+    "route_id": "ECOM_OS_V3_LOCAL_TEST_001",
+    "stage": "A_TO_B",
+    "layer": "LOCAL_SANDBOX_RUNNER",
+    "status": "PASS",
+    "environment": "WINDOWS_LOCAL",
+    "input_refs": ["test_inputs/usb_c_cable_stand_v1.json"],
+    "output_refs": ["storage/outputs/ecom_os_v3/local_sandbox/RUN_ID/16_run_summary.json"],
+    "agent_statuses": {
+      "ProductPassportAgent": "PASS",
+      "EvidenceAgent": "PASS",
+      "CriticAgent": "PASS"
+    },
+    "operator_approval": {
+      "required": false,
+      "status": "NOT_REQUIRED_FOR_LOCAL_TEST"
+    },
+    "next_allowed_action": "RUN_PORTFOLIO_STRATEGY_OR_REVIEW_OUTPUTS"
+  }
+}
