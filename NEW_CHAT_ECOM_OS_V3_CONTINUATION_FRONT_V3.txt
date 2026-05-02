@@ -1,0 +1,124 @@
+ION / E1 NEW CHAT CONTINUATION — ECOM OS V3
+
+Ты уже в новом чате. Это continuity context, НЕ команда открыть ещё один чат.
+
+Я — Ion. Работай строго в ION формате:
+1. Краткий анализ
+2. Текущий layer
+3. Следующий шаг
+4. ▶️ Где выполнять
+5. CMD / действие одним безопасным блоком
+6. Проверка
+7. Audit
+8. Что дальше
+
+Язык: русский.
+Стиль: коротко, точно, без воды.
+Маршрут: A → B → FINISH → STOP.
+Если безопасно и логично, можно объединять 2–5 последовательных шагов.
+Если повторяется ошибка или непонятный блокер:
+STOP_SAFE → inspect → official docs/web if needed → только потом следующий CMD.
+
+КРИТИЧЕСКИ ВАЖНО:
+- Архивация transition делается в GitHub, НЕ мусорить server runtime transition-файлами.
+- GitHub archive path: storage/memory/archive/
+- Текущий архив: storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3_20260502T2145Z.json
+- Сначала прочитай этот GitHub archive, потом продолжай. Не анализируй проект с нуля.
+
+ЗАПРЕТЫ:
+- NO_LIVE_EBAY_WRITE без отдельного live gate.
+- NO_DELETE без отдельного cleanup gate.
+- NO_GIT_PUSH с сервера пока GitHub write auth/deploy key не исправлен.
+- Не отправлять фото/чек, пока не исправлен photo/receipt dynamic target.
+- Не повторять старые ошибки: не hardcode old product, не парсить multiline как одно поле, не retry push вслепую.
+
+ГДЕ РАБОТАЕМ ДЛЯ СЛЕДУЮЩЕГО ИСПРАВЛЕНИЯ:
+SERVER VM BASH
+Путь: /home/ionlipca7/runtime_eco_v1
+
+ПЕРЕД ПЕРВЫМ CMD В НОВОМ ЧАТЕ ОБЯЗАТЕЛЬНО ПРОВЕРЬ:
+1) GitHub archive:
+   storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3_20260502T2145Z.json
+2) Server pointer:
+   cat /home/ionlipca7/runtime_eco_v1/storage/control_room/CURRENT_POINTER.json
+3) Server inspect state:
+   cat /home/ionlipca7/runtime_eco_v1/storage/state_control/verify_text_inputs_and_inspect_photo_receipt_intake_dynamic_target_v1.json
+
+CURRENT CONFIRMED STATUS:
+- Telegram bot running before transition.
+- /ecom_new PASS.
+- Новый товар принят: alibaba:1601257433477
+- URL: https://www.alibaba.com/product-detail/HAWEEL-Flexible-1m-1-5m-2m_1601257433477.html?spm=a2756.trade-list-buyer.0.0.109676e96utXBF
+- /ecom_preview PASS.
+- /ecom_draft PASS.
+- /ecom_files PASS after dynamic evidence bridge fix.
+- Текущие данные товара:
+  quantity = 10
+  purchase_price = 3.50 USD
+  target_sale_price = 12.99 EUR
+  photos = 0
+  receipts = 0
+- Live gate CLOSED.
+- Delete gate CLOSED.
+
+ВАЖНЫЕ ИСПРАВЛЕНИЯ:
+1. /ecom_files показывал старый товар alibaba:10000038437444.
+   Исправлено: telegram_real_product_evidence_bridge_v1.py теперь читает CURRENT_POINTER.
+2. Multiline input дал quantity=103501299.
+   Исправлено: parser V3_MULTILINE_SAFE, значения восстановлены.
+3. GitHub push с сервера не работает из-за read-only deploy key.
+   Не пытаться push снова без write auth.
+4. Assistant ошибся и хотел архивировать transition на сервере.
+   Исправлено: archive сохранён напрямую в GitHub через connector.
+
+ТЕКУЩИЙ БЛОКЕР:
+telegram_direct_image_url_evidence_bridge_v1.py ещё может писать в старый товар.
+Последняя проверка показала:
+- mentions_old_key=true
+- mentions_old_slug=true
+- mentions_new_key=false
+- mentions_pointer=false
+- mentions_dynamic_slug=false
+- mentions_receipts=true
+- mentions_photos=true
+
+ТЕКУЩИЙ next_allowed_action:
+FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1
+
+Что должен сделать новый чат:
+1. Прочитать GitHub archive + server pointer + server inspect state.
+2. Не анализировать проект с нуля.
+3. Дать один безопасный CMD для FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1.
+4. Цель CMD:
+   - backup bridge before rewrite
+   - переписать /home/ionlipca7/runtime_eco_v1/storage/tools/ecom_os_v3/server/telegram_direct_image_url_evidence_bridge_v1.py
+   - брать active product из CURRENT_POINTER
+   - build evidence dir: alibaba:1601257433477 -> storage/evidence/real_products/alibaba_1601257433477/
+   - infer kind=receipts when text contains: чек, receipt, rechnung, invoice, beleg, закуп, purchase, cost
+   - otherwise kind=photos
+   - support --dry-run --json
+   - compile after patch
+   - dry-run target_dir must end with /storage/evidence/real_products/alibaba_1601257433477/photos
+   - source scan after patch must show no alibaba:10000038437444 and no alibaba_10000038437444
+   - NO_EBAY_API_CALL=YES
+   - NO_LIVE_EBAY_WRITE=YES
+   - NO_DELETE=YES
+   - NO_COMMIT=YES
+   - NO_PUSH=YES
+   - NO_SECRET_PRINT=YES
+   - NO_BOT_RESTART=YES
+5. После этого отдельно проверить обычную Telegram photo upload ветку в bot.py, потому bot.py тоже mentions old slug.
+6. Только после PASS обоих target checks можно просить меня отправлять фото/чек.
+
+НЕ ДЕЛАТЬ:
+- Не публиковать на eBay.
+- Не делать revise.
+- Не удалять cleanup candidates.
+- Не делать GitHub push с сервера.
+- Не создавать transition archive на сервере.
+- Не просить отправить фото/чек до фикса dynamic target.
+
+Архив GitHub:
+storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3_20260502T2145Z.json
+
+Начни новый чат с проверки этого архива и дай следующий ION шаг.
