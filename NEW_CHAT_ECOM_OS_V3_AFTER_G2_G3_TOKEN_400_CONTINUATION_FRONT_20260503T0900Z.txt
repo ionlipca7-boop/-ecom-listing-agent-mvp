@@ -1,0 +1,159 @@
+ION / E1 NEW CHAT CONTINUATION — ECOM OS V3 AFTER G2 ITEM SPECIFICS + G3 TOKEN 400
+
+Ты уже в новом чате. Это continuity context, НЕ команда открыть ещё один чат.
+
+Я — Ion. Работай строго в ION формате:
+1. Краткий анализ
+2. Текущий layer
+3. Следующий шаг
+4. ▶️ Где выполнять
+5. CMD / действие одним безопасным блоком
+6. Проверка
+7. Audit
+8. Что дальше
+
+Язык: русский.
+Стиль: коротко, точно, без воды.
+Маршрут: A → B → FINISH → STOP.
+WIP_LIMIT=1: только один активный блок.
+Если безопасно и логично, можно объединять 2–3 последовательных шага, но НЕ через live/write/delete/push.
+Если повторяется ошибка или непонятный блокер:
+STOP_SAFE → inspect → official docs/web if needed → только потом следующий CMD.
+
+КРИТИЧЕСКИ ВАЖНО:
+- Архивация transition делается в GitHub, НЕ мусорить server runtime transition-файлами.
+- GitHub archive path: storage/memory/archive/
+- Текущий архив:
+  storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json
+- Сначала прочитай этот GitHub archive, потом продолжай. Не анализируй проект с нуля.
+
+ЗАПРЕТЫ:
+- NO_LIVE_EBAY_WRITE без отдельного live gate.
+- NO_DELETE без отдельного cleanup gate.
+- NO_GIT_PUSH с сервера пока server GitHub write auth/deploy key не исправлен.
+- NO_SECRET_PRINT.
+- Не повторять старые ошибки: не hardcode old product, не парсить multiline как одно поле, не retry OAuth/API вслепую, не использовать python heredoc/stdin для важных server steps.
+
+TERMINAL POLICY:
+- Для важных SERVER VM BASH шагов использовать writer-script file или короткий python3 -c.
+- Не использовать python3 - <<PY для важных шагов: уже были paste/stdin syntax failures.
+- Если в терминале синтаксическая ошибка или HTTPError без state JSON: STOP_SAFE → inspect → state file → только потом retry.
+
+ГДЕ РАБОТАЕМ ДАЛЬШЕ:
+SERVER VM BASH
+Путь: /home/ionlipca7/runtime_eco_v1
+
+CURRENT CONFIRMED STATUS:
+- BLOCK_LEDGER создан и route lock активен.
+- Активный блок: G_LIVE_MARKETPLACE_GATE_BLOCK.
+- LIVE_GATE=CLOSED.
+- D_PRODUCT_EVIDENCE_BLOCK = DONE_FINISH_STOP.
+- E_EBAY_FORMAT_PHOTO_PACK_BLOCK = DONE_FINISH_STOP.
+- F_LISTING_DRAFT_BUILDER_BLOCK = DONE_FINISH_STOP.
+- Активный товар:
+  canonical_key = alibaba:1601257433477
+  URL = https://www.alibaba.com/product-detail/HAWEEL-Flexible-1m-1-5m-2m_1601257433477.html?spm=a2756.trade-list-buyer.0.0.109676e96utXBF
+  quantity = 10
+  purchase_price = 3.50 USD
+  target_sale_price = 12.99 EUR
+
+COMPLETED OUTPUTS:
+- Evidence selected images saved: 7.
+- eBay-ready photo pack built: 7 JPEG, 1600x1600, bad_dimension_count=0.
+- Photo pack dir:
+  storage/exports/ebay_ready_photo_pack/alibaba_1601257433477_v1
+- Photo pack zip:
+  storage/exports/EBAY_READY_PHOTO_PACK_ALIBABA_1601257433477_V1.zip
+- Draft built and quality PASS:
+  title = HAWEEL Flexibles USB Ladekabel 1m 1,5m 2m Datenkabel Schnellladen
+  price = 12.99 EUR
+  quantity = 10
+  photo_count = 7
+  live_gate = CLOSED
+  draft_json = storage/drafts/alibaba_1601257433477/ebay_de_listing_draft_v1.json
+
+G BLOCK PROGRESS:
+G1 category suggestion/read-only:
+- PASS_G1_CATEGORY_SELECTED_AND_TOKEN_CONTEXT_POLICY_RECORDED_V1
+- selected_category_id = 123422
+- selected_category_name = Kabel & Adapter
+- selected_path = Handy-Zubehör > Handys & Kommunikation > Kabel & Adapter
+- policy file = storage/control_room/EBAY_TOKEN_CONTEXT_POLICY_V1.json
+
+G2 item specifics:
+- PASS_G2_ITEM_SPECIFICS_SELECTION_READY_NO_LIVE_V1
+- category_id = 123422
+- aspect_count = 24
+- required_aspects = Marke, Produktart
+- selected_specifics_count = 11
+- missing_required_count = 0
+- review_required_fields = Kabellänge, Farbe, Herstellernummer
+- selection file = storage/drafts/alibaba_1601257433477/item_specifics_selection_no_live_v1.json
+
+G3 policy binding:
+- Gate opened:
+  PASS_G3_POLICY_BINDING_READONLY_GATE_OPEN_V1
+- next_allowed_action before failure:
+  RUN_G3_POLICY_BINDING_READONLY_V1
+- G3 read-only run failed before writing state JSON:
+  urllib.error.HTTPError: HTTP Error 400: Bad Request
+- Failure happened during user token refresh.
+- The failed script did not catch HTTPError, so no state JSON was written.
+
+TOKEN CONTEXT POLICY:
+- Taxonomy/category/aspects = application access token via client_credentials.
+- Sell Account policies = user access token / refresh_token guard.
+- Sell Inventory/Offer live/read = user access token / refresh_token guard.
+- On 401/400: STOP_SAFE → inspect token context/scope/body redacted → retry only after writing state.
+
+CURRENT BLOCKER:
+G3 policy read-only failed because refresh_user_token got HTTP 400.
+Likely cause to inspect: explicit scope mismatch in refresh request. The failed script used explicit scope:
+https://api.ebay.com/oauth/api_scope/sell.account.readonly https://api.ebay.com/oauth/api_scope/sell.inventory.readonly
+New chat must inspect whether previous working refresh used no scope or different scope, and must redact any error body.
+
+CURRENT next_allowed_action:
+INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1
+
+WHAT NEW CHAT MUST DO FIRST:
+1. Read GitHub archive:
+   storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json
+2. On server, read:
+   cat storage/control_room/BLOCK_LEDGER.json
+   cat storage/control_room/CURRENT_ROUTE_LOCK.json
+   cat storage/state_control/build_g2_item_specifics_selection_no_live_v1.json
+   cat storage/state_control/open_g3_policy_binding_readonly_gate_v1.json
+3. Do NOT analyze project from zero.
+4. Give one safe writer-script CMD for:
+   INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1
+
+GOAL OF NEXT CMD:
+- NO_LIVE_EBAY_WRITE=YES
+- NO_DELETE=YES
+- NO_MOVE=YES
+- NO_PUSH=YES
+- NO_BOT_RESTART=YES
+- NO_SECRET_PRINT=YES
+- LIVE_GATE=CLOSED
+- Inspect OAuth refresh 400.
+- Catch HTTPError and save redacted body.
+- Search storage/state_control, storage/control_room, storage/tools, storage/memory/archive for previous token refresh scripts/states.
+- Try safe refresh inspection modes only if protected:
+  A) explicit scope attempt redacted
+  B) no-scope default consent attempt redacted
+- If one returns token, save state as PASS_G3_USER_TOKEN_REFRESH_MODE_FOUND_V1 and next_allowed_action RETRY_G3_POLICY_BINDING_READONLY_WITH_VERIFIED_REFRESH_MODE_V1.
+- If none works, STOP_SAFE_G3_USER_TOKEN_REFRESH_MODE_NOT_FOUND_V1 and next_allowed_action INSPECT_EBAY_REFRESH_TOKEN_CONSENT_SCOPES_OR_REAUTH_REQUIRED_V1.
+
+НЕ ДЕЛАТЬ:
+- Не публиковать на eBay.
+- Не делать revise.
+- Не делать delete/cleanup.
+- Не делать GitHub push с сервера.
+- Не печатать токены/secrets.
+- Не использовать application token для Sell Account policies.
+- Не продолжать G4/G5/G6 пока G3 не PASS.
+
+ARCHIVE SOURCE OF TRUTH:
+storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json
+
+Начни новый чат с проверки этого архива и дай следующий ION шаг.
