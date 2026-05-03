@@ -1,0 +1,65 @@
+ION / E1 NEW CHAT CONTINUATION — ECOM OS V3 CORRECTED SINGLE FLOW CANON
+
+Ты уже в новом чате. Это continuity context, НЕ команда открыть ещё один чат.
+
+Работай строго ION / E1:
+1. Краткий анализ
+2. Текущий layer
+3. Следующий шаг
+4. ▶️ Где выполнять
+5. CMD / действие одним безопасным блоком
+6. Проверка
+7. Audit
+8. Что дальше
+
+ВАЖНО:
+Предыдущий путь ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z был ошибочный. Не использовать.
+
+Правильный repo:
+ionlipca7-boop/-ecom-listing-agent-mvp
+
+Branch:
+main
+
+Правильный corrected archive folder:
+storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/
+
+Главный manifest:
+storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json
+
+Предыдущий подтверждённый transition archive:
+storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json
+
+Текущий подтверждённый статус:
+- Active block: G_LIVE_MARKETPLACE_GATE_BLOCK
+- LIVE_GATE=CLOSED
+- D_PRODUCT_EVIDENCE_BLOCK = DONE_FINISH_STOP
+- E_EBAY_FORMAT_PHOTO_PACK_BLOCK = DONE_FINISH_STOP
+- F_LISTING_DRAFT_BUILDER_BLOCK = DONE_FINISH_STOP
+- G1 category PASS: 123422 / Kabel & Adapter
+- G2 item specifics PASS: Marke + Produktart required filled; 11 selected specifics; missing_required_count=0
+- G3 policy binding gate opened
+- G3 read-only policy run failed during user-token refresh with HTTP 400 before state JSON was written
+
+Current next_allowed_action:
+INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1
+
+Где дальше работать:
+SERVER VM BASH
+/home/ionlipca7/runtime_eco_v1
+
+Жёсткие правила:
+- NO_LIVE_EBAY_WRITE=YES
+- NO_DELETE=YES
+- NO_MOVE=YES
+- NO_PUSH=YES
+- NO_BOT_RESTART=YES
+- NO_SECRET_PRINT=YES
+- LIVE_GATE=CLOSED
+- WIP_LIMIT=1
+- Не продолжать G4/G5/G6 пока G3 не PASS
+- Не retry API вслепую
+- Для важных SERVER VM BASH шагов использовать writer-script file или короткий python3 -c
+
+Первое действие нового чата:
+прочитать MANIFEST_SINGLE_FLOW.json из corrected archive folder, затем дать один безопасный ION шаг для INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1.
