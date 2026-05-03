@@ -1,0 +1,95 @@
+{
+  "status": "PASS_ECOM_OS_V3_SINGLE_FLOW_MANIFEST_CREATED_IN_GITHUB",
+  "date": "2026-05-03",
+  "operator": "Ion",
+  "project": "ECOM LISTING AGENT MVP / CONTROL ROOM / ECOM OS V3",
+  "language": "Russian",
+  "format": "ION / E1",
+  "canonical_archive_dir": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/",
+  "primary_readme": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/README_FULL_PROJECT_SINGLE_FLOW.md",
+  "this_manifest": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/MANIFEST_SINGLE_FLOW.json",
+  "verified_existing_archive_manifest": "storage/memory/archive/ECOM_OS_V3_LOCAL_AUDIT_AND_BLUEPRINT_ARCHIVE_20260503T105053Z/ARCHIVE_MANIFEST.json",
+  "repository": "ionlipca7-boop/-ecom-listing-agent-mvp",
+  "branch_used": "create-offer-draft-v1",
+  "purpose": "Single GitHub entry point for future chats so they can read the project route, prior mistakes, current blockers, and next action without restarting from server or Windows noise.",
+  "environment_roles": {
+    "github": "canon/archive/source/experiments/single-flow memory; new chats must read GitHub archive first",
+    "server": "runtime only: Telegram bot, eBay runtime, token guard, current pointer, live state; not archive playground",
+    "windows": "copy/review workstation only; not canonical source",
+    "telegram": "operator cockpit"
+  },
+  "hard_rules": [
+    "One route only: A -> B -> FINISH -> STOP",
+    "No parallel branches",
+    "No live eBay/Amazon write without explicit live gate and operator approval",
+    "No delete/cleanup without cleanup gate",
+    "No git pull/merge on dirty server runtime",
+    "No bot restart without compile PASS and restart gate",
+    "No token print or secret print",
+    "If command or logic fails: STOP_SAFE -> inspect -> GitHub archive / official docs / internet if needed -> continue",
+    "User words are operator input, not blind commands; analyze first, explain briefly if deviating"
+  ],
+  "verified_github_archive_commits": [
+    {
+      "sha_short": "2968891",
+      "message": "Archive ECOM OS V3 transition after G2 item specifics and G3 token 400"
+    },
+    {
+      "sha_short": "b16ef15",
+      "message": "Archive ECOM OS V3 new product transition V3"
+    },
+    {
+      "sha_short": "664e213",
+      "message": "docs: archive ecom os v3 server telegram real url handoff"
+    },
+    {
+      "sha_short": "e5cc6ab",
+      "message": "archive: add ECOM OS V3 local audit and blueprint package"
+    },
+    {
+      "sha_short": "5c0205b",
+      "message": "archive: add ECOM OS V3 single flow canon transition"
+    }
+  ],
+  "skeleton_v3_route": [
+    "A_ARCHIVE_AND_REGISTER_UNIFIED_SKELETON_V3_IN_GITHUB",
+    "B_BUILD_SERVER_CLEAN_RUNTIME_CONSTRUCTION_PLAN",
+    "C_IMPLEMENT_CONTROL_CORE_AND_RUNTIME_REGISTRY",
+    "D_TELEGRAM_COCKPIT_TEXT_URL_PHOTO_VOICE_DRY",
+    "E_FINANZAMT_ACCOUNTING_DRY_LAYER",
+    "F_FULL_PRODUCT_DRY_ROUTE_TO_APPROVAL_CARD",
+    "G_ONE_APPROVED_LIVE_GATE_ONLY",
+    "H_POST_LIVE_READONLY_VERIFY_AND_ARCHIVE_LESSON",
+    "I_CLEANUP_GATE_ONLY_AFTER_STABLE_PASS",
+    "FINISH_STOP"
+  ],
+  "current_chat_summary": {
+    "main_progress": [
+      "Server runtime registry and clean construction plan were built",
+      "Telegram cockpit dry contract was defined",
+      "Voice dry design was defined",
+      "Finanzamt/accounting dry design was defined",
+      "Full dry route test plan was defined",
+      "Dry approval packet schema/example/renderer were built",
+      "bot.py was patched for /ecom_dry_card and restarted",
+      "Telegram card appeared, proving command path works",
+      "Fallthrough bug was detected by operator",
+      "Bad patch inserted draft text into bot.py and broke compile",
+      "Clean dry card block was reinserted and compile PASS restored",
+      "Operator found fallthrough still persists and card is still English/eBay-centric",
+      "Single-flow GitHub archive README was created to prevent future context loss"
+    ],
+    "known_defects": [
+      "/ecom_dry_card still triggers extra generic text-save message after card",
+      "Dry card is not fully Russian for operator",
+      "Dry card is still eBay-centric and must become universal marketplace card",
+      "Bot natural-language marketplace intent detection is not yet implemented",
+      "Live gate dry was opened prematurely and must not be treated as permission for live write"
+    ],
+    "current_priority": "Fix Telegram dry card route correctly before live work: inspect real bot.py flow, build Russian universal marketplace card plan, patch only after review gate."
+  },
+  "next_allowed_action": "B22A_INSPECT_REAL_BOT_FLOW_FOR_FALLTHROUGH_AND_BUILD_RU_UNIVERSAL_MARKETPLACE_CARD_PLAN_NO_PATCH_V1",
+  "new_chat_required_first_action": "Read primary_readme and this_manifest from GitHub before touching server, Windows, bot.py, live gate, or cleanup.",
+  "future_transition_rule": "When operator says 'переходим в новый чат', immediately create/update a GitHub single-flow archive under storage/memory/archive/, include README + MANIFEST + large continuation prompt, and only then provide the new chat prompt.",
+  "archive_quality_rule": "Archive must be readable by a new chat without guessing: include current state, path list, errors, fixes, blockers, next_allowed_action, environment roles, and exact continuation prompt. Do not rely only on zip or local server files."
+}
