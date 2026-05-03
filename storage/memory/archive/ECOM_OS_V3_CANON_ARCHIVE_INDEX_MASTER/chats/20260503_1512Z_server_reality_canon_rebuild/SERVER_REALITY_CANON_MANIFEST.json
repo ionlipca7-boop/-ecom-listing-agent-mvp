@@ -1,0 +1,163 @@
+{
+  "archive_id": "20260503_1512Z_server_reality_canon_rebuild",
+  "project": "ECOM OS V3 / ECOM LISTING AGENT MVP / CONTROL ROOM",
+  "operator": "Ion",
+  "language": "ru",
+  "created_from": "SERVER_REALITY_AUDIT_FOR_CANON_ARCHIVE_REBUILD_V1 output pasted by operator",
+  "created_utc": "2026-05-03T15:12:27Z",
+  "github_repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+  "github_branch_created": "archive/ecom-os-v3-server-reality-20260503T1512Z",
+  "server_runtime_path": "/home/ionlipca7/runtime_eco_v1",
+  "hard_rules": {
+    "format": "ION / E1",
+    "route": "A -> B -> FINISH -> STOP",
+    "verify_define_execute_verify_next": true,
+    "wip_limit": 1,
+    "live_gate": "CLOSED",
+    "no_live_ebay_write": true,
+    "no_live_amazon_write": true,
+    "no_delete": true,
+    "no_secret_print": true,
+    "no_bot_restart": true,
+    "server_runtime_is_not_archive": true,
+    "github_is_archive_source_of_truth": true
+  },
+  "github_audit_before_server_reality": {
+    "repos_seen": [
+      "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "ionlipca7-boop/ECOM_OS_V3",
+      "ionlipca7-boop/ECOM_GOVERNED_RUNTIME"
+    ],
+    "active_repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+    "master_index_path": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json",
+    "master_index_status": "EXISTS_ON_GITHUB_MAIN",
+    "corrected_manifest_path": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json",
+    "corrected_manifest_status": "EXISTS_ON_GITHUB_MAIN",
+    "incorrect_path_recorded": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/ NOT_CREATED_NOT_FOUND",
+    "github_gap": "GitHub master archive did not contain full B1-B23 / dry card / fallthrough server reality; README_FULL_PROJECT_SINGLE_FLOW.md referenced by manifest was not found on main."
+  },
+  "server_reality_audit": {
+    "status": "PASS_SERVER_REALITY_AUDIT_COLLECTED_FOR_CANON_REBUILD",
+    "state_file": "storage/state_control/server_reality_audit_for_canon_archive_rebuild_v1.json",
+    "review_file": "review/server_reality_audit_for_canon_archive_rebuild_v1.md",
+    "live_write_done": false,
+    "delete_done": false,
+    "push_done_from_server": false,
+    "secret_printed": false,
+    "bot_process_running": true,
+    "tmux_session": "ecom-bot",
+    "git_branch_on_server": "create-offer-draft-v1",
+    "git_head_on_server": "3bb6dd0",
+    "server_git_dirty": true,
+    "server_archive_master_files_present": false,
+    "note": "GitHub archive files are not mirrored into server runtime; this is acceptable only if GitHub remains archive source of truth and server remains runtime."
+  },
+  "bot_py_reality": {
+    "exists": true,
+    "size": 36264,
+    "mtime_utc": "2026-05-03T13:08:47.438065Z",
+    "ast_parse_ok": true,
+    "contains_ecom_dry_card": true,
+    "contains_fallthrough_terms": true,
+    "contains_ru_text_markers": true,
+    "contains_ebay": true,
+    "contains_amazon": true,
+    "handler_line_hit": "line 406: elif _cmd_text.strip().lower().startswith(\"/ecom_dry_card\")"
+  },
+  "server_control_files": {
+    "CURRENT_POINTER_exists": true,
+    "CURRENT_ROUTE_LOCK_exists": true,
+    "BLOCK_LEDGER_exists": true,
+    "DEBT_REGISTER_exists": true,
+    "CURRENT_ROUTE_LOCK_summary_from_audit": {
+      "status": "PASS_ROUTE_LOCK_SET_G3_POLICY_BINDING_READONLY_V1",
+      "active_block": "G_LIVE_MARKETPLACE_GATE_BLOCK",
+      "live_gate": "CLOSED"
+    },
+    "CURRENT_POINTER_summary_from_audit": {
+      "status": "NEW_PRODUCT_TEXT_INPUTS_VERIFIED_WAITING_PHOTO_RECEIPT_INTAKE_CHECK_V1",
+      "next_allowed_action": "FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1",
+      "live_gate": "CLOSED"
+    }
+  },
+  "confirmed_runtime_route_from_server_state": {
+    "skeleton_label": "UNIFIED_SKELETON_V3 / FAU3 as operator wording",
+    "route_correction": {
+      "file": "storage/state_control/stop_safe_route_correction_after_wrong_g3_branch_v1.json",
+      "status": "PASS_STOP_SAFE_ROUTE_CORRECTION_AFTER_WRONG_G3_BRANCH_V1",
+      "next_allowed_action": "BUILD_SERVER_CLEAN_RUNTIME_CONSTRUCTION_PLAN_FROM_UNIFIED_SKELETON_V3_NO_LIVE_V1"
+    },
+    "B1_to_B23_dry_card_sequence": [
+      {"block": "B1", "status": "PASS_B1_RUNTIME_POINTER_AND_ROUTE_LOCK_REVIEW_NO_LIVE_V1", "next": "B2_BUILD_RUNTIME_CLEAN_SOURCE_REGISTRY_NO_LIVE_V1"},
+      {"block": "B2", "status": "PASS_B2_BUILD_RUNTIME_CLEAN_SOURCE_REGISTRY_NO_LIVE_V1", "next": "B3_TELEGRAM_COCKPIT_DRY_CONTRACT_NO_PATCH_NO_RESTART_V1"},
+      {"block": "B3", "status": "PASS_B3_TELEGRAM_COCKPIT_DRY_CONTRACT_NO_PATCH_NO_RESTART_V1", "next": "B4_VOICE_LAYER_DRY_DESIGN_NO_PATCH_NO_RESTART_V1"},
+      {"block": "B4", "status": "PASS_B4_VOICE_LAYER_DRY_DESIGN_NO_PATCH_NO_RESTART_V1", "next": "B5_FINANZAMT_ACCOUNTING_DRY_DESIGN_NO_PATCH_NO_RESTART_V1"},
+      {"block": "B5", "status": "PASS_B5_FINANZAMT_ACCOUNTING_DRY_DESIGN_NO_PATCH_NO_RESTART_V1", "next": "B6_FULL_DRY_ROUTE_TEST_PLAN_NO_LIVE_NO_PATCH_V1"},
+      {"block": "B6", "status": "PASS_B6_FULL_DRY_ROUTE_TEST_PLAN_NO_LIVE_NO_PATCH_V1", "next": "B7_BUILD_DRY_APPROVAL_PACKET_SCHEMA_NO_LIVE_NO_PATCH_V1"},
+      {"block": "B7", "status": "PASS_B7_BUILD_DRY_APPROVAL_PACKET_SCHEMA_NO_LIVE_NO_PATCH_V1", "next": "B8_BUILD_DRY_APPROVAL_PACKET_EXAMPLE_NO_LIVE_NO_PATCH_V1"},
+      {"block": "B8", "status": "PASS_B8_BUILD_DRY_APPROVAL_PACKET_EXAMPLE_NO_LIVE_NO_PATCH_V1", "next": "B9_BUILD_TELEGRAM_APPROVAL_CARD_RENDER_DRY_NO_PATCH_V1"},
+      {"block": "B9", "status": "PASS_B9_BUILD_TELEGRAM_APPROVAL_CARD_RENDER_DRY_NO_PATCH_V1", "next": "B10_BUILD_BOT_PATCH_PLAN_FOR_DRY_APPROVAL_CARD_NO_APPLY_V1"},
+      {"block": "B10", "status": "PASS_B10_BUILD_BOT_PATCH_PLAN_FOR_DRY_APPROVAL_CARD_NO_APPLY_V1", "next": "B11_BUILD_BOT_PATCH_DRAFT_FOR_DRY_CARD_NO_APPLY_V1"},
+      {"block": "B11", "status": "PASS_B11_INSPECT_BOT_STRUCTURE_FOR_DRY_CARD_PATCH_ANCHOR_NO_APPLY_V1", "next": "B12_BUILD_BOT_PATCH_DRAFT_FOR_DRY_CARD_NO_APPLY_V1"},
+      {"block": "B12", "status": "PASS_B12_BUILD_BOT_PATCH_DRAFT_FOR_DRY_CARD_NO_APPLY_V1", "next": "B13_REVIEW_BOT_PATCH_DRAFT_THEN_APPLY_GATE_V1"},
+      {"block": "B13", "status": "PASS_B13_REVIEW_BOT_PATCH_DRAFT_THEN_APPLY_GATE_V1", "next": "B14_APPLY_BOT_PATCH_DRY_CARD_AFTER_REVIEW_GATE_V1"},
+      {"block": "B14", "status": "PASS_B14_APPLY_BOT_PATCH_DRY_CARD_AFTER_REVIEW_GATE_V1", "next": "B15_VERIFY_DRY_CARD_COMMAND_PATCH_NO_RESTART_V1"},
+      {"block": "B15", "status": "PASS_B15_VERIFY_DRY_CARD_COMMAND_PATCH_NO_RESTART_V1", "next": "B16_RESTART_BOT_AFTER_DRY_CARD_PATCH_V1"},
+      {"block": "B16", "status": "PASS_B16_RESTART_BOT_AFTER_DRY_CARD_PATCH_V1", "next": "B17_OPERATOR_TEST_ECOM_DRY_CARD_IN_TELEGRAM_V1"},
+      {"block": "B18", "status": "PASS_B18_REGISTER_DRY_CARD_PASS_AND_FIX_FALLTHROUGH_PLAN_NO_APPLY_V1", "next": "B19_BUILD_FALLTHROUGH_FIX_PATCH_DRAFT_NO_APPLY_V1"},
+      {"block": "B19", "status": "PASS_B19_BUILD_FALLTHROUGH_FIX_PATCH_DRAFT_NO_APPLY_V1", "next": "B20_REVIEW_AND_APPLY_FALLTHROUGH_FIX_GATE_V1"},
+      {"block": "B20", "status": "PASS_B20_APPLY_FALLTHROUGH_FIX_PATCH_V1", "next": "B21_VERIFY_FALLTHROUGH_FIX_AND_DRY_CARD_TEST_V1"},
+      {"block": "B21A", "status": "BLOCKED_B21A_BOT_BLOCK_NEEDS_REPAIR", "next": "B21B_REPAIR_DRY_CARD_BLOCK_FROM_B14_BACKUP_OR_REWRITE_V1"},
+      {"block": "B21C", "status": "PASS_B21C_REINSERT_CLEAN_DRY_CARD_BLOCK_WITH_FALLTHROUGH_FIX_V1", "next": "B21D_RESTART_BOT_AFTER_REPAIR_AND_TEST_DRY_CARD_V1"},
+      {"block": "B22C", "status": "PASS_B22C_BUILD_UNIVERSAL_DRY_CARD_PATCH_DRAFT_NO_APPLY_V1", "next": "B22D_REVIEW_AND_APPLY_UNIVERSAL_DRY_CARD_PATCH_GATE_V1"},
+      {"block": "B23", "status": "PASS_B23_OPEN_LIVE_GATE_EBAY_AMAZON_FOR_DRY_CARD_V1", "next": "B24_OPERATOR_TEST_LIVE_GATE_DRY_CARD_V1"}
+    ],
+    "telegram_dry_card_reality": {
+      "bot_contains_command": true,
+      "bot_compiles": true,
+      "bot_running": true,
+      "text_ru_markers": true,
+      "marketplace_markers_ebay_amazon": true,
+      "fallthrough_terms_present": true,
+      "operator_test_evidence": "B18 registered dry card pass; B23 opened live gate dry card route. Exact Telegram message body should still be verified in B24 dry test before any live API."
+    },
+    "G_route_also_present": {
+      "active_block": "G_LIVE_MARKETPLACE_GATE_BLOCK",
+      "G1_status": "PASS_G1_CATEGORY_SELECTED_AND_TOKEN_CONTEXT_POLICY_RECORDED_V1",
+      "G2_status": "PASS_G2_ITEM_SPECIFICS_SELECTION_READY_NO_LIVE_V1",
+      "G3_gate_status": "PASS_G3_POLICY_BINDING_READONLY_GATE_OPEN_V1",
+      "G3_known_blockers": [
+        "BLOCKED_G3_401_TOKEN_INVALID_OR_EXPIRED_NO_REFRESH_ATTEMPTED",
+        "BLOCKED_TOKEN_REFRESH_FAILED_SANITIZED",
+        "BLOCKED_G3_403_SCOPE_OR_ACCOUNT_PERMISSION_NEEDS_FRESH_CONSENT_PLAN"
+      ],
+      "fresh_consent_route": "PASS_EBAY_FRESH_CONSENT_URL_GENERATED_V2_WITH_STATE_NO_API_NO_SECRET then BLOCKED_AUTH_CODE_SAVE_PREFLIGHT_FAILED",
+      "live_gate": "CLOSED"
+    }
+  },
+  "critical_canon_correction": {
+    "old_github_archive_state": "OUTDATED_FOR_CURRENT_SERVER_REALITY",
+    "server_reality_state": "B1-B23 dry card route exists and bot.py contains /ecom_dry_card; G route also exists and is blocked at token/account consent layer.",
+    "route_conflict_detected": true,
+    "route_conflict": "Latest B23 dry card state says next B24_OPERATOR_TEST_LIVE_GATE_DRY_CARD_V1, while CURRENT_ROUTE_LOCK still reports G3_POLICY_BINDING_READONLY and CURRENT_POINTER points to older photo/receipt intake step. This must be reconciled before continuing any live or G4/G5/G6 path.",
+    "correct_next_allowed_action": "RECONCILE_CURRENT_POINTER_ROUTE_LOCK_AND_B23_B24_DRY_CARD_GATE_NO_LIVE_V1"
+  },
+  "next_step_after_archive": {
+    "layer": "RECONCILE_CURRENT_POINTER_ROUTE_LOCK_AND_B23_B24_DRY_CARD_GATE_NO_LIVE_V1",
+    "where": "SERVER VM BASH",
+    "path": "/home/ionlipca7/runtime_eco_v1",
+    "purpose": "Read CURRENT_POINTER, CURRENT_ROUTE_LOCK, B23, bot.py line context, and Telegram dry card states; define one current route: B24 dry Telegram test OR return to G3 token consent repair; do not patch or restart in this step.",
+    "constraints": [
+      "NO_LIVE_EBAY_WRITE=YES",
+      "NO_LIVE_AMAZON_WRITE=YES",
+      "NO_DELETE=YES",
+      "NO_PUSH=YES",
+      "NO_SECRET_PRINT=YES",
+      "NO_BOT_RESTART=YES",
+      "LIVE_GATE=CLOSED_UNTIL_RECONCILED",
+      "WIP_LIMIT=1"
+    ]
+  },
+  "final_status": "CANON_ARCHIVE_REBUILT_FROM_GITHUB_AND_SERVER_REALITY_ON_BRANCH",
+  "note": "This archive intentionally does not overwrite main directly. It is staged on a GitHub archive branch for review/merge."
+}
