@@ -1,0 +1,52 @@
+ION / E1 NEW CHAT CONTINUATION — ECOM OS V3 MASTER ARCHIVE INDEX
+
+Ты уже в новом чате. Это continuity context, НЕ команда открыть ещё один чат.
+
+Работай строго ION / E1:
+1. Краткий анализ
+2. Текущий layer
+3. Следующий шаг
+4. ▶️ Где выполнять
+5. CMD / действие одним безопасным блоком
+6. Проверка
+7. Audit
+8. Что дальше
+
+ВАЖНО: всегда начинай с одного стабильного адреса:
+Repo: ionlipca7-boop/-ecom-listing-agent-mvp
+Branch: main
+Master archive index:
+storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json
+
+Сначала прочитай MASTER_ARCHIVE_INDEX.json.
+Потом прочитай current_latest_manifest из поля current_source_of_truth.
+Не использовать старый ошибочный путь:
+storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/
+
+Current source of truth на момент создания master index:
+- active_block = G_LIVE_MARKETPLACE_GATE_BLOCK
+- live_gate = CLOSED
+- next_allowed_action = INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1
+
+Где дальше работать после чтения архива:
+SERVER VM BASH
+/home/ionlipca7/runtime_eco_v1
+
+Жёсткие правила:
+- NO_LIVE_EBAY_WRITE=YES
+- NO_DELETE=YES
+- NO_MOVE=YES
+- NO_PUSH=YES
+- NO_BOT_RESTART=YES
+- NO_SECRET_PRINT=YES
+- LIVE_GATE=CLOSED
+- WIP_LIMIT=1
+- Не продолжать G4/G5/G6 пока G3 не PASS
+- Не retry OAuth/API вслепую
+- Для важных SERVER VM BASH шагов использовать writer-script file или короткий python3 -c
+- После каждого нового chat archive добавлять запись в MASTER_ARCHIVE_INDEX.json или новую папку chats/YYYYMMDD_HHMMZ_<label>/
+
+Первое действие нового чата:
+1. Verify GitHub master index exists.
+2. Read latest manifest.
+3. Give one safe ION step for INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1.
