@@ -1,0 +1,172 @@
+{
+  "manifest_id": "ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z",
+  "created_from_chat": true,
+  "honesty_note": "This is a corrected consolidated project-transition archive built after the archive-path mismatch. It is NOT a verbatim full export of every ChatGPT message. It consolidates the confirmed project state, route, errors, decisions, next action, and correct GitHub archive paths from the available conversation context.",
+  "operator": "Ion",
+  "project": "ECOM OS V3 / ECOM LISTING AGENT MVP / CONTROL ROOM",
+  "language": "ru",
+  "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+  "branch": "main",
+  "archive_folder": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/",
+  "files_in_this_archive": [
+    "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json",
+    "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/README_FULL_PROJECT_SINGLE_FLOW.md",
+    "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/NEW_CHAT_PROMPT_SINGLE_FLOW_CORRECTED.txt"
+  ],
+  "previous_incorrect_path": {
+    "path": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/",
+    "status": "NOT_CREATED_NOT_FOUND",
+    "note": "This name/path was mistakenly referenced. It must not be used as source of truth."
+  },
+  "previous_real_archive": {
+    "path": "storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json",
+    "commit": "296889192527e901717a4c6e0f1676a95b7dfc6a",
+    "status": "CONFIRMED_CREATED",
+    "scope": "G2 item specifics + G3 token 400 transition archive"
+  },
+  "previous_front_prompt": {
+    "path": "NEW_CHAT_ECOM_OS_V3_AFTER_G2_G3_TOKEN_400_CONTINUATION_FRONT_20260503T0900Z.txt",
+    "commit": "230296e75ffdc81b125148e7eddf7b6e3173bbe0",
+    "status": "CONFIRMED_CREATED"
+  },
+  "assistant_errors_recorded": [
+    "Mistakenly allowed or referenced the non-existent SINGLE_FLOW_CANON_20260503T1325Z path.",
+    "Did not create a full B1-B23 single-flow folder before the user asked again.",
+    "Created only the G2/G3 token-400 transition archive first, not a full one-path canon archive.",
+    "A prior new-chat handoff therefore caused the next chat to search for a non-existent archive path.",
+    "Important server steps had previously used fragile heredoc/stdin patterns; corrected policy is writer-script file or short python3 -c only."
+  ],
+  "hard_rules": {
+    "format": "ION / E1",
+    "route": "A -> B -> FINISH -> STOP",
+    "wip_limit": 1,
+    "language": "Russian",
+    "no_parallel_branches": true,
+    "server_runtime_is_not_archive": true,
+    "github_archive_path": "storage/memory/archive/",
+    "no_live_ebay_write_without_live_gate": true,
+    "no_delete_without_cleanup_gate": true,
+    "no_git_push_from_server_until_write_auth_fixed": true,
+    "no_secret_print": true,
+    "terminal_policy": "For important SERVER VM BASH steps use writer-script file or short python3 -c; avoid python heredoc/stdin for important steps."
+  },
+  "confirmed_runtime": {
+    "server_path": "/home/ionlipca7/runtime_eco_v1",
+    "active_block": "G_LIVE_MARKETPLACE_GATE_BLOCK",
+    "live_gate": "CLOSED",
+    "telegram_bot": "was running before phone departure; do not restart unless explicitly gated",
+    "block_ledger_file": "storage/control_room/BLOCK_LEDGER.json",
+    "route_lock_file": "storage/control_room/CURRENT_ROUTE_LOCK.json",
+    "debt_file": "storage/control_room/DEBT_REGISTER.json"
+  },
+  "active_product": {
+    "canonical_key": "alibaba:1601257433477",
+    "source_url": "https://www.alibaba.com/product-detail/HAWEEL-Flexible-1m-1-5m-2m_1601257433477.html?spm=a2756.trade-list-buyer.0.0.109676e96utXBF",
+    "product": "HAWEEL flexible USB charging/data cable",
+    "listing_title_de": "HAWEEL Flexibles USB Ladekabel 1m 1,5m 2m Datenkabel Schnellladen",
+    "quantity": 10,
+    "purchase_price": "3.50 USD",
+    "target_sale_price": "12.99 EUR",
+    "photo_count": 7
+  },
+  "completed_blocks": [
+    {
+      "block": "D_PRODUCT_EVIDENCE_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_d_product_evidence_block_stop_v1.json",
+      "summary": "Evidence/keeper image selection completed; 7 selected images saved/staged."
+    },
+    {
+      "block": "E_EBAY_FORMAT_PHOTO_PACK_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_e_ebay_format_photo_pack_block_stop_v1.json",
+      "summary": "Local image engine ready; eBay photo pack built and verified: 7 images, 1600x1600, no bad dimensions.",
+      "outputs": {
+        "final_dir": "storage/exports/ebay_ready_photo_pack/alibaba_1601257433477_v1",
+        "zip_path": "storage/exports/EBAY_READY_PHOTO_PACK_ALIBABA_1601257433477_V1.zip"
+      }
+    },
+    {
+      "block": "F_LISTING_DRAFT_BUILDER_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_f_listing_draft_builder_block_stop_v1.json",
+      "summary": "Draft-only eBay DE listing built and quality verified after replacing stale wrong title.",
+      "outputs": {
+        "draft_json": "storage/drafts/alibaba_1601257433477/ebay_de_listing_draft_v1.json",
+        "draft_preview": "storage/drafts/alibaba_1601257433477/ebay_de_listing_draft_preview_v1.txt"
+      }
+    }
+  ],
+  "g_block_progress": {
+    "G_PLAN": {
+      "status": "PASS_G_REQUIREMENTS_PLAN_READY_NO_LIVE_V1",
+      "state_file": "storage/state_control/build_g_category_and_policy_requirements_plan_no_live_v1.json",
+      "steps": [
+        "G1_CATEGORY_SUGGESTION_READONLY",
+        "G2_ITEM_SPECIFICS_PLAN",
+        "G3_POLICY_BINDING_READONLY",
+        "G4_FINAL_PAYLOAD_PREVIEW_NO_LIVE",
+        "G5_OPERATOR_APPROVAL_GATE",
+        "G6_TOKEN_GUARD_BEFORE_ANY_LIVE_WRITE"
+      ]
+    },
+    "G1_CATEGORY": {
+      "status": "PASS_G1_CATEGORY_SELECTED_AND_TOKEN_CONTEXT_POLICY_RECORDED_V1",
+      "selected_category_id": "123422",
+      "selected_category_name": "Kabel & Adapter",
+      "selected_path": "Handy-Zubehör > Handys & Kommunikation > Kabel & Adapter",
+      "state_file": "storage/state_control/record_token_context_policy_and_select_g1_category_no_live_v1.json"
+    },
+    "G2_ITEM_SPECIFICS": {
+      "status": "PASS_G2_ITEM_SPECIFICS_SELECTION_READY_NO_LIVE_V1",
+      "category_id": "123422",
+      "aspect_count": 24,
+      "required_aspects": ["Marke", "Produktart"],
+      "selected_specifics_count": 11,
+      "missing_required_count": 0,
+      "review_required_fields": ["Kabellänge", "Farbe", "Herstellernummer"],
+      "selection_file": "storage/drafts/alibaba_1601257433477/item_specifics_selection_no_live_v1.json",
+      "state_file": "storage/state_control/build_g2_item_specifics_selection_no_live_v1.json"
+    },
+    "G3_POLICY_BINDING": {
+      "gate_status": "PASS_G3_POLICY_BINDING_READONLY_GATE_OPEN_V1",
+      "gate_state_file": "storage/state_control/open_g3_policy_binding_readonly_gate_v1.json",
+      "failed_run_status": "RUN_G3_POLICY_BINDING_READONLY_V1_FAILED_WITH_UNHANDLED_HTTP_400",
+      "error": "HTTP Error 400: Bad Request during user token refresh",
+      "state_written_by_failed_run": false,
+      "correct_next_action": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    }
+  },
+  "token_context_policy": {
+    "taxonomy_category_aspects": "Application access token via client_credentials",
+    "sell_account_policies": "User access token via refresh_token guard; inspect scopes if HTTP 400",
+    "sell_inventory_offer": "User access token via refresh_token guard",
+    "on_401_or_400": "STOP_SAFE -> inspect token context/scope/body redacted -> retry only after state JSON"
+  },
+  "known_debt": [
+    "G3 policy user-token refresh 400 needs inspection and robust error handling",
+    "Inline Telegram buttons/callbacks are not fully done",
+    "Visual classifier is not fully bound to Telegram bot",
+    "Review pack source_key bug was recorded; structural fix pending",
+    "Receipt screenshots were in photos folder but excluded by manifest; no move gate used",
+    "Voice messages from phone did not register twice in ChatGPT UI; likely client/chat/UI issue"
+  ],
+  "safe_next_action": {
+    "layer": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1",
+    "where": "SERVER VM BASH",
+    "path": "/home/ionlipca7/runtime_eco_v1",
+    "goal": "Catch and redact OAuth refresh HTTP 400 body, search previous token refresh history, test protected explicit-scope and no-scope refresh modes, and choose retry mode or STOP_SAFE reauth path.",
+    "constraints": [
+      "NO_LIVE_EBAY_WRITE=YES",
+      "NO_DELETE=YES",
+      "NO_MOVE=YES",
+      "NO_PUSH=YES",
+      "NO_BOT_RESTART=YES",
+      "NO_SECRET_PRINT=YES",
+      "LIVE_GATE=CLOSED",
+      "WIP_LIMIT=1"
+    ]
+  },
+  "final_status": "CORRECTED_SINGLE_FLOW_CANON_ARCHIVE_CREATED",
+  "next_allowed_action": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+}
