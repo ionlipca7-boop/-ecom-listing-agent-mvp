@@ -1,0 +1,171 @@
+{
+  "archive_id": "ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z",
+  "project": "ECOM OS V3 / ECOM LISTING AGENT MVP / CONTROL ROOM",
+  "created_from_chat": true,
+  "language": "ru",
+  "operator": "Ion",
+  "purpose": "Safe new-chat continuity archive after completing D/E/F blocks and entering G pre-live gate; current blocker is G3 policy user-token refresh HTTP 400.",
+  "hard_rules": {
+    "format": "ION / E1",
+    "route": "A -> B -> FINISH -> STOP",
+    "wip_limit": 1,
+    "no_parallel_branches": true,
+    "server_runtime_is_not_archive": true,
+    "github_archive_path": "storage/memory/archive/",
+    "no_live_ebay_write_without_live_gate": true,
+    "no_delete_without_cleanup_gate": true,
+    "no_git_push_from_server_until_write_auth_fixed": true,
+    "no_secret_print": true,
+    "terminal_policy": "For important SERVER VM BASH steps use writer-script file or short python3 -c; avoid python heredoc/stdin for important steps because repeated paste/syntax failures occurred."
+  },
+  "current_runtime": {
+    "server_path": "/home/ionlipca7/runtime_eco_v1",
+    "github_repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+    "github_branch_assumed": "main",
+    "telegram_bot": "running before phone departure; restart not requested",
+    "active_product": {
+      "canonical_key": "alibaba:1601257433477",
+      "source_url": "https://www.alibaba.com/product-detail/HAWEEL-Flexible-1m-1-5m-2m_1601257433477.html?spm=a2756.trade-list-buyer.0.0.109676e96utXBF",
+      "quantity": 10,
+      "purchase_price": "3.50 USD",
+      "target_sale_price": "12.99 EUR"
+    }
+  },
+  "block_ledger_status": {
+    "ledger_created": true,
+    "ledger_file_server": "storage/control_room/BLOCK_LEDGER.json",
+    "debt_file_server": "storage/control_room/DEBT_REGISTER.json",
+    "route_lock_file_server": "storage/control_room/CURRENT_ROUTE_LOCK.json",
+    "active_block": "G_LIVE_MARKETPLACE_GATE_BLOCK",
+    "live_gate": "CLOSED"
+  },
+  "completed_blocks": [
+    {
+      "block": "D_PRODUCT_EVIDENCE_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_d_product_evidence_block_stop_v1.json",
+      "summary": "Selected keeper images saved to evidence; 7 selected/staged candidates."
+    },
+    {
+      "block": "E_EBAY_FORMAT_PHOTO_PACK_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_e_ebay_format_photo_pack_block_stop_v1.json",
+      "summary": "Pillow image engine installed locally, eBay-ready pack built: 7 JPEG images, 1600x1600, bad_dimension_count=0.",
+      "outputs": {
+        "final_dir": "storage/exports/ebay_ready_photo_pack/alibaba_1601257433477_v1",
+        "zip_path": "storage/exports/EBAY_READY_PHOTO_PACK_ALIBABA_1601257433477_V1.zip"
+      }
+    },
+    {
+      "block": "F_LISTING_DRAFT_BUILDER_BLOCK",
+      "status": "DONE_FINISH_STOP",
+      "finish_state_file": "storage/state_control/finish_f_listing_draft_builder_block_stop_v1.json",
+      "summary": "Draft-only eBay DE listing built and quality-verified after fixing stale wrong title UD24 2.4.",
+      "draft": {
+        "draft_json": "storage/drafts/alibaba_1601257433477/ebay_de_listing_draft_v1.json",
+        "title": "HAWEEL Flexibles USB Ladekabel 1m 1,5m 2m Datenkabel Schnellladen",
+        "title_length": 65,
+        "description_text_length": 798,
+        "photo_count": 7,
+        "price": "12.99 EUR",
+        "quantity": 10,
+        "live_gate": "CLOSED"
+      }
+    }
+  ],
+  "g_block_progress": {
+    "g_plan": {
+      "status": "PASS_G_REQUIREMENTS_PLAN_READY_NO_LIVE_V1",
+      "state_file": "storage/state_control/build_g_category_and_policy_requirements_plan_no_live_v1.json",
+      "requirements_count": 6,
+      "steps": [
+        "G1_CATEGORY_SUGGESTION_READONLY",
+        "G2_ITEM_SPECIFICS_PLAN",
+        "G3_POLICY_BINDING_READONLY",
+        "G4_FINAL_PAYLOAD_PREVIEW_NO_LIVE",
+        "G5_OPERATOR_APPROVAL_GATE",
+        "G6_TOKEN_GUARD_BEFORE_ANY_LIVE_WRITE"
+      ]
+    },
+    "g1_category": {
+      "status": "PASS_G1_CATEGORY_SELECTED_AND_TOKEN_CONTEXT_POLICY_RECORDED_V1",
+      "selected_category_id": "123422",
+      "selected_category_name": "Kabel & Adapter",
+      "selected_path": "Handy-Zubehör > Handys & Kommunikation > Kabel & Adapter",
+      "state_file": "storage/state_control/record_token_context_policy_and_select_g1_category_no_live_v1.json",
+      "policy_file": "storage/control_room/EBAY_TOKEN_CONTEXT_POLICY_V1.json",
+      "important_lesson": "Taxonomy uses application token; Sell Account/Inventory uses user token. Do not mix token contexts."
+    },
+    "g2_item_specifics": {
+      "status": "PASS_G2_ITEM_SPECIFICS_SELECTION_READY_NO_LIVE_V1",
+      "category_id": "123422",
+      "aspect_count": 24,
+      "required_aspects": ["Marke", "Produktart"],
+      "selected_specifics_count": 11,
+      "missing_required_count": 0,
+      "review_required_fields": ["Kabellänge", "Farbe", "Herstellernummer"],
+      "selection_file": "storage/drafts/alibaba_1601257433477/item_specifics_selection_no_live_v1.json",
+      "state_file": "storage/state_control/build_g2_item_specifics_selection_no_live_v1.json",
+      "next_allowed_action_before_g3": "OPEN_G3_POLICY_BINDING_READONLY_GATE_V1"
+    },
+    "g3_policy_gate": {
+      "status": "PASS_G3_POLICY_BINDING_READONLY_GATE_OPEN_V1",
+      "state_file": "storage/state_control/open_g3_policy_binding_readonly_gate_v1.json",
+      "token_context_required": "USER_ACCESS_TOKEN_FOR_SELL_ACCOUNT_READONLY",
+      "next_allowed_action": "RUN_G3_POLICY_BINDING_READONLY_V1"
+    },
+    "g3_policy_run_failed": {
+      "status": "RUN_G3_POLICY_BINDING_READONLY_V1_FAILED_WITH_UNHANDLED_HTTP_400",
+      "error": "urllib.error.HTTPError: HTTP Error 400: Bad Request during user token refresh",
+      "state_written": false,
+      "problem": "Script did not catch HTTPError during refresh_user_token, so no state JSON was written.",
+      "likely_cause_to_inspect": "Refresh token request used explicit scope sell.account.readonly + sell.inventory.readonly; eBay refresh may require no scope or only subset of original consent scopes.",
+      "must_not_do": [
+        "do not retry blindly",
+        "do not print secrets",
+        "do not continue to live/write",
+        "do not mix app token with Sell Account policy API"
+      ],
+      "correct_next_action": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    }
+  },
+  "token_policy": {
+    "taxonomy_and_metadata_readonly": "Application access token via client_credentials",
+    "sell_account_policies_readonly": "User access token via refresh token guard; inspect scopes if 400",
+    "sell_inventory_offer_read_or_write": "User access token via refresh token guard",
+    "on_401_or_400": "STOP_SAFE -> inspect token context/scope/body redacted -> choose app/user token by API family -> retry only after state file"
+  },
+  "known_debt": [
+    "inline Telegram buttons/callbacks missing",
+    "visual classifier not fully bound to Telegram bot",
+    "review_pack source_key bug was recorded; structural fix pending",
+    "receipt screenshots still in photos folder, excluded by manifest but no move gate used",
+    "G3 policy user-token refresh 400 needs inspection and robust error handling",
+    "voice messages from phone did not register in ChatGPT UI twice; likely client/chat/UI issue, not server runtime"
+  ],
+  "safe_next_step_for_new_chat": {
+    "layer": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1",
+    "where": "SERVER VM BASH",
+    "path": "/home/ionlipca7/runtime_eco_v1",
+    "purpose": "Inspect OAuth refresh 400, redact error body, search state/control/archive/tools for previous working token refresh mode, then decide retry mode without scope vs reauth/consent.",
+    "strict_rules": [
+      "NO_LIVE_EBAY_WRITE=YES",
+      "NO_DELETE=YES",
+      "NO_MOVE=YES",
+      "NO_PUSH=YES",
+      "NO_BOT_RESTART=YES",
+      "NO_SECRET_PRINT=YES",
+      "LIVE_GATE=CLOSED",
+      "WIP_LIMIT=1"
+    ]
+  },
+  "new_chat_must_start_by_reading": [
+    "this GitHub archive JSON",
+    "storage/control_room/BLOCK_LEDGER.json on server",
+    "storage/control_room/CURRENT_ROUTE_LOCK.json on server",
+    "storage/state_control/build_g2_item_specifics_selection_no_live_v1.json on server",
+    "storage/state_control/open_g3_policy_binding_readonly_gate_v1.json on server"
+  ],
+  "final_status": "ARCHIVED_FOR_NEW_CHAT_CONTINUATION",
+  "next_allowed_action": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+}
