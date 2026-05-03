@@ -1,0 +1,40 @@
+{
+  "status": "PASS_FIX_ARCHIVE_MANIFEST_FULL_SHA256_V2",
+  "timestamp_utc": "2026-05-03T10:50:53.621014+00:00",
+  "archive_dir": "D:\\ECOM_LISTING_AGENT_MVP\\storage\\memory\\archive\\ECOM_OS_V3_LOCAL_AUDIT_AND_BLUEPRINT_ARCHIVE_20260503T105053Z",
+  "github_target_path": "storage/memory/archive/ECOM_OS_V3_LOCAL_AUDIT_AND_BLUEPRINT_ARCHIVE_20260503T105053Z/",
+  "actions_not_executed": [
+    "no_delete",
+    "no_move",
+    "no_git_push",
+    "no_server",
+    "no_live_ebay",
+    "no_secret_print"
+  ],
+  "source_files": [
+    "D:\\ECOM_LISTING_AGENT_MVP\\storage\\audit\\local_deep_project_asset_audit_v2.json",
+    "D:\\ECOM_LISTING_AGENT_MVP\\storage\\audit\\LOCAL_DEEP_PROJECT_ASSET_AUDIT_V2.md",
+    "D:\\ECOM_LISTING_AGENT_MVP\\storage\\audit\\CANONICAL_BLUEPRINT_INPUTS_FROM_LOCAL_AUDIT_V1.md",
+    "D:\\ECOM_LISTING_AGENT_MVP\\storage\\audit\\ecom_os_v3_canonical_blueprint_v2_safe.json",
+    "D:\\ECOM_LISTING_AGENT_MVP\\storage\\audit\\ECOM_OS_V3_CANONICAL_BLUEPRINT_V2_SAFE.md"
+  ],
+  "missing_files": [],
+  "sha256": {
+    "CANONICAL_BLUEPRINT_INPUTS_FROM_LOCAL_AUDIT_V1.md": "4bea977f8b8cc2fe6cc75982b7667a569b5a55d3d338950527ff0817ff00bffd",
+    "ecom_os_v3_canonical_blueprint_v2_safe.json": "623aae4eb32b94afe40cfecb9a28fb984db8093da0ac56362239f73e77e46881",
+    "ECOM_OS_V3_CANONICAL_BLUEPRINT_V2_SAFE.md": "b3868649afc82997ffd5adf5033b3d0f4073a7227a0c7ba80a593f74dd3915c7",
+    "local_deep_project_asset_audit_v2.json": "def27b29039958ec9c5d77273874ea12b1b986e67870ca14cb752fbfe7843614",
+    "LOCAL_DEEP_PROJECT_ASSET_AUDIT_V2.md": "3b1f91ea5099b7f16f459e17c7f7a002e23ef3448d0be5546b9238e70c367e3b",
+    "NEW_CHAT_FRONT_ECOM_OS_V3_AFTER_LOCAL_AUDIT_BLUEPRINT_V2.txt": "9d8768af22a501650f1e5878d6e5de49b8db9bab2eb2f36bf4f126e2c399d720",
+    "ARCHIVE_MANIFEST.json": "2b2e5d48f452fe7868cbec66ba42fcf7c1248ab786dce9883d953f04dd31db87"
+  },
+  "current_project_state": {
+    "blueprint_status": "PASS_COMPACT_ECOM_OS_V3_CANONICAL_BLUEPRINT_V2_SAFE",
+    "current_blocker": "G3 policy read-only blocked by user token refresh HTTP 400",
+    "live_gate": "CLOSED",
+    "next_after_archive": "REVIEW_ARCHIVE_PACKAGE_THEN_OPTIONAL_GIT_COMMIT_GATE_V1"
+  },
+  "next_allowed_action": "REVIEW_ARCHIVE_PACKAGE_THEN_OPTIONAL_GIT_COMMIT_GATE_V1",
+  "manifest_updated_utc": "2026-05-03T10:51:56.908215+00:00",
+  "file_count": 7
+}

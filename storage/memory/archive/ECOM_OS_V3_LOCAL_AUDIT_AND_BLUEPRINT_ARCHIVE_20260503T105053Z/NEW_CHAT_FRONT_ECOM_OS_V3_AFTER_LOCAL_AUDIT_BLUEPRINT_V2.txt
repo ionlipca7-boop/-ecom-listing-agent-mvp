@@ -1,0 +1,9 @@
+ION / E1 CONTINUATION - ECOM OS V3 AFTER LOCAL AUDIT + BLUEPRINT V2
+
+Status: PASS local deep audit + compact canonical blueprint V2.
+Archive package prepared locally, not pushed.
+LIVE_GATE=CLOSED.
+Current blocker: G3 policy read-only blocked by user token refresh HTTP 400. Do not continue G4/G5/G6 until G3 PASS.
+Next allowed action: REVIEW_ARCHIVE_PACKAGE_THEN_OPTIONAL_GIT_COMMIT_GATE_V1.
+
+Rules: Russian, ION format, no delete, no server, no live eBay, no secret print, no blind OAuth retry.

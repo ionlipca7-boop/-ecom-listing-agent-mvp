@@ -1,0 +1,76 @@
+# ECOM_OS_V3_CANONICAL_BLUEPRINT_V2_SAFE
+
+Status: PASS_COMPACT_ECOM_OS_V3_CANONICAL_BLUEPRINT_V2_SAFE
+Timestamp UTC: 2026-05-03T10:49:46.030497+00:00
+
+## Roots scanned
+- D:\ECOM_LISTING_AGENT_MVP
+- D:\ECOM_GOVERNED_RUNTIME
+- D:\ECOM_LISTING_AGENT_MVP_SYNC
+- D:\EcomOS_Bot
+- D:\ECOM_OS
+
+## Current blocker
+- G3 policy read-only blocked by user token refresh HTTP 400; no G4/G5/G6 until G3 PASS
+
+## Canonical strategy
+- GitHub is canon/archive/source layer; Windows is audit/build workstation; server is runtime only; Telegram is operator cockpit
+
+## Canonical agents
+- CONTROL_AGENT
+- ARCHIVIST_AGENT
+- TOKEN_CONTEXT_AGENT_V2
+- POLICY_BINDER_AGENT
+- PRODUCT_EVIDENCE_AGENT
+- PHOTO_AGENT
+- PHOTO_CRITIC_AGENT
+- DRAFT_BUILDER_AGENT
+- DRAFT_CRITIC_AGENT
+- EBAY_COMPLIANCE_AGENT
+- PAYLOAD_CRITIC_AGENT
+- TELEGRAM_COCKPIT_AGENT
+- ERROR_RESOLVER_AGENT
+- LISTING_PERFORMANCE_AGENT
+- PRICE_AND_COMPETITION_AGENT
+- LISTING_LIFECYCLE_STRATEGY_AGENT
+- INVENTORY_REORDER_AGENT
+- EXPERIMENT_LEARNING_AGENT
+- TEACHER_COACH_AGENT
+- STRATEGY_MEMORY_AGENT
+
+## Canonical routes
+- NEW_PRODUCT_LISTING_ROUTE
+- EXISTING_LISTING_UPDATE_ROUTE
+- POORLY_SELLING_LISTING_IMPROVEMENT_ROUTE
+- WINNING_LISTING_SCALE_ROUTE
+- TOKEN_ERROR_RESOLUTION_ROUTE
+- CLEANUP_ROUTE
+
+## Must keep
+- state_control discipline
+- CURRENT_POINTER
+- archive discipline
+- token guard
+- Telegram approval/control
+- performance/growth/daily strategy/reorder layer
+- post-live readonly verification
+
+## Do not take
+- secrets or .env
+- archive_candidates as live code
+- duplicate old drafts
+- broken paste artifacts
+- server as archive
+- blind OAuth retry
+
+## Proposed clean skeleton
+- 00_control_core: CURRENT_POINTER, BLOCK_LEDGER, CURRENT_ROUTE_LOCK, LIVE_GATE, DEBT_REGISTER, NEXT_ALLOWED_ACTION_POLICY
+- 01_guardrails: NO_LIVE_WITHOUT_GATE, NO_SECRET_PRINT, NO_DELETE_WITHOUT_CLEANUP_GATE, NO_PUSH_FROM_SERVER, TOKEN_CONTEXT_POLICY
+- 02_agents: CONTROL_AGENT, ARCHIVIST_AGENT, TOKEN_CONTEXT_AGENT_V2, POLICY_BINDER_AGENT, PRODUCT_EVIDENCE_AGENT, PHOTO_AGENT, PHOTO_CRITIC_AGENT, DRAFT_BUILDER_AGENT, DRAFT_CRITIC_AGENT, EBAY_COMPLIANCE_AGENT, PAYLOAD_CRITIC_AGENT, TELEGRAM_COCKPIT_AGENT, ERROR_RESOLVER_AGENT, LISTING_PERFORMANCE_AGENT, PRICE_AND_COMPETITION_AGENT, LISTING_LIFECYCLE_STRATEGY_AGENT, INVENTORY_REORDER_AGENT, EXPERIMENT_LEARNING_AGENT, TEACHER_COACH_AGENT, STRATEGY_MEMORY_AGENT
+- 03_routes: NEW_PRODUCT_LISTING_ROUTE, EXISTING_LISTING_UPDATE_ROUTE, POORLY_SELLING_LISTING_IMPROVEMENT_ROUTE, WINNING_LISTING_SCALE_ROUTE, TOKEN_ERROR_RESOLUTION_ROUTE, CLEANUP_ROUTE
+- 04_learning_memory: listing_scorecards, winning_patterns, losing_patterns, experiment_results, teacher_lessons
+- 05_telegram_cockpit: status_cards, approval_cards, error_cards, performance_reports, improvement_proposals
+- 06_github_archive: audit_v2, blueprint_v2, local_findings, next_route, g3_blocker_summary
+
+## Next allowed action
+- REVIEW_BLUEPRINT_V2_THEN_GITHUB_ARCHIVE_GATE_V1
