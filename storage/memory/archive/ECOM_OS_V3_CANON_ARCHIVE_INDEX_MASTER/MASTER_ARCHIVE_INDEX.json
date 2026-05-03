@@ -1,0 +1,147 @@
+{
+  "index_id": "ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER",
+  "created_utc": "2026-05-03T09:45:00Z",
+  "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+  "branch": "main",
+  "purpose": "Single stable GitHub entry point for future ChatGPT handoffs. It catalogs confirmed ECOM OS V3 archives in chronological order and prevents path confusion.",
+  "single_entry_point": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json",
+  "new_chat_prompt": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/NEW_CHAT_PROMPT_MASTER.txt",
+  "important_honesty_note": "This index centralizes pointers to confirmed archive files. It does not physically move/delete old archives, because old paths are already referenced by commits and prior chats. Future archives should be added under this MASTER folder as numbered chat entries or appended to this index.",
+  "audit_scope": {
+    "repositories_checked": [
+      "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "ionlipca7-boop/ECOM_OS_V3",
+      "ionlipca7-boop/ECOM_GOVERNED_RUNTIME"
+    ],
+    "confirmed_repository_count": 3,
+    "main_active_repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+    "search_methods": [
+      "list_repositories",
+      "search repository files for archive/front/transition names",
+      "search commits for archive and new chat handoff messages",
+      "fetch key commits to verify exact file paths and contents"
+    ],
+    "limitations": [
+      "This is a GitHub connector audit, not a full git clone/tree walk.",
+      "Search indexing is available for -ecom-listing-agent-mvp; ECOM_OS_V3 and ECOM_GOVERNED_RUNTIME appeared not code-search-indexed in repository metadata.",
+      "No server runtime file audit was performed in this step."
+    ]
+  },
+  "confirmed_archive_sequence": [
+    {
+      "order": 1,
+      "label": "Server Telegram real URL handoff",
+      "date_utc": "2026-05-02T18:06:58Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_SERVER_TELEGRAM_REAL_URL_HANDOFF_20260502_V1.md",
+      "commit": "664e213ffe9eb3d78e0302d53edfb6170af3786c",
+      "status": "CONFIRMED_FETCHED_COMMIT",
+      "scope_summary": "Server/Telegram/eBay-readonly integration handoff; next then was Telegram RU control patch decision.",
+      "next_allowed_action_at_that_time": "DECIDE_FIX_OR_SAFE_REAPPLY_TELEGRAM_CONTROL_RU_PATCH_V1"
+    },
+    {
+      "order": 2,
+      "label": "New product dynamic intake V3",
+      "date_utc": "2026-05-02T21:45:00Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_NEW_PRODUCT_DYNAMIC_INTAKE_V3_20260502T2145Z.json",
+      "commit": "b16ef151206203ea25845328ac2aae0d9a005523",
+      "status": "CONFIRMED_FETCHED_COMMIT",
+      "scope_summary": "New Alibaba product dynamic pointer/intake; fixed /ecom_files dynamic pointer and multiline parser; direct image bridge still needed dynamic target fix.",
+      "next_allowed_action_at_that_time": "FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1"
+    },
+    {
+      "order": 3,
+      "label": "New chat continuation front V3",
+      "date_utc": "2026-05-02T21:50:26Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "NEW_CHAT_ECOM_OS_V3_CONTINUATION_FRONT_V3.txt",
+      "commit": "48b6f35014b4b9eb72ebf8ed8d0182e72f2ca982",
+      "status": "CONFIRMED_COMMIT_SEARCH_RESULT",
+      "scope_summary": "Front prompt paired with new product dynamic intake archive.",
+      "next_allowed_action_at_that_time": "FIX_PHOTO_RECEIPT_INTAKE_DYNAMIC_TARGET_NO_RESTART_V1"
+    },
+    {
+      "order": 4,
+      "label": "G2 item specifics + G3 token 400 transition",
+      "date_utc": "2026-05-03T08:48:08Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_NEW_CHAT_TRANSITION_AFTER_G2_ITEM_SPECIFICS_SELECTION_G3_TOKEN_400_20260503T0900Z.json",
+      "commit": "296889192527e901717a4c6e0f1676a95b7dfc6a",
+      "status": "CONFIRMED_FETCHED_COMMIT",
+      "scope_summary": "D/E/F done, G1 category done, G2 item specifics done, G3 policy read-only failed on user-token refresh HTTP 400.",
+      "next_allowed_action_at_that_time": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    },
+    {
+      "order": 5,
+      "label": "G2/G3 token 400 front prompt",
+      "date_utc": "2026-05-03T08:48:45Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "NEW_CHAT_ECOM_OS_V3_AFTER_G2_G3_TOKEN_400_CONTINUATION_FRONT_20260503T0900Z.txt",
+      "commit": "230296e75ffdc81b125148e7eddf7b6e3173bbe0",
+      "status": "CONFIRMED_FETCHED_COMMIT",
+      "scope_summary": "Front prompt for G2/G3 token 400 transition. Correct archive path inside file points to order 4.",
+      "next_allowed_action_at_that_time": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    },
+    {
+      "order": 6,
+      "label": "Corrected single flow manifest after path mismatch",
+      "date_utc": "2026-05-03T09:30:00Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json",
+      "commit": "f0daa21571b6d6c3f2207dd0ad28d24d2ea4dc55",
+      "status": "CONFIRMED_CREATED_THIS_SESSION",
+      "scope_summary": "Corrected consolidated manifest acknowledging previous archive-path mismatch and restating current G3 token refresh blocker.",
+      "next_allowed_action_at_that_time": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    },
+    {
+      "order": 7,
+      "label": "Corrected single flow new chat prompt",
+      "date_utc": "2026-05-03T09:30:00Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/NEW_CHAT_PROMPT_SINGLE_FLOW_CORRECTED.txt",
+      "commit": "d2f434aaaf848d14b1d9904661bbaf06aea95d3f",
+      "status": "CONFIRMED_CREATED_THIS_SESSION",
+      "scope_summary": "Corrected prompt pointing to corrected single flow manifest.",
+      "next_allowed_action_at_that_time": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    },
+    {
+      "order": 8,
+      "label": "Master archive index",
+      "date_utc": "2026-05-03T09:45:00Z",
+      "repo": "ionlipca7-boop/-ecom-listing-agent-mvp",
+      "path": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json",
+      "commit": "CURRENT_COMMIT_CREATED_BY_THIS_OPERATION",
+      "status": "CREATED_THIS_STEP",
+      "scope_summary": "Stable single entry point for all future new chats and future archive additions.",
+      "next_allowed_action_at_that_time": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+    }
+  ],
+  "invalid_or_deprecated_paths": [
+    {
+      "path": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_20260503T1325Z/",
+      "status": "NOT_FOUND_NOT_CREATED",
+      "action": "Do not use. It caused the previous new-chat path mismatch."
+    }
+  ],
+  "current_source_of_truth": {
+    "single_entry_point": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json",
+    "current_latest_manifest": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json",
+    "current_latest_prompt": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/NEW_CHAT_PROMPT_SINGLE_FLOW_CORRECTED.txt",
+    "current_runtime_active_block": "G_LIVE_MARKETPLACE_GATE_BLOCK",
+    "current_live_gate": "CLOSED",
+    "current_next_allowed_action": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+  },
+  "future_archive_policy": {
+    "one_address_rule": "Every future chat transition must point first to MASTER_ARCHIVE_INDEX.json, not to an ad-hoc archive path.",
+    "append_rule": "Add new chat archive under storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/chats/YYYYMMDD_HHMMZ_<short_label>/ and update MASTER_ARCHIVE_INDEX.json.",
+    "naming_rule": "Use monotonic timestamp + route label. Never invent a path unless the file was created and verified.",
+    "no_move_rule": "Do not move old archives; preserve old references and add pointers in the index.",
+    "verification_rule": "After creating an archive file, fetch/verify it or fetch the commit before giving the path to the operator."
+  },
+  "new_chat_minimal_start": {
+    "read_first": "storage/memory/archive/ECOM_OS_V3_CANON_ARCHIVE_INDEX_MASTER/MASTER_ARCHIVE_INDEX.json",
+    "then_read": "storage/memory/archive/ECOM_OS_V3_SINGLE_FLOW_CANON_CORRECTED_20260503T0930Z/MANIFEST_SINGLE_FLOW.json",
+    "then_continue_with": "INSPECT_G3_USER_TOKEN_REFRESH_400_AND_ARCHIVE_SCOPE_HISTORY_V1"
+  }
+}
