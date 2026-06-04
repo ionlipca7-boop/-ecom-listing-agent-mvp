@@ -1,10 +1,10 @@
-# ECOM OS Market Intelligence Chain V2.1 — FINAL
+# ECOM OS Market Intelligence Chain V2.1 — FINAL + RETURN RESERVE UPGRADE
 
 Date: 2026-05-30
 Operator: Ion / ION
 Project: ECOM OS / ECOM LISTING AGENT MVP
-Archive type: final strategic architecture + product test lesson
-Status: FINAL_ARCHIVE_FOR_PROJECT_INTEGRATION
+Archive type: final strategic architecture + product test lesson + return reserve upgrade
+Status: FINAL_ARCHIVE_FOR_PROJECT_INTEGRATION_UPDATED
 
 ---
 
@@ -12,7 +12,7 @@ Status: FINAL_ARCHIVE_FOR_PROJECT_INTEGRATION
 
 This archive closes the market/product discovery discussion and converts it into a reusable ECOM OS architecture.
 
-The goal is not only to evaluate products that Ion manually sends, but also to build an autonomous market radar that can find new product opportunities from China/Germany marketplace signals, score them, criticize them, and report only useful candidates.
+The goal is not only to evaluate products that Ion manually sends, but also to build an autonomous market radar that can find new product opportunities from China/Germany marketplace signals, score them, criticize them, include realistic return/defect reserves, and report only useful candidates.
 
 ---
 
@@ -25,7 +25,7 @@ SEARCH / RADAR SIGNAL
 -> DEMAND PROOF
 -> MARKET PROOF
 -> BUYER BEHAVIOR
--> PROFIT / PRODUCT REALITY
+-> PROFIT / PRODUCT REALITY + RETURN RESERVE
 -> VALUE SIGNAL / LISTING FIT
 -> BUSINESS LADDER
 -> OFFER STRUCTURE
@@ -38,7 +38,7 @@ SEARCH / RADAR SIGNAL
 Short formula:
 
 ```text
-Demand -> Product -> Value Signal -> Offer Structure -> Decision -> Lesson -> Teacher
+Demand -> Product -> Profit After Return Reserve -> Value Signal -> Offer Structure -> Decision -> Lesson -> Teacher
 ```
 
 ---
@@ -289,7 +289,9 @@ Germany shipping
 eBay fees
 ad rate assumption 6-8%
 packaging
-return/defect reserve
+return reserve
+defect reserve
+misunderstanding reserve
 purchase MOQ
 stock/cashflow speed
 price stability
@@ -304,12 +306,85 @@ PROFIT_MEDIUM
 PROFIT_WEAK
 PROFIT_UNKNOWN
 PASS_IF_BUNDLE
+PROFIT_PASS_AFTER_RESERVE
+PROFIT_FAIL_AFTER_RESERVE
 ```
 
-Important new status:
+Important status:
 
 ```text
 PASS_IF_BUNDLE = single item is weak, but bundle/kit may be strong.
+PROFIT_PASS_AFTER_RESERVE = profit remains acceptable after returns/defects are included.
+PROFIT_FAIL_AFTER_RESERVE = paper profit disappears after realistic reserve.
+```
+
+---
+
+### 5A. RETURN_RESERVE_AGENT_V1
+
+This is a required sub-agent inside Product / Profit.
+
+Main principle:
+
+```text
+No product is profitable until it survives return reserve.
+```
+
+The agent must not treat returns as a surprise. It must treat them as a normal business cost.
+
+Reserve guide:
+
+```text
+Low-risk simple products: 5%
+Medium products / fit or compatibility risk: 8-10%
+High-risk electronics / chargers / Bluetooth / complex compatibility: 12-15%+
+```
+
+Additional reserves:
+
+```text
+Defect Reserve: 1-5% depending on quality risk
+Misunderstanding Reserve: 1-5% if buyer may misunderstand size, compatibility, package contents, adhesive strength, material, or usage
+```
+
+Examples:
+
+```text
+Cable clips / Velcro ties / simple organizers:
+Return Reserve 5-7%, Defect Reserve 2-3%, Total Reserve 7-10%
+
+USB-C adapters / fit-sensitive accessories:
+Return Reserve 8-10%, Defect Reserve 2-4%, Total Reserve 10-14%
+
+Chargers / electronics:
+Return Reserve 12-15%+, Defect Reserve 3-5%+, Total Reserve 15-20%+
+```
+
+Profit formula:
+
+```text
+Net Profit = Sale Price
+- Supplier Cost
+- China Shipping Allocation
+- Germany Shipping
+- Packaging
+- eBay Fees
+- Ad Cost
+- Return Reserve
+- Defect Reserve
+- Misunderstanding Reserve
+```
+
+Rule:
+
+```text
+If margin looks good before reserve but weak after reserve, candidate becomes WATCH or REJECT, not TEST.
+```
+
+Important anti-overstrict rule:
+
+```text
+Return reserve should make calculation honest, not kill all products.
 ```
 
 ---
@@ -393,8 +468,6 @@ REPLACE_UPGRADE_OPPORTUNITY
 ---
 
 ### 8. OFFER STRUCTURE LAYER
-
-New final upgrade from the chat.
 
 Question:
 
@@ -498,7 +571,7 @@ One weak layer does not automatically kill a candidate.
 Example:
 
 ```text
-Demand strong + Profit strong + Value Signal strong + Competition high
+Demand strong + Profit strong after return reserve + Value Signal strong + Competition high
 = TEST SMALL LOT / WATCH COMPETITION, not automatic reject.
 ```
 
@@ -516,6 +589,10 @@ candidate
 scores
 evidence
 assumptions
+return reserve used
+defect reserve used
+profit before reserve
+profit after reserve
 decision
 risks
 later result
@@ -538,6 +615,7 @@ review weekly results
 compare predictions vs real outcomes
 find which agents over/underestimated products
 adjust scoring weights
+update return reserve assumptions by category
 update reject/watch/test rules
 monitor eBay/Amazon marketplace rule changes
 monitor new AI/tools/SEO methods
@@ -553,7 +631,7 @@ Market -> Analysis -> Decision -> Result -> Lesson -> Teacher -> Rule Update -> 
 
 ---
 
-## 5. Final score model V2.1
+## 5. Final score model V2.1R
 
 The system should keep compact scoring but preserve detailed evidence.
 
@@ -563,7 +641,7 @@ Suggested weights:
 Demand Discovery: 15
 Market Proof: 15
 Buyer Behavior: 15
-Product / Profit: 15
+Product / Profit After Reserve: 15
 Value Signal / Listing: 15
 Business Ladder: 10
 Offer Structure: 5
@@ -580,6 +658,12 @@ Decision thresholds:
 ```
 
 Safety block overrides all scoring.
+
+Return reserve override:
+
+```text
+If profit fails after realistic return/defect reserve, candidate cannot be STRONG TEST.
+```
 
 ---
 
@@ -604,13 +688,16 @@ Quick Safety: PASS
 Demand Discovery: STRONG
 Market Proof: PARTIAL / NEEDS SOLD CHECK
 Buyer Behavior: STRONG
-Product / Profit: PASS_IF_BUNDLE
+Product / Profit: PASS_IF_BUNDLE + PROFIT_PASS_AFTER_RESERVE if supplier price <= 3 EUR
+Return Reserve: 5-7%
+Defect Reserve: 2-3%
+Total Reserve: 7-10%
 Value Signal: STRONG
 Business Ladder: STRONG
 Offer Structure: STRONG
 Critic: MEDIUM FLAGS
 Decision Board: TEST SMALL LOT / WATCH
-Score: approx. 84/100
+Score: approx. 84/100 before supplier confirmation
 ```
 
 ### Why it passed
@@ -622,6 +709,7 @@ The benefit can be shown with before/after photos.
 The item is small and low-risk.
 A kit has stronger value than one clip.
 It can become a product line: home office, gaming, travel, replacement parts.
+It can survive a 7-10% return/defect reserve if sourcing price is low enough.
 ```
 
 ### Main risks
@@ -665,6 +753,7 @@ CHINA_NEW_PRODUCT_RADAR
 -> MARKETPLACE_COMPETITOR_RADAR
 -> PRODUCT_DISCOVERY_SEARCH_SIGNAL_AGENT
 -> PROFIT_RISK_AGENT
+-> RETURN_RESERVE_AGENT
 -> MARKET_VALUE_SIGNAL_AGENT
 -> OFFER_STRUCTURE_AGENT
 -> CRITIC_AGENT
@@ -686,6 +775,9 @@ Marketplace proof:
 Supplier price/MOQ:
 Competition:
 Value signals:
+Return reserve assumption:
+Profit before reserve:
+Profit after reserve:
 Offer structure:
 Risks:
 Decision:
@@ -709,11 +801,12 @@ When Ion sends a product, the response should be:
 
 ```text
 A = candidate summary
-B = Chain V2.1 layer results
+B = Chain V2.1R layer results
 C = score and evidence
-D = critic flags
-E = offer structure recommendation
-F = decision
+D = profit before/after return reserve
+E = critic flags
+F = offer structure recommendation
+G = decision
 FINISH = next safe action
 ```
 
@@ -728,6 +821,7 @@ Keep modules separate:
 ```text
 Market Radar = before product purchase
 Product Passport = truth layer
+Profit/Risk + Return Reserve = honest margin layer
 Market Value Signal = listing/value strategy
 Offer Structure = listing/variation/bundle strategy
 Listing Agent = execution
@@ -747,7 +841,7 @@ Safe next steps after this archive:
 ```text
 1. Verify this GitHub archive exists.
 2. When server eyes are active, create/read project pointer to this archive.
-3. Add Chain V2.1 to agent map as planned architecture, not immediate live execution.
+3. Add Chain V2.1R to agent map as planned architecture, not immediate live execution.
 4. Build first manual Demand Map / Product Candidate experiment.
 5. Later build autonomous radar as read-only reporting agent.
 6. Connect Telegram notification only after read-only reports are stable.
@@ -759,10 +853,11 @@ Safe next steps after this archive:
 ## 11. Final project status
 
 ```text
-FINISH: Market Intelligence Chain V2.1 is defined.
+FINISH: Market Intelligence Chain V2.1R is defined.
 FINISH: Manual Mode and Autonomous Radar Mode are defined.
 FINISH: Desk Cable Organizer Kit test completed as proof-of-chain.
 FINISH: PASS_IF_BUNDLE and OFFER_STRUCTURE_AGENT_V1 added.
+FINISH: RETURN_RESERVE_AGENT_V1 added.
 FINISH: Master Teacher / Rule Engine learning loop included.
 STOP: Do not implement live until project/server integration step is explicitly started.
 ```
